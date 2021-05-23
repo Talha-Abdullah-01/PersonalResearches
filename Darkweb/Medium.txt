@@ -1,0 +1,13 @@
+TOR Network- Anonymising network
+Always encrypted data.. only at the start/end is decrypted
+TOR Hidden services- TOR services are smartly built and cannot be found even server cannot find yours
+Hacker can only see if im using TOR
+
+TOR Problems:
+Internet drops, Difficult to prevent leaks, web browser can also leak info, Data leaves un-encrypted
+Solutions:
+Use TOR Browser(simplest), Tails(Great), Qubes with whonix(Best-Operating system)
+
+HTTPS encrypts data along whole way. Person in the end node can see if no HTTPS
+
+
