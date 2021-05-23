@@ -1,0 +1,17 @@
+Introduction:
+
+Terms:
+
+1) Privacy - State which is not observed by others
+	ID:Known Activity:Unknown
+
+2) Anonymity - Person sees you but dont know who you are. Do not use own resources
+	ID:Unknown Activity:Known
+	Pseudo Anonymity - Journalists anonymously post. Fake Names or ghost profile identity
+	Q) How to become more Anonymous/Privacy: 
+	i) Anonymising Service 		ii)Private online services
+
+3) Dark Web: Some sites exist in anonymising services, only exist for these services 
+
+4) Security: Need to be secure to have privacy and anonymous status. No Security anyone can
+	     reveal your identity
