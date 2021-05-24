@@ -1,13 +1,52 @@
-TOR Network- Anonymising network
+* TOR Network- Anonymising network
 Always encrypted data.. only at the start/end is decrypted
 TOR Hidden services- TOR services are smartly built and cannot be found even server cannot find yours
 Hacker can only see if im using TOR
 
-TOR Problems:
+* TOR Problems:
 Internet drops, Difficult to prevent leaks, web browser can also leak info, Data leaves un-encrypted
 Solutions:
 Use TOR Browser(simplest), Tails(Great), Qubes with whonix(Best-Operating system)
 
 HTTPS encrypts data along whole way. Person in the end node can see if no HTTPS
+
+* TOR Browser:
+1)Modified version of Firefox ESR
+2)Uses TOR Network
+3)Fully Patched
+4)Disables insecure features/plugins
+5)Forces all connections over HTTPS
+6)Disables Scripts
+
+Windows Download:
+1)Optional- verifying integrity of file: check signature (download) Gpg4win(used to check integrity)
+Download Gpg4win: open cmd prompt
+get key from windows TOR website
+Command:
+gpg.exe --fingerprint (copy the number after -keys)
+Compare keys from website and prompt
+go to [cd Downloads]
+Command
+gpg.exe --verify [ press tab/copy files name of the key]
+2)Download normally
+
+Usage:
+
+Connection:
+check.torproject.org
+=> If it works, connection is fine
+=> If it does not work:
+	1) Use torbridge ( to counter this, ISP used advanced Deep packet filtering to identify and 	block TOR traffic) - bridges@torproject.org
+	2) Use pluggable transports to obfuscate traffic
+=> Bridges email- bridges@torproject.org (get transport obfs4), Go to Tor Settings and Tor is censored 	in my country and then check provide bridge ik => copy paste
+
+*VPN: Virtual private network
+Benefits: extra layer of encryption, more privacy and anonymity, Bypass censorship
+
+Comp->VPN->TOR
+
+User-VPN Encryption/TLS->VPN-TLS->TOR
+
+
 
 
