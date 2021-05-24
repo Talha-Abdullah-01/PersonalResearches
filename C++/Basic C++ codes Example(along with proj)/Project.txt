@@ -1,0 +1,194 @@
+#include <iostream>
+#include <string>
+#include <fstream>
+using namespace std;
+int main()
+{
+    long long int x, id, mobile, row, present;
+    string checkiftaken;int checkintiftaken;
+    int row1; string seat1;
+    int z = 0;
+    int q;
+    string seat;
+    string name, food;
+    ofstream reservation;
+    ofstream reserved;
+
+ 
+
+    /*reserved.open("C:\\Users\\talha\\Desktop\\isreserved.txt", ios::app);
+
+ 
+
+    //isreserved file
+
+ 
+
+
+    for (int i = 1; i <= 100; i++)
+    {
+        for (char alph = 'A'; alph <= 'G'; alph++)
+        {
+
+ 
+
+            reserved << i << alph << "\t" << z << endl;
+        }
+    }
+
+ 
+
+    reserved.close();*/
+
+ 
+
+
+    do
+    {
+        //asking the use what he wants to use
+
+ 
+
+        cout << "[1]  Make a new reservation." << endl;
+        cout << "[2]  List current reservations." << endl;
+        cout << "[3]  Search reservation done by a certian user." << endl;
+        cout << "[7]  to exit from the program." << endl;
+        cout << "Enter what you want to do: ";
+        cin >> x;
+        switch (x)
+        {
+            //making reservation
+        case 1:
+
+ 
+
+            cout << "Please enter your ID: ";
+            cin >> id;
+            cout << "Please enter your mobile number: ";
+            cin >> mobile;
+            cout << "Please enter the seat, notice you can choose a row from 1-100 and a seat from A-G " << endl;
+
+ 
+
+            cout << "Please choose a seat: ";
+            cin >> seat;
+            {
+                ifstream reserved;
+                reserved.open("C:\\Users\\talha\\Desktop\\isreserved.txt");
+                while (reserved >> checkiftaken >> checkintiftaken)
+                {
+                    if (checkiftaken == seat)
+                        if (checkintiftaken == 1)
+                            break;
+                }
+                reserved.close();
+            }            
+            if (checkiftaken == seat)
+                if (checkintiftaken == 1)
+                {
+                    cout << "Sorry, this seat is taken. Please enter information again." << endl;
+                    continue;
+                }
+            {
+
+ 
+
+                ifstream reserved;
+                ofstream demo;
+                reserved.open("C:\\Users\\talha\\Desktop\\isreserved.txt");
+                demo.open("C:\\Users\\talha\\Desktop\\demo.txt");
+                while (reserved >> seat1 >> q)
+                {
+                    if (seat == seat1)
+                    {
+
+ 
+
+                        demo << seat << "\t" << 1 << endl;
+
+ 
+
+                    }
+                    else
+                    {
+                        demo << seat1 << "\t" << q << endl;;
+
+ 
+
+                    }
+                }
+
+ 
+
+                reserved.close();
+                demo.close();
+                remove("C:\\Users\\talha\\Desktop\\isreserved.txt");
+                rename("C:\\Users\\talha\\Desktop\\demo.txt", "C:\\Users\\ahmad\\Desktop\\isreserved.txt");
+            }    
+
+ 
+
+
+            cout << "Please pick a type of food from our menu: ";
+            cout << "[1] Veg meal, [2] Non-veg meal, [3] No meal :";
+            cin >> food;
+            cout << "Please enter your full name: ";
+            cin.ignore();
+            getline(cin, name);
+            cout << endl;
+            reservation.open("C:\\Users\\talha\\Desktop\\reservations.txt", ios::app);
+            reservation << id << "\t" << mobile << "\t" << seat << "\t" << food << "\t" << name << endl;
+            reservation.close();
+            cout << "The reservation is done and saved!" << endl << endl;
+            break;
+
+ 
+
+        case 2: // checking the list of current reservations
+        {ifstream reservation;
+        int number;
+        reservation.open("C:\\Users\\talha\\Desktop\\reservations.txt");
+        string sLine;
+
+ 
+
+        while (!reservation.eof())
+        {
+            getline(reservation, sLine);
+            cout << sLine << endl;
+        }
+
+ 
+
+        reservation.close();
+        }
+        break;
+        case 3:
+            int ID;
+            ifstream reservation;
+            cout << "Enter the ID No \n";
+            cin >> ID;
+            reservation.open("C:\\Users\\talha\\Desktop\\reservations.txt");
+            while (reservation >> id >> mobile >> row1 >> seat1 >> food >> name)
+                for (int m = 1; m > 0; m++)
+                {
+                    if (ID == id)
+                    {
+                        cout << id << "\t" << mobile << "\t" << row1 << seat1 << "\t" << food << "\t" << name << endl;
+
+ 
+
+                    }
+                    else
+                        cout << " The ID no. does not exist \n";
+                    break;
+                }
+            break;
+        }
+
+ 
+
+    } while (x != 7);
+    cout << "Bye, see you again later!";
+    return 0;
+}

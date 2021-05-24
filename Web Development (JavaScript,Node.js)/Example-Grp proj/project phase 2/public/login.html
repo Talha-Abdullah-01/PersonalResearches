@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Site</title>
+    <link rel="stylesheet" href="css/loginStyle2.css">
+
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <h1><b>Login Page</b></h1>
+    </header>
+    <main>
+        <form>
+
+            <fieldset>
+                <legend><b>Parent/Staff</b></legend>
+                <div class="container">
+                    <div class="img">
+                        <img src="img/Login.jpg">
+                    </div>
+                    <div class="userName makeFlex">
+                        <label for="fUserName2"><b>User name</b></label>
+                        <input class="entryFields" type="text" id="fUserName2" size="50" required
+                               placeholder="Enter your user name here" name="userName">
+                        <span class="displayError">Error! Re-check user name.</span>
+                    </div>
+                    <div class="password makeFlex">
+                        <label for="fPassword"><b>Password</b></label>
+                        <input type="password" id="fPassword" size="50" required placeholder="Enter your password here"
+                               name="password" class="entryFields">
+                        <span class="displayError">Error! Re-check password.</span>
+                    </div>
+                    <div class="submitDiv makeFlex">
+                        <input type="submit" id="submit-btn" value="Login">
+                    </div>
+                    <div class="links makeFlex">
+                        <nav>
+                            <ul>
+                                <li><span>Do not have an account? </span><a href="signUp.html" class="nav_link"><b>Sign
+                                    Up</b></a></li>
+                                <li><a href="index.html" class="nav_link">Home</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</div>
+<script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+<script src="JavaScript/login.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "phase2",
+  "version": "1.0.0",
+  "description": "For phase 2",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ahmad",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "formidable": "^1.2.2",
+    "fs-extra": "latest",
+    "mongoose": "^5.12.4",
+    "morgan": "^1.10.0"
+  }
+}

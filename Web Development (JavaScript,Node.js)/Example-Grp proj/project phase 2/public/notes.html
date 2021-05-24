@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notes</title>
+    <link rel="stylesheet" href="css/notes.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header><h1 id="title"></h1></header>
+    <main class="container">
+        <div id="add-note-div">
+            <label for="addNoteInput">Add note</label>&nbsp; &nbsp;
+            <input type="text" id="addNoteInput" width="500" >
+            <input type="button" value="Add new note" id="submitNewNote">
+        </div>
+        <table id="noteTable">
+
+        </table>
+    </main>
+    <div id="backBtnDiv">
+        <input type="button" value="Back to get incidents" id="backBtn">
+    </div>
+    <script src="JavaScript/notes.js" type="module"></script>
+</body>
+</html>

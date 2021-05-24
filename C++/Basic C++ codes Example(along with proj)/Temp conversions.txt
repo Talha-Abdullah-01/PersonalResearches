@@ -1,0 +1,45 @@
+#include <iostream>
+#include <string>
+#include <fstream>
+using namespace std;
+int main()
+{
+    int  Fahrenheit, celcius, C1 = 0, C2 ,F1=0, F2, smallestc, x = 0; // C1= largest celcius, C2=lowest celcius F1,F2 respectively
+    double avg, total = 0, number;
+    ifstream temperature;
+    temperature.open("C:\\Users\\ahmad\\Desktop\\temperatures.txt");
+    while (temperature >> celcius >> Fahrenheit)
+    {
+        if (celcius > C1)
+        {
+            C1 = celcius;
+        }
+        if (Fahrenheit > F1)
+        {
+            F1 = Fahrenheit;
+        }
+    }
+    temperature.close();
+    C2 = C1;
+    F2 = F1;
+    temperature.open("C:\\Users\\ahmad\\Desktop\\temperatures.txt");
+    while (temperature >> celcius >> Fahrenheit)
+    {
+        if (celcius < C2)
+        {
+            C2 = celcius;
+        }
+        if (Fahrenheit < F2)
+        {
+            F2 = Fahrenheit;
+        }
+        total += Fahrenheit;
+        x++;
+    }
+    avg = total / x;
+    temperature.close();
+    cout << " The Average of Fahreheint is " << avg << endl;
+    cout << "The Maximum celcius is " << C1 << " And Its Fahrenheit is " << F1 << endl;
+    cout << "The Minimum celcius is " << C2 << "And Its Fahrenheit is " << F2 << endl;
+    return 0;
+}

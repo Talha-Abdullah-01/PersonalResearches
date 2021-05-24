@@ -1,0 +1,42 @@
+[
+  {
+    "firstName": "Ahmad",
+    "lastName": "Abounahia",
+    "age": "20",
+    "grade": "11",
+    "idStudent": "100",
+    "idParent": "111"
+  },
+  {
+    "firstName": "Talha",
+    "lastName": "Hamyda",
+    "age": "19",
+    "grade": "5",
+    "idStudent": "101",
+    "idParent": "112"
+  },
+  {
+    "firstName": "Ali",
+    "lastName": "Mohamed",
+    "age": "15",
+    "grade": "7",
+    "idStudent": "102",
+    "idParent": "113"
+  },
+  {
+    "firstName": "Messi",
+    "lastName": "Leo",
+    "age": "17",
+    "grade": "7",
+    "idStudent": "103",
+    "idParent": "114"
+  },
+  {
+    "firstName": "Ronaldo",
+    "lastName": "Leo",
+    "age": "11",
+    "grade": "11",
+    "idStudent": "104",
+    "idParent": "115"
+  }
+]

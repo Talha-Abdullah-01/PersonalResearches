@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attachments</title>
+    <link rel="stylesheet" href="css/notes.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header><h1 id="title"></h1></header>
+<main class="container">
+    <form  enctype="multipart/form-data" method="post" id="form" onsubmit="handleSubmit(event)">
+        <caption for="profilePhotos">Add Attachments: </caption>
+        <input type="file" name="profilePhotos" id="profilePhotos" multiple>
+        <br><br>
+        <input type="submit" value="Submit" id="submitBtn">
+    </form>
+    <div id="form-div"></div>
+    <table id="attachmentTable">
+    </table>
+</main>
+<div id="backBtnDiv">
+    <input type="button" value="Back to get incidents" id="backBtn">
+</div>
+<script src="JavaScript/attachments.js" type="module"></script>
+</body>
+</html>

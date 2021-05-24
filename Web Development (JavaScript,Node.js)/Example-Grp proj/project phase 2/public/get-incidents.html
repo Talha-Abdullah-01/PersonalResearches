@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/get-incidents.css">
+</head>
+<body>
+<header><h1 id="title">Get Incidents</h1></header>
+<main>
+    <div>
+        <div id="filersDD-div">
+            <label for="viewSelections">Get Incidents For : </label>
+            <select class="dropdown" name="getIncidentTypes" id="viewSelections" onchange="getSelection()" >
+                <option value="choosingSelection" selected disabled>Choose Selection</option>
+                <option value="particularStudent" >Particular Student</option>
+                <option value="particularGrade">Student of Grade Level</option>
+                <option value="allStudents">All Students</option>
+                <option value="rangeDate">Date Range</option>
+            </select>
+        </div>
+        <div id="inputs-div">
+            <p id="display-text" value=""></p>
+            <input type="text" style="display:none" id="inputToDisp">
+            <br>
+            <label for="start" style="display:none" id="startLabel">From date</label>
+            <input type="date" style="display:none" id="start"><br>
+            <label for="end" style="display:none" id="endLabel">To date</label>
+            <input type="date" style="display:none" id="end"><br>
+            <input type="button" style="display:none" id="btn-sub" value="Search"><br>
+        </div>
+        <div id="displayed-div">
+
+        </div>
+    </div>
+    <div style="display: none" id="backBtn-div">
+        <input type="button" value="Back to summary page" id="backBtnSum">
+    </div>
+</main>
+<script src="JavaScript/get-incidents.js" type="module"></script>
+</body>
+</html>

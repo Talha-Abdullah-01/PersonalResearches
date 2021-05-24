@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reportPage.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+    <h1>Report Incident</h1>
+</header>
+<main>
+    <div>
+        <form id="report-form" >
+            <h1 id="infoStudent"></h1>
+            <fieldset>
+                <legend id="legendId"> Enter The New Incident Here</legend>
+                <br>
+                <div>
+                    <label for="typeIncident">Enter The Type of Incident : </label>
+                    <select class="dropdown" name="incidentType" id="typeIncident" required>
+
+                    </select><br>
+                </div>
+                <br>
+                <div>
+                    <label for="location">Location Of Incident : </label>
+                    <input type="text" size="100" id="location" placeholder="Enter Location Of Incident"
+                           name="locationOfIncident">
+                </div>
+                <br>
+                <div>
+                    <label for="locationTime">Time Of Incident : </label>
+                    <input type="Time" id="locationTime" required name="timeOfIncident">
+                </div>
+                <br>
+                <div>
+                    <label for="dateOfIncident">Date of Incident : </label>
+                    <input type="date" id="dateOfIncident" required name="dateOfIncident">
+                </div>
+                <br>
+
+                <div>
+                    <label for="peopleInvolved">People Involved During Incident : </label>
+                    <input type="text" size="100" id="peopleInvolved" required
+                           placeholder="Enter The ID of student who was involved in the incident"  >
+                    <input type="button" id="addStudent" value="Add">
+                    <div id="table-div-involved" class="table-div">
+                        <table id="table"></table>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <label for="remarks">Teacher Remarks : </label><br>
+                    <textarea name="teacherRemark" id="remarks" cols="30" rows="10"
+                              placeholder="Teacher Remarks on the Incident" value="remarks"></textarea>
+                </div>
+                <br>
+                <div>
+                    <input type="submit" id="submit-btn1" value="Add Incident">
+                </div>
+                <br>
+            </fieldset>
+        </form>
+    </div>
+    </div>
+</main>
+<script src="JavaScript/report.js" type="module"></script>
+</body>
+</html>

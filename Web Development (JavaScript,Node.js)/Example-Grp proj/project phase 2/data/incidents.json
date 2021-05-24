@@ -1,0 +1,69 @@
+[
+  {
+    "attachments": [],
+    "notes": [],
+    "penalty": "Suspended 3 days",
+    "dateOfIncident": "2021-04-01",
+    "studentsId": [
+      100,
+      101
+    ],
+    "incidentType": "misbehave",
+    "locationOfIncident": "backyard",
+    "teacherRemark": "Bad behavior!",
+    "timeOfIncident": "01:02"
+  },
+  {
+    "attachments": [],
+    "notes": [],
+    "penalty": "Suspended 3 days",
+    "dateOfIncident": "2021-04-01",
+    "studentsId": [
+      104
+    ],
+    "incidentType": "fighting",
+    "locationOfIncident": "class room",
+    "teacherRemark": "Bad behavior!",
+    "timeOfIncident": "09:44"
+  },
+  {
+    "attachments": [],
+    "notes": [],
+    "penalty": "Suspended 3 days",
+    "dateOfIncident": "2021-07-10",
+    "studentsId": [
+      102,
+      103
+    ],
+    "incidentType": "arguing",
+    "locationOfIncident": "cafeteria",
+    "teacherRemark": "Bad behavior!",
+    "timeOfIncident": "01:02"
+  },
+  {
+    "attachments": [],
+    "notes": [],
+    "penalty": "Suspended 3 days",
+    "dateOfIncident": "2021-04-01",
+    "studentsId": [
+      103
+    ],
+    "incidentType": "abusing",
+    "locationOfIncident": "Play area",
+    "teacherRemark": "Saying bad words",
+    "timeOfIncident": "03:42"
+  },
+  {
+    "attachments": [],
+    "notes": [],
+    "penalty": "Suspended 3 days",
+    "dateOfIncident": "2021-04-01",
+    "studentsId": [
+      100
+    ],
+    "incidentType": "misbehave",
+    "locationOfIncident": "back yard",
+    "teacherRemark": "Bad behavior!",
+    "timeOfIncident": "11:02"
+  }
+]

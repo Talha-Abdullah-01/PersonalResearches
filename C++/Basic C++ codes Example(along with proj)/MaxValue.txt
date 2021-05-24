@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+int max3(int i, int j, int k);
+void set_max(int a);
+int main()
+{
+    static int maximum;
+    int i, j, k;
+    cout << "Enter first integer : "; cin >> i;
+    cout << "Enter second integer: "; cin >> j;
+    cout << "Enter third integer : "; cin >> k;
+    maximum = max3(i, j, k);
+    cout << "The maximum = ";
+    set_max(maximum);
+    return 0;
+}
+
+ 
+
+
+// maximum is a global variable.
+// Updates maximum if parameter is larger
+void set_max(int a)
+{
+    static int maximum;
+    if (maximum < a)
+        maximum = a;
+    cout<< maximum;
+}
+int max3(int i, int j, int k)
+{
+    static int maximum;
+    maximum = i;
+    set_max(j);
+    set_max(k);
+    return maximum;
+}

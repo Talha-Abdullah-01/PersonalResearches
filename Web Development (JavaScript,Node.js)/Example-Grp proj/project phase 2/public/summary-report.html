@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Summary page</title>
+    <link rel="stylesheet" href="css/summaryPage.css">
+</head>
+<body>
+<header><h1>Annual Summary Report</h1></header>
+<main>
+    <div>
+        <label for="annualYear">Select the Summary Report for the Academic Year : </label>
+        <input type="number" required id="annualYear" value="year">
+    </div>
+    <div class="make-flex">
+        <label for="radio-div">Please select one of the options: </label>
+        <div id="radio-div">
+            <input type="radio" name="radio" id="radioType" value="type">
+            <label for="radioType">Type</label>
+            <input type="radio" name="radio" id="radioGrade" value="grade">
+            <label for="radioGrade">Grade</label>
+        </div>
+    </div>
+    <div id="type-div">
+
+    </div>
+    <div id="grade-div" style="display: none">
+        <label for="gradeInput">Please enter grade year:</label>
+        <input type="text" id="gradeInput" name="gradeInput">
+    </div>
+    <div id="sub-div">
+        <input type="button" value="Search" id="submitBtn">
+    </div>
+    <div id="display-div">
+         <table id="table"></table>
+        <div id="display-incidents"></div>
+    </div>
+</main>
+<script src="JavaScript/summary.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+body{
+    font-weight: bold;
+    font-size:1.1rem;
+    margin: 20px;
+    background-image: url('../img/background-main4.jpg');
+    background-size: cover;
+    min-height: 100vh;
+
+}
+table{
+    grid-area: table;
+    width: 100%;
+}
+table{
+    margin: 20px;
+    width: 80%;
+}
+table th{
+    background-color: darkslategray;
+    color: white;
+    text-align: left;
+}
+input[type="text"]{
+    width: 500px;
+}
+a{
+    color: blue;
+}

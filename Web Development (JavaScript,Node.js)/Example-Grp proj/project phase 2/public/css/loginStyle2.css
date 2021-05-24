@@ -1,0 +1,61 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    background-color: lightyellow;
+}
+.container{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas: "img img"
+"userName userName"
+"password password"
+"submit submit"
+"links links";
+    grid-gap: 10px;
+}
+.img{
+    grid-area: img;
+    text-align: center;
+}
+.userName{
+    grid-area: userName;
+}
+.password{
+    grid-area: password;
+}
+.submitDiv{
+    grid-area: submit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.links{
+    grid-area: links;
+}
+.makeFlex{
+    display: flex;
+    flex-direction: column;
+}
+.entryFields{
+    height: 25px;
+}
+input[type="submit"]{
+    width: 50%;
+    height: 25px;
+}
+.displayError{
+    color: red;
+    visibility: hidden;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

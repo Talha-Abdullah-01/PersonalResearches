@@ -1,0 +1,74 @@
+html{
+    border: 100px solid darkcyan;
+    padding: 5%;
+}
+body{
+    font-size: 15px;
+    font-family: Arial;
+    background-color: lightblue;
+}
+.wrapper{
+    display: grid;
+    justify-content: space-evenly;
+}
+.container{
+    padding-top:20px;
+    font-size: 20px;
+    font-family: "Arial Rounded MT Bold";
+    color: black;
+}
+.division{
+    display: flex;
+    justify-content: center;
+}
+.EntryFields{
+    display: inline;
+    grid-column: 2/3;
+    height: 18px;
+    width: 60%;
+    padding:5px;
+}
+header{
+    grid-column: 2/2;
+    grid-row:1/2;
+    justify-content: center;
+
+}
+main{
+    grid-column: 1/4;
+}
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: darkred;
+}
+nav ul {
+    display: flex;
+
+}
+.division1{
+    margin-left: 10%;
+}
+nav li {
+    list-style: none;
+    font-size: 1rem;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: black;
+
+}
+.nav_link:hover {
+    text-decoration: underline;
+    color: green;
+    font-size: 1rem;
+}
+#sb{
+    padding-right:50px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: Serif;
+
+}

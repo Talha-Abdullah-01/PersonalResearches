@@ -1,0 +1,13 @@
+.table-div{
+    grid-area: table;
+    width: 100%;
+}
+#table{
+    margin: 20px;
+    width: 80%;
+}
+#table th{
+    background-color: lightseagreen;
+    color: white;
+    text-align: left;
+}
