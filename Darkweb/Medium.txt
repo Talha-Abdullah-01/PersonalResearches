@@ -46,6 +46,15 @@ Benefits: extra layer of encryption, more privacy and anonymity, Bypass censorsh
 Comp->VPN->TOR
 
 User-VPN Encryption/TLS->VPN-TLS->TOR
+Do not maximize browser
+
+Common ports bypass firewalls: 80, 443
+
+To be more secure: history: Never remember, always tracking protection, Make sure it block pop=up 
+and all 3 settings
+Block dangerous and decreptive content: also subcontents
+
+
 
 
 

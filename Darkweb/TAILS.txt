@@ -1,0 +1,52 @@
+TOR Browser: Disadvantages:
+=> Normal Operating systems collects data
+=> Installed programs also collects data
+=> Only TOR Browser traffic is routed through TOR network
+=> Installed programs and OS leak data
+=> Programs and OS can be exploited to hack your computer and deanonymize 
+
+Tails: the amnesic incognito live system (portable storage)- uses RAM, never saves once restart
+=> Leaves no trace, => Private and anonymous
+
+Download tails as a virtual box
+=> which makes it lose its benefits- Not fully live, leave traces, not portable,npot private, not secure
+
+Download tails on DVD(good way)
+=> Not portable, no persistence
+
+Download tails on USB flash drive(Best way)
+
+Installing Tails:
+Need USB min 8GB
+https://tails.boum.org/install/win/usb-download/index.en.html
+https://www.balena.io/etcher/
+Select Img and USB from ether and configure before flashing , verify =>
+Verification=> Download the Tails verification extension and select file from website
+
+Usage:
+Connect Tails USB, Start/Restart computer, Enter boot menu, boot from USB/External storage
+
+Mac Address- Media Access Control: Permanent, Physical, Unique. Assigned by manufacturer
+
+Tails - Persistence
+Tails is live and amnesic - only relies on RAM. Never touches other storage spaces
+Benefits: secure, privacy and anonymity 
+Disadvantages: Cant store anything
+
+Persistence allows us to store files on Tails
+Benefits: Stores files, password etc, [Modify settings], [Install programs/plugins] . [] =>dont do if udk
+Disadvantages: More unique->easier to detect, incorrect settings or vulnerable software can be threat to privacy
+
+Applications->Tails->Configure persistent vol
+Pasphrase to encrypt [ more like password]
+
+How to use Bridges/Pluggable ports with Tails:
+Restart, boot
+Click on + and network configuration -> Click on use bridge
+
+
+
+
+
+
+
