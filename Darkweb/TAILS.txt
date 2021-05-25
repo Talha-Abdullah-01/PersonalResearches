@@ -44,6 +44,46 @@ How to use Bridges/Pluggable ports with Tails:
 Restart, boot
 Click on + and network configuration -> Click on use bridge
 
+Using insecure browser
+Captive portals.. directly connects my ip to the internet
+Applications->Internet->Unsafe browser
+
+Connecting VPN from tails ( Optional )
+Method 1: example: ZSVPN ( using vpn client )
+Method 2: 
+Manually
+1) Make an admin user/password at reboot
+2)	Applications-> Terminal
+	sudo su
+[ will show root@ -> Admin ]
+3) 	type
+	apt -get install openvpn
+4) get configuration files
+5) Added rule to tails to connect to vpn
+ in terminal
+	gedit /etc/ferm/ferm.conf 
+	Will open the file ->Whitelist access to local servers
+	Open the config file:
+	remote: IP 
+	copy IP and type under whitelist 
+	[IP] proto udp dport [port] {mod owner uid-owner root ACCEPT;}
+	
+6) config firewall to allow traffic through VPN 
+Scroll in the terminal config:
+	#tor is allowed to do anything 
+	outerface tun0 mod owner....
+7) etc/init.d/ferm restart
+will restart.. if it fails.. other configs r wrong
+
+8) change directory: cd Persistent/Tor....
+then 	openvpn --config config.ovpn
+ 
+
+
+
+
+
+
 
 
 
