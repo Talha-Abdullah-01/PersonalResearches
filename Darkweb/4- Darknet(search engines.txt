@@ -1,0 +1,17 @@
+how to find darknet websites
+1) search engines
+2) other websites
+3) friends
+
+Search engines
+duckduckgo.com - does not collect data and used to discover tor hidden services
+notEvil-can search only tor hidden services
+torch search engine- similar search engine (ads/ which are mostly scam)
+ahmia - same search for hidden services
+
+2nd method - through other websites
+1) hidden wiki (contains alot of scam etc/care)
+2) dark.fail (verified)
+3) deep web subredit
+4) dread onion service
+5) hidden answers

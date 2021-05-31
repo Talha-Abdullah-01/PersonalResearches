@@ -1,0 +1,29 @@
+Email services
+
+Forsaken fake ID identity name generator
+
+1)Accessing service - going outside tor network
+risk- because google keeps log
+
+* Temporary email accounts- expiry after some time
+No setup, no personal info, great for quick access, bypass verification
+TorGuerrillaMail- use scrambled address
+
+* Focussed and proper mail providers - 
+No tracking, no logs, end to end encryption, no personal info, available on clearnet onion services
+=> ProtonMail- Enforces HTTPS , send emails to clearnet and darknet address, open source, use their 
+own servers in Switzerland
+Security - Safer - settings in tor
+Can get pushed by agencies
+
+*More secure email providers
+Operate fully on darknet emails only - onion services
+1)Elud email service providers
+Set security from safest - does not require js
+Elud allows communication between clearnet as well as darknet
+2) TorBox 
+Difference between elud- torbox does not allow communcation through clearnet
+
+Picking right email service:
+
+https://ibb.co/Gt5PXgc
