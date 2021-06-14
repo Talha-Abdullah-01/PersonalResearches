@@ -1,0 +1,25 @@
+Remove identifying information, share files privately
+
+Clean metadata -> cleans the extra info found in the image/file
+
+Google drive, dropbox etc are not private, tracking, not secure and log data
+Server has access to file=> employees, hackers and agencies
+
+send through firefox send
+
+//send.forefox.com/download/(decryption key)
+
+More private method - peer to peer 
+will create onion service, more like creating darknet website
+click image -> share via onion service  ->start sharing 
+
+Handling files securely- deleted files can be recovered
+image-> wipe-> 2 is better (wont work on usb, just hardware)
+click anywhere->wipe available disk space
+
+applications->utilities->disk 
+options-> Erase: Overwrite existing data with zeroes
+type :FAT,NTFS for windows, (if encrypted is used, new passphrease which is required)
+
+
+

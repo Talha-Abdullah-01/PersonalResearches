@@ -1,0 +1,59 @@
+Manual encryption is important as well- so hackers find it difficult to decrypt
+
+* Symmetric and asymmetric encryption 
+
+PGP - Pretty good Encryption
+* very strong public key encryption
+* unbroken
+* Encrypt emails, text or files
+* Sign message or files to verify integrity
+
+* Symmetric encryption - Same key used by two users to decrypt the data ( known as secret key) - problem as key still has to be shared
+
+* Asymmetric encryption- Different keys are used to decrypt the data. one for encrypt and other gonna decrypt
+John makes a public key and private key . public key is shared with other user and private key can be used to decrypt as soon as john sends encrypted data
+
+* Generating PGP key pairs:
+
+clipboard icon or Applications- utilities and passwords and keys => GnuPG keys
+Press + icon => PGP key => fake name/pvt email
+advanced type => encryption type - RSA (strongest) , key strength (4096)
+this will create a new pair of key
+click left click, on properties
+
+*Importing/Exporting keys:
+Exporting public key (never share private key)
+File on top -> export -> Tor browser directory, can use Armored PGP keys
+
+once get public key 
+Files on top->import -> select the public key 
+use text editor and type the secret message , copy the message , clipboard icon -> sign/encrypt
+choose the pair key and there will be a paste which is the encrypted data
+
+once get the encrypted data -> clipboard will have something, click clipboard icon->decrypt
+
+
+* Digital signatures - 
+Sender encrypts messages with recievers public key AND signs message with own private key
+Receiver verifies signature with sender's public key AND decrypts message with own private key
+
+* Signing messages and encrypt
+Text editor - type secret message - copy paste and clipboard icon and sign/encrypt, choose the one and sign message 
+Reciever got -> clipboard icon-> decrypt and enter ur own password
+
+* Encrypting and decrypting files
+Need to send an image (after clearing meta data) .. right click=> encrypt and tick the user, can sign as well
+once image is recieved, right click image -> open with decrypt file 
+
+*Using key servers - server contains a number of keys -> anyone can upload his key
+Download other users key from server
+
+Go to clipboard icon - > edit ->preferences -> publish keys to -> server (onion)
+then Remote->Sync and publish key -> sync ->uploaded on the key server
+
+Other user-> find remote keys -> search for keys containing ->email/name
+
+
+
+
+

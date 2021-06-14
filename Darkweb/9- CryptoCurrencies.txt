@@ -1,0 +1,14 @@
+Sending/Receiving funds
+
+Traditional methods are definitely not private
+
+*How cryptocurrency works:
+Centralized structure manages account, security and privacy
+But it definitely is not private
+Ideal way is to use cryptocurrency
+
+Miners->track every transaction, have a copy of blockchain
+
+Pros-> decentralised, Private (Wallet address is used, using fake identity/address will not link to real identity)
+
+Cons->Public transactions, Public balance

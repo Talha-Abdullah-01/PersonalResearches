@@ -1,0 +1,23 @@
+Communcation method - Instant Messaging
+
+Most instant message services are not private , not secure, log data and track users
+
+XMPP/JABBER
+Free and open, not owned by anyone, decentralized, enhance privacy, widely used
+
+on github - public XMPP servers with tor hidden service
+
+Pidgin comes along with TOR.
+Instant messenger
+Applications->internet->Pidgin
+Make a new account- XMPP, same user and name, domain(found when signed up)
+
+Modify Account -> server through github (find the server)
+
+Configure pidgin to use end to end encryption=>
+Plugin- OTR - Off the record - end to end encryption, authenticaiton, perfect forward secracy
+
+Tools->plugins->off the record->configure->Enable pvt msging and auto pvt messaging and require pvt msging is ticked
+
+Verifying messages- 
+Use authentication 
