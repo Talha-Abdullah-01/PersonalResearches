@@ -11,4 +11,58 @@ Miners->track every transaction, have a copy of blockchain
 
 Pros-> decentralised, Private (Wallet address is used, using fake identity/address will not link to real identity)
 
-Cons->Public transactions, Public balance
+Cons->Public transaction
+
+*Creating bitcoin wallet
+Software to hold your keys and manage cryptocurrency
+Using Electrum- Using tor
+Electrum - Fast- no need to download blockchain
+Account can be used from multiple devices
+
+Applications->internet->Electrum Bitcoin Wallet
+
+How to download the latest version of electrum bitcoin wallet:
+1) electrum.org
+2) Linux-> save will be stored in tor browser 
+3) download signature and store in tor browser
+4) Download developers public key
+5) Check and verify integrity 
+6) copy in persistent directory- so no need to install again
+7) go properties -> allow files to executable
+
+How to create a bitcoin wallet acc:
+1) name of wallet -> next
+2) Standard wallet-> next
+3) seed-> create a new seed (if already have a prev acc then we can restore through i already have seed)
+4) seed type -> Segwit->Next
+seed is a type of text to login to wallet (secure)
+5) confirm seed 
+
+blue network - through tor , green- through direct , red- not connected to network
+
+* 4 ways to anonymously get bitcoin=>
+1) Create bitcoins urself -> mine bitcoins
+2) using an exchange+Tumbler/mixer -> complicated, not very anonymous
+3) bitcoin ATMs ( check if ur coinatmradar.com and check if ATM is available in ur country)
+4) Peer-to-Peer (with cash)
+
+*Using bitcoin ATM's
+=> Legacy address -> new account -> similar just choose legacy instead of segwit
+legacy address -> starts wid 1 and segwit -> starts wid b
+=> bank bitcoin and add to bitcoin wallet
+
+* Using peer to peer
+interact directly with seller, ID may be required
+=>Potentially anonymous
+* Local bitcoins and paxful are better => on bitcoin official site
+Paxful -> 
+More anonymous
+Need to make new acc on paxful=> wont ask for much identity
+
+
+
+
+
+
+
+
