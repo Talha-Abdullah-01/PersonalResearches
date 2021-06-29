@@ -59,6 +59,31 @@ Paxful ->
 More anonymous
 Need to make new acc on paxful=> wont ask for much identity
 
+Mixers/Tumblers-
+send coins to server/service -> to a wallet
+Mixers hide sources of funds
+Examples
+Bitcoin laundry(instant service), anonymous Bitcoin mixer, premium bitcoin mixer(expensive)
+
+MONERA/XMR-
+decentralised, private. Transactions are untraceable and unlinkable
+Need to install monero wallet
+
+Installing ->
+Open monero in terminal (type ls)
+(./start -gui.sh)
+It will open a install portal -> advanced mdoe since we using tor
+Create wallet-> wallet location(shud be switched to a persistent directory)
+
+
+
+
+
+
+
+
+
+
 
 
 
