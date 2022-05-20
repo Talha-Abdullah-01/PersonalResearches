@@ -1,0 +1,13 @@
+ private static byte[] steg_process(byte[] orig_data, byte[] h_data){
+        int count=0;
+        int temp;
+        for(int i=0;i<h_data.length;i++){
+           for(int j=6;j>=0;j-=2){              
+              temp=orig_data[count] & 0xFC;
+              temp=((h_data[i]>>>j) & 0x03) | (byte)temp;
+              orig_data[count]=(byte)temp;            
+              count++;                    
+            }
+         }
+        return orig_data;
+    }

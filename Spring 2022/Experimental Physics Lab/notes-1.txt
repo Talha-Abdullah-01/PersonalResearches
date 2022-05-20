@@ -1,0 +1,27 @@
+distance decimal points is the error for all. 
+
+Average
+=average()
+bottom right on the square of cell, avg of all the column, double click
+
+standard deviation
+=stdev()
+
+STDOM
+=(std deviation)/sqrt(n)
+
+
+To make a graph between x and y:
+select empty cell, insert, scatter, first option (will have an empty graph)
+right click, select data
+
+To add the y and x axis names 
+right click-> design, add chart elements , add titles, primary and horizontal
+
+To make lines betweem points
+RIght click on point, and add trendline, display equation and R-squared value on chart
+
+Slope= y=mx+c (m is slope)
+ 
+Slope
+=Linest(known y,known y,TRUE,TRUE)
