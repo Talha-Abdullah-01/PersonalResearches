@@ -1,6 +1,0 @@
-12/5 - 14:00-16:00 I10-B303	Comp sec 
-15/5 - 08:00-10:00 B05-0231 	Design and analysis
-17/5 - 08:00-10:00 BCR-E113	Physics 1
-17/5 - 14:00-16:00 BCR-E201	Network Security
-23/5 - 11:00-13:00 BCR-I111	Database
-
