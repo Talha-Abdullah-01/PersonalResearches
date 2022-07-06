@@ -1,0 +1,82 @@
+﻿<textcomponents>
+
+<component id='ID_inst'>
+	<text><![CDATA[<b>Activity – Identify Router Components</b><br><br>Descriptions of router functions and hardware parts are provided in the table. Drag each router component name to its function/description.]]></text>
+</component>
+
+<component id='ID_txt01'>
+	<text><![CDATA[Connects routers to external networks, usually over a large distance.]]></text>
+</component>
+
+<component id='ID_txt02'>
+	<text><![CDATA[A way to remotely access the CLI across a network interface.]]></text>
+</component>
+
+<component id='ID_txt03'>
+	<text><![CDATA[Connects computers, switches, and routers for internal networking.]]></text>
+</component>
+
+<component id='ID_txt04'>
+	<text><![CDATA[A local port which uses USB or low-speed, serial connections to manage network devices.]]></text>
+</component>
+
+<component id='ID_txt05'>
+	<text><![CDATA[A port to manage routers – using telephone lines and modems.]]></text>
+</component>
+
+<component id='ID_txt06'>
+	<text><![CDATA[<b>Router Component Name</b>]]></text>
+</component>
+
+<component id='ID_txt07'>
+	<text><![CDATA[<b>Function/Description</b>]]></text>
+</component>
+
+<!--Drag and Drop-->
+<component id='ID_ip1_DS'>
+	<text><![CDATA[<font color="#393536">WAN interface</font>]]></text>
+</component>
+
+<component id='ID_ip2_DS'>
+	<text><![CDATA[<font color="#393536">AUX port</font>]]></text>
+</component>
+
+<component id='ID_ip3_DS'>
+	<text><![CDATA[<font color="#393536">LAN interface</font>]]></text>
+</component>
+
+<component id='ID_ip4_DS'>
+	<text><![CDATA[<font color="#393536">Telnet or SSH</font>]]></text>
+</component>
+
+<component id='ID_ip5_DS'>
+	<text><![CDATA[<font color="#393536">Console port</font>]]></text>
+</component>
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched the router component names to their functions/descriptions.]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched the router component names to their functions/descriptions. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+</textcomponents>

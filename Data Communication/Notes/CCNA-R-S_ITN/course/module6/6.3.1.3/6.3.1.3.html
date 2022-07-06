@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.3.1.3 Router Memory</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_6.3.1.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Routers</h1>
+        <h2>Anatomy of a Router</h2>
+      </div>
+      <div id="content">
+          <p>A router has access to four types of memory: RAM, ROM, NVRAM, and Flash.</p>
+          <p></p>
+          <p>
+            <b>RAM</b>
+          </p>
+          <p>RAM is used to store various applications and processes including:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Cisco IOS - </b>The IOS is copied into RAM during bootup.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Running configuration file - </b>This is the configuration file that stores the configuration commands that the router IOS is currently using. It is also known as the running-config.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>IP routing table - </b>This file stores information about directly-connected and remote networks. It is used to determine the best path to use to forward packets.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>ARP cache - </b>This cache contains the IPv4 address to MAC address mappings, similar to the Address Resolution Protocol (ARP) cache on a PC. The ARP cache is used on routers that have LAN interfaces, such as Ethernet interfaces.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Packet buffer - </b>Packets are temporarily stored in a buffer when received on an interface or before they exit an interface.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Like computers, Cisco routers actually use dynamic random-access memory (DRAM). DRAM is a very common kind of RAM that stores the instructions and data needed to be executed by the CPU. Unlike ROM, RAM is volatile memory and requires continual power to maintain its information. It loses all of its content when the router is powered down or restarted.</p>
+          <p></p>
+          <p>By default 1941 routers come with 512 MB of DRAM soldered on the main system board (onboard) and one dual in-line memory module (DIMM) slot for memory upgrades of up to an additional 2.0 GB. Cisco 2901, 2911, and 2921 models come with 512 MB of onboard DRAM. Note that first generation ISRs and older Cisco routers do not have onboard RAM.</p>
+          <p></p>
+          <p>
+            <b>ROM</b>
+          </p>
+          <p>Cisco routers use ROM to store:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Bootup instructions - </b>Provides the startup instructions. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Basic diagnostic software - </b>Performs the power-on self-test (POST) of all components.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Limited IOS - </b>Provides a limited backup version of the OS, in case the router cannot load the full featured IOS. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>ROM is firmware embedded on an integrated circuit inside the router and does not lose its contents when the router loses power or is restarted.</p>
+          <p></p>
+          <p>
+            <b>NVRAM</b>
+          </p>
+          <p>NVRAM is used by the Cisco IOS as permanent storage for the startup configuration file (startup-config). Like ROM, NVRAM does not lose its contents when power is turned off. </p>
+          <p></p>
+          <p>
+            <b>Flash Memory</b>
+          </p>
+          <p>Flash memory is non-volatile computer memory used as permanent storage for the IOS and other system related files. The IOS is copied from flash into RAM during the bootup process.</p>
+          <p></p>
+          <p>Cisco 1941 routers come with two external Compact Flash slots. Each slot can support high-speed storage densities upgradeable to 4GB in density.</p>
+          <p></p>
+          <p>The figure summarizes the four types of memory.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

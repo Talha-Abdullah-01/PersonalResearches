@@ -1,0 +1,74 @@
+﻿<textcomponents>
+
+
+<!--Slide 1-->
+<component id='ID_inst'>
+	<text><![CDATA[<b>Activity – The Router Boot Process</b><br><br>Drag each of the steps on the left to appropriate field in the table on the right to show the router boot process order.
+]]></text>
+</component>
+
+<component id='ID_header01'>
+	<text><![CDATA[<b>The Router Boot Process</b>]]></text>
+</component>
+
+<component id='ID_txt01'>
+	<text><![CDATA[Step 1]]></text>
+</component>
+
+<component id='ID_txt02'>
+	<text><![CDATA[Step 2]]></text>
+</component>
+
+<component id='ID_txt03'>
+	<text><![CDATA[Step 3]]></text>
+</component>
+
+<component id='ID_txt04'>
+	<text><![CDATA[Step 4]]></text>
+</component>
+
+
+<!--Drag and Drop -->
+<component id='ID_a01_DS'>
+	<text><![CDATA[<font color="#393536">Load the IOS (operating system file for the router – loaded into RAM after Bootstrap finds the IOS <br/>file to be used)</font>]]></text>
+</component>
+
+<component id='ID_a02_DS'>
+	<text><![CDATA[<font color="#393536">Perform POST (hardware check – performed by built-in ROM chip)</font>]]></text>
+</component>
+
+<component id='ID_a03_DS'>
+	<text><![CDATA[<font color="#393536">Load the Configuration File from FLASH (NVRAM), a TFTP Server OR Go into Setup Mode (to create a Configuration file)</font>]]></text>
+</component>
+
+<component id='ID_a04_DS'>
+	<text><![CDATA[<font color="#393536">Load Bootstrap (copied from ROM to RAM – locates the IOS)</font>]]></text>
+</component>
+
+
+<!--Drag and Drop-->
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have correctly listed the order of the router boot proces.]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not correctly listed the order of the router boot process. Please try again.]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+</textcomponents>

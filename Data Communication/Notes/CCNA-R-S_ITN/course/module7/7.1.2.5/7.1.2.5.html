@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.1.2.5 Separating Multiple Communications</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_7.1.2.5_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Transport Layer Protocols</h1>
+        <h2>Introducing TCP and UDP</h2>
+      </div>
+      <div id="content">
+          <p>The transport layer must be able to separate and manage multiple communications with different transport requirement needs. For example, consider a user connected to a network on an end device. The user is simultaneously receiving and sending email and instant messages, viewing websites, and conducting a Voice over IP (VoIP) phone call. Each of these applications is sending and receiving data over the network at the same time, despite different reliability requirements. Additionally, data from the phone call is not directed to the web browser, and text from an instant message does not appear in an email.</p>
+          <p></p>
+          <p>For reliability, users require that an email or web page be completely received and presented in full, for the information to be considered useful. Slight delays in loading the email or webpage are generally acceptable, as long as the final product is shown in its entirety and correctly. In this example, the network manages the resending or replacement of missing information, and does not display the final product until everything is received and correctly assembled.</p>
+          <p></p>
+          <p>In contrast, occasionally missing small parts of a telephone conversation might be considered acceptable. Even if some small parts of a few words are dropped, one can either infer the missing audio from the context of the conversation or ask the other person to repeat what was said. This is considered preferable to the incurred delays if the network were to manage and resend missing segments. In this example, the user, not the network, manages the resending or replacement of missing information.</p>
+          <p></p>
+          <p>As shown in the figure, for TCP and UDP to manage these simultaneous conversations with varying requirements, the TCP and UDP-based services must keep track of the various applications communicating. To differentiate the segments and datagrams for each application, both TCP and UDP have header fields that can uniquely identify these applications. These unique identifiers are the port numbers.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

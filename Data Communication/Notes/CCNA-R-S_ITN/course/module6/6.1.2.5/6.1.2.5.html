@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.1.2.5 Encapsulating IP</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_6.1.2.5_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Network Layer Protocols</h1>
+        <h2>Characteristics of the IP protocol</h2>
+      </div>
+      <div id="content">
+          <p>IP encapsulates, or packages, the transport layer segment by adding an IP header. This header is used to deliver the packet to the destination host. The IP header remains in place from the time the packet leaves the network layer of the source host until it arrives at the network layer of the destination host.</p>
+          <p></p>
+          <p>Figure 1 shows the process for creating the transport layer PDU. Figure 2 shows the subsequent process for creating the network layer PDU.</p>
+          <p></p>
+          <p>The process of encapsulating data layer by layer enables the services at the different layers to develop and scale without affecting other layers. This means that transport layer segments can be readily packaged by IPv4 or IPv6 or by any new protocol that might be developed in the future. </p>
+          <p></p>
+          <p>Routers can implement these different network layer protocols to operate concurrently over a network to and from the same or different hosts. The routing performed by these intermediate device only considers the contents of the packet header that encapsulates the segment. In all cases, the data portion of the packet, that is, the encapsulated transport layer PDU, remains unchanged during the network layer processes.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

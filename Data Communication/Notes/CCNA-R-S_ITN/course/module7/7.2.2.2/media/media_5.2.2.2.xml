@@ -1,0 +1,155 @@
+﻿<textcomponents>
+	
+	<component id="ID_title">
+		<text><![CDATA[<b>Acknowledgement of TCP Segments</b>]]></text>
+	</component>
+	
+	<component id="ID_txt001">
+	<text><![CDATA[Start with byte #1, <br/>I am sending 10 bytes.]]></text>
+	</component>
+	
+	<component id="ID_txt002">
+	<text><![CDATA[I received 10 bytes <br/>starting with byte #1.<br/>I expect byte #11 next.]]></text>
+	</component>
+	
+	<component id="ID_txt01">
+	<text><![CDATA[Source Port]]></text>
+	</component>
+	
+	<component id="ID_txt02">
+	<text><![CDATA[Destination Port]]></text> 
+	</component>
+	
+	<component id="ID_txt03">
+	<text><![CDATA[Sequence Number]]></text> 
+	</component>
+	
+	<component id="ID_txt04">
+	<text><![CDATA[Acknowledgement Numbers]]></text> 
+	</component>
+	
+	<component id="ID_txt05">
+	<text><![CDATA[...]]></text> 
+	</component>
+	
+	<component id="ID_txt06">
+	<text><![CDATA[Network]]></text> 
+	</component>
+	
+	<component id="ID_txt07">
+	<text><![CDATA[Source]]></text>
+	</component>
+	
+	<component id="ID_txt08">
+	<text><![CDATA[Dest.]]></text> 
+	</component>
+	
+	<component id="ID_txt09">
+	<text><![CDATA[Seq.]]></text> 
+	</component>
+	
+	<component id="ID_txt10">
+	<text><![CDATA[Ack.]]></text> 
+	</component>
+	
+	<component id="ID_txt11">
+	<text><![CDATA[1028]]></text> 
+	</component>
+	
+	<component id="ID_txt12">
+	<text><![CDATA[23]]></text> 
+	</component>
+	
+	<component id="ID_txt13">
+	<text><![CDATA[<b>1</b>]]></text>
+	</component>
+	
+	<component id="ID_txt14">
+	<text><![CDATA[<b>1</b>]]></text> 
+	</component>
+	
+	<component id="ID_txt15">
+	<text><![CDATA[...]]></text> 
+	</component>
+	
+	<component id="ID_txt07a">
+	<text><![CDATA[Source]]></text>
+	</component>
+	
+	<component id="ID_txt08a">
+	<text><![CDATA[Dest.]]></text> 
+	</component>
+	
+	<component id="ID_txt09a">
+	<text><![CDATA[Seq.]]></text> 
+	</component>
+	
+	<component id="ID_txt10a">
+	<text><![CDATA[Ack.]]></text> 
+	</component>
+	
+	<component id="ID_txt11a">
+	<text><![CDATA[1028]]></text> 
+	</component>
+	
+	<component id="ID_txt12a">
+	<text><![CDATA[23]]></text> 
+	</component>
+	
+	<component id="ID_txt13a">
+	<text><![CDATA[<b>11</b>]]></text>
+	</component>
+	
+	<component id="ID_txt14a">
+	<text><![CDATA[<b>2</b>]]></text> 
+	</component>
+	
+	<component id="ID_txt15a">
+	<text><![CDATA[...]]></text> 
+	</component>
+	
+	<component id="ID_txt07b">
+	<text><![CDATA[Source]]></text>
+	</component>
+	
+	<component id="ID_txt08b">
+	<text><![CDATA[Dest.]]></text> 
+	</component>
+	
+	<component id="ID_txt09b">
+	<text><![CDATA[Seq.]]></text> 
+	</component>
+	
+	<component id="ID_txt10b">
+	<text><![CDATA[Ack.]]></text> 
+	</component>
+	
+	<component id="ID_txt11b">
+	<text><![CDATA[23]]></text> 
+	</component>
+	
+	<component id="ID_txt12b">
+	<text><![CDATA[1028]]></text> 
+	</component>
+	
+	<component id="ID_txt13b">
+	<text><![CDATA[<b>1</b>]]></text>
+	</component>
+	
+	<component id="ID_txt14b">
+	<text><![CDATA[<b>11</b>]]></text> 
+	</component>
+	
+	<component id="ID_txt15b">
+	<text><![CDATA[...]]></text> 
+	</component>
+	
+	<component id="ID_txt16">
+	<text><![CDATA[10 bytes]]></text> 
+	</component>
+	
+	<component id="ID_txt17">
+	<text><![CDATA[more bytes starting with byte #11]]></text> 
+	</component>
+
+</textcomponents> 

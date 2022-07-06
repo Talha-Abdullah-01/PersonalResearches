@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.3.3.5 Packet Tracer - Configure Layer 3 Switches</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_5.3.3.5_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>LAN Switches</h1>
+        <h2>Layer 3 Switching</h2>
+      </div>
+      <div id="content">
+          <p>The Network Administrator is replacing the current router and switch with a new Layer 3 switch. As the Network Technician, it is your job to configure the switch and place it into service. You will be working after hours to minimize disruption to the business.</p>
+          <p></p>
+          <p>
+            <a href="../../files/5.3.3.5%20Packet%20Tracer%20-%20Configure%20Layer%203%20Switches%20Instructions.pdf" target="_blank">Packet Tracer - Configure Layer 3 Switches Instructions</a>
+          </p>
+          <p></p>
+          <p>
+            <a href="../../files/5.3.3.5%20Packet%20Tracer%20-%20Configure%20Layer%203%20Switches.pka" target="_blank">Packet Tracer - Configure Layer 3 Switches - PKA</a>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

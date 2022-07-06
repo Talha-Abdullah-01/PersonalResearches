@@ -1,0 +1,27 @@
+﻿<textcomponents>
+
+<component id='ID_title'>
+	<text><![CDATA[<b>Netstat Output</b>]]></text>
+</component>
+
+<component id="ID_s1_caption">
+<text><![CDATA[Protocol used]]></text>
+</component>
+
+<component id="ID_s2_caption">
+<text><![CDATA[Source Port]]></text> 
+</component>
+
+<component id="ID_s3_caption">
+<text><![CDATA[Address or name of remote host]]></text> 
+</component>
+
+<component id="ID_s4_caption">
+<text><![CDATA[Destination Port]]></text> 
+</component>
+
+<component id="ID_s5_caption">
+<text><![CDATA[Connection State]]></text> 
+</component>
+
+</textcomponents>

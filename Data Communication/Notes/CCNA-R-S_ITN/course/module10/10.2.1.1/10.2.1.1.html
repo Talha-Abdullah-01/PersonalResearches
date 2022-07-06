@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.2.1.1 Application Layer Protocols Revisited</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_10.2.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Well-Known Application Layer Protocols and Services</h1>
+        <h2>Common Application Layer Protocols </h2>
+      </div>
+      <div id="content">
+          <p>There are dozens of application layer protocols, but on a typical day you probably use only five or six. Three application layer protocols that are involved in everyday work or play are: </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Hypertext Transfer Protocol (HTTP)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Simple Mail Transfer Protocol (SMTP)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Post Office Protocol (POP)</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>These application layer protocols make it possible to browse the web and send and receive email. HTTP is used to enable users to connect to web sites across the Internet. SMTP is used to enable users to send email. And POP is used to enable users to receive email.</p>
+          <p></p>
+          <p>The next few pages focus on these three application layer protocols.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

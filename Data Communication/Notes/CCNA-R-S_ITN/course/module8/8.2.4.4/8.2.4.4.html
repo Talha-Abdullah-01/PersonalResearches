@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.2.4.4 Dynamic Configuration of a Global Unicast Address using DHCPv6</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_8.2.4.4_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IPv6 Network Addresses</h1>
+        <h2>IPv6 Unicast Addresses</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>DHCPv6</b>
+          </p>
+          <p></p>
+          <p>Dynamic Host Configuration Protocol for IPv6 (DHCPv6) is similar to DHCP for IPv4. A device can automatically receive its addressing information including a global unicast address, prefix length, default gateway address and the addresses of DNS servers using the services of a DHCPv6 server. </p>
+          <p></p>
+          <p>A device may receive all or some of its IPv6 addressing information from a DHCPv6 server depending upon whether option 2 (SLAAC and DHCPv6) or option 3 (DHCPv6 only) is specified in the ICMPv6 RA message. Additionally, the host OS may choose to ignore whatever is in the router’s RA message and obtain its IPv6 address and other information directly from a DHCPv6 server.</p>
+          <p></p>
+          <p>Before deploying IPv6 devices in a network it is a good idea to first verify whether the host observes the options within the router’s ICMPv6 RA message.</p>
+          <p></p>
+          <p>A device may obtain its IPv6 global unicast address dynamically and also be configured with multiple static IPv6 addresses on the same interface. IPv6 allows for multiple IPv6 addresses, belonging to the same IPv6 network, to be configured on the same interface. </p>
+          <p></p>
+          <p>A device may also be configured with more than one default gateway IPv6 address. For further information about how the decision is made regarding which address is used as a source IPv6 address or which default gateway address is used, refer to RFC 6724, Default Address Selection for IPv6.</p>
+          <p></p>
+          <p>
+            <b>The Interface ID</b>
+          </p>
+          <p>If the client does not use the information contained within the RA message and relies solely on DHCPv6, then the DHCPv6 server will provide the entire IPv6 global unicast address, including the prefix and the Interface ID.</p>
+          <p></p>
+          <p>However, if option 1 (SLAAC only) or option 2 (SLAAC with DHCPv6) is used, the client does not obtain the actual Interface ID portion of the address from this processes. The client device must determine its own 64-bit Interface ID, either by using the EUI-64 process or by generating a random 64-bit number. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

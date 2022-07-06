@@ -1,0 +1,5 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<br/><b>Upon completion of this chapter you will be able to:</b><br><br><textformat blockindent="-14"><li>Describe the purpose of the transport layer in managing the transportation of data in end-to-end communication.</li><li>Describe characteristics of the TCP and UDP protocols, including port numbers and their uses.</li><li>Explain how TCP session establishment and termination processes facilitate reliable communication.</li><li>Explain how TCP protocol data units are transmitted and acknowledged to guarantee delivery.</li><li>Describe the UDP client processes to establish communication with a server.</li><li>Determine whether high-reliability TCP transmissions, or non-guaranteed UDP transmissions, are best suited for common applications.</li><textformat><br/>]]></text>
+</component>
+</textcomponents>

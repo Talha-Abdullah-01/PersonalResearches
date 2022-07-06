@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.1.1.1 Binary Notation</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_8.1.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IPv4 Network Addresses</h1>
+        <h2>IPv4 Address Structure</h2>
+      </div>
+      <div id="content">
+          <p>To understand the operation of devices on a network, we need to look at addresses and other data the way devices do - in binary notation. Binary notation is a representation of information using only ones and zeros. Computers communicate using binary data. Binary data can be used to represent many different forms of data. For example, when typing letters on a keyboard, those letters appear on screen in a form that you can read and understand; however, the computer translates each letter to a series of binary digits for storage and transport. To translate those letters, the computer uses American Standard Code for Information Interchange (ASCII). </p>
+          <p></p>
+          <p>Using ASCII, the letter “A” is represented in bit form as: 01000001, while the lowercase letter “a” is represented in bit form as 01100001. Use the ASCII translator in Figure 1 to convert ASCII characters to binary.</p>
+          <p></p>
+          <p>While it is not generally necessary for people to concern themselves with binary conversion of letters, it is necessary to understand the use of binary for IP addressing. Each device on a network must be uniquely identified using a binary address. In IPv4 networks, this address is represented using a string of 32 bits (1s and 0s). At the network layer, the packets then include this unique identification information for both the source and destination systems. Therefore, in an IPv4 network, each packet includes a 32-bit source address and a 32-bit destination address in the Layer 3 header. </p>
+          <p></p>
+          <p>For most individuals, a string of 32 bits is difficult to interpret and even more difficult to remember. Therefore, we represent IPv4 addresses using dotted decimal format instead of binary. This means that we look at each byte (octet) as a decimal number in the range of 0 to 255. To understand how this works we need to have some skill in binary to decimal conversion.</p>
+          <p></p>
+          <p>
+            <b>Positional Notation</b>
+          </p>
+          <p>Learning to convert binary to decimal requires an understanding of the mathematical basis of a numbering system called positional notation. Positional notation means that a digit represents different values depending on the position the digit occupies. In a positional notation system, the number base is called the radix. In the base ten system, the radix is 10. In the binary system we use a radix of 2. The term radix and base can be used interchangeably. More specifically, the value that a digit represents is that value multiplied by the power of the base, or radix, represented by the position the digit occupies. Some examples will help to clarify how this system works.</p>
+          <p></p>
+          <p>For the decimal number 192, the value that the 1 represents is 1*10^2 (1 times 10 to the power of 2). The 1 is in what we commonly refer to as the "100s" position. Positional notation refers to this position as the base^2 position because the base, or radix, is 10 and the power is 2. The 9 represents 9*10^1 (9 times 10 to the power of 1). Positional notation for the decimal number 192 is shown in Figure 2.</p>
+          <p></p>
+          <p>Using positional notation in the base 10 number system, 192 represents: </p>
+          <p></p>
+          <p>192 = (1 * 10^2) + (9 * 10^1) + (2 * 10^0) </p>
+          <p></p>
+          <p>or </p>
+          <p></p>
+          <p>192 = (1 * 100) + (9 * 10) + (2 * 1)</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

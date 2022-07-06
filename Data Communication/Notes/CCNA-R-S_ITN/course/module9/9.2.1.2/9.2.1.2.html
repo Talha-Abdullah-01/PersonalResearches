@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.2.1.2 Assigning Addresses to Devices</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_9.2.1.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Addressing Schemes</h1>
+        <h2>Structured Design</h2>
+      </div>
+      <div id="content">
+          <p>A network addressing plan might include using a different range of addresses within each subnet, for each type of device.</p>
+          <p></p>
+          <p>
+            <b>Addresses for Clients</b>
+          </p>
+          <p>Because of the challenges associated with static address management, end user devices often have addresses dynamically assigned, using Dynamic Host Configuration Protocol (DHCP). DHCP is generally the preferred method of assigning IP addresses to hosts on large networks because it reduces the burden on network support staff and virtually eliminates entry errors. </p>
+          <p></p>
+          <p>Another benefit of DHCP is that an address is not permanently assigned to a host but is only leased for a period of time. If we need to change the subnetting scheme of our network, we do not have to statically reassign individual host addresses. With DHCP, we only need to reconfigure the DHCP server with the new subnet information. After this has been done, the hosts only need to automatically renew their IP addresses.</p>
+          <p></p>
+          <p>
+            <b>Addresses for Servers and Peripherals </b>
+          </p>
+          <p>Any network resource, such as a server or a printer, should have a static IP address, as shown in the figure. The client hosts access these resources using the IP addresses of these devices. Therefore, predictable addresses for each these servers and peripherals are necessary. </p>
+          <p></p>
+          <p>Servers and peripherals are a concentration point for network traffic. There are many packets sent to and from the IPv4 addresses of these devices. When monitoring network traffic with a tool like Wireshark, a network administrator should be able to rapidly identify these devices. Using a consistent numbering system for these devices makes the identification easier. </p>
+          <p></p>
+          <p>
+            <b>Addresses for Hosts that are Accessible from Internet</b>
+          </p>
+          <p>In most internetworks, only a few devices are accessible by hosts outside of the corporation. For the most part, these devices are usually servers of some type. As with all devices in a network that provide network resources, the IP addresses for these devices should be static.</p>
+          <p></p>
+          <p>In the case of servers accessible by the Internet, each of these must have a public space address associated with it. Additionally, variations in the address of one of these devices will make this device inaccessible from the Internet. In many cases, these devices are on a network that is numbered using private addresses. This means that the router or firewall at the perimeter of the network must be configured to translate the internal address of the server into a public address. Because of this additional configuration in the perimeter intermediary device, it is even more important that these devices have a predictable address. </p>
+          <p></p>
+          <p>
+            <b>Addresses for Intermediary Devices</b>
+          </p>
+          <p>Intermediary devices are also a concentration point for network traffic. Almost all traffic within or between networks passes through some form of intermediary device. Therefore, these network devices provide an opportune location for network management, monitoring, and security. </p>
+          <p></p>
+          <p>Most intermediary devices are assigned Layer 3 addresses, either for the device management or for their operation. Devices, such as hubs, switches, and wireless access points do not require IPv4 addresses to operate as intermediary devices. However, if we must access these devices as hosts to configure, monitor, or troubleshoot network operation, they must have addresses assigned.</p>
+          <p></p>
+          <p>Because we must know how to communicate with intermediary devices, they should have predictable addresses. Therefore, their addresses are typically assigned manually. Additionally, the addresses of these devices should be in a different range within the network block than user device addresses. </p>
+          <p></p>
+          <p>
+            <b>Address for the Gateway (Routers and Firewalls)</b>
+          </p>
+          <p>Unlike the other intermediary devices mentioned, routers and firewall devices have an IP address assigned to each interface. Each interface is in a different network and serves as the gateway for the hosts in that network. Typically, the router interface uses either the lowest or highest address in the network. This assignment should be uniform across all networks in the corporation so that network personnel will always know the gateway of the network no matter which network they are working on. </p>
+          <p></p>
+          <p>Router and firewall interfaces are the concentration point for traffic entering and leaving the network. Because the hosts in each network use a router or firewall device interface as the gateway out of the network, many packets flow through these interfaces. Therefore, these devices can play a major role in network security by filtering packets based on source and/or destination IP addresses. Grouping the different types of devices into logical addressing groups makes the assignment and operation of this packet filtering more efficient.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

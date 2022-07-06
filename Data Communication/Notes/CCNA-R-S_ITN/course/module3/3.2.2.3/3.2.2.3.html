@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.2.2.3 TCP/IP Protocol Suite and Communication Process </title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_3.2.2.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Network Protocols and Standards</h1>
+        <h2>Protocol Suites</h2>
+      </div>
+      <div id="content">
+          <p>Today, the suite includes dozens of protocols, as shown in Figure 1. Click each protocol to view its description. They are organized in layers using the TCP/IP protocol model. TCP/IP protocols are included in the internet layer to the application layer when referencing the TCP/IP model. The lower layer protocols in the data link or network access layer are responsible for delivering the IP packet over the physical medium. These lower layer protocols are developed by standards organizations, such as IEEE. </p>
+          <p></p>
+          <p>The TCP/IP protocol suite is implemented as a TCP/IP stack on both the sending and receiving hosts to provide end-to-end delivery of applications over a network. The 802.3 or Ethernet protocols are used to transmit the IP packet over the physical medium used by the LAN.</p>
+          <p></p>
+          <p>Figures 2 and 3 demonstrate the complete communication process using an example of a web server transmitting data to a client. </p>
+          <p>Click the Play button to view the animated demonstrations:</p>
+          <p></p>
+          <p>
+            <b>1</b>. The web server’s Hypertext Markup Language (HTML) page is the data to be sent. </p>
+          <p></p>
+          <p>
+            <b>2</b>. The application protocol HTTP header is added to the front of the HTML data. The header contains various information, including the HTTP version the server is using and a status code indicating it has information for the web client.</p>
+          <p></p>
+          <p>
+            <b>3.</b> The HTTP application layer protocol delivers the HTML-formatted web page data to the transport layer. The TCP transport layer protocol is used to manage the individual conversation between the web server and web client.</p>
+          <p></p>
+          <p>
+            <b>4</b>. Next, the IP information is added to the front of the TCP information. IP assigns the appropriate source and destination IP addresses. This information is known as an IP packet.</p>
+          <p></p>
+          <p>
+            <b>5</b>. The Ethernet protocol adds information to both ends of the IP packet, known as a data link frame. This frame is delivered to the nearest router along the path towards the web client. This router removes the Ethernet information, analyzes the IP packet, determines the best path for the packet, inserts the packet into a new frame, and sends it to the next neighboring router towards the destination. Each router removes and adds new data link information before forwarding the packet.</p>
+          <p></p>
+          <p>
+            <b>6</b>. This data is now transported through the internetwork, which consists of media and intermediary devices. </p>
+          <p></p>
+          <p>
+            <b>7</b>. The client receives the data link frames that contain the data and each protocol header is processed and then removed in the opposite order that it was added. The Ethernet information is processed and removed, followed by the IP protocol information, then the TCP information, and finally the HTTP information. </p>
+          <p></p>
+          <p>
+            <b>8</b>. The web page information is then passed on to the client’s web browser software. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

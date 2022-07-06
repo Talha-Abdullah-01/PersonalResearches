@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.1.1.7 Message Delivery Options</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_3.1.1.7_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Rules of Communication</h1>
+        <h2>The Rules</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Message Delivery Options</b>
+          </p>
+          <p>A message may need to be best delivered in different ways, as shown in Figure 1. Sometimes, a person wants to communicate information to a single individual. At other times, the person may need to send information to a group of people at the same time, or even to all people in the same area. A conversation between two people is an example of a one-to-one delivery. When a group of recipients need to receive the same message simultaneously, a one-to-many or one-to-all message delivery is necessary. </p>
+          <p></p>
+          <p>There are also times when the sender of a message needs to be sure that the message is delivered successfully to the destination. In these cases, it is necessary for the recipient to return an acknowledgement to the sender. If no acknowledgement is required, the delivery option is referred to as unacknowledged.</p>
+          <p></p>
+          <p>Hosts on a network use similar delivery options to communicate, as shown in Figure 2.</p>
+          <p></p>
+          <p>A one-to-one delivery option is referred to as a unicast, meaning that there is only a single destination for the message. </p>
+          <p></p>
+          <p>When a host needs to send messages using a one-to-many delivery option, it is referred to as a multicast. Multicasting is the delivery of the same message to a group of host destinations simultaneously. </p>
+          <p></p>
+          <p>If all hosts on the network need to receive the message at the same time, a broadcast is used. Broadcasting represents a one-to-all message delivery option. Additionally, hosts have requirements for acknowledged versus unacknowledged messages.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

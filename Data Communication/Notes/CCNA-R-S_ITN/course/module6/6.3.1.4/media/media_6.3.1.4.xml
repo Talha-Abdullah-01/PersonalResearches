@@ -1,0 +1,40 @@
+﻿<textcomponents>
+
+<component id='ID_bubble01'>
+	<text><![CDATA[<p class="ID_bubble01 top">Power Supply</p>]]></text>
+</component>
+
+<component id='ID_bubble02'>
+	<text><![CDATA[<p class="ID_bubble02 top">Shield for WAN interface card WIC or high-speed WIC (HWIC)</p>]]></text>
+</component>
+
+<component id='ID_bubble03'>
+	<text><![CDATA[<p class="ID_bubble03 top">Shield for WAN interface card WIC or high-speed WIC (HWIC)</p>]]></text>
+</component>
+
+<component id='ID_bubble04'>
+	<text><![CDATA[<p class="ID_bubble04 top">Fan</p>]]></text>
+</component>
+
+<component id='ID_bubble05'>
+	<text><![CDATA[<p class="ID_bubble05 top">Synchronous dynamic RAM (SDRAM) used for holding the running configuration and routing tables, and for supporting packet buffering.<p>]]></text>
+</component>
+
+<component id='ID_bubble06'>
+	<text><![CDATA[<p class="ID_bubble06 top">Nonvolatile RAM (NVRAM) and boot flash memory used for storing the ROMMON boot code as well as NVRAM data.</p>]]></text>
+</component>
+
+<component id='ID_bubble07'>
+	<text><![CDATA[<p class="ID_bubble07 top">CPU</p>]]></text>
+</component>
+
+<component id='ID_bubble08'>
+	<text><![CDATA[<p class="ID_bubble08 top">Advanced Integration Module (AIM) option that offloads processor-intensive functions such as encryption from the main CPU.</p>]]></text>
+</component>
+
+
+<component id='ID_txt01'>
+	<text><![CDATA[Click the highlighted areas for more information.]]></text>
+</component>
+
+</textcomponents>

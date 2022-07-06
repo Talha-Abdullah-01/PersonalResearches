@@ -1,0 +1,81 @@
+﻿<textcomponents>
+
+	<component id='ID_inst'>
+		<text><![CDATA[<b>Activity – Data Link Layer Standards Organizations</b><br><br>Drag the data link protocols to their standards organizations.]]></text>
+	</component>
+
+	<component id='ID_txt01'>
+		<text><![CDATA[<b>IEEE</b>]]></text>
+	</component>
+
+	<component id='ID_txt02'>
+		<text><![CDATA[<b>ITU-T</b>]]></text>
+	</component>
+
+	<component id='ID_txt03'>
+		<text><![CDATA[<b>ISO</b>]]></text>
+	</component>
+
+	<component id='ID_txt04'>
+		<text><![CDATA[<b>ANSI</b>]]></text>
+	</component>
+
+	<!--Drag and Drop-->
+	<component id='ID_drag01'>
+		<text><![CDATA[<font color="#393536">HDLC</font>]]></text>
+	</component>
+	<component id='ID_drag02'>
+		<text><![CDATA[<font color="#393536">FDDI MAC</font>]]></text>
+	</component>
+
+	<component id='ID_drag03'>
+		<text><![CDATA[<font color="#393536">802.3 Ethernet</font>]]></text>
+	</component>
+
+	<component id='ID_drag04'>
+		<text><![CDATA[<font color="#393536">ADSL</font>]]></text>
+	</component>
+
+	<component id='ID_drag05'>
+		<text><![CDATA[<font color="#393536">ISDN</font>]]></text>
+	</component>
+
+	<component id='ID_drag06'>
+		<text><![CDATA[<font color="#393536">802.15 Bluetooth</font>]]></text>
+	</component>
+
+	<component id='ID_drag07'>
+		<text><![CDATA[<font color="#393536">802.11 Wireless & WiFi</font>]]></text>
+	</component>
+
+	<component id='ID_drag08'>
+		<text><![CDATA[<font color="#393536">FDDI</font>]]></text>
+	</component>
+
+
+	<component id='ID_s1_CORRECT_TITLE'>
+		<text><![CDATA[<b>Correct]]></text>
+	</component>
+
+	<component id='ID_s1_CORRECT_BODY'>
+		<text><![CDATA[You successfully matched the data link protocol names to their standards organizations.]]></text>
+	</component>
+
+
+	<component id='ID_s1_INCORRECT_TITLE'>
+		<text><![CDATA[<b>Incorrect]]></text>
+	</component>
+
+	<component id='ID_s1_INCORRECT_BODY'>
+		<text><![CDATA[You have not successfully matched the data link protocol names to their standards organizations.]]></text>
+	</component>
+
+	<component id='ID_CHECK'>
+		<text><![CDATA[Check]]></text>
+	</component>
+
+	<component id='ID_RESET'>
+		<text><![CDATA[Reset]]></text>
+	</component>
+
+</textcomponents>

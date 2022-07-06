@@ -1,0 +1,135 @@
+﻿<textcomponents>
+
+<!-- instructions -->
+<component id="ID_inst">
+	<text><![CDATA[<b>Activity – Access Methods</b><br><br>Select the most appropriate access method for each scenario.]]></text>
+</component>
+
+<!-- buttons -->
+<component id="ID_Button01">
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+	<text><![CDATA[9]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[3]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+	<text><![CDATA[<b>Console</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>Telnet/SSH</b>]]></text>
+</component>
+
+<component id="txt_col3">
+	<text><![CDATA[<b>AUX</b>]]></text>
+</component>
+
+
+<!--Question text - blockindent code moves the text away from the left edge a bit-->
+<!--Question text - If questions are numbered, use blockindent for hanging indents-->
+<component id="txt_q1">
+	<text><![CDATA[1. <textformat blockindent='13'>You are in the equipment room with a new switch that needs to be configured.</textformat>]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[2. <textformat blockindent='13'>The device you are configuring cannot be accessed by cable, because you are not in the building. You use a telephone to dial into it.</textformat>]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[3. <textformat blockindent='13'>Your manager gives you a special cable and tells you to use it to configure the switch.</textformat>]]></text>
+</component>
+
+<component id="txt_q4">
+	<text><![CDATA[4. <textformat blockindent='13'>You access the IOS by using another intermediary device over a network connection.</textformat>]]></text>
+</component>
+
+<component id="txt_q5">
+	<text><![CDATA[5. <textformat blockindent='13'>You are on vacation and need to check on one of your routers. The only access you have is your hotel analog phone.</textformat>]]></text>
+</component>
+
+<component id="txt_q6">
+	<text><![CDATA[6. <textformat blockindent='13'>You do not need remote access services to the networking device to configure it because the device is physically accessible to you.</textformat>]]></text>
+</component>
+
+<component id="txt_q7">
+	<text><![CDATA[7. <textformat blockindent='13'>You call your manager to tell him you cannot access your router in another city over the Internet. He provides you with the information to access the switch through a telephone connection.</textformat>]]></text>
+</component>
+
+<component id="txt_q8">
+	<text><![CDATA[8. <textformat blockindent='13'>The password for a device was changed. No one knows what the new password is and you need to reset a new password.</textformat>]]></text>
+</component>
+
+<component id="txt_q9">
+	<text><![CDATA[9. <textformat blockindent='13'>You use a password-encrypted connection to remotely access a device over a network.</textformat>]]></text>
+</component>
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+<!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a4">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a5">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a6">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a7">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a8">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a9">
+	<text><![CDATA[2]]></text>
+</component>
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[You successfully matched the most appropriate access method to each scenario.]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[You have not successfully matched most appropriate access method to each scenario. Please click Reset to try again.]]></text>
+</component>
+
+</textcomponents>

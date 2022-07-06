@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.2.2.4 Types of UTP Cable </title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_4.2.2.4_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Network Media</h1>
+        <h2>UTP Cabling</h2>
+      </div>
+      <div id="content">
+          <p>Different situations may require UTP cables to be wired according to different wiring conventions. This means that the individual wires in the cable have to be connected in different orders to different sets of pins in the RJ-45 connectors. </p>
+          <p></p>
+          <p>The following are main cable types that are obtained by using specific wiring conventions:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Ethernet Straight-through</b>: The most common type of networking cable. It is commonly used to interconnect a host to a switch and a switch to a router.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Ethernet Crossover</b>: An uncommon cable used to interconnect similar devices together. For example to connect a switch to a switch, a host to a host, or a router to a router.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Rollover</b>: A Cisco proprietary cable used to connect to a router or switch console port. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Using a crossover or straight-through cable incorrectly between devices may not damage the devices, but connectivity and communication between the devices will not take place. This is a common error in the lab and checking that the device connections are correct should be the first troubleshooting action if connectivity is not achieved.</p>
+          <p></p>
+          <p>The figure shows the UTP cable type, related standards, and typical application of these cables. It also identifies the individual wire pairs for the TIA 568A and TIA 568B standards. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

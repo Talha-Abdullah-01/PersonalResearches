@@ -1,0 +1,73 @@
+<textcomponents>
+
+<component id='ID_table'>
+<text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4' valign="top">
+	<tr>
+		<td colspan='3' bgcolor='#0E6360' class="mtable_top"><font size='2' color='#434321'>&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#077A77'><font color="#FFFFFF"><b>Cable Type</b></font></td>
+		<td bgcolor='#077A77'><font color="#FFFFFF"><b>Standard</b></font></td>
+		<td bgcolor='#077A77'><font color="#FFFFFF"><b>Application</b></font></td>
+	</tr>
+	<tr>
+		<td width='125' bgcolor='#EFF8F7' valign="top">Ethernet Straight-through</td>
+		<td width='125' bgcolor='#EFF8F7' valign="top">Both ends T568A or both ends T568B</td>
+		<td bgcolor='#EFF8F7' valign="top">Connects a network host to a network device such as a switch or hub.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF' valign="top">Ethernet Crossover</td>
+		<td bgcolor='#FFFFFF' valign="top">One end T568A,<br/> other end T568B</td>
+		<td bgcolor='#FFFFFF' valign="top"><textformat blockindent='-18'><li>Connects two network hosts</li><li>Connects two network intermediary devices (switch to switch, or router to router)</li></textformat></td>
+	</tr>
+	<tr>
+		<td bgcolor='#EFF8F7' valign="top">Rollover</td>
+		<td bgcolor='#EFF8F7' valign="top">Cisco proprietary</td>
+		<td bgcolor='#EFF8F7' valign="top">Connects a workstation serial port to a router console port, using an adapter.</td>
+	</tr>
+</table>]]></text>
+</component>
+
+<!--first cable-->
+<component id="ID_txt01">
+<text><![CDATA[<b>Pair 2</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Pair 3</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Pair 1</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Pair 4</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>T568A</b>]]></text>
+</component>
+
+<!--second cable-->
+<component id="ID_txt06">
+<text><![CDATA[<b>Pair 3</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>Pair 2</b>]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>Pair 1</b>]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>Pair 4</b>]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[<b>T568B<b>]]></text>
+</component>
+
+</textcomponents>

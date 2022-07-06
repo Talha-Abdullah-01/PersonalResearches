@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.4.1.4 Summary</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_10.4.1.4_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Summary</h1>
+        <h2>Summary</h2>
+      </div>
+      <div id="content">
+          <p>The application layer is responsible for directly accessing the underlying processes that manage and deliver communication to the human network. This layer serves as the source and destination of communications across data networks. The application layer applications, services, and protocols enable users to interact with the data network in a way that is meaningful and effective. </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Applications are computer programs with which the user interacts and which initiate the data transfer process at the user’s request.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Services are background programs that provide the connection between the application layer and the lower layers of the networking model.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Protocols provide a structure of agreed-upon rules and processes that ensure services running on one particular device can send and receive data from a range of different network devices.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Delivery of data over the network can be requested from a server by a client, or between devices that operate in a P2P arrangement, where the client/server relationship is established, according to which device is the source and destination at that time. Messages are exchanged between the application layer services at each end device in accordance with the protocol specifications to establish and use these relationships.</p>
+          <p></p>
+          <p>Protocols like HTTP, for example, support the delivery of web pages to end devices. SMTP and POP support sending and receiving email. SMB and FTP enable users to share files. P2P applications make it easier for consumers to seamlessly share media in a distributed fashion. DNS resolves the human legible names used to refer to network resources into numeric addresses usable by the network. Clouds are remote upstream locations that store data and host applications so that users do not require as many local resources, and so that users can seamlessly access content on different devices from any location. </p>
+          <p></p>
+          <p>All of these elements work together, at the application layer. The application layer enables users to work and play over the Internet.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

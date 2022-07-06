@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.4.4.5 LAN and WAN Frames</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_4.4.4.5_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Media Access Control</h1>
+        <h2>Data Link Frame</h2>
+      </div>
+      <div id="content">
+          <p>In a TCP/IP network, all OSI Layer 2 protocols work with the IP at OSI Layer 3. However, the actual Layer 2 protocol used depends on the logical topology of the network and the implementation of the physical layer. Given the wide range of physical media used across the range of topologies in networking, there are a correspondingly high number of Layer 2 protocols in use. </p>
+          <p></p>
+          <p>Each protocol performs media access control for specified Layer 2 logical topologies. This means that a number of different network devices can act as nodes that operate at the data link layer when implementing these protocols. These devices include the network adapter or network interface cards (NICs) on computers as well as the interfaces on routers and Layer 2 switches.</p>
+          <p></p>
+          <p>The Layer 2 protocol used for a particular network topology is determined by the technology used to implement that topology. The technology is, in turn, determined by the size of the network - in terms of the number of hosts and the geographic scope - and the services to be provided over the network.</p>
+          <p></p>
+          <p>A LAN typically uses a high bandwidth technology that is capable of supporting large numbers of hosts. A LAN's relatively small geographic area (a single building or a multi-building campus) and its high density of users make this technology cost effective.</p>
+          <p></p>
+          <p>However, using a high bandwidth technology is usually not cost-effective for WANs that cover large geographic areas (cities or multiple cities, for example). The cost of the long distance physical links and the technology used to carry the signals over those distances typically results in lower bandwidth capacity. </p>
+          <p></p>
+          <p>Difference in bandwidth normally results in the use of different protocols for LANs and WANs.</p>
+          <p></p>
+          <p>Common data link layer protocols include: </p>
+          <p>
+            <ul>
+              <li>Ethernet </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Point-to-Point Protocol (PPP) </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>802.11 Wireless</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Other protocols covered in the CCNA curriculum are High-Level Data Link Control (HDLC) and Frame Relay.</p>
+          <p></p>
+          <p>Click Play to see examples of Layer 2 protocols.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

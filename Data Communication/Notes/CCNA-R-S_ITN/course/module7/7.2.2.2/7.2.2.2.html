@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.2.2.2 TCP Reliability – Acknowledgement and Window Size</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_7.2.2.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>TCP and UDP</h1>
+        <h2>Reliability and Flow Control</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Confirming Receipt of Segments</b>
+          </p>
+          <p></p>
+          <p>One of the functions of TCP is ensuring that each segment reaches its destination. The TCP services on the destination host acknowledge the data that it has received by the source application. </p>
+          <p></p>
+          <p>The sequence (SEQ) number and acknowledgement (ACK) number are used together to confirm receipt of the bytes of data contained in the transmitted segments. The SEQ number indicates the relative number of bytes that have been transmitted in this session, including the bytes in the current segment. TCP uses the ACK number sent back to the source to indicate the next byte that the receiver expects to receive. This is called expectational acknowledgement. </p>
+          <p></p>
+          <p>The source is informed that the destination has received all bytes in this data stream up to, but not including, the byte indicated by the ACK number. The sending host is expected to send a segment that uses a sequence number that is equal to the ACK number. </p>
+          <p></p>
+          <p>Remember, each connection is actually two one-way sessions. SEQ and ACK numbers are being exchanged in both directions.</p>
+          <p></p>
+          <p>In the example in the figure, the host on the left is sending data to the host on the right. It sends a segment containing 10 bytes of data for this session and a sequence number equal to 1 in the header. </p>
+          <p></p>
+          <p>The receiving host receives the segment at Layer 4 and determines that the sequence number is 1 and that it has 10 bytes of data. The host then sends a segment back to the host on the left to acknowledge the receipt of this data. In this segment, the host sets the ACK number to 11 to indicate that the next byte of data it expects to receive in this session is byte number 11. When the sending host receives this acknowledgement, it can now send the next segment containing data for this session starting with byte number 11.</p>
+          <p></p>
+          <p>Looking at this example, if the sending host had to wait for acknowledgement of receiving each 10 bytes, the network would have a lot of overhead. To reduce the overhead of these acknowledgements, multiple segments of data can be sent and acknowledged with a single TCP message in the opposite direction. This acknowledgement contains an ACK number based on the total number of bytes received in the session. For example, starting with a sequence number of 2000, if 10 segments of 1,000 bytes each were received, an ACK number of 12001 would be returned to the source. </p>
+          <p></p>
+          <p>The amount of data that a source can transmit before an acknowledgement must be received is called the window size, which is a field in the TCP header that enables the management of lost data and flow control.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+﻿<textcomponents> 
+<component id="ID_title">
+	<text><![CDATA[<b>Network Addresses and Data Link Addresses</b>]]></text>
+</component>
+   
+<component id="ID_table">
+<text><![CDATA[<table header='none' headerstyle='black' bordercolor='#393536' borderwidth='2' shadow='false' shadowcolor='#000000' glow='false' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#CCCCCC' width="95" align="center" valign="middle" ><font size='11' color='#393536'>Timing and synchronization bits</font></td>
+		<td bgcolor='#CCCCCC' width="85" align="center" valign="middle"><font size='11' color='#393536'>Destination and source physical addresses</font></td>
+		<td bgcolor='#CCCCCC' width="95" align="center" valign="middle"><font size='11' color='#393536'>Destination and source logical network addresses</font></td>
+		<td bgcolor='#CCCCCC' width="95" align="center" valign="middle"><font size='11' color='#393536'>Destination and source process number (ports)</font></td>
+		<td bgcolor='#CCCCCC' width="85" align="center" valign="middle"><font size='11' color='#393536'>Encoded application data</font></td>
+	</tr>
+</table>]]></text>
+</component>
+ 
+<component id="ID_txt01">
+	<text><![CDATA[Physical]]></text>
+</component>
+<component id="ID_txt02">
+	<text><![CDATA[Data Link]]></text>
+</component>
+<component id="ID_txt03">
+	<text><![CDATA[Network]]></text>
+</component>
+<component id="ID_txt04">
+	<text><![CDATA[Transport]]></text>
+</component>
+<component id="ID_txt05">
+	<text><![CDATA[Upper Layers]]></text>
+</component>  
+</textcomponents>

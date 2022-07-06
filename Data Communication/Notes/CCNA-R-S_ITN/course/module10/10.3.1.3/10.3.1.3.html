@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.3.1.3 Getting the Data to the End Device</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_10.3.1.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>The Message Heard Around the World</h1>
+        <h2>Move It!</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Addressing</b>
+          </p>
+          <p>Next, address identifiers are added to the segments, as shown in the figure. Just as there are multiple layers of protocols that prepare the data for transmission to its destination, there are multiple layers of addressing to ensure its delivery. The role of the network layer is to add addressing that allows transfer of the data from the host that originates the data, to the host that uses it. The network layer accomplishes this by encapsulating each segment within an IP packet header. The IP packet header contains the IP addresses of the source and destination devices. (The IP address of the destination device is usually determined through an earlier application process known as domain name service.) The combination of the source and destination IP address, with the source and destination port number, is known as a socket. The socket is used to identify the server and service being requested by the client.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

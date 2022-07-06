@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.4.3.1 Default Gateway on a Host</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_6.4.3.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Configuring a Cisco Router</h1>
+        <h2>Configuring the Default Gateway</h2>
+      </div>
+      <div id="content">
+          <p>Most routers have, at a minimum, two interfaces.  Each interface is configured with a separate IP address in a separate network. </p>
+          <p></p>
+          <p>For an end device to communicate over the network, it must be configured with the correct IP address information, including the default gateway address. The default gateway is only used when the host wants to send a packet to a device on another network. The default gateway address is generally the router interface address attached to the local network of the host. While it does not matter what address is actually configured on the router interface, the IP address of the host device and the router interface address must be in the same network. </p>
+          <p></p>
+          <p>The figures display a topology of a router with two separate interfaces. Each interface is connected to a separate network. G0/0 is connected to network 192.168.10.0, while G0/1 is connected to network 192.168.11.0. Each host device is configured with the appropriate default gateway address. </p>
+          <p></p>
+          <p>In Figure 1, PC1 sends a packet to PC2. In this example, the default gateway is not used; rather, PC1 addresses the packet with the IP address of PC2 and forwards the packet directly to PC2 through the switch. </p>
+          <p></p>
+          <p>In Figure 2, PC1 sends a packet to PC3. In this example, PC1 addresses the packet with the IP address of PC3, but then forwards the packet to the router. The router accepts the packet, accesses its route table to determine the appropriate exit interface based on the destination address, and then forwards the packet out of the appropriate interface to reach PC3.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

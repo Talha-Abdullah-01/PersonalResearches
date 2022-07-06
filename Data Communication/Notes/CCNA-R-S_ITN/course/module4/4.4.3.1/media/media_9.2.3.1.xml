@@ -1,0 +1,21 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Physical Topologies</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+   <text><![CDATA[Star topology]]></text>
+   </component>
+<component id="ID_txt02">
+   <text><![CDATA[Extended star topology]]></text>
+   </component>
+<component id="ID_txt03">
+   <text><![CDATA[Bus topology]]></text>
+   </component>
+<component id="ID_txt04">
+   <text><![CDATA[Ring topology]]></text>
+   </component>
+
+
+</textcomponents>

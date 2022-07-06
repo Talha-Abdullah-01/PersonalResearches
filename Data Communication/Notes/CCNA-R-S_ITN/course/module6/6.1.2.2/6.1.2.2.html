@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.1.2.2 IP – Connectionless</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_6.1.2.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Network Layer Protocols</h1>
+        <h2>Characteristics of the IP protocol</h2>
+      </div>
+      <div id="content">
+          <p>The role of the network layer is to transport packets between hosts while placing as little burden on the network as possible. The network layer is not concerned with, or even aware of, the type of communication contained inside of a packet. IP is connectionless, meaning that no dedicated end-to-end connection is created before data is sent. Connectionless communication is conceptually similar to sending a letter to someone without notifying the recipient in advance. </p>
+          <p></p>
+          <p>As shown in Figure 1, the postal service uses the information on a letter to deliver the letter to a recipient. The address on the envelope does not provide information as to whether the receiver is present, whether the letter arrives, or whether the receiver can read the letter. In fact, the postal service is unaware of the information contained within the contents of the packet that it is delivering and, therefore cannot provide any error correction mechanisms.  </p>
+          <p></p>
+          <p>Connectionless data communications work on the same principle. </p>
+          <p></p>
+          <p>IP is connectionless and, therefore, requires no initial exchange of control information to establish an end-to-end connection before packets are forwarded. IP also does not require additional fields in the protocol data unit (PDU) header to maintain an established connection. This process greatly reduces the overhead of IP. However, with no pre-established end-to-end connection, senders are unaware whether destination devices are present and functional when sending packets, nor are they aware if the destination receives the packet, or if they are able to access and read the packet. Figure 2 shows an example of connectionless communication.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

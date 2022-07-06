@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.1.3.5 Multicast Transmission</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_8.1.3.5_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IPv4 Network Addresses</h1>
+        <h2>IPv4 Unicast, Broadcast, and Multicast</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Multicast Transmission</b>
+          </p>
+          <p>Multicast transmission is designed to conserve the bandwidth of an IPv4 network. It reduces traffic by allowing a host to send a single packet to a selected set of hosts that are part of a subscribing multicast group. To reach multiple destination hosts using unicast communication, a source host would need to send an individual packet addressed to each host. With multicast, the source host can send a single packet that can reach thousands of destination hosts. The internetwork’s responsibility is to replicate the multicast flows in an efficient manner so that they reach only their intended recipients.</p>
+          <p></p>
+          <p>Some examples of multicast transmission are:</p>
+          <p>
+            <ul>
+              <li>Video and audio broadcasts</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Routing information exchange by routing protocols</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Distribution of software</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Remote gaming</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Multicast Addresses</b>
+          </p>
+          <p>IPv4 has a block of addresses reserved for addressing multicast groups. This address range is 224.0.0.0 to 239.255.255.255. The multicast address range is subdivided into different types of addresses: reserved link local addresses and globally scoped addresses. One additional type of multicast address is the administratively scoped addresses, also called limited scope addresses.</p>
+          <p></p>
+          <p>The IPv4 multicast addresses 224.0.0.0 to 224.0.0.255 are reserved link local addresses. These addresses are to be used for multicast groups on a local network. A router connected to the local network recognizes that these packets are addressed to a link-local multicast group and never forwards them further. A typical use of reserved link-local addresses is in routing protocols using multicast transmission to exchange routing information.</p>
+          <p></p>
+          <p></p>
+          <p>The globally scoped addresses are 224.0.1.0 to 238.255.255.255. They may be used to multicast data across the Internet. For example, 224.0.1.1 has been reserved for the Network Time Protocol (NTP) to synchronize the time-of-day clocks of network devices.</p>
+          <p></p>
+          <p>
+            <b>Multicast Clients</b>
+          </p>
+          <p>Hosts that receive particular multicast data are called multicast clients. The multicast clients use services requested by a client program to subscribe to the multicast group. </p>
+          <p></p>
+          <p>Each multicast group is represented by a single IPv4 multicast destination address. When an IPv4 host subscribes to a multicast group, the host processes packets addressed to this multicast address and packets addressed to its uniquely allocated unicast address. </p>
+          <p></p>
+          <p>The animation demonstrates clients accepting multicast packets.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

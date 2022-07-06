@@ -1,0 +1,58 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text>
+  <![CDATA[<b>Calculate Number of Subnets</b>]]></text>
+</component>
+
+  <component id="ID_s1_txt01">
+    <text>
+      <![CDATA[Subnets = 2^n<br/>(where n = bits borrowed)]]>
+  </text>
+</component>
+
+
+<component id="ID_s1_txt02">
+    <text>
+      <![CDATA[<font color="#f26200"><b>1</b></font> bit was borrowed]]>
+  </text>
+</component>
+
+<component id="ID_s1_txt03">
+    <text>
+      <![CDATA[2^<font color="#f26200"><b>1</b></font> = 2 subnets]]>
+  </text>
+</component>
+
+
+
+<component id="ID_s2_title">
+    <text>
+      <![CDATA[<b>Calculate Number of Hosts</b>]]>
+    </text>
+  </component>
+
+  <component id="ID_s2_txt01">
+    <text>
+      <![CDATA[Hosts = 2^n<br/>(where n = host bits remaining)]]>
+  </text>
+</component>
+
+<component id="ID_s2_txt02">
+    <text>
+      <![CDATA[<font color="#f26200"><b>7</b></font> bits remain in host field]]>
+    </text>
+  </component>
+
+  <component id="ID_s2_txt03">
+    <text>
+      <![CDATA[<textformat tabstops='[1]'>&#9;2^<font color="#f26200"><b>7</b></font> = 128 hosts per subnet<br>2^<font color="#f26200"><b>7</b></font> - 2 = 126 valid hosts per subnet</textformat>]]>
+    </text>
+  </component>
+
+
+
+
+
+
+
+</textcomponents>

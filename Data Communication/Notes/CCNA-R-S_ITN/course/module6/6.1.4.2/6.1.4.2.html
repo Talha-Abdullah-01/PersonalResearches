@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.1.4.2 Introducing IPv6</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_6.1.4.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Network Layer Protocols</h1>
+        <h2>IPv6 Packet</h2>
+      </div>
+      <div id="content">
+          <p>In the early 1990s, the Internet Engineering Task Force (IETF) grew concerned about the issues with IPv4 and began to look for a replacement. This activity led to the development of IP version 6 (IPv6). IPv6 overcomes the limitations of IPv4 and is a powerful enhancement with features that better suit current and foreseeable network demands. </p>
+          <p></p>
+          <p>Improvements that IPv6 provides include:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Increased address space - </b>IPv6 addresses are based on 128-bit hierarchical addressing as opposed to IPv4 with 32 bits. This dramatically increases the number of available IP addresses.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Improved packet handling - </b>The IPv6 header has been simplified with fewer fields. This improves packet handling by intermediate routers and also provides support for extensions and options for increased scalability/longevity.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Eliminates the need for NAT - </b>With such a large number of public IPv6 addresses, Network Address Translation (NAT) is not needed. Customer sites, from the largest enterprises to single households, can get a public IPv6 network address. This avoids some of the NAT-induced application problems experienced by applications requiring end-to-end connectivity.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Integrated security - </b>IPv6 natively supports authentication and privacy capabilities. With IPv4, additional features had to be implemented to do this.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The 32-bit IPv4 address space provides approximately 4,294,967,296 unique addresses. Of these, only 3.7 billion addresses are assignable, because the IPv4 addressing system separates the addresses into classes, and reserves addresses for multicasting, testing, and other specific uses.</p>
+          <p></p>
+          <p>As shown in the figure, IP version 6 address space provides 340,282,366,920,938,463,463,374,607,431,768,211,456, or 340 undecillion addresses, which is roughly equivalent to every grain of sand on Earth. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

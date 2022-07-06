@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.1.4.3 Context-Sensitive Help</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.1.4.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IOS Bootcamp</h1>
+        <h2>The Command Structure</h2>
+      </div>
+      <div id="content">
+          <p>The IOS has several forms of help available:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Context-Sensitive Help</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Command Syntax Check</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Hot Keys and Shortcuts</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Context-Sensitive Help</b>
+          </p>
+          <p></p>
+          <p>The context-sensitive help provides a list of commands and the arguments associated with those commands within the context of the current mode. To access context-sensitive help, enter a question mark, <span class="cmd"><b>?</b></span>, at any prompt. There is an immediate response without the need to use the Enter key. </p>
+          <p></p>
+          <p>One use of context-sensitive help is to get a list of available commands. This can be used when you are unsure of the name for a command or you want to see if the IOS supports a particular command in a particular mode. </p>
+          <p></p>
+          <p>For example, to list the commands available at the user EXEC level, enter a question mark, <span class="cmd"><b>?</b></span>, at the <span class="cmd">Switch></span> prompt. </p>
+          <p></p>
+          <p>Another use of context-sensitive help is to display a list of commands or keywords that start with a specific character or characters. After entering a character sequence, if a question mark is immediately entered, without a space, the IOS will display a list of commands or keywords for this context that start with the characters that were entered. </p>
+          <p></p>
+          <p>For example, enter <span class="cmd"><b>sh?</b></span> to get a list of commands that begins with the character sequence <span class="cmd"><b>sh</b></span>. </p>
+          <p></p>
+          <p>A final type of context-sensitive help is used to determine which options, keywords, or arguments are matched with a specific command. When entering a command, enter a space followed by a <span class="cmd"><b>?</b></span> to determine what can or should be entered next. </p>
+          <p></p>
+          <p>As shown in the figure, after typing the command <span class="cmd"><b>clock set 19:50:00</b></span>, we can enter the <span class="cmd"><b>?</b></span> to determine the additional options or keywords available for this command.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

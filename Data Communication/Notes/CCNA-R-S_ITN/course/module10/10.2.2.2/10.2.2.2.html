@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.2.2.2 DNS Message Format</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_10.2.2.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Well-Known Application Layer Protocols and Services</h1>
+        <h2>Providing IP Addressing Services</h2>
+      </div>
+      <div id="content">
+          <p>A DNS server provides the name resolution using the <i>Berkeley Internet Name Domain (</i>BIND), or the name daemon, which is often called named (pronounced name-dee). BIND was originally developed by four students at the University of California Berkley in the early 1980s. As shown in the figure, the DNS message format used by BIND is the most widely used DNS format on the Internet.</p>
+          <p></p>
+          <p>The DNS server stores different types of resource records used to resolve names. These records contain the name, address, and type of record.</p>
+          <p></p>
+          <p>Some of these record types are:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>A</b> - An end device address</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>NS</b> - An authoritative name server</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>CNAME</b> - The canonical name (or Fully Qualified Domain Name) for an alias; used when multiple services have the single network address, but each service has its own entry in DNS</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>MX</b> - Mail exchange record; maps a domain name to a list of mail exchange servers for that domain</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>When a client makes a query, the server’s BIND process first looks at its own records to resolve the name. If it is unable to resolve the name using its stored records, it contacts other servers to resolve the name.</p>
+          <p></p>
+          <p>The request may be passed along to a number of servers, which can take extra time and consume bandwidth. After a match is found and returned to the original requesting server, the server temporarily stores the numbered address that matches the name in cache memory. </p>
+          <p></p>
+          <p>If that same name is requested again, the first server can return the address by using the value stored in its name cache. Caching reduces both the DNS query data network traffic and the workloads of servers higher up the hierarchy. The DNS Client service on Windows PCs optimizes the performance of DNS name resolution by also storing previously resolved names in memory. The <b>ipconfig /displaydns</b> command displays all of the cached DNS entries on a Windows computer system.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

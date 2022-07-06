@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.2.4.7 Static Link-Local Addresses</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_8.2.4.7_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IPv6 Network Addresses</h1>
+        <h2>IPv6 Unicast Addresses</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Static Link-Local Address</b>
+          </p>
+          <p></p>
+          <p>Configuring the link-local address manually provides the ability to create an address that is recognizable and easier to remember.</p>
+          <p></p>
+          <p>Link-local addresses can be configured manually using the same interface command used to create IPv6 global unicast addresses but with an additional parameter:</p>
+          <p></p>
+          <p>
+            <span class="cmd">
+              <b>Router(config-if)#ipv6 address </b>
+            </span>
+            <span class="cmd">
+              <i>link-local-address</i>
+            </span>
+            <span class="cmd">
+              <b> link-local</b>
+            </span>
+          </p>
+          <p></p>
+          <p>Figure 1 shows that a link-local address has a prefix within the range FE80 to FEBF. When an address begins with this hextet (16-bit segment) the link-local parameter must follow the address. </p>
+          <p></p>
+          <p>Figure 2 shows the configuration of a link-local address using the<span class="cmd"><b> ipv6 address </b></span>interface command. The link-local address FE80::1 is used to make it easily recognizable as belonging to router R1. The same IPv6 link-local address is configured on all of R1’s interfaces. FE80::1 can be configured on each link because it only has to be unique on that link.</p>
+          <p></p>
+          <p>Similar to R1, router R2 would be configured with FE80::2 as the IPv6 link-local address on all of its interfaces.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

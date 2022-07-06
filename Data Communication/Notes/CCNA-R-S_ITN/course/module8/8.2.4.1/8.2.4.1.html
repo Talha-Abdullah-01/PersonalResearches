@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.2.4.1 Structure of an IPv6 Global Unicast Address</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_8.2.4.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IPv6 Network Addresses</h1>
+        <h2>IPv6 Unicast Addresses</h2>
+      </div>
+      <div id="content">
+          <p>IPv6 global unicast addresses are globally unique and routable on the IPv6 Internet. These addresses are equivalent to public IPv4 addresses. The Internet Committee for Assigned Names and Numbers (ICANN), the operator for Internet Assigned Numbers Authority (IANA), allocates IPv6 address blocks to the five RIRs. Currently, only global unicast addresses with the first three bits of 001 or 2000::/3 are being assigned. This is only 1/8th of the total available IPv6 address space, excluding only a very small portion for other types of unicast and multicast addresses. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: The 2001:0DB8::/32 address has been reserved for documentation purposes, including use in examples. </p>
+          <p></p>
+          <p>Figure 1 shows the structure and range of a global unicast address.</p>
+          <p></p>
+          <p>A global unicast address has three parts:</p>
+          <p>
+            <ul>
+              <li>Global routing prefix</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Subnet ID</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Interface ID</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Global Routing Prefix</b>
+          </p>
+          <p>The global routing prefix is the prefix, or network, portion of the address that is assigned by the provider, such as an ISP, to a customer or site. Currently, RIRs assign a /48 global routing prefix to customers. This includes everyone from enterprise business networks to individual households. This is more than enough address space for most customers. </p>
+          <p></p>
+          <p>Figure 2 shows the structure of a global unicast address using a /48 global routing prefix. /48 prefixes are the most common global routing prefixes assigned and will be used in most of the examples throughout this course. </p>
+          <p></p>
+          <p>For example, the IPv6 address 2001:0DB8:ACAD::/48 has a prefix that indicates that the first 48 bits (3 hextets) (2001:0DB8:ACAD) is the prefix or network portion of the address. The double colon (::) prior to the /48 prefix length means the rest of the address contains all 0s.</p>
+          <p></p>
+          <p>
+            <b>Subnet ID</b>
+          </p>
+          <p>The Subnet ID is used by an organization to identify subnets within its site. </p>
+          <p></p>
+          <p>
+            <b>Interface ID</b>
+          </p>
+          <p>The IPv6 Interface ID is equivalent to the host portion of an IPv4 address. The term Interface ID is used because a single host may have multiple interfaces, each having one or more IPv6 addresses. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Unlike IPv4, in IPv6, the all-0s and all-1s host addresses can be assigned to a device. The all-1s address can be used due to the fact that broadcast addresses are not used within IPv6. The all-0s address can also be used but is reserved as a Subnet-Router anycast address, and should be assigned only to routers.</p>
+          <p></p>
+          <p>An easy way to read most IPv6 addresses is to count the number of hextets. As shown in Figure 3, in a /64 global unicast address the first four hextets are for the network portion of the address, with the fourth hextet indicating the Subnet ID. The remaining four hextets are for the Interface ID. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

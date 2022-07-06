@@ -1,0 +1,7 @@
+<textcomponents>
+
+	<component id="ID_txt01">
+		<text><![CDATA[<br/><b>Upon completion of this chapter you will be able to:</b><br/><br/><textformat blockindent="-14"><li>Explain why protocols are necessary in communication.</li><li>Explain the purpose of adhering to a protocol suite.</li><li>Explain the role of standards organizations in establishing protocols for network interoperability.</li><li>Explain how the TCP/IP model and the OSI model are used to facilitate standardization in the communication process.</li><li>Explain why RFCs became the process for establishing standards.</li><li>Describe the RFC process.</li><li>Explain how data encapsulation allows data to be transported across the network.</li><li>Explain how local hosts access local resources on a network.</li><li>Explain how local hosts access remote resources on a network.</li></textformat><br/>]]></text> 
+	</component>
+	
+</textcomponents>

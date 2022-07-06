@@ -1,0 +1,55 @@
+<textcomponents>	
+	<component id="ID_title">
+		<text><![CDATA[Activity]]></text>
+	</component>
+	<component id="txt_instructions">
+		<text><![CDATA[<b>Activity – Determining the Network Address (Advanced)</b><br/><br/>In this activity, you are given the host address, subnet mask, host address (in binary format), and subnet mask (in binary format).<br/><br/>Enter the <b>network address</b> in binary and decimal format in the octet fields.]]></text>
+	</component>
+	
+	<component id="txt_incorrect">
+		<text><![CDATA[<b>Incorrect]]></text>
+	</component>
+	<component id="txt_correct">
+		<text><![CDATA[<b>Correct]]></text>
+	</component>
+	<component id="txt_correct_body">
+		<text><![CDATA[You have correctly converted the network address to binary and decimal. Click New Number to continue.]]></text>
+	</component>
+	<component id="txt_incorrect_binary">
+		<text><![CDATA[You have not correctly converted the network address to binary and/or decimal. Click Reset to try again.]]></text>
+	</component>
+	<component id="txt_incorrect_decimal">
+		<text><![CDATA[You have not correctly converted the network address to binary and/or decimal. Click Reset to try again.]]></text>
+	</component>
+	<component id="txt_incorrect_all">
+		<text><![CDATA[You have not correctly converted the network address to binary and/or decimal. Click Reset to try again.]]></text>
+	</component>
+	<component id="txt_hostaddress">
+		<text><![CDATA[Host Address]]></text>
+	</component>
+	<component id="txt_subnetmask">
+		<text><![CDATA[Subnet Mask]]></text>
+	</component>
+	<component id="txt_hostaddrbin">
+		<text><![CDATA[Host Address in binary]]></text>
+	</component>
+	<component id="txt_subnetbin">
+		<text><![CDATA[Subnet Mask in binary]]></text>
+	</component>
+	<component id="txt_netbin">
+		<text><![CDATA[Network Address in binary]]></text>
+	</component>
+	<component id="txt_netdec">
+		<text><![CDATA[Network Address in decimal]]></text>
+	</component>
+	<component id="txt_check">
+		<text><![CDATA[Check]]></text>
+	</component>
+	<component id="txt_reset">
+		<text><![CDATA[Reset]]></text>
+	</component>
+	<component id="txt_newnumber">
+		<text><![CDATA[New Number]]></text>
+	</component>
+
+</textcomponents>

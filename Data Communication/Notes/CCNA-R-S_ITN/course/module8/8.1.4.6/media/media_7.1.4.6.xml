@@ -1,0 +1,67 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>The Three Tiers of ISP - Tier 1</b>]]></text>
+</component>
+<component id="ID_s2_title">
+<text><![CDATA[<b>The Three Tiers of ISP - Tier 2</b>]]></text>
+</component>
+<component id="ID_s3_title">
+<text><![CDATA[<b>The Three Tiers of ISP - Tier 3</b>]]></text>
+</component>
+	
+	
+	
+<!-- <component id="ID_title">
+	<text><![CDATA[The 3 Tiers of ISPs]]></text>
+	</component> -->
+<component id="ID_s1_txt01">
+		<text><![CDATA[Internet Backbone]]></text>
+	</component>
+<component id="ID_s1_txt02">
+		<text><![CDATA[Tier 1<br/>(ex. Sprint, Savvis)]]></text>
+	</component>
+<component id="ID_s1_txt03">
+		<text><![CDATA[Tier 2<br/>(ex. nLayer)]]></text>
+	</component>
+<component id="ID_s1_txt04">
+		<text><![CDATA[Tier 2<br/>(France Telecom)]]></text>
+	</component>
+<component id="ID_s1_txt05">
+    		<text><![CDATA[Tier 3<br/>(ex. Fortress ITX)]]></text>
+	</component>
+<component id="ID_s1_txt06">
+    		<text><![CDATA[Tier 3<br/>(ex. Beachcomputers)]]></text>
+	</component>
+<component id="ID_s1_txt07">
+	    	<text><![CDATA[Primarily serve very large companies and Tier 2 ISPs]]></text>
+		</component>
+<component id="ID_s1_txt08">
+	    	<text><![CDATA[Direct, multiple connections to the Internet backbone provide reliability]]></text>
+	</component>
+	 
+
+	 
+<component id="ID_s2_txt07">
+		<text><![CDATA[Primarily serve large companies and Tier 3 ISPs]]></text>
+	</component>
+	
+<component id="ID_s2_txt08">
+		<text><![CDATA[Connect to the Internet via a Tier 1 ISP]]></text>
+	</component>
+
+	
+	
+<component id="ID_s3_txt07">
+		<text><![CDATA[Primarily serve medium and small companies, and homes]]></text>
+	</component>
+	
+<component id="ID_s3_txt08">
+		<text><![CDATA[Connect to the Internet via a Tier 2 ISP]]></text>
+	</component>
+	
+	
+<component id="ID_inst">
+		<text><![CDATA[Roll over a tier to learn more.]]></text>
+	</component>
+
+</textcomponents>

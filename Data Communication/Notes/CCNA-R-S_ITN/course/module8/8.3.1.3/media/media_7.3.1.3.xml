@@ -1,0 +1,31 @@
+﻿<textcomponents>
+
+<component id='ID_title'>
+	<text><![CDATA[<b>ICMPv6 Neighbor Discovery Protocol</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Address Resolution</b><br/>To: <font color='#F26200'>FF02:0:0:0:0:1:FF00</font>::<font color='#5FBC21'>20</font>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[I need the Ethernet MAC address of the device that has<br/>this unicast address.<br/>Target IPv6 Address: 2001:DB8:ACAD:1::<font color='#5FBC21'>20</font>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>2001:DB8:ACAD:1::10/64</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>2001:DB8:ACAD:1::30/64</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>Duplicate Address Detection (DAD)</b><br/>To: <font color='#F26200'>FF02:0:0:0:0:FF00</font>::<font color='#5FBC21'>30</font>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Before I use this address is anyone else on this link using this global unicast address?<br/>Target IPv6 Address: 2001:DB8:ACAD:1::<font color='#5FBC21'>30</font>]]></text>
+</component>
+
+</textcomponents>

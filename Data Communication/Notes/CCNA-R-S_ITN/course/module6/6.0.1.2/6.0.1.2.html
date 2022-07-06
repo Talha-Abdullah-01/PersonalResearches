@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.0.1.2 Activity – The Road Less Traveled…</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_6.0.1.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Network Layer</h1>
+        <h2>Introduction</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>The road less traveled…or is it?</b>
+          </p>
+          <p></p>
+          <p>During the upcoming weekend, you decide to visit a schoolmate who is currently at home sick. You know his street address but you have never been to his town before.  Instead of looking up the address on the map, you decide to take it easy and to simply ask town residents for directions after you arrive by train.  The citizens you ask for directions are very helpful. However, they all have an interesting habit. Instead of explaining the entire route to your destination, they all tell you, “Take this road and as soon as you arrive at the nearest crossroad, ask somebody there again.” </p>
+          <p></p>
+          <p>Somewhat bemused at this apparent oddity, you follow these instructions and finally arrive, crossroad by crossroad, and road by road, at your friend’s house.</p>
+          <p></p>
+          <p>Answer the following questions:</p>
+          <p>
+            <ul>
+              <li>Would it have made a significant difference if you were told about the whole route or a larger part of the route instead of just being directed to the nearest crossroad?  </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Would it have been more helpful to ask about the specific street address or just about the street name? What would happen if the person you asked for directions did not know where the destination street was or directed you through an incorrect road?</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Assume that on your way back home, you again choose to ask residents for directions. Would it be guaranteed that you would be directed via the same route you took to get to your friend’s home?  Explain your answer.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Is it necessary to explain where you depart from when asking directions to an intended destination?</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <a href="../../files/6.0.1.2%20Class%20Activity%20-%20The%20road%20less%20traveled...%20Instructions.pdf" target="_blank">Class Activity - The road less traveled...or is it? Instructions</a>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

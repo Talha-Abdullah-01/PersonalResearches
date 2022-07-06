@@ -1,0 +1,81 @@
+<textcomponents>
+	<component id="ID_title">
+	   <text><![CDATA[<b>Network Services</b>]]></text>
+	   </component>
+	<component id="ID_txtTitle1">
+	<text><![CDATA[<b>Domain Name System (DNS)</b>]]></text>
+	</component>
+	
+	<component id="ID_txtBody1">
+	<text><![CDATA[Service that provides the IP address of a web site or domain name so a host can connect to it]]></text>
+	</component>
+	
+	<component id="ID_txtTitle2">
+	<text><![CDATA[<b>Telnet</b>]]></text>
+	</component>
+	
+	<component id="ID_txtBody2">
+	<text><![CDATA[Service that allows administrators to login to a host from a remote location and control the host as though they were logged in locally]]></text>
+	</component>
+	
+	<component id="ID_txtTitle3">
+	<text><![CDATA[<b>Email Server</b>]]></text>
+	</component>
+	
+	<component id="ID_txtBody3">
+	<text><![CDATA[<textformat blockindent="-14"><li>Uses Simple Mail Transfer Protocol (SMTP), Post Office Protocol (POP3), or Internet Message Access Protocol (IMAP)</li><li>Used to send email messages from clients to servers over the Internet</li><li>Recipients are specified using the user@xyz format</li></textformat>]]></text>
+	</component>
+	
+	<component id="ID_txtTitle4">
+	<text><![CDATA[<b>Dynamic Host Configuration Protocol (DHCP) Server</b>]]></text>
+	</component>
+	
+	<component id="ID_txtBody4">
+	<text><![CDATA[Service that assigns the IP address, subnet mask, default gateway, and other information to clients]]></text>
+	</component>
+	
+	<component id="ID_txtTitle5">
+	<text><![CDATA[<b>Web Server</b>]]></text>
+	</component>
+	
+	<component id="ID_txtBody5">
+	<text><![CDATA[<textformat blockindent="-14"><li>Hypertext Transfer Protocol (HTTP)</li><li>Used to transfer information between web clients and web servers</li><li>Most web pages are accessed using HTTP</li></textformat>]]></text>
+	</component>
+	
+	<component id="ID_txtTitle6">
+	<text><![CDATA[<b>File Transfer Protocol (FTP) Server</b>]]></text>
+	</component>
+	
+	<component id="ID_txtBody6">
+	<text><![CDATA[Service that allows for the download and upload of files between a client and server]]></text>
+	</component>
+		
+	<component id="ID_txt02">
+	<text><![CDATA[DNS Server]]></text>
+	</component>
+	
+	<component id="ID_txt03">
+	<text><![CDATA[Telnet]]></text>
+	</component>
+	
+	<component id="ID_txt04">
+	<text><![CDATA[Email Server]]></text>
+	</component>
+	
+	<component id="ID_txt05">
+	<text><![CDATA[DHCP Server]]></text>
+	</component>
+	
+	<component id="ID_txt06">
+	<text><![CDATA[Web Server]]></text>
+	</component>
+	
+	<component id="ID_txt07">
+	<text><![CDATA[FTP Server]]></text>
+	</component>
+	
+	<component id="ID_inst">
+	<text><![CDATA[Click each server for a brief description of network services provided.]]></text>
+	</component>
+
+</textcomponents>

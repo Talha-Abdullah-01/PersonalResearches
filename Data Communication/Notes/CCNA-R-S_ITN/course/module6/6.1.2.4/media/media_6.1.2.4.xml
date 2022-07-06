@@ -1,0 +1,43 @@
+﻿<textcomponents>
+
+	<component id="ID_title">
+		<text><![CDATA[<b>Media Independence</b>]]></text>
+	</component>
+	
+	<component id="ID_txt03">
+		<text><![CDATA[IP packets can travel over different media.]]></text>
+	</component>
+	
+	<component id="ID_txt04">
+		<text><![CDATA[IP Packet]]></text>
+	</component>
+	
+	<component id="ID_txt05">
+		<text><![CDATA[Copper Ethernet]]></text>
+	</component>
+	
+	<component id="ID_txt06">
+		<text><![CDATA[Copper Serial]]></text>
+	</component>
+	
+	<component id="ID_txt07">
+		<text><![CDATA[Optical Fiber]]></text>
+	</component>
+	
+	<component id="ID_txt08">
+		<text><![CDATA[IP Packet]]></text>
+	</component>
+	
+	<component id="ID_txt09">
+		<text><![CDATA[Copper Ethernet]]></text>
+	</component>
+	
+	<component id="ID_txt10">
+		<text><![CDATA[Wireless]]></text>
+	</component>
+	
+	<component id="ID_txt11">
+		<text><![CDATA[IP Packet]]></text>
+	</component>
+
+</textcomponents>

@@ -1,0 +1,98 @@
+<textcomponents>
+   <component id="ID_title">
+  <text><![CDATA[<b>Frame Forwarding</b>]]></text> 
+  </component>
+
+
+   <component id="ID_pc1">
+  <text><![CDATA[H1]]></text> 
+  </component>
+  <component id="ID_pc-label1">
+  <text><![CDATA[<b>Source</b><br>AA:AA:AA:AA:AA:AA]]></text> 
+  </component>
+  
+ <component id="ID_pc2">
+   <text><![CDATA[H2]]></text> 
+  </component>
+  <component id="ID_pc-label2">
+  <text><![CDATA[BB:BB:BB:BB:BB:BB]]></text> 
+  </component>
+  
+ <component id="ID_pc3">
+   <text><![CDATA[H3]]></text> 
+   </component>
+  <component id="ID_pc-label3">
+  <text><![CDATA[<b>Destination</b><br>CC:CC:CC:CC:CC:CC]]></text> 
+  </component>
+  
+  <component id="ID_pc4">
+    <text><![CDATA[H4]]></text> 
+  </component>
+  <component id="ID_pc-label4">
+  <text><![CDATA[DD:DD:DD:DD:DD:DD]]></text> 
+  </component>
+  
+  
+  <component id="ID_bubble01">
+    <text><![CDATA[<p id="ID_bubble01" class="ID_bubble01 top">I need to send information to H3.</p>]]></text> 
+  </component>
+  <component id="ID_bubble02">
+    <text><![CDATA[<p id="ID_bubble02" class="ID_bubble02 left">This is not addressed to me. I shall ignore it.</p>]]></text> 
+  </component>
+  <component id="ID_bubble03">
+    <text><![CDATA[<p id="ID_bubble03" class="ID_bubble03 right">This is mine.</p>]]></text> 
+  </component>
+  <component id="ID_bubble04">
+    <text><![CDATA[<p id="ID_bubble04" class="ID_bubble04 right">This is not addressed to me. I shall ignore it.</p>]]></text> 
+  </component>
+  
+  
+  <component id="ID_table-label1">
+    <text><![CDATA[Destination Address]]></text> 
+  </component>
+  <component id="ID_table-label2">
+    <text><![CDATA[Source Address]]></text> 
+  </component>
+  <component id="ID_table-label3">
+    <text><![CDATA[Data]]></text> 
+  </component>
+  <component id="ID_table-label4">
+    <text><![CDATA[CC:CC:CC:CC:CC:CC]]></text> 
+  </component>
+  <component id="ID_table-label5">
+    <text><![CDATA[AA:AA:AA:AA:AA:AA]]></text> 
+  </component>
+  <component id="ID_table-label6">
+    <text><![CDATA[Encapsulated data]]></text> 
+  </component>
+  <component id="ID_table-label7">
+    <text><![CDATA[Frame Addressing]]></text> 
+  </component>
+  
+<!-- controller -->
+
+<component id="end">
+	<text><![CDATA[End]]></text>
+</component>
+
+<component id="fforward">
+	<text><![CDATA[Fast Forward]]></text>
+</component>
+
+<component id="pause">
+	<text><![CDATA[Pause]]></text>
+</component>
+
+<component id="play">
+	<text><![CDATA[Play]]></text>
+</component>
+
+<component id="rewind">
+	<text><![CDATA[Rewind]]></text>
+</component>
+
+<component id="start">
+	<text><![CDATA[Start]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.1.3.1 Basic Subnetting</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_9.1.3.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Subnetting an IPv4 Network</h1>
+        <h2>Subnetting an IPv4 Network</h2>
+      </div>
+      <div id="content">
+          <p>Every network address has a valid range of host addresses. All devices attached to the same network will have an IPv4 host address for that network and a common subnet mask or network prefix.  </p>
+          <p></p>
+          <p>The prefix and the subnet mask are different ways of representing the same thing - the network portion of an address.</p>
+          <p></p>
+          <p>IPv4 subnets are created by using one or more of the host bits as network bits. This is done by extending the mask to borrow some of the bits from the host portion of the address to create additional network bits. The more host bits borrowed, the more subnets that can be defined. For each bit borrowed, the number of subnetworks available is doubled. For example, if 1 bit is borrowed, 2 subnets can be created. If 2 bits, 4 subnets are created, if 3 bits are borrowed, 8 subnets are created, and so on. However, with each bit borrowed, fewer host addresses are available per subnet.</p>
+          <p></p>
+          <p>Bits can only be borrowed from the host portion of the address. The network portion of the address is allocated by the service provider and cannot be changed.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: In the examples in the figures, only the last octet is shown in binary because only bits from the host portion can be borrowed.</p>
+          <p></p>
+          <p>As shown in Figure 1, the 192.168.1.0/24 network has 24 bits in the network portion and 8 bits in the host portion, which is indicated with the subnet mask 255.255.255.0 or /24 notation. With no subnetting, this network supports a single LAN interface. If an additional LAN is needed, the network would need to be subnetted.</p>
+          <p></p>
+          <p>In Figure 2, 1 bit is borrowed from the most significant bit (leftmost bit) in the host portion, thus extending the network portion to 25 bits. This creates 2 subnets identified by using a 0 in the borrowed bit for the first network and a 1 in the borrowed bit for the second network. The subnet mask for both networks uses a 1 in the borrowed bit position to indicate that this bit is now part of the network portion.</p>
+          <p></p>
+          <p>As shown in Figure 3, when we convert the binary octet to decimal we see that the first subnet address is 192.168.1.0 and the second subnet address is 192.168.1.128. Because a bit has been borrowed, the subnet mask for each subnet is 255.255.255.128 or /25.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

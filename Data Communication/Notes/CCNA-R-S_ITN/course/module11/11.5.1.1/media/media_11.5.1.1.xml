@@ -1,0 +1,81 @@
+<textcomponents>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[<b>Access Point</b>]]></text>
+</component>
+<component id="ID_s1_txt02">
+<text><![CDATA[<b>Router</b>]]></text>
+</component>
+<component id="ID_s1_txt03">
+<text><![CDATA[<b>Switch</b>]]></text>
+</component>
+
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component>
+<component id="start">
+<text><![CDATA[Start]]></text>
+</component>
+<component id="play">
+<text><![CDATA[Play]]></text>
+</component>
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="end">
+<text><![CDATA[End]]></text>
+</component>
+<component id="fforward">
+<text><![CDATA[Fast Forward]]></text>
+</component>
+
+<component id="ID_s2_title">
+	<text><![CDATA[<b>Advantages of Wireless</b>]]></text>
+	</component>
+	
+<component id="ID_s2_text">
+	<text><![CDATA[Internet]]></text>
+	</component>
+	
+<component id="ID_s2_text1">
+	<text><![CDATA[Printer]]></text>
+	</component>
+<component id="ID_s2_text2">
+	<text><![CDATA[PC]]></text>
+	</component>
+<component id="ID_s2_text3">
+	<text><![CDATA[Smart TV]]></text>
+	</component>
+<component id="ID_s2_text4">
+	<text><![CDATA[Laptop]]></text>
+	</component>
+<component id="ID_s2_text5">
+	<text><![CDATA[Smart Phone]]></text>
+	</component>
+<component id="ID_s2_text6">
+	<text><![CDATA[DSL/Cable]]></text>
+	</component>
+	
+	
+<component id="ID_s2_TB1_title">
+	<text><![CDATA[<b>Benefits of Wireless LAN Technology</b>]]></text>
+	</component>
+	
+<component id="ID_s2_TB1_body">
+<text><![CDATA[<textformat blockindent="-14"><ul><li><b>Mobility</b> - allows for easy connection of both stationary and mobile clients</li><li><b>Scalability</b> - can be easily expanded to allow more users to connect and to increase the coverage area</li><li><b>Flexibility</b> - provides anytime, anywhere connectivity</li><li><b>Cost Savings</b> - equipment costs continue to fall as the technology matures </li><li><b>Reduced installation time</b> - installation of a single piece of equipment can provide connectivity for a large number of people</li><li><b>Reliability in harsh environments</b> - easy to install in emergency and hostile environments</li></ul></textformat>]]></text> 
+	</component>
+
+	<component id="ID_s3_title">
+	<text><![CDATA[<b>Limitations of Wireless</b>]]></text>
+	</component>
+	
+	<component id="ID_s3_TB1_title">
+	<text><![CDATA[<b>Limitations of Wireless LAN Technology</b>]]></text>
+	</component>
+	
+<component id="ID_s3_TB1_body">
+<text><![CDATA[<table><tr><th></th></tr><tr><td><textformat blockindent="-14"><ul><li><b>Interference</b> - Wireless technology is susceptible to interference from other devices that produce electromagnetic energies. This includes: cordless phones, microwaves, televisions, and other wireless LAN implementations.</li><li><b>Network and Data security</b> - Wireless LAN technology is designed to provide access to the data being transmitted, not security of the data. Additionally, it can provide an unprotected entrance into the wired network.</li><li><b>Technology</b> - Wireless LAN technology continues to evolve. Wireless LAN technology does not currently provide the speed or reliability of wired LANs.</li></ul></textformat></table>]]></text> 
+	</component>
+	
+	
+</textcomponents>

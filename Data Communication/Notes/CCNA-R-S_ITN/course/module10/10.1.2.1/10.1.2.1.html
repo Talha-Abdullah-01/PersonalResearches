@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.1.2.1 Peer-to-Peer Networks</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_10.1.2.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Application Layer Protocols</h1>
+        <h2>How Application Protocols Interact with End-User Applications</h2>
+      </div>
+      <div id="content">
+          <p>When accessing information on a networking device, whether it is a PC, laptop, tablet, smartphone, or some other device connected to a network, the data may not be physically stored on the device. In this case, a request to access that information must be made to the device where the data resides. In the peer-to-peer (P2P) networking model, the data is accessed from a peer device without the use of a dedicated server.</p>
+          <p></p>
+          <p>The P2P network model involves two parts: P2P networks and P2P applications. Both parts have similar features, but in practice work quite differently.</p>
+          <p></p>
+          <p>
+            <b>P2P Networks</b>
+          </p>
+          <p></p>
+          <p>In a P2P network, two or more computers are connected via a network and can share resources (such as printers and files) without having a dedicated server. Every connected end device (known as a peer) can function as both a server and a client. One computer might assume the role of server for one transaction while simultaneously serving as a client for another. The roles of client and server are set on a per request basis.</p>
+          <p></p>
+          <p>An example is a simple home network with two computers, as shown in the figure. In this example, Peer2 has a printer attached to it directly by USB, and is setup to share the printer on the network so that Peer1 can print to it. Peer1 is set up to share a drive or folder on the network. This allows Peer2 to access and save files to the shared folder. In addition to sharing files, a network such as this one would allow users to enable networked games, or share an Internet connection.</p>
+          <p></p>
+          <p>P2P networks decentralize the resources on a network. Instead of locating data to be shared on dedicated servers, data can be located anywhere and on any connected device. Most of the current operating systems support file and print sharing without requiring additional server software. However, P2P networks do not use centralized user accounts or access servers to maintain permissions. Therefore, it is difficult to enforce security and access policies in networks containing more than just a few computers. User accounts and access rights must be set individually on each peer device.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

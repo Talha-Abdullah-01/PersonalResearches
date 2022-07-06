@@ -1,0 +1,14 @@
+<textcomponents>
+<component id="ID_tx01">
+   <text><![CDATA[<b>Student LAN]]></text>
+   </component>
+<component id="ID_tx02">
+   <text><![CDATA[<b>Faculty LAN]]></text>
+   </component>
+<component id="ID_tx03">
+   <text><![CDATA[<b>Admin LAN]]></text>
+   </component>
+<component id="ID_tx04">
+   <text><![CDATA[Planning requires decisions on each subnet in terms of size, the number of hosts per subnet, and how host addresses will be assigned.]]></text>
+   </component>
+</textcomponents>

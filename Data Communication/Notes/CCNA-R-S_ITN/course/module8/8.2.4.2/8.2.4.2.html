@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.2.4.2 Static Configuration of a Global Unicast Address</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_8.2.4.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IPv6 Network Addresses</h1>
+        <h2>IPv6 Unicast Addresses</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Router Configuration</b>
+          </p>
+          <p>Most IPv6 configuration and verification commands in the Cisco IOS are similar to their IPv4 counterparts. In many cases the only difference is the use of<span class="cmd"><b> ipv6 </b></span>in place of<span class="cmd"><b> ip </b></span>within the commands. </p>
+          <p></p>
+          <p>The command to configure an IPv6 global unicast address on an interface is<span class="cmd"><b> ipv6 address </b></span><span class="cmd"><i>ipv6-address/prefix-length</i></span>. </p>
+          <p></p>
+          <p>Notice that there is not a space between<span class="cmd"><i> ipv6-address </i></span>and<span class="cmd"><i> prefix-length</i></span>.</p>
+          <p></p>
+          <p>The example configuration will use the topology shown in Figure 1 and these IPv6 subnets: </p>
+          <p>
+            <ul>
+              <li>2001:0DB8:ACAD:0001:/64 (<i>or</i> 2001:DB8:ACAD:1::/64)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>2001:0DB8:ACAD:0002:/64 (<i>or</i> 2001:DB8:ACAD:2::/64)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>2001:0DB8:ACAD:0003:/64 (<i>or</i> 2001:DB8:ACAD:3::/64)</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>As shown in Figure 2, the commands required to configure the IPv6 global unicast address on the GigabitEthernet 0/0 interface of R1 would be:</p>
+          <p></p>
+          <p>
+            <span class="cmd">
+              <b>Router(config)#interface GigabitEthernet 0/0 </b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">
+              <b>Router(config-if)#ipv6 address 2001:db8:acad:1::1/64</b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">
+              <b>Router(config-if)#no shutdown</b>
+            </span>
+          </p>
+          <p></p>
+          <p>
+            <b>Host Configuration</b>
+          </p>
+          <p>Manually configuring the IPv6 address on a host is similar to configuring an IPv4 address.</p>
+          <p></p>
+          <p>As shown in Figure 3, the default gateway address configured for PC1 is 2001:DB8:ACAD:1::1. This is the global unicast address of the R1 GigabitEthernet interface on the same network. Alternatively, the default gateway address can be configured to match the link-local address of the GigabitEthernet interface. Either configuration will work.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: When DHCPv6 or SLAAC is used, the link-local address will automatically be specified as the default gateway address.</p>
+          <p></p>
+          <p>Use the Syntax Checker in Figure 4 to configure the IPv6 global unicast address.</p>
+          <p></p>
+          <p>Just as with IPv4, configuring static addresses on clients does not scale to larger environments. For this reason, most network administrators in an IPv6 network will enable dynamic assignment of IPv6 addresses. </p>
+          <p></p>
+          <p>There are two ways in which a device can obtain an IPv6 global unicast address automatically:</p>
+          <p>
+            <ul>
+              <li>Stateless Address Autoconfiguration (SLAAC)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>DHCPv6</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<textcomponents>
+  <component id="ID_title">
+    <text><![CDATA[<b>Activity – Unicast, Broadcast, or Multicast?</b><br/><br/>Click <b>Start</b> to view the Destination IP Address. Next, click the host(s) which will receive a packet based on the address type (Unicast, Broadcast or Multicast).<br/><br/>This is a timed activity.]]></text>
+  </component>
+
+
+
+  <component id="ID_start">
+    <text><![CDATA[<b>Start</b>]]></text>
+  </component>
+
+  <component id="ID_stop">
+    <text><![CDATA[<b>Stop</b>]]></text>
+  </component>
+
+  <component id="ID_reset">
+    <text><![CDATA[<b>Reset</b>]]></text>
+  </component>
+  
+    
+<component id="ID_txt01">
+<text><![CDATA[<b>Destination IP Address =<b>]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[Source Host]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b>Time Remaining</b>]]></text> 
+  </component>
+  <component id="ID_txt04">
+  <text><![CDATA[192.168.100.1<br> 225.5.77.126 group]]></text> 
+  </component>
+  <component id="ID_txt05">
+  <text><![CDATA[192.168.100.2<br> 237.192.126.17 group]]></text> 
+  </component>
+  <component id="ID_txt06">
+  <text><![CDATA[192.168.100.3]]></text> 
+  </component>
+  <component id="ID_txt07">
+  <text><![CDATA[192.168.100.4<br> 237.192.126.17 group]]></text> 
+  </component>
+  <component id="ID_txt08">
+  <text><![CDATA[192.168.100.5<br> 225.5.77.126 group]]></text> 
+  </component>
+
+  <component id="ID_cBroad">
+    <text><![CDATA[You have successfully identified the transmission type.]]></text>
+  </component>
+
+  <component id="ID_iBroad">
+    <text><![CDATA[You have not successfully identified the transmission type. Please try again.]]></text>
+  </component>
+
+  <component id="ID_cMulti">
+    <text><![CDATA[You have successfully identified the transmission type.]]></text>
+  </component>
+
+  <component id="ID_iMulti">
+    <text><![CDATA[You have not successfully identified the transmission type. Please try again.]]></text>
+  </component>
+
+  <component id="ID_cUni">
+    <text><![CDATA[You have successfully identified the transmission type.]]></text>
+  </component>
+
+  <component id="ID_iUni">
+    <text><![CDATA[You have not successfully identified the transmission type. Please try again.]]></text>
+  </component>
+
+  <component id="ID_endGame">
+    <text><![CDATA[Good job. Click Reset to continue.]]></text>
+  </component>
+  
+  
+
+</textcomponents>

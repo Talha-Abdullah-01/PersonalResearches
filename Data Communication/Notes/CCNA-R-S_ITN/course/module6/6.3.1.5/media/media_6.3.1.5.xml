@@ -1,0 +1,26 @@
+﻿<textcomponents>
+	<component id="ID_txt01">
+		<text><![CDATA[Double-wide EHWIC slots]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[EHWIC 0]]></text> 
+	</component> 
+	<component id="ID_txt03">
+		<text><![CDATA[AUX <br/>port]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[LAN interfaces]]></text> 
+	</component> 
+	<component id="ID_txt05">
+		<text><![CDATA[Two 4 GB flash card slots]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[Console USB mini-B]]></text> 
+	</component> 
+	<component id="ID_txt07">
+		<text><![CDATA[Console RJ-45]]></text>
+	</component>
+	<component id="ID_txt08">
+		<text><![CDATA[USB ports]]></text> 
+	</component> 
+</textcomponents>

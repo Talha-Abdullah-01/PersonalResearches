@@ -1,0 +1,53 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[Route Processor]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[Routing table]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[FIB table]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[Adjacency table]]></text> 
+  </component>
+<component id="ID_txt05">
+  <text><![CDATA[Interface card]]></text> 
+  </component>
+<component id="ID_txt06">
+  <text><![CDATA[Interface card]]></text> 
+  </component>
+<component id="ID_txt07">
+  <text><![CDATA[Interface card]]></text> 
+  </component>
+<component id="ID_txt08">
+  <text><![CDATA[E1]]></text> 
+  </component>
+<component id="ID_txt09">
+  <text><![CDATA[E1]]></text> 
+  </component>
+<component id="ID_txt10">
+  <text><![CDATA[E1]]></text> 
+  </component>
+<component id="ID_txt11">
+  <text><![CDATA[E2]]></text> 
+  </component>
+<component id="ID_txt12">
+  <text><![CDATA[E2]]></text> 
+  </component>
+<component id="ID_txt13">
+  <text><![CDATA[E2]]></text> 
+  </component>
+<component id="ID_txt14">
+  <text><![CDATA[Cisco Catalyst switches]]></text> 
+  </component>
+<component id="ID_txt15">
+  <text><![CDATA[Workgroup LAN]]></text> 
+  </component>
+<component id="ID_txt16">
+  <text><![CDATA[Workgroup LAN]]></text> 
+  </component>
+<component id="ID_txt17">
+  <text><![CDATA[Workgroup LAN]]></text> 
+  </component>
+</textcomponents>

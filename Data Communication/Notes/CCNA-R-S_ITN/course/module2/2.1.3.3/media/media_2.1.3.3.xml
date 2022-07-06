@@ -1,0 +1,36 @@
+﻿<textcomponents>
+
+<!--<component id="ID_s1_title">
+<text><![CDATA[<b></b>]]></text>
+</component>-->
+
+<component id="ID_s1_txt01">
+<text><![CDATA[Within Privileged EXEC mode, network administrators can access the global configuration mode and all other sub-configuration modes.]]></text>
+</component>
+<component id="ID_s1_txt02">
+<text><![CDATA[<b>Privileged EXEC Mode</b>]]></text>
+</component>
+<component id="ID_s1_txt03">
+<text><![CDATA[<b>Privileged EXEC Mode</b><br/>Detailed examination of router, Debugging and testing. File manipulation. Remote access.<br/><b><font face="_typewriter"><b>Switch#<br>Router#</b></font></b>]]></text>
+</component>
+<component id="ID_s1_txt04">
+<text><![CDATA[<b>Global Configuration Mode</b><br/>Global configuration commands.<br/><b><font face="_typewriter"><b>Switch(config)#<br>Router(config)#</b></font>]]></text>
+</component>
+<component id="ID_s1_txt05">
+<text><![CDATA[<b>Other Configuration Modes</b><br/>Specific service or interface configurations.</b><br/><font face="_typewriter"><b>Switch(config-</b><i>mode</i><b>)#<br>Router(config-</b><i>mode</i><b>)#</b></font>]]></text>
+</component>
+
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>Global Configuration Mode and Submodes</b>]]></text>
+</component>
+<component id="ID_s2_txt01">
+<text><![CDATA[IOS Prompt Structure]]></text>
+</component>
+<component id="ID_s2_txt02">
+<text><![CDATA[The prompt changes to denote the current CLI mode.]]></text>
+</component>
+
+
+
+</textcomponents>

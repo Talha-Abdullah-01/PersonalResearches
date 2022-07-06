@@ -1,0 +1,27 @@
+<textcomponents>
+	
+	<component id="ID_txt01">
+		<text><![CDATA[Data link layer protocols govern how to format a frame for use on different media.]]></text>
+	</component>
+
+	<component id="ID_txt02">
+		<text><![CDATA[Different protocols may be in use for different media.]]></text>
+	</component>
+
+	<component id="ID_txt03">
+		<text><![CDATA[At each hop along the path, an intermediary device accepts frames from one medium, de-encapsulates the frame and then forwards the packets in a new frame. The headers of each frame are formatted for the specific medium that it will cross.]]></text>
+	</component>
+
+	<component id="ID_txt04">
+		<text><![CDATA[Frame]]></text>
+	</component>
+
+	<component id="ID_txt05">
+		<text><![CDATA[Paris]]></text>
+	</component>
+
+	<component id="ID_txt06">
+		<text><![CDATA[Japan]]></text>
+	</component>
+
+</textcomponents>

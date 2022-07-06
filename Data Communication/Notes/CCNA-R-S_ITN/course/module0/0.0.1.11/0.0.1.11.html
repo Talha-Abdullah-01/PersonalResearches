@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>0.0.1.11 Course Overview</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_0.0.1.11_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Welcome to Introduction to Networks</h1>
+        <h2>Message to the Student</h2>
+      </div>
+      <div id="content">
+          <p>As the course title states, the focus of this course is on learning the fundamentals of networking. In this course, you will learn both the practical and conceptual skills that build the foundation for understanding basic networking. You will do the following: </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Examine human versus network communication and see the parallels between them</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Be introduced to the two major models used to plan and implement networks: OSI and TCP/IP</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Gain an understanding of the "layered" approach to networks </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Examine the OSI and TCP/IP layers in detail to understand their functions and services</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Become familiar with the various network devices and network addressing schemes </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Discover the types of media used to carry data across the network</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>By the end of this course, you will be able to build simple LANs, perform basic configurations for routers and switches, and implement IP addressing schemes.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

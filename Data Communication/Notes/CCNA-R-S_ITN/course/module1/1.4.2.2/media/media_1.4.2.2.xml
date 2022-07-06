@@ -1,0 +1,30 @@
+<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>Powerline Networking</b>]]></text>
+	</component>
+	
+	<component id="ID_text1">
+		<text><![CDATA[<b>PLEK400</b><br/>1-Port Powerline Adapter]]></text>
+	</component>
+	
+	<component id="ID_text3">
+		<text><![CDATA[<b>PLSK400</b><br/>4-Port Powerline Adapter]]></text>
+	</component>
+	
+	<component id="ID_text5">
+		<text><![CDATA[<b>PLE400</b>]]></text>
+	</component>
+	
+	<component id="ID_text6">
+		<text><![CDATA[Wireless-N Router]]></text>
+	</component>
+	
+	<component id="ID_text7">
+		<text><![CDATA[Wired Connection]]></text>
+	</component>
+
+	<component id="ID_text8">
+		<text><![CDATA[Powerline Connection]]></text>
+	</component>
+	
+</textcomponents>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.2.3.1 UDP Low Overhead versus Reliability</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_7.2.3.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>TCP and UDP</h1>
+        <h2>UDP Communication</h2>
+      </div>
+      <div id="content">
+          <p>UDP is a simple protocol that provides the basic transport layer functions. It has much lower overhead than TCP, because it is not connection-oriented and does not offer the sophisticated retransmission, sequencing, and flow control mechanisms that provide reliability.</p>
+          <p></p>
+          <p>This does not mean that applications that use UDP are always unreliable, nor does it mean that UDP is an inferior protocol. It simply means that these functions are not provided by the transport layer protocol and must be implemented elsewhere, if required.</p>
+          <p></p>
+          <p>Although the total amount of UDP traffic found on a typical network is often relatively low, key application layer protocols that use UDP include:</p>
+          <p>
+            <ul>
+              <li>Domain Name System (DNS)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Simple Network Management Protocol (SNMP)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Dynamic Host Configuration Protocol (DHCP)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Routing Information Protocol (RIP)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Trivial File Transfer Protocol (TFTP)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>IP telephony or Voice over IP (VoIP)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Online games</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Some applications, such as online games or VoIP, can tolerate some data loss. If these applications used TCP, they could experience large delays while TCP detects data loss and retransmits data. These delays would be more detrimental to the performance of the application than small data losses. Some applications, such as DNS, simply retry the request if no response is received; therefore, they do not need TCP to guarantee message delivery.</p>
+          <p></p>
+          <p>The low overhead of UDP makes it very desirable for such applications.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

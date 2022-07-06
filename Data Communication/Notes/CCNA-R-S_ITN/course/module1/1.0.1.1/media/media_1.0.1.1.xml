@@ -1,0 +1,5 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<br/><b>Upon completion of this chapter you will be able to:</b><br><br><textformat blockindent="-14"><ul><li>Explain how networks affect the way we interact, learn, work and play.</li><li>Describe how networks support communication.</li><li>Explain the concept of a converged network.</li><li>Describe the four basic requirements of a reliable network.</li><li>Explain the use of network devices.</li><li>Compare the devices and topologies of a LAN to the devices and topologies of a WAN.</li><li>Explain the basic structure of the Internet. </li><li>Explain how LANs and WANs interconnect to the Internet.</li><li>Describe the impact of BYOD, online collaboration, video, and cloud computing on a business network.</li><li>Explain how networking technologies are changing the home environment.</li><li>Identify some basic security threats and solutions for both small and large networks. </li><li>Explain how the three Cisco enterprise architectures work to meet the needs of the evolving network environment.</li></ul><br/>]]></text>
+</component>
+</textcomponents>

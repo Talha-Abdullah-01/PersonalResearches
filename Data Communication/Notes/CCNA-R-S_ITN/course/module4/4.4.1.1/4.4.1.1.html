@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.4.1.1 Controlling Access to the Media</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_4.4.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Media Access Control</h1>
+        <h2>Topologies</h2>
+      </div>
+      <div id="content">
+          <p>Regulating the placement of data frames onto the media is controlled by the media access control sublayer. </p>
+          <p></p>
+          <p>Media access control is the equivalent of traffic rules that regulate the entrance of motor vehicles onto a roadway. The absence of any media access control would be the equivalent of vehicles ignoring all other traffic and entering the road without regard to the other vehicles. However, not all roads and entrances are the same. Traffic can enter the road by merging, by waiting for its turn at a stop sign, or by obeying signal lights. A driver follows a different set of rules for each type of entrance. </p>
+          <p></p>
+          <p>In the same way, there are different ways to regulate placing frames onto the media. The protocols at the data link layer define the rules for access to different media. Some media access control methods use highly-controlled processes to ensure that frames are safely placed on the media. These methods are defined by sophisticated protocols, which require mechanisms that introduce overhead onto the network.</p>
+          <p></p>
+          <p>Among the different implementations of the data link layer protocols, there are different methods of controlling access to the media. These media access control techniques define if and how the nodes share the media.</p>
+          <p></p>
+          <p>The actual media access control method used depends on:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Topology</b>: How the connection between the nodes appears to the data link layer. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Media sharing</b>: How the nodes share the media. The media sharing can be point-to-point such as in WAN connections or shared such as in LAN networks.</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media.css');
+
+html, body {
+	margin:0;
+	height:100%;
+
+}
+#flashContent {
+	width:98%;
+	height:98%;
+	overflow:hidden; 
+}
+
+#flashContent > table{
+	border: 1px solid red;
+}
+
+#mainDiv
+{
+	width:413px;
+	height:400px;
+	position:absolute;
+	top:0px;/*left: 0px;*/
+	/*border: 1px solid green;*/
+}
+
+#main_wrapper{width:408px;height:340px;position: absolute;/* border: 1px solid red;*/}
+
+#imgEnvelop{
+    height: 194.55px;
+    left: 51px;
+    position: absolute;
+    top: 59px;
+    width: 306.75px; 
+    z-index: 10;
+}
+
+div[id^=staticTxt]{
+	font-size: 11px;
+}
+
+#staticTxt01{ 
+    left: 74px;
+    position: absolute;
+    top: 74px;
+    z-index: 11;
+}
+#staticTxt02{ 
+	left: 187px;
+	position: absolute;
+	top: 171px;
+	z-index: 11;
+}
+#imgEnvelopFlap{
+	height: 110.6px;
+	left: 51px;
+	position: absolute;
+	bottom: 180.5px;
+	width: 306.35px;  
+	z-index: 9;
+}
+
+#imgLetter{
+    height: 170px;
+    left: 73px;
+    position: absolute;
+    top: 135px;
+    width: 263.85px;
+    opacity: 0;
+    z-index: 7;
+}
+#dvStamp{
+    background-color: #FFFADD;
+    height: 22px;
+    left: 131px;
+    position: absolute;
+    top: 20px;
+    width: 50px;
+    z-index: 20;
+    opacity: 0; 
+}
+#imgStamp{
+	height: 32px;
+	left: 131px;
+	position: absolute;
+	top: 20px;
+	width: 60px; 
+	opacity: 0;
+	z-index: 18; 
+	webkit-transform:scale(.60);
+	-moz-transform:scale(.60);
+	-khtml-transform:scale(.60); 
+}
+#staticTxt03{ 
+    left: 108px;
+    position: absolute;
+    top: 150px;
+    width: 218px;
+    z-index: 8;
+    opacity: 0;
+    color: #0D658B;
+}
+
+table tbody tr td { 
+	vertical-align:top; 
+	text-align: left;  
+    font: 9px arial,sans-serif;
+	border:2px solid #393536; 
+	border-collapse:collapse;
+	padding:2px;
+	font-size:10px !important;
+}
+
+#tr1 {
+	border: 1px solid #393536;
+	border-collapse: collapse;
+	height: 210px;
+	left: 0;
+	position: absolute;
+	top: 126px;
+	width: 99.5% !important;
+	opacity: 0;
+} 
+#td25{
+	width: 80px;
+}
+
+#ID_txt01,#ID_txt02,#ID_txt03,#ID_txt04,#ID_txt05,#ID_txt06{
+    background: none repeat scroll 0 0 #FDE6D4;
+    border: 4px solid #F68026;
+    border-radius: 5px 5px 5px 5px;
+    height: 45px;
+    opacity: 0;
+    padding: 12px;
+    position: absolute;
+    -webkit-transform:scale(.45);
+	-moz-transform:scale(.45);
+	-khtml-transform:scale(.45);  
+    width: 170px;
+    z-index: 15; 
+}
+
+#ID_txt01{left: 19px;top:40px;} 
+#ID_txt02{left:-28px;top: -12px;}
+#ID_txt03{left: 197px;top: 13px;width: 39px;height: 17px; text-align: center;} 
+#ID_txt04{left: 211px;top: 13px;width: 39px;height: 17px;  text-align: center;}
+#ID_txt05{left: 136px;top: 18.5px;width: 296px;} 
+#ID_txt06{height: 20px;left: 194px;top: 52px;width: 57px; text-align: center;}
+
+
+/*Slide2*/
+
+#ID_s2_table{width:415px !important;}
+
+#ID_s2_table > table { width:415px!important; border-collapse: collapse;}
+#ID_s2_table > table tbody tr { border-color:#393536;}
+#ID_s2_table > table tbody tr td { border-color:#393536; font-size:10px !important; border:2px solid #393536; border-collapse:collapse;}
+/*#ID_s2_table > table tbody tr td b { font-size:14px !important; font-weight:bold !important; border-collapse:collapse;}*/
+
+#td21,#td22,#td23,#td24,#td25,#td26,#td27{
+	color: #E0D5E6;
+}

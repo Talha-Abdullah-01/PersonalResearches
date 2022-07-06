@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.1.3.1 Physical Layer Fundamental Principles</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_4.1.3.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Physical Layer Protocols</h1>
+        <h2>Fundamental Principles of Layer 1</h2>
+      </div>
+      <div id="content">
+          <p>The physical layer standards address three functional areas:</p>
+          <p></p>
+          <p>
+            <b>Physical Components</b>
+          </p>
+          <p>The physical components are the electronic hardware devices, media, and other connectors that transmit and carry the signals to represent the bits. Hardware components such as network adapters (NICs), interfaces and connectors, cable materials, and cable designs are all specified in standards associated with the physical layer. The various ports and interfaces on a Cisco 1941 router are also examples of physical components with specific connectors and pinouts resulting from standards.</p>
+          <p></p>
+          <p>
+            <b>Encoding </b>
+          </p>
+          <p>Encoding or line encoding is a method of converting a stream of data bits into a predefined "code”. Codes are groupings of bits used to provide a predictable pattern that can be recognized by both the sender and the received. In the case of networking, encoding is a pattern of voltage or current used to represent bits; the 0s and 1s.</p>
+          <p></p>
+          <p>In addition to creating codes for data, encoding methods at the physical layer may also provide codes for control purposes such as identifying the beginning and end of a frame. </p>
+          <p></p>
+          <p>Common network encoding methods include:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Manchester encoding</b>: A 0 is represented by a high to low voltage transition and a 1 is represented as a low to high voltage transition. This type of encoding is used in older versions of Ethernet, RFID and Near Field Communication.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Non-Return to Zero (NRZ)</b>: This is a common means of encoding data that has two states termed “zero” and “one” and no neutral or rest position. A 0 may be represented by one voltage level on the media and a 1 might be represented by a different voltage on the media.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Faster data rates require more complex encoding, such as 4B/5B, however, explanation of these methods is beyond the scope of this course.</p>
+          <p></p>
+          <p>
+            <b>Signaling</b>
+          </p>
+          <p>The physical layer must generate the electrical, optical, or wireless signals that represent the "1" and "0" on the media. The method of representing the bits is called the signaling method. The physical layer standards must define what type of signal represents a "1" and what type of signal represents a "0". This can be as simple as a change in the level of an electrical signal or optical pulse. For example, a long pulse might represent a 1, whereas a short pulse represents a 0.</p>
+          <p></p>
+          <p>This is similar to how Morse code is used for communication. Morse code is another signaling method that uses a series of on-off tones, lights, or clicks to send text over telephone wires or between ships at sea.</p>
+          <p></p>
+          <p>Signals can be transmitted in one of two ways:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Asynchronous</b>: Data signals are transmitted without an associated clock signal. The time spacing between data characters or blocks may be of arbitrary duration, meaning the spacing is not standardized. Therefore, frames require start and stop indicator flags.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Synchronous</b>: Data signals are sent along with a clock signal which occurs at evenly spaced time durations referred to as the bit time.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>There are many ways to transmit signals. A common method to send data is using modulation techniques. Modulation is the process by which the characteristic of one wave (the signal) modifies another wave (the carrier). The following modulation techniques have been widely used in transmitting data on a medium: </p>
+          <p>
+            <ul>
+              <li>
+                <b>Frequency modulation (FM)</b>: A method of transmission in which the carrier frequency varies in accordance with the signal.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Amplitude modulation (AM)</b>: A transmission technique in which the amplitude of the carrier varies in accordance with the signal.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Pulse-coded modulation (PCM)</b>: A technique in which an analog signal, such as a voice, is converted into a digital signal by sampling the signal’s amplitude and expressing the different amplitudes as a binary number. The sampling rate must be at least twice the highest frequency in the signal.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The nature of the actual signals representing the bits on the media will depend on the signaling method in use. Some methods may use one attribute of signal to represent a single 0 and use another attribute of signal to represent a single 1. </p>
+          <p></p>
+          <p>Figure 2 illustrates the how AM and FM techniques are used to send a signal. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

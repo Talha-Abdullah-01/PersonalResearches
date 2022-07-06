@@ -1,0 +1,34 @@
+﻿<textcomponents>
+	<component id="ID_txt01">
+		<text><![CDATA[<b>Electrical Signals</b> &#45; <br />Copper cable]]></text> 
+	</component>
+	  
+	<component id="ID_txt02">
+	  <text><![CDATA[<font size="10">Outbound (Tx) signal</font>]]></text> 
+	</component>
+	
+	<component id="ID_txt03">
+		<text><![CDATA[<b>Light Pulse</b> &#45; <br />Fiber-optic cable]]></text>
+	</component>
+	
+	<component id="ID_txt04">
+	  <text><![CDATA[<b>Microwave Signals</b> &#45; <br />Wireless]]></text> 
+	</component>
+	
+	<component id="ID_txt05">
+	  <text><![CDATA[<font size="10">Digital <br />Signal</font>]]></text> 
+	</component>
+	
+	<component id="ID_txt06">
+		<text><![CDATA[<font size="10">AM</font>]]></text> 
+	</component>
+	
+  <component id="ID_txt07">
+	<text><![CDATA[<font size="10">FM</font>]]></text> 
+  </component>
+  
+  <component id="ID_txt08">
+	<text><![CDATA[<font size="10">PM</font>]]></text> 
+  </component>
+  
+</textcomponents>

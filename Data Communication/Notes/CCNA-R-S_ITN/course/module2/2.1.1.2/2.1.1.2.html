@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.1.1.2 Purpose of OS</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.1.1.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IOS Bootcamp</h1>
+        <h2>Cisco IOS</h2>
+      </div>
+      <div id="content">
+          <p>Network operating systems are in many ways similar to the operating systems of PCs. An operating system performs a number of technical functions "behind the scenes" that enable a user to:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Use a mouse</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>View output on a monitor</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Enter text commands</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Select options within a dialog box window</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The "behind the scenes" functions for switches and routers are very similar. The IOS on a switch or router provides the network technician with an interface. The technician can enter commands to configure, or program, the device to perform various networking functions. The IOS operational details vary on internetworking devices, depending on the purpose of the device and the features supported.</p>
+          <p></p>
+          <p>Cisco IOS is a term that encompasses a number of different operating systems that run on various networking devices. There are many distinct variations of Cisco IOS: </p>
+          <p>
+            <ul>
+              <li>IOS for switches, routers, and other Cisco networking devices</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>IOS numbered versions for a given Cisco networking device</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>IOS feature sets providing distinct packages of features and services</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Just as a PC may be running Microsoft Windows 8 and a MacBook may be running OS X, a Cisco networking device runs a particular version of the Cisco IOS. The version of IOS is dependent on the type of device being used and the required features.  While all devices come with a default IOS and feature set, it is possible to upgrade the IOS version or feature set, in order to obtain additional capabilities. </p>
+          <p></p>
+          <p>In this course, you will focus primarily on Cisco IOS Release 15.x. Figure 1 displays a list of IOS software releases for a Cisco Catalyst 2960 Switch. Figure 2 displays a list of IOS software releases for a Cisco 2911 Integrated Services Router (ISR). </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

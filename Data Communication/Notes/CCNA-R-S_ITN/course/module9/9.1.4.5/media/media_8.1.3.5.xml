@@ -1,0 +1,61 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Activity – Determine the Number of Bits to Borrow</b><br/><br/>In this activity, you are given the number of hosts that are needed.<br/><br/>Determine the subnet mask that would support the number of<b> hosts </b>as specified.<br/><br/>Enter your answers in binary, decimal, and prefix notation format in the fields provided.]]></text>
+</component>
+
+<component id="ID_btn01">
+<text><![CDATA[Check]]></text>
+</component>
+
+<component id="ID_btn02">
+<text><![CDATA[Reset]]></text>
+</component>
+
+<component id="ID_btn03">
+<text><![CDATA[OK]]></text>
+</component>
+
+
+
+
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Hosts<br/>Needed</b>]]></text>
+</component>
+
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Subnet Mask (binary)</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Subnet Mask (decimal)</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>Prefix Notation (/x)</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[]]></text>
+</component>
+
+<component id='ID_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_CORRECT_BODY'>
+	<text><![CDATA[You have correctly determined the subnet mask and entered it in binary, decimal, and prefix notation formats.]]></text>
+</component>
+
+<component id='ID_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_INCORRECT_BODY'>
+	<text><![CDATA[You have not correctly determined the subnet mask and/or entered it correctly in binary, decimal, and prefix notation formats. Please click Reset to try again.]]></text>
+</component>
+
+
+</textcomponents>

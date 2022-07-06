@@ -1,0 +1,60 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media.css');
+
+html, body {
+	margin:0;
+	height:100%;
+
+
+}
+#flashContent {
+	width:98%;
+	height:98%;
+}
+
+#mainDiv{
+width:413px;
+height:400px;
+position:absolute;
+top:0px;
+
+
+}
+
+#ID_s2_TB1_body{float: left;height: 64px;overflow: auto !important; padding: 0 0 0 2px;width: 415px !important;z-index: 10;}
+#ID_s2_TB1_body table{letter-spacing: 0; line-height: 18px;}
+#ID_s2_TB1_body table ul{padding:0 0 2px 39px;margin:0;}
+#ID_s2_TB1_body table ul li{line-height: 14px;}
+
+#ID_s3_TB1_body{float: left;height: 64px;overflow: auto !important; padding: 0 0 0 2px;width: 415px !important;z-index: 10;}
+#ID_s3_TB1_body table{letter-spacing: 0; line-height: 18px;}
+#ID_s3_TB1_body table ul{padding:0 0 0 39px;margin:0;}
+#ID_s3_TB1_body table ul li{line-height: 14px;}
+
+#main_wrapper{width:408px;height:400px;position:relative;border:1px solid red;}
+#bgPic{position:absolute;top:44px;left:223px;}
+#monitor{position:absolute;top:134px; left:207px;opacity:1;}
+#monitorglow{position:absolute;top:134px; left:207px;opacity:0;}
+
+#line1{position:absolute;top:175px; left:165px;opacity:0;z-index:0}
+#line2{position:absolute;top:175px; left:226px;opacity:0;z-index:0}
+
+#apa1{position:absolute;top:183px; left:218px;opacity:0;z-index:1}
+#apaglow{position:absolute;top:131px; left:139px;opacity:0;z-index:1}
+
+#router1{position:absolute;top:194px; left:218px;opacity:0;z-index:1}
+#routerglow{position:absolute;top:144px; left:288px;opacity:0;z-index:1}
+
+#swg1{position:absolute;top:200px; left:218px;opacity:0;z-index:1}
+#switchglow{position:absolute;top:227px; left:200px;opacity:0;z-index:1}
+
+#text1{position:absolute;top:197px; left:139px;opacity:0;z-index:1;font-size:10px;}
+#text2{position:absolute;top:204px; left:317px;opacity:0;z-index:1;font-size:10px;}
+#text3{position:absolute;top:286px; left:226px;opacity:0;z-index:1;font-size:10px;}
+#text4{position:absolute;top:386px; left:-15px;opacity:1;z-index:1;font-size:11px;width:434px;}
+
+#ID_s2_TB1_title,#ID_s3_TB1_title{color:#482f56 ! important}
+
+

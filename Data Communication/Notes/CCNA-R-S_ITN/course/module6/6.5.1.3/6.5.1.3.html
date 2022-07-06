@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.5.1.3 Summary</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_6.5.1.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Summary</h1>
+        <h2>Summary</h2>
+      </div>
+      <div id="content">
+          <p>The network layer, or OSI Layer 3, provides services to allow end devices to exchange data across the network. To accomplish this end-to-end transport, the network layer uses four basic processes: IP addressing for end devices, encapsulation, routing, and de-encapsulation.</p>
+          <p></p>
+          <p>The Internet is largely based on IPv4, which is still the most widely-used network layer protocol. An IPv4 packet contains the IP header and the payload. However, IPv4 has a limited number of unique public IP addresses available. This led to the development of IP version 6 (IPv6). The IPv6 simplified header offers several advantages over IPv4, including better routing efficiency, simplified extension headers, and capability for per-flow processing. Plus, IPv6 addresses are based on 128-bit hierarchical addressing as opposed to IPv4 with 32 bits. This dramatically increases the number of available IP addresses.</p>
+          <p></p>
+          <p>In addition to hierarchical addressing, the network layer is also responsible for routing.</p>
+          <p></p>
+          <p>Hosts require a local routing table to ensure that packets are directed to the correct destination network. The local table of a host typically contains the direct connection, the local network route and the local default route. The local default route is the route to the default gateway.</p>
+          <p></p>
+          <p>The default gateway is the IP address of a router interface connected to the local network. When a host needs to forward a packet to a destination address that is not on the same network as the host, the packet is sent to the default gateway for further processing. </p>
+          <p></p>
+          <p>When a router, such as the default gateway, receives a packet, it examines the destination IP address to determine the destination network. The routing table of a router stores information about directly-connected routes and remote routes to IP networks. If the router has an entry in its routing table for the destination network, the router forwards the packet. If no routing entry exists, the router may forward the packet to its own default route, if one is configured, or it will drop the packet.</p>
+          <p></p>
+          <p>Routing table entries can be configured manually on each router to provide static routing or the routers may communicate route information dynamically between each other using a routing protocol.</p>
+          <p></p>
+          <p>In order for routers to be reachable, the router interface must be configured. To enable a specific interface, enter interface configuration mode using the<span class="cmd"><b> interface </b></span><span class="cmd"><i>type-and-number </i></span>global configuration mode command.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

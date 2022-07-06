@@ -1,0 +1,22 @@
+<textcomponents>
+	<component id="ID_txt01">
+		<text><![CDATA[I have a printer to share.]]></text> 
+	</component>
+	
+	<component id="ID_txt02">
+		<text><![CDATA[I have files to share.]]></text> 
+	</component>
+	
+	<component id="ID_txt03">
+		<text><![CDATA[<b>Print Sharing</b>]]></text> 
+	</component>
+	
+	<component id="ID_txt04">
+		<text><![CDATA[<b>File Sharing</b>]]></text> 
+	</component>
+
+	<component id="ID_table01">
+		<text><![CDATA[<b>The advantages of peer-to-peer networking:</b><br /><textformat blockindent="-14"><li>Easy to set up</li><li>Less complexity</li><li>Lower cost since network devices and dedicated servers may not be required</li><li>Can be used for simple tasks such as transferring files and sharing printers</li></textformat><br/><b>The disadvantages of peer-to-peer networking:</b><br /><textformat blockindent="-14"><li>No centralized administration</li><li>Not as secure</li><li>Not scalable</li><li>All devices may act as both clients and servers which can slow their performance</li></textformat>]]></text>
+	</component>
+
+</textcomponents>

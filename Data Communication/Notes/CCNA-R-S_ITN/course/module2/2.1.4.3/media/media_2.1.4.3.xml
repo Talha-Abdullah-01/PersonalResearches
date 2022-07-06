@@ -1,0 +1,17 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Context-Sensitive Help</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[Command options - display a list of commands or keywords that start with the characters <b>cl</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Command explanation - the IOS displays what command arguments or variables can be next, and provides an explanation of each]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Command explanation with more than one argument or variable option]]></text>
+</component>
+</textcomponents>

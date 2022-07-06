@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.2.2.1 Securing Device Access</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.2.2.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Getting Basic</h1>
+        <h2>Limiting Access to Device Configurations</h2>
+      </div>
+      <div id="content">
+          <p>Physically limiting access to network devices by placing them in closets and locked racks is good practice; however, passwords are the primary defense against unauthorized access to network devices. Every device, even home routers, should have locally configured passwords to limit access. Later, we will introduce how to strengthen security by requiring a username along with a password. For now, we will present basic security precautions using only passwords.</p>
+          <p></p>
+          <p>As discussed previously, the IOS uses hierarchical modes to help with device security. As part of this security enforcement, the IOS can accept several passwords to allow different access privileges to the device.</p>
+          <p></p>
+          <p>The passwords introduced here are:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Enable password</b> - Limits access to the privileged EXEC mode</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Enable secret</b> - Encrypted, limits access to the privileged EXEC mode </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Console password</b> - Limits device access using the console connection</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>VTY password</b> - Limits device access over Telnet</li>
+            </ul>
+          </p>
+          <p></p>
+          <p></p>
+          <p>As good practice, use different authentication passwords for each of these levels of access. Although logging in with multiple and different passwords is inconvenient, it is a necessary precaution to properly protect the network infrastructure from unauthorized access. </p>
+          <p></p>
+          <p>Additionally, use strong passwords that are not easily guessed. The use of weak or easily guessed passwords continues to be a security issue in many facets of the business world. </p>
+          <p></p>
+          <p>Consider these key points when choosing passwords:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Use passwords that are more than 8 characters in length.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Use a combination of upper and lowercase letters, numbers, special characters, and/or numeric sequences in passwords.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Avoid using the same password for all devices.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Avoid using common words such as password or administrator, because these are easily guessed.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: In most of the labs in this course, we will be using simple passwords such as<b> cisco</b> or <b>class</b>. These passwords are considered weak and easily guessable and should be avoided in a work environment. We only use these passwords for convenience in a classroom setting or to illustrate configuration examples.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

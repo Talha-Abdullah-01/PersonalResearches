@@ -1,0 +1,52 @@
+<textcomponents>
+<!--Slide 1-->
+<component id="ID_s1_title">
+<text><![CDATA[<b>Fragile Environment</b>]]></text>
+</component>
+
+
+<component id="ID_s1_txt01">
+   <text><![CDATA[Greater effort needed to ensure delivery = higher overhead = slower transmission rates]]></text>
+   </component>
+
+<component id="ID_s1_txt02">
+   <text><![CDATA[In a <font color="#f26200"><b>fragile environment</b></font>, more controls are needed to ensure delivery. The header and trailer fields are larger as more control information is needed.]]></text>
+   </component>
+   
+   <component id="ID_s1_txt03">
+   <text><![CDATA[<b>Frame</b>]]></text>
+   </component>
+   
+    <component id="ID_s1_txt04">
+   <text><![CDATA[<b>Frame</b>]]></text>
+   </component>
+
+
+<!--Slide 2-->
+<component id="ID_s2_title">
+<text><![CDATA[<b>Protected Environment</b>]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+   <text><![CDATA[Less effort needed to ensure delivery = lower overhead = faster transmission rates]]></text>
+   </component>
+<component id="ID_s2_txt02">
+   <text><![CDATA[In a <font color="#f26200"><b>protected environment</b></font>, we can count on the frame arriving at its destination. Fewer controls are needed, resulting in smaller fields and smaller frames.]]></text>
+   </component>
+   
+   
+    <component id="ID_s2_txt03">
+   <text><![CDATA[<b>Frame</b>]]></text>
+   </component>
+   
+    <component id="ID_s2_txt04">
+   <text><![CDATA[<b>Frame</b>]]></text>
+   </component>
+   
+     <component id="ID_s2_txt05">
+   <text><![CDATA[<b>Frame</b>]]></text>
+   </component>
+
+   
+   
+</textcomponents>

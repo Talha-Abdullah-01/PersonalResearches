@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<data>
+	<slide type="MBAR">
+		<slide>
+			<element type="IMAGE" x="18" y="61" width="406" height="271.05" subType="STD" src="1_4_1_5.jpg" />
+		</slide>
+
+
+		<slide>
+			<element type="IMAGE" x="0" y="0" width="470" height="400" src="1.4.1.5.jpg" />
+			<element type="TEXT" compId="ID_txt03" x="247.45" y="246.45" width="115.6" expand="up+down" align="center" />
+			<element type="TEXT" compId="ID_txt05" x="56.3" y="251.35" width="115.6" expand="up+down" align="center" />
+			<element type="TEXT" compId="ID_txt02" x="270.35" y="129.8" width="115.6" expand="up+down" align="center" />
+			<element type="TEXT" compId="ID_txt01" x="156.45" y="53.05" width="115.6" expand="up+down" align="center" />
+			<element type="TEXT" compId="ID_txt06" x="20.45" y="130.8" width="115.6" expand="up+down" align="center" />
+			<element type="TEXT" compId="ID_txt04" x="150.1" y="335" width="115.6" expand="up+down" align="center" />
+			<element type="TEXT" compId="ID_txt07" x="115.55" y="187.25" width="115.6" expand="up+down" align="center" />
+			
+		</slide>
+
+
+	</slide>	
+</data>

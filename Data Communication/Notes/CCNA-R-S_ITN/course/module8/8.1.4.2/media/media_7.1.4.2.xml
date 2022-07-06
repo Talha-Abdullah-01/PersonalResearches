@@ -1,0 +1,66 @@
+﻿<textcomponents>
+
+  <component id="ID_btn01">
+    <text><![CDATA[Pass]]></text>
+  </component>
+
+  <component id="ID_btn02">
+    <text><![CDATA[Block]]></text>
+  </component>
+
+  <component id="ID_btn03">
+    <text><![CDATA[Start]]></text>
+  </component>
+
+  <component id="ID_btn04">
+    <text><![CDATA[Reset]]></text>
+  </component>
+  
+  
+  
+<component id="ID_title">
+  <text><![CDATA[<b>Activity</b><br/><br/>Decide to Pass or Block each IP address depending on whether it is Public (the Internet) or Private (small local network).<br><br>Click Start to begin and click on either Pass or Block.]]></text>
+</component>
+
+<component id="ID_txt02">
+  <text><![CDATA[Points]]></text>
+</component>
+
+<component id="ID_txt03">
+  <text><![CDATA[ISP]]></text>
+</component>
+<component id="ID_txt04">
+  <text><![CDATA[Internet]]></text>
+</component>
+
+  
+  
+  
+  
+  
+  <component id="ID_Start">
+  <text><![CDATA[Start]]></text>
+</component>
+<component id="ID_Reset">
+  <text><![CDATA[Reset]]></text>
+</component>
+<component id="ID_Pass">
+  <text><![CDATA[Pass]]></text>
+</component>
+<component id="ID_Block">
+  <text><![CDATA[Block]]></text>
+</component>
+<component id="ID_MsgBadBody">
+  <text><![CDATA[Sorry, review the ranges of private IP addresses and try again.]]></text>
+</component>
+<component id="ID_MsgBadTitle">
+  <text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+<component id="ID_MsgGoodBody">
+  <text><![CDATA[Great job. Click Next to continue.]]></text>
+</component>
+<component id="ID_MsgGoodTitle">
+  <text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+</textcomponents>

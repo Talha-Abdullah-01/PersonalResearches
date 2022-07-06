@@ -1,0 +1,89 @@
+﻿<textcomponents>
+<component id="ID_btn01">
+<text><![CDATA[<b>Devices</b>]]></text>
+</component>
+<component id="ID_btn02">
+  <text><![CDATA[<b>Media</b>]]></text> 
+  </component>
+<component id="ID_btn03">
+  <text><![CDATA[<b>Services</b>]]></text> 
+  </component>
+  <component id="ID_s1_txt01">
+	<text><![CDATA[Devices]]></text>
+	</component>
+	 <component id="ID_s1_txt02">
+	<text><![CDATA[Devices]]></text>
+	</component>
+	<component id="ID_s1_txt03">
+	<text><![CDATA[LAN]]></text>
+	</component>
+	 <component id="ID_s1_txt04">
+	<text><![CDATA[LAN]]></text>
+	</component>
+	 <component id="ID_s1_txt05">
+	<text><![CDATA[Devices]]></text>
+	</component>
+	 <component id="ID_s1_txt06">
+	<text><![CDATA[Devices]]></text>
+	</component>
+	
+	<component id="ID_s1_txt07">
+	<text><![CDATA[<b>Internetwork</b>]]></text>
+	</component>
+	
+	<component id="ID_s2_txt01">
+	<text><![CDATA[LAN]]></text>
+	</component>
+	
+	<component id="ID_s2_txt02">
+	<text><![CDATA[LAN]]></text>
+	</component>
+	
+	<component id="ID_s2_txt03">
+	<text><![CDATA[Media]]></text>
+	</component>
+	
+	<component id="ID_s2_txt04">
+	<text><![CDATA[Media]]></text>
+	</component>
+	
+	<component id="ID_s2_txt05">
+	<text><![CDATA[]]></text>
+	</component>
+	
+	<component id="ID_s2_txt06">
+	<text><![CDATA[<b>Internetwork</b>]]></text>
+	</component>
+	
+	<component id="ID_s3_txt01">
+	<text><![CDATA[LAN]]></text>
+	</component>
+	
+	<component id="ID_s3_txt02">
+	<text><![CDATA[LAN]]></text>
+	</component>
+	
+	<component id="ID_s3_txt03">
+	<text><![CDATA[Rule 1, Rule 2, Rule 3]]></text>
+	</component>
+	
+	<component id="ID_s3_txt04">
+	<text><![CDATA[Processes and<br/>Services]]></text>
+	</component>
+	
+	<component id="ID_s3_txt05">
+	<text><![CDATA[<b>Internetwork</b>]]></text>
+	</component>
+	
+	<component id="ID_s3_txt06">
+	<text><![CDATA[Services<br/>(Software)]]></text>
+	</component>
+	
+	<component id="ID_s3_txt07">
+	<text><![CDATA[Services<br/>(Software)]]></text>
+	</component>
+	
+	
+	
+	
+</textcomponents>

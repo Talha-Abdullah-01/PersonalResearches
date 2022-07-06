@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.3.2.2 Module Options for Cisco Switch Slots</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_5.3.2.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>LAN Switches</h1>
+        <h2>Fixed or Modular</h2>
+      </div>
+      <div id="content">
+          <p>The Cisco switch product lines are widely deployed globally, in large part due to the flexibility they provide for add-on options. Not only does the Cisco IOS have the richest set of features available relative to any other network operating system, but the IOS is tailor fit to each Cisco networking device, switches in particular. </p>
+          <p></p>
+          <p>To illustrate the options available, which are literally too voluminous to list here, we focus on the Catalyst 3560 switches. The Catalyst 3560 switches have Small Form-Factor Pluggable (SFP) ports that support a number of SFP transceiver modules. Here is a list of the SFP modules supported on one or more types of 3560 switches:</p>
+          <p></p>
+          <p>
+            <b>Fast Ethernet SFP Modules</b> – </p>
+          <p>
+            <ul>
+              <li>100BASE-FX (multimode fiber-optic (MMF)) for 2 kilometers (km)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>100BASE-LX10 (single-mode fiber-optic (SMF)) for 2km</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>100BASE-BX10 (SMF) for 10 km</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>100BASE-EX (SMF) for 40 km</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>100BASE-ZX (SMF) for 80 km</li>
+            </ul>
+          </p>
+          <p>
+            <b>Gigabit Ethernet SFP Modules</b> – </p>
+          <p>
+            <ul>
+              <li>1000BASE-SX 50/62.5 μm (MMF) up to 550/220 m</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>1000BASE-LX/LH (SMF/MMF) up to 10/0.550 k</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>1000BASE-ZX (SMF) up to 70 km</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>1000BASE-BX10-D&1000BASE-BX10-U (SMF) up to 10 km</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>1000BASE-T (copper wire transceiver)</li>
+            </ul>
+          </p>
+          <p>
+            <b>10 Gigabit Ethernet SFP Modules</b> – </p>
+          <p>
+            <ul>
+              <li>10G-SR (MMF) up 400 m</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>10G-SR-X (MMF) up to 400 m (supporting extended temperature range)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>10G-LRM (MMF) up to 220 m</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>FET-10G (MMF) up to 100 m (for Nexus fabric uplinks)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>10G-LR (SMF) up to 10 km</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>10G-LR-X (SMF) up to 10 km (supporting extended temperature range) </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>10G-ER (SMF) up to 40 km</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>10G-ZR (SMF) up to 80 km</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Twinax (copper wire transceiver) up to 10 m</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Active Optical up to 10 m (for intra/inter-rack connections) </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>40 Gigabit Ethernet and 100 Gigabit Ethernet modules are supported on high-end Cisco devices, such as the Catalyst 6500, the CRS router, the ASR 9000 series router, and the Nexus 7000 series switch.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

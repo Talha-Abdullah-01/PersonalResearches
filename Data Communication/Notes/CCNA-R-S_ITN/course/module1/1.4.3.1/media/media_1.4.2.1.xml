@@ -1,0 +1,18 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Threats to Networks</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[Internet]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[External<br/>Threat]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[Internal<br/>Threat]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[Compromised Host]]></text> 
+  </component>
+</textcomponents>

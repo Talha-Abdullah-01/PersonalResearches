@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.1.1.1 OSI and TCP/IP Models Revisited</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_10.1.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Application Layer Protocols</h1>
+        <h2>Application, Session and Presentation</h2>
+      </div>
+      <div id="content">
+          <p>As shown in the figure, networking professionals use the OSI and TCP/IP models to communicate both verbally and in written technical documentation. As such, networking professional can use these models to describe the behavior of protocols and applications. </p>
+          <p></p>
+          <p>In the OSI model, data is passed from one layer to the next, starting at the application layer on the transmitting host, and proceeding down the hierarchy to the physical layer, and then passing over the communications channel to the destination host, where the data proceeds back up the hierarchy, ending at the application layer.</p>
+          <p></p>
+          <p>The application layer is the top layer of both the OSI and TCP/IP models. The TCP/IP application layer includes a number of protocols that provide specific functionality to a variety of end-user applications. The functionality of the TCP/IP application layer protocols fit roughly into the framework of the top three layers of the OSI model: application, presentation and session layers. The OSI model Layers 5, 6, and 7 are used as references for application software developers and vendors to produce products, such as web browsers that need to access networks.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

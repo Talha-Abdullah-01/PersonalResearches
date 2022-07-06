@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.2.2.1 Protocol Suites and Industry Standards</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_3.2.2.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Network Protocols and Standards</h1>
+        <h2>Protocol Suites</h2>
+      </div>
+      <div id="content">
+          <p>As stated previously, a protocol suite is a set of protocols that work together to provide comprehensive network communication services. A protocol suite may be specified by a standards organization or developed by a vendor.</p>
+          <p></p>
+          <p>The protocols IP, HTTP, and DHCP are all part of the Internet protocol suite known as Transmission Control Protocol/IP (TCP/IP). The TCP/IP protocol suite is an open standard, meaning these protocols are freely available to the public, and any vendor is able to implement these protocols on their hardware or in their software.  </p>
+          <p></p>
+          <p>A standards-based protocol is a process or protocol that has been endorsed by the networking industry and ratified, or approved, by a standards organization. The use of standards in developing and implementing protocols ensures that products from different manufacturers can interoperate successfully. If a protocol is not rigidly observed by a particular manufacturer, their equipment or software may not be able to successfully communicate with products made by other manufacturers. </p>
+          <p></p>
+          <p>In data communications, for example, if one end of a conversation is using a protocol to govern one-way communication and the other end is assuming a protocol describing two-way communication, in all probability, no data will be exchanged.</p>
+          <p></p>
+          <p>Some protocols are proprietary. Proprietary, in this context, means that one company or vendor controls the definition of the protocol and how it functions. Some proprietary protocols can be used by different organizations with permission from the owner. Others can only be implemented on equipment manufactured by the proprietary vendor. Examples of proprietary protocols are AppleTalk and Novell Netware.</p>
+          <p></p>
+          <p>Several companies may even work together to create a proprietary protocol. It is not uncommon for a vendor (or group of vendors) to develop a proprietary protocol to meet the needs of its customers and later assist in making that proprietary protocol an open standard. For example, Ethernet was a protocol originally developed by Bob Metcalfe at the XEROX Palo Alto Research Center (PARC) in the 1970s. In 1979, Bob Metcalfe formed his own company, 3COM, and worked with Digital Equipment Corporation (DEC), Intel, and Xerox to promote the “DIX” standard for Ethernet. In 1985, the Institute of Electrical and Electronics Engineers (IEEE) published the IEEE 802.3 standard that was almost identical to Ethernet. Today, 802.3 is the common standard used on local-area networks (LANs). Another example, most recently, Cisco opened the EIGRP routing protocol as an informational RFC to meet the needs of customers who desire to use the protocol in a multivendor network.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

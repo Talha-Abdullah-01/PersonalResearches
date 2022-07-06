@@ -1,0 +1,19 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Addressing End Devices</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+  <text><![CDATA[For manual static assignments, enter addresses:]]></text> 
+  </component>
+<component id="ID_txt02">
+  <text><![CDATA[IP address]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[Subnet mask]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[Default gateway]]></text> 
+  </component>
+
+</textcomponents>

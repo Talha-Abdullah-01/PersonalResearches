@@ -1,0 +1,77 @@
+﻿<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Logical Connection</b>]]></text> 
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[Source Node]]></text> 
+</component>
+
+<component id="ID_s1_txt03">
+<text><![CDATA[Destination Node]]></text> 
+</component>
+
+<component id="ID_s1_txt04">
+<text><![CDATA[Frame]]></text> 
+</component>
+
+<component id="ID_s1_txt05">
+<text><![CDATA[Frame]]></text> 
+</component>
+
+<component id="ID_s1_txt06">
+<text><![CDATA[Frame]]></text> 
+</component>
+
+<component id="ID_s1_txt07">
+<text><![CDATA[Frame]]></text> 
+</component>
+
+<component id="ID_s1_txt08">
+<text><![CDATA[<b>Logical Point-to-Point Connection</b>]]></text> 
+</component>
+
+
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>Logical Point-to-Point Topology</b>]]></text> 
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[Adding intermediate physical connections may not change the logical topology.]]></text> 
+</component>
+
+<component id="ID_s2_txt02">
+<text><![CDATA[Source Node]]></text> 
+</component>
+
+<component id="ID_s2_txt03">
+<text><![CDATA[Destination Node]]></text> 
+</component>
+
+<component id="ID_s2_txt04">
+<text><![CDATA[Frame]]></text> 
+</component>
+
+<component id="ID_s2_txt05">
+<text><![CDATA[Frame]]></text> 
+</component>
+
+<component id="ID_s2_txt06">
+<text><![CDATA[Frame]]></text> 
+</component>
+
+<component id="ID_s2_txt07">
+<text><![CDATA[Frame]]></text> 
+</component>
+
+<component id="ID_s2_txt08">
+<text><![CDATA[<b>Logical Point-to-Point Connection</b>]]></text> 
+</component>
+
+<component id="ID_s2_txt09">
+<text><![CDATA[The logical point-to-point connection is the same.]]></text> 
+</component>
+
+</textcomponents>

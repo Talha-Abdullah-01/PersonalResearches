@@ -1,0 +1,32 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>UDP</b>]]></text>
+</component>
+<component id="ID_txt01">
+  <text><![CDATA[IP Telephony<br/>(VoIP)]]></text> 
+  </component>
+  
+  <component id="ID_txt02">
+  <text><![CDATA[Streaming Video]]></text> 
+  </component>
+  
+  <component id="ID_txt03">
+  <text><![CDATA[<b>No Ordered Data Reconstruction</b><br/>Data is reconstructed in the order that it is received.]]></text> 
+  </component>
+
+  
+  <component id="ID_txt04">
+  <text><![CDATA[<b>Unreliable Delivery</b><br/>Any segments lost are not resent.]]></text> 
+  </component>
+
+  
+  <component id="ID_txt05">
+  <text><![CDATA[<b>Connectionless</b><br/>No session establishment.]]></text> 
+  
+
+ 
+  </component><component id="ID_txt06">
+  <text><![CDATA[<b>No Flow Control</b><br/>No congestion management.]]></text> 
+  </component>  
+
+</textcomponents>

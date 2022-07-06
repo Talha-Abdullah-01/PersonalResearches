@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.2.1.1 Characteristics of Copper Media</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_4.2.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Network Media</h1>
+        <h2>Copper Cabling</h2>
+      </div>
+      <div id="content">
+          <p>Networks use copper media because it is inexpensive, easy to install, and has low resistance to electrical current. However, copper media is limited by distance and signal interference.</p>
+          <p></p>
+          <p>Data is transmitted on copper cables as electrical pulses. A detector in the network interface of a destination device must receive a signal that can be successfully decoded to match the signal sent.  However, the longer the signal travels, the more it deteriorates in a phenomenon referred to as signal attenuation. For this reason, all copper media must follow strict distance limitations as specified by the guiding standards.</p>
+          <p></p>
+          <p>The timing and voltage values of the electrical pulses are also susceptible to interference from two sources:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Electromagnetic interference (EMI) or radio frequency interference (RFI) -</b> EMI and RFI signals can distort and corrupt the data signals being carried by copper media. Potential sources of EMI and RFI include radio waves and electromagnetic devices such as fluorescent lights or electric motors as shown in the figure.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Crosstalk</b> - Crosstalk is a disturbance caused by the electric or magnetic fields of a signal on one wire to the signal in an adjacent wire. In telephone circuits, crosstalk can result in hearing part of another voice conversation from an adjacent circuit. Specifically, when electrical current flows through a wire, it creates a small, circular magnetic field around the wire which can be picked up by an adjacent wire.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Play the animation in the figure to see how data transmission can be affected by interference. </p>
+          <p></p>
+          <p>To counter the negative effects of EMI and RFI, some types of copper cables are wrapped in metallic shielding and require proper grounding connections.</p>
+          <p></p>
+          <p>To counter the negative effects of crosstalk, some types of copper cables have opposing circuit wire pairs twisted together which effectively cancels the crosstalk. </p>
+          <p></p>
+          <p>The susceptibility of copper cables to electronic noise can also be limited by:</p>
+          <p>
+            <ul>
+              <li>Selecting the cable type or category most suited to a given networking environment.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Designing a cable infrastructure to avoid known and potential sources of interference in the building structure.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Using cabling techniques that include the proper handling and termination of the cables.</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

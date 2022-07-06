@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.1.4.1 MAC and IP</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_5.1.4.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Ethernet Protocol</h1>
+        <h2>MAC and IP</h2>
+      </div>
+      <div id="content">
+          <p>There are two primary addresses assigned to a host device: </p>
+          <p>
+            <ul>
+              <li>Physical address (the MAC address)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Logical address (the IP address)</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Both the MAC address and IP address work together to identify a device on the network. The process of using the MAC address and the IP address to find a computer is similar to the process of using a name and address of an individual to send a letter. </p>
+          <p></p>
+          <p>A person's name usually does not change. A person's address on the other hand, relates to where they live and can change. </p>
+          <p></p>
+          <p>Similar to the name of a person, the MAC address on a host does not change; it is physically assigned to the host NIC and is known as the physical address. The physical address remains the same regardless of where the host is placed. </p>
+          <p></p>
+          <p>The IP address is similar to the address of a person. This address is based on where the host is actually located. Using this address, it is possible for a frame to determine the location of where a frame should be sent.  The IP address, or network address, is known as a logical address because it is assigned logically. It is assigned to each host by a network administrator based on the local network that the host is connected to.  The figure demonstrates the hierarchical nature of locating an individual based on a “logical” address. Click each grouping to view how the address filters down.</p>
+          <p></p>
+          <p>Both the physical MAC and logical IP addresses are required for a computer to communicate on a hierarchical network, just like both the name and address of a person are required to send a letter.  </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

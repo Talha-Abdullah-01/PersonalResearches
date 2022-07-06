@@ -1,0 +1,111 @@
+﻿<textcomponents>
+<!--Slide 1-->
+<component id="ID_s1_inst">
+<text><![CDATA[<b>Activity - Part 1: Generic Frame Fields</b><br/><br/>Drag the generic frame field to its correct location on the diagram.</b>]]></text>
+</component>
+<component id="ID_s1_drag01">
+  <text><![CDATA[Data]]></text> 
+  </component>
+<component id="ID_s1_drag02">
+  <text><![CDATA[Type]]></text> 
+  </component>
+<component id="ID_s1_drag03">
+  <text><![CDATA[Header]]></text> 
+  </component>
+
+<component id="ID_s1_drag04">
+  <text><![CDATA[Trailer]]></text> 
+  </component>
+
+<component id="ID_s1_drag05">
+  <text><![CDATA[Control]]></text> 
+  </component>
+<component id="ID_s1_drag06"><text><![CDATA[Packet<br>(Data)]]></text></component>
+<component id="ID_s1_drag07"><text><![CDATA[Addressing]]></text></component>
+<component id="ID_s1_drag08"><text><![CDATA[Frame Stop]]></text></component>
+<component id="ID_s1_drag09"><text><![CDATA[Error Detection]]></text></component>
+<component id="ID_s1_drag10"><text><![CDATA[Frame Start]]></text></component>
+
+<component id='ID_s1_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b style="color:#442557 !important">Correct</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully placed the order of <b>generic field names </b>in the frame.]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b style="color:#442557 !important">Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully placed the order of <b>generic field names </b>in the frame. Please click Reset to try again.]]></text>
+</component>
+
+<!--Slide 2-->
+<component id="ID_s2_inst">
+<text><![CDATA[<b>Activity - Part 2: Generic Frame Fields</b><br/><br/>Drag and drop the generic frame field to its description.</b>]]></text>
+</component>
+<component id="ID_s2_txt01">
+  <text><![CDATA[Contains the IP header, transport layer PDU, and data]]></text> 
+  </component>
+<component id="ID_s2_txt02">
+  <text><![CDATA[Identifies the Layer 3 protocol used by the LLC]]></text> 
+  </component>
+<component id="ID_s2_txt03">
+  <text><![CDATA[Marks the end of the frame]]></text> 
+  </component>
+
+<component id="ID_s2_txt04">
+  <text><![CDATA[Identifies source and destination hosts by MAC address]]></text> 
+  </component>
+
+<component id="ID_s2_txt05">
+  <text><![CDATA[Specifies special flow control services]]></text> 
+  </component>
+<component id="ID_s2_drag01"><text><![CDATA[Data]]></text></component>
+<component id="ID_s2_drag02"><text><![CDATA[Control]]></text></component>
+<component id="ID_s2_drag03"><text><![CDATA[Addressing]]></text></component>
+<component id="ID_s2_drag04"><text><![CDATA[Type]]></text></component>
+<component id="ID_s2_drag05"><text><![CDATA[Frame stop indicator flag]]></text></component>
+
+
+
+<component id='ID_s2_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s2_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_TITLE'>
+	<text><![CDATA[<b style="color:#442557 !important">Correct</b>]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched each <b>generic frame field</b> to its description.
+]]></text>
+</component>
+
+
+<component id='ID_s2_INCORRECT_TITLE'>
+	<text><![CDATA[<b style="color:#442557 !important">Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched each <b>generic frame field</b> to its description. Please click Reset to try again.
+
+]]></text>
+</component>
+
+</textcomponents>

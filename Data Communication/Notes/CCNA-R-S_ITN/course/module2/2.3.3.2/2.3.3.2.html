@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.3.3.2 Testing the Interface Assignment</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.3.3.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Address Schemes</h1>
+        <h2>Verifying Connectivity</h2>
+      </div>
+      <div id="content">
+          <p>In the same way that you use commands and utilities to verify a host configuration, you use commands to verify the interfaces of intermediary devices. The IOS provides commands to verify the operation of router and switch interfaces.</p>
+          <p></p>
+          <p>
+            <b>Verifying the Switch Interfaces</b>
+          </p>
+          <p></p>
+          <p>Examining S1 and S2, you use the <span class="cmd"><b>show ip interface brief</b></span> command to verify the condition of the switch interfaces, as shown in the figure. The IP address assigned to VLAN 1 interface on S1 is 192.168.10.2. The IP address assigned to VLAN 1 interface on S2 is 192.168.10.3. The physical interfaces F0/1 and F0/2 on S1 are operational, as are the physical interfaces F0/1 and F0/2 on S2.</p>
+          <p></p>
+          <p>Practice verification of a VLAN interface by entering commands in the figure.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

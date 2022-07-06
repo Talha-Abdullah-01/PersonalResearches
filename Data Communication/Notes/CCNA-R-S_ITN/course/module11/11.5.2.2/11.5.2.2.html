@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.5.2.2 Enabling Wireless</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.5.2.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Integrated Routing Services</h1>
+        <h2>Configuring the Integrated Router</h2>
+      </div>
+      <div id="content">
+          <p>To enable wireless connectivity, the wireless mode, SSID, RF channel, and any desired security encryption mechanism must be configured.</p>
+          <p></p>
+          <p>First, select the correct wireless mode, as shown in the figure. When selecting the mode, or wireless standard, each mode includes a certain amount of overhead. If all devices on the network use the same standard, selecting the mode associated with that standard limits the amount of overhead incurred. It also increases security by not allowing devices with different standards to connect. However, if devices using different standards need access to the network, mixed mode must be selected. Network performance will decrease due to the additional overhead of supporting all modes. </p>
+          <p></p>
+          <p>Next, set the SSID. All devices that wish to participate in the WLAN must use the same SSID. For security purposes, the default SSID should be changed. To allow easy detection of the WLAN by clients, the SSID is broadcast by default. It is possible to disable the broadcast feature of the SSID. If the SSID is not broadcast; wireless clients will need to have this value manually configured.</p>
+          <p></p>
+          <p>The choice of RF channel used for the integrated router must be made relative to the other wireless networks around it.</p>
+          <p>Adjacent wireless networks must use non-overlapping channels in order to optimize throughput. Most access points now offer a choice to allow the router to automatically locate the least congested channel.</p>
+          <p></p>
+          <p>Finally, select the encryption mechanism that you prefer and enter a key or passphrase.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

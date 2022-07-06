@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.2.1.5 Coaxial Cable</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_4.2.1.5_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Network Media</h1>
+        <h2>Copper Cabling</h2>
+      </div>
+      <div id="content">
+          <p>Coaxial cable, or coax for short, gets its name from the fact that there are two conductors that share the same axis. As shown in the figure, coaxial cable consists of:</p>
+          <p>
+            <ul>
+              <li>A copper conductor used to transmit the electronic signals.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The copper conductor is surrounded by a layer of flexible plastic insulation. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The insulating material is surrounded in a woven copper braid, or metallic foil, that acts as the second wire in the circuit and as a shield for the inner conductor. This second layer, or shield, also reduces the amount of outside electromagnetic interference. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The entire cable is covered with a cable jacket to protect it from minor physical damage.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: There are different types of connectors used with coax cable. </p>
+          <p></p>
+          <p>Coaxial cable was traditionally used in cable television capable of transmitting in one direction. It was also used extensively in early Ethernet installations. </p>
+          <p></p>
+          <p>Although UTP cable has essentially replaced coaxial cable in modern Ethernet installations, the coaxial cable design has been adapted for use in:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Wireless installations</b>: Coaxial cables attach antennas to wireless devices. The coaxial cable carries radio frequency (RF) energy between the antennas and the radio equipment. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Cable Internet installations</b>: Cable service providers are currently converting their one-way systems to two-way systems to provide Internet connectivity to their customers. To provide these services, portions of the coaxial cable and supporting amplification elements are replaced with fiber-optic cable. However, the final connection to the customer's location and the wiring inside the customer's premises is still coax cable. This combined use of fiber and coax is referred to as hybrid fiber coax (HFC).</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,287 @@
+﻿<textcomponents>
+<!--slide01-->
+<component id='ID_s1_inst'>
+	<text><![CDATA[<b>Activity – Part 1: Ethernet Frame Fields</b><br><br>A blank Ethernet frame is shown in the graphic. Drag each field name to the appropriate place in order to build an Ethernet frame.]]></text>
+</component>
+
+<component id='ID_s1_txt01'>
+	<text><![CDATA[<b>Ethernet Frame</b>]]></text>
+</component>
+
+<component id='ID_s1_txt02'>
+	<text><![CDATA[8 bytes]]></text>
+</component>
+
+<component id='ID_s1_txt03'>
+	<text><![CDATA[6 bytes]]></text>
+</component>
+
+<component id='ID_s1_txt04'>
+	<text><![CDATA[6 bytes]]></text>
+</component>
+
+<component id='ID_s1_txt05'>
+	<text><![CDATA[2 bytes]]></text>
+</component>
+
+<component id='ID_s1_txt06'>
+	<text><![CDATA[46-1500 bytes]]></text>
+</component>
+
+<component id='ID_s1_txt07'>
+	<text><![CDATA[4 bytes]]></text>
+</component>
+
+
+<!--Drag and Drop-->
+<component id='ID_s1_traget01'>
+	<text><![CDATA[<font color="#393536">Frame Check Sequence</font>]]></text>
+</component>
+
+<component id='ID_s1_traget02'>
+	<text><![CDATA[<font color="#393536">Type</font>]]></text>
+</component>
+
+<component id='ID_s1_traget03'>
+	<text><![CDATA[<font color="#393536">Data</font>]]></text>
+</component>
+
+<component id='ID_s1_traget04'>
+	<text><![CDATA[<font color="#393536">Destination</font>]]></text>
+</component>
+
+<component id='ID_s1_traget05'>
+	<text><![CDATA[<font color="#393536">Preamble</font>]]></text>
+</component>
+
+<component id='ID_s1_traget06'>
+	<text><![CDATA[<font color="#393536">Source</font>]]></text>
+</component>
+<!--FEEDBACKS-->
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully built an <u>Ethernet</u> frame.]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully built an <u>Ethernet</u> frame. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s1_CHECK'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+
+<!--slide02-->
+<component id='ID_s2_inst'>
+	<text><![CDATA[<b>Activity – Part 2: PPP Frame Fields</b><br><br>A blank PPP frame is shown in the graphic. Drag each field name to the appropriate place in order to build a PPP frame.]]></text>
+</component>
+
+<component id='ID_s2_txt01'>
+	<text><![CDATA[<b>PPP Frame</b>]]></text>
+</component>
+
+<component id='ID_s2_txt02'>
+	<text><![CDATA[1 byte]]></text>
+</component>
+
+<component id='ID_s2_txt03'>
+	<text><![CDATA[1 byte]]></text>
+</component>
+
+<component id='ID_s2_txt04'>
+	<text><![CDATA[1 bytes]]></text>
+</component>
+
+<component id='ID_s2_txt05'>
+	<text><![CDATA[2 bytes]]></text>
+</component>
+
+<component id='ID_s2_txt06'>
+	<text><![CDATA[Variable]]></text>
+</component>
+
+<component id='ID_s2_txt07'>
+	<text><![CDATA[2 or 4 bytes]]></text>
+</component>
+
+
+<!--Drag and Drop-->
+<component id='ID_s2_traget01'>
+	<text><![CDATA[<font color="#393536">Flag</font>]]></text>
+</component>
+
+<component id='ID_s2_traget02'>
+	<text><![CDATA[<font color="#393536">Address</font>]]></text>
+</component>
+
+<component id='ID_s2_traget03'>
+	<text><![CDATA[<font color="#393536">Control</font>]]></text>
+</component>
+
+<component id='ID_s2_traget04'>
+	<text><![CDATA[<font color="#393536">Protocol</font>]]></text>
+</component>
+
+<component id='ID_s2_traget05'>
+	<text><![CDATA[<font color="#393536">Data</font>]]></text>
+</component>
+
+<component id='ID_s2_traget06'>
+	<text><![CDATA[<font color="#393536">FCS</font>]]></text>
+</component>
+<!--FEEDBACKS-->
+<component id='ID_s2_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_BODY'>
+	<text><![CDATA[You have successfully built a <u>PPP</u> frame.]]></text>
+</component>
+
+
+<component id='ID_s2_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully built a <u>PPP</u> frame. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s2_CHECK'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_s2_RESET'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+
+
+<!--slide03-->
+<component id='ID_s3_inst'>
+	<text><![CDATA[<b>Activity – Part 3: 802.11 Wireless Frame Fields</b><br/><br/>A blank 802.11 wireless frame is shown in the graphic. Drag each field name to the appropriate place in order to build an 802.11 wireless frame.]]></text>
+</component>
+
+<component id='ID_s3_txt01'>
+	<text><![CDATA[<b>802.11 Wireless Frame</b>]]></text>
+</component>
+
+<component id='ID_s3_txt02'>
+	<text><![CDATA[2 octets]]></text>
+</component>
+
+<component id='ID_s3_txt03'>
+	<text><![CDATA[2 octets]]></text>
+</component>
+
+<component id='ID_s3_txt04'>
+	<text><![CDATA[6 octets]]></text>
+</component>
+
+<component id='ID_s3_txt05'>
+	<text><![CDATA[6 octets]]></text>
+</component>
+
+<component id='ID_s3_txt06'>
+	<text><![CDATA[6 octets]]></text>
+</component>
+
+<component id='ID_s3_txt07'>
+	<text><![CDATA[2 octets]]></text>
+</component>
+
+<component id='ID_s3_txt08'>
+	<text><![CDATA[6 octets]]></text>
+</component>
+
+<component id='ID_s3_txt09'>
+	<text><![CDATA[0-2312 octets]]></text>
+</component>
+
+<component id='ID_s3_txt10'>
+	<text><![CDATA[4 octets]]></text>
+</component>
+
+
+<!--Drag and Drop-->
+<component id='ID_s3_traget01'>
+	<text><![CDATA[<font color="#393536">Sequence Control</font>]]></text>
+</component>
+
+<component id='ID_s3_traget02'>
+	<text><![CDATA[<font color="#393536">TA</font>]]></text>
+</component>
+
+<component id='ID_s3_traget03'>
+	<text><![CDATA[<font color="#393536">Frame <br>Body</font>]]></text>
+</component>
+
+<component id='ID_s3_traget04'>
+	<text><![CDATA[<font color="#393536">FCS</font>]]></text>
+</component>
+
+<component id='ID_s3_traget05'>
+	<text><![CDATA[<font color="#393536">Frame Control</font>]]></text>
+</component>
+
+<component id='ID_s3_traget06'>
+	<text><![CDATA[<font color="#393536">SA</font>]]></text>
+</component>
+
+<component id='ID_s3_traget07'>
+	<text><![CDATA[<font color="#393536">Duration/<br/>ID</font>]]></text>
+</component>
+
+<component id='ID_s3_traget08'>
+	<text><![CDATA[<font color="#393536">DA</font>]]></text>
+</component>
+
+<component id='ID_s3_traget09'>
+	<text><![CDATA[<font color="#393536">RA</font>]]></text>
+</component>
+
+
+
+
+<!--FEEDBACKS-->
+<component id='ID_s3_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s3_CORRECT_BODY'>
+	<text><![CDATA[You have successfully built an <u>802.11 wireless</u> frame.]]></text>
+</component>
+
+
+<component id='ID_s3_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s3_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully built an <u>802.11 wireless</u> frame. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s3_CHECK'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_s3_RESET'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+
+
+</textcomponents>

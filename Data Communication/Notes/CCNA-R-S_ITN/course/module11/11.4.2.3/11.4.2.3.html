@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.4.2.3 Using USB Ports on a Cisco Router</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.4.2.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Managing IOS Configuration Files</h1>
+        <h2>Back up and Restore Configuration files</h2>
+      </div>
+      <div id="content">
+          <p>The Universal Serial Bus (USB) storage feature enables certain models of Cisco routers to support USB flash drives. The USB flash feature provides an optional secondary storage capability and an additional boot device. Images, configurations, and other files can be copied to or from the Cisco USB flash memory with the same reliability as storing and retrieving files using the Compact Flash card. In addition, modular integrated services routers can boot any Cisco IOS Software image saved on USB flash memory. </p>
+          <p></p>
+          <p>Cisco USB flash modules are available in 64MB, 128 MB, and 256MB versions. </p>
+          <p></p>
+          <p>To be compatible with a Cisco router, a USB flash drive must be formatted in a FAT16 format. If that is not the case, the show file systems command will display an error indicating an incompatible file system.</p>
+          <p></p>
+          <p>Here is an example of the use of the dir command on a USB file system:</p>
+          <p></p>
+          <p>
+            <b>Router# dir usbflash0:</b>
+          </p>
+          <p></p>
+          <p>
+            <b>Directory of usbflash0:/</b>
+          </p>
+          <p></p>
+          <p>
+            <b>    1  -rw-    30125020  Dec 22 2032 05:31:32 +00:00  c3825-entservicesk9-mz.123-14.T</b>
+          </p>
+          <p></p>
+          <p>
+            <b>63158272 bytes total (33033216 bytes free)</b>
+          </p>
+          <p>Ideally, USB flash can hold multiple copies of the Cisco IOS and multiple router configurations. The USB flash allows an administrator to easily move and copy those IOS files and configurations from router to router, and many times, the copying process can take place several times faster than it would over a LAN or WAN. Note that the IOS may not recognize the proper size of the USB flash, but that does not necessarily mean that the flash is unsupported. Additionally, the USB ports on a router are usually USB 2.0, as shown in the figure.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

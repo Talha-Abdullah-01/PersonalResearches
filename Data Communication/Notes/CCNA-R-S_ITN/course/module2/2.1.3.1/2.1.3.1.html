@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.1.3.1 Cisco IOS Modes of Operation</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.1.3.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IOS Bootcamp</h1>
+        <h2>Navigating the IOS</h2>
+      </div>
+      <div id="content">
+          <p>After a network technician is connected to a device, it is possible to configure it. The network technician must navigate through various modes of the IOS. The Cisco IOS modes are quite similar for switches and routers. The CLI uses a hierarchical structure for the modes.</p>
+          <p></p>
+          <p>In hierarchical order from most basic to most specialized, the major modes are:</p>
+          <p>
+            <ul>
+              <li>User executive (User EXEC)  mode</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Privileged executive (Privileged EXEC) mode</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Global configuration mode</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Other specific configuration modes, such as interface configuration mode</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Each mode has a distinctive prompt and is used to accomplish particular tasks with a specific set of commands that are available only to that mode. For example, global configuration mode allows a technician to configure settings on the device that affects the device as a whole, such as configuring a name for the device. However, a different mode is required if the network technician wants to configure security settings on a specific port on a switch, for example. In this case, the network technician must enter interface configuration mode for that specific port. All configurations that are entered in interface configuration mode apply only to that port. </p>
+          <p></p>
+          <p>The hierarchical structure can be configured to provide security. Different authentication can be required for each hierarchical mode. This controls the level of access that network personnel can be granted.</p>
+          <p></p>
+          <p>The figure shows the IOS mode structure with typical prompts and features.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

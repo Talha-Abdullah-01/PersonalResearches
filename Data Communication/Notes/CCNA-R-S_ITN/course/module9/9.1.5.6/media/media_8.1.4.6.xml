@@ -1,0 +1,166 @@
+<textcomponents>
+
+<!--SLIDE 1-->
+<component id='ID_s1_inst'>
+	<text><![CDATA[<b>Activity – Part 1: Practicing VLSM</b><br/><br/>Table 1 uses regular subnetting to accommodate the network shown. Table 2 uses<b> VLSM</b> to further subnet the network.<br/><br/>Drag the addresses to the appropriate subnet description.]]></text>
+</component>
+
+<component id='ID_s1_header'>
+	<text><![CDATA[<b>192.168.5.0/24</b><br><font><b>Table 1 - First Subnets Calculation</b></font>]]></text>
+</component>
+
+<component id='ID_s1_subheader'>
+	<text><![CDATA[<b style="margin-left:5px;">Calculate 50 users per subnet</b>]]></text>
+</component>
+
+<component id='ID_s1_txt01'>
+	<text><![CDATA[<span style="margin-left:5px;">New Subnet Mask (decimal)</span>]]></text>
+</component>
+
+<component id='ID_s1_txt02'>
+	<text><![CDATA[<span style="margin-left:5px;"><b>First</b> Prefix notation</span>]]></text>
+</component>
+
+<component id='ID_s1_txt03'>
+	<text><![CDATA[<span style="margin-left:5px;">First <b>full</b> subnet range</span>]]></text>
+</component>
+
+<component id='ID_s1_txt04'>
+	<text><![CDATA[<span style="margin-left:5px;">Second <b>full</b> subnet range</span>]]></text>
+</component>
+
+<component id='ID_s1_txt05'>
+	<text><![CDATA[<span style="margin-left:5px;">Last <b>full</b> subnet range</span>]]></text>
+</component>
+
+
+<!--Drag and Drop-->
+
+<component id='ID_sub1_DS'>
+	<text><![CDATA[<font color="#393536">255.255.255.192</font>]]></text>
+</component>
+
+<component id='ID_sub2_DS'>
+	<text><![CDATA[<font color="#393536">/26</font>]]></text>
+</component>
+
+<component id='ID_sub3_DS'>
+	<text><![CDATA[<font color="#393536">192.168.5.0-<br>192.168.5.63</font>]]></text>
+</component>
+
+<component id='ID_sub4_DS'>
+	<text><![CDATA[<font color="#393536">192.168.5.64-<br>192.168.5.127</font>]]></text>
+</component>
+
+<component id='ID_sub5_DS'>
+	<text><![CDATA[<font color="#393536">192.168.5.192-<br>192.168.5.255</font>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[<span style="width:194px;">You have correctly calculated the subnet. </span>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not correctly calculated the subnet. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s1_CHECK'>
+	<text><![CDATA[<span style="margin-left:-8px">Check</span>]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[<span style="margin-left:-8px">Reset</span>]]></text>
+</component>
+
+
+<!--SLIDE 2-->
+<component id='ID_s2_inst'>
+	<text><![CDATA[<b>Activity – Part 2: Practicing VLSM</b><br><br>Table 2 uses VLSM to further subnet the network<br><br>Drag the addresses to the appropriate subnet description.
+]]></text>
+</component>
+
+<component id='ID_s2_header'>
+	<text><![CDATA[<b>192.168.5.0/24</b><br><font><b>Table 2 - VLSM Calculation</b></font>]]></text>
+</component>
+
+<component id='ID_s2_subheader'>
+	<text><![CDATA[<b style="margin-left:5px;">Use Table 1's second full subnet range and VLSM to calculate for 20 users per subnet.</b>]]></text>
+</component>
+
+
+<component id='ID_s2_txt01'>
+	<text><![CDATA[<span style="margin-left:5px;">Second <b>full</b> subnet range (/26) from Table 1</span>]]></text>
+</component>
+
+<component id='ID_s2_txt02'>
+	<text><![CDATA[<span style="margin-left:5px;">New VLSM Subnet Mask (decimal)</span>]]></text>
+</component>
+
+<component id='ID_s2_txt03'>
+	<text><![CDATA[<span style="margin-left:5px;"><b>VLSM</b> Prefix notation</span>]]></text>
+</component>
+
+<component id='ID_s2_txt04'>
+	<text><![CDATA[<span style="margin-left:5px;">First <b>full VLSM</b> subnet range</span>]]></text>
+</component>
+
+<component id='ID_s2_txt05'>
+	<text><![CDATA[<span style="margin-left:5px;">Last <b>full VLSM</b> subnet range</span>]]></text>
+</component>
+
+
+<!--Drag and Drop-->
+
+<component id='ID_vlsm1_DS'>
+	<text><![CDATA[<font color="#393536">192.168.5.64-<br>192.168.5.127</font>]]></text>
+</component>
+
+<component id='ID_vlsm2_DS'>
+	<text><![CDATA[<font color="#393536">255.255.255.224</font>]]></text>
+</component>
+
+<component id='ID_vlsm3_DS'>
+	<text><![CDATA[<font color="#393536">/27</font>]]></text>
+</component>
+
+<component id='ID_vlsm4_DS'>
+	<text><![CDATA[<font color="#393536">192.168.5.64-<br>192.168.5.95</font>]]></text>
+</component>
+
+<component id='ID_vlsm5_DS'>
+	<text><![CDATA[<font color="#393536">192.168.5.96-<br>192.168.5.127</font>]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_BODY'>
+	<text><![CDATA[You have correctly calculated the subnet using VLSM. ]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_BODY'>
+	<text><![CDATA[You have not correctly calculated the subnet using VLSM. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s2_CHECK'>
+	<text><![CDATA[<span style="margin-left:-8px">Check</span>]]></text>
+</component>
+
+<component id='ID_s2_RESET'>
+	<text><![CDATA[<span style="margin-left:-8px">Reset</span>]]></text>
+</component>
+
+</textcomponents>

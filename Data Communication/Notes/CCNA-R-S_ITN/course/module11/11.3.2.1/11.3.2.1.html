@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.3.2.1 Interpreting Tracert Messages</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.3.2.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Basic Network Performance</h1>
+        <h2>Tracert</h2>
+      </div>
+      <div id="content">
+          <p>A trace returns a list of hops as a packet is routed through a network. The form of the command depends on where the command is issued. When performing the trace from a Windows computer, use<span class="cmd"><b> tracert</b></span>. When performing the trace from a router CLI, use<span class="cmd"><b> traceroute</b></span>, as shown in Figure 1.</p>
+          <p></p>
+          <p>Like<span class="cmd"><b> ping </b></span>commands,<span class="cmd"><b> trace </b></span>commands are entered in the command line and take an IP address as the argument.</p>
+          <p></p>
+          <p>Assuming that the command will be issued from a Windows computer, we use the<span class="cmd"><b> tracert </b></span>form:</p>
+          <p></p>
+          <p>
+            <span class="cmd">C:\> </span>
+            <span class="cmd">
+              <b>tracert 10.1.0.2</b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">Tracing route to 10.1.0.2 over a maximum of 30 hops</span>
+          </p>
+          <p>
+            <span class="cmd">1 2 ms 2 ms 2 ms 10.0.0.254 </span>
+          </p>
+          <p>
+            <span class="cmd">2 * * * Request timed out.</span>
+          </p>
+          <p>
+            <span class="cmd">3 * * * Request timed out.</span>
+          </p>
+          <p>
+            <span class="cmd">4 ^C</span>
+          </p>
+          <p></p>
+          <p>The only successful response was from the gateway on Router A. Trace requests to the next hop timed out, meaning that the next hop router did not respond. The trace results indicate that the failure is therefore in the internetwork beyond the LAN.</p>
+          <p></p>
+          <p>Capturing the traceroute output can also be done from the router prompt, as shown in Figure 2.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

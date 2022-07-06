@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.3.4.4 Using the show ip interface brief Command</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.3.4.4_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Basic Network Performance</h1>
+        <h2>Host and IOS Commands</h2>
+      </div>
+      <div id="content">
+          <p>In the same way that commands and utilities are used to verify a host configuration, commands can be used to verify the interfaces of intermediate devices. The Cisco IOS provides commands to verify the operation of router and switch interfaces.</p>
+          <p></p>
+          <p>
+            <b>Verifying Router Interfaces</b>
+          </p>
+          <p></p>
+          <p>One of the most frequently used commands is the<span class="cmd"><b> show ip interface brief </b></span>command. This command provides a more abbreviated output than the<span class="cmd"><b> show ip interface</b></span> command. It provides a summary of the key information for all the network interfaces on a router.</p>
+          <p></p>
+          <p>Figure 1 shows the topology that is being used in this example.</p>
+          <p></p>
+          <p>On Figure 2, click the R1 button. The<span class="cmd"><b> show ip interface brief</b></span> output displays all interfaces on the router, the IP address assigned to each interface, if any, and the operational status of the interface.</p>
+          <p></p>
+          <p>According to the output, the FastEthernet 0/0 interface has an IP address of 192.168.254.254. The last two columns in this line show the Layer 1 and Layer 2 status of this interface. The<span class="cmd"><b> up </b></span>in the Status column shows that this interface is operational at Layer 1. The<span class="cmd"><b> up </b></span>in the Protocol column indicates that the Layer 2 protocol is operational.</p>
+          <p></p>
+          <p>Also notice that the Serial 0/0/1 interface has not been enabled. This is indicated by<span class="cmd"><b> administratively down</b></span> in the Status column. </p>
+          <p></p>
+          <p>As with any end device, we can verify Layer 3 connectivity with the<span class="cmd"><b> ping </b></span>and<span class="cmd"><b> traceroute </b></span>commands. In this example, both the<span class="cmd"><b> ping </b></span>and<span class="cmd"><b> trace </b></span>commands show successful connectivity.</p>
+          <p></p>
+          <p>
+            <b>Verifying the Switch Interfaces</b>
+          </p>
+          <p></p>
+          <p>On Figure 2, click the S1 button. The<span class="cmd"><b> show ip interface brief</b></span> command can also be used to verify the status of the switch interfaces. The IP address for the switch is applied to a VLAN interface. In this case, the Vlan1 interface is assigned an IP address of 192.168.254.250 and has been enabled and is operational.</p>
+          <p></p>
+          <p>The output also shows that the FastEthernet0/1 interface is down. This indicates that either, no device is connected to the interface, or that the device that is connected to this interface has a network interface that is not operational. </p>
+          <p></p>
+          <p>In contrast, the output shows that the FastEthernet0/2 and FastEthernet0/3 interfaces are operational. This is indicated by both the Status and Protocol being shown as<span class="cmd"><b> up</b></span>.</p>
+          <p></p>
+          <p>The switch can also test its Layer 3 connectivity with the<span class="cmd"><b> show ip interface brief </b></span>and<span class="cmd"><b> traceroute </b></span>commands. In this example, both the<span class="cmd"><b> ping </b></span>and<span class="cmd"><b> trace </b></span>commands show successful connectivity. </p>
+          <p></p>
+          <p>It is important to keep in mind that an IP address is not required for a switch to perform its job of frame forwarding at Layer 2. An IP address is only necessary if the switch will be managed over the network using Telnet or SSH. If the network administrator plans to remotely connect to the switch from a location outside of the local LAN, then a default gateway must also be configured. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[Web Client]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[Email Client]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[Email Server]]></text> 
+  </component>
+
+  <component id="ID_txt04">
+     <text><![CDATA[Web Server]]></text>
+     </component>
+<component id="ID_txt05">
+   <text><![CDATA[File Server]]></text>
+   </component>
+<component id="ID_txt06">
+   <text><![CDATA[File Client]]></text>
+   </component>
+
+   <component id="ID_txt07">
+   <text><![CDATA[Switch]]></text>
+   </component>
+
+
+
+
+
+<component id="ID_set03_header">
+   <text><![CDATA[<b>Email Client and Server</b>]]></text>
+   </component>
+<component id="ID_set03_body">
+   <text><![CDATA[The Email Server runs server software and clients use their mail client software, such as Microsoft Outlook, to access Email on the server.]]></text>
+   </component>
+<component id="ID_set02_header">
+   <text><![CDATA[<b>Web Client and Server</b>]]></text>
+   </component>
+<component id="ID_set02_body">
+   <text><![CDATA[The Web Server runs server software and clients use their browser software, such as Windows Internet Explorer, to access web pages on the server.]]></text>
+   </component>
+<component id="ID_set01_header">
+   <text><![CDATA[<b>File Client and Server</b>]]></text>
+   </component>
+<component id="ID_set01_body">
+   <text><![CDATA[The File Server stores the file, the client device accesses the file with client software such as Windows Explorer.]]></text>
+   </component>
+   
+    <component id="ID_instructions"><text><![CDATA[Click the different client and server services for a brief description.]]></text>
+	</component>
+
+  
+</textcomponents>

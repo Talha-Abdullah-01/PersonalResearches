@@ -1,0 +1,96 @@
+﻿<textcomponents>
+
+<!-- Common Text -->	
+	<component id="ID_txt01">
+	  <text><![CDATA[- Field names kept from IPv4 to IPv6]]></text> 
+	</component>	
+	<component id="ID_txt02">
+	  <text><![CDATA[- Fields not kept in IPv6]]></text> 
+	</component>	
+	<component id="ID_txt03">
+	  <text><![CDATA[- Name and position changed in IPv6]]></text> 
+	</component>	
+	<component id="ID_txt04">
+	  <text><![CDATA[- New field in IPv6]]></text> 
+	</component>	
+	<component id="ID_txt05">
+	  <text><![CDATA[<b>Legend</b>]]></text> 
+	</component>
+
+<!-- Slide 1 text -->
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>IPv4 Header</b>]]></text>
+	</component>
+	<component id="ID_s1_txt01">
+	  <text><![CDATA[Version]]></text> 
+	</component>	
+	<component id="ID_s1_txt02">
+	  <text><![CDATA[IHL]]></text> 
+	</component>	
+	<component id="ID_s1_txt03">
+	  <text><![CDATA[Type of Service]]></text> 
+	</component>	
+	<component id="ID_s1_txt04">
+	  <text><![CDATA[Total Length]]></text> 
+	</component>	
+	<component id="ID_s1_txt05">
+	  <text><![CDATA[Identification]]></text> 
+	</component>	
+	<component id="ID_s1_txt06">
+	  <text><![CDATA[Flags]]></text> 
+	</component>	
+	<component id="ID_s1_txt07">
+	  <text><![CDATA[Fragment Offset]]></text> 
+	</component>	
+	<component id="ID_s1_txt08">
+	  <text><![CDATA[Time-to-Live]]></text> 
+	</component>	
+	<component id="ID_s1_txt09">
+	  <text><![CDATA[Protocol]]></text> 
+	</component>	
+	<component id="ID_s1_txt10">
+	  <text><![CDATA[Header Checksum]]></text> 
+	</component>	
+	<component id="ID_s1_txt11">
+	  <text><![CDATA[Source Address]]></text>
+	</component>	
+	<component id="ID_s1_txt12">
+	  <text><![CDATA[Destination Address]]></text>
+	</component>	
+	<component id="ID_s1_txt13">
+	  <text><![CDATA[Options]]></text> 
+	</component>	
+	<component id="ID_s1_txt14">
+	  <text><![CDATA[Padding]]></text> 
+	</component>
+	
+<!-- Slide 2 text -->
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>IPv6 Header</b>]]></text>
+	</component>
+	<component id="ID_s2_txt05">
+	  	<text><![CDATA[Version]]></text> 
+	</component>
+	<component id="ID_s2_txt06">
+	 	<text><![CDATA[Traffic Class]]></text> 
+	</component>
+	<component id="ID_s2_txt07">
+		<text><![CDATA[Flow Label]]></text>
+	</component>
+	<component id="ID_s2_txt08">
+	  	<text><![CDATA[Payload Length]]></text> 
+	</component>
+	<component id="ID_s2_txt09">
+	 	<text><![CDATA[Next Header]]></text> 
+	</component>
+	<component id="ID_s2_txt10">
+		<text><![CDATA[Hop Limit]]></text>
+	</component>
+	<component id="ID_s2_txt11">
+	  	<text><![CDATA[Source IP Address]]></text> 
+	</component>
+	<component id="ID_s2_txt12">
+	 	<text><![CDATA[Destination IP Address]]></text> 
+	</component>
+		
+</textcomponents>

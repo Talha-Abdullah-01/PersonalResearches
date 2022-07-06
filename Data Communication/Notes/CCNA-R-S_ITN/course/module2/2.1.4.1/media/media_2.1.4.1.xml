@@ -1,0 +1,66 @@
+﻿<textcomponents>
+
+<!--slide 1-->
+<component id='ID_s1_title'>
+	<text><![CDATA[<b>Basic IOS Command Structure</b>]]></text>
+</component>
+
+<component id='ID_s1_txt01'>
+	<text><![CDATA[Prompt]]></text>
+</component>
+
+<component id='ID_s1_txt02'>
+	<text><![CDATA[Command]]></text>
+</component>
+
+<component id='ID_s1_txt03'>
+	<text><![CDATA[Space]]></text>
+</component>
+
+<component id='ID_s1_txt04'>
+	<text><![CDATA[Keyword or Argument]]></text>
+</component>
+
+<!--slide 2-->
+<component id='ID_s2_title'>
+	<text><![CDATA[<b>IOS Command Conventions</b>]]></text>
+</component>
+
+<component id='ID_s2_table'>
+<text><![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#98D3D1' colspan='2' class="mtitle"><font size='12' color="#1C3635"><b >When describing the use of commands, we generally use these conventions.</b></font></td>
+	</tr>
+	<tr>
+		<td colspan='2' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#434321'><span style="color:#98D3D1">.</span></font></td>
+	</tr>  
+	 
+	<tr>
+		<td bgcolor='#077A77' width="150"><font color='#FFFFFF'><b>Convention</b></font></td>
+		<td bgcolor='#077A77'><font color='#FFFFFF'><b>Description</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#EFF8F7'><b>boldface</b></td>
+		<td bgcolor='#EFF8F7'>Boldface text indicates commands and keywords that you enter literally as shown.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF'><i>italics</i></td>
+		<td bgcolor='#FFFFFF'>Italic text indicates arguments for which you supply values. </td>
+	</tr>
+	<tr>
+		<td bgcolor='#EFF8F7'>[x]</td>
+		<td bgcolor='#EFF8F7'>Square brackets indicate an optional element (keyword or argument).</td>
+	</tr>
+	<tr>
+		<td bgcolor='#FFFFFF'>{x}</td>
+		<td bgcolor='#FFFFFF'>Braces indicate a required element (keyword or argument).</td>
+	</tr>
+	<tr>
+		<td bgcolor='#EFF8F7'>[x {y | z}]</td>
+		<td bgcolor='#EFF8F7'>Braces and vertical lines within square brackets indicate a required choice within an optional element.</td>
+	</tr>
+</table>]]></text>
+</component>
+
+
+</textcomponents>

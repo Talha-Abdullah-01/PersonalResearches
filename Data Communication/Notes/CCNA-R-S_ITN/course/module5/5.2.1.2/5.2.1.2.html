@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.2.1.2 ARP Functions</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_5.2.1.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Address Resolution Protocol</h1>
+        <h2>ARP</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Resolving IPv4 Addresses to MAC Addresses</b>
+          </p>
+          <p>For a frame to be placed on the LAN media, it must have a destination MAC address. When a packet is sent to the data link layer to be encapsulated into a frame, the node refers to a table in its memory to find the data link layer address that is mapped to the destination IPv4 address. This table is called the ARP table or the ARP cache. The ARP table is stored in the RAM of the device. </p>
+          <p></p>
+          <p>Each entry, or row, of the ARP table binds an IP address with a MAC address. We call the relationship between the two values a map - it simply means that you can locate an IP address in the table and discover the corresponding MAC address. The ARP table temporarily saves (caches) the mapping for the devices on the local LAN. </p>
+          <p></p>
+          <p>To begin the process, a transmitting node attempts to locate the MAC address mapped to an IPv4 destination. If this map is found in the table, the node uses the MAC address as the destination MAC in the frame that encapsulates the IPv4 packet. The frame is then encoded onto the networking media. </p>
+          <p></p>
+          <p>
+            <b>Maintaining the ARP Table</b>
+          </p>
+          <p>The ARP table is maintained dynamically. There are two ways that a device can gather MAC addresses. One way is to monitor the traffic that occurs on the local network segment. As a node receives frames from the media, it can record the source IP and MAC address as a mapping in the ARP table. As frames are transmitted on the network, the device populates the ARP table with address pairs. </p>
+          <p></p>
+          <p>Another way a device can get an address pair is to send an ARP request as shown in the figure. An ARP request is a Layer 2 broadcast to all devices on the Ethernet LAN. The ARP request contains the IP address of the destination host and the broadcast MAC address, FFFF.FFFF.FFFF. Since this is a broadcast, all nodes on the Ethernet LAN will receive it and look at the contents. The node with the IP address that matches the IP address in the ARP request will reply. The reply will be a unicast frame that includes the MAC address that corresponds to the IP address in the request. This response is then used to make a new entry in the ARP table of the sending node.</p>
+          <p></p>
+          <p>Entries in the ARP table are time stamped in much the same way that MAC table entries are time stamped in switches. If a device does not receive a frame from a particular device by the time the time stamp expires, the entry for this device is removed from the ARP table.</p>
+          <p></p>
+          <p>Additionally, static map entries can be entered in an ARP table, but this is rarely done. Static ARP table entries do not expire over time and must be manually removed.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+﻿<textcomponents>
+
+<!--Slide 1-->
+
+<component id="ID_txt01">
+<text><![CDATA[If the default gateway was not configured on S1, response packets from S1 would not be able to reach the administrator at 192.168.11.10. The administrator would not be able to manage the device remotely.]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[&lt;output omitted&gt;]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[&lt;output omitted&gt;]]></text> 
+</component>
+
+<component id="ID_op">
+<text><![CDATA[&lt;output omitted&gt;]]></text> 
+</component>
+
+<!--End Slide 1-->
+
+<!--Slide 2-->
+
+<component id="ID_SC_title">
+<text><![CDATA[<b>Configuring a Switch Default Gateway</b>]]></text>
+</component>
+
+<!--Syntax Checker Button Text-->
+<component id="ID_sc_reset">
+<text><![CDATA[Reset]]></text>
+</component>
+
+<component id="ID_sc_showme">
+<text><![CDATA[Show Me]]></text>
+</component>
+
+<component id="ID_sc_showall">
+<text><![CDATA[Show All]]></text>
+</component>
+<!--End Syntax Checker Button Text-->
+
+<!--Syntax Checker Body Text-->
+<component id="ID_SC" fontFace='Courier New' fontSize="10">
+
+<text></text>		
+
+<feedback id="fb"><![CDATA[<span><font size = '10' face="Arial"><span><b>***</b></span>You must enter the exact and full command. Commands that include a name or password are case-sensitive.<span><b>***</b></span></font></span>
+]]></feedback>	
+
+<existingcommands><![CDATA[<font size = '10' face="Arial"><b>Enter global configuration and configure '192.168.10.1' as the default gateway for S1.</b></font>]]></existingcommands> 
+
+<command prompt="S1#" id="cmd1" node="start">
+<correctresponse id="cr1" ignoreCase= 'true'><![CDATA[configure terminal]]></correctresponse>
+<deviceresponse id="dr1"><![CDATA[<dnt>Enter configuration commands, one per line. End with CNTL/Z.</dnt>]]></deviceresponse>
+<instruction id="ins1"><![CDATA[<span></span>]]></instruction> 
+</command> 
+
+<command prompt="S1(config)#" id="cmd2" node="end">
+<correctresponse id="cr2" ignoreCase= 'true'><![CDATA[ip default-gateway 192.168.10.1]]></correctresponse>
+<deviceresponse id="dr2"><![CDATA[S1(config)#]]></deviceresponse>
+<instruction id="last"><![CDATA[<font size = '10' face="Arial"><b>You successfully configured the default gateway on S1.</b></font>]]></instruction> 
+</command> 
+
+<command prompt=""/>
+
+</component>
+<!--End Syntax Checker Body Text-->
+
+<!--End Slide 2-->
+
+</textcomponents>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.2.2.3 Directly Connected Routing Table Entries</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_6.2.2.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Routing</h1>
+        <h2>Router Routing Tables</h2>
+      </div>
+      <div id="content">
+          <p>Two routing table entries are automatically created when an active router interface is configured with an IP address and subnet mask. The figure displays the routing table entries on R1 for the directly connected network 192.168.10.0. These entries were automatically added to the routing table when the GigabitEthernet 0/0 interface was configured and activated. The entries contain the following information:</p>
+          <p></p>
+          <p>
+            <b>Route Source</b>
+          </p>
+          <p>The route source is labeled “A” in the figure. It identifies how the route was learned. Directly connected interfaces have two route source codes.</p>
+          <p>
+            <ul>
+              <li>
+                <b>C - </b>Identifies a directly connected network. Directly connected networks are automatically created when an interface is configured with an IP address and activated.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>L - </b>Identifies that this is a link local route. Link local routes are automatically created when an interface is configured with an IP address and activated.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Destination network</b>
+          </p>
+          <p>The destination network is labeled “B” in the figure. It identifies the address of the remote network.</p>
+          <p></p>
+          <p>
+            <b>Outgoing interface</b>
+          </p>
+          <p>The outgoing interface is labeled “C” in the figure. It identifies the exit interface to use when forwarding packets to the destination network.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Link local routing table entries did not appear in routing tables prior to IOS Release 15.</p>
+          <p></p>
+          <p>A router typically has multiple interfaces configured. The routing table stores information about both directly-connected and remote routes. As with directly connected networks, the route source identifies how the route was learned. For example, common codes for remote networks include:</p>
+          <p>
+            <ul>
+              <li>
+                <b>S - </b>Identifies that the route was manually created by an administrator to reach a specific network. This is known as a static route.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>D - </b>Identifies that the route was learned dynamically from another router using the Enhanced Interior Gateway Routing Protocol (EIGRP).</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>O - </b>Identifies that the route was learned dynamically from another router using the Open Shortest Path First (OSPF) routing protocol.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Other codes are beyond the scope of this chapter.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

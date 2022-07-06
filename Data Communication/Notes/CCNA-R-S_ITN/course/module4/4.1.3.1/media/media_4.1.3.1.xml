@@ -1,0 +1,87 @@
+﻿<textcomponents>
+
+<!--slide 1-->
+<component id="ID_title">
+	<text><![CDATA[]]></text>
+</component>
+<component id='ID_table'>
+		<text><![CDATA[
+				<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+						<tr class="liner">
+							<td colspan='4' bgcolor='#0E6360' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+						</tr>
+					   <tr>
+						<td  bgcolor='#077A77' valign="top" class="spacer"><font color='#ffffff'><b>Media</b></font></td>
+						<td  bgcolor='#077A77' valign="top" class="spacer"><font color='#ffffff'><b>Physical Components</b></font> </td>
+						<td  bgcolor='#077A77' valign="top" class="spacer"><font color='#ffffff'><b>Frame Encoding Technique</b></font></td>
+						<td  bgcolor='#077A77' valign="top" class="spacer"><font color='#ffffff'><b>Signalling Method</b></font> </td>
+					  </tr>
+					   <tr>
+						<td bgcolor='#EFF8F7' valign="top" width="67">Copper cable</td>
+						<td bgcolor='#EFF8F7' valign="top" width="100">
+								<textformat blockindent='-14'>
+									<li>UTP</li>
+									 <li>Coaxial</li>
+									 <li>Connectors</li>
+									 <li>NICs</li>
+									 <li>Ports</li>
+									 <li>Interfaces</li>
+								</textformat>
+						</td>
+						<td bgcolor='#EFF8F7' valign="top" width="140">
+								<textformat blockindent='-14'>
+									  <li>Manchester Encoding</li>
+									  <li>Non-Return to Zero (NRZ) techniques</li>
+									  <li>4B/5B codes are used with Multi-Level Transition Level 3 (MLT-3) signaling</li>
+									  <li>8B/10B</li>
+									  <li>PAM5</li>		
+								</textformat>				 
+						</td>
+						<td bgcolor='#EFF8F7' valign="top">
+								<textformat blockindent='-14'>
+									 <li>Changes in the electromagnetic field</li>
+									 <li>Intensity of the electromagnetic field </li>
+									 <li>Phase of the electromagnetic wave</li>
+								</textformat>
+						</td>
+					  </tr> 
+				</table>
+			]]>
+			
+		</text>
+		</component>
+		
+<!--Slide 2-->
+<component id="ID_s2_txt01">
+<text><![CDATA[<b>Frequency Modulation (FM)</b>]]></text>
+</component>
+
+<component id="ID_s2_txt02">
+<text><![CDATA[Modulating Wave]]></text>
+</component>
+
+<component id="ID_s2_txt03">
+<text><![CDATA[Carrier Signal]]></text>
+</component>
+
+<component id="ID_s2_txt04">
+<text><![CDATA[FM Signal]]></text>
+</component>
+
+<component id="ID_s2_txt05">
+<text><![CDATA[<b>Amplitude Modulation (AM)</b>]]></text>
+</component>
+
+<component id="ID_s2_txt06">
+<text><![CDATA[Modulating Wave]]></text>
+</component>
+
+<component id="ID_s2_txt07">
+<text><![CDATA[Carrier Signal]]></text>
+</component>
+
+<component id="ID_s2_txt08">
+<text><![CDATA[AM Signal]]></text>
+</component>
+
+</textcomponents>

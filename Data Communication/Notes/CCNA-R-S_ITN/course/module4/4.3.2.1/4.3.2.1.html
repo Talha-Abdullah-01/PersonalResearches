@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.3.2.1 Formatting Data for Transmission</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_4.3.2.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Data Link Layer Protocols</h1>
+        <h2>Layer 2 Frame Structure</h2>
+      </div>
+      <div id="content">
+          <p>The data link layer prepares a packet for transport across the local media by encapsulating it with a header and a trailer to create a frame. The description of a frame is a key element of each data link layer protocol. </p>
+          <p></p>
+          <p>Data link layer protocols require control information to enable the protocols to function. Control information typically answers:</p>
+          <p>
+            <ul>
+              <li>Which nodes are in communication with each other?</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>When does communication between individual nodes begin and when does it end?</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Which errors occurred while the nodes communicated?</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Which nodes will communicate next?</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Unlike the other PDUs that have been discussed in this course, the data link layer frame includes:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Header</b>: Contains control information, such as addressing, and is located at the beginning of the PDU.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Data</b>: Contains the IP header, transport layer header, and application data.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Trailer</b>: Contains control information for error detection added to the end of the PDU.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>These frame elements are shown in the figure, and will be discussed in greater detail.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>The OSI Transport Layer</b>]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Transport</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+<text><![CDATA[Application]]></text>
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[Presentation]]></text> 
+  </component>
+<component id="ID_txt05">
+<text><![CDATA[Session]]></text>
+  </component>
+<component id="ID_txt06">
+  <text><![CDATA[Transport]]></text> 
+  </component>
+<component id="ID_txt07">
+<text><![CDATA[Network]]></text>
+  </component>
+<component id="ID_txt08">
+  <text><![CDATA[Data Link]]></text> 
+  </component>
+<component id="ID_txt09">
+  <text><![CDATA[Physical]]></text>
+  </component> 
+<component id="ID_txt10">
+  <text><![CDATA[The transport layer prepares application data for transport over the network and processes network data for use by applications.]]></text> 
+  </component>
+<component id="ID_txt11">
+  <text><![CDATA[<b>Application Data</b>]]></text>
+  </component>
+<component id="ID_txt12">
+  <text><![CDATA[<b>Network Data</b>]]></text>
+  </component>  
+</textcomponents>

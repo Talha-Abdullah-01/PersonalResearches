@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.1.2.1 The Plan</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_9.1.2.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Subnetting an IPv4 Network</h1>
+        <h2>IP Subnetting is FUNdamental</h2>
+      </div>
+      <div id="content">
+          <p>As shown in the figure, planning network subnets requires examination of both the needs of an organization’s network usage, and how the subnets will be structured. Doing a network requirement study is the starting point. This means looking at the entire network and determining the main sections of the network and how they will be segmented. The address plan includes deciding the needs for each subnet in terms of size, how many hosts per subnet, how host addresses will be assigned, which hosts will require static IP addresses and which hosts can use DHCP for obtaining their addressing information.</p>
+          <p></p>
+          <p>The size of the subnet involves planning the number of hosts that will require IP host addresses in each subnet of the subdivided private network. For example in a campus network design you might consider how many hosts are needed in the Administrative LAN, how many in the Faculty LAN and how many in the Student LAN. In a home network, a consideration might be done by the number of hosts in the Main House LAN and the number of hosts in the Home Office LAN.</p>
+          <p></p>
+          <p>As discussed earlier, the private IP address range used on a LAN is the choice of the network administrator and needs careful consideration to be sure that enough host address will be available for the currently known hosts and for future expansion. Remember the private IP address ranges are: </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>10.0.0.0 with a subnet mask of 255.0.0.0</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>172.16.0.0 with a subnet mask of 255.240.0.0</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>192.168.0.0 with a subnet mask of 255.255.0.0</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Knowing your IP address requirements will determine the range or ranges of host addresses you implement. Subnetting the selected private IP address space will provide the host addresses to cover your network needs.</p>
+          <p></p>
+          <p>Public addresses used to connect to the Internet are typically allocated from a service provider. So while the same principles for subnetting would apply, this is not generally the responsibility of the organization’s network administrator.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

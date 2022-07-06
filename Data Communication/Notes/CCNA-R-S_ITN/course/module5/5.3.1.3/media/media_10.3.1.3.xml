@@ -1,0 +1,29 @@
+
+<textcomponents> 
+
+<component id="ID_title">
+<text><![CDATA[<b>Duplex Settings</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Half Duplex (CSMA/CD)</b>]]></text>
+</component>
+<component id="ID_txt05">
+<text><![CDATA[<textformat blockindent='-14'><ul><li>Unidirectional data flow</li><li>Higher potential for collision</li><li>Hub connectivity</li></ul></textformat>]]></text>
+</component>
+<component id="ID_txt02"><text><![CDATA[<b>Full Duplex</b>]]></text>
+</component>
+
+<component id="ID_txt06"><text><![CDATA[<textformat blockindent='-14'><ul><li>Point-to-point only</li><li>Attached to dedicated switched port</li><li>Requires full-duplex support on both ends</li><li>Collision-free</li><li>Collision detect circuit disabled</li></ul></textformat>]]></text>
+</component>
+ 
+<component id="ID_txt03">
+<text><![CDATA[Hub]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Switch]]></text>
+</component>
+
+ 
+</textcomponents>

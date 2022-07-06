@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.3.1.6 Warriors of the Net</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_10.3.1.6_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>The Message Heard Around the World</h1>
+        <h2>Move It!</h2>
+      </div>
+      <div id="content">
+          <p>An entertaining resource to help you visualize networking concepts is the animated movie "Warriors of the Net" by TNG Media Lab. Before viewing the video, there are a few things to consider. First, in terms of concepts you have learned in this chapter, think about when in the video you are on the LAN, on WAN, on intranet, on Internet; and what are end devices versus intermediate devices; how the OSI and TCP/IP models apply; what protocols are involved.</p>
+          <p></p>
+          <p>Second, while port numbers 21, 23, 25, 53, and 80 are referred to explicitly in the video, IP addresses are referred to only implicitly - can you see where? Where in the video might MAC addresses have been involved?</p>
+          <p></p>
+          <p>Finally, though all animations often have simplifications in them, there is one outright error in the video. About 5 minutes in, the statement is made "What happens when Mr. IP doesn't receive an acknowledgement, he simply sends a replacement packet." This is not a function of the Layer 3 Internet Protocol, which is an "unreliable", best effort delivery protocol, but rather a function of the transport layer TCP protocol.</p>
+          <p></p>
+          <p>Download the movie from <a href="http://www.warriorsofthe.net/" target="_blank">http://www.warriorsofthe.net</a>.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[H1]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Internet]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Server]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Application]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Transport]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Internet]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[Network Access]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[Stream]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[The application layer sends the stream of HTTP GET data to the transport layer for encapsulation.]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[Segment]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[The transport layer divides the application stream into segments and adds a TCP header.]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[The transport layer passes the segment to the Internet layer.]]></text>
+</component>
+
+<!-- controller -->
+
+<component id="end">
+<text><![CDATA[End]]></text>
+</component>
+
+<component id="fforward">
+<text><![CDATA[Fast Forward]]></text>
+</component>
+
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+
+<component id="play">
+<text><![CDATA[Play]]></text>
+</component>
+
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component>
+
+<component id="start">
+<text><![CDATA[Start]]></text>
+</component>
+
+</textcomponents>

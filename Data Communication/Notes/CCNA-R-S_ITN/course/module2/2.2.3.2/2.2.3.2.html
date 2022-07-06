@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.2.3.2 Capturing Text</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.2.3.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Getting Basic</h1>
+        <h2>Saving Configurations</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Backup Configurations with Text Capture</b>
+          </p>
+          <p></p>
+          <p>In addition to saving running configurations to the startup configuration, configuration files can also be saved and archived to a text document. This sequence of steps ensures that a working copy of the configuration files is available for editing or reuse later.</p>
+          <p></p>
+          <p>In Figure 1, configuration files can be saved and archived to a text document using Tera Term. </p>
+          <p></p>
+          <p>The steps are:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>On the File menu, click <b>Log</b>.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Choose the location. Tera Term will begin capturing text. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>After capture has been started, execute the <span class="cmd"><b>show running-config</b></span> or <span class="cmd"><b>show startup-config</b></span> command at the privileged EXEC prompt. Text displayed in the terminal window will be placed into the chosen file.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>When the capture is complete, select <b>Close</b> in the Tera Term: Log window.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>View the output to verify that it was not corrupted.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Similarly, Figure 2 shows how files can be saved and archived in a text document using HyperTerminal.</p>
+          <p></p>
+          <p>
+            <b>Restoring Text Configurations</b>
+          </p>
+          <p></p>
+          <p>A configuration file can be copied from storage to a device. When copied into the terminal, the IOS executes each line of the configuration text as a command. The file will probably require editing before copying. It is advisable to change the encrypted passwords to plain text and remove the parameter, either the number 5 or 7, which specifies that the password is encrypted. Non-command text such as "--More--" and IOS messages must be removed. This process is discussed in the lab. </p>
+          <p></p>
+          <p>Further, at the CLI, the device must be set at the global configuration mode to receive the commands from the text file being copied.</p>
+          <p></p>
+          <p>When using Tera Term, the steps are:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Edit text to remove non-commands and save.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>On the <b>File</b> menu, click <b>Send</b> file.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Locate the file to be copied into the device and click <b>Open</b>.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Tera Term will paste the file into the device.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The text in the file will be applied as commands in the CLI and become the running configuration on the device. This is a convenient method for manually configuring a device.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

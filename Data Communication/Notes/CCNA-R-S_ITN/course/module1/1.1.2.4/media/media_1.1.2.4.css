@@ -1,0 +1,17 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media.css');
+
+html, body {
+	margin:0;
+	height:100%;
+}
+#flashContent {
+	width:98%;
+	height:98%;
+}
+
+/*#ID_txt01, #ID_txt02 {background:#CCE9E7; border:#67BDBC 3px solid; border-radius:2px; padding:3px;  box-shadow: 2px 2px 2px #666666;}*/
+#ID_table01 {padding:0 0 0 30px;}
+#ID_table01 b{margin: 0 0 0 -29px;}

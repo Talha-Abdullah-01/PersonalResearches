@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.3.1.5 Router Backplane</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_6.3.1.5_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Routers</h1>
+        <h2>Anatomy of a Router</h2>
+      </div>
+      <div id="content">
+          <p>A Cisco 1941 router includes the following connections:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Console ports - </b>Two console ports for the initial configuration and command-line interface (CLI) management access using a regular RJ-45 port and a new USB Type-B (mini-B USB) connector.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>AUX port - </b>An RJ-45 port for remote management access; this is similar to the Console port.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Two LAN interfaces - </b>Two Gigabit Ethernet interfaces for LAN access.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Enhanced high-speed WAN interface card (EHWIC) slots - </b>Two slots that provide modularity and flexibility by enabling the router to support different types of interface modules, including Serial, digital subscriber line (DSL), switch port, and wireless.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The Cisco 1941 ISR also has storage slots to support expanded capabilities. Dual-compact flash memory slots are capable of supporting a 4 GB compact flash card each for increased storage space. Two USB host ports are included for additional storage space and secure token capability. </p>
+          <p></p>
+          <p>Compact flash can store the Cisco IOS software image, log files, voice configuration files, HTML files, backup configurations, or any other file needed for the system. By default, only slot 0 is populated with a compact flash card from the factory, and it is the default boot location. </p>
+          <p></p>
+          <p>The figure identifies the location of these connections and slots.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

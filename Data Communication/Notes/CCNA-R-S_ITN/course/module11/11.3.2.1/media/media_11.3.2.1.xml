@@ -1,0 +1,41 @@
+<textcomponents>	
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Testing the Path to a Remote Host</b>]]></text>
+	</component>	
+	<component id="ID_s1_txt01">
+		<text><![CDATA[Trace from a router<br><font face="Courier New" id="test1">RouterA#<b>traceroute 10.1.0.2</b></font>]]></text>
+	</component>	
+	<component id="ID_s1_txt02">
+		<text><![CDATA[Router C]]></text>
+	</component>	
+	<component id="ID_s1_txt03">
+		<text><![CDATA[Router D]]></text>
+	</component>	
+	<component id="ID_s1_txt04">
+		<text><![CDATA[Router A]]></text>
+	</component>	
+	<component id="ID_s1_txt05">
+		<text><![CDATA[Router B]]></text>
+	</component>	
+	<component id="ID_s1_txt06">
+		<text><![CDATA[Host 1]]></text>
+	</component>	
+	<component id="ID_s1_txt07">
+		<text><![CDATA[Trace from a host<br><font face="Courier New" id="test2"><b>C:\>tracert 10.1.0.2</b></font>]]></text>
+	</component>	
+	<component id="ID_s1_txt08">
+		<text><![CDATA[<b>Host 2</b>]]></text>
+	</component>	
+	
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>Router Traceroute Capture - Saving to a text file</b>]]></text>
+	</component>	
+	
+	<component id="ID_s2_title01">
+		<text><![CDATA[<b>In the terminal session:</b>]]></text>
+	</component>
+	
+	<component id="ID_s2_body">
+	<text><![CDATA[1. Start the text capture process.<br/>2. Issue a <font face="Courier New"><b>traceroute</b> <i>&lt;ip address&gt;</i></font> command.<br/>3. Stop the capture process.<br/>4. Save the text file.]]></text>
+	</component>
+</textcomponents>

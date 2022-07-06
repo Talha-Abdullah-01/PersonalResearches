@@ -1,0 +1,227 @@
+﻿<textcomponents>
+
+<!--TCP/IP Model-->
+<component id='ID_tcpip_header'>
+	<text><![CDATA[<b>Layers</b>]]></text>
+</component>
+
+<component id='ID_tcpip_txt04'>
+	<text><![CDATA[Application]]></text>
+</component>
+
+<component id='ID_tcpip_txt03'>
+	<text><![CDATA[Transport]]></text>
+</component>
+
+<component id='ID_tcpip_txt02'>
+	<text><![CDATA[Internet]]></text>
+</component>
+
+<component id='ID_tcpip_txt01'>
+	<text><![CDATA[Network Access]]></text>
+</component>
+
+<!--OSI Model-->
+<component id='ID_osi_header'>
+	<text><![CDATA[<b>Layers</b>]]></text>
+</component>
+
+<component id="ID_OSInum01">
+  <text><![CDATA[<b>1</b>]]></text> 
+  </component>
+<component id="ID_OSInum02">
+  <text><![CDATA[<b>2</b>]]></text> 
+  </component>
+<component id="ID_OSInum03">
+  <text><![CDATA[<b>3</b>]]></text> 
+  </component>
+<component id="ID_OSInum04">
+  <text><![CDATA[<b>4</b>]]></text> 
+  </component>
+<component id="ID_OSInum05">
+  <text><![CDATA[<b>5</b>]]></text> 
+  </component>
+<component id="ID_OSInum06">
+  <text><![CDATA[<b>6</b>]]></text> 
+  </component>
+<component id="ID_OSInum07">
+  <text><![CDATA[<b>7</b>]]></text> 
+  </component>
+
+<component id='ID_osi_txt07'>
+	<text><![CDATA[Application]]></text>
+</component>
+<component id='ID_osi_txt06'>
+	<text><![CDATA[Presentation]]></text>
+</component>
+<component id='ID_osi_txt05'>
+	<text><![CDATA[Session]]></text>
+</component>
+<component id='ID_osi_txt04'>
+	<text><![CDATA[Transport]]></text>
+</component>
+<component id='ID_osi_txt03'>
+	<text><![CDATA[Network]]></text>
+</component>
+<component id='ID_osi_txt02'>
+	<text><![CDATA[Data Link ]]></text>
+</component>
+<component id='ID_osi_txt01'>
+	<text><![CDATA[Physical]]></text>
+</component>
+
+<!--Slide 1-->
+<component id='ID_s1_inst'>
+	<text><![CDATA[<font size="13"><b>Activity – Part 1: OSI Layer Functions</b></font><font size="11"><br><br>Drag the OSI layer to its functional description.</font>]]></text>
+</component>
+
+<component id='ID_target1_header'>
+	<text><![CDATA[<b>OSI Layer Functional Descriptions</b>]]></text>
+</component>
+
+<component id='ID_s1_q01'>
+	<text><![CDATA[Manages data exchange]]></text>
+</component>
+
+<component id='ID_s1_q02'>
+	<text><![CDATA[Exchanges frames between devices]]></text>
+</component>
+
+<component id='ID_s1_q03'>
+	<text><![CDATA[Data representation]]></text>
+</component>
+
+<component id='ID_s1_q04'>
+	<text><![CDATA[Provides a data path or route]]></text>
+</component>
+
+<component id='ID_s1_q05'>
+	<text><![CDATA[Bit transmission]]></text>
+</component>
+
+
+<!--Drag and Drop -->
+<component id='ID_app_DS'>
+	<text><![CDATA[Application]]></text>
+</component>
+
+<component id='ID_pre_DS'>
+	<text><![CDATA[Presentation]]></text>
+</component>
+
+<component id='ID_ses_DS'>
+	<text><![CDATA[Session]]></text>
+</component>
+
+<component id='ID_tra_DS'>
+	<text><![CDATA[Transport]]></text>
+</component>
+
+<component id='ID_net_DS'>
+	<text><![CDATA[Network]]></text>
+</component>
+
+<component id='ID_dat_DS'>
+	<text><![CDATA[Data Link]]></text>
+</component>
+
+<component id='ID_phy_DS'>
+	<text><![CDATA[Physical]]></text>
+</component>
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched the OSI layer to its functional description.]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched the OSI layer to its functional description. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s1_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+<!--slide 2-->
+<component id='ID_s2_inst'>
+	<text><![CDATA[<font size="13"><b>Activity – Part 2: TCP/IP Layer Functions</b></font><font size="11"><br><br>Drag the TCP/IP layer to its functional description.</font>]]></text>
+</component>
+
+<component id='ID_target2_header'>
+	<text><![CDATA[<b>TCP/IP Layer Functional Descriptions</b>]]></text>
+</component>
+
+<component id='ID_s2_q01'>
+	<text><![CDATA[Organizes dialog – manages data exchange]]></text>
+</component>
+
+<component id='ID_s2_q02'>
+	<text><![CDATA[Exchanges frames between devices]]></text>
+</component>
+
+<component id='ID_s2_q03'>
+	<text><![CDATA[Represents data to the user and controls dialogs]]></text>
+</component>
+
+<component id='ID_s2_q04'>
+	<text><![CDATA[Determines the best path through a network]]></text>
+</component>
+
+<component id='ID_s2_q05'>
+	<text><![CDATA[Segments, transfers, and reassembles data]]></text>
+</component>
+
+<!--Drag and Drop -->
+<component id='ID_app2_DS'>
+	<text><![CDATA[Application]]></text>
+</component>
+
+<component id='ID_tra2_DS'>
+	<text><![CDATA[Transport]]></text>
+</component>
+
+<component id='ID_int_DS'>
+	<text><![CDATA[Internet]]></text>
+</component>
+
+<component id='ID_net2_DS'>
+	<text><![CDATA[Network Access]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_TITLE'>
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched the TCP/IP layer to its functional description.]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_TITLE'>
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched the TCP/IP layer to its functional description. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s2_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s2_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+</textcomponents>

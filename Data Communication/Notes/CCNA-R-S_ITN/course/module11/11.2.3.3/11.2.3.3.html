@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.2.3.3 Firewalls</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.2.3.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Keeping the Network Safe</h1>
+        <h2>Mitigating Network Attacks</h2>
+      </div>
+      <div id="content">
+          <p>In addition to protecting individual computers and servers attached to the network, it is important to control traffic traveling to and from the network. </p>
+          <p></p>
+          <p>A firewall is one of the most effective security tools available for protecting internal network users from external threats. A firewall resides between two or more networks and controls the traffic between them and also helps prevent unauthorized access. Firewall products use various techniques for determining what is permitted or denied access to a network. These techniques are:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Packet filtering</b> - Prevents or allows access based on IP or MAC addresses.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Application filtering</b> - Prevents or allows access by specific application types based on port numbers. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>URL filtering</b> - Prevents or allows access to websites based on specific URLs or keywords.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Stateful packet inspection (SPI)</b> - Incoming packets must be legitimate responses to requests from internal hosts. Unsolicited packets are blocked unless permitted specifically. SPI can also include the capability to recognize and filter out specific types of attacks such as denial of service (DoS).</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Firewall products may support one or more of these filtering capabilities. Additionally, firewalls often perform Network Address Translation (NAT). NAT translates an internal IP address or group of IP addresses into an outside, public IP address that is sent across the network. This allows internal IP addresses to be concealed from outside users.</p>
+          <p></p>
+          <p>Firewall products come packaged in various forms, as shown in the figure.</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Appliance-based firewalls</b> - An appliance-based firewall is a firewall that is built-in to a dedicated hardware device known as a security appliance. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Server-based firewalls</b> - A server-based firewall consists of a firewall application that runs on a network operating system (NOS) such as UNIX or Windows.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Integrated firewalls</b> - An integrated firewall is implemented by adding firewall functionality to an existing device, such as a router.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Personal firewalls</b> - Personal firewalls reside on host computers and are not designed for LAN implementations. They may be available by default from the OS or may come from an outside vendor.</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

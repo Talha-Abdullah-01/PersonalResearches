@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.2.2.4 TCP Flow Control – Window Size and Acknowledgements</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_7.2.2.4_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>TCP and UDP</h1>
+        <h2>Reliability and Flow Control</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Flow Control</b>
+          </p>
+          <p></p>
+          <p>TCP also provides mechanisms for flow control. Flow control helps maintain the reliability of TCP transmission by adjusting the rate of data flow between source and destination for a given session. Flow control is accomplished by limiting the amount of data segments forwarded at one time and by requiring acknowledgments of receipt prior to sending more. </p>
+          <p></p>
+          <p>To accomplish flow control, the first thing that TCP determines is the amount of data segments that the destination device can accept. The TCP header includes a 16-bit field called the window size. This is the number of bytes that the destination device of a TCP session is able to accept and process at one time. The initial window size is agreed upon during the session startup via the three-way handshake between source and destination. Once agreed upon, the source device must limit the amount of data segments sent to the destination device based on the window size. Only after the source device receives an acknowledgement that the data segments have been received, can it continue sending more data for the session. </p>
+          <p></p>
+          <p>During the delay in receiving the acknowledgement, the sender does not send any additional segments. In periods when the network is congested or the resources of the receiving host are strained, the delay may increase. As this delay grows longer, the effective transmission rate of the data for this session decreases. The slowdown in data transmission from each session helps reduce resource conflict on the network and destination device when multiple sessions are running.</p>
+          <p></p>
+          <p>See the figure for a simplified representation of window size and acknowledgements. In this example, the initial window size for a TCP session represented is set to 3000 bytes. When the sender has transmitted 3000 bytes, it waits for an acknowledgement of these bytes before transmitting more segments in this session. After the sender has received an acknowledgement from the receiver, the sender can transmit an additional 3000 bytes. </p>
+          <p></p>
+          <p>TCP uses window sizes to attempt to manage the rate of transmission to the maximum flow that the network and destination device can support, while minimizing loss and retransmissions.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

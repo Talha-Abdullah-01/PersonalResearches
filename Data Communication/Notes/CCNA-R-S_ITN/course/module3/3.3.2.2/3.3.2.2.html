@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.3.2.2 Communicating with a Device on the Same Network</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_3.3.2.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Moving Data in the Network</h1>
+        <h2>Accessing Local Resources</h2>
+      </div>
+      <div id="content">
+          <p>To understand how communication is successful in the network, it is important to understand the roles of both the network layer addresses and the data link addresses when a device is communicating with another device on the same network. In this example we have a client computer, PC1, communicating with a file server, FTP server, on the same IP network.</p>
+          <p></p>
+          <p>
+            <b>Network Addresses</b>
+          </p>
+          <p></p>
+          <p>The network layer addresses, or IP addresses, indicate the network and host address of the source and destination. The network portion of the address will be the same; only the host or device portion of the address will be different.</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Source IP address</b> - The IP address of the sending device, the client computer PC1: 192.168.1.110.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Destination IP address</b> - The IP address of the receiving device, FTP server: 192.168.1.9.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Data Link Addresses</b>
+          </p>
+          <p></p>
+          <p>When the sender and receiver of the IP packet are on the same network, the data link frame is sent directly to the receiving device. On an Ethernet network, the data link addresses are known as Ethernet MAC addresses. MAC addresses are 48-bit addresses that are physically embedded on the Ethernet NIC. A MAC address is also known as the physical address or burned-in address (BIA).</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Source MAC address</b> - This is the data link address, or the Ethernet MAC address, of the device that sends the IP packet, PC1. The MAC address of the Ethernet NIC of PC1 is AA-AA-AA-AA-AA-AA.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Destination MAC address</b> - When the receiving device is on the same network as the sending device, this is the data link address of the receiving device. In this example, the destination MAC address is the MAC address of the FTP server: CC-CC-CC-CC-CC-CC.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The source and destination addresses are added to the Ethernet frame. The frame with the encapsulated IP packet can now be transmitted from PC1 directly to the FTP server.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

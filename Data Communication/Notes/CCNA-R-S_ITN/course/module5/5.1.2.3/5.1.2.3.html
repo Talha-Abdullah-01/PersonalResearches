@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.1.2.3 Introduction to the Ethernet Frame</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_5.1.2.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Ethernet Protocol</h1>
+        <h2>Ethernet Frame Attributes</h2>
+      </div>
+      <div id="content">
+          <p>The primary fields in the Ethernet frame are:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Preamble and Start Frame Delimiter Fields</b>: The Preamble (7 bytes) and Start Frame Delimiter (SFD), also called the Start of Frame (1 byte), fields are used for synchronization between the sending and receiving devices. These first eight bytes of the frame are used to get the attention of the receiving nodes. Essentially, the first few bytes tell the receivers to get ready to receive a new frame. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Destination MAC Address Field</b>: This 6-byte field is the identifier for the intended recipient. As you will recall, this address is used by Layer 2 to assist devices in determining if a frame is addressed to them. The address in the frame is compared to the MAC address in the device. If there is a match, the device accepts the frame.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Source MAC Address Field</b>: This 6-byte field identifies the frame's originating NIC or interface. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Length Field</b>: For any IEEE 802.3 standard earlier than 1997 the Length field defines the exact length of the frame's data field. This is used later as part of the FCS to ensure that the message was received properly. Otherwise the purpose of the field is to describe which higher-layer protocol is present. If the two-octet value is equal to or greater than 0x0600 hexadecimal or 1536 decimal, then the contents of the Data field are decoded according to the EtherType protocol indicated. Whereas if the value is equal to or less than 0x05DC hexadecimal or 1500 decimal then the Length field is being used to indicate the use of the IEEE 802.3 frame format. This is how Ethernet II and 802.3 frames are differentiated. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Data Field</b>: This field (46 - 1500 bytes) contains the encapsulated data from a higher layer, which is a generic Layer 3 PDU, or more commonly, an IPv4 packet. All frames must be at least 64 bytes long. If a small packet is encapsulated, additional bits called a pad are used to increase the size of the frame to this minimum size.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Frame Check Sequence Field</b>: The Frame Check Sequence (FCS) field (4 bytes) is used to detect errors in a frame. It uses a cyclic redundancy check (CRC). The sending device includes the results of a CRC in the FCS field of the frame. The receiving device receives the frame and generates a CRC to look for errors. If the calculations match, no error occurred. Calculations that do not match are an indication that the data has changed; therefore, the frame is dropped. A change in the data could be the result of a disruption of the electrical signals that represent the bits.</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.5.2.1 Configuring the Integrated Router</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.5.2.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Integrated Routing Services</h1>
+        <h2>Configuring the Integrated Router</h2>
+      </div>
+      <div id="content">
+          <p>A Linksys wireless router is a common device used in home and small business networks, and will be used in this course to demonstrate basic configurations of an integrated router. A typical Linksys device offers four Ethernet ports for wired connectivity, in addition to acting as a wireless access point. The Linksys device also acts as both a DHCP server and a mini-webserver that supports a web based graphical user interface (GUI).  </p>
+          <p></p>
+          <p>
+            <b>Accessing and Configuring a Linksys Router</b>
+          </p>
+          <p>Initially access the router by cabling a computer to one of the router’s LAN Ethernet ports, as shown in the figure.  Once cabled, the connecting device will automatically obtain IP addressing information, including a default gateway address, from the integrated router. The default gateway address is the IP address of the Linksys device. Check the computer network settings using the<span class="cmd"><b> ipconfig /all </b></span>command to obtain this address. You can now type that IP address into a web browser on the computer to access the web-based configuration GUI.</p>
+          <p></p>
+          <p>The Linksys device has a default configuration that allows switching and basic routing services. It is also configured, by default, as a DCHP server. Basic configuration tasks, such as changing the default username and password, changing the default Linksys IP address, and even default DHCP IP address ranges, should be conducted before the AP is connected to a live network.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

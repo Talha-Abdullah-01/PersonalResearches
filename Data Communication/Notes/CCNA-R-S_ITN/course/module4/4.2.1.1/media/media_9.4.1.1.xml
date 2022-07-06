@@ -1,0 +1,71 @@
+﻿<textcomponents>
+
+<component id="ID_graph01">
+<text><![CDATA[Voltage]]></text>
+</component>
+
+<component id="ID_graph02">
+<text><![CDATA[Time]]></text>
+</component>
+
+<component id="ID_txt01a">
+<text><![CDATA[Pure Digital Signal]]></text>
+</component>
+
+<component id="ID_txt01b">
+<text><![CDATA[Pure Digital Signal]]></text>
+</component>
+
+<component id="ID_txt02a">
+<text><![CDATA[Interference Signal]]></text>
+</component>
+
+<component id="ID_txt02b">
+<text><![CDATA[Interference Signal]]></text>
+</component>
+
+<component id="ID_txt03a">
+<text><![CDATA[Digital Signal with Interference]]></text>
+</component>
+
+<component id="ID_txt03b">
+<text><![CDATA[Digital Signal with Interference]]></text>
+</component>
+
+<component id="ID_txt04a">
+<text><![CDATA[What the computer reads]]></text>
+</component>
+
+<component id="ID_txt04b">
+<text><![CDATA[What the computer reads]]></text>
+</component>
+
+<component id="ID_txt05a">
+<text><![CDATA[Changed Signal]]></text>
+</component>
+
+<component id="ID_txt05b">
+<text><![CDATA[Changed Signal]]></text>
+</component>
+
+<!--Controller-->
+<component id="play">
+<text>Play</text>
+</component>
+<component id="pause">
+<text>Pause</text>
+</component>
+<component id="rewind">
+<text>Rewind</text>
+</component>
+<component id="fforward">
+<text>Fast Forward</text>
+</component>
+<component id="start">
+<text>Start</text>
+</component>
+<component id="end">
+<text>End</text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.1.1.2 Binary Number System</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_8.1.1.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IPv4 Network Addresses</h1>
+        <h2>IPv4 Address Structure</h2>
+      </div>
+      <div id="content">
+          <p>In IPv4, addresses are 32-bit binary numbers. However, for ease of use by people, binary patterns representing IPv4 addresses are expressed as dotted decimals. This is first accomplished by separating each byte (8 bits) of the 32-bit binary pattern, called an octet, with a dot. It is called an octet because each decimal number represents one byte or 8 bits.</p>
+          <p></p>
+          <p>The binary address:</p>
+          <p>
+            <span class="cmd">11000000 10101000 00001010 00001010</span>
+          </p>
+          <p></p>
+          <p>is expressed in dotted decimal as:</p>
+          <p>192.168.10.10</p>
+          <p></p>
+          <p>In Figure 1, select each button to see how the 32-bit binary address is represented in dotted decimal octets.</p>
+          <p></p>
+          <p>But how are the actual decimal equivalents determined?</p>
+          <p></p>
+          <p>
+            <b>Binary Numbering System</b>
+          </p>
+          <p>In the binary numbering system, the radix is 2. Therefore, each position represents increasing powers of 2. In 8-bit binary numbers, the positions represent these quantities:</p>
+          <p></p>
+          <p>2^7 2^6 2^5 2^4 2^3 2^2 2^1 2^0</p>
+          <p></p>
+          <p>128 64 32 16 8 4 2 1</p>
+          <p></p>
+          <p>The base 2 numbering system only has two digits: 0 and 1. </p>
+          <p></p>
+          <p>When we interpret a byte as a decimal number, we have the quantity that position represents if the digit is a 1 and we do not have that quantity if the digit is a 0, as shown in Figure 1. </p>
+          <p></p>
+          <p>Figure 2 illustrates the representation of the decimal number 192 in binary. A 1 in a certain position means we add that value to the total. A 0 means we do not add that value. The binary number 11000000 has a 1 in the 2^7 position (decimal value 128) and a 1 in the 2^6 position (decimal value 64). The remaining bits are all 0 so we do not add the corresponding decimal values. The result of adding 128+64 is 192, the decimal equivalent of 11000000.</p>
+          <p></p>
+          <p>Here are two more examples:</p>
+          <p></p>
+          <p>
+            <b>Example 1: An octet containing all 1s: 11111111</b>
+          </p>
+          <p></p>
+          <p>A 1 in each position means that we add the value for that position to the total. All 1s means that the values of every position are included in the total, therefore, the value of all 1s in an octet is 255.</p>
+          <p></p>
+          <p>128 + 64 + 32 + 16 + 8 + 4 + 2 + 1 = 255</p>
+          <p></p>
+          <p>
+            <b>Example 2: An octet containing all 0s: 00000000 </b>
+          </p>
+          <p>A 0 in each position indicates that the value for that position is not included in the total. A 0 in every position yields a total of 0.</p>
+          <p></p>
+          <p>0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 = 0</p>
+          <p></p>
+          <p>A different combination of ones and zeros will yield a different decimal value.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

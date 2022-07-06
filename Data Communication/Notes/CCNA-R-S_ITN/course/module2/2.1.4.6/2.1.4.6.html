@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.1.4.6 IOS Examination Commands</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.1.4.6_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IOS Bootcamp</h1>
+        <h2>The Command Structure</h2>
+      </div>
+      <div id="content">
+          <p>In order to verify and troubleshoot network operation, we must examine the operation of the devices. The basic examination command is the <span class="cmd"><b>show</b></span> command. </p>
+          <p></p>
+          <p>There are many different variations of this command. As you develop more skill with the IOS, you will learn to use and interpret the output of the <span class="cmd"><b>show</b></span> commands. Use the<span class="cmd"><b> show ?</b></span> command to get a list of available commands in a given context, or mode. </p>
+          <p></p>
+          <p>A typical <span class="cmd"><b>show</b></span> command can provide information about the configuration, operation, and status of parts of a Cisco switch or router. The figure highlights some of the common IOS commands.</p>
+          <p></p>
+          <p>In this course, we focus on mostly basic <span class="cmd"><b>show</b></span> commands.</p>
+          <p></p>
+          <p>A very commonly used<span class="cmd"><b> show </b></span>command is <span class="cmd"><b>show interfaces</b></span>. This command displays statistics for all interfaces on the device. To view the statistics for a specific interface, enter the <span class="cmd"><b>show interfaces</b></span> command followed by the specific interface type and slot/port number. For example:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Switch#</span>
+            <span class="cmd">
+              <b>show interfaces fastethernet 0/1</b>
+            </span>
+          </p>
+          <p></p>
+          <p>Some other <span class="cmd"><b>show</b></span> commands frequently used by network technicians include:</p>
+          <p></p>
+          <p>
+            <span class="cmd">
+              <b>show startup-config - </b>
+            </span>Displays the saved configuration located in NVRAM.<span class="cmd"><b></b></span></p>
+          <p>
+            <span class="cmd">
+              <b>show running-config - </b>
+            </span>Displays the contents of the currently running configuration file.</p>
+          <p></p>
+          <p>
+            <b>The More Prompt</b>
+          </p>
+          <p></p>
+          <p>When a command returns more output than can be displayed on a single screen, the <span class="cmd"><b>--More--</b></span> prompt appears at the bottom of the screen. When a <span class="cmd"><b>--More--</b></span> prompt appears, press the <b>Space bar</b> to view the next portion of output. To display only the next line, press the <b>Enter</b> key. If any other key is pressed, the output is cancelled and you are returned to the prompt.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

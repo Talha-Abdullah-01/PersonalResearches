@@ -1,0 +1,54 @@
+<textcomponents>	
+	<component id="ID_title">
+		<text><![CDATA[<b>Activity – Determining the Network Address (Basic)</b><br/><br/>This activity provides practice in determining the network address.<br/><br/>You will be given random IP addresses and subnet masks. For each conversion, enter the correct network address in binary and in decimal format.<br/><br/>Click the Check button to see if your calculations are correct.]]></text>
+	</component>
+	<component id='ID_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_CORRECT_BODY'>
+	<text><![CDATA[You have correctly converted the network address to binary and decimal. Click New Number to continue.]]></text>
+</component>
+
+<component id='ID_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_INCORRECT_BODY'>
+	<text><![CDATA[You have not correctly converted the network address to binary and/or decimal. Click Reset to try again.]]></text>
+</component>
+
+
+
+
+
+	
+	<component id="txt_hostaddress">
+		<text><![CDATA[Host Address]]></text>
+	</component>
+	<component id="txt_subnetmask">
+		<text><![CDATA[Subnet Mask]]></text>
+	</component>
+	<component id="txt_hostaddrbin">
+		<text><![CDATA[Host Address in binary]]></text>
+	</component>
+	<component id="txt_subnetbin">
+		<text><![CDATA[Subnet Mask in binary]]></text>
+	</component>
+	<component id="txt_netbin">
+		<text><![CDATA[Network Address in binary]]></text>
+	</component>
+	<component id="txt_netdec">
+		<text><![CDATA[Network Address in decimal]]></text>
+	</component>
+	<component id="txt_check">
+		<text><![CDATA[Check]]></text>
+	</component>
+	<component id="txt_reset">
+		<text><![CDATA[Reset]]></text>
+	</component>
+	<component id="txt_newnumber">
+		<text><![CDATA[New Number]]></text>
+	</component>
+
+</textcomponents>

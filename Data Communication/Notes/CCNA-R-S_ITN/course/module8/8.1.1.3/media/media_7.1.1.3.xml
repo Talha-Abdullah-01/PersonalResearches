@@ -1,0 +1,68 @@
+<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[32-Bit IP Address]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Octet 1]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Octet 2]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Octet 3]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Octet 4]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Octet Bit Values]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[Binary Address]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[Binary Bit Values]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[Add the binary bit values.]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[Dotted Decimal Address]]></text>
+</component>
+
+<!-- controller -->
+<component id="end">
+<text><![CDATA[End]]></text>
+</component>
+
+<component id="fforward">
+<text><![CDATA[Fast Forward]]></text>
+</component>
+
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+
+<component id="play">
+<text><![CDATA[Play]]></text>
+</component>
+
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component>
+
+<component id="start">
+<text><![CDATA[Start]]></text>
+</component>
+
+</textcomponents>

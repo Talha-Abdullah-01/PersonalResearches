@@ -1,0 +1,254 @@
+﻿<textcomponents>
+<!--slide-01-->
+<component id="ID_s1_title">
+<text><![CDATA[<b>How a Router Boots Up</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+  <text><![CDATA[ROM]]></text> 
+  </component>
+<component id="ID_s1_txt02">
+  <text><![CDATA[POST]]></text> 
+  </component>
+  
+  <component id="ID_s1_txt03">
+  <text><![CDATA[Perform POST]]></text> 
+  </component>
+  
+  <component id="ID_s1_txt04">
+  <text><![CDATA[ROM]]></text> 
+  </component>
+<component id="ID_s1_txt05">
+  <text><![CDATA[Bootstrap]]></text> 
+  </component>
+   <component id="ID_txt02">
+	<text><![CDATA[&lt;Output omitted&gt;]]></text>
+	</component>
+<component id="ID_txt01">
+	<text><![CDATA[&lt;Output omitted&gt;]]></text>
+</component>
+ <component id="ID_txt03">
+	<text><![CDATA[&lt;Output omitted&gt;]]></text>
+</component>
+  
+  <component id="ID_s1_txt06">
+  <text><![CDATA[Load bootstrap]]></text> 
+  </component>
+  
+    <component id="ID_s1_txt07">
+  <text><![CDATA[Flash]]></text> 
+  </component>
+  
+   <component id="ID_s1_txt08">
+  <text><![CDATA[Cisco Internetwork Operating System]]></text> 
+  </component>
+   <component id="ID_s1_txt09">
+  <text><![CDATA[Locate and load operating system]]></text> 
+  </component>
+   <component id="ID_s1_txt10">
+  <text><![CDATA[TFTP Server]]></text> 
+  </component>
+   <component id="ID_s1_txt11">
+  <text><![CDATA[NVRAM]]></text> 
+  </component>
+   <component id="ID_s1_txt12">
+  <text><![CDATA[TFTP Server]]></text> 
+  </component>
+   <component id="ID_s1_txt13">
+  <text><![CDATA[Console]]></text> 
+  </component>
+   <component id="ID_s1_txt14">
+  <text><![CDATA[Configuration]]></text> 
+  </component> <component id="ID_s1_txt15">
+  <text><![CDATA[Locate and load configuration file<br/>or<br/>enter "setup mode"]]></text> 
+  </component>
+  
+  
+  <!--slide-02-->
+<component id="ID_s2_title">
+<text><![CDATA[<b>How a Router Boots Up</b>]]></text>
+</component>
+<component id="ID_s2_txt01">
+  <text><![CDATA[ROM]]></text> 
+  </component>
+<component id="ID_s2_txt02">
+  <text><![CDATA[POST]]></text> 
+  </component>
+  
+  <component id="ID_s2_txt03">
+  <text><![CDATA[Perform POST]]></text> 
+  </component>
+  
+  <component id="ID_s2_txt04">
+  <text><![CDATA[ROM]]></text> 
+  </component>
+<component id="ID_s2_txt05">
+  <text><![CDATA[Bootstrap]]></text> 
+  </component>
+  
+  <component id="ID_s2_txt06">
+  <text><![CDATA[Load bootstrap]]></text> 
+  </component>
+  
+    <component id="ID_s2_txt07">
+  <text><![CDATA[Flash]]></text> 
+  </component>
+  
+   <component id="ID_s2_txt08">
+  <text><![CDATA[Cisco Internetwork Operating System]]></text> 
+  </component>
+   <component id="ID_s2_txt09">
+  <text><![CDATA[Locate and load operating system]]></text> 
+  </component>
+   <component id="ID_s2_txt10">
+  <text><![CDATA[TFTP Server]]></text> 
+  </component>
+   <component id="ID_s2_txt11">
+  <text><![CDATA[NVRAM]]></text> 
+  </component>
+   <component id="ID_s2_txt12">
+  <text><![CDATA[TFTP Server]]></text> 
+  </component>
+   <component id="ID_s2_txt13">
+  <text><![CDATA[Console]]></text> 
+  </component>
+    
+  
+   <component id="ID_s2_txt14">
+  <text><![CDATA[Configuration]]></text> 
+  </component> 
+  
+  <component id="ID_s2_txt15">
+  <text><![CDATA[Locate and load configuration file<br/>or<br/>enter "setup mode"]]></text> 
+  </component>
+  
+     <component id="ID_s2_txt16">
+  <text><![CDATA[Perform  the POST and load the bootstrap program]]></text> 
+  </component>
+  
+  
+   <!--slide-03-->
+<component id="ID_s3_title">
+<text><![CDATA[<b>How a Router Boots Up</b>]]></text>
+</component>
+<component id="ID_s3_txt01">
+  <text><![CDATA[ROM]]></text> 
+  </component>
+<component id="ID_s3_txt02">
+  <text><![CDATA[POST]]></text> 
+  </component>
+  
+  <component id="ID_s3_txt03">
+  <text><![CDATA[Perform POST]]></text> 
+  </component>
+  
+  <component id="ID_s3_txt04">
+  <text><![CDATA[ROM]]></text> 
+  </component>
+<component id="ID_s3_txt05">
+  <text><![CDATA[Bootstrap]]></text> 
+  </component>
+  
+  <component id="ID_s3_txt06">
+  <text><![CDATA[Load bootstrap]]></text> 
+  </component>
+  
+    <component id="ID_s3_txt07">
+  <text><![CDATA[Flash]]></text> 
+  </component>
+  
+   <component id="ID_s3_txt08">
+  <text><![CDATA[Cisco Internetwork Operating System]]></text> 
+  </component>
+   <component id="ID_s3_txt09">
+  <text><![CDATA[Locate and load operating system]]></text> 
+  </component>
+   <component id="ID_s3_txt10">
+  <text><![CDATA[TFTP Server]]></text> 
+  </component>
+   <component id="ID_s3_txt11">
+  <text><![CDATA[NVRAM]]></text> 
+  </component>
+   <component id="ID_s3_txt12">
+  <text><![CDATA[TFTP Server]]></text> 
+  </component>
+   <component id="ID_s3_txt13">
+  <text><![CDATA[Console]]></text> 
+  </component>
+    
+  
+   <component id="ID_s3_txt14">
+  <text><![CDATA[Configuration]]></text> 
+  </component> 
+  
+  <component id="ID_s3_txt15">
+  <text><![CDATA[Locate and load configuration file<br/>or<br/>enter "setup mode"]]></text> 
+  </component>
+  
+     <component id="ID_s3_txt16">
+  <text><![CDATA[Locate and load the Cisco IOS software]]></text> 
+  </component>
+   
+     <!--slide-04-->
+<component id="ID_s4_title">
+<text><![CDATA[<b>How a Router Boots Up</b>]]></text>
+</component>
+<component id="ID_s4_txt01">
+  <text><![CDATA[ROM]]></text> 
+  </component>
+<component id="ID_s4_txt02">
+  <text><![CDATA[POST]]></text> 
+  </component>
+  
+  <component id="ID_s4_txt03">
+  <text><![CDATA[Perform POST]]></text> 
+  </component>
+  
+  <component id="ID_s4_txt04">
+  <text><![CDATA[ROM]]></text> 
+  </component>
+<component id="ID_s4_txt05">
+  <text><![CDATA[Bootstrap]]></text> 
+  </component>
+  
+  <component id="ID_s4_txt06">
+  <text><![CDATA[Load bootstrap]]></text> 
+  </component>
+  
+    <component id="ID_s4_txt07">
+  <text><![CDATA[Flash]]></text> 
+  </component>
+  
+   <component id="ID_s4_txt08">
+  <text><![CDATA[Cisco Internetwork Operating System]]></text> 
+  </component>
+   <component id="ID_s4_txt09">
+  <text><![CDATA[Locate and load operating system]]></text> 
+  </component>
+   <component id="ID_s4_txt10">
+  <text><![CDATA[TFTP Server]]></text> 
+  </component>
+   <component id="ID_s4_txt11">
+  <text><![CDATA[NVRAM]]></text> 
+  </component>
+   <component id="ID_s4_txt12">
+  <text><![CDATA[TFTP Server]]></text> 
+  </component>
+   <component id="ID_s4_txt13">
+  <text><![CDATA[Console]]></text> 
+  </component>
+    
+  
+   <component id="ID_s4_txt14">
+  <text><![CDATA[Configuration]]></text> 
+  </component> 
+  
+  <component id="ID_s4_txt15">
+  <text><![CDATA[Locate and load configuration file<br/>or<br/>enter "setup mode"]]></text> 
+  </component>
+  
+     <component id="ID_s4_txt16">
+  <text><![CDATA[Locate and load the startup configuration file or enter setup mode ]]></text> 
+  </component>
+  
+  
+</textcomponents>

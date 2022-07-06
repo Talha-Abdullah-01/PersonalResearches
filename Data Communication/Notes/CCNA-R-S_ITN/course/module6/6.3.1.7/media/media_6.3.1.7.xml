@@ -1,0 +1,8 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[Slots for WAN interfaces]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[LAN interfaces]]></text> 
+  </component>
+</textcomponents>

@@ -1,0 +1,42 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<i><b>While completing this activity, think about how:</b><br/><br/><textformat blockindent="-14"><ul><li>Network communications have different levels of importance</li><li>Important data must be accurate when sent and received</li><li>Timing can be a factor when choosing a data delivery method</li></ul></textformat></i>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[To: you@example.com<br>From: me@example.com<br>Subject: Email]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[Email]]></text>
+</component>
+
+<component id="ID_s1_txt03">
+<text><![CDATA[Instant<br/>Messaging]]></text>
+</component>
+
+
+<component id="ID_s1_txt04">
+<text><![CDATA[Multiple Web Pages]]></text>
+</component>
+
+
+
+<component id="ID_s1_txt05">
+<text><![CDATA[IP Telephony<br/>(VoIP)]]></text>
+</component>
+
+<component id="ID_s1_txt06">
+<text><![CDATA[Streaming Video]]></text>
+</component>
+
+<component id="ID_s1_txt07">
+<text><![CDATA[Network]]></text>
+</component>
+
+
+<component id="ID_s1_txt08">
+<text><![CDATA[<]]></text>
+</component>
+
+</textcomponents>

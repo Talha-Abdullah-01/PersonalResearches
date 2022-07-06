@@ -1,0 +1,83 @@
+﻿<textcomponents>
+
+<component id='ID_inst'>
+	<text><![CDATA[<b>Activity –  IPv4 and IPv6 Terms and Descriptions</b><br><br>Drag the IPv4 and IPv6 terms to the field next to the appropriate description.
+]]></text>
+</component>
+
+<component id='ID_txt01'>
+	<text><![CDATA[128-bit address/340 undecillion addresses.]]></text>
+</component>
+
+<component id='ID_txt02'>
+	<text><![CDATA[32-bit address/4.3 billion addresses.]]></text>
+</component>
+
+<component id='ID_txt03'>
+	<text><![CDATA[Transports an IPv6 packet over IPv4 networks.]]></text>
+</component>
+
+<component id='ID_txt04'>
+	<text><![CDATA[Allows NAT to be used in both IPv6 and IPv4 networks.]]></text>
+</component>
+
+<component id='ID_txt05'>
+	<text><![CDATA[Allows IPv4 and IPv6 to coexist on the same network.]]></text>
+</component>
+
+<component id='ID_txt06'>
+	<text><![CDATA[<b>Term</b>]]></text>
+</component>
+
+<component id='ID_txt07'>
+	<text><![CDATA[<b>Description</b>]]></text>
+</component>
+
+<!--Drag and Drop-->
+<component id='ID_drag01'>
+	<text><![CDATA[<font color="#393536">Dual Stack</font>]]></text>
+</component>
+
+<component id='ID_drag02'>
+	<text><![CDATA[<font color="#393536">IPv4</font>]]></text>
+</component>
+
+<component id='ID_drag03'>
+	<text><![CDATA[<font color="#393536">Tunneling</font>]]></text>
+</component>
+
+<component id='ID_drag04'>
+	<text><![CDATA[<font color="#393536">IPv6</font>]]></text>
+</component>
+
+<component id='ID_drag05'>
+	<text><![CDATA[<font color="#393536">Translation</font>]]></text>
+</component>
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched the IPv4 and IPv6 terms to their descriptions.]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched the IPv4 and IPv6 terms to their descriptions. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+</textcomponents>

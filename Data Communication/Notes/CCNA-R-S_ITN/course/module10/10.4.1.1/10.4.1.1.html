@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.4.1.1 Modeling Activity - Make it happen!</title>
+    <!-- Activity -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_10.4.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Summary</h1>
+        <h2>Summary</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Make it happen!</b>
+          </p>
+          <p></p>
+          <p>Refer to the modeling activity from the beginning of this chapter as the basis for this activity. Your IP telephones were installed in a half day vs. the full week originally anticipated. Your network has been restored to full capacity and network applications are available for your use.  You have the same emails to answer and quotes to write for your manager’s approval.</p>
+          <p></p>
+          <p>Use the same scenario you completed in the introduction modeling activity to answer the following questions:</p>
+          <p></p>
+          <p>
+            <b>A. Emails</b>
+          </p>
+          <p>
+            <ul>
+              <li>What method(s) can you use to send email correspondence now that the network is working?  </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>What format will your emails be sent over the network?  </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>How can you now send the same message to multiple recipients? </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>How can you send the large attachments to multiple recipients using network applications?  </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Would using network applications prove to be a cost-effective communication method for your corporation?</li>
+            </ul>
+          </p>
+          <p>
+            <b>B. Quote for Manager’s Approval</b>
+          </p>
+          <p>
+            <ul>
+              <li>Because you have desktop application programs installed on your computer, will it be relatively easy to produce the quote your manager needs for the new contract due by the end of the week?  Explain your answer.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>When you finish writing the quote, how will you present it to your manager for approval?  How will he or she send the quote to the client for their approval?</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Is using network applications a cost-effective way to complete business transactions?  Justify your answer.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Save a hard copy or an electronic copy of your answers.  Be prepared to discuss your answers in class.</p>
+          <p></p>
+          <p>
+            <a href="../../files/10.4.1.1%20Class%20Activity%20-%20Make%20it%20happen!%20Instructions.pdf" target="_blank">Class Activity - Make it happen! Instructions</a>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

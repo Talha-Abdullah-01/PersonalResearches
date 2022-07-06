@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.2.2.4 Rule 2 - Omitting All 0 Segments</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_8.2.2.4_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IPv6 Network Addresses</h1>
+        <h2>IPv6 Addressing</h2>
+      </div>
+      <div id="content">
+          <p>The second rule to help reduce the notation of IPv6 addresses is that a double colon (::) can replace any single, contiguous string of one or more 16-bit segments (hextets) consisting of all 0s. </p>
+          <p></p>
+          <p>The double colon (::) can only be used once within an address, otherwise there would be more than one possible resulting address. When used with the omitting leading 0s technique, the notation of IPv6 address can often be greatly reduced. This is commonly known as the compressed format.</p>
+          <p></p>
+          <p>Incorrect address: </p>
+          <p>
+            <ul>
+              <li>2001:0DB8::ABCD::1234</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Possible expansions of ambiguous compressed addresses:</p>
+          <p>
+            <ul>
+              <li>2001:0DB8::ABCD:0000:0000:1234</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>2001:0DB8::ABCD:0000:0000:0000:1234</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>2001:0DB8:0000:ABCD::1234</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>2001:0DB8:0000:0000:ABCD::1234</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The Figures 1 to 7 show several examples of the how using the double colon (::) and omitting leading 0s can reduce the size of an IPv6 address.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

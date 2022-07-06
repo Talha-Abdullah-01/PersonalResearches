@@ -1,0 +1,26 @@
+﻿<textcomponents>
+	<component id="ID_title">
+	  <text><![CDATA[<b>Connection Options</b>]]></text> 
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[Dedicated Leased Lines]]></text>
+	</component>
+	<component id="ID_txt02">
+	  <text><![CDATA[Metro Ethernet]]></text> 
+	</component>
+	<component id="ID_txt03">
+	  <text><![CDATA[DSL]]></text> 
+	</component>
+	<component id="ID_txt04">
+	  <text><![CDATA[Satellite]]></text> 
+	</component>
+	<component id="ID_txt05">
+	  <text><![CDATA[<b>Organization</b>]]></text> 
+	</component>
+	<component id="ID_txt06">
+	  <text><![CDATA[<b>Internet Service Provider</b>]]></text> 
+	</component>
+	<component id="ID_txt07">
+	  <text><![CDATA[Internet]]></text> 
+	</component>
+</textcomponents>

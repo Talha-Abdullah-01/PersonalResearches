@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.1.1.5 Networks Support the Way We Communicate</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_1.1.1.5_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Globally Connected</h1>
+        <h2>Networking Today</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Changing the way we communicate</b>
+          </p>
+          <p>The globalization of the Internet has ushered in new forms of communication that empower individuals to create information that can be accessed by a global audience. </p>
+          <p></p>
+          <p>Some forms of communication include:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Instant Messaging (IM) / Texting </b>– IM and texting both enable instant real-time communication between two or more people. Many IM and texting applications incorporate features such as file transfer. IM applications can offer additional features such as voice and video communication. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Social Media</b> – Social media consists of interactive websites where people and communities create and share user-generated content with friends, family, peers, and the world.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Collaboration Tools </b>- Collaboration tools give people the opportunity to work together on shared documents. Without the constraints of location or time zone, individuals connected to a shared system can speak to each other, often across real-time interactive video. Across the network they can share text and graphics, and edit documents together. With collaboration tools always available, organizations can move quickly to share information and pursue goals. The broad distribution of data networks means that people in remote locations can contribute on an equal basis with people at the heart of large population centers.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Weblogs (blogs) </b>- Weblogs are web pages that are easy to update and edit. Unlike commercial websites, which are created by professional communications experts, blogs give anyone a means to communicate their thoughts to a global audience without technical knowledge of web design. There are blogs on nearly every topic one can think of, and communities of people often form around popular blog authors.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Wikis </b>- Wikis are web pages that groups of people can edit and view together. Whereas a blog is more of an individual, personal journal, a wiki is a group creation. As such, it may be subject to more extensive review and editing. Like blogs, wikis can be created in stages, and by anyone, without the sponsorship of a major commercial enterprise. Wikipedia has become a comprehensive resource - an online encyclopedia - of publicly-contributed topics. Private organizations and individuals can also build their own wikis to capture collected knowledge on a particular subject. Many businesses use wikis as their internal collaboration tool. With the global Internet, people of all walks of life can participate in wikis and add their own perspectives and knowledge to a shared resource.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Podcasting </b>- Podcasting is an audio-based medium that originally enabled people to record audio and convert it for use. Podcasting allows people to deliver their recordings to a wide audience. The audio file is placed on a website (or blog or wiki) where others can download it and play the recording on their computers, laptops, and other mobile devices.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Peer-to-Peer (P2P) File Sharing </b>– Peer-to-Peer file sharing allows people to share files with each other without having to store and download them from a central server. The user joins the P2P network by simply installing the P2P software. This lets them locate and share files with others in the P2P network. The widespread digitization of media files, such as music and video files has increased the interest in P2P file sharing. P2P file sharing has not been embraced by everyone. Many people are concerned about violating the laws of copyrighted materials. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>What other sites or tools do you use to share your thoughts?</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

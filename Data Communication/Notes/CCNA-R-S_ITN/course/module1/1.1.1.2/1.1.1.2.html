@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.1.1.2 Technology Then and Now</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_1.1.1.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Globally Connected</h1>
+        <h2>Networking Today</h2>
+      </div>
+      <div id="content">
+          <p>Imagine a world without the Internet. No more Google, YouTube, instant messaging, Facebook, Wikipedia, online gaming, Netflix, iTunes, and easy access to current information. No more price comparison websites, avoiding lines by shopping online, or quickly looking up phone numbers and map directions to various locations at the click of a finger. How different would our lives be without all of this? That was the world we lived in just 15 to 20 years ago. But over the years, data networks have slowly expanded and been repurposed to improve the quality of life for people everywhere.</p>
+          <p></p>
+          <p>In the course of a day, resources that are available through the Internet can help you:</p>
+          <p>
+            <ul>
+              <li>Post and share your photographs, home videos, and experiences with friends or with the world.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Access and submit school work.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Communicate with friends, family, and peers using email, instant messaging, or Internet phone calls.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Watch videos, movies, or television episodes on demand.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Play online games with friends.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Decide what to wear using online current weather conditions.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Find the least congested route to your destination, displaying weather and traffic video from webcams.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Check your bank balance and pay bills electronically.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Innovators are figuring out ways to use the Internet more every day. As developers push the limits of what is possible, the capabilities of the Internet and the role the Internet plays in our lives will expand broader and broader. Consider the changes that have happened since 1995, as depicted in the figure. Now consider what changes will happen within the next 25 years. This future holds the Internet of Everything (IoE).</p>
+          <p></p>
+          <p>The IoE is bringing together people, process, data, and things to make networked connections more relevant and valuable.  It is turning information into actions that create new capabilities, richer experiences, and unprecedented economic opportunity for individuals, businesses, and countries.</p>
+          <p></p>
+          <p>What else do you think we will be able to do using the network as the platform?</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

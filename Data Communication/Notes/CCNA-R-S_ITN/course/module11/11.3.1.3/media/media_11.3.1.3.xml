@@ -1,0 +1,70 @@
+<textcomponents>
+<!--Slide 1-->
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Run the same test</b>]]></text>
+	</component>
+
+	<component id="ID_s1_txt01">
+	   <text><![CDATA[FEB 8, 2013 08:14:43]]></text>
+	 </component>
+	 
+	<component id="ID_s1_txt02">
+		<text><![CDATA[MAR 17, 2013 14:41:06]]></text>
+	</component>
+	
+	<component id="ID_s1_txt03"> <!--For border -->
+		<text><![CDATA[]]></text>
+	</component>
+	
+	<component id="ID_s1_txt04"> <!--For border -->
+		<text><![CDATA[]]></text>
+	</component>
+
+<!--Slide 2-->
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>At different times</b>]]></text>
+	</component>
+	
+	<component id="ID_s2_txt01">
+		<text><![CDATA[FEB 8, 2013 08:14:43]]></text>
+	</component>
+	
+	<component id="ID_s2_txt02">
+		<text><![CDATA[MAR 17, 2013 14:41:06]]></text>
+	</component>
+	
+	<component id="ID_s2_txt03"> <!--For border -->
+		<text><![CDATA[]]></text>
+	</component>
+	
+	<component id="ID_s2_txt04"> <!--For border -->
+		<text><![CDATA[]]></text>
+	</component>
+	
+<!--Slide 3-->
+	<component id="ID_s3_title">
+		<text><![CDATA[<b>Compare values</b>]]></text>
+	</component>
+
+	<component id="ID_s3_txt01">
+		<text><![CDATA[FEB 8, 2013 08:14:43]]></text>
+	</component>
+	
+	<component id="ID_s3_txt02">
+		<text><![CDATA[MAR 17, 2013 14:41:06]]></text>
+	</component>
+
+<!--Slide 4-->
+	<component id="ID_s4_title">
+		<text><![CDATA[<b>Router Ping Capture - Saving to a text file</b>]]></text>
+	</component>
+
+	<component id="ID_s4_txt01">
+		<text><![CDATA[<b>In the terminal session:</b>]]></text>
+	</component>
+	
+	<component id="ID_s4_txt02">
+		<text><![CDATA[1. Start the text capture process.<br/>2. Issue a <font face="Courier New"><b>ping</b> <i>&lt;ip address&gt; </i></font> command.<br/>3. Stop the capture process.<br/>4. Save the text file.]]></text>
+	</component>
+
+</textcomponents>

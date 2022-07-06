@@ -1,0 +1,16 @@
+<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[<i>The Network Access Layer combines the type of data link and signaling method to deliver data packets securely and seamlessly.</i>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Paris]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Japan]]></text>
+</component>
+
+
+</textcomponents>

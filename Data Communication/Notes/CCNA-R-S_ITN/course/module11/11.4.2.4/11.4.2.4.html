@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.4.2.4 Backing up and Restoring using a USB</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.4.2.4_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Managing IOS Configuration Files</h1>
+        <h2>Back up and Restore Configuration files</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Backup Configurations with a USB flash drive</b>
+          </p>
+          <p>When backing up to a USB port, it is a good idea to issue the<span class="cmd"><b> show file systems </b></span>command to verify that the USB drive is there and confirm the name, as shown in Figure 1. </p>
+          <p></p>
+          <p>Next, use the<span class="cmd"><b> copy run usbflash0:/</b></span> command to copy the configuration file to the USB flash drive.  Be sure to use the name of the flash drive, as indicated in the file system. The slash is optional but indicates the root directory of the USB flash drive.  </p>
+          <p></p>
+          <p>The IOS will prompt for the filename. If the file already exists on the USB flash drive, the router will prompt for overwrite, as seen in Figure 2.</p>
+          <p></p>
+          <p>Use the<span class="cmd"><b> dir </b></span>command to see the file on the USB drive and use the<span class="cmd"><b> more </b></span>command to see the contents, as seen in Figure 3.</p>
+          <p></p>
+          <p>
+            <b>Restore Configurations with a USB flash drive</b>
+          </p>
+          <p>In order to copy the file back, it will be necessary to edit the USB R1-Config file with a text editor to make it a valid config file; otherwise, there are a lot of entries that are invalid commands and no interfaces will be brought up.</p>
+          <p></p>
+          <p>
+            <span class="cmd">R1#</span>
+            <span class="cmd">
+              <b>copy usbflash0:/R1-Config running-config</b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">Destination filename [running-config]?</span>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

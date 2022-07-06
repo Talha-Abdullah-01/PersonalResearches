@@ -1,0 +1,117 @@
+<textcomponents>
+
+<component id='ID_title'>
+	<text><![CDATA[<b>Using Double Colons</b>]]></text>
+</component>
+
+<!--Slide 1-->
+
+<component id='ID_s1_txt01'>
+	<text><![CDATA[Preferred]]></text>
+</component>
+
+<component id='ID_s1_txt02'>
+	<text><![CDATA[No leading 0s]]></text>
+</component>
+
+<component id='ID_s1_txt03'>
+	<text><![CDATA[Compressed]]></text>
+</component>
+
+<!--Slide 2-->
+
+<component id='ID_s2_txt01'>
+	<text><![CDATA[Preferred]]></text>
+</component>
+
+<component id='ID_s2_txt02'>
+	<text><![CDATA[No leading 0s]]></text>
+</component>
+
+<component id='ID_s2_txt03'>
+	<text><![CDATA[Compressed]]></text>
+</component>
+
+<component id='ID_s2_txt04'>
+	<text><![CDATA[or]]></text>
+</component>
+
+<component id='ID_s2_txt05'>
+	<text><![CDATA[Compressed]]></text>
+</component>
+
+<component id='ID_s2_txt06'>
+	<text><![CDATA[Only one :: may be used.]]></text>
+</component>
+
+<!--Slide 3-->
+
+<component id='ID_s3_txt01'>
+	<text><![CDATA[Preferred]]></text>
+</component>
+
+<component id='ID_s3_txt02'>
+	<text><![CDATA[No leading 0s]]></text>
+</component>
+
+<component id='ID_s3_txt03'>
+	<text><![CDATA[Compressed]]></text>
+</component>
+
+<!--Slide 4-->
+
+<component id='ID_s4_txt01'>
+	<text><![CDATA[Preferred]]></text>
+</component>
+
+<component id='ID_s4_txt02'>
+	<text><![CDATA[No leading 0s]]></text>
+</component>
+
+<component id='ID_s4_txt03'>
+	<text><![CDATA[Compressed]]></text>
+</component>
+
+<!--Slide 5-->
+
+<component id='ID_s5_txt01'>
+	<text><![CDATA[Preferred]]></text>
+</component>
+
+<component id='ID_s5_txt02'>
+	<text><![CDATA[No leading 0s]]></text>
+</component>
+
+<component id='ID_s5_txt03'>
+	<text><![CDATA[Compressed]]></text>
+</component>
+
+<!--Slide 6-->
+
+<component id='ID_s6_txt01'>
+	<text><![CDATA[Preferred]]></text>
+</component>
+
+<component id='ID_s6_txt02'>
+	<text><![CDATA[No leading 0s]]></text>
+</component>
+
+<component id='ID_s6_txt03'>
+	<text><![CDATA[Compressed]]></text>
+</component>
+
+<!--Slide 7-->
+
+<component id='ID_s7_txt01'>
+	<text><![CDATA[Preferred]]></text>
+</component>
+
+<component id='ID_s7_txt02'>
+	<text><![CDATA[No leading 0s]]></text>
+</component>
+
+<component id='ID_s7_txt03'>
+	<text><![CDATA[Compressed]]></text>
+</component>
+
+</textcomponents>

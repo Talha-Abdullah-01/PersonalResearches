@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.2.4.1 The Benefits of Using a Layered Model</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_3.2.4.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Network Protocols and Standards</h1>
+        <h2>Reference Models</h2>
+      </div>
+      <div id="content">
+          <p>A layered model, such as the TCP/IP model, is often used to help visualize the interaction between various protocols. A layered model depicts the operation of the protocols occurring within each layer, as well as the interaction of protocols with the layers above and below each layer.</p>
+          <p></p>
+          <p>There are benefits to using a layered model to describe network protocols and operations. Using a layered model:</p>
+          <p>
+            <ul>
+              <li>Assists in protocol design, because protocols that operate at a specific layer have defined information that they act upon and a defined interface to the layers above and below. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Fosters competition because products from different vendors can work together. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Prevents technology or capability changes in one layer from affecting other layers above and below. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Provides a common language to describe networking functions and capabilities.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>There are two basic types of networking models: </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Protocol model</b> - This model closely matches the structure of a particular protocol suite. The hierarchical set of related protocols in a suite typically represents all the functionality required to interface the human network with the data network. The TCP/IP model is a protocol model, because it describes the functions that occur at each layer of protocols within the TCP/IP suite. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Reference model</b> - This model provides consistency within all types of network protocols and services by describing what has to be done at a particular layer, but not prescribing how it should be accomplished. A reference model is not intended to be an implementation specification or to provide a sufficient level of detail to define precisely the services of the network architecture. The primary purpose of a reference model is to aid in clearer understanding of the functions and processes involved.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The OSI model is the most widely known internetwork reference model. It is used for data network design, operation specifications, and troubleshooting. </p>
+          <p></p>
+          <p>As shown in the figure, the TCP/IP and OSI models are the primary models used when discussing network functionality.  Designers of network protocols, services, or devices can create their own models to represent their products. Ultimately, designers are required to communicate to the industry by relating their product or service to either the OSI model or the TCP/IP model, or to both.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

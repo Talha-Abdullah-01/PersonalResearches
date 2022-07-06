@@ -1,0 +1,10 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>IPv4 Address Planning and Assignment</b>]]></text>
+</component>
+
+<component id='ID_txt01'>
+	<text><![CDATA[Network addressing should be based on network segmentation.]]></text>
+</component>
+
+</textcomponents>

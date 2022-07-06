@@ -1,0 +1,232 @@
+﻿<textcomponents>
+
+<!-- instructions -->
+<component id="ID_inst">
+	<text><![CDATA[<b>Activity – Standards Body Scavenger Hunt</b><br><br>The six standards organizations listed below are responsible for creating, developing, and monitoring many of the protocols/standards used in today’s communications world.]]></text>
+</component>
+
+<component id="ID_inst2">
+	<text><![CDATA[Click each of hyperlinks provided below. Read the page provided for each organization. Match the standards organization to its description (or function) by clicking in the appropriate cell.<br><br><textformat tabstops='[85]'><a href="http://www.iana.org" target="_blank"><font color='#0197D6'><u><b style="color:#0298D7; text-decoration:underline;">IANA</b></u></font></a> <a href="http://www.icann.org/en/about/welcome" target="_blank"><font color='#0197D6'><u><b style="color:#0298D7; text-decoration:underline;">ICANN</b></u></font></a><br><br><a href="http://standards.ieee.org/develop/index.html" target="_blank"><font color='#0197D6'><u><b style="color:#0298D7; text-decoration:underline;">IEEE</b></u></font></a> <a href="http://www.ietf.org/newcomers.html#whither" target="_blank"><font color='#0197D6'><u><b style="color:#0298D7; text-decoration:underline;">IETF</b></u></font></a><br><br><a href="http://www.itu.int/en/about/Pages/whatwedo.aspx" target="_blank"><font color='#0197D6'><u><b style="color:#0298D7; text-decoration:underline;">ITU</b></u></font></a> <a href="http://www.tiaonline.org/standards/strategic-initiatives" target="_blank"><font color='#0197D6'><u><b style="color:#0298D7; text-decoration:underline;">TIA</b></u></font></a></textformat>]]></text>
+</component>
+
+<!-- buttons -->
+<component id="ID_Button01">
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+	<text><![CDATA[19]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[6]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+	<text><![CDATA[<b>IANA</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>ICANN</b>]]></text>
+</component>
+
+<component id="txt_col3">
+	<text><![CDATA[<b>IEEE</b>]]></text>
+</component>
+
+<component id="txt_col4">
+	<text><![CDATA[<b>IETF</b>]]></text>
+</component>
+
+<component id="txt_col5">
+	<text><![CDATA[<b>ITU</b>]]></text>
+</component>
+
+<component id="txt_col6">
+	<text><![CDATA[<b>TIA</b>]]></text>
+</component>
+
+<!--Question text - blockindent code moves the text away from the left edge a bit-->
+<!--Question text - If questions are numbered, use blockindent for hanging indents-->
+<component id="txt_q1">
+	<text><![CDATA[1. <textformat blockindent='13'>Manages the DNS Root Zone standards and the .int registry.</textformat>]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[2. <textformat blockindent='13'>Creates standards for worldwide cabling infrastructure.</textformat>]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[3. <textformat blockindent='13'>Defines policies describing how "names and numbers“ of the Internet operate.</textformat>]]></text>
+</component>
+
+<component id="txt_q4">
+	<text><![CDATA[4. <textformat blockindent='13'>Official standards products are RFC documents, published free of charge.</textformat>]]></text>
+</component>
+
+<component id="txt_q5">
+	<text><![CDATA[5. <textformat blockindent='13'>Standards are developed using a six stage lifecycle diagram.</textformat>]]></text>
+</component>
+
+<component id="txt_q6">
+	<text><![CDATA[6. <textformat blockindent='13'>Uses communications standards to predict famines and global climate changes.</textformat>]]></text>
+</component>
+
+<component id="txt_q7">
+	<text><![CDATA[7. <textformat blockindent='13'>Supports &quot;bridge the digital divide&quot; initiatives.
+</textformat>]]></text>
+</component>
+
+<component id="txt_q8">
+	<text><![CDATA[8. <textformat blockindent='13'>Creates standards for wired & wireless technologies.</textformat>]]></text>
+</component>
+
+<component id="txt_q9">
+	<text><![CDATA[9. <textformat blockindent='13'>Serves as the central repository for protocol name and number registries.</textformat>]]></text>
+</component>
+
+<component id="txt_q10">
+	<text><![CDATA[10. <textformat blockindent='21'>Offers online tools and resources for standards and developers.</textformat>]]></text>
+</component>
+
+<component id="txt_q11">
+	<text><![CDATA[11. <textformat blockindent='21'>Provides wireless standards for IPTV.</textformat>]]></text>
+</component>
+
+<component id="txt_q12">
+	<text><![CDATA[12. <textformat blockindent='21'>Coordinates unique international Internet addresses for site names & IP addresses.</textformat>]]></text>
+</component>
+
+<component id="txt_q13">
+	<text><![CDATA[13. <textformat blockindent='21'>Standardizes the IP to Applications protocol layers.</textformat>]]></text>
+</component>
+
+<component id="txt_q14">
+	<text><![CDATA[14. <textformat blockindent='21'>Supports navigation and online maps via radio/satellite transmissions.</textformat>]]></text>
+</component>
+
+<component id="txt_q15">
+	<text><![CDATA[15. <textformat blockindent='21'>Provides a space where Internet protocols are set and maintained.</textformat>]]></text>
+</component>
+
+<component id="txt_q16">
+	<text><![CDATA[16. <textformat blockindent='21'>Manages the DNS, IP addresses, and protocol identifier assignments.</textformat>]]></text>
+</component>
+
+<component id="txt_q17">
+	<text><![CDATA[17. <textformat blockindent='21'>&quot;Makes the Internet work better,&quot; using an engineering approach.</textformat>]]></text>
+</component>
+
+<component id="txt_q18">
+	<text><![CDATA[18. <textformat blockindent='21'>Develops standards/protocols affecting cloud computing.</textformat>]]></text>
+</component>
+
+<component id="txt_q19">
+	<text><![CDATA[19. <textformat blockindent='21'>Develops standards for homeland security/emergency response teams.</textformat>]]></text>
+</component>
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+<!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[6]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a4">
+	<text><![CDATA[4]]></text>
+</component>
+
+<component id="txt_a5">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a6">
+	<text><![CDATA[5]]></text>
+</component>
+
+<component id="txt_a7">
+	<text><![CDATA[5]]></text>
+</component>
+
+<component id="txt_a8">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a9">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a10">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a11">
+	<text><![CDATA[5]]></text>
+</component>
+
+<component id="txt_a12">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a13">
+	<text><![CDATA[4]]></text>
+</component>
+
+<component id="txt_a14">
+	<text><![CDATA[5]]></text>
+</component>
+
+<component id="txt_a15">
+	<text><![CDATA[4]]></text>
+</component>
+
+<component id="txt_a16">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a17">
+	<text><![CDATA[4]]></text>
+</component>
+
+<component id="txt_a18">
+	<text><![CDATA[6]]></text>
+</component>
+
+<component id="txt_a19">
+	<text><![CDATA[6]]></text>
+</component>
+
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[You have successfully matched the standards organization to its description.]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[You have not successfully matched the standards organization to its description. Please click Reset to try again.]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,14 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>Binary Game</b>]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[A fun way to learn binary numbers for networking.<br/><br/><b>Game Link:</b><br/><a href="https://learningnetwork.cisco.com/docs/DOC-1803" target="_blank"><font color="#0000FF">https://learningnetwork.cisco.com/docs/DOC-1803</font></a><br/><i>&#40;You will need to log in to cisco.com to use this link. It will be necessary to create an account if you do not already have one.&#41;</i><br/><br/><b>Mobile Download:</b><br/><a href="https://learningnetwork.cisco.com/docs/DOC-11119" target="_blank"><font color="#0000FF">https://learningnetwork.cisco.com/docs/DOC-11119</font></a>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b>Determine choices and select OS</b>]]></text> 
+  </component>
+<component id="transcript">
+  <text><![CDATA[<b>transcript goes here</b>]]></text> 
+  </component>
+</textcomponents>

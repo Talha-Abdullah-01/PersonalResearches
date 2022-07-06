@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.5.2.3 Configure a Wireless Client</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.5.2.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Integrated Routing Services</h1>
+        <h2>Configuring the Integrated Router</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Configure a Wireless Client</b>
+          </p>
+          <p>A wireless host, or client, is defined as any device that contains wireless NIC and wireless client software. This client software allows the hardware to participate in the WLAN. Devices include: some smart phones, laptops, desktop PCs, printers, televisions, game systems, and tablet computers. </p>
+          <p></p>
+          <p>In order for a wireless client to connect to the WLAN, the client configuration settings must match that of the wireless router. This includes the SSID, security settings, and channel information (if the channel was manually set). These settings are specified in the client software.</p>
+          <p></p>
+          <p>The wireless client software used can be software integrated into the device operating system, or can be a stand-alone, downloadable, wireless utility software specifically designed to interact with the wireless NIC.</p>
+          <p></p>
+          <p>Once the client software is configured, verify the link between the client and the AP. </p>
+          <p></p>
+          <p>Open the wireless link information screen to display information such as: the connection data rate, connection status, and wireless channel used, as shown in the figure. The Link Information feature, if available, displays the current signal strength and quality of the wireless signal. </p>
+          <p></p>
+          <p>In addition, to verifying the wireless connection status, verify that data can actually be transmitted. One of the most common tests for verifying successful data transmission is the ping test. If the ping is successful, data transmission is possible.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

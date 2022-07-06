@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.3.2.2 Manual IP Address Configuration for End Devices</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.3.2.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Address Schemes</h1>
+        <h2>Addressing Devices</h2>
+      </div>
+      <div id="content">
+          <p>In order for an end device to communicate over the network, it must be configured with the correct IP address information. Much like a switch SVI, the end device must be configured with an IP address and subnet mask. This information is configured on the PC settings. </p>
+          <p></p>
+          <p>All of these settings must be configured on an end device in order for it to properly connect to the network. This information is configured under the PC network settings. In addition to IP address and subnet mask information, it is also possible to configure default gateway and DNS server information, as shown in the figure. </p>
+          <p></p>
+          <p>The default gateway address is the IP address of the router interface used for network traffic to exit the local network. The default gateway is an IP address that is often assigned by the network administrator and is used when traffic must be routed to another network.</p>
+          <p></p>
+          <p>The DNS server address is the IP address of the Domain Name System (DNS) server, which is used to translate IP addresses to web addresses, such as <a href="http://www.cisco.com/" target="_blank">www.cisco.com</a>. All devices on the Internet are assigned and reached via an IP address. However, it is easier for people to remember names over numbers. Therefore, websites are given names for simplicity. The DNS server is used to maintain the mapping between the IP addresses and names of various devices. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.2.1.1 Planning to Address the Network</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_9.2.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Addressing Schemes</h1>
+        <h2>Structured Design</h2>
+      </div>
+      <div id="content">
+          <p>As shown in the figure, the allocation of network layer address space within the corporate network needs to be well designed. Address assignment should not be random. There are three primary considerations when planning address allocation.</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Preventing Duplication of Addresses - </b>Each host in an internetwork must have a unique address. Without the proper planning and documentation, an address could be assigned to more than one host, resulting in access issues for both hosts. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Providing and Controlling Access - </b>Some hosts, such as servers, provide resources to internal hosts as well as to external hosts. The Layer 3 address assigned to a server can be used to control access to that server. If, however, the address is randomly assigned and not well documented, controlling access is more difficult. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Monitoring Security and Performance - </b>Similarly, the security and performance of network hosts and the network as a whole must be monitored. As part of the monitoring process, network traffic is examined for addresses that are generating or receiving excessive packets. If there is proper planning and documentation of the network addressing, problematic network devices can be easily found. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Assigning Addresses within a Network</b>
+          </p>
+          <p></p>
+          <p>Within a network, there are different types of devices, including:</p>
+          <p>
+            <ul>
+              <li>End user clients </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Servers and peripherals </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Hosts that are accessible from the Internet</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Intermediary devices</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Gateway </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>When developing an IP addressing scheme, it is generally recommended to have a set pattern of how addresses are allocated to each type of device. This benefits administrators when adding and removing devices, filtering traffic based on IP, as well as simplifies documentation.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

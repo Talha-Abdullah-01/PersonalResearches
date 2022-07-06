@@ -1,0 +1,75 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Point-to-Point Protocol</b>]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[A Common Data Link Protocol for WANs]]></text> 
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[<b>Frame</b>]]></text> 
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[<b>Field name</b>]]></text> 
+</component>
+
+<component id="ID_txt16">
+<text><![CDATA[<b>Size</b>]]></text> 
+</component>
+
+<component id="ID_txt17">
+<text><![CDATA[<b>Flag</b> - A single byte that indicates the beginning or end of a frame. The flag field consists of the binary sequence 01111110.<br/><b>Address</b> - A single byte that contains the standard PPP broadcast address. PPP does not assign individual station addresses.<br/><b>Control</b> - A single byte that contains the binary sequence 00000011, which calls for transmission of user data in an unsequenced frame.<br/><b>Protocol</b> - Two bytes that identify the protocol encapsulated in the data field of the frame. The most up-to-date values of the protocol field are specified in the most recent Assigned Numbers Request For Comments (RFC).<br/><b>Data</b> - Zero or more bytes that contain the datagram for the protocol specified in the protocol field.<br/><b>Frame Check Sequence</b> (<b>FCS</b>) - Normally 16 bits (2 bytes). By prior agreement, consenting PPP implementations can use a 32-bit (4-byte) FCS for improved error detection.]]></text> 
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[Flag]]></text> 
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Address]]></text> 
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Control]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Protocol]]></text> 
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Data]]></text> 
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[FCS]]></text> 
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[1 byte]]></text> 
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[1 byte]]></text> 
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[1 byte]]></text> 
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[2 bytes]]></text> 
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[variable]]></text> 
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[2 or 4 bytes]]></text> 
+</component>
+
+</textcomponents>

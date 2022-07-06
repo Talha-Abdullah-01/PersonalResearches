@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.2.1.2 Default Gateway</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_6.2.1.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Routing</h1>
+        <h2>How a Host Routes</h2>
+      </div>
+      <div id="content">
+          <p>The default gateway is the device that routes traffic from the local network to devices on remote networks. In a home or small business environment, the default gateway is often used to connect the local network to the Internet. </p>
+          <p></p>
+          <p>If the host is sending a packet to a device on a different IP network, then the host must forward the packet through the intermediate device to the default gateway. This is because a host device does not maintain routing information, beyond the local network, to reach remote destinations. The default gateway does. The default gateway, which is most often a router, maintains a routing table. A routing table is a data file in RAM that is used to store route information about directly connected network, as well as entries of remote networks the device has learned about. A router uses the information in the routing table to determine the best path to reach those destinations. </p>
+          <p></p>
+          <p>So how does a host keep track of whether or not to forward packets to the default gateway? Hosts must maintain their own, local, routing table to ensure that network layer packets are directed to the correct destination network. The local table of the host typically contains:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Direct connection</b> - This is a route to the loopback interface (127.0.0.1).</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Local network route</b> - The network which the host is connected to is automatically populated in the host routing table. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Local default route</b> - The default route represents the route that packets must take to reach all remote network addresses. The default route is created when a default gateway address is present on the host. The default gateway address is the IP address of the network interface of the router that is connected to the local network. The default gateway address can be configured on the host manually or learned dynamically.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>It is important to note that the default route, and therefore, the default gateway, is only used when a host must forward packets to a remote network. It is not required, nor even needs to be configured, if only sending packets to devices on the local network. </p>
+          <p></p>
+          <p>For example, consider a network printer/scanner. If the network printer has an IP address and subnet mask configured, then local hosts can send documents to the printer to be printed. Additionally, the printer can forward documents that have been scanned to any local hosts. As long as the printer is only used locally, a default gateway address is not required. In fact, by not configuring a default gateway address on the printer, you are effectively denying Internet access, which may be a wise security choice. No Internet access means no security risk. While devices, such as printers, may offer the capability to perform automatic updates via the Internet, it is usually easier and more secure to achieve those same updates via a local upload from a secured local host, such as a PC.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

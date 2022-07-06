@@ -1,0 +1,52 @@
+﻿<textcomponents>
+
+<component id='ID_txt01'>
+	<text><![CDATA[<font color="#FFFFFF"><b>Frame</b></font>]]></text>
+</component>
+
+<component id='ID_txt02'>
+	<text><![CDATA[Frame Header]]></text>
+</component>
+
+<component id='ID_txt03'>
+	<text><![CDATA[Packet / Segment / Data]]></text>
+</component>
+
+<component id='ID_txt04'>
+	<text><![CDATA[Trailer]]></text>
+</component>
+
+<!--OSI Model-->
+<component id='ID_osi_header'>
+	<text><![CDATA[<font size="14"><b>OSI Model</b></font>]]></text>
+</component>
+
+<component id='ID_osi_txt07'>
+	<text><![CDATA[Application]]></text>
+</component>
+
+<component id='ID_osi_txt06'>
+	<text><![CDATA[Presentation]]></text>
+</component>
+
+<component id='ID_osi_txt05'>
+	<text><![CDATA[Session]]></text>
+</component>
+
+<component id='ID_osi_txt04'>
+	<text><![CDATA[Transport]]></text>
+</component>
+
+<component id='ID_osi_txt03'>
+	<text><![CDATA[Network]]></text>
+</component>
+
+<component id='ID_osi_txt02'>
+	<text><![CDATA[Data Link ]]></text>
+</component>
+
+<component id='ID_osi_txt01'>
+	<text><![CDATA[Physical]]></text>
+</component>
+
+</textcomponents>

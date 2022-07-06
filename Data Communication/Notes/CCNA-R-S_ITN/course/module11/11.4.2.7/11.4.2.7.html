@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.4.2.7 Lab - Managing Device Configuration Files Using TFTP, Flash, and USB</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.4.2.7_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Managing IOS Configuration Files</h1>
+        <h2>Back up and Restore Configuration files</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>In this lab, you will complete the following objectives:</b>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Part 1: Build the Network and Configure Basic Device Settings</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Part 2: (Optional) Download TFTP Server Software</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Part 3: Use TFTP to Back Up and Restore the Switch Running Configuration</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Part 4: Use TFTP to Back Up and Restore the Router Running Configuration</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Part 5: Back Up and Restore Running Configurations Using Router Flash Memory</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Part 6: (Optional) Use a USB Drive to Back Up and Restore the Running Configuration</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <a href="../../files/11.4.2.7%20Lab%20-%20Managing%20Device%20Configuration%20Files%20Using%20TFTP,%20Flash,%20and%20USB.pdf" target="_blank">Lab - Managing Device Configuration Files Using TFTP, Flash, and USB</a>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

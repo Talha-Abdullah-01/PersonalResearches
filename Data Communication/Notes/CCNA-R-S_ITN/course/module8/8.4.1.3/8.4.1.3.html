@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.4.1.3 Summary</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_8.4.1.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Summary</h1>
+        <h2>Summary</h2>
+      </div>
+      <div id="content">
+          <p>IP addresses are hierarchical with network, subnetwork, and host portions. An IP address can represent a complete network, a specific host, or the broadcast address of the network.</p>
+          <p></p>
+          <p>Understanding binary notation is important when determining if two hosts are in the same network. The bits within the network portion of the IP address must be identical for all devices that reside in the same network. The subnet mask or prefix is used to determine the network portion of an IP address. IP addresses can be assigned either statically or dynamically. DHCP enables the automatic assignment of addressing information such as IP address, subnet mask, default gateway, and other configuration information.</p>
+          <p></p>
+          <p>IPv4 hosts can communicate one of three different ways: unicast, broadcast, and multicast. Also, blocks of addresses that are used in networks that require limited or no Internet access are called private addresses. The private IPv4 address blocks are: 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16.</p>
+          <p></p>
+          <p>The depletion of IPv4 address space is the motivating factor for moving to IPv6. Each IPv6 address has 128 bits verses the 32 bits in an IPv4 address. IPv6 does not use the dotted-decimal subnet mask notation. The prefix length is used to indicate the network portion of an IPv6 address using the following format: IPv6 address/prefix length. </p>
+          <p></p>
+          <p>There are three types of IPv6 addresses: unicast, multicast, and anycast. An IPv6 link-local address enables a device to communicate with other IPv6-enabled devices on the same link and only on that link (subnet). Packets with a source or destination link-local address cannot be routed beyond the link from where the packet originated. IPv6 link-local addresses are in the FE80::/10 range.</p>
+          <p></p>
+          <p>ICMP is available for both IPv4 and IPv6. ICMPv4 is the messaging protocol for IPv4. ICMPv6 provides the same services for IPv6 but includes additional functionality.</p>
+          <p></p>
+          <p>After it is implemented, an IP network needs to be tested to verify its connectivity and operational performance.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

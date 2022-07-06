@@ -1,0 +1,14 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Institute of Electrical and Electronics Engineers (IEEE)</b>]]></text>
+</component>
+
+<component id="ID_title_01">
+<text><![CDATA[<b>IEEE 802 Working Groups and Study Groups</b>]]></text>
+</component>
+<component id="ID_body01">
+  <text><![CDATA[<textformat blockindent='-16'><ul class="bulletIndent20"><LI>802.1 Higher Layer LAN Protocols Working Group</LI><LI>802.3 Ethernet Working Group</LI><LI>802.11 Wireless LAN Working Group</LI><LI>802.15 Wireless Personal Area Network (WPAN) Working Group</LI><LI>802.16 Broadband Wireless Access Working Group</LI><LI>802.18 Radio Regulatory TAG</LI><LI>802.19 Wireless Coexistence Working Group</LI><LI>802.21 Media Independent Handover Services Working Group</LI><LI>802.22 Wireless Regional Area Networks</LI><LI>802.24 Smart Grid TAG</LI></ul></textformat>]]></text> 
+  </component>
+
+</textcomponents>

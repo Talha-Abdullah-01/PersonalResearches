@@ -1,0 +1,170 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media.css');
+
+html, body {
+	margin:0;
+	height:100%;
+}
+#flashContent {
+	width:98%;
+	height:98%;
+}
+
+/*#flashContent { border:1px solid red;}
+#flashContent div { border:1px solid red;}*/
+
+.main_bg {left: 50px;
+    position: relative;
+    top: 16px; width:320px;}
+	
+#com_1 {left: 10px;
+    position: absolute;
+    top: 132px;}
+#com_2 {left: 20px;
+    position: absolute;
+    top: 25px;}
+#com_3 {left: 213px;
+    position: absolute;
+    top: -23px;}
+#com_4 {left: 352px;
+    position: absolute;
+    top: 21px;}
+#com_5 {left: 328px;
+    position: absolute;
+    top: 142px;}
+#com_6 {left: 149px;
+    position: absolute;
+    top: 171px;}
+#comblur_1 {left: 8px;
+    position: absolute;
+    top: 129px; opacity:0;}
+#comblur_2 {left: 18px;
+    position: absolute;
+    top: 22px; opacity:0;}
+#comblur_3 {left: 211px;
+    position: absolute;
+    top: -26px; opacity:0;}
+#comblur_4 {left: 349px;
+    position: absolute;
+    top: 16px; opacity:0;}
+#comblur_5 {left: 326px;
+    position: absolute;
+    top: 138px; opacity:0;}
+#comblur_6 {left: 146px;
+    position: absolute;
+    top: 167px; opacity:0;}
+
+#mainDiv
+{
+width:420px;
+height:388px;
+position:absolute;
+top:10px;
+left:34px;}
+#main_wrapper{width:419px;height:393px;position:absolute;top:0px;}
+#main_container{background:url(1_3_1_2.png) no-repeat scroll center top transparent;width:420px!important;height:167px!important;position: absolute;top: 50px; left: -2px; display:block !important;}
+
+
+
+/* Starts Css for popup*/
+#pannel {background-color: #C1ABD1;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 3px 3px 6px #3F3F3F;
+    float: left;
+    left: 11px;
+    position: absolute;
+    top: 244px;
+    width: 388px;}
+	
+#panne2 {background-color: #C1ABD1;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 3px 3px 6px #3F3F3F;
+    float: left;
+    left: 11px;
+    position: absolute;
+    top: 244px;
+    width: 388px;}
+	
+#panne3 {background-color: #C1ABD1;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 3px 3px 6px #3F3F3F;
+    float: left;
+    left: 11px;
+    position: absolute;
+    top: 244px;
+    width: 388px;}
+	
+.cross {/*width: 96%;*/
+border-bottom: 3px solid #3d244c;
+float: right;
+margin-left: 2%;
+display:none;
+}
+.cross a {border: 1px solid #3D244C;
+    float: right;
+    height: 12px;
+    margin-bottom: 1px;
+    margin-right: 4px;
+    margin-top: 4px;
+    width: 12px;}
+.cross img {
+    float: right;
+    margin-right: 1px;
+    margin-top: 1px;
+}
+.cross span { color:#FFF;}
+.result {background-color: #FFF; width: 96%; float: left; margin: 0 2% 2%;}
+.result p { margin:0px; padding:2px; margin-bottom:0px;}
+
+#pannel a { display:block !important}
+
+#enter { padding-bottom:10px; text-align:center;}
+.ans_text { text-align:center; font-size:11px;}
+#title b {margin-left:24px;}
+/*#sub_title {margin-left:52px;}*/
+/*End Css for popup*/
+
+#title_1,#title_2,#title_3 {border-bottom: 2px solid #3D244C;
+    color: #3D244C;
+    display: block;
+    font-size: 11px;
+    margin-bottom: 3px;
+    margin-left: 7px;
+    padding-bottom: 2px;
+    width: 96%;}
+#text_1,#text_2,#text_3 { font-size:11px;}
+#text_4 {font-size: 11px;
+    left: 14px;
+    position: absolute;
+    top: 80px;}
+#text_5 {font-size: 11px;
+    left: 14px;
+    position: absolute;
+    top: 188px;}
+#text_6 {font-size: 11px;
+    left: 192px;
+    position: absolute;
+    top: 189px;}
+#text_7 {font-size: 11px;
+    left: 320px;
+    position: absolute;
+    top: 197px;}
+#text_8 {font-size: 11px;
+    left: 348px;
+    position: absolute;
+    top: 76px;}
+#text_9 {font-size: 11px;
+    left: 173px;
+    position: absolute;
+    top: -6px;}
+#text_10 { font-size: 11px;
+    left: 171px;
+    position: absolute;
+    top: 80px;}
+#text_11 {font-size: 11px;
+    left: 12px;
+    position: absolute;
+    top: 330px;
+    width: 384px;}

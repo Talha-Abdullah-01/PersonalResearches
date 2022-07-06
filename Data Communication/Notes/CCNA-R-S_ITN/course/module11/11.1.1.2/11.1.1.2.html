@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.1.1.2 Device Selection for a Small Network</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.1.1.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Create and Grow</h1>
+        <h2>Devices in a Small Network</h2>
+      </div>
+      <div id="content">
+          <p>In order to meet user requirements, even small networks require planning and design. Planning ensures that all requirements, cost factors, and deployment options are given due consideration. </p>
+          <p></p>
+          <p>One of the first design considerations when implementing a small network is the type of intermediate devices to use to support the network. When selecting the type of intermediate devices, there are a number of factors that need to be considered, as shown in the figure. </p>
+          <p></p>
+          <p>
+            <b>Cost</b>
+          </p>
+          <p></p>
+          <p>Cost is typically one of the most important factors when selecting equipment for a small business network. The cost of a switch or router is determined by its capacity and features. The device capacity includes the number and types of ports available and the backplane speed. Other factors that impact the cost are network management capabilities, embedded security technologies, and optional advanced switching technologies. The expense of cable runs required to connect every device on the network must also be considered. Another key element affecting cost consideration is how much redundancy to incorporate into the network – this includes devices, ports per device, and copper or fiber-optic cabling.</p>
+          <p></p>
+          <p>
+            <b>Speed and Types of Ports/Interfaces</b>
+          </p>
+          <p></p>
+          <p>Choosing the number and type of ports on a router or switch is a critical decision. Questions to be asked include: “Do we order just enough ports for today's needs, or do we consider growth requirements?”, “Do we require a mixture of UTP speeds?”, and “Do we require both UTP and fiber ports?” </p>
+          <p></p>
+          <p>Newer computers have built-in 1 Gbps NICs. 10 Gbps ports are already included with some workstations and servers. While it is more expensive, choosing Layer 2 devices that can accommodate increased speeds allows the network to evolve without replacing central devices. </p>
+          <p>
+            <b>Expandability</b>
+          </p>
+          <p></p>
+          <p>Networking devices come in both fixed and modular physical configurations. Fixed configurations have a specific number and type of ports or interfaces. Modular devices have expansion slots that provide the flexibility to add new modules as requirements evolve. Most modular devices come with a basic number of fixed ports as well as expansion slots. Switches are available with special additional ports for optional high-speed uplinks. Also, because routers can be used for connecting different numbers and types of networks, care must be taken to select the appropriate modules and interfaces for the specific media. Questions to be considered include: “Do we order devices with upgradable modules?”, and “What type of WAN interfaces, if any, are required on the router(s)?”</p>
+          <p></p>
+          <p>
+            <b>Operating System Features and Services</b>
+          </p>
+          <p>Depending on the version of the operating system, a network device can support certain features and services, such as:</p>
+          <p>
+            <ul>
+              <li>Security</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>QoS</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>VoIP</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Layer 3 switching</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>NAT</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>DHCP</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Routers can be expensive based on interfaces and features needed. Additional modules, such as fiber-optics, increase the cost of the network devices.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

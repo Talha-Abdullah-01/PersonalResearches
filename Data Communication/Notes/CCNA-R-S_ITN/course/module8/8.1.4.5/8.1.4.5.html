@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.1.4.5 Assignment of IP Addresses</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_8.1.4.5_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IPv4 Network Addresses</h1>
+        <h2>Types of IPv4 Addresses</h2>
+      </div>
+      <div id="content">
+          <p>For a company or organization to have network hosts, such as web servers, accessible from the Internet, that organization must have a block of public addresses assigned. Remember that public addresses must be unique, and use of these public addresses is regulated and allocated to each organization separately. This is true for IPv4 and IPv6 addresses. </p>
+          <p></p>
+          <p>
+            <b>IANA and RIRs</b>
+          </p>
+          <p>Internet Assigned Numbers Authority (IANA) (<a href="http://www.iana.org/" target="_blank">http://www.iana.org</a>) manages the allocation of IPv4 and IPv6 addresses. Until the mid-1990s, all IPv4 address space was managed directly by the IANA. At that time, the remaining IPv4 address space was allocated to various other registries to manage for particular purposes or for regional areas. These registration companies are called Regional Internet Registries (RIRs), as shown in the figure.</p>
+          <p></p>
+          <p>The major registries are:</p>
+          <p>
+            <ul>
+              <li>AfriNIC (African Network Information Centre) - Africa Region <a href="http://www.afrinic.net/" target="_blank">http://www.afrinic.net</a></li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>APNIC (Asia Pacific Network Information Centre) - Asia/Pacific Region <a href="http://www.apnic.net/" target="_blank">http://www.apnic.net</a></li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>ARIN (American Registry for Internet Numbers) - North America Region <a href="http://www.arin.net/" target="_blank">http://www.arin.net</a></li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>LACNIC (Regional Latin-American and Caribbean IP Address Registry) - Latin America and some Caribbean Islands <a href="http://www.lacnic.net/" target="_blank">http://www.lacnic.net</a></li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>RIPE NCC (Reseaux IP Europeans) - Europe, the Middle East, and Central Asia <a href="http://www.ripe.net/" target="_blank">http://www.ripe.net</a></li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>ISPs</b>
+          </p>
+          <p>RIRs are responsible for allocating IP addresses to the Internet Service Providers (ISPs). Most companies or organizations obtain their IPv4 address blocks from an ISP. An ISP will generally supply a small number of usable IPv4 addresses (6 or 14) to their customers as a part of their services. Larger blocks of addresses can be obtained based on justification of needs and for additional service costs. </p>
+          <p></p>
+          <p>In a sense, the ISP loans or rents these addresses to the organization. If we choose to move our Internet connectivity to another ISP, the new ISP will provide us with addresses from the address blocks that have been provided to them, and our previous ISP returns the blocks loaned to us to their allocation to be loaned to another customer.</p>
+          <p></p>
+          <p>IPv6 addresses can be obtained from the ISP or in some cases directly from the RIR. IPv6 addresses and typical address block sizes will be discussed later in this chapter.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[Online Interest Groups]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Online Gaming]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Online Entertainment]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Online Shopping]]></text>
+</component>
+<component id="ID_txt05">
+<text><![CDATA[Onboard Data Networks]]></text>
+</component>
+<component id="ID_txt06">
+<text><![CDATA[Instant Messaging]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[The way we play is supported by services delivered by the data network.]]></text>
+</component>
+</textcomponents>

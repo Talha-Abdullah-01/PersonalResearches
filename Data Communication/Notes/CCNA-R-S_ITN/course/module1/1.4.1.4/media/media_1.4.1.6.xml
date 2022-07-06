@@ -1,0 +1,67 @@
+﻿ <textcomponents>
+
+<!--slide 1-->
+
+<component id='ID_s1_txt01'>
+	<text><![CDATA[People are becoming more connected...]]></text>
+</component>
+
+<component id='ID_s1_txt02'>
+	<text><![CDATA[World Population]]></text>
+</component>
+
+<component id='ID_s1_txt03'>
+	<text><![CDATA[Internet Users]]></text>
+</component>
+
+<component id='ID_s1_txt04'>
+	<text><![CDATA[250 million worldwide Internet users]]></text>
+</component>
+
+<component id='ID_s1_txt05'>
+	<text><![CDATA[2.08 billion worldwide Internet users]]></text>
+</component>
+
+<component id='ID_s1_txt06'>
+	<text><![CDATA[2001]]></text>
+</component>
+
+<component id='ID_s1_txt07'>
+	<text><![CDATA[2006]]></text>
+</component>
+
+<component id='ID_s1_txt08'>
+	<text><![CDATA[2012]]></text>
+</component>
+
+<component id='ID_s1_txt09'>
+	<text><![CDATA[Internet video accounts for 40% of all consumer Internet traffic.]]></text>
+</component>
+
+<component id='ID_s1_txt10'>
+	<text><![CDATA[Internet video will become 62% of all consumer Internet traffic.]]></text>
+</component>
+
+<component id='ID_s1_txt11'>
+	<text><![CDATA[...and video is becoming the preferred channel of communication...]]></text>
+</component>
+
+<component id='ID_s1_txt12'>
+	<text><![CDATA[2012]]></text>
+</component>
+
+<component id='ID_s1_txt13'>
+	<text><![CDATA[2016]]></text>
+</component>
+
+
+<!--slide 2-->
+<component id='ID_s2_titletxt'>
+	<text><![CDATA[<b>Drivers for implementing a video strategy:</b>]]></text>
+</component>
+
+<component id='ID_s2_bodytext'>
+	<text><![CDATA[<textformat blockindent='-16'><ul><li><b>A global workforce and need for real-time collaboration</b> - Create collaborative teams that span corporate and national boundaries, and geographies.</li><li><b>Reducing costs and green IT</b> - Avoiding travel reduces both cost and carbon emissions.</li><li><b>New opportunities for IP convergence</b> - Converging video applications, such as high-definition video collaboration, video surveillance systems, and video advertising signage onto a single IP network.</li><li><b>Media explosion</b> - Plummeting cost of video cameras and a new generation of high-quality, low-cost devices have turned users into would-be movie producers.</li><li><b>Social networking</b> - The social networking phenomenon can be as effective in business as it is in a social setting. For example, employees are increasingly filming short videos to share best practices with colleagues, and to brief peers about projects and initiatives.</li><li><b>Demands for universal media access</b> - Users are demanding to be able to access rich-media applications wherever they are, and on any device. Participation in video conferencing, viewing the latest executive communications, and collaborating with co-workers are applications that will need to be accessible to employees, regardless of their work location.</li></ul></textformat>]]></text>
+</component>
+
+</textcomponents>

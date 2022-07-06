@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.3.2.2 Creating a Frame</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_4.3.2.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Data Link Layer Protocols</h1>
+        <h2>Layer 2 Frame Structure</h2>
+      </div>
+      <div id="content">
+          <p>When data travels on the media, it is converted into a stream of bits, or 1s and 0s. If a node is receiving long streams of bits, how does it determine where a frame starts and stops or which bits represent the address? </p>
+          <p></p>
+          <p>Framing breaks the stream into decipherable groupings, with control information inserted in the header and trailer as values in different fields. This format gives the physical signals a structure that can be received by nodes and decoded into packets at the destination.</p>
+          <p></p>
+          <p>As shown in the figure, generic frame field types include: </p>
+          <p>
+            <ul>
+              <li>
+                <b>Frame start and stop indicator flags</b>: Used by the MAC sublayer to identify the beginning and end limits of the frame.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Addressing</b>: Used by the MAC sublayer to identify the source and destination nodes.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Type</b>: Used by the LLC to identify the Layer 3 protocol.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Control</b>: Identifies special flow control services. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Data</b>: Contains the frame payload (i.e., packet header, segment header, and the data).</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Error Detection</b>: Included after the data to form the trailer, these frame fields are used for error detection. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Not all protocols include all of these fields. The standards for a specific data link protocol define the actual frame format. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Examples of frame formats will be discussed at the end of this chapter.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

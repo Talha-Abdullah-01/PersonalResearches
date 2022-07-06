@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.2.2.1 Hexadecimal Number System</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_8.2.2.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IPv6 Network Addresses</h1>
+        <h2>IPv6 Addressing</h2>
+      </div>
+      <div id="content">
+          <p>Unlike IPv4 addresses that are expressed in dotted decimal notation, IPv6 addresses are represented using hexadecimal values. You have seen hexadecimal used in the Packets Byte pane of Wireshark. In Wireshark, hexadecimal is used to represent the binary values within frames and packets. Hexadecimal is also used to represent Ethernet Media Access Control (MAC) addresses.</p>
+          <p></p>
+          <p>
+            <b>Hexadecimal Numbering</b>
+          </p>
+          <p>Hexadecimal ("Hex") is a convenient way to represent binary values. Just as decimal is a base ten numbering system and binary is base two, hexadecimal is a base sixteen system.</p>
+          <p></p>
+          <p>The base 16 numbering system uses the numbers 0 to 9 and the letters A to F. Figure 1 shows the equivalent decimal, binary, and hexadecimal values. There are 16 unique combinations of four bits, from 0000 to 1111. The 16 digit Hexadecimal is the perfect number system to use, because any four bits can be represented with a single hexadecimal value. </p>
+          <p></p>
+          <p>
+            <b>Understanding Bytes</b>
+          </p>
+          <p>Given that 8 bits (a byte) is a common binary grouping, binary 00000000 to 11111111 can be represented in hexadecimal as the range 00 to FF. Leading zeroes can be displayed to complete the 8-bit representation. For example, the binary value 0000 1010 is shown in hexadecimal as 0A.</p>
+          <p></p>
+          <p>
+            <b>Representing Hexadecimal Values</b>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: It is important to distinguish hexadecimal values from decimal values regarding the characters 0 to 9.</p>
+          <p></p>
+          <p>Hexadecimal is usually represented in text by the value preceded by 0x (for example 0x73) or a subscript 16. Less commonly, it may be followed by an H, for example 73H. However, because subscript text is not recognized in command line or programming environments, the technical representation of hexadecimal is preceded with "0x" (zero X). Therefore, the examples above would be shown as 0x0A and 0x73 respectively.</p>
+          <p></p>
+          <p>
+            <b>Hexadecimal Conversions</b>
+          </p>
+          <p></p>
+          <p>Number conversions between decimal and hexadecimal values are straightforward, but quickly dividing or multiplying by 16 is not always convenient. </p>
+          <p></p>
+          <p>With practice, it is possible to recognize the binary bit patterns that match the decimal and hexadecimal values. Figure 2 shows these patterns for selected 8-bit values.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<textcomponents>
+
+<component id='ID_title'>
+	<text><![CDATA[<b>The ARP Process</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<p class="ID_txt05">I must send out an ARP request to learn the MAC address of the host with the IP address of 192.168.1.7.</p>]]></text> 
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<p class="ID_txt06">This isn't me.</p>]]></text> 
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<p class="ID_txt07">This isn't me.</p>]]></text> 
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<p class="ID_txt08">This is me, I will send back my MAC address.</p>]]></text> 
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<p class="ID_txt09">Now I have the MAC so I can forward my information.</p>]]></text> 
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[<p class="ID_txt10">Thanks. I got it.</p>]]></text> 
+</component>
+
+<component id="ID_txt05_3">
+<text><![CDATA[Thanks. I got it.]]></text> 
+</component>
+
+<component id="ID_txt02_3">
+<text><![CDATA[This isn't me.]]></text> 
+</component>
+
+<component id="ID_txt03_3">
+<text><![CDATA[This isn't me.]]></text> 
+</component>
+
+<component id="ID_txt04_3">
+<text><![CDATA[This is me, I will send back my MAC address.]]></text> 
+</component>
+
+<component id="ID_ipAddress3">
+<text><![CDATA[<b>192.168.1.7</b>]]></text> 
+</component>
+
+<component id="ID_ipAddress4">
+<text><![CDATA[<b>192.168.1.8</b>]]></text> 
+</component>
+
+<!-- controller -->
+
+<component id="end">
+<text><![CDATA[End]]></text>
+</component>
+
+<component id="fforward">
+<text><![CDATA[Fast Forward]]></text>
+</component>
+
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+
+<component id="play">
+<text><![CDATA[Play]]></text>
+</component>
+
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component>
+
+<component id="start">
+<text><![CDATA[Start]]></text>
+</component>
+
+<component id="transcript">
+<text><![CDATA[Transcript]]></text>
+</component>
+
+</textcomponents>

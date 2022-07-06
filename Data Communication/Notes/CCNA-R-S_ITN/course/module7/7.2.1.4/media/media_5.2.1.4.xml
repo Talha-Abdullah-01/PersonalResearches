@@ -1,0 +1,13 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>TCP 3-Way Handshake (SYN)</b>]]></text>
+	</component>
+	
+	<component id="ID_title_txt">
+		<text><![CDATA[<font size='11'><b class="textboxheader">A protocol analyzer shows initial client request for session in frame 10</b></font>]]></text>
+	</component>
+	<component id="ID_body_txt">
+		<text><![CDATA[<font size='11'><span class="ulclass">TCP segment in this frame shows:</span><textformat blockindent="-14"><li>SYN flag set to validate an Initial Sequence Number</li><li>Randomized sequence number valid (relative value is 0)</li><li>Random source port 1061</li><li>Well-known destination port is 80 (HTTP port) indicates web server (httpd)</li></textformat></font>]]></text>
+	</component>
+	
+</textcomponents>

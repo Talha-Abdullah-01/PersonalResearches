@@ -1,0 +1,9 @@
+<textcomponents>
+	
+	<component id="ID_txt01">
+	  <text><![CDATA[Step 1: Configure the IP domain name.<br/>Step 2: Generate one-way secret keys.<br/>Step 3: Verify or create a local database entry.<br/>Step 4: Enable VTY inbound SSH sessions.]]></text> 
+	</component>	  
+	<component id="ID_txt02">
+		<text><![CDATA[DCE]]></text>
+	</component>	
+</textcomponents>

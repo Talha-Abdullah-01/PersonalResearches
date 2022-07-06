@@ -1,0 +1,65 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Decimal to Binary Conversion Activity</b><br/><br/>This activity allows you to practice decimal conversion to 8-bit binary values. We recommend that you work with this tool until you are able to do the conversions without error.<br><br>Convert the decimal number shown in the Decimal Value row to its binary bits.]]></text>
+</component>
+
+<component id="ID_btn01">
+<text><![CDATA[Check]]></text>
+</component>
+
+<component id="ID_btn02">
+<text><![CDATA[Reset]]></text>
+</component>
+
+<component id="ID_btn03">
+<text><![CDATA[New Number]]></text>
+</component>
+
+
+
+
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Decimal value</b>]]></text>
+</component>
+
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Exponent</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Position</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>Bit</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>Radix</b>]]></text>
+</component>
+
+<component id='ID_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_CORRECT_BODY'>
+	<text><![CDATA[The binary values you have entered for all positions are correct! Please click New Number to continue.]]></text>
+</component>
+
+<component id='ID_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_INCORRECT_BODY'>
+	<text><![CDATA[The binary value you have entered for one or more positions is incorrect. Please click Reset to try again.]]></text>
+</component>
+
+
+</textcomponents>

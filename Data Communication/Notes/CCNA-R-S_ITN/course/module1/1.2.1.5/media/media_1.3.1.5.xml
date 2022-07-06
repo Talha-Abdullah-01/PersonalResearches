@@ -1,0 +1,72 @@
+﻿<textcomponents>
+
+<component id='ID_txt01'>
+	<text><![CDATA[<b>End Devices</b>]]></text>
+</component>
+
+<component id='ID_txt02'>
+	<text><![CDATA[Desktop Computer]]></text>
+</component>
+
+<component id='ID_txt03'>
+	<text><![CDATA[Laptop]]></text>
+</component>
+
+<component id='ID_txt04'>
+	<text><![CDATA[Printer]]></text>
+</component>
+
+<component id='ID_txt05'>
+	<text><![CDATA[IP Phone]]></text>
+</component>
+
+<component id='ID_txt06'>
+	<text><![CDATA[Wireless Tablet]]></text>
+</component>
+
+<component id='ID_txt07'>
+	<text><![CDATA[TelePresence Endpoint]]></text>
+</component>
+
+<component id='ID_txt08'>
+	<text><![CDATA[<b>Intermediary Devices</b>]]></text>
+</component>
+
+<component id='ID_txt09'>
+	<text><![CDATA[Wireless Router]]></text>
+</component>
+
+<component id='ID_txt10'>
+	<text><![CDATA[LAN Switch]]></text>
+</component>
+
+<component id='ID_txt11'>
+	<text><![CDATA[Router]]></text>
+</component>
+
+<component id='ID_txt12'>
+	<text><![CDATA[Multilayer Switch]]></text>
+</component>
+
+<component id='ID_txt13'>
+	<text><![CDATA[Firewall Appliance]]></text>
+</component>
+
+<component id='ID_txt14'>
+	<text><![CDATA[<b>Network Media</b>]]></text>
+</component>
+
+<component id='ID_txt15'>
+	<text><![CDATA[Wireless Media]]></text>
+</component>
+
+<component id='ID_txt16'>
+	<text><![CDATA[LAN Media]]></text>
+</component>
+
+<component id='ID_txt17'>
+	<text><![CDATA[WAN Media]]></text>
+</component>
+
+
+</textcomponents>

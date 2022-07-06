@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.2.1.3 TCP Connection Establishment and Termination</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_7.2.1.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>TCP and UDP</h1>
+        <h2>TCP Communication</h2>
+      </div>
+      <div id="content">
+          <p>In some cultures, when two persons meet, they often greet each other by shaking hands. The act of shaking hands is understood by both parties as a signal for a friendly greeting. Connections on the network are similar. The first handshake requests synchronization. The second handshake acknowledges the initial synchronization request and synchronizes the connection parameters in the opposite direction. The third handshake segment is an acknowledgment used to inform the destination that both sides agree that a connection has been established.</p>
+          <p>When two hosts communicate using TCP, a connection is established before data can be exchanged. After the communication is completed, the sessions are closed and the connection is terminated. The connection and session mechanisms enable TCP’s reliability function. See the figure for the steps to establish and terminate a TCP connection. </p>
+          <p></p>
+          <p>Hosts track each data segment within a session and exchange information about what data is received using the information in the TCP header. TCP is a full-duplex protocol, where each connection represents two one-way communication streams, or sessions. To establish the connection, the hosts perform a three-way handshake. Control bits in the TCP header indicate the progress and status of the connection. The three-way handshake:</p>
+          <p>
+            <ul>
+              <li>Establishes that the destination device is present on the network</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Verifies that the destination device has an active service and is accepting requests on the destination port number that the initiating client intends to use for the session</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Informs the destination device that the source client intends to establish a communication session on that port number</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>In TCP connections, the host client establishes the connection with the server. The three steps in TCP connection establishment are:</p>
+          <p>
+            <b>Step 1.</b> The initiating client requests a client-to-server communication session with the server.</p>
+          <p>
+            <b>Step 2.</b> The server acknowledges the client-to-server communication session and requests a server-to-client communication session.   </p>
+          <p>
+            <b>Step 3.</b> The initiating client acknowledges the server-to-client communication session.</p>
+          <p></p>
+          <p>In the figure, click through buttons 1 through 3 to see the TCP connection establishment.</p>
+          <p></p>
+          <p>To understand the three-way handshake process, look at the various values that the two hosts exchange. Within the TCP segment header, there are six 1-bit fields that contain control information used to manage the TCP processes. Those fields are: </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>URG</b> - Urgent pointer field significant</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>ACK</b> - Acknowledgement field significant</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>PSH</b> - Push function</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>RST</b> - Reset the connection</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>SYN</b> - Synchronize sequence numbers</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>FIN</b> - No more data from sender</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The ACK and SYN fields are relevant to our analysis of the three-way handshake.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.3.3.1 Data Link Layer Standards</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_4.3.3.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Data Link Layer Protocols</h1>
+        <h2>Layer 2 Standards</h2>
+      </div>
+      <div id="content">
+          <p>Unlike the protocols of the upper layers of the TCP/IP suite, data link layer protocols are generally not defined by Request for Comments (RFCs). Although the Internet Engineering Task Force (IETF) maintains the functional protocols and services for the TCP/IP protocol suite in the upper layers, the IETF does not define the functions and operation of that model's network access layer. </p>
+          <p></p>
+          <p>Specifically the data link layer services and specifications are defined by multiple standards based on a variety of technologies and media to which the protocols are applied. Some of these standards integrate both Layer 2 and Layer 1 services.</p>
+          <p></p>
+          <p>The functional protocols and services at the data link layer are described by:</p>
+          <p>
+            <ul>
+              <li>Engineering organizations which set public and open standards and protocols.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Communications companies which set and use proprietary protocols to take advantage of new advances in technology or market opportunities.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Engineering organizations that define open standards and protocols that apply to the data link layer include: </p>
+          <p>
+            <ul>
+              <li>Institute of Electrical and Electronics Engineers (IEEE)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>International Telecommunication Union (ITU)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>International Organization for Standardization (ISO)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>American National Standards Institute (ANSI)</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The table in the figure highlights various standard organizations and some of their more important data link layer protocols.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

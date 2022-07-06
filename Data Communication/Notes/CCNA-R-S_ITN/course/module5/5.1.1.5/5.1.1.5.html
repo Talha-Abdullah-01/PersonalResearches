@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.1.1.5 Frame Processing</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_5.1.1.5_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Ethernet Protocol</h1>
+        <h2>Ethernet Operation</h2>
+      </div>
+      <div id="content">
+          <p>The MAC address is often referred to as a burned-in address (BIA) because, historically, this address is burned into ROM (Read-Only Memory) on the NIC. This means that the address is encoded into the ROM chip permanently - it cannot be changed by software. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: On modern PC operating systems and NICs, it is possible to change the MAC address in software. This is useful when attempting to gain access to a network that filters based on BIA - consequently, filtering, or controlling, traffic based on the MAC address is no longer as secure. </p>
+          <p></p>
+          <p>MAC addresses are assigned to workstations, servers, printers, switches, and routers - any device that must originate and/or receive data on the network. All devices connected to an Ethernet LAN have MAC-addressed interfaces. Different hardware and software manufacturers might represent the MAC address in different hexadecimal formats. The address formats might be similar to:</p>
+          <p>
+            <ul>
+              <li>00-05-9A-3C-78-00</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>00:05:9A:3C:78:00</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>0005.9A3C.7800 </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>When the computer starts up, the first thing the NIC does is copies the MAC address from ROM into RAM. When a device is forwarding a message to an Ethernet network, it attaches header information to the packet. The header information contains the source and destination MAC address. The source device sends the data through the network.</p>
+          <p></p>
+          <p>Each NIC in the network views the information, at the MAC sublayer, to see if the destination MAC address in the frame matches the device’s physical MAC address stored in RAM. If there is no match, the device discards the frame. When the frame reaches the destination where the MAC of the NIC matches the destination MAC of the frame, the NIC passes the frame up the OSI layers, where the de-encapsulation process takes place.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

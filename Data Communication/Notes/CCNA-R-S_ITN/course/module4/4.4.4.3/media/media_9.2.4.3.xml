@@ -1,0 +1,34 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Logical Multi-Access Topology</b>]]></text>
+</component>
+<component id="ID_txt04">
+   <text><![CDATA[]]></text>
+   </component>
+<component id="ID_txt05">
+   <text><![CDATA[A multi-access frame has many possible destinations.]]></text>
+   </component>
+<component id="ID_txt06">
+   <text><![CDATA[Data link layer addresses required.]]></text>
+   </component>
+<component id="ID_txt07">
+   <text><![CDATA[<b>Logical Point-to-Point Topology</b>]]></text>
+   </component>
+<component id="ID_txt08">
+   <text><![CDATA[Data link layer addresses not required.]]></text>
+   </component>
+<component id="ID_txt09">
+   <text><![CDATA[A point-to-point frame has only 1 possible destination.]]></text>
+   </component>
+   
+  
+   <component id="ID_txt15">
+   <text><![CDATA[<b>Frame</b]]></text>
+   </component>
+   
+   <component id="ID_txt16">
+   <text><![CDATA[<b>Frame</b]]></text>
+   </component>
+   
+</textcomponents>

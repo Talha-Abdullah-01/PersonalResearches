@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.1.1.1 Connecting to the Network</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_4.1.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Physical Layer Protocols</h1>
+        <h2>Getting It Connected</h2>
+      </div>
+      <div id="content">
+          <p>Whether connecting to a local printer in the home or to a web site in another country, before any network communications can occur, a physical connection to a local network must be established first. A physical connection can be a wired connection using a cable or a wireless connection using radio waves. </p>
+          <p></p>
+          <p>The type of physical connection used is totally dependent upon the setup of the network. For example, in many corporate offices, employees have desktop or laptop computers that are physically connected, via cable, to a shared switch. This type of setup is a wired network, in which data is transmitted across a physical cable.</p>
+          <p></p>
+          <p>In addition to wired connections, some businesses may also offer wireless connections for laptops, tablets, and smartphones. With wireless devices, data is transmitted using radio waves. The use of wireless connectivity is becoming more common as individuals, and businesses alike, discover the advantages of offering wireless services. In order to offer wireless capability, a network must incorporate a wireless access point (WAP) for devices to connect to. </p>
+          <p></p>
+          <p>Switch devices and wireless access points are often two separate dedicated devices within a network implementation. However, there are also devices that offer both wired and wireless connectivity. In many homes, for example, individuals are implementing home integrated service routers (ISRs), as shown in Figure 1. ISRs offer a switching component with multiple ports, allowing multiple devices to be connected to the local area network (LAN) using cables, as shown in Figure 2. Additionally, many ISRs also include a WAP, which allows wireless devices to connect as well. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

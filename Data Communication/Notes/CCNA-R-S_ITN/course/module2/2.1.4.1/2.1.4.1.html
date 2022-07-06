@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.1.4.1 IOS Command Structure</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.1.4.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IOS Bootcamp</h1>
+        <h2>The Command Structure</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Basic IOS Command Structure</b>
+          </p>
+          <p></p>
+          <p>A Cisco IOS device supports many commands. Each IOS command has a specific format or syntax and can only be executed at the appropriate mode. The general syntax for a command is the command followed by any appropriate keywords and arguments. Some commands include a subset of keywords and arguments that provide additional functionality. Commands are used to execute an action, and the keywords are used to identify where or how to execute the command.</p>
+          <p></p>
+          <p>As shown in Figure 1, the command is the initial word or words entered in the command line following the prompt. The commands are not case-sensitive. Following the command are one or more keywords and arguments. After entering each complete command, including any keywords and arguments, press the Enter key to submit the command to the command interpreter.</p>
+          <p></p>
+          <p>The keywords describe specific parameters to the command interpreter. For example, the <span class="cmd"><b>show</b></span> command is used to display information about the device. This command has various keywords that must be used to define what particular output should be displayed. For example: </p>
+          <p></p>
+          <p>
+            <span class="cmd">Switch#</span>
+            <span class="cmd">
+              <b>show running-config</b>
+            </span>
+          </p>
+          <p></p>
+          <p>The command <span class="cmd"><b>show</b></span> is followed by the keyword <span class="cmd"><b>running-config</b></span>. The keyword specifies that the running configuration is to be displayed as the output.</p>
+          <p></p>
+          <p>
+            <b>IOS Command Conventions</b>
+          </p>
+          <p></p>
+          <p>A command might require one or more arguments. Unlike a keyword, an argument is generally not a predefined word. An argument is a value or variable defined by the user. To determine the keywords and arguments required for a command, refer to the command syntax. The syntax provides the pattern or format that must be used when entering a command.</p>
+          <p></p>
+          <p>For instance the syntax for using the <span class="cmd"><b>description</b></span> command is:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Switch(config-if)#</span>
+            <span class="cmd">
+              <b>description</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <i>string</i>
+            </span>
+          </p>
+          <p></p>
+          <p>As shown in Figure 2, boldface text indicates commands and keywords that are typed as shown and italic text indicates an argument for which you supply the value. For the <span class="cmd"><b>description</b></span> command, the argument is a string value. The string value can be any text string of up to 80 characters.</p>
+          <p></p>
+          <p>Therefore, when applying a description to an interface with the <span class="cmd"><b>description</b></span> command, enter a line such as this:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Switch(config-if)#</span>
+            <span class="cmd">
+              <b>description</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <b>MainHQ Office Switch</b>
+            </span>
+          </p>
+          <p></p>
+          <p>The command is <span class="cmd"><b>description</b></span> and the user defined argument is <span class="cmd"><b>MainHQ Office Switch</b></span>. </p>
+          <p></p>
+          <p>The following examples demonstrate some conventions used to document and use IOS commands. </p>
+          <p></p>
+          <p>For the <span class="cmd"><b>ping</b></span> command:</p>
+          <p></p>
+          <p>Syntax:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Switch> </span>
+            <span class="cmd">
+              <b>ping</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <i>IP-address</i>
+            </span>
+          </p>
+          <p></p>
+          <p>Example with values:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Switch></span>
+            <span class="cmd">
+              <b>ping</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <b>10.10.10.5</b>
+            </span>
+          </p>
+          <p></p>
+          <p>The command is <span class="cmd"><b>ping</b></span> and the user defined argument is the <span class="cmd"><b>10.10.10.5</b></span>. </p>
+          <p></p>
+          <p>Similarly, the syntax for entering the <span class="cmd"><b>traceroute</b></span> command is:</p>
+          <p></p>
+          <p>Syntax:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Switch></span>
+            <span class="cmd">
+              <b>traceroute</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <i>IP-address</i>
+            </span>
+          </p>
+          <p></p>
+          <p>Example with values:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Switch></span>
+            <span class="cmd">
+              <b>traceroute</b>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <b>192.168.254.254</b>
+            </span>
+          </p>
+          <p></p>
+          <p>The command is<span class="cmd"><b> traceroute </b></span>and the user defined argument is the <span class="cmd"><b>192.168.254.254</b></span>.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.4.3.2 Security Solutions</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_1.4.3.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>The Changing Network Environment</h1>
+        <h2>Network Security</h2>
+      </div>
+      <div id="content">
+          <p>No single solution can protect the network from the variety of threats that exist. For this reason, security should be implemented in multiple layers, using more than one security solution. If one security component fails to identify and protect the network, others still stand. </p>
+          <p></p>
+          <p>A home network security implementation is usually rather basic. It is generally implemented on the connecting host devices, as well as at the point of connection to the Internet, and can even rely on contracted services from the ISP. </p>
+          <p></p>
+          <p>In contrast the network security implementation for a corporate network usually consists of many components built into the network to monitor and filter traffic. Ideally, all components work together, which minimizes maintenance and improves security.</p>
+          <p></p>
+          <p>Network security components for a home or small office network should include, at a minimum:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Antivirus and antispyware</b> - to protect user devices from malicious software</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Firewall filtering </b>- to block unauthorized access to the network. This may include a host-based firewall system that is implemented to prevent unauthorized access to the host device, or a basic filtering service on the home router to prevent unauthorized access from the outside world into the network.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>In addition to the above, larger networks and corporate networks often have other security requirements:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Dedicated firewall systems</b> - to provide more advanced firewall capability that can filter large amounts of traffic with more granularity</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Access control lists (ACL)</b> - to further filter access and traffic forwarding</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Intrusion prevention systems (IPS)</b> - to identify fast-spreading threats, such as zero-day or zero-hour attacks </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Virtual private networks (VPN)</b> - to provide secure access to remote workers</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Network security requirements must take into account the network environment, as well as the various applications, and computing requirements. Both home environments and businesses must be able to secure their data, while still allowing for the quality of service that is expected of each technology. Additionally, the security solution implemented must be adaptable to the growing and changing trends of the network. </p>
+          <p></p>
+          <p>The study of network security threats and mitigation techniques starts with a clear understanding of the underlying switching and routing infrastructure used to organize network services.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.1.1.2 Network Interface Cards</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_4.1.1.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Physical Layer Protocols</h1>
+        <h2>Getting It Connected</h2>
+      </div>
+      <div id="content">
+          <p>Network Interface Cards (NICs) connect a device to the network. Ethernet NICs are used for a wired connection whereas WLAN (Wireless Local Area Network) NICs are used for wireless. An end-user device may include one or both types of NICs. A network printer, for example, may only have an Ethernet NIC, and therefore, must connect to the network using an Ethernet cable. Other devices, such as tablets and smartphones, might only contain a WLAN NIC and must use a wireless connection. </p>
+          <p></p>
+          <p>Not all physical connections are equal, in terms of the performance level, when connecting to a network.</p>
+          <p></p>
+          <p>For example, a wireless device will experience degradation in performance based on its distance to a wireless access point. The further the device is from the access point the weaker the wireless signal it receives. This can mean less bandwidth or no wireless connection at all. The figure shows that a wireless range extender can be used to regenerate the wireless signal to other parts of the house that are too far from the wireless access point. Alternatively, a wired connection will not degrade in performance, however, is extremely limited in movement and generally requires static positioning. </p>
+          <p></p>
+          <p>All wireless devices must share access to the airwaves connecting to the wireless access point. This means slower network performance may occur as more wireless devices access the network simultaneously. A wired device does not need to share its access to the network with other devices. Each wired device has a separate communications channel over its own Ethernet cable. This is important when considering some applications, like online gaming, streaming video, and video conferencing, which require more dedicated bandwidth than other applications. </p>
+          <p></p>
+          <p>Over the next couple of topics you will learn more about the physical layer connections that occur and how those connections affect the transportation of data.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+﻿<textcomponents>
+
+<!--slide 1-->
+<component id="ID_s1_title">
+<text><![CDATA[<b>Converged Networks</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+  <text><![CDATA[<b>Real-time traffic</b><textformat blockindent='-16'><ul><li>Voice over IP (VoIP)</li><li>Videoconferencing</li></ul></textformat>]]></text> 
+  </component>
+<component id="ID_s1_txt02">
+  <text><![CDATA[<b>Web content</b><textformat blockindent='-18'><ul><li>Browsing</li><li>Shopping</li></ul></textformat>]]></text> 
+  </component>
+<component id="ID_s1_txt03">
+  <text><![CDATA[<b>Transactional traffic</b><textformat blockindent='-18'><ul><li>Order processing & billing</li><li>Inventory & reporting</li><li>Accounting & reporting</li></ul></textformat>]]></text> 
+  </component>
+<component id="ID_s1_txt04">
+  <text><![CDATA[<b>Streaming traffic</b><textformat blockindent='-18'><ul><li>Video on Demand (VoD)</li><li>Movies</li></ul></textformat>]]></text> 
+  </component>
+<component id="ID_s1_txt05">
+	<text><![CDATA[<b>Bulk traffic</b><textformat blockindent='-18'><ul><li>Email</li><li>Data backups</li><li>Print files</li></ul></textformat>]]></text>
+</component>
+<component id="ID_s1_txt06">
+	<text><![CDATA[<font size="12"><b>Convergence</b></font>]]></text>
+</component>
+<component id="ID_s1_txt07">
+	<text><![CDATA[<font color="#FFFFFF" size="14"><b>Network</b></font>]]></text>
+</component>
+<component id="ID_s1_txt08">
+	<text><![CDATA[All traffic is NOT alike.]]></text>
+</component>
+
+<!--slide2-->
+<component id="ID_s2_title">
+<text><![CDATA[<b>Using Queues to Prioritize Communication</b>]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[Voice Over IP]]></text>
+</component>
+
+<component id="ID_s2_txt02">
+<text><![CDATA[Financial Transaction]]></text>
+</component>
+
+<component id="ID_s2_txt03">
+<text><![CDATA[Web Page]]></text>
+</component>
+
+<component id="ID_s2_txt04">
+<text><![CDATA[High Priority Queue]]></text>
+</component>
+
+<component id="ID_s2_txt05">
+<text><![CDATA[Medium Priority Queue]]></text>
+</component>
+
+<component id="ID_s2_txt06">
+<text><![CDATA[Low Priority Queue]]></text>
+</component>
+
+<component id="ID_s2_txt07">
+<text><![CDATA[All communication has some access to the media, but higher priority communication has a greater percentage of the packets.]]></text>
+</component>
+
+<component id="ID_s2_txt08">
+<text><![CDATA[Link to Network]]></text>
+</component>
+
+<component id="ID_s2_caption">
+<text><![CDATA[Queuing according to data type enables voice data to have priority over transaction data, which has priority over web data.]]></text>
+</component>
+
+<!--slide 3-->
+<component id="ID_s3_title">
+<text><![CDATA[<b>Quality of Service Matters</b>]]></text> 
+</component>
+
+<component id="ID_s3_header1">
+<text><![CDATA[<font size="12">Communication Type</font>]]></text> 
+</component>
+
+<component id="ID_s3_header2">
+<text><![CDATA[<font size="12">Without QoS</font>]]></text> 
+</component>
+
+<component id="ID_s3_header3">
+<text><![CDATA[<font size="12">With QoS</font>]]></text> 
+</component>
+
+<component id="ID_s3_txt01">
+<text><![CDATA[Streaming video or audio]]></text>
+</component>
+
+<component id="ID_s3_txt02">
+<text><![CDATA[Vital Transactions]]></text> 
+</component>
+
+<component id="ID_s3_txt03">
+<text><![CDATA[Downloading web pages (often lower priority)]]></text> 
+</component>
+
+<component id="ID_s3_txt04">
+<text><![CDATA[Choppy picture starts and stops.]]></text> 
+</component>
+
+<component id="ID_s3_txt05">
+<text><![CDATA[Clear, continuous service.]]></text> 
+</component>
+
+<component id="ID_s3_txt06">
+<text><![CDATA[<textformat tabstops='[75]'>Time : Price<br><br>02:14:05 : $1.54<br><br>Just one second earlier...</textformat>]]></text> 
+</component>
+
+<component id="ID_s3_txt07">
+<text><![CDATA[<textformat tabstops='[75]'>Time : Price<br><br>02:14:04 : $1.52<br><br>The price may be better.</textformat>]]></text> 
+</component>
+
+<component id="ID_s3_txt08">
+<text><![CDATA[]]>Web pages arrive a bit later...</text> 
+</component>
+
+<component id="ID_s3_txt09">
+<text><![CDATA[]]>But the end result is identical.</text> 
+</component>
+
+</textcomponents>

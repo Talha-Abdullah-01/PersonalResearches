@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.0.1.1 Introduction to Cisco IOS</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.0.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Configuring a Network Operating System</h1>
+        <h2>Introduction</h2>
+      </div>
+      <div id="content">
+          <p>Home networks typically interconnect a wide variety of end devices including PCs, laptops, tablets, smartphones, smart TVs, Digital Living Network Alliance (DLNA) compliant network media players, such as the Xbox 360 or PlayStation 3, and more. </p>
+          <p></p>
+          <p>All of these end devices are usually connected to a home router. Home routers are actually four devices in one:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Router</b>
+                <b>-</b> Forwards data packets to and receives data packets from the Internet</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Switch</b>
+                <b>-</b> Connects end devices using network cables</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Wireless access point</b>
+                <b>-</b> Consists of a radio transmitter capable of connecting end devices wirelessly</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Firewall appliance</b>
+                <b>-</b> Secures outgoing traffic and restricts incoming traffic</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>In larger, business networks with significantly more devices and traffic, these devices are often incorporated as independent, stand-alone devices, providing dedicated service.  End-devices, such as PCs and laptops, are connected to network switches using wired connections. To send packets beyond the local network, network switches connect to network routers. Other infrastructure devices on a network include wireless access points and dedicated security devices, such as firewalls. </p>
+          <p></p>
+          <p>Each device is very different in hardware, use, and capability. But in all cases, it is the operating system that enables the hardware to function.</p>
+          <p></p>
+          <p>Operating systems are used on virtually all end user and network devices connected to the Internet.  End user devices include devices such as smart phones, tablets, PCs, and laptops. Network devices, or intermediary devices, are devices used to transport data across the network and include switches, routers, wireless access points, and firewalls. The operating system on a network device is known as a network operating system.  </p>
+          <p></p>
+          <p>The Cisco Internetwork Operating System (IOS) is a generic term for the collection of network operating systems used on Cisco networking devices. Cisco IOS is used for most Cisco devices regardless of the type or size of the device.</p>
+          <p></p>
+          <p>This chapter will reference a basic network topology, consisting of two switches and two PCs, to demonstrate the use of Cisco IOS.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

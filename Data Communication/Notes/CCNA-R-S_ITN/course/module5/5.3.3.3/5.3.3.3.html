@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.3.3.3 Types of Layer 3 Interfaces</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_5.3.3.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>LAN Switches</h1>
+        <h2>Layer 3 Switching</h2>
+      </div>
+      <div id="content">
+          <p>Cisco networking devices support a number of distinct types of Layer 3 interfaces. A Layer 3 interface is one that supports forwarding IP packets toward a final destination based on the IP address.</p>
+          <p></p>
+          <p>The major types of Layer 3 interfaces are:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Switch Virtual Interface (SVI)</b> - Logical interface on a switch associated with a virtual local area network (VLAN).</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Routed Port</b> - Physical port on a Layer 3 switch configured to act as a router port.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Layer 3 EtherChannel</b> - Logical interface on a Cisco device associated with a bundle of routed ports.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>As shown previously, an SVI for the default VLAN (VLAN1) must be enabled to provide IP host connectivity to the switch and permit remote switch administration. SVIs must also be configured to allow routing between VLANs. As stated, SVIs are logical interfaces configured for specific VLANs; to route between two or more VLANs, each VLAN must have a separate SVI enabled. </p>
+          <p></p>
+          <p>Routed ports enable (Layer 3) Cisco switches to effectively serve as routers. Each port on such a switch can be configured as a port on an independent IP network.</p>
+          <p></p>
+          <p>Layer 3 EtherChannels are used to bundle Layer 3 Ethernet links between Cisco devices in order to aggregate bandwidth, typically on uplinks.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: In addition to SVIs and L3 EtherChannels, other logical interfaces on Cisco devices include loopback interfaces and tunnel interfaces.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+﻿<textcomponents>
+
+<component id='ID_inst'>
+	<text><![CDATA[<b>Activity – Identify Types of IPv6 Addresses</b><br><br>Drag the IPv6 address type to the most appropriate description.  ]]></text>
+</component>
+
+<component id='ID_txt01'>
+	<text><![CDATA[Unique, Internet-routable IPv6 address (dynamic or static)]]></text>
+</component>
+
+<component id='ID_txt02'>
+	<text><![CDATA[IPv6 address represented as ::1 (compressed format)]]></text>
+</component>
+
+<component id='ID_txt03'>
+	<text><![CDATA[IPv6 address represented as :: (compressed format) – cannot be assigned to an interface]]></text>
+</component>
+
+<component id='ID_txt04'>
+	<text><![CDATA[Typical IPv6 prefix used to indicate the network portion of the address]]></text>
+</component>
+
+<component id='ID_txt05'>
+	<text><![CDATA[Used to communicate with other devices on the same IPv6 subnet]]></text>
+</component>
+
+
+<!--Drag and Drop-->
+<component id='ID_ip1_DS'>
+	<text><![CDATA[<font color="#393536">Global unicast</font>]]></text>
+</component>
+
+<component id='ID_ip2_DS'>
+	<text><![CDATA[<font color="#393536">Loopback</font>]]></text>
+</component>
+
+<component id='ID_ip3_DS'>
+	<text><![CDATA[<font color="#393536">Unspecified</font>]]></text>
+</component>
+
+<component id='ID_ip4_DS'>
+	<text><![CDATA[<font color="#393536">/64</font>]]></text>
+</component>
+
+<component id='ID_ip5_DS'>
+	<text><![CDATA[<font color="#393536">Link-local</font>]]></text>
+</component>
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched the IPv6 address types to their descriptions.]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched the IPv6 address types to their descriptions. Please click Reset to try again.
+]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+</textcomponents>

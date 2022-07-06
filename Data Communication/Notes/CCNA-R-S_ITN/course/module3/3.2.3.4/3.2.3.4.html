@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.2.3.4 ISO</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_3.2.3.4_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Network Protocols and Standards</h1>
+        <h2>Standards Organizations</h2>
+      </div>
+      <div id="content">
+          <p>ISO, the International Organization for Standardization, is the world’s largest developer of international standards for a wide variety of products and services. ISO is not an acronym for the organization’s name; rather the ISO term is based on the Greek word “isos”, meaning equal. The International Organization for Standardization chose the ISO term to affirm its position as being equal to all countries.</p>
+          <p></p>
+          <p>In networking, ISO is best known for its Open Systems Interconnection (OSI) reference model. ISO published the OSI reference model in 1984 to develop a layered framework for networking protocols. The original objective of this project was not only to create a reference model but also to serve as a foundation for a suite of protocols to be used for the Internet. This was known as the OSI protocol suite. However, due to the rising popularity of the TCP/IP suite, developed by Robert Kahn, Vinton Cerf, and others, the OSI protocol suite was not chosen as the protocol suite for the Internet. Instead, the TCP/IP protocol suite was selected. The OSI protocol suite was implemented on telecommunications equipment and can still be found in legacy telecommunication networks.</p>
+          <p></p>
+          <p>You may be familiar with some of the products that use ISO standards. The ISO file extension is used on many CD images to signify that it uses the ISO 9660 standard for its file system. ISO is also responsible for creating standards for routing protocols.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>Subnetting on a Nibble Boundary</b>]]></text>
+	</component>
+	  
+	<component id="ID_txt03">
+	  <text><![CDATA[48 bits]]></text> 
+	</component>
+	  
+	<component id="ID_txt04">
+	  <text><![CDATA[16 + 4 = 20 bits]]></text> 
+	</component>
+	
+	<component id="ID_txt05">
+	  <text><![CDATA[Global Routing Prefix]]></text> 
+	</component>
+	
+	<component id="ID_txt06">
+	  <text><![CDATA[<b>Subnet ID</b>]]></text> 
+	</component>
+	
+	<component id="ID_txt07">
+	  <text><![CDATA[Interface ID]]></text> 
+	</component>
+	
+	<component id="ID_txt08">
+	  <text><![CDATA[<b>Subnet Prefix  /68</b>]]></text> 
+	</component>
+	
+	<component id="ID_txt09">
+	  <text><![CDATA[Subnet ID extended 1 nibble (4 bits)]]></text> 
+	</component>
+	
+	<component id="ID_txt10">
+		<text><![CDATA[<b>Nibble = 4 bits (1 hexadecimal digit)</b>]]></text> 
+	</component>
+	
+	<component id="ID_txt11">
+	  <text><![CDATA[64 – 4 = 60 bits]]></text> 
+	</component>
+	
+</textcomponents>

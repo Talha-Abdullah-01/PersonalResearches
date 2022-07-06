@@ -1,0 +1,17 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>Architect</b>]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Expert</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b>Professional</b>]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[<b>Associate</b>]]></text> 
+  </component>
+<component id="ID_txt05">
+  <text><![CDATA[<b>Entry</b>]]></text> 
+  </component>
+</textcomponents>

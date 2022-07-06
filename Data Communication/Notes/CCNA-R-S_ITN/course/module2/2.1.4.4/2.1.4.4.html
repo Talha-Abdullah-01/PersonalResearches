@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.1.4.4 Command Syntax Check</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.1.4.4_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IOS Bootcamp</h1>
+        <h2>The Command Structure</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Command Syntax Check</b>
+          </p>
+          <p></p>
+          <p>When a command is submitted by pressing the Enter key, the command line interpreter parses the command from left to right to determine what action is being requested. The IOS generally only provides negative feedback, as shown in Figure 1. If the interpreter understands the command, the requested action is executed and the CLI returns to the appropriate prompt. However, if the interpreter cannot understand the command being entered, it will provide feedback describing what is wrong with the command.</p>
+          <p></p>
+          <p>Figure 2 shows three different types of error messages:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Ambiguous command</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Incomplete command</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Incorrect command </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The <span class="cmd"><b>clock set </b></span>command is an ideal IOS command for experimenting with the various command syntax check help messages as shown in Figure 1. Figure 2 provides help for the three types of error messages.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

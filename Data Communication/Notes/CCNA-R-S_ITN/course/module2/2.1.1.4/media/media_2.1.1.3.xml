@@ -1,0 +1,29 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[Internetwork Operating System for Cisco networking devices]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Security</b>]]></text> 
+  </component>
+  
+  <component id="ID_txt03">
+  <text><![CDATA[<b>Addressing</b>]]></text> 
+  </component>
+  
+   <component id="ID_txt04">
+  <text><![CDATA[<b>Interface</b>]]></text> 
+  </component>
+  
+   <component id="ID_txt05">
+  <text><![CDATA[<b>Routing</b>]]></text> 
+  </component>
+  
+   <component id="ID_txt06">
+  <text><![CDATA[<b>QoS</b>]]></text> 
+  </component>
+  
+   <component id="ID_txt07">
+  <text><![CDATA[<b>Managing Resources</b>]]></text> 
+  </component>
+
+</textcomponents>

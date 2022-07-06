@@ -1,0 +1,45 @@
+<textcomponents>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>Activity - Cable Pinouts </b><br/><br/>Correctly align the wire colors to build a UTP 568B, straight-through cable pinout.<br/><br/>Drag each wire color to its correct placement on the RJ-45 image in the graphic.]]></text>
+</component>
+
+<component id="ID_fig_title">
+<text><![CDATA[Bottom view of an RJ-45 connector]]></text>
+</component>
+
+<component id="ID_txt01">
+  <text><![CDATA[568B Straight-Through Pinout]]></text> 
+  </component>
+
+
+
+  
+<component id="ID_s1_CORRECT_TITLE">
+  <text><![CDATA[<b>Correct</b>]]></text> 
+  </component> 
+<component id="ID_s1_CORRECT_BODY">
+  <text><![CDATA[You have successfully chosen the correct pinout order for a UTP 568B straight-through cable.]]></text>
+  
+
+  </component>   
+<component id="ID_s1_INCORRECT_TITLE">
+  <text><![CDATA[<b>Incorrect</b>]]></text> 
+  </component> 
+<component id="ID_s1_INCORRECT_BODY">
+  <text><![CDATA[You have not successfully chosen the correct pinout order for a UTP 568B straight-through cable. Please click Reset to try again.]]></text> 
+  </component>     
+  
+<component id="transcript">
+  <text><![CDATA[<b>transcript goes here</b>]]></text> 
+  </component>
+
+  <component id='ID_CHECK'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[Reset]]></text>
+</component>
+  
+</textcomponents>

@@ -1,0 +1,105 @@
+﻿<textcomponents>
+
+
+<!--Slide 1-->
+<component id='ID_inst'>
+	<text><![CDATA[<b>Activity – TCP, UDP, or Both</b><br><br>Drag the application layer protocol to its transport layer delivery method – TCP, UDP, or Both.]]></text>
+</component>
+
+<component id='ID_drop_header'>
+	<text><![CDATA[<b>Transport Layer Delivery Method</b>]]></text>
+</component>
+
+<component id='ID_header01'>
+	<text><![CDATA[<b>TCP</b>]]></text>
+</component>
+
+<component id='ID_header02'>
+	<text><![CDATA[<b>UDP</b>]]></text>
+</component>
+
+<component id='ID_header03'>
+	<text><![CDATA[<b>Both</b>]]></text>
+</component>
+
+<component id='ID_drag_header'>
+	<text><![CDATA[<b>Application Layer Protocols</b>]]></text>
+</component>
+
+<!--Drag and Drop -->
+
+<component id='ID_a01_DS'>
+	<text><![CDATA[<font color="#393536">HTTP</font>]]></text>
+</component>
+
+<component id='ID_a02_DS'>
+	<text><![CDATA[<font color="#393536">FTP</font>]]></text>
+</component>
+
+<component id='ID_a03_DS'>
+	<text><![CDATA[<font color="#393536">SMTP</font>]]></text>
+</component>
+
+<component id='ID_a04_DS'>
+	<text><![CDATA[<font color="#393536">Telnet</font>]]></text>
+</component>
+
+
+<component id='ID_b01_DS'>
+	<text><![CDATA[<font color="#393536">DHCP</font>]]></text>
+</component>
+
+<component id='ID_b02_DS'>
+	<text><![CDATA[<font color="#393536">SNMP</font>]]></text>
+</component>
+
+<component id='ID_b03_DS'>
+	<text><![CDATA[<font color="#393536">TFTP</font>]]></text>
+</component>
+
+<component id='ID_b04_DS'>
+	<text><![CDATA[<font color="#393536">VoIP</font>]]></text>
+</component>
+
+<component id='ID_b05_DS'>
+	<text><![CDATA[<font color="#393536">IPTV</font>]]></text>
+</component>
+
+
+
+
+<component id='ID_c01_DS'>
+	<text><![CDATA[<font color="#393536">DNS</font>]]></text>
+</component>
+
+
+
+
+
+
+<!--Drag and Drop-->
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched the application layer protocols to their transport layer delivery methods.]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched the application layer protocols to their transport layer delivery methods. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+</textcomponents>

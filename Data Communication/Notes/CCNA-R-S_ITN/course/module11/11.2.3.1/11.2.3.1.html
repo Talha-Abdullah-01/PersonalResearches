@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.2.3.1 Backup, Upgrade, Update, and Patch</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.2.3.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Keeping the Network Safe</h1>
+        <h2>Mitigating Network Attacks</h2>
+      </div>
+      <div id="content">
+          <p>Antivirus software can detect most viruses and many Trojan horse applications and prevent them from spreading in the network. Antivirus software can be deployed at the user level and at the network level.</p>
+          <p></p>
+          <p>Keeping up to date with the latest developments in these sorts of attacks can also lead to a more effective defense against these attacks. As new virus or Trojan applications are released, enterprises need to keep current with the latest versions of antivirus software as well.</p>
+          <p></p>
+          <p>Worm attack mitigation requires diligence on the part of system and network administration staff. The following are the recommended steps for worm attack mitigation:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Containment</b> - Contain the spread of the worm within the network. Compartmentalize uninfected parts of the network.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Inoculation</b> - Start patching all systems and, if possible, scanning for vulnerable systems.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Quarantine</b> - Track down each infected machine inside the network. Disconnect, remove, or block infected machines from the network.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Treatment</b> - Clean and patch each infected system. Some worms may require complete core system reinstallations to clean the system.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The most effective way to mitigate a worm attack is to download security updates from the operating system vendor and patch all vulnerable systems. This is difficult with uncontrolled user systems in the local network. Administering numerous systems involves the creation of a standard software image (operating system and accredited applications that are authorized for use on client systems) that is deployed on new or upgraded systems. However, security requirements change and already deployed systems may need to have updated security patches installed.</p>
+          <p></p>
+          <p>One solution to the management of critical security patches is to create a central patch server that all systems must communicate with after a set period of time, as shown in the figure. Any patches that are not applied to a host are automatically downloaded from the patch server and installed without user intervention. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

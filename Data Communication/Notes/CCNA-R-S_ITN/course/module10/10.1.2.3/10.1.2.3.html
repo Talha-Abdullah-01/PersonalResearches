@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.1.2.3 Common P2P Applications</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_10.1.2.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Application Layer Protocols</h1>
+        <h2>How Application Protocols Interact with End-User Applications</h2>
+      </div>
+      <div id="content">
+          <p>With P2P applications, each computer in the network running the application can act as a client or a server for the other computers in the network running the application. Common P2P applications include:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>eDonkey</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>eMule</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Shareaza</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>BitTorrent</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Bitcoin</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>LionShare</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Some P2P applications are based on the Gnutella protocol. They enable people to share files on their hard disks with others. As shown in the figure, Gnutella-compatible client software allows users to connect to Gnutella services over the Internet and to locate and access resources shared by other Gnutella peers. Many client applications are available for accessing the Gnutella network, including BearShare, Gnucleus, LimeWire, Morpheus, WinMX, and XoloX.</p>
+          <p></p>
+          <p>While the Gnutella Developer Forum maintains the basic protocol, application vendors often develop extensions to make the protocol work better with their application.</p>
+          <p></p>
+          <p>Many P2P applications do not use a central database to record all the files available on the peers. Instead, the devices on the network each tell the others what files are available when queried, and use the file sharing protocol and services to support locating resources.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

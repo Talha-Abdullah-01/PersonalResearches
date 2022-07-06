@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.4.4.7 PPP Frame</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_4.4.4.7_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Media Access Control</h1>
+        <h2>Data Link Frame</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Point-to-Point Protocol</b>
+          </p>
+          <p></p>
+          <p>Another data link layer protocol is the Point-to-Point Protocol (PPP). PPP is a protocol used to deliver frames between two nodes. Unlike many data link layer protocols that are defined by electrical engineering organizations, the PPP standard is defined by RFCs. PPP was developed as a WAN protocol and remains the protocol of choice to implement many serial WANs. PPP can be used on various physical media, including twisted pair, fiber-optic lines, and satellite transmission, as well as for virtual connections. </p>
+          <p></p>
+          <p>PPP uses a layered architecture. To accommodate the different types of media, PPP establishes logical connections, called sessions, between two nodes. The PPP session hides the underlying physical media from the upper PPP protocol. These sessions also provide PPP with a method for encapsulating multiple protocols over a point-to-point link. Each protocol encapsulated over the link establishes its own PPP session.</p>
+          <p></p>
+          <p>PPP also allows the two nodes to negotiate options within the PPP session. This includes authentication, compression, and multilink (the use of multiple physical connections). </p>
+          <p></p>
+          <p>Refer to the figure for the basic fields in a PPP frame.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

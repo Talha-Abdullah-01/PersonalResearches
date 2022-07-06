@@ -1,0 +1,31 @@
+﻿<textcomponents>
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>Saving to a Text File in HyperTerminal</b>]]></text>
+</component>
+
+
+<component id="ID_title_02">
+<text><![CDATA[<b>In the terminal session:</b>]]></text>
+</component>
+<component id="ID_body02">
+  <text><![CDATA[<textformat blockindent='-16'>1. Start the text capture process<br/>2. Issue a <font face="_typewriter"><b>show running-config </b></font>command<br/>3. Stop the capture process<br/>4. Save the text file</textformat>]]></text> 
+  </component>
+  
+  
+  <component id="ID_s1_title">
+<text><![CDATA[<b>Saving to a Text File in Tera Term </b>]]></text>
+</component>
+
+
+<component id="ID_title_01">
+<text><![CDATA[<b>In the terminal session:</b>]]></text>
+</component>
+<component id="ID_body01">
+  <text><![CDATA[<textformat blockindent='-16'>1. Start the log process<br/>2. Issue a <font face="_typewriter"><b>show running-config</b></font> command<br/>3. Close the log</textformat>]]></text> 
+  </component>
+  
+  
+  
+  
+</textcomponents>

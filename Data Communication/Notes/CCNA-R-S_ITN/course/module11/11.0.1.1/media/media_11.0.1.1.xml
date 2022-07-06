@@ -1,0 +1,5 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<br/><b>Upon completion of this chapter you will be able to:</b><br/><br/><textformat blockindent='-14'><li>Identify the devices and protocols used in a small network.</li><li>Explain how a small network serves as the basis of larger networks.</li><li>Describe the need for basic security measures on network devices.</li><li>Identify security vulnerabilities and general mitigation techniques.</li><li>Configure network devices with device hardening features to mitigate security threats.</li><li>Use the output of the <font face="Courier New"><b> ping </b></font>and<font face="Courier New"><b> tracert </b></font> commands to establish relative network performance.</li><li>Use basic<font face="Courier New"><b> show </b></font>commands to verify the configuration and status of a device interface.</li><li>Use the basic host and IOS commands to acquire information about the devices in a network.</li><li>Explain file systems on routers and switches.</li><li>Apply the commands to back up and restore and IOS configuration file.</li></textformat><br/>]]></text>
+</component> 
+</textcomponents>

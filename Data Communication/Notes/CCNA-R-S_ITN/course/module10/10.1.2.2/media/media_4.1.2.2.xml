@@ -1,0 +1,57 @@
+﻿<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>Peer-to-Peer Applications</b>]]></text>
+	</component>
+	
+	<component id="ID_txt01">
+		<text><![CDATA[Network]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[Client and server in the same communication]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[<b>Client and server</b>]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[<b>Client and server</b>]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[Both clients simultaneously<br/><textformat blockindent='-11'><ul><li class="first">Initiate a message</li><li class="second">Receive a message</li></ul></textformat>]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[Send]]></text>
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[Receive]]></text>
+	</component>
+	<component id="ID_txt08">
+		<text><![CDATA[<b>Instant Message]]></text>
+	</component>
+	<component id="ID_txt09">
+		<text><![CDATA[<b>Instant Message</b>]]></text>
+	</component>
+	<component id="ID_txt10">
+		<text><![CDATA[Receive]]></text>
+	</component>
+	<component id="ID_txt11">
+		<text><![CDATA[Send]]></text>
+	</component>
+	<component id="ID_txt12">
+		<text><![CDATA[<p class="ID_txt12">Meeting tonight.</p>]]></text>
+	</component>
+	<component id="ID_txt13">
+		<text><![CDATA[<p class="ID_txt13">I'll be there.</p>]]></text>
+	</component>	
+	<component id="ID_txt14">
+		<text><![CDATA[<p class="ID_txt12">Meeting tonight.</p>]]></text>
+	</component>
+	<component id="ID_txt15">
+		<text><![CDATA[<p class="ID_txt13">I'll be there.</p>]]></text>
+	</component>
+	<component id="ID_txt16">
+		<text><![CDATA[<p class="ID_txt16">Good.</p>]]></text>
+	</component>
+	<component id="ID_txt17">
+		<text><![CDATA[<p class="ID_txt16">Good.</p>]]></text>
+	</component>
+</textcomponents>

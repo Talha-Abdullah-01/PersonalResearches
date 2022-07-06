@@ -1,0 +1,7 @@
+<textcomponents>
+
+	<component id="ID_txt01">
+		<text><![CDATA[<br/><b>Upon completion of this chapter you will be able to:</b><br /><br /><textformat blockindent="-14"><li>Explain the purpose of Cisco IOS.</li><li>Explain how to access and navigate Cisco IOS to configure network devices.</li><li>Describe the command structure of Cisco IOS software.</li><li>Configure hostnames on a Cisco IOS device using the CLI.</li><li>Use Cisco IOS commands to limit access to device configurations.</li><li>Use Cisco IOS commands to save the running configuration.</li><li>Explain how devices communicate across network media.</li><li>Configure a host device with an IP address.</li><li>Verify connectivity between two end devices.</li></textformat><br/>]]></text> 
+	</component>
+	
+</textcomponents>

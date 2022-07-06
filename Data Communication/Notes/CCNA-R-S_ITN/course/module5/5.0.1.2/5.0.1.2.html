@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.0.1.2 Activity – Join My Social Circle!</title>
+    <!-- Activity -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_5.0.1.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Ethernet</h1>
+        <h2>Introduction</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Join My Social Circle!</b>
+          </p>
+          <p></p>
+          <p>Much of our network communication takes the form of messaging (text or instant), video contact, social media postings, etc.</p>
+          <p></p>
+          <p>For this activity, choose one of the communication networks you use most:</p>
+          <p>
+            <ul>
+              <li>Text (or instant) messaging</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Audio/video conferencing</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Emailing</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Gaming</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Now that you have selected a network communication type, record your answers to the following questions:</p>
+          <p>
+            <ul>
+              <li>Is there a procedure you must follow to register others and yourself so that you form a communications group?</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>How do you initiate contact with the person/people with whom you wish to communicate?</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>How do you limit your conversations so they are received by only those with whom you wish to communicate?</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Be prepared to discuss your recorded answers in class.</p>
+          <p></p>
+          <p>
+            <a href="../../files/5.0.1.2%20Join%20My%20Social%20Circle%20Instructions.pdf" target="_blank">Class Activity - Join My Social Circle Instructions</a>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

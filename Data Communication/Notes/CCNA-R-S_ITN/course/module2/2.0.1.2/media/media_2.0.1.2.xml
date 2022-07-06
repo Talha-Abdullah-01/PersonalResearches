@@ -1,0 +1,35 @@
+<textcomponents>
+
+	<component id="ID_txt01">
+		<text><![CDATA[<i>All Cisco network devices use an operating system otherwise known as an internetwork operating system or IOS.</i>]]></text>
+	</component>
+
+	<component id="ID_txt02">
+		<text><![CDATA[<b>Security</b>]]></text> 
+	</component>
+  
+	<component id="ID_txt03">
+		<text><![CDATA[<b>Addressing</b>]]></text> 
+	</component>
+
+	<component id="ID_txt04">
+		<text><![CDATA[<b>Interface</b>]]></text> 
+	</component>
+
+	<component id="ID_txt05">
+		<text><![CDATA[<b>Routing</b>]]></text> 
+	</component>
+
+	<component id="ID_txt06">
+		<text><![CDATA[<b>QoS</b>]]></text> 
+	</component>
+
+	<component id="ID_txt07">
+		<text><![CDATA[<b>Managing Resources</b>]]></text> 
+	</component>
+	
+	<component id="ID_footer">
+		<text><![CDATA[]]></text> 
+	</component>
+	
+</textcomponents>

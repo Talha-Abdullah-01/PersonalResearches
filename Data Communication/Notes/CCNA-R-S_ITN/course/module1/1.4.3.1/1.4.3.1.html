@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.4.3.1 Security threats</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_1.4.3.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>The Changing Network Environment</h1>
+        <h2>Network Security</h2>
+      </div>
+      <div id="content">
+          <p>Network security is an integral part of computer networking, regardless of whether the network is limited to a home environment with a single connection to the Internet, or as large as a corporation with thousands of users. The network security implemented must take into account the environment, as well as the tools and requirements of the network. It must be able to secure data, while still allowing for the quality of service that is expected of the network.</p>
+          <p></p>
+          <p>Securing a network involves protocols, technologies, devices, tools, and techniques to secure data and mitigate threats. Many external network security threats today are spread over the Internet. The most common external threats to networks include:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Viruses, worms, and Trojan horses</b> - malicious software and arbitrary code running on a user device</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Spyware and adware</b> - software installed on a user device that secretly collects information about the user</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Zero-day attacks, also called zero-hour attacks</b> - an attack that occurs on the first day that a vulnerability becomes known</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Hacker attacks</b> - an attack by a knowledgeable person to user devices or network resources</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Denial of service attacks</b> - attacks designed to slow or crash applications and processes on a network device</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Data interception and theft</b> - an attack to capture private information from an organization’s network</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Identity theft</b> - an attack to steal the login credentials of a user in order to access private data</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>It is equally important to consider internal threats. There have been many studies that show that the most common data breaches happen because of internal users of the network. This can be attributed to lost or stolen devices, accidental misuse by employees, and in the business environment, even malicious employees. With the evolving BYOD strategies, corporate data is much more vulnerable. Therefore, when developing a security policy, it is important to address both external and internal security threats.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

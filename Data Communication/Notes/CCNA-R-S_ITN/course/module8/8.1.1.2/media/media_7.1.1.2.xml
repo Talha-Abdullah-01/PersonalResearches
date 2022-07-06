@@ -1,0 +1,136 @@
+<textcomponents>
+
+ <component id="ID_s1_btn01">
+  <text><![CDATA[<b>Dotted Decimal Address</b>]]></text>
+  </component>
+<component id="ID_s1_btn02">
+  <text><![CDATA[<b>Octets</b>]]></text>
+  </component>
+<component id="ID_s1_btn03">
+  <text><![CDATA[<b>32-Bit Address</b>]]></text> 
+  </component>
+  
+  <component id="ID_s1_txt01">
+  <text><![CDATA[192.168.10.10 is an IP address that is assigned to a computer.]]></text> 
+  </component>
+   <component id="ID_s1_txt02">
+  <text><![CDATA[This address is made up of four different octets.]]></text> 
+  </component>
+   <component id="ID_s1_txt03">
+  <text><![CDATA[The computer stores the address as the entire 32-bit data stream.]]></text> 
+  </component>
+  
+  <component id="ID_s2_txt01">
+  <text><![CDATA[The company using this IP address is on network 192.168.10.10]]></text> 
+  </component>
+  
+   <component id="ID_s3_txt01">
+  <text><![CDATA[The company using this IP address is on network 192.168.10.10]]></text> 
+  </component>
+  
+   <component id="ID_s4_txt01">
+  <text><![CDATA[The company using this IP address is on network 192.168.10.10]]></text> 
+  </component>
+
+  <component id="ID_s2_txt02">
+    <text><![CDATA[<b>Legend</b>]]></text>
+  </component>
+  
+  
+  
+  <component id="ID_s2_table01">
+  <text>
+      <![CDATA[<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#0E6360' glow='true' glowcolor='#808080' cellpadding='6'>
+          <tr><td colspan='9' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#434321'><span style="color:#0E6360">.</span></font>
+		  </td>
+		  </tr>
+
+       <tr>
+		<td bgcolor='#EFF8F7' width="100" valign="top"><font color='#393536' size="11">Radix</font></td>
+		<td bgcolor='#EFF8F7' class="setbox" valign="top"><font color='#393536' size="11">2</font></td>
+		<td bgcolor='#EFF8F7' class="setbox" valign="top"><font color='#393536' size="11">2</font></td>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' size="11">2</font></td>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' size="11">2</font></td>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' size="11">2</font></td>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' size="11">2</font></td>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' size="11">2</font></td>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' size="11">2</font></td>
+	</tr>		     
+	
+	<tr>
+		<td bgcolor='#ffffff' width="100" valign="top"><font color='#393536' size="11">Exponent</font></td>
+		<td bgcolor='#ffffff' class="setbox" valign="top"><font color='#393536' size="11">7</font></td>
+		<td bgcolor='#ffffff' class="setbox" valign="top"><font color='#393536' size="11">6</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">5</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">4</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">3</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">2</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">1</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">0</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' size="11">Octet Bit Values</font></td>
+		<td bgcolor='#EFF8F7' class="setbox" valign="top"><b><font color='#F68026' size="11">128</font></b></td>
+		<td bgcolor='#EFF8F7' class="setbox" valign="top"><b><font color='#F68026' size="11">64</font></b></td>
+		<td bgcolor='#EFF8F7' valign="top"><b><font color='#F68026' size="11">32</font></b></td>
+		<td bgcolor='#EFF8F7' valign="top"><b><font color='#F68026' size="11">16</font></b></td>
+		<td bgcolor='#EFF8F7' valign="top"><b><font color='#F68026' size="11">8</font></b></td>
+		<td bgcolor='#EFF8F7' valign="top"><b><font color='#F68026' size="11">4</font></b></td>
+		<td bgcolor='#EFF8F7' valign="top"><b><font color='#F68026' size="11">2</font></b></td>
+		<td bgcolor='#EFF8F7' valign="top"><b><font color='#F68026' size="11">1</font></b></td>
+	</tr>
+	<tr>
+		<td bgcolor='#EFF8F7' valign="top"><font color='#393536' size="11">Binary Address</font></td>
+		<td bgcolor='#C1ABD1' class="setbox" valign="top"><font color='#393536' size="11"><b>1</b></font></td>
+		<td bgcolor='#C1ABD1' class="setbox" valign="top"><font color='#393536' size="11"><b>1</b></font></td>
+		<td bgcolor='#E8A0AC' valign="top"><font color='#393536' size="11">0</font></td>
+		<td bgcolor='#E8A0AC' valign="top"><font color='#393536' size="11">0</font></td>
+		<td bgcolor='#E8A0AC' valign="top"><font color='#393536' size="11">0</font></td>
+		<td bgcolor='#E8A0AC' valign="top"><font color='#393536' size="11">0</font></td>
+		<td bgcolor='#E8A0AC' valign="top"><font color='#393536' size="11">0</font></td>
+		<td bgcolor='#E8A0AC' valign="top"><font color='#393536' size="11">0</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">Binary Bit Values</font></td>
+		<td bgcolor='#FEED95' class="setbox" valign="top"><font color='#393536' size="11"><b>128</b></font></td>
+		<td bgcolor='#FEED95' class="setbox" valign="top"><font color='#393536' size="11"><b>64</b></font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">0</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">0</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">0</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">0</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">0</font></td>
+		<td bgcolor='#ffffff' valign="top"><font color='#393536' size="11">0</font></td>
+	</tr>
+	</table>]]></text>
+  </component>
+ 
+ 
+ 
+ 
+ 
+    <component id="ID_txt05">
+  <text><![CDATA[<b>Exponent</b>]]></text> 
+  </component>
+  <component id="ID_txt06">
+  <text><![CDATA[<b>Octet Bit Values</b>]]></text> 
+  </component>
+  <component id="ID_txt07">
+  <text><![CDATA[<b>Binary Address</b>]]></text> 
+  </component>
+  <component id="ID_txt08">
+  <text><![CDATA[<b>Binary Bit values</b>]]></text> 
+  </component>
+  <component id="ID_txt09">
+  <text><![CDATA[128 + 64 = 192]]></text> 
+  </component>
+  <component id="ID_txt10">
+  <text><![CDATA[<b>Add the binary bit values.</b>]]></text> 
+  </component>
+  <component id="ID_txt11">
+  <text><![CDATA[-  1 in this position means add the octet bit value to the total]]></text> 
+  </component>
+  <component id="ID_txt12">
+  <text><![CDATA[-  0 in this position means 0 is added to the total]]></text> 
+  </component>
+  
+</textcomponents>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.2.1.2 Device Names</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.2.1.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Getting Basic</h1>
+        <h2>Hostnames</h2>
+      </div>
+      <div id="content">
+          <p>When configuring a networking device, one of the first steps is configuring a unique device name, or hostname. Hostnames appear in CLI prompts, can be used in various authentication processes between devices, and should be used on topology diagrams.</p>
+          <p></p>
+          <p>Hostnames are configured on the active networking device. If the device name is not explicitly configured, a factory-assigned default device name is used by Cisco IOS. The default name for a Cisco IOS switch is "Switch." </p>
+          <p></p>
+          <p>Imagine if an internetwork had several switches that were all named with the default name "Switch" (as shown in the figure). This could create considerable confusion during network configuration and maintenance. When accessing a remote device using SSH, it is important to have confirmation that you are connected to the proper device. If all devices were left with their default names, it would be difficult to identify that the proper device is connected.</p>
+          <p></p>
+          <p>By choosing names wisely, it is easier to remember, discuss, document, and identify network devices. To name devices in a consistent and useful way requires the establishment of a naming convention that spans the company or, at least, the location. It is a good practice to create the naming convention at the same time as the addressing scheme to allow for continuity within an organization. </p>
+          <p></p>
+          <p>Some guidelines for naming conventions are that names should:</p>
+          <p>
+            <ul>
+              <li>Start with a letter</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Contain no spaces</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>End with a letter or digit</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Use only letters, digits, and dashes</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Be less than 64 characters in length</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The hostnames used in the device IOS preserve capitalization and lowercase characters. Therefore, it allows you to capitalize a name as you ordinarily would. This contrasts with most Internet naming schemes, where uppercase and lowercase characters are treated identically. </p>
+          <p></p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

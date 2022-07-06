@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.2.3.3 IPv6 Unicast Addresses</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_8.2.3.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IPv6 Network Addresses</h1>
+        <h2>Types of IPv6 Addresses</h2>
+      </div>
+      <div id="content">
+          <p>An IPv6 unicast address uniquely identifies an interface on an IPv6-enabled device. A packet sent to a unicast address is received by the interface that is assigned that address. Similar to IPv4, a source IPv6 address must be a unicast address. The destination IPv6 address can be either a unicast or a multicast address.</p>
+          <p></p>
+          <p>There are six types of IPv6 unicast addresses.</p>
+          <p></p>
+          <p>
+            <b>Global unicast</b>
+          </p>
+          <p>A global unicast address is similar to a public IPv4 address. These are globally unique, Internet routable addresses. Global unicast addresses can be configured statically or assigned dynamically. There are some important differences in how a device receives its IPv6 address dynamically compared to DHCP for IPv4. </p>
+          <p></p>
+          <p>
+            <b>Link-local</b>
+          </p>
+          <p>Link-local addresses are used to communicate with other devices on the same local link. With IPv6, the term link refers to a subnet. Link-local addresses are confined to a single link. Their uniqueness must only be confirmed on that link because they are not routable beyond the link. In other words, routers will not forward packets with a link-local source or destination address. </p>
+          <p></p>
+          <p>
+            <b>Loopback</b>
+          </p>
+          <p>The loopback address is used by a host to send a packet to itself and cannot be assigned to a physical interface. Similar to an IPv4 loopback address, you can ping an IPv6 loopback address to test the configuration of TCP/IP on the local host. The IPv6 loopback address is all-0s except for the last bit, represented as ::1/128 or just ::1 in the compressed format.</p>
+          <p></p>
+          <p>
+            <b>Unspecified address</b>
+          </p>
+          <p>An unspecified address is an all-0s address represented in the compressed format as ::/128 or just :: in the compressed format. It cannot be assigned to an interface and is only be used as a source address in an IPv6 packet. An unspecified address is used as a source address when the device does not yet have a permanent IPv6 address or when the source of the packet is irrelevant to the destination. </p>
+          <p></p>
+          <p>
+            <b>Unique local</b>
+          </p>
+          <p>IPv6 unique local addresses have some similarity to RFC 1918 private addresses for IPv4, but there are significant differences as well. Unique local addresses are used for local addressing within a site or between a limited number of sites. These addresses should not be routable in the global IPv6. Unique local addresses are in the range of FC00::/7 to FDFF::/7. </p>
+          <p></p>
+          <p>With IPv4, private addresses are combined with NAT/PAT to provide a many-to-one translation of private-to-public addresses. This is done because of the limited availability of IPv4 address space. Many sites also use the private nature of RFC 1918 addresses to help secure or hide their network from potential security risks. However, this was never the intended use of these technologies and the IETF has always recommended that sites take the proper security precautions on their Internet facing router. Although, IPv6 does provide for site specific addressing, it is not intended to be used to help hide internal IPv6-enabled devices from the IPv6 Internet. IETF recommends that limiting access to devices should be accomplished using proper, best-practice security measures.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: The original IPv6 specification defined site-local addresses for a similar purpose, using the prefix range FEC0::/10. There were several ambiguities in the specification and site-local addresses were deprecated by the IETF in favor of unique local addresses.</p>
+          <p></p>
+          <p>
+            <b>IPv4 embedded</b>
+          </p>
+          <p>The last type of unicast address type is the IPv4 embedded address. These addresses are used to help transition from IPv4 to IPv6. IPv4 embedded addresses are beyond the scope of this course.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

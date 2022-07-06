@@ -1,0 +1,49 @@
+﻿<textcomponents>
+<component id="ID_textbox">
+<text><![CDATA[<b>Data Encapsulation</b><textformat blockindent='-16'><LI>Frame delimiting</LI><LI>Addressing</LI><LI>Error detection</LI></textformat><br/><b>Media Access Control</b><textformat blockindent='-16'><LI>Control of frame placement on and off the media</LI><LI>Media recovery</LI></textformat>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Physical Layer</b>]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[Logical Link Control Sublayer]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[802.3 Media Access Control]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[Physical Signaling Sublayer]]></text> 
+  </component>
+<component id="ID_txt05">
+  <text><![CDATA[Physical Medium]]></text> 
+  </component>
+<component id="ID_txt06">
+  <text><![CDATA[10BASE-5 (500m) 50 Ohm<br/>Coax N-Style]]></text> 
+  </component>
+<component id="ID_txt07">
+  <text><![CDATA[10BASE-2 (185m) 50 Ohm<br/>Coax BNC]]></text> 
+  </component>
+<component id="ID_txt08">
+  <text><![CDATA[10BASE-T (100m) 100 Ohm<br/>UTP RJ-45]]></text> 
+  </component>
+<component id="ID_txt09">
+  <text><![CDATA[100BASE-TX (100m) 100 Ohm<br/>UTP RJ-45]]></text> 
+  </component>
+<component id="ID_txt10">
+  <text><![CDATA[1000BASE-CX (25m) 150 Ohm<br/>STP mini-DB-9]]></text>
+  </component>
+<component id="ID_txt11">
+  <text><![CDATA[1000BASE-T (100m) 100 Ohm<br/>UTP RJ-45]]></text>
+  </component>
+<component id="ID_txt12">
+  <text><![CDATA[1000BASE-ST (220-550m)<br/>MM Fiber SC]]></text>
+  </component>
+<component id="ID_txt13">
+  <text><![CDATA[1000BASE-LX (550-5000m)<br/>MM or SM Fiber SC]]></text>
+  </component>
+
+  <component id="ID_txt14">
+     <text><![CDATA[<b>Data Link Layer</b>]]></text>
+     </component>
+</textcomponents>

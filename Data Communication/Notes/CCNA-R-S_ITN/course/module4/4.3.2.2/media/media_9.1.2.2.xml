@@ -1,0 +1,35 @@
+﻿<textcomponents>	
+	<component id="ID_title">
+		<text><![CDATA[<b>Frame Fields</b>]]></text>
+	</component>	
+	<component id="ID_txt01">
+		<text><![CDATA[Frame Start]]></text>
+	</component>	
+	<component id="ID_txt02">
+		<text><![CDATA[Header]]></text> 
+	</component>	
+	<component id="ID_txt03">
+		<text><![CDATA[Packet<br>(Data)]]></text> 
+	</component>	
+	<component id="ID_txt04">
+		<text><![CDATA[Trailer]]></text> 
+	</component>	
+	<component id="ID_txt05">
+		<text><![CDATA[Addressing]]></text> 
+	</component>	
+	<component id="ID_txt06">
+		<text><![CDATA[Type]]></text> 
+	</component>	
+	<component id="ID_txt07">
+		<text><![CDATA[Control]]></text> 
+	</component>	
+	<component id="ID_txt08">
+		<text><![CDATA[Error Detection]]></text> 
+	</component>	
+	<component id="ID_txt09">
+		<text><![CDATA[Frame Stop]]></text> 
+	</component>		
+	<component id="ID_txt13">
+		<text><![CDATA[Data]]></text> 
+	</component>
+</textcomponents>

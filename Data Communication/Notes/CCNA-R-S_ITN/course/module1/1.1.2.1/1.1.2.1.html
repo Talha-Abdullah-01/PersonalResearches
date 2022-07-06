@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.1.2.1 Networks of Many Sizes</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_1.1.2.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Globally Connected</h1>
+        <h2>Providing Resources in a Network</h2>
+      </div>
+      <div id="content">
+          <p>Networks come in all sizes. They can range from simple networks consisting of two computers to networks connecting millions of devices. </p>
+          <p></p>
+          <p>Simple networks installed in homes enable sharing of resources, such as printers, documents, pictures and music between a few local computers. </p>
+          <p></p>
+          <p>Home office networks and small office networks are often set up by individuals that work from a home or remote office and need to connect to a corporate network or other centralized resources. Additionally, many self-employed entrepreneurs use home office and small office networks to advertise and sell products, order supplies and communicate with customers. Communication over a network is usually more efficient and less expensive than traditional forms of communication, such as regular mail or long distance phone calls.</p>
+          <p></p>
+          <p>In businesses and large organizations, networks can be used on an even broader scale to allow employees to provide consolidation, storage, and access to information on network servers.  Networks also allow for rapid communication such as email, instant messaging, and collaboration among employees. In addition to internal organizational benefits, many organizations use their networks to provide products and services to customers through their connection to the Internet.</p>
+          <p></p>
+          <p>The Internet is the largest network in existence. In fact, the term Internet means a ‘network of networks’. The Internet is literally a collection of interconnected private and public networks, such as the ones described above. Businesses, small office networks, and even home networks usually provide a shared connection to the Internet.</p>
+          <p></p>
+          <p>It is incredible how quickly the Internet has become an integral part of our daily routines.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

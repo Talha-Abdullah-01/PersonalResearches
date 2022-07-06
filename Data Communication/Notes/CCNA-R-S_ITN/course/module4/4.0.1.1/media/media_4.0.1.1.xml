@@ -1,0 +1,7 @@
+<textcomponents>
+
+	<component id="ID_txt01">
+		<text><![CDATA[<br/><b>Upon completion of this chapter you will be able to:</b><br/><br/><textformat blockindent="-14"><li>Identify device connectivity options.</li><li>Describe the purpose and functions of the physical layer in the network.</li><li>Describe basic principles of the physical layer standards.</li><li>Identify the basic characteristics of copper cabling.</li><li>Build a UTP cable used in Ethernet networks.</li><li>Describe fiber-optic cabling and its main advantages over other media.</li><li>Describe wireless media.</li><li>Select the appropriate media for a given requirement and connect devices.</li><li>Describe the purpose and function of the data link layer in preparing communication for transmission on specific media.</li><li>Describe the Layer 2 frame structure and identify generic fields.</li><li>Identify several sources for the protocols and standards used by the data link layer.</li><li>Compare the functions of logical topologies and physical topologies.</li><li>Describe the basic characteristics of media access control methods on WAN topologies.</li><li>Describe the basic characteristics of media access control methods on LAN topologies.</li><li>Describe the characteristics and functions of the data link frame.</li></textformat><br/>]]></text> 
+	</component>
+	
+</textcomponents>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.1.2.4 First Host and Last Host Addresses</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_8.1.2.4_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IPv4 Network Addresses</h1>
+        <h2>IPv4 Subnet Mask</h2>
+      </div>
+      <div id="content">
+          <p>To ensure that all hosts within a network are assigned a unique IP address within that network range, it is important to identify the first host address and the last host address. Hosts within a network can be assigned IP addresses within this range. </p>
+          <p></p>
+          <p>
+            <b>First Host Address</b>
+          </p>
+          <p></p>
+          <p>As seen in Figure 1, the host portion of the first host address will contain all 0 bits with a 1 bit for the lowest order or right-most bit. This address is always one greater than the network address. In this example the first host address on the 10.1.1.0/24 network is 10.1.1.1. It is common in many addressing schemes to use the first host address for the router or default gateway address.</p>
+          <p></p>
+          <p>
+            <b>Last Host Address</b>
+          </p>
+          <p></p>
+          <p>The host portion of the last host address will contain all 1 bits with a 0 bit for the lowest order or right-most bit. This address is always one less than the broadcast address. As seen in Figure 2, the last host address on the 10.1.1.0/24 network is 10.1.1.254.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

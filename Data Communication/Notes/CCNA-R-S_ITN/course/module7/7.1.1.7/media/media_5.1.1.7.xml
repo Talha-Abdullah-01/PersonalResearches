@@ -1,0 +1,99 @@
+﻿<textcomponents>
+	
+	<component id="ID_title">
+		<text><![CDATA[<b>Transport Layer Protocols</b>]]></text>
+	</component>
+	
+	<component id="ID_txt01">
+		<text><![CDATA[Application]]></text>
+	</component>
+	
+	<component id="ID_txt02">
+		<text><![CDATA[Transport]]></text>
+	</component>
+	
+	<component id="ID_txt03">
+		<text><![CDATA[Internet]]></text>
+	</component>
+	
+	<component id="ID_txt04">
+		<text><![CDATA[Network Access]]></text>
+	</component>
+	
+	<component id="ID_txt05">
+		<text><![CDATA[<b>TCP/IP Model</b>]]></text>
+	</component>
+	
+	<component id="ID_txt06">
+		<text><![CDATA[Application]]></text>
+	</component>
+	
+	<component id="ID_txt07">
+	<text><![CDATA[Presentation]]></text>
+	</component>
+	
+	<component id="ID_txt08">
+	<text><![CDATA[Session]]></text>
+	</component>
+	
+	<component id="ID_txt09">
+	<text><![CDATA[Transport]]></text>
+	</component>
+	
+	<component id="ID_txt10">
+	<text><![CDATA[Network]]></text>
+	</component>
+	
+	<component id="ID_txt11">
+	<text><![CDATA[Data Link]]></text>
+	</component>
+	
+	<component id="ID_txt12">
+		<text><![CDATA[Physical]]></text>
+	</component>
+	
+	<component id="ID_txt13">
+		<text><![CDATA[Application developers choose the appropriate transport layer protocol based on the nature of the application.]]></text>
+	</component>
+	
+	<component id="ID_txt14">
+		<text><![CDATA[IP Telephony]]></text>
+	</component>
+	
+	<component id="ID_txt20">
+		<text><![CDATA[Streaming Video]]></text>
+	</component>
+	
+	<component id="ID_txt15">
+		<text><![CDATA[SMTP/POP (Email)]]></text>
+	</component>
+	
+	<component id="ID_txt21">
+		<text><![CDATA[HTTP]]></text>
+	</component>
+	
+	<component id="ID_txt16">
+		<text><![CDATA[Required protocol properties:<br/><textformat blockindent='-18'><ul class="bulletIndent15"><li>Fast</li><li>Low overhead</li><li>Does not require acknowledgements</li><li>Does not resend lost data</li><li>Delivers data as it arrives</li></ul></textformat>]]></text>
+	</component>
+	
+	<component id="ID_txt17">
+		<text><![CDATA[Required protocol properties:<br/><textformat blockindent='-18'><ul class="bulletIndent15"><li>Reliable</li><li>Acknowledge data</li><li>Resends lost data</li><li>Delivers data in order sent</li></ul></textformat>]]></text>
+	</component>
+	
+	<component id="ID_txt18">
+		<text><![CDATA[<b>OSI Model</b>]]></text>
+	</component>
+	
+	<component id="ID_txt19REMOVED">
+		<text><![CDATA[Email]]></text>
+	</component>
+
+	<component id="ID_txt22">
+		<text><![CDATA[<b>UDP</b>]]></text>
+	</component>
+
+	<component id="ID_txt23">
+		<text><![CDATA[<b>TCP</b>]]></text>
+	</component>
+
+</textcomponents>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.0.1.2 Class Activity - It Is Just an Operating System</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.0.1.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Configuring a Network Operating System</h1>
+        <h2>Introduction</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>It Is Just an Operating System!</b>
+          </p>
+          <p></p>
+          <p>In this activity, imagine that you are employed as an engineer for a car manufacturing company. The company is currently working on a new car model.  This model will have selected functions which can be controlled by the driver giving specific voice commands. </p>
+          <p></p>
+          <p>Design a set of commands used by this voice-activated control system, and to identify how they are going to be executed. The functions of the car that can be controlled by voice commands are:</p>
+          <p>
+            <ul>
+              <li>Lights</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Wipers</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Radio</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Telephone set </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Air conditioning</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Ignition</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <a href="../../files/2.0.1.2%20Class%20Activity%20-%20It%20is%20Just%20an%20Operating%20System%20Instructions.pdf" target="_blank">Class Activity - It Is Just an Operating System Instructions</a>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

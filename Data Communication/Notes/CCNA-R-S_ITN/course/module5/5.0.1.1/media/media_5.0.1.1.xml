@@ -1,0 +1,7 @@
+<textcomponents>
+
+	<component id="ID_txt01">
+		<text><![CDATA[<br/><b>Upon completion of this chapter you will be able to:</b><br/><br/><textformat blockindent="-14"><li>Describe the operation of the Ethernet sublayers.</li><li>Identify the major fields of the Ethernet frame.</li><li>Describe the purpose and characteristics of the Ethernet MAC address.</li><li>Describe the purpose of ARP.</li><li>Explain how ARP requests impact network and host performance.</li><li>Explain basic switching concepts.</li><li>Compare fixed configuration and modular switches.</li><li>Configure a Layer 3 switch.</li></textformat><br/>]]></text> 
+	</component>
+	
+</textcomponents>

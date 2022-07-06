@@ -1,0 +1,59 @@
+<textcomponents>
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>EUI-64 Process</b>]]></text>
+	</component>
+	
+	<component id="ID_s1_txt01">
+		<text><![CDATA[OUI (Organization Unique Identifier) 24 bits]]></text>
+	</component>
+	
+	<component id="ID_s1_txt02">
+		<text><![CDATA[Device Identifier 24 bits]]></text>
+	</component>
+	
+	<component id="ID_s1_txt03">
+		<text><![CDATA[EUI-64 Process]]></text>
+	</component>
+	
+	<component id="ID_s1_txt04">
+		<text><![CDATA[Binary]]></text>
+	</component>
+	
+	<component id="ID_s1_txt05">
+		<text><![CDATA[Binary]]></text>
+	</component>
+	
+	<component id="ID_s1_txt06">
+		<text><![CDATA[Binary]]></text>
+	</component>
+	
+	<component id="ID_s1_txt07">
+		<text><![CDATA[Binary]]></text>
+	</component>
+	
+	
+	
+	<component id="ID_s1_txt08">
+		<text><![CDATA[<b>Step 1: Split the MAC address</b>]]></text>
+	</component>
+	
+	<component id="ID_s1_txt09">
+		<text><![CDATA[<b>Step 2: Insert FFFE</b>]]></text>
+	</component>
+	
+	<component id="ID_s1_txt10">
+		<text><![CDATA[<b>Step 3: Flip the U/L bit</b>]]></text>
+	</component>
+	
+	<component id="ID_s1_txt11">
+		<text><![CDATA[Modified EUI-64 Interface ID in Hexadecimal Notation]]></text>
+	</component>
+	
+	<component id="ID_s2_txt01">
+		<text><![CDATA[Link-local addresses using EUI-64]]></text>
+	</component>
+	
+	<component id="ID_s2_txt02">
+		<text><![CDATA[&lt;Output Omitted&gt;]]></text>
+	</component>
+</textcomponents> 

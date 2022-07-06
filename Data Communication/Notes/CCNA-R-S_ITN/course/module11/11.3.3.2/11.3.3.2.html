@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.3.3.2 Viewing Router Settings with the show version Command</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.3.3.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Basic Network Performance</h1>
+        <h2>Show Commands</h2>
+      </div>
+      <div id="content">
+          <p>After the startup configuration file is loaded and the router boots successfully, the<span class="cmd"><b> show version </b></span>command can be used to verify and troubleshoot some of the basic hardware and software components used during the bootup process. The output from the<span class="cmd"><b> show version </b></span>command includes:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>The Cisco IOS software version being used.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The version of the system bootstrap software, stored in ROM memory that was initially used to boot the router.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The complete filename of the Cisco IOS image and where the bootstrap program located it.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Type of CPU on the router and amount of RAM. It may be necessary to upgrade the amount of RAM when upgrading the Cisco IOS software.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The number and type of physical interfaces on the router.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The amount of NVRAM. NVRAM is used to store the startup-config file.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The amount of flash memory on the router. It may be necessary to upgrade the amount of flash when upgrading the Cisco IOS software.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The currently configured value of the software configuration register in hexadecimal.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Click Play in the figure to see an animation about identification of these features of the show version output.</p>
+          <p></p>
+          <p>The configuration register tells the router how to boot up. For example, the factory default setting for the configuration register is 0x2102. This value indicates that the router attempts to load a Cisco IOS software image from flash and loads the startup configuration file from NVRAM. It is possible to change the configuration register and, therefore, change where the router looks for the Cisco IOS image and the startup configuration file during the bootup process. If there is a second value in parentheses, it denotes the configuration register value to be used during the next reload of the router.</p>
+          <p></p>
+          <p>Click the Note icon at the bottom right corner of the figure to obtain more information about the configuration register.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

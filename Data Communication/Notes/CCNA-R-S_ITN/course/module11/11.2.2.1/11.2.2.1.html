@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.2.2.1 Viruses, Worms, and Trojan Horses</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.2.2.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Keeping the Network Safe</h1>
+        <h2>Vulnerabilities and Network Attacks</h2>
+      </div>
+      <div id="content">
+          <p>Malicious code attacks include a number of types of computer programs that were created with the intention of causing data loss or damage. The three main types of malicious code attacks are viruses, Trojan horses, and worms.</p>
+          <p></p>
+          <p>A virus is malicious software that is attached to another program to execute a particular unwanted function on a workstation. An example is a program that is attached to command.com (the primary interpreter for Windows systems) and deletes certain files and infects any other versions of command.com that it can find.</p>
+          <p></p>
+          <p>A Trojan horse is different only in that the entire application was written to look like something else, when in fact it is an attack tool. An example of a Trojan horse is a software application that runs a simple game on a workstation. While the user is occupied with the game, the Trojan horse mails a copy of itself to every address in the user's address book. The other users receive the game and play it, thereby spreading the Trojan horse to the addresses in each address book.</p>
+          <p></p>
+          <p>Viruses normally require a delivery mechanism, a vector, such as a zip file or some other executable file attached to an email, to carry the virus code from one system to another. The key element that distinguishes a computer worm from a computer virus is that human interaction is required to facilitate the spread of a virus.</p>
+          <p></p>
+          <p>Worms are self-contained programs that attack a system and try to exploit a specific vulnerability in the target. Upon successful exploitation of the vulnerability, the worm copies its program from the attacking host to the newly exploited system to begin the cycle again. The anatomy of a worm attack is as follows:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>The enabling vulnerability </b>- A worm installs itself by exploiting known vulnerabilities in systems, such as naive end users who opens unverified executable attachments in emails.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Propagation mechanism </b>- After gaining access to a host, a worm copies itself to that host and then selects new targets. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Payload</b> - After a host is infected with a worm, the attacker has access to the host, often as a privileged user. Attackers could use a local exploit to escalate their privilege level to administrator. </li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

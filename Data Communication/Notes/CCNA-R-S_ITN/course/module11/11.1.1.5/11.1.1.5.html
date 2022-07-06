@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.1.1.5 Design Considerations for a Small Network</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.1.1.5_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Create and Grow</h1>
+        <h2>Devices in a Small Network</h2>
+      </div>
+      <div id="content">
+          <p>Users expect immediate access to their emails and to the files that they are sharing or updating. To help ensure this availability, the network designer should take the following steps:</p>
+          <p></p>
+          <p>
+            <b>Step 1</b>. Secure file and mail servers in a centralized location.</p>
+          <p>
+            <b>Step 2</b>. Protect the location from unauthorized access by implementing physical and logical security measures.</p>
+          <p>
+            <b>Step 3</b>. Create redundancy in the server farm that ensures if one device fails, files are not lost.</p>
+          <p>
+            <b>Step 4</b>. Configure redundant paths to the servers.</p>
+          <p></p>
+          <p>In addition, modern networks often use some form of voice or video over IP for communication with customers and business partners. This type of converged network is implemented as an integrated solution or as an additional form of raw data overlaid onto the IP network. The network administrator should consider the various types of traffic and their treatment in the network design. The router(s) and switch(es) in a small network should be configured to support real-time traffic, such as voice and video, in a distinct manner relative to other data traffic. In fact, a good network design will classify traffic carefully according to priority, as shown in the figure. Traffic classes could be as specific as:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>File transfer</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Email</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Voice</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Video</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Messaging</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Transactional</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>In the end, the goal for a good network design, even for a small network, is to enhance productivity of the employees and minimize network downtime.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

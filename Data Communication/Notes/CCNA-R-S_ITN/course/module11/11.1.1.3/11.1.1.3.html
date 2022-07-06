@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.1.1.3 IP Addressing for a Small Network</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.1.1.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Create and Grow</h1>
+        <h2>Devices in a Small Network</h2>
+      </div>
+      <div id="content">
+          <p>When implementing a small network, it is necessary to plan the IP addressing space. All hosts within an internetwork must have a unique address. Even on a small network, address assignment within the network should not be random. Rather the IP addressing scheme should be planned, documented and maintained based on the type of device receiving the address.</p>
+          <p></p>
+          <p>Examples of different types of devices that will factor into the IP design are:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>End devices for users</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Servers and peripherals </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Hosts that are accessible from the Internet</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Intermediary devices</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Planning and documenting the IP addressing scheme helps the administrator to track device types. For example, if all servers are assigned a host address between ranges of 50-100, it is easy to identify server traffic by IP address. This can be very useful when troubleshooting network traffic issues using a protocol analyzer.</p>
+          <p></p>
+          <p>Additionally, administrators are better able to control access to resources on the network based on IP address when a deterministic IP addressing scheme is used.  This can be especially important for hosts that provide resources to the internal network as well as to the external network. Web servers or e-commerce servers play such a role.  If the addresses for these resources are not planned and documented, the security and accessibility of the devices are not easily controlled. If a server has a random address assigned, blocking access to this address is difficult and clients may not be able to locate this resource.</p>
+          <p></p>
+          <p>Each of these different device types should be allocated to a logical block of addresses within the address range of the network.</p>
+          <p></p>
+          <p>Click the buttons in the figure to see the method for assignment.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

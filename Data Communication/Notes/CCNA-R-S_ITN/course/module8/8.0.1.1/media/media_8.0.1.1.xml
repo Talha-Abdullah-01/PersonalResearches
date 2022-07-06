@@ -1,0 +1,4 @@
+<textcomponents>
+<component id="ID_txt01"><text><![CDATA[<br/><b>Upon completion of this chapter you will be able to:</b><br><br><textformat blockindent="-14"><li>Describe the structure of an IPv4 address.</li><li>Describe the purpose of the subnet mask.</li><li>Compare the characteristics and uses of the unicast, broadcast, and multicast IPv4 addresses. </li><li>Compare the use of public address space and private address space.</li><li>Explain the need for IPv6 addressing.</li><li>Describe the representation of an IPv6 address.</li><li>Describe types of IPv6 network addresses.</li><li>Configure global unicast addresses.</li><li>Describe multicast addresses.</li><li>Describe the role of ICMP in an IP network. (Include IPv4 and IPv6.)</li><li>Use ping and traceroute utilities to test network connectivity.</li></textformat><br/>]]>
+</text></component>
+</textcomponents>

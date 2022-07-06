@@ -1,0 +1,86 @@
+<textcomponents>
+<!--slide 1-->
+<component id='ID_s1_inst'>
+	<text><![CDATA[<b>Activity – IPv6 Header Fields</b><br><br>Read each IPv6 header description and then click the IPv6 header field to which it belongs.]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[<b>IPv6 Header Descriptions</b>]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[<b>IPv6 Header Fields</b>]]></text>
+</component>
+
+<component id="ID_s1_field01">
+<text><![CDATA[<b>Version</b>]]></text>
+</component>
+
+<component id="ID_s1_field02">
+<text><![CDATA[<b>Payload Length</b>]]></text>
+</component>
+
+<component id="ID_s1_field03">
+<text><![CDATA[<b>Traffic Class</b>]]></text>
+</component>
+
+<component id="ID_s1_field04">
+<text><![CDATA[<b>Next Header</b>]]></text>
+</component>
+
+<component id="ID_s1_field05">
+<text><![CDATA[<b>Flow Label</b>]]></text>
+</component>
+
+<component id="ID_s1_field06">
+<text><![CDATA[<b>Hop Limit</b>]]></text>
+</component>
+
+<!--answers-->
+<component id="ID_s1_ans01">
+<text><![CDATA[Is always set to 0110]]></text>
+</component>
+
+<component id="ID_s1_ans02">
+<text><![CDATA[Identifies the packet fragment size]]></text>
+</component>
+
+<component id="ID_s1_ans03">
+<text><![CDATA[Classifies packets for congestion control]]></text>
+</component>
+
+<component id="ID_s1_ans04">
+<text><![CDATA[Identifies the application type to the upper-layer protocol]]></text>
+</component>
+
+<component id="ID_s1_ans05">
+<text><![CDATA[Can be set to use the same pathway flow so that packets are not reordered upon delivery]]></text>
+</component>
+
+<component id="ID_s1_ans06">
+<text><![CDATA[When this value reaches 0, the sender is notified that the packet was not delivered]]></text>
+</component>
+
+<!--buttons-->
+<component id="ID_s1_btn01">
+<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+<!--feedback-->
+<component id='ID_s1_titleCorrect'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s1_correctText'>
+	<text><![CDATA[Congratulations! You have matched the IPv6 header descriptions to their fields.]]></text>
+</component>
+
+<component id='ID_s1_titleIncorrect'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s1_incorrectText'>
+	<text><![CDATA[Please try again.]]></text>
+</component>
+
+</textcomponents>

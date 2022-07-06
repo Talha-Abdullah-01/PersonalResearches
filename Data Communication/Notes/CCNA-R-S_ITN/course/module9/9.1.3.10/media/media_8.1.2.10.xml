@@ -1,0 +1,11 @@
+	<textcomponents>
+	
+	<component id="ID_txt01">
+	<text><![CDATA[Borrowing 7 bits creates 128 subnets]]></text>
+	</component>
+	
+	<component id="ID_txt02">
+	<text><![CDATA[. . to . .]]></text>
+	</component>
+	
+</textcomponents>

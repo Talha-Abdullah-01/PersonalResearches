@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.1.2.3 Introducing UDP</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_7.1.2.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Transport Layer Protocols</h1>
+        <h2>Introducing TCP and UDP</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>User Datagram Protocol (UDP)</b>
+          </p>
+          <p></p>
+          <p>UDP is considered a best-effort transport protocol, described in RFC 768. UDP is a lightweight transport protocol that offers the same data segmentation and reassembly as TCP, but without TCP reliability and flow control. UDP is such a simple protocol, that it is usually described in terms of what it does not do compared to TCP. </p>
+          <p></p>
+          <p>As shown in the figure, the following features describe UDP:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Connectionless</b> - UDP does not establish a connection between the hosts before data can be sent and received. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Unreliable Delivery</b> - UDP does not provide services to ensure that the data will be delivered reliably. There are no processes within UDP to have the sender retransmit any data that is lost or is corrupted.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>No Ordered Data Reconstruction</b> - Occasionally data is received in a different order than it was sent. UDP does not provide any mechanism for reassembling the data in its original sequence. The data is simply delivered to the application in the order that it arrives.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>No Flow Control</b> - There are no mechanisms within UDP to control the amount of data transmitted by the source to avoid overwhelming the destination device. The source sends the data. If resources on the destination host become overtaxed, the destination host mostly likely drops data sent until resources become available. Unlike TCP, with UDP there is no mechanism for automatic retransmission of dropped data.</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

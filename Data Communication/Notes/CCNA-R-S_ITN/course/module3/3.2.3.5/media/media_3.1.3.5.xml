@@ -1,0 +1,24 @@
+﻿<textcomponents> 
+ 
+<component id="ID_txt01">
+	<text><![CDATA[Internet Engineering Task Force (IETF)]]></text>
+</component>
+<component id="ID_txt02">
+	<text><![CDATA[Telecommunications Industry Association (TIA)]]></text>
+</component>
+<component id="ID_txt03">
+	<text><![CDATA[Internet Assigned Numbers Authority (IANA)]]></text>
+</component>
+<component id="ID_txt04">
+	<text><![CDATA[The International Telecommunications Union-Telecommunication Standardization Sector (ITU-T)]]></text>
+</component>
+<component id="ID_txt05">
+	<text><![CDATA[Internet Corporation for Assigned Names and Number (ICANN)]]></text>
+</component> 
+<component id="ID_txt06">
+	<text><![CDATA[Electronic Industries Alliance (EIA)]]></text>
+</component> 
+<component id="ID_txt07">
+	<text><![CDATA[Standards Organizations]]></text>
+</component> 
+</textcomponents>

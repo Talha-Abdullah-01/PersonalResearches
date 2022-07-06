@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.1.2.10 TCP and UDP Segmentation</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_7.1.2.10_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Transport Layer Protocols</h1>
+        <h2>Introducing TCP and UDP</h2>
+      </div>
+      <div id="content">
+          <p>A previous chapter explained how protocol data units (PDUs) are built by passing data from an application down through the various layers to create a PDU that is then transmitted on the medium. At the destination host, this process is reversed until the data can be passed up to the application.</p>
+          <p></p>
+          <p>Some applications transmit large amounts of data, in some cases, many gigabytes. It would be impractical to send all of this data in one large piece. No other network traffic could be transmitted while this data was being sent. A large piece of data could take minutes or even hours to send. In addition, if there were any errors, the entire data file would be lost or have to be resent. Network devices would not have memory buffers large enough to store this much data while it is transmitted or received. The limit varies depending on the networking technology and specific physical medium being in use.</p>
+          <p></p>
+          <p>Dividing application data into segments both ensures that data is transmitted within the limits of the media and that data from different applications can be multiplexed on to the media.</p>
+          <p></p>
+          <p>
+            <b>TCP and UDP Handle Segmentation Differently</b>
+          </p>
+          <p></p>
+          <p>As shown in the figure, each TCP segment header contains a sequence number that allows the transport layer functions on the destination host to reassemble segments in the order in which they were transmitted. This ensures that the destination application has the data in the exact form the sender intended.</p>
+          <p></p>
+          <p>Although services using UDP also track the conversations between applications; they are not concerned with the order in which the information was transmitted or concerned with maintaining a connection. There is no sequence number in the UDP header. UDP is a simpler design and generates less overhead than TCP, resulting in a faster transfer of data. </p>
+          <p></p>
+          <p>Information may arrive in a different order than it was transmitted, because different packets may take different paths through the network. An application that uses UDP must tolerate the fact that data may not arrive in the order in which it was sent.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

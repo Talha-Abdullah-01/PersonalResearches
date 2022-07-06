@@ -1,0 +1,47 @@
+﻿<textcomponents>
+<component id='ID_title'>
+	<text><![CDATA[<b>Connection Options</b>]]></text>
+</component>
+
+<component id='ID_txt01'>
+	<text><![CDATA[Home User]]></text>
+</component>
+
+<component id='ID_txt02'>
+	<text><![CDATA[Teleworker]]></text>
+</component>
+
+<component id='ID_txt03'>
+	<text><![CDATA[Small Office]]></text>
+</component>
+
+<component id='ID_txt04'>
+	<text><![CDATA[DSL]]></text>
+</component>
+
+<component id='ID_txt05'>
+	<text><![CDATA[Cable]]></text>
+</component>
+
+<component id='ID_txt06'>
+	<text><![CDATA[Cellular]]></text>
+</component>
+
+<component id='ID_txt07'>
+	<text><![CDATA[Satellite]]></text>
+</component>
+
+<component id='ID_txt08'>
+	<text><![CDATA[Dial-Up Telephone]]></text>
+</component>
+
+<component id='ID_txt09'>
+	<text><![CDATA[Internet Service Provider]]></text>
+</component>
+
+<component id='ID_txt10'>
+	<text><![CDATA[Internet]]></text>
+</component>
+
+
+</textcomponents>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.2.4.3 Dynamic Configuration of a Global Unicast Address using SLAAC</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_8.2.4.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IPv6 Network Addresses</h1>
+        <h2>IPv6 Unicast Addresses</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Stateless Address Autoconfiguration (SLAAC)</b>
+          </p>
+          <p></p>
+          <p>Stateless Address Autoconfiguration (SLAAC) is a method that allows a device to obtain its prefix, prefix length, and default gateway address information from an <i>IPv6 router</i> without the use of a DHCPv6 server. Using SLAAC, devices rely on the local router’s ICMPv6 Router Advertisement (RA) messages to obtain the necessary information.</p>
+          <p></p>
+          <p>IPv6 routers periodically send out ICMPv6 Router Advertisement (RA) messages to all IPv6-enabled devices on the network. By default, Cisco routers send out RA messages every 200 seconds to the IPv6 all-nodes multicast group address.  An IPv6 device on the network does not have to wait for these periodic RA messages. A device can send a Router Solicitation (RS) message to the router, using the IPv6 all-routers multicast group address. When an IPv6 router receives an RS message it will immediately respond with a router advertisement. </p>
+          <p></p>
+          <p>Even though an interface on a Cisco router can be configured with an IPv6 address, this does not make it an “IPv6 router”. An IPv6 router is a router that:</p>
+          <p>
+            <ul>
+              <li>Forwards IPv6 packets between networks</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Can be configured with static IPv6 routes or a dynamic IPv6 routing protocol</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Sends ICMPv6 RA messages</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>IPv6 routing is not enabled by default. To enable a router as an IPv6 router, the <span class="cmd"><b>ipv6 unicast-routing</b></span> global configuration command must be used. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Cisco routers are enabled as IPv4 routers by default.</p>
+          <p></p>
+          <p>The ICMPv6 RA message contains the prefix, prefix length, and other information for the IPv6 device. The RA message also informs the IPv6 device how to obtain its addressing information. The RA message can contain one of the following three options, as shown in the figure: </p>
+          <p>
+            <ul>
+              <li>
+                <b>Option 1 - SLAAC Only </b>– The device should use the prefix, prefix-length, and default gateway address information contained in the RA message. No other information is available from a DHCPv6 server.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Option 2 – SLAAC and DHCPv6 </b>– The device should use the prefix, prefix-length, and default gateway address information in the RA message. There is other information available from a DHCPv6 server such as the DNS server address. The device will,  through the normal process of discovering and querying a DHCPv6 server, obtain this additional information. This is known as stateless DHCPv6 because the DHCPv6 server does not need to allocate or keep track of any IPv6 address assignments, but only provide additional information such as the DNS server address.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Option 3 – DHCPv6 only </b>– The device should not use the information in this RA message for its addressing information. Instead, the device will use the normal process of discovering and querying a DHCPv6 server to obtain all of its addressing information. This includes an IPv6 global unicast address, prefix length, a default gateway address, and the addresses of DNS servers. In this case, the DHCPv6 server is acting as a stateful DHCP server similar to DHCP for IPv4. The DHCPv6 server allocates and keeps track of IPv6 addresses so it does not assign the same IPv6 address to multiple devices.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Routers send ICMPv6 RA messages using the link-local address as the source IPv6 address. Devices using SLAAC use the router’s link-local address as their default gateway address.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

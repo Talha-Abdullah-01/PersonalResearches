@@ -1,0 +1,40 @@
+<textcomponents>
+<component id="ID_title">
+	<text><![CDATA[<b>Linksys: Model WRT300N2</b>]]></text>
+</component>
+<component id="ID_btn01">
+		<text><![CDATA[Front]]></text>
+	</component>
+	<component id="ID_btn02">
+		<text><![CDATA[Rear]]></text>
+	</component>
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Front View</b>]]></text>
+	</component>
+	<component id="ID_s1_txt">
+		<text><![CDATA[The Linksys is a simplified, low-cost device that carries out the functionality of multiple network devices (switch, router, wireless access point).<br /><br />Light emitting diodes (LEDs) indicate the connection status of each port.<br /><br />Click the LEDs for a description.]]></text>
+	</component>
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>Rear View</b>]]></text>
+	</component><component id="ID_s2_txt">
+		<text><![CDATA[When connecting a local network using a multifunction device it is important that all local devices are connected to the switch ports.<br /><br />Click the ports for a description.]]></text>
+	</component>
+	<component id="ID_LED_HOTSPOT_T">
+		<text><![CDATA[<b>LED Descriptions</b>]]></text>
+	</component>
+	<component id="ID_LED_HOTSPOT">
+		<text><![CDATA[<textformat blockindent="-14"><ul><li>Power LED - indicates the presence of power to the device; Solid green LED</li><li>WLAN LED - indicates status of wireless connections</li><li>1 - 4 LEDs - indicates status of the wired Ethernet connections</li><li>Internet LED - indicates status of the Internet connection</li></ul><br/>Color Status of LEDs:<br/><br/><ul><li>Green - indicates a connection is made with an end device</li><li>Red or yellow - usually indicates a problem with the connection</li><li>Blinking - indicates activity on the port</li></ul></textformat>]]></text>
+	</component>
+	<component id="ID_INTERNET_HOTSPOT_T">
+		<text><![CDATA[<b>Internet Port</b>]]></text>
+	</component>
+	<component id="ID_INTERNET_HOTSPOT">
+		<text><![CDATA[A single port that is connected to the router portion of the multifunction device. This is used to connect the device to another network such as the Internet. The router portion of a multifunction device maintains routing tables. There is an internal connection from the routing portion of the multifunction device to the switch portion. The Internet port is connected to a different network than the Ethernet ports.]]></text>
+	</component>
+	<component id="ID_ETHERNET_HOTSPOT_T">
+		<text><![CDATA[<b>Ethernet Ports</b>]]></text>
+	</component>
+	<component id="ID_ETHERNET_HOTSPOT">
+		<text><![CDATA[Multiple ports that are connected to the internal switch portion of the multifunction device. These are usually labeled "Ethernet".  All devices connected to the switch ports are on the same local network. There is also an internal connection from the switch port to the router port (Internet port).]]></text>
+	</component>
+</textcomponents>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.1.2.2 Role of TCP</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_7.1.2.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Transport Layer Protocols</h1>
+        <h2>Introducing TCP and UDP</h2>
+      </div>
+      <div id="content">
+          <p>Once TCP establishes a session, it is then able to keep track of the conversation within that session. Because of the ability of TCP to track actual conversations, it is considered a stateful protocol. A stateful protocol is a protocol that keeps track of the state of the communication session. For example, when data is transmitted using TCP, the sender expects the destination to acknowledge that it has received the data. TCP tracks which information it has sent and which information has been acknowledged. If the data is not acknowledged, the sender assumes the data did not arrive and resends it. The stateful session begins with the session establishment and ends when the session is closed with session termination.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Maintaining this state information requires resources that are not necessary for a stateless protocol, such as UDP.</p>
+          <p></p>
+          <p>TCP incurs additional overhead to gain these functions. As shown in the figure, each TCP segment has 20 bytes of overhead in the header encapsulating the application layer data. This is considerably more than a UDP segment, which only has 8 bytes of overhead. Extra overhead includes:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Sequence number (32 bits)</b> - Used for data reassembly purposes.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Acknowledgement number (32 bits)</b> - Indicates the data that has been received.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Header length (4 bits)</b> - Known as ʺdata offsetʺ. Indicates the length of the TCP segment header.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Reserved (6 bits)</b> - This field is reserved for the future.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Control bits (6 bits)</b> - Includes bit codes, or flags, that indicate the purpose and function of the TCP segment.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Window size (16 bits)</b> - Indicates the number of segments that can be accepted at one time.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Checksum (16 bits)</b> - Used for error checking of the segment header and data.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Urgent (16 bits)</b> - Indicates if data is urgent.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Examples of applications that use TCP are web browsers, email, and file transfers.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

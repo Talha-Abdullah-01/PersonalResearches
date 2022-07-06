@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.1.2.3 Real-Time Applications for a Small Network</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.1.2.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Create and Grow</h1>
+        <h2>Protocols in a Small Network</h2>
+      </div>
+      <div id="content">
+          <p>In addition to the common network protocols described previously, modern businesses, even small ones, typically utilize real-time applications for communicating with customers and business partners. While a small company may not be able to justify the cost of an enterprise Cisco Telepresence solution, there are other real-time applications, as shown in Figure 1, that are affordable and justifiable for small business organizations. Real-time applications require more planning and dedicated services (relative to other types of data) to ensure priority delivery of voice and video traffic. This means that the network administrator must ensure the proper equipment is installed in the network and that the network devices are configured to ensure priority delivery. Figure 2 shows elements of a small network that support real-time applications. </p>
+          <p></p>
+          <p>
+            <b>Infrastructure</b>
+          </p>
+          <p></p>
+          <p>To support the existing and proposed real-time applications, the infrastructure must accommodate the characteristics of each type of traffic. The network designer must determine whether the existing switches and cabling can support the traffic that will be added to the network. Cabling that can support gigabit transmissions should be able to carry the traffic generated and not require any changes to the infrastructure. Older switches may not support Power over Ethernet (PoE). Obsolete cabling may not support the bandwidth requirements. The switches and cabling would need to be upgraded to support these applications.</p>
+          <p></p>
+          <p>
+            <b>VoIP</b>
+          </p>
+          <p></p>
+          <p>VoIP is implemented in an organization that still uses traditional telephones. VoIP uses voice-enabled routers. These routers convert analog voice from traditional telephone signals into IP packets. After the signals are converted into IP packets, the router sends those packets between corresponding locations.  VoIP is much less expensive than an integrated IP telephony solution, but the quality of communications does not meet the same standards. Voice and video over IP solutions for small businesses can be realized, for example, with Skype and non-enterprise versions of Cisco WebEx.</p>
+          <p></p>
+          <p>
+            <b>IP Telephony</b>
+          </p>
+          <p></p>
+          <p>In IP telephony, the IP phone itself performs voice-to-IP conversion. Voice-enabled routers are not required within a network with an integrated IP telephony solution. IP phones use a dedicated server for call control and signaling. There are now many vendors with dedicated IP telephony solutions for small networks. </p>
+          <p></p>
+          <p>
+            <b>Real-time Applications</b>
+          </p>
+          <p></p>
+          <p>To transport streaming media effectively, the network must be able to support applications that require delay-sensitive delivery. Real-Time Transport Protocol (RTP) and Real-Time Transport Control Protocol (RTCP) are two protocols that support this requirement. RTP and RTCP enable control and scalability of the network resources by allowing quality of service (QoS) mechanisms to be incorporated. These QoS mechanisms provide valuable tools for minimizing latency issues for real-time streaming applications.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

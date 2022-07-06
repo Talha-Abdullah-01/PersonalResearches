@@ -1,0 +1,89 @@
+<textcomponents>
+
+	<component id='ID_inst'>
+		<text><![CDATA[<b>Activity – <font face="Courier New">show</font> Commands</b><br><br>Read the<b> <font face="Courier New">show</font> </b>commands scenarios. Drag each <b><font face="Courier New">show</font> </b>command to the field next to the appropriate scenario.]]></text>
+	</component>
+
+	<component id='ID_txt01'>
+		<text><![CDATA[<b><font face="Courier New">show</font> Commands Scenarios</b>]]></text>
+	</component>
+
+	<component id='ID_txt02'>
+		<text><![CDATA[<b><font face="Courier New">show</font> Command</b>]]></text>
+	</component>
+
+	<component id='ID_txt03'>
+		<text><![CDATA[You suspect there is a problem with the current switch configuration. You want to see the saved configuration so that you can compare it to what is currently running.]]></text>
+	</component>
+
+	<component id='ID_txt04'>
+		<text><![CDATA[You are on a call with the Cisco technical assistance personnel. They ask you for the switch IOS name, RAM, NVRAM, and flash available. They also ask for the hexadecimal boot location.]]></text>
+	</component>
+	
+	<component id='ID_txt05'>
+		<text><![CDATA[You are running the EIGRP routing protocol and need to know the update intervals and what active interfaces and networks are being advertised by your router.]]></text>
+	</component>
+	
+	<component id='ID_txt06'>
+		<text><![CDATA[You cannot get to the Internet. You need to find out if your router has a path to the Internet and which protocols are being used to provide the paths.]]></text>
+	</component>
+	
+	<component id='ID_txt07'>
+		<text><![CDATA[Your network documentation really needs to be updated. A quick listing of the IP addresses of your routers in relation to their MAC addresses would help finish the task for recording purposes.]]></text>
+	</component>
+	
+	<component id='ID_txt08'>
+		<text><![CDATA[A switch is the closest intermediate device to you. It has 24 ports. You want to see a simple list of the ports being used, their status and the VLAN IP address of the switch.]]></text>
+	</component>
+
+	<!--Drag and Drop-->
+	<component id='ID_drag01'>
+		<text><![CDATA[<b><font face="Courier New" color="#393536">show version</font></b>]]></text>
+	</component>
+	<component id='ID_drag02'>
+		<text><![CDATA[<b><font face="Courier New" color="#393536">show <br>startup-config</font></b>]]></text>
+	</component>
+
+	<component id='ID_drag03'>
+		<text><![CDATA[<b><font face="Courier New" color="#393536">show ip <br>protocols</font></b>]]></text>
+	</component>
+
+	<component id='ID_drag04'>
+		<text><![CDATA[<b><font face="Courier New" color="#393536">show ip route</font></b>]]></text>
+	</component>
+
+	<component id='ID_drag05'>
+		<text><![CDATA[<b><font face="Courier New" color="#393536">show arp</font></b>]]></text>
+	</component>
+
+	<component id='ID_drag06'>
+		<text><![CDATA[<b><font face="Courier New" color="#393536">show ip int <br>brief</font></b>]]></text>
+	</component>
+
+
+	<component id='ID_s1_CORRECT_TITLE'>
+		<text><![CDATA[<b>Correct]]></text>
+	</component>
+
+	<component id='ID_s1_CORRECT_BODY'>
+		<text><![CDATA[You have successfully matched each <b><font face="Courier New">show</font></b> command to its scenario.]]></text>
+	</component>
+
+
+	<component id='ID_s1_INCORRECT_TITLE'>
+		<text><![CDATA[<b>Incorrect]]></text>
+	</component>
+
+	<component id='ID_s1_INCORRECT_BODY'>
+		<text><![CDATA[You have not successfully matched each <b><font face="Courier New">show</font></b> command to its scenario. Please click Reset to try again.]]></text>
+	</component>
+
+	<component id='ID_CHECK'>
+		<text><![CDATA[<b>Check</b>]]></text>
+	</component>
+
+	<component id='ID_RESET'>
+		<text><![CDATA[<b>Reset</b>]]></text>
+	</component>
+
+</textcomponents>

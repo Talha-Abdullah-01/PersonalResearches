@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.1.4.4 IPv6 Packet Header</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_6.1.4.4_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Network Layer Protocols</h1>
+        <h2>IPv6 Packet</h2>
+      </div>
+      <div id="content">
+          <p>The fields in the IPv6 packet header include:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Version - </b>This field contains a 4-bit binary value identifying the IP packet version. For IPv6 packets, this field is always set to 0110.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Traffic Class - </b>This 8-bit field is equivalent to the IPv4 Differentiated Services (DS) field. It also contains a 6-bit Differentiated Services Code Point (DSCP) value used to classify packets and a 2-bit Explicit Congestion Notification (ECN) used for traffic congestion control.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Flow Label - </b>This 20-bit field provides a special service for real-time applications. It can be used to inform routers and switches to maintain the same path for the packet flow so that packets are not reordered.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Payload Length - </b>This 16-bit field is equivalent to the Total Length field in the IPv4 header. It defines the entire packet (fragment) size, including header and optional extensions. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Next Header - </b>This 8-bit field is equivalent to the IPv4 Protocol field. It indicates the data payload type that the packet is carrying, enabling the network layer to pass the data to the appropriate upper-layer protocol. This field is also used if there are optional extension headers added to the IPv6 packet.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Hop Limit</b>: - This 8-bit field replaces the IPv4 TTL field. This value is decremented by one by each router that forwards the packet. When the counter reaches 0 the packet is discarded and an ICMPv6 message is forwarded to the sending host, indicating that the packet did not reach its destination. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Source Address - </b>This 128-bit field identifies the IPv6 address of the sending host. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Destination Address - </b>This 128-bit field identifies the IPv6 address of the receiving host.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>An IPv6 packet may also contain extension headers (EH), which provide optional network layer information. Extension headers are optional and are placed between the IPv6 header and the payload. EHs are used for fragmentation, security, to support mobility, and more.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>
