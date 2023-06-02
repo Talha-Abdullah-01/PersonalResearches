@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.0.1.2 Class Activity - We Need to Talk - Game  </title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_7.0.1.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Transportation Layer</h1>
+        <h2>Introduction</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>We Need to Talk</b>
+          </p>
+          <p></p>
+          <p>
+            <b>Note: </b>This activity works best with medium-sized groups of 6 to 8 students per group. </p>
+          <p></p>
+          <p>The instructor will whisper a complex message to the first student in a group. An example of the message might be “Our final exam will be given next Tuesday, February 5th, at 2 p.m. in Room 1151.”</p>
+          <p>That student whispers the message to the next student in the group. Each group follows this process until all members of each group have heard the whispered message.  Here are the rules you are to follow:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>You can whisper the message only once to your neighbor. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The message must keep moving from one person to the other with no skipping of participants.  </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The instructor should ask a student to keep time of the full message activity from first participant to last participant stating the messages. The first or last person would mostly likely be the best one to keep this time.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The last student will say aloud exactly what he or she heard.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The instructor will then restate the original message so that the group can compare it to the message that was delivered by the last student in the group. </p>
+          <p></p>
+          <p>
+            <a href="../../files/7.0.1.2%20Class%20Activity%20-%20We%20Need%20to%20Talk%20Instructions.pdf" target="_blank">Class Activity - We Need to Talk Instructions</a>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

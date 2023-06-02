@@ -1,0 +1,11 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Connecting to the Wireless LAN with a Range Extender</b>]]></text>
+</component>
+<component id="ID_txt01">
+  <text><![CDATA[Wireless-N Router]]></text> 
+  </component>
+<component id="ID_txt02">
+  <text><![CDATA[Range Extender]]></text> 
+  </component>
+</textcomponents>

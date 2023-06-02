@@ -1,0 +1,52 @@
+<textcomponents>	
+	<component id="txt_instructions">
+		<text><![CDATA[<b>Activity – ANDing to Determine the Network Address</b><br><br>Use the ANDing process to determine the Network Address (in binary and decimal formats).]]></text>
+	</component>
+	
+	<component id="txt_incorrect">
+		<text><![CDATA[<b>Incorrect</b>]]></text>
+	</component>
+	<component id="txt_correct">
+		<text><![CDATA[<b>Correct</b>]]></text>
+	</component>
+	<component id="txt_correct_body">
+		<text><![CDATA[The binary and decimal versions of the network address are correct! Please click New Number to continue.]]></text>
+	</component>
+	<component id="txt_incorrect_binary">
+		<text><![CDATA[The binary and/or decimal versions of the network address are incorrect. Please try again.]]></text>
+	</component>
+	<component id="txt_incorrect_decimal">
+		<text><![CDATA[The binary and/or decimal versions of the network address are incorrect. Please try again.]]></text>
+	</component>
+	<component id="txt_incorrect_all">
+		<text><![CDATA[The binary and/or decimal versions of the network address are incorrect. Please try again.]]></text>
+	</component>
+	<component id="txt_hostaddress">
+		<text><![CDATA[Host Address]]></text>
+	</component>
+	<component id="txt_subnetmask">
+		<text><![CDATA[Subnet Mask]]></text>
+	</component>
+	<component id="txt_hostaddrbin">
+		<text><![CDATA[Host Address in binary]]></text>
+	</component>
+	<component id="txt_subnetbin">
+		<text><![CDATA[Subnet Mask in binary]]></text>
+	</component>
+	<component id="txt_netbin">
+		<text><![CDATA[Network Address in binary]]></text>
+	</component>
+	<component id="txt_netdec">
+		<text><![CDATA[Network Address in decimal]]></text>
+	</component>
+	<component id="txt_check">
+		<text><![CDATA[Check]]></text>
+	</component>
+	<component id="txt_reset">
+		<text><![CDATA[Reset]]></text>
+	</component>
+	<component id="txt_newnumber">
+		<text><![CDATA[New Number]]></text>
+	</component>
+
+</textcomponents>

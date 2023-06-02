@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.2.2.2 IPv4 Router Routing Table</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_6.2.2.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Routing</h1>
+        <h2>Router Routing Tables</h2>
+      </div>
+      <div id="content">
+          <p>A host routing table includes only information about directly-connected networks. A host requires a default gateway to send packets to a remote destination. The routing table of a router contains similar information but can also identify specific remote networks. </p>
+          <p></p>
+          <p>The routing table of a router is similar to the routing table of a host. They both identify the:</p>
+          <p>
+            <ul>
+              <li>Destination network</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Metric associated with the destination network</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Gateway to get to the destination network</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>On a Cisco IOS router, the<span class="cmd"><b> show ip route </b></span>command can be used to display the routing table of a router. A router also provides additional route information, including how the route was learned, when it was last updated, and which specific interface to use to get to a predefined destination.</p>
+          <p></p>
+          <p>When a packet arrives at the router interface, the router examines the packet header to determine the destination network. If the destination network matches a route in the routing table, the router forwards the packet using the information specified in the routing table. If there are two or more possible routes to the same destination, the metric is used to decide which route appears on the routing table.</p>
+          <p></p>
+          <p>The figure shows the routing table of R1 in a simple network. Unlike the host routing table, there are no column headings identifying the information contained in a routing table entry. Therefore, it is important to learn the meaning of the different types of information included in each entry.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

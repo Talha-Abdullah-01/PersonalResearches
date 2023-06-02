@@ -1,0 +1,34 @@
+﻿<textcomponents>
+  <component id="ID_title">
+		<text><![CDATA[<b>Peer-to-Peer Networking </b>]]></text> 
+	</component>
+	
+	<component id="ID_bubble_txt01">
+		<text><![CDATA[<p id="ID_bubble_txt01">I have files on my hard drive that are being shared for Peer2. I also have a page that I need to print through Peer2.</p>]]></text>
+	</component>
+	
+	<component id="ID_bubble_txt02">
+	  <text><![CDATA[<p id="ID_bubble_txt02" >I need to access a file from the hard drive on Peer1. I also need to print a file that I recieved from Peer1, with a print request.</p>]]></text> 
+	</component>
+	
+	<component id="ID_txt01">
+	  <text><![CDATA[Peer1<br/><br/><b>Print client<br/>File server</b>]]></text> 
+	</component>
+	
+	<component id="ID_txt02">
+	  <text><![CDATA[Peer2<br/><br/><b>Print server<br/>File client</b>]]></text> 
+	</component>
+	
+	<component id="ID_txt03">
+		<text><![CDATA[Printer]]></text>
+	</component>
+		
+	<component id="ID_txt04">
+		<text><![CDATA[Directly <br/>connected printer]]></text>
+	</component>
+		
+	<component id="ID_txt05">
+		<text><![CDATA[In a peer-to-peer exchange, both devices are considered equal in the communication process.]]></text>
+	</component>
+	
+</textcomponents>

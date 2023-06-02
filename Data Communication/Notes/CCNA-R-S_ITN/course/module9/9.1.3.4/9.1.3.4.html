@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.1.3.4 Creating 4 Subnets</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_9.1.3.4_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Subnetting an IPv4 Network</h1>
+        <h2>Subnetting an IPv4 Network</h2>
+      </div>
+      <div id="content">
+          <p>Consider an internetwork that requires three subnets.</p>
+          <p></p>
+          <p>Using the same 192.168.1.0/24 address block, host bits must be borrowed to create at least 3 subnets. Borrowing a single bit would only provide 2 subnets. To provide more networks, more host bits must be borrowed. Calculate the number of subnets created if 2 bits are borrowed using the formula 2^number of bits borrowed:</p>
+          <p></p>
+          <p>2^2 = 4 subnets</p>
+          <p></p>
+          <p>Borrowing 2 bits creates 4 subnets, as shown in Figure 1. </p>
+          <p></p>
+          <p>Recall that the subnet mask must change to reflect the borrowed bits. In this example, when 2 bits are borrowed, the mask is extended 2 bits into the last octet. In decimal, the mask is represented as 255.255.255.192, because the last octet is 1100 0000 in binary. </p>
+          <p></p>
+          <p>
+            <b>Host Calculation</b>
+          </p>
+          <p>To calculate the number of hosts, examine the last octet. After borrowing 2 bits for the subnet, there are 6 host bits remaining.</p>
+          <p></p>
+          <p>Apply the host calculation formula as shown in Figure 2.</p>
+          <p></p>
+          <p>2^6 = 64 </p>
+          <p></p>
+          <p>But remember that all 0 bits in the host portion of the address is the network address, and all 1s in the host portion is a broadcast address. Therefore, there are only 62 host addresses that are actually available for each subnet. </p>
+          <p></p>
+          <p>As shown in Figure 3, the first host address for the first subnet is 192.168.1.1 and the last host address is 192.168.1.62. Figure 4 shows the ranges for subnets 0 - 2. Remember that each host must have a valid IP address within the range defined for that network segment. The subnet assigned to the router interface will determine which segment a host belongs to.</p>
+          <p></p>
+          <p>In Figure 5 a sample configuration is shown. In this configuration, the first network is assigned to the GigabitEthernet 0/0 interface, the second network is assigned to the GigabitEthernet 0/1 interface, and the third network is assigned to the Serial 0/0/0 network.</p>
+          <p>Again, using a common addressing plan, the first host address in the subnet is assigned to the router interface. Hosts on each subnet will use the address of the router interface as the default gateway address. </p>
+          <p>
+            <ul>
+              <li>PC1 (192.168.1.2/26) will use 192.168.1.1 (G0/0 interface address of R1) as its default gateway address</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>PC2 (192.168.1.66/26) will use 192.168.1.65 (G0/1 interface address of R1) as its default gateway address</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: All devices on the same subnet will have a host IPv4 address from the range of host addresses and will use the same subnet mask.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

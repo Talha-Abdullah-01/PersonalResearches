@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.3.1.2 ICMPv6 Router Solicitation and Router Advertisement Messages</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_8.3.1.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Connectivity Verification</h1>
+        <h2>ICMP</h2>
+      </div>
+      <div id="content">
+          <p>The informational and error messages found in ICMPv6 are very similar to the control and error messages implemented by ICMPv4. However, ICMPv6 has new features and improved functionality not found in ICMPv4.</p>
+          <p></p>
+          <p>ICMPv6 includes four new protocols as part of the Neighbor Discovery Protocol (ND or NDP):</p>
+          <p>
+            <ul>
+              <li>Router Solicitation message</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Router Advertisement message</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Neighbor Solicitation message</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Neighbor Advertisement message</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Router Solicitation and Router Advertisement Messages</b>
+          </p>
+          <p>IPv6-enabled devices can be divided into two categories, routers and hosts. Router Solicitation and Router Advertisement messages are sent between hosts and routers. </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Router Solicitation (RS) message:</b> When a host is configured to obtain its addressing information automatically using Stateless Address Autoconfiguration (SLAAC), the host will send an RS message to the router. The RS message is sent as an IPv6 all-routers multicast message.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Router Advertisement (RA) message:</b> RA messages are sent by routers to provide addressing information to hosts using SLAAC. The RA message can include addressing information for the host such as the prefix and prefix length. A router will send an RA message periodically or in response to an RS message. By default, Cisco routers send RA messages every 200 seconds. RA messages are sent to the IPv6 all-nodes multicast address. A host using SLAAC will set its default gateway to the link-local address of the router that sent the RA.</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

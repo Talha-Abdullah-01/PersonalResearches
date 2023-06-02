@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.2.3.1 Properties of Fiber Optic Cabling</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_4.2.3.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Network Media</h1>
+        <h2>Fiber Optic Cabling</h2>
+      </div>
+      <div id="content">
+          <p>Optical fiber cable has become very popular for interconnecting infrastructure network devices. It permits the transmission of data over longer distances and at higher bandwidths (data rates) than any other networking media. </p>
+          <p></p>
+          <p>Optical fiber is a flexible but extremely thin transparent strand of very pure glass (silica) not much bigger than a human hair. Bits are encoded on the fiber as light impulses. The fiber-optic cable acts as a waveguide, or “light pipe,” to transmit light between the two ends with minimal loss of signal. </p>
+          <p></p>
+          <p>As an analogy, consider an empty paper towel roll with the inside coated like a mirror that is a thousand meters in length and a small laser pointer is used to send Morse code signals at the speed of light. Essentially that is how a fiber-optic cable operates, except that it is smaller in diameter and uses sophisticated light emitting and receiving technologies. </p>
+          <p></p>
+          <p>Unlike copper wires, fiber-optic cable can transmit signals with less attenuation and is completely immune to EMI and RFI.</p>
+          <p></p>
+          <p>Fiber-optic cabling is now being used in four types of industry:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Enterprise Networks</b>: Fiber is used for backbone cabling applications and interconnecting infrastructure devices.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>FTTH and Access Networks</b>: Fiber-to-the-home (FTTH) is used to provide always-on broadband services to homes and small businesses. FTTH supports affordable high-speed Internet access, as well as telecommuting, telemedicine, and video on demand.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Long-Haul Networks</b>: Service providers use long-haul terrestrial optical fiber networks to connect countries and cities. Networks typically range from a few dozen to a few thousand kilometers and use up to 10 Gb/s-based systems.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Submarine Networks</b>: Special fiber cables are used to provide reliable high-speed, high-capacity solutions capable of or surviving in harsh undersea environments up to transoceanic distances. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Our focus is the use of fiber within the enterprise.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

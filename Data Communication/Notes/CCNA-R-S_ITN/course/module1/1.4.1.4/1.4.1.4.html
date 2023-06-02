@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.4.1.4 Video Communication</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_1.4.1.4_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>The Changing Network Environment</h1>
+        <h2>Network Trends</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Video Communication</b>
+          </p>
+          <p></p>
+          <p>Another trend in networking that is critical in the communication and collaboration effort is video. Video is being used for communications, collaboration, and entertainment. Video calls are becoming more popular, facilitating communications as part of the human network. Video calls can be made to and from anywhere with an Internet connection, including from home or at work. </p>
+          <p></p>
+          <p>Video calls and video conferencing is proving particularly powerful for sales processes and for doing business. Video is a useful tool for conducting business at a distance, both locally and globally. Today, businesses are using video to transform the way they do business. Video helps businesses create a competitive advantage, lower costs and reduce the impact on the environment by reducing the need travel. Figure 1 shows the trend of video in communication.</p>
+          <p></p>
+          <p>Both consumers and businesses are driving this change. Video is becoming a key requirement for effective collaboration as organizations extend across geographic and cultural boundaries. Video users now demand the ability to view any content, on any device, anywhere.</p>
+          <p></p>
+          <p>Businesses are also recognizing the role of video to enhance the human network. The growth of media, and the new uses to which it is being put, is driving the need to integrate audio and video into many forms of communication. The audio conference will coexist with the video conference. Collaboration tools designed to link distributed employees will integrate desktop video to bring teams closer together.</p>
+          <p></p>
+          <p>There are many drivers and benefits for including a strategy for using video. Each organization is unique. The exact mix, and nature of the drivers for adopting video, will vary from organization to organization, and by business function. Marketing, for example, may focus on globalization, and fast-changing consumer tastes; while the Chief Information Officer’s (CIO) focus may be on cost savings by reducing travel costs of employees needing to meet face-to-face. Figure 2 lists some of the drivers for organizations to develop and implement a video solution strategy. </p>
+          <p></p>
+          <p>Figure 3 is a video that gives a closer look at how TelePresence using video can be incorporated into everyday life and business.</p>
+          <p></p>
+          <p>Another trend in video is video-on-demand and streaming live video. Delivering video over the network lets us see movies and television programs when we want and where we want. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

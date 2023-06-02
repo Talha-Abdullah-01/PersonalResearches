@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.1.1.4 IOS Functions</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.1.1.4_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IOS Bootcamp</h1>
+        <h2>Cisco IOS</h2>
+      </div>
+      <div id="content">
+          <p>Cisco IOS routers and switches perform functions that network professionals depend upon to make their networks operate as expected. Major functions performed or enabled by Cisco routers and switches include:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Providing network security</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>IP addressing of virtual and physical interfaces</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Enabling interface-specific configurations to optimize connectivity of the respective media</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Routing </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Enabling quality of service (QoS) technologies</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Supporting network management technologies</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Each feature or service has an associated collection of configuration commands that allow a network technician to implement it. </p>
+          <p></p>
+          <p>The services provided by the Cisco IOS are generally accessed using a CLI. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

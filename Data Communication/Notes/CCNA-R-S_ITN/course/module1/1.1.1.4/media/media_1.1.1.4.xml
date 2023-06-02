@@ -1,0 +1,23 @@
+﻿<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[Virtual Classrooms]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[On-demand Video]]></text> 
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Networks support the way we learn …]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Collaborative<br>Learning Spaces]]></text> 
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Mobile Learning]]></text> 
+</component>
+
+</textcomponents>

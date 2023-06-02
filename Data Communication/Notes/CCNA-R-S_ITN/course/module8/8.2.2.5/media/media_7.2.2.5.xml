@@ -1,0 +1,114 @@
+<textcomponents>
+
+<component id='ID_inst'>
+	<text><![CDATA[<b>Activity – Practicing IPv6 Address Representations</b><br><br>Convert the IPv6 addresses into short (omit the leading zeroes) and compressed forms. Use the numbered column to the right of the diagram to move to the next page.]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[IPv6 Conversion]]></text> 
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Preferred format]]></text> 
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Omit leading zeroes]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Compressed]]></text> 
+</component>
+
+<component id="ID_s1_reset">
+<text><![CDATA[<b>Reset</b>]]></text> 
+</component>
+
+<component id="ID_s2_reset">
+<text><![CDATA[<b>Reset</b>]]></text> 
+</component>
+
+<component id="ID_s3_reset">
+<text><![CDATA[<b>Reset</b>]]></text> 
+</component>
+
+<component id="ID_s4_reset">
+<text><![CDATA[<b>Reset</b>]]></text> 
+</component>
+
+<component id="ID_s5_reset">
+<text><![CDATA[<b>Reset</b>]]></text> 
+</component>
+
+<component id="ID_s6_reset">
+<text><![CDATA[<b>Reset</b>]]></text> 
+</component>
+
+<component id="ID_s7_reset">
+<text><![CDATA[<b>Reset</b>]]></text> 
+</component>
+
+<component id="ID_s8_reset">
+<text><![CDATA[<b>Reset</b>]]></text> 
+</component>
+
+<component id="ID_s9_reset">
+<text><![CDATA[<b>Reset</b>]]></text> 
+</component>
+
+<component id="ID_s10_reset">
+<text><![CDATA[<b>Reset</b>]]></text> 
+</component>
+
+
+
+<component id="ID_s1_check">
+<text><![CDATA[<b>Check</b>]]></text> 
+</component>
+
+<component id="ID_s2_check">
+<text><![CDATA[<b>Check</b>]]></text> 
+</component>
+
+<component id="ID_s3_check">
+<text><![CDATA[<b>Check</b>]]></text> 
+</component>
+
+<component id="ID_s4_check">
+<text><![CDATA[<b>Check</b>]]></text> 
+</component>
+
+<component id="ID_s5_check">
+<text><![CDATA[<b>Check</b>]]></text> 
+</component>
+
+<component id="ID_s6_check">
+<text><![CDATA[<b>Check</b>]]></text> 
+</component>
+
+<component id="ID_s7_check">
+<text><![CDATA[<b>Check</b>]]></text> 
+</component>
+
+<component id="ID_s8_check">
+<text><![CDATA[<b>Check</b>]]></text> 
+</component>
+
+<component id="ID_s9_check">
+<text><![CDATA[<b>Check</b>]]></text> 
+</component>
+
+<component id="ID_s10_check">
+<text><![CDATA[<b>Check</b>]]></text> 
+</component>
+
+<!--feedback-->
+<component id='ID_correctTitle'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_correctBody'>
+	<text><![CDATA[Congratulations, you got them all.]]></text>
+</component>
+
+</textcomponents>

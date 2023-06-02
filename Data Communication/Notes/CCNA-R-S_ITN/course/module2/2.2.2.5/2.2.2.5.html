@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.2.2.5 Banner Messages</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.2.2.5_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Getting Basic</h1>
+        <h2>Limiting Access to Device Configurations</h2>
+      </div>
+      <div id="content">
+          <p>Although requiring passwords is one way to keep unauthorized personnel out of a network, it is vital to provide a method for declaring that only authorized personnel should attempt to gain entry into the device. To do this, add a banner to the device output.</p>
+          <p></p>
+          <p>Banners can be an important part of the legal process in the event that someone is prosecuted for breaking into a device. Some legal systems do not allow prosecution, or even the monitoring of users, unless a notification is visible. </p>
+          <p></p>
+          <p>The exact content or wording of a banner depends on the local laws and corporate policies. Here are some examples of information to include in a banner: </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>"Use of the device is specifically for authorized personnel."</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>"Activity may be monitored." </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>"Legal action will be pursued for any unauthorized use."</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Because banners can be seen by anyone who attempts to log in, the message must be worded very carefully. Any wording that implies that a login is "welcome" or "invited" is not appropriate. If a person disrupts the network after gaining unauthorized entry, proving liability will be difficult if there is the appearance of an invitation. </p>
+          <p></p>
+          <p>The creation of banners is a simple process; however, banners should be used appropriately. When a banner is utilized it should never welcome someone to the device. It should detail that only authorized personnel are allowed to access the device. Further, the banner can include scheduled system shutdowns and other information that affects all network users.</p>
+          <p></p>
+          <p>The IOS provides multiple types of banners. One common banner is the message of the day (MOTD). It is often used for legal notification because it is displayed to all connected terminals. </p>
+          <p></p>
+          <p>Configure MOTD using the <span class="cmd"><b>banner motd</b></span> command from global configuration mode.</p>
+          <p></p>
+          <p>The <span class="cmd"><b>banner motd</b></span> command requires the use of delimiters to identify the content of the banner message. The <span class="cmd"><b>banner motd</b></span> command is followed by a space and a delimiting character. Then, one or more lines of text are entered to represent the banner message. A second occurrence of the delimiting character denotes the end of the message. The delimiting character can be any character as long as it does not occur in the message. For this reason, symbols such as the "#" are often used.</p>
+          <p></p>
+          <p>The syntax to configure a MOTD, from global configuration mode is:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Switch(config)#</span>
+            <span class="cmd">
+              <b>banner motd #</b>
+            </span>
+            <span class="cmd">
+              <i>message</i>
+            </span>
+            <span class="cmd"></span>
+            <span class="cmd">
+              <b>#</b>
+            </span>
+          </p>
+          <p></p>
+          <p>Once the command is executed, the banner will be displayed on all subsequent attempts to access the device until the banner is removed.</p>
+          <p></p>
+          <p>The example in the figure illustrates a banner configured with the delimiting "#" symbol. Notice how the banner is now displayed when accessing the switch. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

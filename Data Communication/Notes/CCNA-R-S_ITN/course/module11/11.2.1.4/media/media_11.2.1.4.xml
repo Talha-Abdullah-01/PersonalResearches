@@ -1,0 +1,171 @@
+﻿<textcomponents>
+<!--slide01-->
+<component id='ID_s1_inst'>
+	<text><![CDATA[<b>Activity – Part 1: Security Threats and Vulnerabilities</b><br><br>Read the security threats and vulnerabilities scenarios. Drag each scenario to its corresponding type of security threat.]]></text>
+</component>
+
+<component id='ID_s1_txt01'>
+	<text><![CDATA[<b>Information Theft</b>]]></text>
+</component>
+
+<component id='ID_s1_txt02'>
+	<text><![CDATA[<b>Identity Theft</b>]]></text>
+</component>
+
+<component id="ID_s1_txt03">
+   <text><![CDATA[<b>Data Loss/Manipulation</b>]]></text>
+   </component>
+
+<component id="ID_s1_txt04">
+   <text><![CDATA[<b>Disruption of Service</b>]]></text>
+   </component>
+
+
+<!--Drag and Drop-->
+<component id='ID_s1_drag01'>
+	<text><![CDATA[Stealing a company’s user database]]></text>
+</component>
+
+<component id='ID_s1_drag02'>
+	<text><![CDATA[Stealing scientific research reports]]></text>
+</component>
+
+<component id='ID_s1_drag03'>
+	<text><![CDATA[Impersonating someone to obtain credit]]></text>
+</component>
+
+<component id='ID_s1_drag04'>
+	<text><![CDATA[Making illegal online purchases]]></text>
+</component>
+
+<component id='ID_s1_drag05'>
+	<text><![CDATA[Altering data records]]></text>
+</component>
+
+<component id='ID_s1_drag06'>
+	<text><![CDATA[Sending a virus to reformat a hard drive]]></text>
+</component>
+
+<component id='ID_s1_drag07'>
+	<text><![CDATA[Overloading a network to keep users out]]></text>
+</component>
+
+<component id='ID_s1_drag08'>
+	<text><![CDATA[Preventing legal users from accessing data services]]></text>
+</component>
+
+
+
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched each scenario to its security threat type.]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched each scenario to its security threat type. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s1_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+
+<!--slide02-->
+<component id='ID_s2_inst'>
+	<text><![CDATA[<b>Activity – Part 2: Security Threats and Vulnerabilities</b><br><br>Read the security management practices. Drag each management practice to the appropriate security management type.]]></text>
+</component>
+
+<component id='ID_s2_txt01'>
+	<text><![CDATA[<b>Hardware</b>]]></text>
+</component>
+
+<component id='ID_s2_txt02'>
+	<text><![CDATA[<b>Environmental</b>]]></text>
+</component>
+
+<component id="ID_s2_txt03">
+   <text><![CDATA[<b>Electrical</b>]]></text>
+   </component>
+
+<component id="ID_s2_txt04">
+   <text><![CDATA[<b>Maintenance</b>]]></text>
+   </component>
+
+
+<!--Drag and Drop-->
+<component id='ID_s2_drag01'>
+	<text><![CDATA[Lock up devices – prevent unauthorized access]]></text>
+</component>
+
+<component id='ID_s2_drag02'>
+	<text><![CDATA[Use security cameras]]></text>
+</component>
+
+<component id='ID_s2_drag03'>
+	<text><![CDATA[Control temperature and humidity]]></text>
+</component>
+
+<component id='ID_s2_drag04'>
+	<text><![CDATA[Create positive air flow]]></text>
+</component>
+
+<component id='ID_s2_drag05'>
+	<text><![CDATA[Install UPS systems]]></text>
+</component>
+
+<component id='ID_s2_drag06'>
+	<text><![CDATA[Install redundant power supplies]]></text>
+</component>
+
+<component id='ID_s2_drag07'>
+	<text><![CDATA[Control access to console ports]]></text>
+</component>
+
+<component id='ID_s2_drag08'>
+	<text><![CDATA[Label critical cables and components]]></text>
+</component>
+
+
+
+
+
+<component id='ID_s2_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched each security practice to its security management type.]]></text>
+</component>
+
+
+<component id='ID_s2_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched each security practice to its security management type. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s2_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s2_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+</textcomponents>

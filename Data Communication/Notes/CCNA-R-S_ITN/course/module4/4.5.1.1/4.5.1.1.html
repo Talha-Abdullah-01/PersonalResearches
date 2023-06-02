@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.5.1.1 Class Activity - Linked In!</title>
+    <!-- Activity -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_4.5.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Summary</h1>
+        <h2>Summary</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Linked In!</b>
+          </p>
+          <p>
+            <b>Note</b>: This activity is best completed in groups of 2-3 students.</p>
+          <p></p>
+          <p>Your small business is moving to a new location!  Your building is brand new, and you have been tasked to come up with a physical model so that network port installation can begin.</p>
+          <p></p>
+          <p>Use the blueprint provided for this activity (<u>your Instructor will provide you with a copy from the Instructor Planning Guide</u>) – the area indicated by Number 1 is the reception area – the area numbered RR is the restroom area.  </p>
+          <p></p>
+          <p>All rooms are within Category 6, UTP specifications (100 meters), so you have no worries about hard-wiring the building to code.  Each room in the diagram must have at least one network connection available for users/intermediary devices.</p>
+          <p></p>
+          <p>With your teammate(s), indicate on the drawing:</p>
+          <p>
+            <ul>
+              <li>The location of your network main distribution facility, while keeping security in mind.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The number of intermediary devices that you would use and where you would place them.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The type of cabling that would be used (UTP, STP, wireless, fiber optics, etc.) and where would the ports be placed.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The types of end devices that would be used (wired, wireless, laptops, desktops, tablets, etc.).</li>
+            </ul>
+          </p>
+          <p>Do not go “overboard” on your design – just use the content from the chapter to be able to justify your decisions to the class.</p>
+          <p></p>
+          <p>
+            <a href="../../files/4.5.1.1%20Class%20Activity%20-%20Linked%20In!%20Instructions.pdf" target="_blank">Class Activity - Linked In! Instructions</a>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

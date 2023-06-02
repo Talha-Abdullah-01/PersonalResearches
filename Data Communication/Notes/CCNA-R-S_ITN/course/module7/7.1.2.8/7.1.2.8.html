@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.1.2.8 TCP and UDP Port Addressing (Cont.)</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_7.1.2.8_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Transport Layer Protocols</h1>
+        <h2>Introducing TCP and UDP</h2>
+      </div>
+      <div id="content">
+          <p>The Internet Assigned Numbers Authority (IANA) assigns port numbers. IANA is a standards body that is responsible for assigning various addressing standards.</p>
+          <p></p>
+          <p>There are different types of port numbers, as shown in Figure 1:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Well-known Ports (Numbers 0 to 1023) </b>- These numbers are reserved for services and applications. They are commonly used for applications such as HTTP (web server), Internet Message Access Protocol (IMAP)/Simple Mail Transfer Protocol (SMTP) (email server) and Telnet. By defining these well-known ports for server applications, client applications can be programmed to request a connection to that specific port, and its associated service.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Registered Ports (Numbers 1024 to 49151)</b> - These port numbers are assigned to user processes or applications. These processes are primarily individual applications that a user has chosen to install, rather than common applications that would receive a well-known port number. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Dynamic or Private Ports (Numbers 49152 to 65535)</b> - Also known as ephemeral ports, these are usually assigned dynamically to client applications when the client initiates a connection to a service. The dynamic port is most often used to identify the client application during communication, whereas the client uses the well-known port to identify and connect to the service being requested on the server. It is uncommon for a client to connect to a service using a dynamic or private port (although some peer-to-peer file sharing programs do use these ports).</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Figure 2 displays some common well-known and registered ports within TCP. Figure 3 displays common well-known and registered ports within UDP. </p>
+          <p></p>
+          <p>
+            <b>Using both TCP and UDP</b>
+          </p>
+          <p></p>
+          <p>Some applications may use both TCP and UDP (Figure 4). For example, the low overhead of UDP enables DNS to serve many client requests very quickly. Sometimes, however, sending the requested information may require the reliability of TCP. In this case, the well-known port number, 53, is used by both TCP and UDP with this service.</p>
+          <p></p>
+          <p>A current list of port numbers and the associated applications can be found on the IANA organizational website.  </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

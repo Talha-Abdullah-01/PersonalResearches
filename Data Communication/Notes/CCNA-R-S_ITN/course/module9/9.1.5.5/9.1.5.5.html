@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.1.5.5 VLSM Chart</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_9.1.5.5_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Subnetting an IPv4 Network</h1>
+        <h2>Benefits of Variable Length Subnet Masking</h2>
+      </div>
+      <div id="content">
+          <p>Address planning can also be accomplished using a variety of tools. One method is to use a VLSM chart to identify which blocks of addresses are available for use and which ones are already assigned. This method helps to prevent assigning addresses that have already been allocated. Using the network from the previous example, the VLSM chart can be used to plan address assignment. </p>
+          <p></p>
+          <p>
+            <b>Examining the /27 Subnets</b>
+          </p>
+          <p></p>
+          <p>As shown in Figure 1, when using traditional subnetting the first seven address blocks were allocated for LANs and WANs. Recall that this scheme resulted in 8 subnets with 30 usable addresses each (/27). While this scheme worked for the LAN segments, there were many wasted addresses in the WAN segments. </p>
+          <p></p>
+          <p>When designing the addressing scheme on a new network, the address blocks can be assigned in a way that minimizes waste and keeps unused blocks of addresses contiguous.</p>
+          <p></p>
+          <p>
+            <b>Assigning VLSM Address Blocks</b>
+          </p>
+          <p></p>
+          <p>As shown in Figure 2, in order to use the address space more efficiently, /30 subnets are created for WAN links. To keep the unused blocks of addresses together, the last /27 subnet was further subnetted to create the /30 subnets. The first 3 subnets were assigned to WAN links.</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>.224 /30 host address range 225 to 226: WAN link between R1 and R2</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>.228 /30 host address range 229 to 230: WAN link between R2 and R3</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>.232 /30 host address range 233 to 234: WAN link between R3 and R4</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>.236 /30 host address range 237 to 238: Available to be used</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>.240 /30 host address range 241 to 242: Available to be used</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>.244 /30 host address range 245 to 246: Available to be used</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>.248 /30 host address range 249 to 250: Available to be used</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>.252 /30 host address range 253 to 254: Available to be used</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Designing the addressing scheme in this way leaves 3 unused /27 subnets and 5 unused /30 subnets.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

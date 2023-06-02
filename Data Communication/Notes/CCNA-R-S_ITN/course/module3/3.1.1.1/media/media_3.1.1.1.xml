@@ -1,0 +1,123 @@
+﻿<textcomponents>
+
+<!-- Slide 1 -->
+
+<component id="ID_s1_title">
+	<text><![CDATA[<B>Human Communication</B>]]></text>
+</component>
+<component id="ID_s1_txt01">
+	<text><![CDATA[<B>Message</B>]]></text>
+</component>
+<component id="ID_s1_txt02">
+	<text><![CDATA[<B>Signal</B>]]></text>
+</component>
+<component id="ID_s1_txt03">
+	<text><![CDATA[<B>Signal</B>]]></text>
+</component>
+<component id="ID_s1_txt04">
+	<text><![CDATA[<B>Message</B>]]></text>
+</component>
+<component id="ID_s1_txt05">
+	<text><![CDATA[Message<br>Source]]></text>
+</component>
+<component id="ID_s1_txt06">
+	<text><![CDATA[Transmitter]]></text>
+</component>
+<component id="ID_s1_txt07">
+	<text><![CDATA[Transmission<br>Medium]]></text>
+</component>
+<component id="ID_s1_txt08">
+	<text><![CDATA[Receiver]]></text>
+</component>
+<component id="ID_s1_txt09">
+	<text><![CDATA[Message<br>Destination]]></text>
+</component>
+
+
+<!-- Slide 2 -->
+
+<component id="ID_s2_title">
+	<text><![CDATA[<B>Computer Communication</B>]]></text>
+</component>
+<component id="ID_s2_txt01">
+	<text><![CDATA[<B>Message</B>]]></text>
+</component>
+<component id="ID_s2_txt02">
+	<text><![CDATA[<B>Signal</B>]]></text>
+</component>
+<component id="ID_s2_txt03">
+	<text><![CDATA[<B>Signal</B>]]></text>
+</component>
+<component id="ID_s2_txt04">
+	<text><![CDATA[<B>Message</B>]]></text>
+</component>
+<component id="ID_s2_txt05">
+	<text><![CDATA[Message<br>Source]]></text>
+</component>
+<component id="ID_s2_txt06">
+	<text><![CDATA[Transmitter]]></text>
+</component>
+<component id="ID_s2_txt07">
+	<text><![CDATA[Transmission<br>Medium]]></text>
+</component>
+<component id="ID_s2_txt08">
+	<text><![CDATA[Receiver]]></text>
+</component>
+<component id="ID_s2_txt09">
+	<text><![CDATA[Message<br>Destination]]></text>
+</component>
+
+
+<!-- controller -->
+
+<component id="ID_s1_end">
+<text><![CDATA[End]]></text>
+</component>
+
+<component id="ID_s1_fforward">
+<text><![CDATA[Fast Forward]]></text>
+</component>
+
+<component id="ID_s1_pause">
+<text><![CDATA[Pause]]></text>
+</component>
+
+<component id="ID_s1_play">
+<text><![CDATA[Play]]></text>
+</component>
+
+<component id="ID_s1_rewind">
+<text><![CDATA[Rewind]]></text>
+</component>
+
+<component id="ID_s1_start">
+<text><![CDATA[Start]]></text>
+</component>
+
+
+<component id="ID_s2_end">
+<text><![CDATA[End]]></text>
+</component>
+
+<component id="ID_s2_fforward">
+<text><![CDATA[Fast Forward]]></text>
+</component>
+
+<component id="ID_s2_pause">
+<text><![CDATA[Pause]]></text>
+</component>
+
+<component id="ID_s2_play">
+<text><![CDATA[Play]]></text>
+</component>
+
+<component id="ID_s2_rewind">
+<text><![CDATA[Rewind]]></text>
+</component>
+
+<component id="ID_s2_start">
+<text><![CDATA[Start]]></text>
+</component>
+
+
+</textcomponents>

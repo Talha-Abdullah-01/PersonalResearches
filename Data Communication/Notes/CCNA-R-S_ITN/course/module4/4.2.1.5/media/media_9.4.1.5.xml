@@ -1,0 +1,35 @@
+<textcomponents>
+	
+	<component id="ID_txt01">
+	<text><![CDATA[Outer Jacket]]></text>
+	</component>
+	
+	<component id="ID_txt02">
+	<text><![CDATA[Braided Copper Shielding]]></text>
+	</component>
+	
+	<component id="ID_txt03">
+	<text><![CDATA[Plastic Insulation]]></text>
+	</component>
+	
+	<component id="ID_txt04">
+	<text><![CDATA[Copper Conductor]]></text>
+	</component>
+	
+	<component id="ID_txt05">
+	<text><![CDATA[<b>Coaxial Connectors</b>]]></text>
+	</component>
+	
+	<component id="ID_txt05a">
+	<text><![CDATA[BNC]]></text>
+	</component>
+	
+	<component id="ID_txt05b">
+	<text><![CDATA[N type]]></text>
+	</component>
+	
+	<component id="ID_txt05c">
+	<text><![CDATA[F type]]></text>
+	</component>
+
+</textcomponents>

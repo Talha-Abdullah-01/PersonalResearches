@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.5.1.2 Summary</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_4.5.1.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Summary</h1>
+        <h2>Summary</h2>
+      </div>
+      <div id="content">
+          <p>The TCP/IP network access layer is the equivalent of the OSI data link layer (Layer 2) and the physical layer (Layer 1). </p>
+          <p></p>
+          <p>The OSI physical layer provides the means to transport the bits that make up a data link layer frame across the network media. The physical components are the electronic hardware devices, media, and other connectors that transmit and carry the signals to represent the bits. Hardware components such as network adapters (NICs), interfaces and connectors, cable materials, and cable designs are all specified in standards associated with the physical layer. The physical layer standards address three functional areas: physical components, frame encoding technique, and signaling method.</p>
+          <p></p>
+          <p>Using the proper media is an important part of network communications. Without the proper physical connection, either wired or wireless, communications between any two devices will not occur. </p>
+          <p></p>
+          <p>Wired communication consists of copper media and fiber cable.  </p>
+          <p>
+            <ul>
+              <li>There are three main types of copper media used in networking: unshielded-twisted pair (UTP), shielded-twisted pair (STP), and coaxial cable. UTP cabling is the most common copper networking media. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Optical fiber cable has become very popular for interconnecting infrastructure network devices. It permits the transmission of data over longer distances and at higher bandwidths (data rates) than any other networking media. Unlike copper wires, fiber-optic cable can transmit signals with less attenuation and is completely immune to EMI and RFI. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Wireless media carry electromagnetic signals that represent the binary digits of data communications using radio or microwave frequencies. </p>
+          <p>The number of wireless enabled devices continues to increase. For these reasons, wireless has become the medium of choice for home networks and is quickly gaining in popularity in enterprise networks. </p>
+          <p></p>
+          <p>The data link layer is responsible for the exchange of frames between nodes over a physical network media. It allows the upper layers to access the media and controls how data is placed and received on the media. </p>
+          <p></p>
+          <p>Among the different implementations of the data link layer protocols, there are different methods of controlling access to the media. These media access control techniques define if and how the nodes share the media. The actual media access control method used depends on the topology and media sharing. LAN and WAN topologies can be physical or logical. It is the logical topology that influences the type of network framing and media access control used. WANs are commonly interconnected using the point-to-point, hub and spoke, or mesh physical topologies. In shared media LANs, end devices can be interconnected using the star, bus, ring, or extended star (hybrid) physical topologies.</p>
+          <p></p>
+          <p>All data link layer protocols encapsulate the Layer 3 PDU within the data field of the frame. However, the structure of the frame and the fields contained in the header and trailer vary according to the protocol. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

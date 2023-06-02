@@ -1,0 +1,135 @@
+﻿<textcomponents>
+
+<!--OSI Model left-->
+<component id='ID_osi_header1'>
+	<text><![CDATA[<b>Source Node</b>]]></text>
+</component>
+
+<component id='ID_osi_txt07-1'>
+	<text><![CDATA[Application]]></text>
+</component>
+
+<component id='ID_osi_txt06-1'>
+	<text><![CDATA[Presentation]]></text>
+</component>
+
+<component id='ID_osi_txt05-1'>
+	<text><![CDATA[Session]]></text>
+</component>
+
+<component id='ID_osi_txt04-1'>
+	<text><![CDATA[Transport]]></text>
+</component>
+
+<component id='ID_osi_txt03-1'>
+	<text><![CDATA[Network]]></text>
+</component>
+
+<component id='ID_osi_txt02-1'>
+	<text><![CDATA[Data Link]]></text>
+</component>
+
+<component id='ID_osi_txt01-1'>
+	<text><![CDATA[Physical]]></text>
+</component>
+
+<!--OSI Model right-->
+<component id='ID_osi_header2'>
+	<text><![CDATA[<b>Destination Node</b>]]></text>
+</component>
+
+<component id='ID_osi_txt07-2'>
+	<text><![CDATA[Application]]></text>
+</component>
+
+<component id='ID_osi_txt06-2'>
+	<text><![CDATA[Presentation]]></text>
+</component>
+
+<component id='ID_osi_txt05-2'>
+	<text><![CDATA[Session]]></text>
+</component>
+
+<component id='ID_osi_txt04-2'>
+	<text><![CDATA[Transport]]></text>
+</component>
+
+<component id='ID_osi_txt03-2'>
+	<text><![CDATA[Network]]></text>
+</component>
+
+<component id='ID_osi_txt02-2'>
+	<text><![CDATA[Data Link]]></text>
+</component>
+
+<component id='ID_osi_txt01-2'>
+	<text><![CDATA[Physical]]></text>
+</component>
+
+
+
+<component id='ID_txt01'>
+	<text><![CDATA[<b>Encapsulation and De-encapsulation</b>]]></text>
+</component>
+
+<component id='ID_txt02'>
+	<text><![CDATA[Application Data]]></text>
+</component>
+
+<component id='ID_txt03'>
+	<text><![CDATA[Segments]]></text>
+</component>
+
+<component id='ID_txt04'>
+	<text><![CDATA[DATA]]></text>
+</component>
+
+<component id='ID_txt05'>
+	<text><![CDATA[DATA]]></text>
+</component>
+
+<component id='ID_txt06'>
+	<text><![CDATA[DATA]]></text>
+</component>
+
+<component id='ID_txt07'>
+	<text><![CDATA[Packet]]></text>
+</component>
+
+<component id='ID_txt08'>
+	<text><![CDATA[Header]]></text>
+</component>
+
+<component id='ID_txt09'>
+	<text><![CDATA[DATA]]></text>
+</component>
+
+<component id='ID_txt10'>
+	<text><![CDATA[Frame]]></text>
+</component>
+
+<component id='ID_txt11'>
+	<text><![CDATA[Header]]></text>
+</component>
+
+<component id='ID_txt12'>
+	<text><![CDATA[Header]]></text>
+</component>
+
+<component id='ID_txt13'>
+	<text><![CDATA[DATA]]></text>
+</component>
+
+<component id='ID_txt14'>
+	<text><![CDATA[Trailer]]></text>
+</component>
+
+<component id='ID_txt15'>
+	<text><![CDATA[Bits]]></text>
+</component>
+
+<component id='ID_txt16'>
+	<text><![CDATA[Signal]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,11 @@
+<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[Linksys Router]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Host]]></text> 
+</component>
+
+</textcomponents>

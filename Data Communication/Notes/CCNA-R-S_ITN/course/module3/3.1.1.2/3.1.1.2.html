@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.1.1.2 Establishing the Rules</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_3.1.1.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Rules of Communication</h1>
+        <h2>The Rules</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Establishing the Rules</b>
+          </p>
+          <p>Before communicating with one another, individuals must use established rules or agreements to govern the conversation. For example, consider Figure1, protocols are necessary for effective communication. The protocols used are specific to the characteristics of the communication method, including the characteristics of the source, destination and channel. These rules, or protocols, must be followed in order for the message to be successfully delivered and understood. There are many protocols available that govern successful human communication. Once there is an agreed upon method of communicating (face-to-face, telephone, letter, photography), the protocols put in place must account for the following requirements:</p>
+          <p>
+            <ul>
+              <li>An identified sender and receiver</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Common language and grammar</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Speed and timing of delivery</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Confirmation or acknowledgement requirements </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The protocols that are used in network communications share many of the fundamental traits as those protocols used to govern successful human conversations, see Figure 2. In addition to identifying the source and destination, computer and network protocols define the details of how a message is transmitted across a network to answer the above requirements. While there are many protocols that must interact, common computer protocols include:</p>
+          <p>
+            <ul>
+              <li>Message encoding</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Message formatting and encapsulation</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Message size</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Message timing</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Message delivery options</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Each of these will be discussed in more detail next. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

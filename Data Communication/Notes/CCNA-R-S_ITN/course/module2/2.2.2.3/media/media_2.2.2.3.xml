@@ -1,0 +1,5 @@
+﻿<textcomponents>
+<component id="ID_s1_txt01">
+  <text><![CDATA[Encrypts all passwords in the router configuration file]]></text> 
+  </component>
+</textcomponents>

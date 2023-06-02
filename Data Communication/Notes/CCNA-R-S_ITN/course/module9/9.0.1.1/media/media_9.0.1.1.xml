@@ -1,0 +1,7 @@
+<textcomponents>
+
+	<component id="ID_txt01">
+		<text><![CDATA[<br/><b>Upon completion of this chapter you will be able to:</b><br/><br/><textformat blockindent="-14"><li>Explain why routing is necessary for hosts on different subnets to communicate.</li><li>Describe IP as a communication protocol used to identify a single device on a network.</li><li>Given a network and subnet mask, calculate the number of host addresses available.</li><li>Calculate the necessary subnet mask in order to accommodate a given number of hosts.</li><li>Describe the benefits of variable length subnet masking (VLSM).</li><li>Design and implement a hierarchical addressing scheme.</li><li>Explain how IPv6 address assignments are implemented in a business network.</li></textformat><br/>]]></text> 
+	</component>
+	
+</textcomponents>

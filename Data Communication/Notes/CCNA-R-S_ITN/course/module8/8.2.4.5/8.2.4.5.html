@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.2.4.5 EUI-64 Process or Randomly Generated</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_8.2.4.5_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IPv6 Network Addresses</h1>
+        <h2>IPv6 Unicast Addresses</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>EUI-64 Process</b>
+          </p>
+          <p></p>
+          <p>IEEE defined the Extended Unique Identifier (EUI) or modified EUI-64 process. This process uses a client’s 48-bit Ethernet MAC address, and inserts another 16 bits in the middle of the 48-bit MAC address to create a 64-bit Interface ID. </p>
+          <p></p>
+          <p>Ethernet MAC addresses are usually represented in hexadecimal and are made up of two parts: </p>
+          <p>
+            <ul>
+              <li>
+                <b>Organizationally Unique Identifier (OUI)</b> – The OUI is a 24-bit (6 hexadecimal digits) vendor code assigned by IEEE.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Device Identifier </b>– The device identifier is a unique 24-bit (6 hexadecimal digits) value within a common OUI. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>An EUI-64 Interface ID is represented in binary and is made up of three parts:</p>
+          <p>
+            <ul>
+              <li>24-bit OUI from the client MAC address, but the 7th bit (the Universally/Locally (U/L) bit) is reversed. This means that if the 7th bit is a 0 it becomes a 1, and vice versa. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The inserted 16-bit value FFFE (in hexadecimal)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>24-bit Device Identifier from the client MAC address</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The EUI-64 process is illustrated in Figure 1, using R1’s GigabitEthernet MAC address of FC99:4775:CEE0.</p>
+          <p></p>
+          <p>
+            <b>Step 1:</b> Divide the MAC address between the OUI and device identifier.</p>
+          <p></p>
+          <p>
+            <b>Step 2:</b> Insert the hexadecimal value FFFE, which in binary is: 1111 1111 1111 1110. </p>
+          <p></p>
+          <p>
+            <b>Step 3:</b> Convert the first 2 hexadecimal values of the OUI to binary and flip the U/L bit (bit 7). In this example the 0 in bit 7 is changed to a 1.</p>
+          <p></p>
+          <p>The result is an EUI-64 generated Interface ID of FE99:47FF:FE75:CEE0. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: The use of the U/L bit and the reasons for reversing its value are discussed in RFC 5342.</p>
+          <p></p>
+          <p>The advantage of EUI-64 is the Ethernet MAC address can be used to determine the Interface ID. It also allows network administrators to easily track an IPv6 address to an end-device using the unique MAC address. However, this has caused privacy concerns among many users. They are concerned that their packets can be traced to the actual physical computer. Due to these concerns, a randomly generated Interface ID may be used instead.</p>
+          <p></p>
+          <p>
+            <b>Randomly Generated Interface IDs</b>
+          </p>
+          <p></p>
+          <p>Depending upon the operating system, a device may use a randomly generated Interface ID instead of using the MAC address and the EUI-64 process. For example, beginning with Windows Vista, Windows uses a randomly generated Interface ID instead of one created with EUI-64. Windows XP and previous Windows operating systems used EUI-64.</p>
+          <p></p>
+          <p>An easy way to identify that an address was more than likely created using EUI-64 is the FFFE located in the middle of the Interface ID, as shown in Figure 2.</p>
+          <p></p>
+          <p>After the Interface ID is established, either through the EUI-64 process or through random generation, it can be combined with an IPv6 prefix to create a global unicast address or a link-local address:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Global unicast address </b>– When using SLAAC, the device receives its prefix from the ICMPv6 RA and combines it with the Interface ID.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Link-local address </b>– A link-local prefix begins with FE80::/10. A device typically uses FE80::/64 as the prefix/prefix-length, followed by the Interface ID.</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<textcomponents>
+
+	<component id="ID_title">
+		<text><![CDATA[<b>The Role of the Header</b>]]></text>
+	</component>
+
+	<component id="ID_inst">
+		<text><![CDATA[Click the dark blue boxes to learn more.</b>]]></text>
+	</component>
+
+	<component id="ID_titleTxt01">
+		<text><![CDATA[<b>Start Frame</b>]]></text>
+	</component>
+	
+	<component id="ID_bodyTxt01">
+		<text><![CDATA[This field tells other devices on the network that a frame is coming along the medium.]]></text>
+	</component>
+	
+	<component id="ID_titleTxt02">
+		<text><![CDATA[<b>Address</b>]]></text>
+	</component>
+	
+	<component id="ID_bodyTxt02">
+		<text><![CDATA[This field stores the source and destination data link addresses.]]></text>
+	</component>
+	
+	<component id="ID_titleTxt03">
+		<text><![CDATA[<b>Type / Length</b>]]></text>
+	</component>
+	
+	<component id="ID_bodyTxt03">
+		<text><![CDATA[This field is an optional field used by some protocols to state either what type of data is coming or possibly the length of the frame.]]></text>
+	</component>
+
+	<component id="ID_txt01">
+		<text><![CDATA[Start Frame]]></text>
+	</component>
+
+	<component id="ID_txt02">
+		<text><![CDATA[Address]]></text>
+	</component>
+
+	<component id="ID_txt03">
+		<text><![CDATA[Type / Length]]></text>
+	</component>
+
+	<component id="ID_txt04">
+		<text><![CDATA[Data]]></text>
+	</component>
+
+	<component id="ID_txt05">
+	<text><![CDATA[FCS]]></text>
+	</component>
+
+	<component id="ID_txt07">
+		<text><![CDATA[Header]]></text>
+	</component>
+	
+	<component id="ID_txt08">
+		<text><![CDATA[]]></text>
+	</component>
+
+</textcomponents>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.0.1.1 Introduction</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_9.0.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Subnetting IP Networks</h1>
+        <h2>Introduction</h2>
+      </div>
+      <div id="content">
+          <p>Designing, implementing and managing an effective IP addressing plan ensures that networks can operate effectively and efficiently. This is especially true as the number of host connections to a network increases. Understanding the hierarchical structure of the IP address and how to modify that hierarchy in order to more efficiently meet routing requirements is an important part of planning an IP addressing scheme.</p>
+          <p></p>
+          <p>In the original IPv4 address, there are two levels of hierarchy: a network and a host. These two levels of addressing allow for basic network groupings that facilitate in routing packets to a destination network. A router forwards packets based on the network portion of an IP address; once the network is located, the host portion of the address allows for identification of the destination device. </p>
+          <p></p>
+          <p>However, as networks grow, with many organizations adding hundreds, and even thousands of hosts to their network, the two-level hierarchy is insufficient. </p>
+          <p></p>
+          <p>Subdividing a network adds a level to the network hierarchy, creating, in essence, three levels: a network, a subnetwork, and a host. Introducing an additional level to the hierarchy creates additional sub-groups within an IP network that facilities faster packet delivery and added filtration, by helping to minimize ‘local’ traffic. </p>
+          <p></p>
+          <p>This chapter examines, in detail, the creation and assignment of IP network and subnetwork addresses through the use of the subnet mask.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

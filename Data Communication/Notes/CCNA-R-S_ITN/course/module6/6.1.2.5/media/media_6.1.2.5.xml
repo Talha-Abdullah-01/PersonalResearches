@@ -1,0 +1,65 @@
+﻿<textcomponents>		
+	<component id="ID_title">
+		<text><![CDATA[<b>Generating IP Packets</b>]]></text> 
+	</component>	
+	<component id="ID_txt01">
+		<text><![CDATA[Transport Layer Encapsulation]]></text>
+	</component>	
+	<component id="ID_txt02">
+		<text><![CDATA[Segment<br/>Header]]></text> 
+	</component>	
+	<component id="ID_txt03">
+		<text><![CDATA[Data]]></text> 
+	</component>	
+	<component id="ID_txt04">
+		<text><![CDATA[Transport Layer PDU]]></text> 
+	</component>	
+	<component id="ID_txt05">
+		<text><![CDATA[The transport layer adds a header so segments can be reassembled at the destination.]]></text> 
+	</component>	
+	<component id="ID_txt06">
+		<text><![CDATA[Transport Layer Encapsulation]]></text> 
+	</component>	
+	<component id="ID_txt07">
+		<text><![CDATA[Segment Header]]></text> 
+	</component>	
+	<component id="ID_txt08">
+		<text><![CDATA[Data]]></text> 
+	</component>	
+	<component id="ID_txt09">
+		<text><![CDATA[Network Layer Encapsulation]]></text> 
+	</component>	
+	<component id="ID_txt10">
+		<text><![CDATA[IP Header]]></text> 
+	</component>	
+	<component id="ID_txt11">
+		<text><![CDATA[Transport Layer PDU]]></text> 
+	</component>	
+	<component id="ID_txt12">
+		<text><![CDATA[Network Layer PDU]]></text> 
+	</component>	
+	<component id="ID_txt13">
+		<text><![CDATA[The network layer adds a header so packets can be routed through complex networks and reach their destination. In TCP/IP based networks, the network layer PDU is the IP packet.]]></text> 
+	</component>	
+	<component id="ID_txt14">
+		<text><![CDATA[Transport Layer Encapsulation]]></text> 
+	</component>	
+	<component id="ID_txt15">
+		<text><![CDATA[Segment Header]]></text> 
+	</component>	
+	<component id="ID_txt16">
+		<text><![CDATA[Data]]></text> 
+	</component>	
+	<component id="ID_txt17">
+		<text><![CDATA[Network Layer Encapsulation]]></text> 
+	</component>	
+	<component id="ID_txt18">
+		<text><![CDATA[IP Header]]></text> 
+	</component>	
+	<component id="ID_txt19">
+		<text><![CDATA[Transport Layer PDU]]></text> 
+	</component>	
+	<component id="ID_txt20">
+		<text><![CDATA[IP Packet]]></text> 
+	</component>
+</textcomponents>

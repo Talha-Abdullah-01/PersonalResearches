@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.3.4.1 ipconfig Command Options</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.3.4.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Basic Network Performance</h1>
+        <h2>Host and IOS Commands</h2>
+      </div>
+      <div id="content">
+          <p>As shown in Figure 1, the IP address of the default gateway of a host can be viewed by issuing the<span class="cmd"><b> ipconfig </b></span>command at the command line of a Windows computer.</p>
+          <p></p>
+          <p>A tool to examine the MAC address of our computer is<span class="cmd"><b> ipconfig /all</b></span>. Note that in Figure 2, the MAC address of the computer is now displayed along with a number of details regarding the Layer 3 addressing of the device. Try using this command.</p>
+          <p></p>
+          <p>In addition, the manufacturer of the network interface in the computer can be identified through the OUI portion of the MAC address. This can be researched on the Internet.</p>
+          <p></p>
+          <p>The DNS Client service on Windows PCs optimizes the performance of DNS name resolution by storing previously resolved names in memory, as well. The<span class="cmd"><b> ipconfig /displaydns </b></span>command displays all of the cached DNS entries on a Windows computer system.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

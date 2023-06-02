@@ -1,0 +1,226 @@
+﻿<textcomponents>
+
+<component id='ID_s1_inst'>
+	<text><![CDATA[<b>Activity – Types of Attacks</b><br><br>Determine the types of security attacks described. Drag each security attack type to its scenario.]]></text>
+</component>
+
+<component id='ID_s1_txt01'>
+	<text><![CDATA[Eli opened an email sent to him by a friend. Later in the day, Eli received telephone calls from his friends saying they received emails from him that he did not knowingly send.]]></text>
+</component>
+
+<component id='ID_s1_txt02'>
+	<text><![CDATA[Sharron works for the finance department in her company. Her network administrator has given the finance department employees public IP addresses to access the Internet bank account. After an hour of work, the finance department members are told that the company bank account has been compromised.]]></text>
+</component>
+
+<component id='ID_s1_txt03'>
+	<text><![CDATA[<b>Attack Type</b>]]></text>
+</component>
+
+<component id='ID_s1_txt04'>
+	<text><![CDATA[<b>Security Attack Scenario</b>]]></text>
+</component>
+
+<!--Drag and Drop-->
+<component id='ID_s1_traget01'>
+	<text><![CDATA[<font color="#393536">Worm</font></b>]]></text>
+</component>
+
+<component id='ID_s1_traget02'>
+	<text><![CDATA[<font color="#393536">Denial of Service (DoS)</font></b>]]></text>
+</component>
+
+<component id='ID_s1_traget03'>
+	<text><![CDATA[<font color="#393536">Virus</font></b>]]></text>
+</component>
+
+<component id='ID_s1_traget04'>
+	<text><![CDATA[<font color="#393536">Access</font></b>]]></text>
+</component>
+
+<component id='ID_s1_traget05'>
+	<text><![CDATA[<font color="#393536">Reconnaissance</font></b>]]></text>
+</component>
+
+<component id='ID_s1_traget06'>
+	<text><![CDATA[<font color="#393536">Trojan Horse</font></b>]]></text>
+</component>
+
+
+ 
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched each security attack type to its scenario.]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched each security attack type to its scenario. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s1_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+
+<!--slide02-->
+<component id='ID_s2_inst'>
+	<text><![CDATA[<b>Activity – Types of Attacks</b><br><br>Determine the types of security attacks described. Drag each security attack type to its scenario.]]></text>
+</component>
+
+<component id='ID_s2_txt01'>
+	<text><![CDATA[Jeremiah downloaded some software from the Internet. He opened the file and his hard drive crashed immediately. He lost all information on his computer.]]></text>
+</component>
+
+<component id='ID_s2_txt02'>
+	<text><![CDATA[Angela receives an email with a link to her favorite online store, which is having a sale. She uses the link provided and is directed to a site that looks like her favorite online store. She orders from the web page using her credit card. Later, Angela discovers that her credit card has been used to pay for additional merchandise that she did not order.]]></text>
+</component>
+
+<component id='ID_s2_txt03'>
+	<text><![CDATA[<b>Attack Type</b>]]></text>
+</component>
+
+<component id='ID_s2_txt04'>
+	<text><![CDATA[<b>Security Attack Scenario</b>]]></text>
+</component>
+
+<!--Drag and Drop-->
+<component id='ID_s2_traget01'>
+	<text><![CDATA[<font color="#393536">Worm</font>]]></text>
+</component>
+
+<component id='ID_s2_traget02'>
+	<text><![CDATA[<font color="#393536">Denial of Service (DoS)</font>]]></text>
+</component>
+
+<component id='ID_s2_traget03'>
+	<text><![CDATA[<font color="#393536">Virus</font>]]></text>
+</component>
+
+<component id='ID_s2_traget04'>
+	<text><![CDATA[<font color="#393536">Access</font>]]></text>
+</component>
+
+<component id='ID_s2_traget05'>
+	<text><![CDATA[<font color="#393536">Reconnaissance</font>]]></text>
+</component>
+
+<component id='ID_s2_traget06'>
+	<text><![CDATA[<font color="#393536">Trojan Horse</font>]]></text>
+</component>
+
+
+ 
+
+<component id='ID_s2_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched each security attack type to its scenario.]]></text>
+</component>
+
+
+<component id='ID_s2_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched each security attack type to its scenario. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s2_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s2_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+
+<!--slide03-->
+<component id='ID_s3_inst'>
+	<text><![CDATA[<b>Activity – Types of Attacks</b><br><br>Determine the types of security attacks described. Drag each security attack type to its scenario.]]></text>
+</component>
+
+<component id='ID_s3_txt01'>
+	<text><![CDATA[Arianna was working on the Internet – a popup appeared stating that she needed to update her operating system by clicking on the link. When she clicked on the link, unknown to Arianna, a program was installed on her computer.]]></text>
+</component>
+
+<component id='ID_s3_txt02'>
+	<text><![CDATA[George is ordering a pair of shoes from a bidding site. There are 20 seconds left in the bidding cycle. George decides to ping the bidding site, over and over again, to stop anyone else from bidding on his shoes. The 20 seconds pass and George wins the bid.]]></text>
+</component>
+
+<component id='ID_s3_txt03'>
+	<text><![CDATA[<b>Attack Type</b>]]></text>
+</component>
+
+<component id='ID_s3_txt04'>
+	<text><![CDATA[<b>Security Attack Scenario</b>]]></text>
+</component>
+
+<!--Drag and Drop-->
+<component id='ID_s3_traget01'>
+	<text><![CDATA[<font color="#393536">Worm</font>]]></text>
+</component>
+
+<component id='ID_s3_traget02'>
+	<text><![CDATA[<font color="#393536">Denial of Service (DoS)</font>]]></text>
+</component>
+
+<component id='ID_s3_traget03'>
+	<text><![CDATA[<font color="#393536">Virus</font>]]></text>
+</component>
+
+<component id='ID_s3_traget04'>
+	<text><![CDATA[<font color="#393536">Access</font>]]></text>
+</component>
+
+<component id='ID_s3_traget05'>
+	<text><![CDATA[<font color="#393536">Reconnaissance</font>]]></text>
+</component>
+
+<component id='ID_s3_traget06'>
+	<text><![CDATA[<font color="#393536">Trojan Horse</font>]]></text>
+</component>
+
+
+ 
+
+<component id='ID_s3_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s3_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched each security attack type to its scenario.]]></text>
+</component>
+
+
+<component id='ID_s3_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_s3_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched each security attack type to its scenario. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s3_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s3_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+</textcomponents>

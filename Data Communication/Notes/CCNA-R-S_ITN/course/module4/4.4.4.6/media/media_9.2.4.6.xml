@@ -1,0 +1,75 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Ethernet Protocol</b>]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[A Common Data Link Layer Protocol for LANs]]></text> 
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[<b>Frame</b>]]></text> 
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[<b>Field name</b>]]></text> 
+</component>
+
+<component id="ID_txt16">
+<text><![CDATA[<b>Size</b>]]></text> 
+</component>
+
+<component id="ID_txt17">
+<text><![CDATA[<b>Preamble</b> - Used for synchronization; also contains a delimiter to mark the end of the timing information<br/><b>Destination Address</b> - 48-bit MAC address for the destination node<br/><b>Source Address</b> - 48-bit MAC address for the source node<br/><b>Type</b> - Value to indicate which upper layer protocol will receive the data after the Ethernet process is complete<br/><b>Data or payload</b> - This is the PDU, typically an IPv4 packet, that is to be transported over the media.<br/><b>Frame Check Sequence (FCS)</b> - A value used to check for damaged frames]]></text> 
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[Preamble]]></text> 
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Destination]]></text> 
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Source]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Type]]></text> 
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Data]]></text> 
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Frame Check Sequence]]></text> 
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[8 bytes]]></text> 
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[6 bytes]]></text> 
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[6 bytes]]></text> 
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[2 bytes]]></text> 
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[46 - 1500 bytes]]></text> 
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[4 bytes]]></text> 
+</component>
+
+</textcomponents>

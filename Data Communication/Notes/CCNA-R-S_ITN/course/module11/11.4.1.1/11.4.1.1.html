@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.4.1.1 Router File Systems</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.4.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Managing IOS Configuration Files</h1>
+        <h2>Router and Switch File Systems</h2>
+      </div>
+      <div id="content">
+          <p>In addition to implementing and securing a small network, it is also the job of the network administrator to manage configuration files. Managing the configuration files is important for purposes of backup and retrieval in the event of a device failure.</p>
+          <p></p>
+          <p>The Cisco IOS File System (IFS) provides a single interface to all the file systems a router uses, including: </p>
+          <p>
+            <ul>
+              <li>Flash memory file systems </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Network file systems (TFTP and FTP) </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Any other endpoint for reading or writing data such as NVRAM, the running configuration, ROM, and others</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>With Cisco IFS, all files can be viewed and classified (image, text file, and so forth), including files on remote servers. For example, it is possible to view a configuration file on a remote server to verify that it is the correct configuration file before loading the file on the router.</p>
+          <p></p>
+          <p>Cisco IFS allows the administrator to move around to different directories and list the files in a directory, and to create subdirectories in flash memory or on a disk. The directories available depend on the device.</p>
+          <p></p>
+          <p>The Figure 1 displays the output of the<span class="cmd"><b> show file systems </b></span>command, which lists all of the available file systems on a Cisco 1941 router, in this example. This command provides useful information such as the amount of available and free memory, the type of file system, and its permissions. Permissions include read only (ro), write only (wo), and read and write (rw), shown in the Flags column of the command output.</p>
+          <p></p>
+          <p>Although there are several file systems listed, of interest to us will be the tftp, flash, and nvram file systems. </p>
+          <p></p>
+          <p>Notice that the flash file system also has an asterisk preceding it.  This indicates that flash is the current default file system. The bootable IOS is located in flash; therefore, the pound symbol (#) is appended to the flash listing indicating that it is a bootable disk.</p>
+          <p></p>
+          <p>
+            <b>The Flash File System</b>
+          </p>
+          <p></p>
+          <p>Figure 2 lists the content of the current default file system, which in this case is flash as was indicated by the asterisks preceding the listing in the previous figure. There are several files located in flash, but of specific interest is the last listing. This is the name of the current Cisco IOS file image that is running in RAM.</p>
+          <p></p>
+          <p>
+            <b>The NVRAM File System</b>
+          </p>
+          <p></p>
+          <p>To view the contents of NVRAM, you must change the current default file system using the<span class="cmd"><b> cd </b></span>(change directory) command, as shown in Figure 3. The<span class="cmd"><b> pwd </b></span>(present working directory) command verifies that we are viewing the NVRAM directory. Finally, the<span class="cmd"><b> dir </b></span>(directory) command lists the contents of NVRAM. Although there are several configuration files listed, of specific interest is the startup-configuration file. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

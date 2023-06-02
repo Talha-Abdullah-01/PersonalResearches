@@ -1,0 +1,17 @@
+<textcomponents>
+	<component id="ID_title">
+	   <text><![CDATA[<b>The AAA Concept is Similar to the Use of a Credit Card</b>]]></text> 
+	</component>
+	
+	<component id="ID_txt_01">
+	   <text><![CDATA[<p class="ID_s2_bubble01 top"><b>Authentication</b><br/>Who are you?</p>]]></text> 
+	</component>
+	
+	<component id="ID_txt_02">
+	   <text><![CDATA[<p class="ID_s2_bubble02 top"><b>Authorization</b><br/>How much can you spend?</p>]]></text> 
+	</component>
+	
+	<component id="ID_txt_03">
+	   <text><![CDATA[<p class="ID_s2_bubble03 left"><b>Accounting</b><br/>What did you spend it on?</p>]]></text> 
+	</component>
+</textcomponents>

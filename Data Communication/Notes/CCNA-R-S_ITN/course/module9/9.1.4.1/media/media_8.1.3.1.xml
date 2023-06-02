@@ -1,0 +1,211 @@
+<textcomponents>
+
+<!--text boxes-->
+<component id="ID_txt01">
+<text><![CDATA[11000000 10101000 00000001 <font color="#F26200"><b>hhhhhhhh</b></font>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Subnet ID bits = 0, the network has one subnet.]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[As soon as one of the host bits is designated as a subnet bit, the network will have two subnets. Remember, in binary, a bit can have two states, 1 or 0, so the number of subnets is 2^s.]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Notice the inverse relationship between the number of subnets and the number of hosts per subnet.]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Our example network has fewer than six hosts in it. If we had to really subnet this network, would we choose to break it into two subnets, or would we choose to break it into the number of subnets that support 6 hosts?]]></text>
+</component>
+
+<!--table-->
+<component id="ID_header01">
+<text><![CDATA[<span>Subnet<br>ID Bits</span>]]></text>
+</component>
+
+<component id="ID_header02">
+<text><![CDATA[Host<br>ID Bits]]></text>
+</component>
+
+<component id="ID_header03">
+<text><![CDATA[Number<br>of Subnets]]></text>
+</component>
+
+<component id="ID_header04">
+<text><![CDATA[Number of Hosts per Subnets]]></text>
+</component>
+
+<component id="ID_header05">
+<text><![CDATA[Bit Pattern]]></text>
+</component>
+
+<component id="ID_r1cell01">
+<text><![CDATA[0]]></text>
+</component>
+
+<component id="ID_r1cell02">
+<text><![CDATA[8]]></text>
+</component>
+
+<component id="ID_r1cell03">
+<text><![CDATA[1]]></text>
+</component>
+
+<component id="ID_r1cell04">
+<text><![CDATA[254]]></text>
+</component>
+
+<component id="ID_r1cell05">
+<text><![CDATA[<font color="#F26200"><b>hhhhhhhh</b></font>]]></text>
+</component>
+
+<component id="ID_r2cell01">
+<text><![CDATA[1]]></text>
+</component>
+
+<component id="ID_r2cell02">
+<text><![CDATA[7]]></text>
+</component>
+
+<component id="ID_r2cell03">
+<text><![CDATA[2]]></text>
+</component>
+
+<component id="ID_r2cell04">
+<text><![CDATA[126]]></text>
+</component>
+
+<component id="ID_r2cell05">
+<text><![CDATA[s<font color="#F26200"><b>hhhhhhh</b></font>]]></text>
+</component>
+
+
+<component id="ID_r3cell01">
+<text><![CDATA[2]]></text>
+</component>
+
+<component id="ID_r3cell02">
+<text><![CDATA[6]]></text>
+</component>
+
+<component id="ID_r3cell03">
+<text><![CDATA[4]]></text>
+</component>
+
+<component id="ID_r3cell04">
+<text><![CDATA[62]]></text>
+</component>
+
+<component id="ID_r3cell05">
+<text><![CDATA[ss<font color="#F26200"><b>hhhhhh</b></font>]]></text>
+</component>
+
+<component id="ID_r4cell01">
+<text><![CDATA[3]]></text>
+</component>
+
+<component id="ID_r4cell02">
+<text><![CDATA[5]]></text>
+</component>
+
+<component id="ID_r4cell03">
+<text><![CDATA[8]]></text>
+</component>
+
+<component id="ID_r4cell04">
+<text><![CDATA[30]]></text>
+</component>
+
+<component id="ID_r4cell05">
+<text><![CDATA[sss<font color="#F26200"><b>hhhhh</b></font>]]></text>
+</component>
+
+<component id="ID_r5cell01">
+<text><![CDATA[4]]></text>
+</component>
+
+<component id="ID_r5cell02">
+<text><![CDATA[4]]></text>
+</component>
+
+<component id="ID_r5cell03">
+<text><![CDATA[16]]></text>
+</component>
+
+<component id="ID_r5cell04">
+<text><![CDATA[14]]></text>
+</component>
+
+<component id="ID_r5cell05">
+<text><![CDATA[ssss<font color="#F26200"><b>hhhh</b></font>]]></text>
+</component>
+
+<component id="ID_r6cell01">
+<text><![CDATA[5]]></text>
+</component>
+
+<component id="ID_r6cell02">
+<text><![CDATA[3]]></text>
+</component>
+
+<component id="ID_r6cell03">
+<text><![CDATA[32]]></text>
+</component>
+
+<component id="ID_r6cell04">
+<text><![CDATA[6]]></text>
+</component>
+
+<component id="ID_r6cell05">
+<text><![CDATA[sssss<font color="#F26200"><b>hhh</b></font>]]></text>
+</component>
+
+<component id="ID_r7cell01">
+<text><![CDATA[6]]></text>
+</component>
+
+<component id="ID_r7cell02">
+<text><![CDATA[2]]></text>
+</component>
+
+<component id="ID_r7cell03">
+<text><![CDATA[64]]></text>
+</component>
+
+<component id="ID_r7cell04">
+<text><![CDATA[2]]></text>
+</component>
+
+<component id="ID_r7cell05">
+<text><![CDATA[ssssss<font color="#F26200"><b>hh</b></font>]]></text>
+</component>
+
+<!-- controller -->
+<component id="end">
+<text><![CDATA[End]]></text>
+</component>
+
+<component id="fforward">
+<text><![CDATA[Fast Forward]]></text>
+</component>
+
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+
+<component id="play">
+<text><![CDATA[Play]]></text>
+</component>
+
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component>
+
+<component id="start">
+<text><![CDATA[Start]]></text>
+</component>
+
+</textcomponents>

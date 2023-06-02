@@ -1,0 +1,47 @@
+﻿<textcomponents>
+
+<component id='ID_title'>
+	<text><![CDATA[<b>ISOC, IAB, IETF, and IRTF</b>]]></text>
+</component>
+
+<component id='ID_txt01'>
+	<text><![CDATA[Internet Society (ISOC)]]></text>
+</component>
+
+<component id='ID_txt02'>
+	<text><![CDATA[Internet Architecture Board (IAB)]]></text>
+</component>
+
+<component id='ID_txt03'>
+	<text><![CDATA[Internet Engineering<br/>Task Force (IETF)]]></text>
+</component>
+
+<component id='ID_txt04'>
+	<text><![CDATA[Internet Engineering Steering Group (IESG)]]></text>
+</component>
+
+<component id='ID_txt05'>
+	<text><![CDATA[Working<br/>Group #1]]></text>
+</component>
+
+<component id='ID_txt06'>
+	<text><![CDATA[Working<br/>Group #2]]></text>
+</component>
+
+<component id='ID_txt07'>
+	<text><![CDATA[Internet Research<br/>Task Force (IRTF)]]></text>
+</component>
+
+<component id='ID_txt08'>
+	<text><![CDATA[Internet Research Steering Group (IRSG)]]></text>
+</component>
+
+<component id='ID_txt09'>
+	<text><![CDATA[Research<br/>Group #1]]></text>
+</component>
+
+<component id='ID_txt10'>
+	<text><![CDATA[Research<br/>Group #2]]></text>
+</component>
+
+</textcomponents>

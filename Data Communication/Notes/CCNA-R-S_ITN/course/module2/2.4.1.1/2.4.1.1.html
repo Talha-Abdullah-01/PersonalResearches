@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.4.1.1 Class Activity - Tutor Me</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.4.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Summary</h1>
+        <h2>Summary</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Tutor me</b>
+          </p>
+          <p></p>
+          <p>
+            <b>Students will work in pairs. Packet Tracer is required for this activity.</b>
+          </p>
+          <p></p>
+          <p>Assume that a new colleague has asked you for an orientation to the Cisco IOS CLI. This colleague has never worked with Cisco devices before. </p>
+          <p></p>
+          <p>You explain the basic CLI commands and structure, because you want your colleague to understand that the CLI is a simple, yet powerful, command language that can be easily understood and navigated.</p>
+          <p></p>
+          <p>Use Packet Tracer and one of the activities available in this chapter as a simple network model (for example, Lab Activity 2.3.3.5 LAB – Configuring a Switch Management Address). </p>
+          <p></p>
+          <p>Focus on these areas:</p>
+          <p>
+            <ul>
+              <li>While the commands are technical, do they resemble any statements from plain English?</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>How is the set of commands organized into subgroups or modes? How does an administrator know which mode he or she is currently using?</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>What are the individual commands to configure the basic settings of a Cisco device? How would you explain this command in simple terms? Use parallels to real life whenever appropriate.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Suggest how to group different commands together according to their modes so that a minimum number of moves between modes will be needed.</p>
+          <p></p>
+          <p>
+            <a href="../../files/2.4.1.1%20Class%20Activity%20-%20Tutor%20me!%20Instructions.pdf" target="_blank">Class Activity - Tutor Me! Instructions</a>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

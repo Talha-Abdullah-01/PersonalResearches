@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.1.1.2 Communication Between Subnets</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_9.1.1.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Subnetting an IPv4 Network</h1>
+        <h2>Network Segmentation</h2>
+      </div>
+      <div id="content">
+          <p>A router is necessary for devices on different networks to communicate. Devices on a network use the router interface attached to their LAN as their default gateway. Traffic that is destined for a device on a remote network will be processed by the router and forwarded toward the destination. To determine if traffic is local or remote, the router uses the subnet mask. </p>
+          <p></p>
+          <p>In a subnetted network space, this works exactly the same way. As shown in the figure, subnetting creates multiple logical networks from a single address block or network address.  Each subnet is treated as a separate network space. Devices on the same subnet must use an address, subnet mask, and default gateway that correlates to the subnet that they are a part of. </p>
+          <p></p>
+          <p>Traffic cannot be forwarded between subnets without the use of a router. Every interface on the router must have an IPv4 host address that belongs to the network or subnet to which the router interface is connected. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

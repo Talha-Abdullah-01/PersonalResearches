@@ -1,0 +1,8 @@
+<textcomponents>
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Router ARP Table</b>]]></text>
+	</component>
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>Host ARP Table</b>]]></text> 
+	</component>
+</textcomponents>

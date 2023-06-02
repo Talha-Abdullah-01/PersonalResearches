@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.4.1.1 Activity - MAC and Choose…</title>
+    <!-- Activity -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_5.4.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Summary</h1>
+        <h2>Summary</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>MAC and Choose…</b>
+          </p>
+          <p>
+            <b>Note</b>: This activity can be completed individually, in small groups, or in a full-classroom learning environment.</p>
+          <p></p>
+          <p>Please view the video located at the following link:</p>
+          <p></p>
+          <p>
+            <a href="http://www.netevents.tv/video/bob-metcalfe-the-history-of-ethernet" target="_blank">http://www.netevents.tv/video/bob-metcalfe-the-history-of-ethernet</a>
+          </p>
+          <p></p>
+          <p>Topics discussed include not only where we have come from in Ethernet development, but where we are going with Ethernet technology (a futuristic approach).</p>
+          <p></p>
+          <p>After viewing the video and comparing its contents to Chapter 5, go to the web and search for information about Ethernet. Use a constructivist approach: </p>
+          <p>
+            <ul>
+              <li>What did Ethernet look like when it was first developed?</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>How has Ethernet stayed the same over the past 25 years or so, and what changes are being made to make it more useful/applicable to today’s data transmission methods?</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Collect three pictures of old, current, and future Ethernet physical media and devices (focus on switches) – share these pictures with the class and discuss:</p>
+          <p>
+            <ul>
+              <li>How have Ethernet physical media and intermediary devices changed?</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>How have Ethernet physical media and intermediary devices stayed the same?</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>How will Ethernet change in the future?</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <a href="../../files/5.4.1.1%20MAC%20and%20Choose%20Instructions.pdf" target="_blank">Class Activity - MAC and Choose Instructions</a>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

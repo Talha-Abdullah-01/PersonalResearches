@@ -1,0 +1,98 @@
+<textcomponents>
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>192.168.1.0/24   Network</b>]]></text>
+	</component>
+	<component id="ID_s1_txt01">
+		<text><![CDATA[<b>Address</b>]]></text> 
+	</component>
+	<component id="ID_s1_txt02">
+		<text><![CDATA[<b>Mask</b>]]></text> 
+	</component>
+	<component id="ID_s1_txt03">
+		<text><![CDATA[Network Portion]]></text> 
+	</component>
+	<component id="ID_s1_txt04">
+		<text><![CDATA[Host Portion]]></text> 
+	</component>
+	<component id="ID_s1_txt05">
+		<text><![CDATA[With no host bits borrowed, the host portion of both the network address and mask are all 0 bits.]]></text> 
+	</component>
+	
+	<component id="ID_s2_txt01">
+		<text><![CDATA[Borrow 1 bit from the host portion of the address.]]></text> 
+	</component>
+	<component id="ID_s2_txt02">
+		<text><![CDATA[<b>Original</b>]]></text> 
+	</component>
+	<component id="ID_s2_txt03">
+		<text><![CDATA[<b>Mask</b>]]></text> 
+	</component>
+	<component id="ID_s2_txt04">
+		<text><![CDATA[1 Network]]></text> 
+	</component>
+	<component id="ID_s2_txt05">
+		<text><![CDATA[The borrowed bit value is <b>0</b> for the Net 0 address.]]></text> 
+	</component>
+	<component id="ID_s2_txt06">
+		<text><![CDATA[<b>Net 0</b>]]></text> 
+	</component>
+	<component id="ID_s2_txt07">
+		<text><![CDATA[The borrowed bit value is <b>1</b> for the Net 1 address.]]></text> 
+	</component>
+	<component id="ID_s2_txt08">
+		<text><![CDATA[<b>Net 1</b>]]></text> 
+	</component>
+	<component id="ID_s2_txt09">
+		<text><![CDATA[2 Subnets]]></text> 
+	</component>
+	<component id="ID_s2_txt10">
+		<text><![CDATA[The new subnets have the <b>SAME</b> subnet mask.]]></text> 
+	</component>
+	<component id="ID_s2_txt11">
+		<text><![CDATA[<b>Mask</b>]]></text> 
+	</component>
+	
+	<component id="ID_s3_title">
+		<text><![CDATA[<b>Decimal Representation</b>]]></text>
+	</component>
+	<component id="ID_s3_txt01">
+		<text><![CDATA[<b>Original</b>]]></text> 
+	</component>
+	<component id="ID_s3_txt02">
+		<text><![CDATA[<b>Mask</b>]]></text> 
+	</component>
+	<component id="ID_s3_txt03">
+		<text><![CDATA[Network: 192.168.1.0/24]]></text> 
+	</component>
+	<component id="ID_s3_txt04">
+		<text><![CDATA[Mask: 255.255.255.0]]></text> 
+	</component>
+	<component id="ID_s3_txt05">
+		<text><![CDATA[Borrowing 1 bit creates 2 subnets with the same mask.]]></text> 
+	</component>
+	<component id="ID_s3_txt06">
+		<text><![CDATA[<b>Net 0</b>]]></text> 
+	</component>
+	<component id="ID_s3_txt07">
+		<text><![CDATA[<b>Mask</b>]]></text> 
+	</component>
+	<component id="ID_s3_txt08">
+		<text><![CDATA[Network: 192.168.1.<font color='#5FBC21'><b>0</b></font>/<b>25</b>]]></text> 
+	</component>
+	<component id="ID_s3_txt09">
+		<text><![CDATA[Mask: 255.255.255.<font color='#652C8A'><b>128</b></font>]]></text> 
+	</component>
+	<component id="ID_s3_txt10">
+		<text><![CDATA[<b>Net 1</b>]]></text> 
+	</component>
+	<component id="ID_s3_txt11">
+		<text><![CDATA[<b>Mask</b>]]></text> 
+	</component>
+	<component id="ID_s3_txt12">
+		<text><![CDATA[Network: 192.168.1.<font color='#5FBC21'><b>128</b></font>/<b>25</b>]]></text> 
+	</component>
+	<component id="ID_s3_txt13">
+		<text><![CDATA[Mask: 255.255.255.<font color='#652C8A'><b>128</b></font>]]></text> 
+	</component>
+	
+</textcomponents>

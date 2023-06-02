@@ -1,0 +1,112 @@
+﻿<textcomponents>
+
+<component id="ID_s1_text01">
+<text><![CDATA[<b>Application Layer</b>]]></text>
+</component>
+<component id="ID_s1_text02">
+<text><![CDATA[Name System]]></text>
+</component>
+<component id="ID_s1_text03">
+<text><![CDATA[Host Config]]></text>
+</component>
+<component id="ID_s1_text04">
+<text><![CDATA[Email]]></text>
+</component>
+<component id="ID_s1_text05">
+<text><![CDATA[File Transfer]]></text>
+</component>
+<component id="ID_s1_text06">
+<text><![CDATA[Web]]></text>
+</component>
+<component id="ID_s1_text07">
+<text><![CDATA[Click each application protocol for more information.]]></text>
+</component>
+
+
+<component id="ID_btn01">
+<text><![CDATA[<b>DNS</b>]]></text>
+</component>
+<component id="ID_btn02">
+<text><![CDATA[<b>BOOTP</b>]]></text>
+</component>
+<component id="ID_btn03">
+<text><![CDATA[<b>DHCP</b>]]></text>
+</component>
+<component id="ID_btn04">
+<text><![CDATA[<b>SMTP</b>]]></text>
+</component>
+<component id="ID_btn05">
+<text><![CDATA[<b>POP</b>]]></text>
+</component>
+<component id="ID_btn06">
+<text><![CDATA[<b>IMAP</b>]]></text>
+</component>
+<component id="ID_btn07">
+<text><![CDATA[<b>FTP</b>]]></text>
+</component>
+<component id="ID_btn08">
+<text><![CDATA[<b>TFTP</b>]]></text>
+</component>
+<component id="ID_btn09">
+<text><![CDATA[<b>HTTP</b>]]></text>
+</component>
+
+
+
+<component id="ID_titleTxt01">
+<text><![CDATA[<b>Domain Name System (or Service)</b>]]></text>
+</component> 
+<component id="ID_bodyTxt01">
+<text><![CDATA[Translates domain names, such as cisco.com, into IP addresses]]></text>
+</component> 
+<component id="ID_titleTxt02">
+<text><![CDATA[<b>Bootstrap Protocol</b> ]]></text>
+</component> 
+<component id="ID_bodyTxt02">
+<text><![CDATA[<textformat blockindent="-14"><li>Enables a diskless workstation to discover its own IP address, the IP address of a BOOTP server on the network, and a file to be loaded into memory to boot the machine</li><li>BOOTP is being superseded by DHCP</li></textformat>]]></text>
+</component> 
+<component id="ID_titleTxt03">
+<text><![CDATA[<b>Dynamic Host Configuration Protocol</b>]]></text>
+</component> 
+<component id="ID_bodyTxt03">
+<text><![CDATA[<textformat blockindent="-14"><li>Dynamically assigns IP addresses to client stations at start-up</li><li>Allows the addresses to be re-used when no longer needed</li>]]></text>
+</component>
+<component id="ID_titleTxt04">
+<text><![CDATA[<b>Simple Mail Transfer Protocol</b>]]></text>
+</component> 
+<component id="ID_bodyTxt04">
+<text><![CDATA[<textformat blockindent="-14"><li>Enables clients to send email to a mail server</li><li>Enables servers to send email to other servers</li>]]></text>
+</component> 
+<component id="ID_titleTxt05">
+<text><![CDATA[<b>Post Office Protocol version 3 (POP3)</b>]]></text>
+</component> 
+<component id="ID_bodyTxt05">
+<text><![CDATA[<textformat blockindent="-14"><li>Enables clients to retrieve email from a mail server</li><li>Downloads email from the mail server to the desktop</li>]]></text>
+</component> 
+<component id="ID_titleTxt06">
+<text><![CDATA[<b>Internet Message Access Protocol</b>]]></text>
+</component> 
+<component id="ID_bodyTxt06">
+<text><![CDATA[<textformat blockindent="-14"><li>Enables clients to access email stored on a mail server</li><li>Maintains email on the server</li>]]></text>
+</component> 
+<component id="ID_titleTxt07">
+<text><![CDATA[<b>File Transfer Protocol</b>]]></text>
+</component> 
+<component id="ID_bodyTxt07">
+<text><![CDATA[<textformat blockindent="-14"><li>Sets rules that enable a user on one host to access and transfer files to and from another host over a network</li><li>A reliable, connection-oriented, and acknowledged file delivery protocol</li>]]></text>
+</component> 
+<component id="ID_titleTxt08">
+<text><![CDATA[<b>Trivial File Transfer Protocol</b>]]></text>
+</component> 
+<component id="ID_bodyTxt08">
+<text><![CDATA[<textformat blockindent="-14"><li>A simple, connectionless file transfer protocol</li><li>A best-effort, unacknowledged file delivery protocol</li><li>Utilizes less overhead than FTP</li>]]></text>
+</component> 
+<component id="ID_titleTxt09">
+<text><![CDATA[<b>Hypertext Transfer Protocol </b>]]></text>
+</component> 
+<component id="ID_bodyTxt09">
+<text><![CDATA[Set of rules for exchanging text, graphic images, sound, video, and other multimedia files on the World Wide Web]]></text>
+</component> 
+
+
+</textcomponents>

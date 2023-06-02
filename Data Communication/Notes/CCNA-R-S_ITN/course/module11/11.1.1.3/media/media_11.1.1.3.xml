@@ -1,0 +1,115 @@
+<textcomponents>
+<component id="ID_title">
+   <text><![CDATA[<b>IPv4 Address Planning and Assignment</b>]]></text>
+   </component>
+<component id="ID_txt01">
+   <text><![CDATA[Sales]]></text>
+   </component>
+<component id="ID_txt02">
+   <text><![CDATA[Sales]]></text>
+   </component>
+<component id="ID_txt03">
+   <text><![CDATA[Sales]]></text>
+   </component>
+<component id="ID_txt04">
+   <text><![CDATA[HR]]></text>
+   </component>
+<component id="ID_txt05">
+   <text><![CDATA[HR]]></text>
+   </component>
+<component id="ID_txt06">
+   <text><![CDATA[Legal]]></text>
+   </component>
+<component id="ID_txt07">
+   <text><![CDATA[Legal]]></text>
+   </component>
+<component id="ID_txt08">
+   <text><![CDATA[Admin]]></text>
+   </component>
+
+   <component id="ID_txt09">
+   <text><![CDATA[Department]]></text>
+   </component>
+
+   <component id="ID_txt10">
+   <text><![CDATA[Device]]></text>
+   </component>
+
+   <!--Slide 1-->
+<component id="ID_btn01">
+<text><![CDATA[Location]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+   <text><![CDATA[<b>West Office</b>]]></text>
+   </component>
+<component id="ID_s1_txt02">
+   <text><![CDATA[<b>East Office</b>]]></text>
+   </component>
+
+<!--Slide 2-->
+<component id="ID_btn02">
+<text><![CDATA[Sales]]></text>
+</component>
+<component id="ID_s2_txt01">
+   <text><![CDATA[<b>Office</b>]]></text>
+   </component>
+<component id="ID_s2_txt02">
+   <text><![CDATA[<b>Office</b>]]></text>
+   </component>
+
+<!--Slide 3-->
+<component id="ID_btn03">
+<text><![CDATA[HR]]></text>
+</component>
+<component id="ID_s3_txt01">
+   <text><![CDATA[<b>Office</b>]]></text>
+   </component>
+<component id="ID_s3_txt02">
+   <text><![CDATA[<b>Office</b>]]></text>
+   </component>
+
+<!--Slide 4-->
+<component id="ID_btn04">
+<text><![CDATA[Legal]]></text>
+</component>
+<component id="ID_s4_txt01">
+   <text><![CDATA[<b>Office</b>]]></text>
+   </component>
+<component id="ID_s4_txt02">
+   <text><![CDATA[<b>Office</b>]]></text>
+   </component>
+
+<!--Slide 5-->
+<component id="ID_btn05">
+<text><![CDATA[Printer]]></text>
+</component>
+<component id="ID_s5_txt01">
+   <text><![CDATA[<b>Office</b>]]></text>
+   </component>
+<component id="ID_s5_txt02">
+   <text><![CDATA[<b>Office</b>]]></text>
+   </component>
+<!--Slide 6-->
+<component id="ID_btn06">
+<text><![CDATA[Server]]></text>
+</component>
+<component id="ID_s6_txt01">
+   <text><![CDATA[<b>Office</b>]]></text>
+   </component>
+<component id="ID_s6_txt02">
+   <text><![CDATA[<b>Office</b>]]></text>
+   </component>
+
+<!--Slide 7-->
+<component id="ID_btn07">
+<text><![CDATA[Computer]]></text>
+</component>
+<component id="ID_s7_txt01">
+   <text><![CDATA[<b>Office</b>]]></text>
+   </component>
+<component id="ID_s7_txt02">
+   <text><![CDATA[<b>Office</b>]]></text>
+   </component>
+
+</textcomponents>

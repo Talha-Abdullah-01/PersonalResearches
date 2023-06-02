@@ -1,0 +1,58 @@
+<textcomponents>
+
+	<component id="ID_title">
+		<text><![CDATA[<b>Physical Security Plan</b>]]></text>
+	</component>
+
+
+	<component id="ID_titleTxt01">
+		<text><![CDATA[<b>Plan physical security to limit damage to the equipment:</b>]]></text>
+	</component>
+	
+	<component id="ID_bodyTxt01">
+		<text><![CDATA[<textformat blockindent='-14'><li>Lock up equipment and prevent unauthorized access from the doors, ceiling, raised floor, windows, ducts, and vents.</li><li>Monitor and control closet entry with electronic logs.</li><li>Use security cameras.</li></textformat>]]></text>
+	</component>
+	
+	<component id="ID_txt02">
+		<text><![CDATA[Secure computer room floor plan]]></text>
+	</component>
+
+	<component id="ID_txt03">
+		<text><![CDATA[AC]]></text>
+	</component>
+
+	<component id="ID_txt04">
+		<text><![CDATA[UPS BAY]]></text>
+	</component>
+
+	<component id="ID_txt05">
+		<text><![CDATA[SVRS]]></text>
+	</component>
+
+	<component id="ID_txt06">
+		<text><![CDATA[LAN]]></text>
+	</component>
+
+	<component id="ID_txt07">
+		<text><![CDATA[WAN]]></text>
+	</component>
+
+	<component id="ID_txt08">
+		<text><![CDATA[HELP DESK]]></text>
+	</component>
+
+	<component id="ID_txt09">
+		<text><![CDATA[Card Reader]]></text>
+	</component>
+
+	<component id="ID_txt10">
+		<text><![CDATA[Door]]></text>
+	</component>
+
+	<component id="ID_txt11">
+		<text><![CDATA[Door]]></text>
+	</component>
+	
+	
+
+</textcomponents>

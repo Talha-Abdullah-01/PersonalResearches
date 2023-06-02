@@ -1,0 +1,7 @@
+<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[<i><b>TCP and UDP are transport layer protocols instrumental in ensuring that…</b><br/><br/><textformat blockindent="-14"><ul><li>Network communications with different levels of importance are sent/received according to their levels of importance.</li><li>The type of data will affect whether TCP or UDP will be used as the method of delivery.</li><li>Timing is a factor and will affect how long it takes to send/receive TCP/UDP data transmissions.</li></ul></textformat></i>]]></text>
+</component>
+
+</textcomponents>

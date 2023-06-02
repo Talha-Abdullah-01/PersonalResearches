@@ -1,0 +1,26 @@
+<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>Subnets Based on Organizational Structure</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[Research and Development]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[Technical Support]]></text> 
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[Executive Management]]></text> 
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[Sales]]></text> 
+	</component>	
+	<component id="ID_txt05">
+		<text><![CDATA[Human Resources]]></text> 
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[Engineers]]></text> 
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[Corporate Network]]></text> 
+	</component>	
+</textcomponents>

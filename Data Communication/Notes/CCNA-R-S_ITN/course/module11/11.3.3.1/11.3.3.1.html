@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.3.3.1 Common show Commands Revisited</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.3.3.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Basic Network Performance</h1>
+        <h2>Show Commands</h2>
+      </div>
+      <div id="content">
+          <p>The Cisco IOS CLI<span class="cmd"><b> show </b></span>commands display relevant information about the configuration and operation of the device.</p>
+          <p></p>
+          <p>Network technicians use<span class="cmd"><b> show </b></span>commands extensively for viewing configuration files, checking the status of device interfaces and processes, and verifying the device operational status. The<span class="cmd"><b> show </b></span>commands are available whether the device was configured using the CLI or Cisco Configuration Professional.</p>
+          <p></p>
+          <p>The status of nearly every process or function of the router can be displayed using a<span class="cmd"><b> show </b></span>command. Some of the more popular show commands are:</p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">
+                  <b>show running-config</b>
+                </span>
+                <b></b>(Figure 1)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">
+                  <b>show interfaces</b>
+                </span>
+                <b></b>(Figure 2)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">
+                  <b>show arp</b>
+                </span> (Figure 3)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">
+                  <b>show ip route</b>
+                </span> (Figure 4)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">
+                  <b>show protocols</b>
+                </span> (Figure 5)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">
+                  <b>show version</b>
+                </span>
+                <b></b>(Figure 6)</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Click the buttons in the figure to see more information about the<span class="cmd"><b> show </b></span>commands.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.1.4.3 Subnetting to Meet Network Requirements</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_9.1.4.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Subnetting an IPv4 Network</h1>
+        <h2>Determining the Subnet Mask</h2>
+      </div>
+      <div id="content">
+          <p>Every network within an organization is designed to accommodate a finite number of hosts. Basic subnetting requires enough subnets to accommodate the networks while also providing enough host addresses per subnet.</p>
+          <p></p>
+          <p>Some networks, such as point-to-point WAN links, require only two hosts. Other networks, such as a user LAN in a large building or department, may need to accommodate hundreds of hosts. Network administrators must devise the internetwork addressing scheme to accommodate the maximum number of hosts for each network. The number of hosts in each division should allow for growth in the number of hosts.</p>
+          <p></p>
+          <p>
+            <b>Determine the Total Number of Hosts</b>
+          </p>
+          <p></p>
+          <p>First, consider the total number of hosts required by the entire corporate internetwork. A block of addresses large enough to accommodate all devices in all the corporate networks must be used. These devices include end user devices, servers, intermediate devices, and router interfaces.</p>
+          <p></p>
+          <p>Consider the example of a corporate internetwork that must accommodate a total of 138 hosts in its five locations (see Figure 1). In this example, the service provider has allocated a network address of 172.16.0.0/22 (10 host bits). As shown in Figure 2, this will provide 1,022 host addresses, which will more than accommodate the addressing needs for this internetwork.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

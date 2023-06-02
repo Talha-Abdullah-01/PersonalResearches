@@ -1,0 +1,23 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[IPv6 Link-Local Address]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[Interface ID]]></text> 
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[64 bits]]></text> 
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[EUI-64 Process]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Randomly Generated Number]]></text> 
+</component>
+
+</textcomponents>

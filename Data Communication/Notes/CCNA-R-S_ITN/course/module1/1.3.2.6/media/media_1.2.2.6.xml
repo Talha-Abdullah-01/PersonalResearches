@@ -1,0 +1,65 @@
+﻿<textcomponents>
+
+<!--Slide 1-->
+<component id="ID_s1_title">
+<text><![CDATA[<b>Security is Important for How We Use a Network</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[Unauthorized Transactions]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[<font size="11" class="font11px" color='#FFFFFF'><b>Out of Business</b></font>]]></text>
+</component>
+
+<component id="ID_s1_caption">
+<text><![CDATA[Unauthorized use of our communications data can have severe consequences.]]></text>
+</component>
+
+<!--Slide 2-->
+<component id="ID_s2_title">
+<text><![CDATA[<b>Security is Important for How We Use a Network</b>]]></text>
+</component>
+
+<component id="ID_s2_caption">
+<text><![CDATA[The communication and information that we would like to be private is protected from those who would make unauthorized use of it.]]></text>
+</component>
+<component id="ID_s2_txt1">
+<text><![CDATA[The way we learn]]></text>
+</component>
+<component id="ID_s2_txt2">
+<text><![CDATA[The way we live]]></text>
+</component>
+<component id="ID_s2_txt3">
+<text><![CDATA[The way we work]]></text>
+</component>
+<component id="ID_s2_txt4">
+<text><![CDATA[The way we play]]></text>
+</component>
+<component id="ID_s2_txt5">
+<text><![CDATA[<font color="#FFFFFF"><b>Access Policy</b></font>]]></text>
+</component>
+<component id="ID_s2_txt6">
+<text><![CDATA[<font color="#FFFFFF"><b>Firewall</b></font>]]></text>
+</component>
+<component id="ID_s2_txt7">
+<text><![CDATA[<font color="#FFFFFF"><b>Data Encryption</b></font>]]></text>
+</component>
+<component id="ID_s2_txt8">
+<text><![CDATA[Identity Thief]]></text>
+</component>
+<component id="ID_s2_txt9">
+<text><![CDATA[Criminal]]></text>
+</component>
+<component id="ID_s2_txt10">
+<text><![CDATA[Cheat]]></text>
+</component>
+<component id="ID_s2_txt11">
+<text><![CDATA[Competitor]]></text>
+</component>
+<component id="ID_s2_txt12">
+<text><![CDATA[Fraudster]]></text>
+</component>
+
+</textcomponents>

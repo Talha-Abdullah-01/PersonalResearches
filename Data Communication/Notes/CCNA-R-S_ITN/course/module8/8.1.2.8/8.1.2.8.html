@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.1.2.8 Lab - Converting IPv4 Addresses to Binary</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_8.1.2.8_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IPv4 Network Addresses</h1>
+        <h2>IPv4 Subnet Mask</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>In this lab, you will complete the following objectives:</b>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Part 1: Convert IPv4 Addresses from Dotted Decimal to Binary </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Part 2: Use Bitwise ANDing Operation to Determine Network Addresses </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Part 3: Apply Network Address Calculations</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <a href="../../files/8.1.2.8%20Lab%20-%20Converting%20IPv4%20Addresses%20to%20Binary.pdf" target="_blank">Lab - Converting IPv4 Addresses to Binary</a>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

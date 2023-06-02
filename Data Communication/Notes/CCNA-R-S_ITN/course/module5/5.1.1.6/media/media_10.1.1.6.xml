@@ -1,0 +1,106 @@
+﻿<textcomponents>
+
+<!-- instructions -->
+<component id="ID_inst">
+	<text><![CDATA[<b>Activity – MAC and LLC Sublayers</b><br><br>Descriptions of the MAC and LLC sublayers are provided in the table.  Click in the MAC or LLC fields to match the descriptions to the correct sublayer.]]></text>
+</component>
+
+<!-- buttons -->
+<component id="ID_Button01">
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+	<text><![CDATA[6]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[2]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+	<text><![CDATA[<b>MAC</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>LLC</b>]]></text>
+</component>
+
+<!--Question text - blockindent code moves the text away from the left edge a bit-->
+<!--Question text - If questions are numbered, use blockindent for hanging indents-->
+<component id="txt_q1">
+	<text><![CDATA[1. <textformat blockindent='13'>Controls the network interface card through software drivers</textformat>]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[2. Works with the upper layers to add application information for delivery of data to higher <br/>&nbsp;&nbsp;&nbsp;&nbsp;level protocols]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[3. Works with hardware to support bandwidth requirements – checks for errors in bits<br/>&nbsp;&nbsp;&nbsp;&nbsp;sent and received]]></text>
+</component>
+
+<component id="txt_q4">
+	<text><![CDATA[4. Controls access to the media through signaling and physical media standards<br/>&nbsp;&nbsp;&nbsp;&nbsp;requirements]]></text>
+</component>
+
+<component id="txt_q5">
+	<text><![CDATA[5. Supports Ethernet technology by using CSMA/CD or CSMA/CA]]></text>
+</component>
+
+<component id="txt_q6">
+	<text><![CDATA[6. Remains relatively independent of physical equipment]]></text>
+</component>
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+<!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a4">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a5">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a6">
+	<text><![CDATA[2]]></text>
+</component>
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[You have successfully matched the descriptions to the correct sublayer.]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[You have not successfully matched the descriptions to the correct sublayer. Please Reset and try again.]]></text>
+</component>
+
+</textcomponents>

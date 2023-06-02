@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.2.2.4 nslookup</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_10.2.2.4_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Well-Known Application Layer Protocols and Services</h1>
+        <h2>Providing IP Addressing Services</h2>
+      </div>
+      <div id="content">
+          <p>DNS is a client/server service; however, it differs from the other client/server services. While other services use a client that is an application (such as web browser, email client), the DNS client runs as a service itself. The DNS client, sometimes called the DNS resolver, supports name resolution for other network applications and other services that need it. </p>
+          <p></p>
+          <p>When configuring a network device, we generally provide one or more DNS Server addresses that the DNS client can use for name resolution. Usually the Internet service provider (ISP) provides the addresses to use for the DNS servers. When a user’s application requests to connect to a remote device by name, the requesting DNS client queries one of these name servers to resolve the name to a numeric address.</p>
+          <p></p>
+          <p>Computer operating systems also have a utility called nslookup that allows the user to manually query the name servers to resolve a given hostname. This utility can also be used to troubleshoot name resolution issues and to verify the current status of the name servers. </p>
+          <p></p>
+          <p>In the figure, when the <span class="cmd"><b>nslookup</b></span> command is issued, the default DNS server configured for your host is displayed. In this example, the DNS server is dns-sj.cisco.com which has an address of 171.70.168.183. </p>
+          <p></p>
+          <p>The name of a host or domain can be entered at the <span class="cmd"><b>nslookup</b></span> prompt. In the first query in the figure, a query is made for <span class="cmd">www.cisco.com</span>. The responding name server provides the address of <span class="cmd">198.133.219.25</span>. </p>
+          <p></p>
+          <p>The queries shown in the figure are only simple tests. The nslookup utility has many options available for extensive testing and verification of the DNS process. When finished, type <span class="cmd"><b>exit</b></span> to leave the nslookup utility.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

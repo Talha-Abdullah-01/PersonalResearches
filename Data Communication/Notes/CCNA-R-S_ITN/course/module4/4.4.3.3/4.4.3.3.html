@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.4.3.3 Contention-Based Access</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_4.4.3.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Media Access Control</h1>
+        <h2>LAN Topologies</h2>
+      </div>
+      <div id="content">
+          <p>When using a non-deterministic contention-based method, a network device can attempt to access the medium whenever it has data to send. To prevent complete chaos on the media, these methods use a Carrier Sense Multiple Access (CSMA) process to first detect if the media is carrying a signal. </p>
+          <p></p>
+          <p>If a carrier signal on the media from another node is detected, it means that another device is transmitting. When the device attempting to transmit sees that the media is busy, it will wait and try again after a short time period. If no carrier signal is detected, the device transmits its data. Ethernet and wireless networks use contention-based media access control. </p>
+          <p></p>
+          <p>It is possible that the CSMA process will fail and two devices will transmit at the same time creating a data collision. If this occurs, the data sent by both devices will be corrupted and will need to be resent. </p>
+          <p></p>
+          <p>Contention-based media access control methods do not have the overhead of controlled access methods. A mechanism for tracking whose turn it is to access the media is not required. However, the contention-based systems do not scale well under heavy media use. As use and the number of nodes increases, the probability of successful media access without a collision decreases. Additionally, the recovery mechanisms required to correct errors due to these collisions further diminishes the throughput.</p>
+          <p></p>
+          <p>CSMA is usually implemented in conjunction with a method for resolving the media contention. The two commonly used methods are:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Carrier sense multiple access with collision detection (CSMA/CD)</b>: The end device monitors the media for the presence of a data signal. If a data signal is absent and therefore the media is free, the device transmits the data. If signals are then detected that show another device was transmitting at the same time, all devices stop sending and try again later. Traditional forms of Ethernet use this method.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Carrier sense multiple access with collision avoidance (CSMA/CA)</b>: The end device examines the media for the presence of a data signal. If the media is free, the device sends a notification across the media of its intent to use it. Once it receives a clearance to transmit, the device then sends the data. This method is used by 802.11 wireless networking technologies.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The figure illustrates the following:</p>
+          <p>
+            <ul>
+              <li>How contention-based access methods operates</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Characteristics of contention-based access methods</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Examples of contention-based access methods</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

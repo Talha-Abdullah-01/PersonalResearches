@@ -1,0 +1,39 @@
+﻿<textcomponents>
+
+<!-- Main -->
+<component id="ID_btn01">
+<text><![CDATA[<b>Router</b>]]></text>
+</component>
+
+<component id="ID_btn02">
+<text><![CDATA[<b>Switch</b>]]></text>
+</component>
+
+<!--<component id="ID_title">
+<text><![CDATA[<b></b>]]></text>
+</component>-->
+
+
+<component id="ID_text01">
+<text><![CDATA[User EXEC Mode Prompt]]></text>
+</component>
+
+<component id="ID_text02">
+<text><![CDATA[Privileged EXEC Mode Prompt]]></text>
+</component>
+
+<component id="ID_text03">
+<text><![CDATA[User EXEC Mode Prompt]]></text>
+</component>
+
+<!-- Slide 1 -->
+<component id="ID_s1_text01">
+<text><![CDATA[<b>Router</b>]]></text>
+</component>
+
+<!-- Slide 2 -->
+<component id="ID_s2_text01">
+<text><![CDATA[<b>Switch</b>]]></text>
+</component>
+
+</textcomponents>

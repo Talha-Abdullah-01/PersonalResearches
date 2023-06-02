@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.2.4.1 Properties of Wireless Media</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_4.2.4.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Network Media</h1>
+        <h2>Wireless Media</h2>
+      </div>
+      <div id="content">
+          <p>Wireless media carry electromagnetic signals that represent the binary digits of data communications using radio or microwave frequencies. </p>
+          <p></p>
+          <p>As a networking medium, wireless is not restricted to conductors or pathways, as are copper and fiber media. Wireless media provides the greatest mobility options of all media. As well, the number of wireless enabled devices is continuously increasing. For these reasons, wireless has become the medium of choice for home networks. As network bandwidth options increase, wireless is quickly gaining in popularity in enterprise networks. </p>
+          <p></p>
+          <p>The figure highlights various wireless related symbols.</p>
+          <p></p>
+          <p>However, wireless does have some areas of concern including:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Coverage area</b>: Wireless data communication technologies work well in open environments. However, certain construction materials used in buildings and structures, and the local terrain, will limit the effective coverage. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Interference</b>: Wireless is susceptible to interference and can be disrupted by such common devices as household cordless phones, some types of fluorescent lights, microwave ovens, and other wireless communications.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Security</b>: Wireless communication coverage requires no access to a physical strand of media. Therefore, devices and users who are not authorized for access to the network can gain access to the transmission. Consequently, network security is a major component of wireless network administration.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Although wireless is increasing in popularity for desktop connectivity, copper and fiber are the most popular physical layer media for network deployments.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

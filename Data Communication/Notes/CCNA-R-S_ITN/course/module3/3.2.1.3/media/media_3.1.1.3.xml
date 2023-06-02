@@ -1,0 +1,29 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Interaction of Protocols</b>]]></text>
+</component>
+
+<component id="ID_text01">
+<text><![CDATA[Hypertext Transfer Protocol (HTTP)]]></text>
+</component>
+
+<component id="ID_text02">
+<text><![CDATA[Transmission Control Protocol (TCP)]]></text>
+</component>
+
+<component id="ID_text03">
+<text><![CDATA[Internet Protocol (IP)]]></text>
+</component>
+
+<component id="ID_text04">
+<text><![CDATA[Ethernet]]></text>
+</component>
+
+<component id="ID_text05">
+<text><![CDATA[Web<BR/>Server]]></text>
+</component>
+
+<component id="ID_text06">
+<text><![CDATA[<b>Protocol Stack</b>]]></text>
+</component>
+</textcomponents>

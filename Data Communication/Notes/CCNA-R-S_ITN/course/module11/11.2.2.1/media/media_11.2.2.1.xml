@@ -1,0 +1,43 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Malicious Code Attacks</b>]]></text>
+</component>
+<component id="ID_txt01">		
+<text><![CDATA[The primary vulnerabilities for end-user workstations are worm, virus, and Trojan horse attacks.]]></text>
+</component>
+<component id="ID_txt02">
+<text><![CDATA[A worm executes arbitrary code and installs copies of itself in the infected computer's memory, which infects other hosts.]]></text>
+</component>
+<component id="ID_txt03">		
+<text><![CDATA[A virus is malicious software that is attached to another program to execute a particular unwanted function on a user's workstation.]]></text>
+</component>
+<component id="ID_txt04">
+<text><![CDATA[A Trojan horse is different only in that the entire application was written to look like something else, when, in fact, it is an attack tool.]]></text></component>
+
+<!--ANIMATION CONTROLLER-->
+	<component id="end">
+		<text><![CDATA[End]]></text>
+	</component>
+	
+	<component id="fforward">
+		<text><![CDATA[Fast Forward]]></text>
+	</component>
+	
+	<component id="pause">
+		<text><![CDATA[Pause]]></text>
+	</component>
+	
+	<component id="play">
+		<text><![CDATA[Play]]></text>
+	</component>
+	
+	<component id="rewind">
+		<text><![CDATA[Rewind]]></text>
+	</component>
+	
+	<component id="start">
+		<text><![CDATA[Start]]></text>
+	</component>
+
+</textcomponents>
+

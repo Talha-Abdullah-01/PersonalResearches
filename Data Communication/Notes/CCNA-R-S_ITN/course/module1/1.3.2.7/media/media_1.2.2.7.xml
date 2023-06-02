@@ -1,0 +1,205 @@
+﻿<textcomponents>
+
+<!-- instructions -->
+<component id="ID_inst">
+	<text><![CDATA[<b>Activity – Network Architecture Requirements</b><br>Select the appropriate column to identify the network architecture requirement to which each characteristic or feature belongs.]]></text>
+</component>
+
+<!-- buttons -->
+<component id="ID_Button01">
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+	<text><![CDATA[16]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[4]]></text>
+</component>
+
+<!--Answer column headers-->
+
+
+<component id="txt_col1">
+	<text><![CDATA[<b>Fault <br/>Tolerance</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>Scalability</b>]]></text>
+</component>
+
+<component id="txt_col3">
+	<text><![CDATA[<b>Quality <br/>of Service</b>]]></text>
+</component>
+
+<component id="txt_col4">
+	<text><![CDATA[<b>Security</b>]]></text>
+</component>
+
+
+
+
+<!--Question text - blockindent code moves the text away from the left edge a bit-->
+<!--Question text - If questions are numbered, use blockindent for hanging indents-->
+<component id="txt_q1">
+	<text><![CDATA[1. <textformat blockindent='13'>Networks should always be available.</textformat>]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[2. <textformat blockindent='13'>Full memory queues mean packets must be dropped.</textformat>]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[3. <textformat blockindent='13'>Priority queues are implemented when demand for network bandwidth exceeds supply.</textformat>]]></text>
+</component>
+
+<component id="txt_q4">
+	<text><![CDATA[4. <textformat blockindent='13'>Business and personal network equipment must be protected.</textformat>]]></text>
+</component>
+
+<component id="txt_q5">
+	<text><![CDATA[5. <textformat blockindent='13'>Developing a plan for priority queuing is a strategy for quality delivery of information. </textformat>]]></text>
+</component>
+
+<component id="txt_q6">
+	<text><![CDATA[6. <textformat blockindent='13'>Business and personal data must be protected.</textformat>]]></text>
+</component>
+
+<component id="txt_q7">
+	<text><![CDATA[7. <textformat blockindent='13'>Different types of Internet Service Providers can affect the quality of network data delivery.</textformat>]]></text>
+</component>
+
+<component id="txt_q8">
+	<text><![CDATA[8. <textformat blockindent='13'>Networks can grow or expand with minimal impact on performance.</textformat>]]></text>
+</component>
+
+<component id="txt_q9">
+	<text><![CDATA[9. <textformat blockindent='13'>Priority for queuing packets is based on the type of data sent and how important it may be.</textformat>]]></text>
+</component>
+
+<component id="txt_q10">
+	<text><![CDATA[10. <textformat blockindent='18'>Data can travel through more than one route for delivery from a remote source.</textformat>]]></text>
+</component>
+
+
+<component id="txt_q11">
+	<text><![CDATA[11. <textformat blockindent='21'>Types of network equipment, how they are identified (IP address/MAC address), and how they are named can have an impact on the growth of a network.</textformat>]]></text>
+</component>
+
+<component id="txt_q12">
+	<text><![CDATA[12. <textformat blockindent='21'>Many tools and procedures are being implemented to address the need to exchange confidential and business critical information.</textformat>]]></text>
+</component>
+
+<component id="txt_q13">
+	<text><![CDATA[13. <textformat blockindent='21'>Traffic delay and data loss should be considered when setting up delivery through priority queuing.</textformat>]]></text>
+</component>
+
+<component id="txt_q14">
+	<text><![CDATA[14. <textformat blockindent='21'>Compromising the integrity of crucial business and personal assets could have serious repercussions.</textformat>]]></text>
+</component>
+
+<component id="txt_q15">
+	<text><![CDATA[15. <textformat blockindent='21'>Common network standards allow hardware and software vendors to focus on product improvements and services.</textformat>]]></text>
+</component>
+
+<component id="txt_q16">
+	<text><![CDATA[16. <textformat blockindent='21'>Types of network connectivity can affect delivery of information.</textformat>]]></text>
+</component>
+
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+<!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a4">
+	<text><![CDATA[4]]></text>
+</component>
+
+<component id="txt_a5">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a6">
+	<text><![CDATA[4]]></text>
+</component>
+
+<component id="txt_a7">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a8">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a9">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a10">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a11">
+	<text><![CDATA[2]]></text>
+</component>
+
+
+<component id="txt_a12">
+	<text><![CDATA[4]]></text>
+</component>
+
+
+<component id="txt_a13">
+	<text><![CDATA[3]]></text>
+</component>
+
+
+<component id="txt_a14">
+	<text><![CDATA[4]]></text>
+</component>
+
+<component id="txt_a15">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a16">
+	<text><![CDATA[1]]></text>
+</component>
+
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[You have successfully matched each characteristic to its network architecture requirement.]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[You have not successfully matched each characteristic to its network architecture requirement. Please click Reset and try again.]]></text>
+</component>
+
+</textcomponents>

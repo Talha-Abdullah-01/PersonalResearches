@@ -1,0 +1,50 @@
+﻿<textcomponents>
+
+<component id="ID_btn01">
+<text><![CDATA[Translate]]></text>
+</component>
+<component id="ID_btn02">
+<text><![CDATA[Untranslate]]></text>
+</component>
+
+<component id="ID_title01">
+<text><![CDATA[&nbsp;]]></text>
+</component>
+
+<component id="ID_bullet01">
+<text><![CDATA[humans communication between govern rules. Itisverydifficulttounderstandmessagesthatarenotcorrectlyformattedanddonotfollowtheestablishedrulesandprotocols. A estrutura da gramatica, da lingua, da pontuacao e do sentance faz a configuracao humana compreensivel por muitos individuos diferentes.]]></text>
+</component>
+
+<component id="ID_title02">
+<text><![CDATA[&nbsp;]]></text>
+</component>
+
+<component id="ID_bullet02">
+<text><![CDATA[Rules govern communication between humans. It is very difficult to understand messages that are not correctly formatted and do not follow the established rules and protocols. The structure of the grammar, the language, the punctuation and the sentence make the configuration humanly understandable for many different individuals.]]></text>
+</component> 
+
+<component id="ID_inst">
+<text><![CDATA[Click Translate to see what happens when protocols are applied.]]></text>
+</component>
+
+<component id="ID_protocols">
+  <text><![CDATA[Protocols]]></text> 
+</component>
+
+<component id="ID_encoding">
+  <text><![CDATA[Message Encoding]]></text> 
+</component>
+<component id="ID_encapsulation">
+  <text><![CDATA[Message Formatting and Encapsulation]]></text> 
+</component>
+<component id="ID_unitSize">
+  <text><![CDATA[Message Size]]></text> 
+</component>
+<component id="ID_timing">
+  <text><![CDATA[Message Timing]]></text> 
+  </component>
+<component id="ID_delivery">
+  <text><![CDATA[Message Delivery Options]]></text> 
+  </component>
+  
+</textcomponents>

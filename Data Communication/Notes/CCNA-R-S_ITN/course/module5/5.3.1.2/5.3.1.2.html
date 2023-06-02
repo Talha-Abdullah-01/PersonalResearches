@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.3.1.2 Switch MAC Address Table</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_5.3.1.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>LAN Switches</h1>
+        <h2>Switching</h2>
+      </div>
+      <div id="content">
+          <p>Switches use MAC addresses to direct network communications through their switch fabric to the appropriate port toward the destination node. The switch fabric is the integrated circuits and the accompanying machine programming that allows the data paths through the switch to be controlled. For a switch to know which port to use to transmit a unicast frame, it must first learn which nodes exist on each of its ports.</p>
+          <p></p>
+          <p>A switch determines how to handle incoming data frames by using its MAC address table. A switch builds its MAC address table by recording the MAC addresses of the nodes connected to each of its ports. Once a MAC address for a specific node on a specific port is recorded in the address table, the switch then knows to send traffic destined for that specific node out the port mapped to that node for subsequent transmissions.</p>
+          <p></p>
+          <p>When an incoming data frame is received by a switch and the destination MAC address is not in the table, the switch forwards the frame out all ports, except for the port on which it was received. When the destination node responds, the switch records the node's MAC address in the address table from the frame's source address field. In networks with multiple interconnected switches, the MAC address tables record multiple MAC addresses for the ports connecting the switches which reflect the node's beyond. Typically, switch ports used to interconnect two switches have multiple MAC addresses recorded in the MAC address table. </p>
+          <p></p>
+          <p>To see how this works, view each of the steps in Figures 1-6.</p>
+          <p></p>
+          <p>The following describes this process:</p>
+          <p></p>
+          <p>
+            <b>Step 1.</b> The switch receives a broadcast frame from PC1 on Port 1.</p>
+          <p></p>
+          <p>
+            <b>Step 2.</b> The switch enters the source MAC address and the switch port that received the frame into the address table.</p>
+          <p></p>
+          <p>
+            <b>Step 3.</b> Because the destination address is a broadcast, the switch floods the frame to all ports, except the port on which it received the frame.</p>
+          <p></p>
+          <p>
+            <b>Step 4.</b> The destination device replies to the broadcast with a unicast frame addressed to PC1.</p>
+          <p></p>
+          <p>
+            <b>Step 5.</b> The switch enters the source MAC address of PC3 and the port number of the switch port that received the frame into the address table. The destination address of the frame and its associated port is found in the MAC address table.</p>
+          <p></p>
+          <p>
+            <b>Step 6.</b> The switch can now forward frames between source and destination devices without flooding, because it has entries in the address table that identify the associated ports.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: The MAC address table is sometimes referred to as a content addressable memory (CAM) table. While the term CAM table is fairly common, for the purposes of this course, we will refer to it as a MAC address table.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+   <text><![CDATA[Web Browser<br />Email Client<br />File Access Client]]></text>
+   </component>
+<component id="ID_txt02">
+   <text><![CDATA[Web Browser <br />File Access Client]]></text> 
+   </component>
+<component id="ID_txt03">
+   <text><![CDATA[Web Browser<br />Email Client]]></text> 
+   </component>
+<component id="ID_txt04">
+   <text><![CDATA[File Access Client]]></text> 
+   </component>
+<component id="ID_txt05">
+   <text><![CDATA[Email Server<br />Web Server<br />File Server]]></text> 
+   </component>
+</textcomponents>

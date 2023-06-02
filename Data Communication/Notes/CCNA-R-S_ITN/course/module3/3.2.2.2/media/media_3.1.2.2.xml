@@ -1,0 +1,119 @@
+﻿<textcomponents>	
+	<!--  Event Date 2011 goes here  -->
+	<component id="ID_title01">
+		<text><![CDATA[The first World IPv6 Day (June 8, 2011), many websites and Internet service providers around the world, including Google, Facebook, and Yahoo!, participated with more than 1,000 other companies for a worldwide trial of IPv6.]]></text>
+	</component>
+	
+	<!--  Event Date 1995 goes here  -->
+	<component id="ID_title02">
+		<text><![CDATA[The first specifications for IPv6 (the eventual successor to IPv4) released (RFC 1883).]]></text>
+	</component>
+	
+	<!--  Event Date 1993 goes here  -->
+	<component id="ID_title03">
+		<text><![CDATA[The first web browser, MOSAIC, is developed by Marc Andreessen at the University of Illinois, Champaign-Urbana.]]></text>
+	</component>
+	<component id="ID_bodytext03">
+		<text><![CDATA[1985_x2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id lacus in risus consectetur tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id lacus in risus consectetur tristique.]]></text>
+	</component>
+	
+	<!--  Event Date 1991 goes here  -->
+	<component id="ID_title04">
+		<text><![CDATA[Tim Berners-Lee and Robert Cailliau release the specifications for WWW.]]></text>
+	</component>
+	
+	<!--  Event Date 1988 goes here  -->
+	<component id="ID_title05">
+		<text><![CDATA[The Internet Relay Chat (IRC) is developed by Jarkko Oikarinen.]]></text>
+	</component>
+	<component id="ID_txt_09_01">
+		<text><![CDATA[Network]]></text>
+	</component>
+
+	<component id="ID_txt_09_02">
+		<text><![CDATA[<p class="ID_bubble01">Enrico: Hi Jessica!<br/>Jessica: Hi Enrico!</p>]]></text>
+	</component>	
+	<component id="ID_txt_09_03">
+		<text><![CDATA[<p class="ID_bubble01">Enrico: Hi Jessica!<br/>Jessica: Hi Enrico!</p>]]></text>
+	</component>
+	
+	<!--  Event Date 1986 goes here  -->
+	<component id="ID_title06">
+		<text><![CDATA[1986 - Cisco launches its first routing innovation, the AGS multi-protocol router.]]></text>
+	</component>
+	
+	<!--  Event Date 1985 goes here  -->
+	<component id="ID_title07">
+		<text><![CDATA[The File Transfer Protocol (FTP) is documented (RFC 765).]]></text>
+	</component>	
+		
+	<!--  Event Date 1984 goes here  -->
+	<component id="ID_title08">
+		<text><![CDATA[The Domain Name Service (DNS) is introduced.]]></text>
+	</component>		
+	<component id="ID_txt08_01">
+		<text><![CDATA[Network]]></text>
+	</component>		
+	<component id="ID_txt08_02">
+		<text><![CDATA[DNS server]]></text>
+	</component>		
+	<component id="ID_txt08_03">
+		<text><![CDATA[<p class="ID_bubble02">What is the IP address for www.example.com?</p>]]></text>
+	</component>		
+	<component id="ID_txt08_04">
+		<text><![CDATA[<p class="ID_bubble03">The IP address for www.example.com is 10.10.10.10.</p>]]></text>
+	</component>		
+	<component id="ID_txt08_05">
+		<text><![CDATA[Client]]></text>
+	</component>			
+	
+	<!--  Event Date 1982 goes here  -->
+	<component id="ID_title09">
+		<text><![CDATA[The Exterior Gateway Protocol (EGP) is developed to allow routers to exchange network information (RFC 827).]]></text>
+	</component>	
+	<component id="ID_txt09_01">
+		<text><![CDATA[EGP]]></text>
+	</component>	
+	<component id="ID_txt09_02">
+		<text><![CDATA[EGP]]></text>
+	</component>	
+	<component id="ID_txt09_03">
+		<text><![CDATA[EGP]]></text>
+	</component>
+	
+	<!--  Event Date 1981 goes here  -->
+	<component id="ID_title10">
+		<text><![CDATA[The TCP and IP protocols are formalized (RFC 793 and RFC 791).]]></text>
+	</component>
+	
+	<!--  Event Date 1972_1 goes here  -->
+	<component id="ID_title11">
+		<text><![CDATA[Ray Tomlinson chooses the @ sign to signify the recipient’s destination.]]></text>
+	</component>
+	
+	<!--  Event Date 1972_2 goes here  -->
+	<component id="ID_title12">
+		<text><![CDATA[Larry Roberts writes the first email management program.]]></text>
+	</component> 
+	
+	<!--  Event Date 1972_3 goes here  -->
+	<component id="ID_title13">
+		<text><![CDATA[Telnet specification written (RFC 318).]]></text>
+	</component>
+		<component id="ID_txt13_01">
+		<text><![CDATA[Remote File Server]]></text>
+	</component>	
+	<component id="ID_txt13_02">
+		<text><![CDATA[C> telnet 10.1.1.1<br/>Login: ****<br/>Password: ****<br/><br/>Connected to Remote File Server]]></text>
+	</component>
+	
+	<!--  Event Date 1970 goes here  -->
+	<component id="ID_title14">
+		<text><![CDATA[ALOHAnet becomes operational, the first packet radio network, developed by Norman Abramson, University of Hawaii.]]></text>
+	</component>
+	
+	<!--  Event Date 1969 goes here  -->
+	<component id="ID_title15">
+		<text><![CDATA[On October 29, 1969, the first message is transmitted from an SDS Sigma 7 mainframe computer at University of California, Los Angeles (UCLA) to an SDS 940 mainframe computer at Stanford Research Institute.]]></text>
+	</component>
+</textcomponents>

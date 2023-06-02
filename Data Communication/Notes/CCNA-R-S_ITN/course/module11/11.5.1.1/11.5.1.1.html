@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.5.1.1 Multi-Function Device</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.5.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Integrated Routing Services</h1>
+        <h2>Integrated Router</h2>
+      </div>
+      <div id="content">
+          <p>The use of networking is not limited to small businesses and large organizations. </p>
+          <p></p>
+          <p>Another environment that is increasingly taking advantage of networking technology is the home. Home networks are being used to provide connectivity and Internet sharing among multiple personal computers systems and laptops throughout the house. They also allow individuals to take advantage of various services such as print sharing to a network printer, centralized storage of photos, music, and movies on a network attached storage (NAS) appliance; as well as allowing other end user devices, such as tablet computers, cell phones, and even home appliances, such as a television, to have access to Internet services.  </p>
+          <p></p>
+          <p>A home network is very similar to a small-business network. However, most home networks, and many small business networks, do not require high-volume devices, such as dedicated routers and switches. Smaller scale devices, as long as they provide the same functionality of routing and switching, are all that are required. For this reason, many home and small business networks utilize the service of a multi-function device. </p>
+          <p></p>
+          <p>For the purpose of this course, multi-function devices will be referred to as integrated routers.</p>
+          <p></p>
+          <p>An integrated router is like having several different devices connected together. For example, the connection between the switch and the router still occurs, but it occurs internally. When a packet is forwarded from one device to another on the same local network, the integrated switch will automatically forward the packet to the destination device. If a packet is forwarded to a device on a remote network, however, the integrated switch will then forward the packet to the internal router connection. The internal router will then determine the best path and forward the packet out accordingly. </p>
+          <p></p>
+          <p>Most integrated routers offer both wired switching capabilities and wireless connectivity, and serve as the access point (AP) in the wireless network, as shown in Figure 1. Wireless connectivity is a popular, flexible, and cost-effective way for homes, and businesses alike, to provide network services to end devices.</p>
+          <p></p>
+          <p>Figures 2 and 3 list some common advantages and considerations for using wireless. </p>
+          <p></p>
+          <p>In addition to supporting routing, switching and wireless connectivity, many additional features may be available on an integrated router, including: DHCP service, a firewall, and even network attached storage services.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

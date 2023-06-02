@@ -1,0 +1,79 @@
+<textcomponents>
+<component id='ID_inst'>
+	<text><![CDATA[<b>Activity – IP Characteristics</b><br><br>Read each IP Characteristic. Then click Connectionless, Best Effort, or Media Independent to indicate its delivery method.]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>IP Characteristic</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Delivery Method</b>]]></text>
+</component>
+
+<!--buttons-->
+<component id="ID_btn01">
+<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+<!-- Terms -->
+<component id="ID_term01">
+<text><![CDATA[<b>Connectionless</b>]]></text>
+</component>
+
+<component id="ID_term02">
+<text><![CDATA[<b>Best Effort</b>]]></text>
+</component>
+
+<component id="ID_term03">
+<text><![CDATA[<b>Media Independent</b>]]></text>
+</component>
+
+
+<!--Characteristics-->
+<component id="ID_ans01">
+<text><![CDATA[Will send a packet even if the destination host is not able to receive it.]]></text>
+</component>
+
+<component id="ID_ans02">
+<text><![CDATA[No contact is made with the destination host before sending a packet.]]></text>
+</component>
+
+<component id="ID_ans03">
+<text><![CDATA[Packet delivery is not guaranteed.]]></text>
+</component>
+
+<component id="ID_ans04">
+<text><![CDATA[Does not guarantee that the packet will be delivered fully without errors.]]></text>
+</component>
+
+<component id="ID_ans05">
+<text><![CDATA[Fiber optics cabling, satellites, and wireless can all be used to route the same packet.]]></text>
+</component>
+
+<component id="ID_ans06">
+<text><![CDATA[Will adjust the size of the packet sent depending on what type of network access will be used.]]></text>
+</component>
+
+<component id='ID_break'>
+	<text><![CDATA[<br><br>]]></text>
+</component>
+
+<!--feedback-->
+<component id='ID_titleCorrect'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_correctText'>
+	<text><![CDATA[<span>Congratulations! You have matched the IP characteristics to their delivery methods.</span>]]></text>
+</component>
+
+<component id='ID_titleIncorrect'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id='ID_incorrectText'>
+	<text><![CDATA[Please try again.]]></text>
+</component>
+
+</textcomponents>

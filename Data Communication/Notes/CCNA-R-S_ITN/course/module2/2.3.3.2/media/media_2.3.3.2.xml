@@ -1,0 +1,47 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Verifying the VLAN Interface Assignment</b>]]></text>
+</component>
+
+
+<!--Syntax Checker Button Text-->
+<component id="ID_sc_reset">
+<text><![CDATA[Reset]]></text>
+</component>
+<component id="ID_sc_showme">
+<text><![CDATA[Show Me]]></text>
+</component>
+<component id="ID_sc_showall">
+<text><![CDATA[Show All]]></text>
+</component>
+<!--End Syntax Checker Button Text-->
+
+<!--Syntax Checker Body Text-->
+<component id="ID_SC5" fontFace='Courier New' fontSize="10">
+
+<text></text>		
+
+<feedback id="fb"><![CDATA[<b>***</b><font size = '10' face="Arial">You must enter the exact and full command. Commands that include a name or password are case-sensitive.</font><b>***</b> 
+]]></feedback>		
+
+<existingcommands><![CDATA[<font size = '10' face="Arial"><b>Enter the command to verify the interface configuration on S1.</b></font>]]></existingcommands>
+
+<command prompt="S1#">
+<correctresponse><![CDATA[show ip interface brief]]></correctresponse>
+<deviceresponse><![CDATA[Interface     	IP-Address     OK?  Method  Status     Protocol<br>FastEthernet0/1   unassigned     YES  manual  up         up<br>FastEthernet0/2   unassigned     YES  manual  up         up <br>&lt;output omitted&gt;<br>Vlan1             192.168.10.2   YES  manual  up         up<br>]]></deviceresponse>	
+<instruction><![CDATA[<font size = '10' face="Arial"><b>You are now on S2. Enter the command to verify the interface configuration on S2.</b></font>]]></instruction> 			
+</command>
+<command prompt="S2#">
+
+<correctresponse><![CDATA[show ip interface brief]]></correctresponse>
+<deviceresponse><![CDATA[Interface     	IP-Address     OK?  Method  Status     Protocol<br>FastEthernet0/1   unassigned     YES  manual  up         up<br>FastEthernet0/2   unassigned     YES  manual  up         up <br>&lt;output omitted&gt;<br>Vlan1             192.168.10.3   YES  manual  up         up<br>]]></deviceresponse>	
+<instruction><![CDATA[<font size = '10' face="Arial"><b>You successfully verified the interface assignment on S1 and S2.</b></font>]]></instruction> 			
+</command>
+
+<command prompt=""/>
+
+</component>
+<!--End Syntax Checker Body Text-->
+
+
+</textcomponents> 

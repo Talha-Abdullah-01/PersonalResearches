@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.1.2.3 IPv4 Network, Host and Broadcast Addresses</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_8.1.2.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IPv4 Network Addresses</h1>
+        <h2>IPv4 Subnet Mask</h2>
+      </div>
+      <div id="content">
+          <p>There are three types of addresses within the address range of each IPv4 network:</p>
+          <p>
+            <ul>
+              <li>Network address</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Host addresses</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Broadcast address</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Network Address</b>
+          </p>
+          <p>The network address is a standard way to refer to a network. The subnet mask or the prefix length might also be used when referring to network address. For example, the network shown in Figure 1 could be referred to as the 10.1.1.0 network, the 10.1.1.0 255.255.255.0 network or the 10.1.1.0/24 network. All hosts in the 10.1.1.0/24 network will have the same network portion bits.</p>
+          <p></p>
+          <p>As shown in Figure 2, within the IPv4 address range of a network, the first address is reserved for the network address. This address has a 0 for each host bit in the host portion of the address. All hosts within the network share the same network address.</p>
+          <p></p>
+          <p>
+            <b>Host Address</b>
+          </p>
+          <p>Every end device requires a unique address to communicate on the network. In IPv4 addresses, the values between the network address and the broadcast address can be assigned to end devices in a network. As shown in Figure 3, this address has any combination of 0 and 1 bits in the host portion of the address but cannot contain all 0 bits or all 1 bits.</p>
+          <p></p>
+          <p>
+            <b>Broadcast Address</b>
+          </p>
+          <p>The IPv4 broadcast address is a special address for each network that allows communication to all the hosts in that network. To send data to all hosts in a network at once, a host can send a single packet that is addressed to the broadcast address of the network, and each host in the network that receives this packet will process its contents.  </p>
+          <p></p>
+          <p>The broadcast address uses the highest address in the network range. This is the address in which the bits in the host portion are all 1s. All 1s in an octet in binary form, is equal to the number 255 in decimal form. Therefore, as shown in Figure 4, for the network 10.1.1.0/24, in which the last octet is used for the host portion, the broadcast address would be 10.1.1.255. Note that the host portion will not always be an entire octet. This address is also referred to as the directed broadcast.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

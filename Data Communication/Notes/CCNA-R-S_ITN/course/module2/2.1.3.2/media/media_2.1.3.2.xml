@@ -1,0 +1,23 @@
+﻿<textcomponents>
+
+<!--<component id='ID_title'>
+	<text><![CDATA[<b></b>]]></text>
+</component>-->
+
+<component id='ID_txt01'>
+	<text><![CDATA[<b class="txt01">User EXEC Mode</b><br /><br />Limited examination of router. Remote access.<br /><br /><font face="_typewriter"><p align='center' class="txt01b">Switch&gt;<br />Router&gt;</p>]]></text>
+</component>
+
+<component id='ID_txt02'>
+	<text><![CDATA[The <b>User EXEC</b>&nbsp; mode allows only a limited number of basic monitoring commands and is often referred to as view-only mode.]]></text>
+</component>
+
+<component id='ID_txt03'>
+	<text><![CDATA[<b class="txt01">Privileged EXEC Mode</b><br /><br />Detailed examination of router. Debugging and testing. File manipulation. Remote access.<br /><br /><font face="_typewriter" ><p align='center' class="txt01b">Switch#<br />Router#</p>]]></text>
+</component>
+
+<component id='ID_txt04'>
+	<text><![CDATA[The <b>Privileged EXEC</b> mode, by default, allows all monitoring commands, as well as execution of configuration and management commands.]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,14 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Segmentation</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+   <text><![CDATA[Switch at the center of a LAN]]></text>
+   </component>
+<component id="ID_txt02">
+   <text><![CDATA[Each computer has its own collision domain.]]></text>
+   </component>
+
+</textcomponents>

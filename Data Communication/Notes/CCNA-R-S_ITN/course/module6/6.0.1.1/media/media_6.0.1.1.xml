@@ -1,0 +1,5 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<br/><b>Upon completion of this chapter you will be able to:</b><br/><br/><textformat blockindent='-14'><li>Describe the purpose of the network layer in data communication.</li><li>Explain why the IPv4 protocol requires other layers to provide reliability. </li><li>Explain the role of the major header fields in the IPv4 and IPv6 packets.</li><li>Explain how host devices use routing tables to direct packets to itself, a local destination, or a default gateway.</li><li>Compare a host routing table to a routing table in a router.</li><li>Describe the common components and interfaces of a router.</li><li>Describe the boot-up process of a Cisco IOS router.</li><li>Configure initial settings on a Cisco IOS router.</li><li>Configure two active interfaces on a Cisco IOS router.</li><li>Configure the default gateway on network devices.</li></textformat><br/>]]></text>
+</component> 
+</textcomponents>

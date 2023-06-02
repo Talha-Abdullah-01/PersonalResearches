@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.2.3.1 Configuration Files</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.2.3.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Getting Basic</h1>
+        <h2>Saving Configurations</h2>
+      </div>
+      <div id="content">
+          <p>The running configuration file reflects the current configuration applied to a Cisco IOS device. It contains the commands used to determine how the device operates on the network, as shown in Figure 1. Modifying a running configuration affects the operation of a Cisco device immediately. </p>
+          <p></p>
+          <p>The running configuration file is stored in the working memory of the device, or random access memory (RAM). This means that the running configuration file is temporarily active while the Cisco device is running (powered on). However, if power to the device is lost or if the device is restarted, all configuration changes will be lost unless they have been saved.</p>
+          <p></p>
+          <p>After making changes to a running configuration file, consider these distinct options: </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Return the device to its original configuration.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Remove all configurations from the device.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Make the changed configuration the new startup configuration. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The startup configuration file reflects the configuration that will be used by the device upon reboot. The startup configuration file is stored in NVRAM.  When a network device has been configured and the running configuration has been modified, it is important to save those changes to the startup configuration file. Doing so prevents changes from being lost due to power failure or a deliberate restart. </p>
+          <p></p>
+          <p>Before committing to the changes, use the appropriate <span class="cmd"><b>show</b></span> commands to verify the device's operation. As shown in the figure, the <span class="cmd"><b>show running-config </b></span>command can be used to see a running configuration file. When the changes are verified to be correct, use the <span class="cmd"><b>copy running-config startup-config</b></span> command at the privileged EXEC mode prompt. The command to save the running configuration to startup configuration file is:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Switch#</span>
+            <span class="cmd">
+              <b>copy running-config startup-config</b>
+            </span>
+          </p>
+          <p></p>
+          <p>After being executed, the running configuration file updates the startup configuration file.</p>
+          <p></p>
+          <p>If the changes made to the running configuration do not have the desired effect, it may become necessary to restore the device to its previous configuration. Assuming that we have not overwritten the startup configuration with the changes, we can replace the running configuration with the startup configuration. This is best done by restarting the device using the <span class="cmd"><b>reload</b></span> command at the privileged EXEC mode prompt. </p>
+          <p></p>
+          <p>When initiating a reload, the IOS will detect that the running config has changes that were not saved to startup configuration. A prompt will appear to ask whether to save the changes made. To discard the changes, enter <span class="cmd"><b>n</b></span> or <span class="cmd"><b>no</b></span>.</p>
+          <p></p>
+          <p>An additional prompt will appear to confirm the reload. To confirm, press Enter. Pressing any other key will abort the process.</p>
+          <p></p>
+          <p>For example:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Switch#</span>
+            <span class="cmd">
+              <b>reload</b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">System configuration has been modified. Save? [yes/no]: </span>
+            <span class="cmd">
+              <b>n</b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">Proceed with reload? [confirm]</span>
+          </p>
+          <p>
+            <span class="cmd">*Apr 13 01:34:15.758: %SYS-5-RELOAD: Reload requested by console. Reload Reason:</span>
+          </p>
+          <p>
+            <span class="cmd">Reload Command.</span>
+          </p>
+          <p>
+            <span class="cmd">System Bootstrap, Version 12.3(8r)T8, RELEASE SOFTWARE (fc1)</span>
+          </p>
+          <p>
+            <span class="cmd">Technical Support: http://www.cisco.com/techsupport</span>
+          </p>
+          <p>
+            <span class="cmd">Copyright (c) 2004 by cisco Systems, Inc.</span>
+          </p>
+          <p>
+            <span class="cmd">PLD version 0x10</span>
+          </p>
+          <p>
+            <span class="cmd">GIO ASIC version 0x127</span>
+          </p>
+          <p>
+            <span class="cmd">c1841 processor with 131072 Kbytes of main memory</span>
+          </p>
+          <p>
+            <span class="cmd">Main memory is configured to 64 bit mode with parity disabled</span>
+          </p>
+          <p></p>
+          <p></p>
+          <p>If undesired changes are saved to the startup configuration, it may be necessary to clear all the configurations. This requires erasing the startup configuration and restarting the device.</p>
+          <p></p>
+          <p>The startup configuration is removed by using the <span class="cmd"><b>erase startup-config</b></span> command. </p>
+          <p></p>
+          <p>To erase the startup configuration file use <span class="cmd"><b>erase NVRAM:startup-config</b></span> or <span class="cmd"><b>erase startup-config</b></span> at the privileged EXEC mode prompt: </p>
+          <p></p>
+          <p>
+            <span class="cmd">Switch#</span>
+            <span class="cmd">
+              <b>erase startup-config</b>
+            </span>
+          </p>
+          <p></p>
+          <p>After the command is issued, the switch will prompt you for confirmation:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Erasing the nvram filesystem will remove all configuration files! Continue? [confirm]</span>
+          </p>
+          <p></p>
+          <p>Confirm is the default response. To confirm and erase the startup configuration file, press Enter. Pressing any other key will abort the process.</p>
+          <p></p>
+          <p>
+            <b>Caution</b>: Exercise caution when using the<span class="cmd"><b> erase </b></span>command. This command can be used to erase any file in the device. Improper use of the command can erase the IOS itself or another critical file.</p>
+          <p></p>
+          <p>On a switch you must also issue the <span class="cmd"><b>delete vlan.dat</b></span> command in addition to the <span class="cmd"><b>erase startup-config</b></span> command in order to return the device to its default "out-of-the-box" configuration (comparable to a factory reset):</p>
+          <p></p>
+          <p>
+            <span class="cmd">Switch#</span>
+            <span class="cmd">
+              <b>delete vlan.dat</b>
+            </span>
+            <span class="cmd"></span>
+          </p>
+          <p>
+            <span class="cmd">Delete filename [vlan.dat]? </span>
+          </p>
+          <p>
+            <span class="cmd">Delete flash:vlan.dat? [confirm]</span>
+          </p>
+          <p>
+            <span class="cmd">Switch#</span>
+            <span class="cmd">
+              <b>erase startup-config</b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">Erasing the nvram filesystem will remove all configuration files! Continue? [confirm]</span>
+          </p>
+          <p>
+            <span class="cmd">[OK]</span>
+          </p>
+          <p>
+            <span class="cmd">Erase of nvram: complete</span>
+          </p>
+          <p>
+            <span class="cmd">Switch#</span>
+          </p>
+          <p></p>
+          <p>After removing the startup configuration from NVRAM (and deleting the vlan.dat file in the case of a switch), reload the device to remove the current running configuration file from RAM. The device will then load the default startup configuration that was originally shipped with the device into the running configuration.</p>
+          <p></p>
+          <p>In Figure 2, practice entering commands to save the running configuration from RAM to NVRAM.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.3.2.3 Automatic IP Address Configuration for End Devices</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.3.2.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Address Schemes</h1>
+        <h2>Addressing Devices</h2>
+      </div>
+      <div id="content">
+          <p>IP address information can be entered into the PC manually, or using Dynamic Host Configuration Protocol (DHCP). DHCP allows end devices to have IP information automatically configured.</p>
+          <p></p>
+          <p>DHCP is a technology that is used in almost every business network. The best way to understand why DHCP is so popular is by considering all the extra work that would have to take place without it.</p>
+          <p></p>
+          <p>DHCP enables automatic IPv4 address configuration for every end device in a network with DHCP enabled. Imagine the amount of time that would be consumed if every time you connected to the network you had to manually enter the IP address, the subnet mask, the default gateway, and the DNS server. Multiply that by every user and every one of their devices on the network and you see the problem.</p>
+          <p></p>
+          <p>DHCP is an example of technology at its best. One of the primary purposes of any technology is to make it easier to perform the tasks they want to do or need to do. With DHCP, the end user walks into the area served by a given network, plugs in an Ethernet cable or enables a wireless connection, and they are immediately allocated the necessary IPv4 information required to fully communicate over the network.</p>
+          <p></p>
+          <p>As shown in Figure 1, to configure DHCP on a Windows PC, you only need to select "Obtain an IP address automatically" and "Obtain DNS server address automatically". Your PC will be assigned information from an IP address pool and associated IP information set up on the DHCP server.</p>
+          <p></p>
+          <p>It is possible to display the IP configuration settings on a Windows PC by using the <span class="cmd"><b>ipconfig</b></span> command at the command prompt. The output will show the IP address, subnet mask, and gateway that the PC received from the DHCP server.</p>
+          <p></p>
+          <p>Practice displaying the IP address of a Windows PC by entering commands in Figure 2.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

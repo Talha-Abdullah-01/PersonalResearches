@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.2.3.2 Fiber Media Cable Design</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_4.2.3.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Network Media</h1>
+        <h2>Fiber Optic Cabling</h2>
+      </div>
+      <div id="content">
+          <p>Although an optical fiber is very thin, it is composed of two kinds of glass and a protective outer shield. Specifically, these are the: </p>
+          <p>
+            <ul>
+              <li>
+                <b>Core</b>: Consists of pure glass and is the part of the fiber where light is carried. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Cladding</b>: The glass that surrounds the core and acts as a mirror. The light pulses propagate down the core while the cladding reflects the light pulses. This keeps the light pulses contained in the fiber core in a phenomenon known as total internal reflection. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Jacket</b>: Typically a PVC jacket that protects the core and cladding. It may also include strengthening materials and a buffer (coating) whose purpose is to protect the glass from scratches and moisture. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Although susceptible to sharp bends, the properties of the core and cladding have been altered at the molecular level to make it very strong. Optical fiber is proof tested through a rigorous manufacturing process for strength at a minimum of 100,000 pounds per square inch. Optical fiber is durable enough to withstand handling during installation and deployment in harsh environmental conditions in networks all around the world.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

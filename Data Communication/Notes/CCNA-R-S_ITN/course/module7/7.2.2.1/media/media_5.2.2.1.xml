@@ -1,0 +1,77 @@
+﻿<textcomponents>	
+	<component id="ID_title">
+		<text><![CDATA[<b>TCP Segments Are Reordered at the Destination</b>]]></text>
+	</component>	
+	<component id="ID_txt01">
+		<text><![CDATA[Different segments may take different routes.]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[<b>Data</b><br/><br/>Data is divided into segments.]]></text> 
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[Segment 1]]></text> 
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[Segment 2]]></text> 
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[Segment 3]]></text> 
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[Segment 4]]></text> 
+	</component>
+	<component id="ID_txt08">
+		<text><![CDATA[Segment 5]]></text> 
+	</component>
+	<component id="ID_txt09">
+		<text><![CDATA[Segment 6]]></text> 
+	</component>
+	<component id="ID_txt10">
+		<text><![CDATA[Having taken different routes to the destination, segments arrive out of order.]]></text> 
+	</component>
+	<component id="ID_txt11">
+		<text><![CDATA[Segment 1]]></text> 
+	</component>
+	<component id="ID_txt12">
+		<text><![CDATA[Segment 2]]></text> 
+	</component>
+	<component id="ID_txt13">
+		<text><![CDATA[Segment 6]]></text> 
+	</component>
+	<component id="ID_txt14">
+		<text><![CDATA[Segment 5]]></text> 
+	</component>
+	<component id="ID_txt15">
+		<text><![CDATA[Segment 4]]></text> 
+	</component>
+	<component id="ID_txt18">
+		<text><![CDATA[Segment 3]]></text> 
+	</component>
+	
+	<component id="ID_txt19">
+		<text><![CDATA[Segment 1]]></text> 
+	</component>
+	<component id="ID_txt20">
+		<text><![CDATA[Segment 2]]></text> 
+	</component>
+	<component id="ID_txt21">
+		<text><![CDATA[Segment 6]]></text> 
+	</component>
+	<component id="ID_txt22">
+		<text><![CDATA[Segment 5]]></text> 
+	</component>
+	<component id="ID_txt23">
+		<text><![CDATA[Segment 4]]></text> 
+	</component>
+	<component id="ID_txt24">
+		<text><![CDATA[Segment 3]]></text> 
+	</component>
+	
+	<component id="ID_txt16">
+		<text><![CDATA[TCP reorders the segments to the original order.]]></text> 
+	</component> 
+	
+	<component id="ID_txt17">
+		<text><![CDATA[<div><img src="arrow.png" width="30.6" height="100.3" /></div>]]></text> 
+	</component>     
+</textcomponents> 

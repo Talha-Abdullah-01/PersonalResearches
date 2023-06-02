@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.1.4.5 Hot Keys and Shortcuts</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.1.4.5_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IOS Bootcamp</h1>
+        <h2>The Command Structure</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Hot Keys and Shortcuts</b>
+          </p>
+          <p></p>
+          <p>The IOS CLI provides hot keys and shortcuts that make configuring, monitoring, and troubleshooting easier. </p>
+          <p></p>
+          <p>The figure shows most of the shortcuts. The following are worthy of special note:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Down Arrow</b> - Allows the user to scroll forward through former commands</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Up Arrow</b> - Allows the user to scroll backward through former commands</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Tab</b> - Completes the remainder of a partially typed command or keyword</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Ctrl-A </b>- Moves to the beginning of the line</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Ctrl-E</b> - Moves to the end of the line</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Ctrl-R</b> - Redisplays a line</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Ctrl-Z</b> - Exits the configuration mode and returns to user EXEC</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Ctrl-C</b> - Exits the configuration mode or aborts the current command</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Ctrl-Shift-6</b> - Allows the user to interrupt an IOS process such as ping or traceroute</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Examining some of these in more detail:</p>
+          <p></p>
+          <p>
+            <b>Tab</b>
+          </p>
+          <p>Tab complete is used to complete the remainder of abbreviated commands and parameters if the abbreviation contains enough letters to be different from any other currently available commands or parameters. When enough of the command or keyword has been entered to appear unique, press the <b>Tab</b> key and the CLI will display the rest of the command or keyword.</p>
+          <p></p>
+          <p>This is a good technique to use when you are learning because it allows you to see the full word used for the command or keyword.</p>
+          <p></p>
+          <p>
+            <b>Ctrl-R</b>
+          </p>
+          <p>Redisplay the line will refresh the line just typed. Use <b>Ctrl-R</b> to redisplay the line. For example, you may find that the IOS is returning a message to the CLI just as you are typing a line. You can use <b>Ctrl-R</b> to refresh the line and avoid having to retype it.</p>
+          <p></p>
+          <p>In this example, a message regarding a failed interface is returned in the middle of a command.</p>
+          <p></p>
+          <p>
+            <span class="cmd">Switch#</span>
+            <span class="cmd">
+              <b>show mac-</b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">16w4d: %LINK-5-CHANGED: Interface FastEthernet0/10, changed state to down</span>
+          </p>
+          <p>
+            <span class="cmd">16w4d: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to down</span>
+          </p>
+          <p></p>
+          <p>To redisplay to line that you were typing use <b>Ctrl-R</b>:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Switch#</span>
+            <span class="cmd">
+              <b>show mac </b>
+            </span>
+          </p>
+          <p></p>
+          <p>
+            <b>Ctrl-Z</b>
+          </p>
+          <p>Exit configuration mode will leave any configuration mode and return to privileged EXEC mode. Because the IOS has a hierarchical mode structure, you may find yourself several levels down. Rather than exit each mode individually, use <b>Ctrl-Z</b> to return directly to the privileged EXEC prompt at the top level.</p>
+          <p></p>
+          <p>
+            <b>Up and Down Arrows</b>
+          </p>
+          <p>Previous command keys will recall the history of commands entered. The Cisco IOS software buffers several past commands and characters so that entries can be recalled. The buffer is useful for re-entering commands without retyping.</p>
+          <p></p>
+          <p>Key sequences are available to scroll through these buffered commands. Use the <b>Up Arrow</b> key (<b>Ctrl-P</b>) to display the previously entered commands. Each time this key is pressed, the next successively older command will be displayed. Use the <b>Down Arrow</b> key (<b>Ctrl-N</b>) to scroll forward through the history to display the more recent commands.</p>
+          <p></p>
+          <p>
+            <b>Ctrl-Shift-6</b>
+          </p>
+          <p>The escape sequence will interrupt any running process. When an IOS process is initiated from the CLI, such as a ping or traceroute, the command runs until it is complete or is interrupted. While the process is running, the CLI is unresponsive. To interrupt the output and interact with the CLI, press <b>Ctrl-Shift-6</b>.</p>
+          <p></p>
+          <p>
+            <b>Ctrl-C</b>
+          </p>
+          <p>This interrupts the entry of a command and exits the configuration mode. This is useful after entering a command that needs to be cancelled.</p>
+          <p></p>
+          <p>
+            <b>Abbreviated commands or keywords</b>
+          </p>
+          <p>Commands and keywords can be abbreviated to the minimum number of characters that identify a unique selection. For example, the <span class="cmd"><b>configure</b></span> command can be abbreviated to <span class="cmd"><b>conf</b></span> because <span class="cmd"><b>configure</b></span> is the only command that begins with <span class="cmd"><b>conf</b></span>. An abbreviation of <span class="cmd"><b>con</b></span> will not work because more than one command begins with <span class="cmd"><b>con</b></span>.</p>
+          <p></p>
+          <p>Keywords can also be abbreviated. </p>
+          <p></p>
+          <p>As another example, <span class="cmd"><b>show interfaces</b></span> can be abbreviated like this:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Switch#</span>
+            <span class="cmd">
+              <b>show interfaces</b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">Switch#</span>
+            <span class="cmd">
+              <b>show int</b>
+            </span>
+          </p>
+          <p></p>
+          <p>You can abbreviate both the command and the keywords, for example:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Switch#</span>
+            <span class="cmd">
+              <b>sh int</b>
+            </span>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

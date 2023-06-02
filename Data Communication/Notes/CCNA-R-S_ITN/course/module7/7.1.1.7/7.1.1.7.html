@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.1.1.7 The Right Transport Layer Protocol for the Right Application</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_7.1.1.7_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Transport Layer Protocols</h1>
+        <h2>Transportation of Data</h2>
+      </div>
+      <div id="content">
+          <p>Both TCP and UDP are valid transport protocols. Depending upon the application requirements, either one, or sometimes both, of these transport protocols can be used. Application developers must choose which transport protocol type is appropriate based on the requirements of the applications.</p>
+          <p></p>
+          <p>For some applications, segments must arrive in a very specific sequence to be processed successfully. With other applications, all data must be fully received before any of it is considered useful. In both of these instances, TCP is used as the transport protocol. For example, applications such as databases, web browsers, and email clients, require that all data that is sent arrives at the destination in its original condition. Any missing data could cause a corrupt communication that is either incomplete or unreadable. Therefore, these applications are designed to use TCP. The additional network overhead is considered to be required for these applications.</p>
+          <p></p>
+          <p>In other cases, an application can tolerate some data loss during transmission over the network, but delays in transmission are unacceptable. UDP is the better choice for these applications because less network overhead is required. UDP is preferable with applications, such as streaming audio, video, and Voice over IP (VoIP). Acknowledgments would slow down delivery and retransmissions are undesirable. </p>
+          <p></p>
+          <p>For example, if one or two segments of a video stream fail to arrive, it creates a momentary disruption in the stream. This may appear as distortion in the image, but may not even be noticeable to the user. On the other hand, the image in a streaming video would be greatly degraded if the destination device had to account for lost data and delay the stream while waiting for retransmissions. In this case, it is better to render the best video possible with the segments received, and forego reliability.</p>
+          <p></p>
+          <p>Internet radio is another example of an application that uses UDP. If some of the message is lost during its journey over the network, it is not retransmitted. If a few packets are missed, the listener might hear a slight break in the sound. If TCP were used and the lost packets were resent, the transmission would pause to receive them and the disruption would be more noticeable. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

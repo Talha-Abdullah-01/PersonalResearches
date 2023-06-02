@@ -1,0 +1,51 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media.css');
+
+html, body {
+	margin:0;
+	height:100%;
+	min-height: 390px;
+	min-width:470px;
+}
+#flashContent {
+	width:100%;
+	height:100%;
+}
+
+#mainDiv
+{
+width:390px;
+height:400px;
+position:absolute;
+top:0px;
+
+}
+#dvSliderContainer{right:5px ! important;bottom:9px ! important}
+#main_wrapper{width:408px;height:340px;position: absolute;}
+
+#textContainer{position:absolute;top:34px;left:0;width:100%;font-size:10px;text-align:center;}
+#text1{width:110px;height:17px;position:absolute;left:-17px;top:5px}
+#text2{width:88.95px;height:17px;position:absolute;left:71.2px;top:5px}
+#text3{width:89.7px;height:17px;position:absolute;left:228.2px;top:5px}
+#text4{width:110px;height:17px;position:absolute;left:297.95px;top:5px}
+#text5{width:61px;height:19px;position:absolute;top:22px;background-color:#C1ABD1;border-radius:5px;line-height:10px;padding:5px;}
+#text6{width:58px;height:12px;position:absolute;top:22px;left:82px;background-color:#C1ABD1;border-radius:5px;line-height:10px;padding:5px}
+#text7{width:63px;height:19px;position:absolute;top:22px;left:162px;background-color:#C1ABD1;border-radius:5px;line-height:10px;padding:5px}
+#text8{width:50px;height:12px;position:absolute;top:22px;left:245px;background-color:#C1ABD1;border-radius:5px;line-height:10px;padding:5px}
+#text9{width:63px;height:19px;position:absolute;top:22px;left:315px;background-color:#C1ABD1;border-radius:5px;line-height:10px;padding:5px}
+img.arrow{width:6px;height:8px}
+
+#imageContainer{position:absolute;top:100px;left:77px;width:300px;height:265px;}
+#bgPic{background:url(boygirlpic.png) left 25px no-repeat;width:239px; height:251px;}
+#bulb{position:absolute;top:5px;left:51px;opacity:0;}
+#blurbulb{position:absolute;top:8px;left:33px;opacity:0;}
+#bulbglow{position:absolute;top:37px;left:171px;opacity:0;}
+#bulbglow2{position:absolute;top:27px;left:160px;opacity:0;}
+
+#contentWrapper{position:absolute;top:100px;left:77px;width:300px;height:265px;}
+#bgImg{background:url(line.png) left top no-repeat;width:233px; height:165px;position:absolute;top:45px;}
+#bulb2{position:absolute;top:32px;left:23px;opacity:0;z-index:2;}
+#envelop{position:absolute;top:55px;left:25px;opacity:1;}
+#bulb2_2{position:absolute;top:177px;left:116px;opacity:0;z-index:2;}

@@ -1,0 +1,5 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<br/><b>Upon completion of this chapter you will be able to:</b><br/><br/><textformat blockindent='-14'><li>Explain how the functions of the application layer, session layer, and presentation layer work together to provide network services to end user applications.</li><li>Describe how common application layer protocols interact with end user applications.</li><li>Describe, at a high level, common application layer protocols that provide Internet services to end-users, including WWW services and email.</li><li>Describe application layer protocols that provide IP addressing services, including: DNS and DHCP.</li><li>Describe the features and operation of well-known application layer protocols that allow for file sharing services, including: FTP, File Sharing Services, SMB protocol.</li><li>Explain how data is moved across the network, from opening an application, to receiving data.</li></textformat><br/>]]></text>
+</component> 
+</textcomponents>

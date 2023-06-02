@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.3.2.4 IP Address Conflicts</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.3.2.4_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Address Schemes</h1>
+        <h2>Addressing Devices</h2>
+      </div>
+      <div id="content">
+          <p>If a static (manual) IP address is defined for a network device, for example, a printer, and then a DHCP server is installed, duplicate IP address conflicts may occur between the network device and a PC obtaining automatic IP addressing information from the DHCP server. The conflict also may occur if you manually define a static IP address to a network device during a network failure involving the DHCP server; after the network failure resolves and the DHCP server becomes accessible over the network, the conflict arises.</p>
+          <p></p>
+          <p>To resolve such an IP addressing conflict convert the network device with the static IP address to a DHCP client; or on the DHCP server, exclude the static IP address of the end device from the DHCP scope. </p>
+          <p></p>
+          <p>The second solution requires that you have administrative privileges on the DHCP server and that you are familiar with configuring DHCP on a server.</p>
+          <p></p>
+          <p>You may also encounter IP addressing conflicts when manually configuring IP on an end device in a network that only uses static IP addresses. In this case you must determine which IP addresses are available on the particular IP subnet and configure accordingly. This case illustrates why it is so important for a network administrator to maintain detailed documentation, including IP address assignments, for end devices.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Usually static IP addresses are used with servers and printers in a small- to medium-sized business network, while employee devices use DHCP-allocated IP address information.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.2.3.5 Testing Fiber Cables</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_4.2.3.5_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Network Media</h1>
+        <h2>Fiber Optic Cabling</h2>
+      </div>
+      <div id="content">
+          <p>Terminating and splicing fiber-optic cabling requires special training and equipment. Incorrect termination of fiber-optic media will result in diminished signaling distances or complete transmission failure. </p>
+          <p></p>
+          <p>Three common types of fiber-optic termination and splicing errors are:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Misalignment</b>: The fiber-optic media are not precisely aligned to one another when joined.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>End gap</b>: The media does not completely touch at the splice or connection.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>End finish</b>: The media ends are not well polished or dirt is present at the termination.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>A quick and easy field test can be performed by shining a bright flashlight into one end of the fiber while observing the other end of the fiber. If light is visible, then the fiber is capable of passing light. Although this does not ensure the performance of the fiber, it is a quick and inexpensive way to find a broken fiber.</p>
+          <p></p>
+          <p>It is recommended that an optical tester such as shown in the figure be used to test fiber-optic cables. An Optical Time Domain Reflectometer (OTDR) can be used to test each fiber-optic cable segment. This device injects a test pulse of light into the cable and measures back scatter and reflection of light detected as a function of time. The OTDR will calculate the approximate distance at which these faults are detected along the length of the cable.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

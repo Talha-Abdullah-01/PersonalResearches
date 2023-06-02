@@ -1,0 +1,48 @@
+﻿<textcomponents>
+
+<component id="ID_caption">
+<text><![CDATA[Intermediary devices direct the path of the data but do not generate or change the data content.]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[This message is important, give it priority.]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[This message is broken, re-send it.]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[This message will arrive faster if it goes this way.]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Internetwork</b>]]></text>
+</component>
+
+<!-- controller -->
+
+<component id="end">
+<text><![CDATA[End]]></text>
+</component>
+
+<component id="fforward">
+<text><![CDATA[Fast Forward]]></text>
+</component>
+
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+
+<component id="play">
+<text><![CDATA[Play]]></text>
+</component>
+
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component>
+
+<component id="start">
+<text><![CDATA[Start]]></text>
+</component>
+</textcomponents>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.4.1.1 Class Activity - The Internet of Everything…Naturally!</title>
+    <!-- Activity -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_8.4.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Summary</h1>
+        <h2>Summary</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>The Internet of Everything…Naturally!</b>
+          </p>
+          <p></p>
+          <p>In this chapter, you learned about how small to medium-sized businesses are connected to networks in groups.  The Internet of Everything was also introduced in the beginning modeling activity.</p>
+          <p></p>
+          <p>For this activity, choose one of the following:</p>
+          <p>
+            <ul>
+              <li>Online banking</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>World news</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Weather forecasting/climate</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Traffic conditions</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Devise an IPv6 addressing scheme for the area you chose.  Include in your addressing scheme how you would plan for:</p>
+          <p>
+            <ul>
+              <li>Subnetting</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Unicasts</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Multicasts</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Broadcasts </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Keep a copy of your scheme to share with the class or learning community. Be prepared to explain:</p>
+          <p>
+            <ul>
+              <li>How subnetting, unicasts, multicasts and broadcasts would be incorporated.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Where your addressing scheme could be used.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>How small to medium-size businesses would be impacted by using your plan.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <a href="../../files/8.4.1.1%20The%20Internet%20of%20Everything...Naturally%20Instructions.pdf" target="_blank">Class Activity - The Internet of Everything...Naturally Instructions</a>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

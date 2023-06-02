@@ -1,0 +1,20 @@
+<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>Home Router</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+<text><![CDATA[Ethernet Switch]]></text>
+</component>
+<component id="ID_s1_txt02">
+  <text><![CDATA[Internet Connection]]></text> 
+  </component>
+<component id="ID_s1_txt03">
+  <text><![CDATA[Embedded Wireless Antenna]]></text> 
+  </component>
+<component id="ID_s2_title">
+<text><![CDATA[<b>Connecting to the Wired LAN</b>]]></text>
+</component>
+<component id="ID_s2_txt01">
+<text><![CDATA[Connect your computer to the Ethernet port (1, 2, 3, or 4).]]></text>
+</component>
+</textcomponents>

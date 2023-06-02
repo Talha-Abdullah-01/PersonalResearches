@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.5.1.1 Class Activity - Draw Your Concept of the Internet Now</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_1.5.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Summary</h1>
+        <h2>Summary</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Draw Your Concept of the Internet Now</b>
+          </p>
+          <p></p>
+          <p>In this activity, you will use the knowledge you have acquired throughout Chapter 1, and the modeling activity document that you prepared at the beginning of this chapter.  You may also refer to the other activities completed in this chapter, including Packet Tracer activities.</p>
+          <p></p>
+          <p>Draw a map of the Internet as you see it now.  Use the icons presented in the chapter for media, end devices, and intermediary devices.</p>
+          <p></p>
+          <p>In your revised drawing, you may wish to include some of the following:</p>
+          <p>
+            <ul>
+              <li>WANs  </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>LANs</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Cloud computing</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Internet Service Providers (tiers)</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Save your drawing in hard-copy format. If it is an electronic document, save it to a server location provided by your instructor. Be prepared to share and explain your revised work in class.</p>
+          <p></p>
+          <p>
+            <a href="../../files/1.5.1.1%20Class%20Activity%20-%20Draw%20Your%20Concept%20of%20the%20Internet%20Now%20Instructions.pdf" target="_blank">Class Activity - Draw Your Concept of the Internet Now Instructions</a>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

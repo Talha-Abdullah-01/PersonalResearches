@@ -1,0 +1,101 @@
+﻿<textcomponents>
+
+	<component id="ID_s1_title">
+		<text><![CDATA[<b>Multiple Networks</b>]]></text>
+	</component>
+	
+	<component id="ID_s1_caption01">
+		<text><![CDATA[Multiple services are running on multiple networks.]]></text>
+	</component>		
+	<component id="ID_s1_txt01">
+		<text><![CDATA[Devices]]></text>
+	</component>
+	<component id="ID_s1_txt02">
+		<text><![CDATA[Medium]]></text>
+	</component>
+	<component id="ID_s1_txt03">
+		<text><![CDATA[Computer Networks]]></text>
+	</component>
+	<component id="ID_s1_txt04">
+		<text><![CDATA[Message]]></text>
+	</component>
+	<component id="ID_s1_txt05">
+		<text><![CDATA[Rule<br>Agreement<br>Standard]]></text>
+	</component>
+	<component id="ID_s1_txt06">
+		<text><![CDATA[Devices]]></text>
+	</component>
+	<component id="ID_s1_txt07">
+		<text><![CDATA[Medium]]></text>
+	</component>
+	<component id="ID_s1_txt08">
+		<text><![CDATA[Telephone Networks]]></text>
+	</component>
+	<component id="ID_s1_txt09">
+		<text><![CDATA[Message]]></text>
+	</component>
+	<component id="ID_s1_txt10">
+		<text><![CDATA[Rule<br>Agreement<br>Standard]]></text>
+	</component>
+	<component id="ID_s1_txt11">
+		<text><![CDATA[Devices]]></text>
+	</component>
+	<component id="ID_s1_txt12">
+		<text><![CDATA[Medium]]></text>
+	</component>
+	<component id="ID_s1_txt13">
+		<text><![CDATA[Broadcast Networks]]></text>
+	</component>
+	<component id="ID_s1_txt14">
+		<text><![CDATA[Message]]></text>
+	</component>
+	<component id="ID_s1_txt15">
+		<text><![CDATA[Rule<br>Agreement<br>Standard]]></text>
+	</component>
+	
+	
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>Converged Networks</b>]]></text>
+	</component>
+	<component id="ID_s2_caption">
+		<text><![CDATA[Converged data networks carry multiple services on one network.]]></text>
+	</component>
+	<component id="ID_s2_txt01">
+		<text><![CDATA[Devices]]></text>
+	</component>
+	<component id="ID_s2_txt02">
+		<text><![CDATA[Devices]]></text>
+	</component>
+	<component id="ID_s2_txt03">
+		<text><![CDATA[Devices]]></text>
+	</component>
+	<component id="ID_s2_txt04">
+		<text><![CDATA[Medium]]></text>
+	</component>
+	<component id="ID_s2_txt05">
+		<text><![CDATA[Medium]]></text>
+	</component>
+	<component id="ID_s2_txt06">
+		<text><![CDATA[Medium]]></text>
+	</component>
+	<component id="ID_s2_txt07">
+		<text><![CDATA[Rule<br>Agreement<br>Standard]]></text>
+	</component>
+	<component id="ID_s2_txt08">
+		<text><![CDATA[Converged Network]]></text>
+	</component>
+	<component id="ID_s2_txt09">
+		<text><![CDATA[Message]]></text>
+	</component>
+	<component id="ID_s2_txt10">
+		<text><![CDATA[Message]]></text>
+	</component>
+	<component id="ID_s2_txt11">
+		<text><![CDATA[Message]]></text>
+	</component>
+	<component id="ID_s2_txt12">
+		<text><![CDATA[One Network-<br>Multiple Devices]]></text>
+	</component>	
+	
+	
+</textcomponents>

@@ -1,0 +1,203 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media.css');
+
+html, body {
+	margin:0;
+	height:100%;
+	
+}
+#flashContent {
+	width:98%;
+	height:98%;
+}
+#mainDiv
+{
+width:470px;
+height:400px;
+position:absolute;
+top:0px;
+left:0px;
+}
+#maincontainer
+{
+width:445px;
+height:400px;	
+position:absolute;
+top:0px;
+left:0px;
+}
+#imagecontainer
+{
+width:435px;
+height:400px;
+position:absolute;
+top:0px;
+left:0px;
+}
+#circle
+{
+height:275px;
+left: 10px;
+position: absolute;
+top:40px;
+width:439px;
+}
+#circle1
+{
+font-size: 11px;
+height: 20px;
+left: 51px;
+position: absolute;
+text-align: center;
+top: 50px;
+width: 194px;
+z-index:999;
+}
+
+#circle2
+{
+font-size: 11px;
+height: 20px;
+left: 108px;
+position: absolute;
+text-align: center;
+top: 80px;
+width: 82px;
+}
+
+#circle3
+{
+font-size: 11px;
+height: 20px;
+left:105px;
+position: absolute;
+text-align: center;
+top: 115px;
+width: 83px;
+}
+#shadow
+{
+font-size: 11px;
+height: 20px;
+left: 359px;
+position: absolute;
+text-align: center;
+top: 182px;
+width: 75px;
+}
+#img1
+{
+background: url("2_1_1_1_A.jpg") no-repeat scroll right top transparent;
+height: 66px;
+left: 290px;
+position: absolute;
+top:15px;
+width:119px;
+display:none;
+box-shadow:-1px 1px 2px #bababa;
+}
+#img2
+{
+background: url("2_1_1_1_B.jpg") no-repeat scroll right top transparent;
+height: 89px;
+left: 290px;
+position: absolute;
+top:83px;
+width: 119px;
+z-index: 3;
+display:none;
+box-shadow:-1px 1px 0px #bababa;
+}
+#text
+{
+background: url("textbox1.png") no-repeat scroll center top transparent;
+
+height: 66px;
+left:19px;
+position: absolute;
+top: 300px;
+width: 445px;
+display:none;
+}
+#text span
+{
+font-size: 11px;
+height: auto;
+line-height: 12px;
+margin: 21px 0 0 12px;
+position: absolute;
+text-align: left;
+width: 427px;
+}
+#text1
+{
+background: url("textbox1.png") no-repeat scroll center top transparent;
+
+height: 66px;
+left:19px;
+position: absolute;
+top: 300px;
+width: 445px;
+display:none;
+}
+#text1 span
+{
+font-size: 11px;
+height: auto;
+line-height: 12px;
+margin: 21px 0 0 12px;
+position: absolute;
+text-align: left;
+width: 427px;
+}
+#text2
+{
+background: url("textbox.png") no-repeat scroll center top transparent;
+
+height:48px;
+left:19px;
+position: absolute;
+top: 300px;
+width: 435px;
+display:none;
+}
+#text2 span
+{
+font-size: 11px;
+height: auto;
+line-height: 12px;
+margin:18px 0 0 12px;
+position: absolute;
+text-align: left;
+width: 427px;
+}
+#img1 span
+{
+font-size: 11px;
+height: 17px;
+left: 123px;
+position: absolute;
+text-align: left;
+top: 25px;
+width: 45px;
+}
+#img2 span
+{
+font-size: 11px;
+height: 17px;
+position: absolute;
+left:122px;
+text-align: left;
+top: 35px;
+width:45px;
+}
+#ID_inst{
+	position:absolute;
+	top:383px;
+	left:18.4px;
+	font-size:11px;
+	float:left;
+	width:464.95px;
+}

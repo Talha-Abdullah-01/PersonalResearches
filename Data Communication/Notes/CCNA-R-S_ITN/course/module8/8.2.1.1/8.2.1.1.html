@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.2.1.1 The Need for IPv6</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_8.2.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IPv6 Network Addresses</h1>
+        <h2>IPv4 issues</h2>
+      </div>
+      <div id="content">
+          <p>IPv6 is designed to be the successor to IPv4. IPv6 has a larger 128-bit address space, providing for 340 undecillion addresses. (That is the number 340, followed by 36 zeroes.) However, IPv6 is much more than just larger addresses. When the IETF began its development of a successor to IPv4, it used this opportunity to fix the limitations of IPv4 and include additional enhancements. One example is Internet Control Message Protocol version 6 (ICMPv6), which includes address resolution and address auto-configuration not found in ICMP for IPv4 (ICMPv4). ICMPv4 and ICMPv6 will be discussed later in this chapter.</p>
+          <p></p>
+          <p>
+            <b>Need for IPv6</b>
+          </p>
+          <p>The depletion of IPv4 address space has been the motivating factor for moving to IPv6. As Africa, Asia and other areas of the world become more connected to the Internet, there are not enough IPv4 addresses to accommodate this growth. On Monday, January 31, 2011, IANA allocated the last two /8 IPv4 address blocks to the Regional Internet Registries (RIRs). Various projections show that all five RIRs will have run out of IPv4 addresses between 2015 and 2020. At that point, the remaining IPv4 addresses will have been allocated to ISPs.</p>
+          <p></p>
+          <p>IPv4 has theoretical maximum of 4.3 billion addresses. RFC 1918 private addresses in combination with Network Address Translation (NAT) have been instrumental in slowing the depletion of IPv4 address space. NAT has limitations that severely impede peer-to-peer communications.</p>
+          <p></p>
+          <p>
+            <b>Internet of Things</b>
+          </p>
+          <p>The Internet of today is significantly different than the Internet of past decades. The Internet of today is more than email, web pages and file transfer between computers. The evolving Internet is becoming an Internet of things. No longer will the only devices accessing the Internet be computers, tablets and smart phones. The sensor-equipped, Internet-ready devices of tomorrow will include everything from automobiles and biomedical devices, to household appliances and natural ecosystems. Imagine a meeting at a customer site that is automatically scheduled on your calendar application, to begin an hour before you normally start work. This could be a significant problem, especially if you forget to check the calendar or adjust the alarm clock accordingly. Now imagine that the calendar application communicates this information directly to your alarm clock for you and to your automobile. Your car automatically warms up to melt the ice on the windshield before you enter the car and reroutes you to your meeting.</p>
+          <p></p>
+          <p>With an increasing Internet population, a limited IPv4 address space, issues with NAT and an Internet of things, the time has come to begin the transition to IPv6.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

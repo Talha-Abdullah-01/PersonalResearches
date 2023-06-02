@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.2.3.4 Network Fiber Connectors</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_4.2.3.4_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Network Media</h1>
+        <h2>Fiber Optic Cabling</h2>
+      </div>
+      <div id="content">
+          <p>An optical fiber connector terminates the end of an optical fiber. A variety of optical fiber connectors are available. The main differences among the types of connectors are dimensions and methods of mechanical coupling. Generally, organizations standardize on one kind of connector, depending on the equipment that they commonly use, or they standardize per type of fiber (one for MMF, one for SMF). Taking into account all the generations of connectors, about 70 connector types are in use today.</p>
+          <p></p>
+          <p>As shown in Figure 1, the three most popular network fiber-optic connectors include:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Straight-Tip (ST)</b>: An older bayonet style connector widely used with multimode fiber.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Subscriber Connector (SC)</b>: Sometimes referred to as square connector or standard connector. It is a widely adopted LAN and WAN connector that uses a push-pull mechanism to ensure positive insertion. This connector type is used with multimode and single-mode fiber.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Lucent Connector (LC)</b>: Sometimes called a little or local connector, is quickly growing in popularity due to its smaller size. It is used with single-mode fiber and also supports multimode fiber. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Other fiber connectors such as the Ferrule Connector (FC) and Sub Miniature A (SMA) are not popular in LAN and WAN deployments. Obsolete connectors include biconic (obsolete) and D4 connectors. These connectors are beyond the scope of this chapter.</p>
+          <p></p>
+          <p>Because light can only travel in one direction over optical fiber, two fibers are required to support full duplex operation. Therefore, fiber-optic patch cables bundle together two optical fiber cables and terminate them with a pair of standard single fiber connectors. Some fiber connectors accept both the transmitting and receiving fibers in a single connector know as a duplex connector also shown in Figure 1. </p>
+          <p></p>
+          <p>Fiber patch cords are required for interconnecting infrastructure devices. For example, Figure 2 displays various common patch cords:</p>
+          <p>
+            <ul>
+              <li>SC-SC multimode patch cord</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>LC-LC single-mode patch cord</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>ST-LC multimode patch cord</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>SC-ST single-mode patch cord</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Fiber cables should be protected with a small plastic cap when not in use.</p>
+          <p></p>
+          <p>Also notice the use of color to distinguish between single-mode and multimode patch cords. The reason is because of the TIA-598 standard which recommends the use of a yellow jacket for single-mode fiber cables, and orange (or aqua) for multimode fiber cables.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

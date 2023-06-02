@@ -1,0 +1,18 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Router Solicitation and Router Advertisement Messages</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[DHCPv6 Server]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Router Solicitation</b><br/>"I need addressing information from the router."]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Router Advertisement</b><br/>"I'm everything you need (Prefix, Prefix-length, Default Gateway)."<br/>Or<br/>"Here is my information but you need to get other information such as DNS addresses from a DHCPv6 server."<br/>Or<br/>"I can't help you. Ask a DHCPv6 server for all your information."]]></text>
+</component>
+
+</textcomponents>

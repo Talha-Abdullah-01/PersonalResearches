@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.1.4.4 Legacy Classful Addressing</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_8.1.4.4_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IPv4 Network Addresses</h1>
+        <h2>Types of IPv4 Addresses</h2>
+      </div>
+      <div id="content">
+          <p>Historically, RFC1700, Assigned Numbers, grouped the unicast ranges into specific sizes called class A, class B, and class C addresses. It also defined class D (multicast) and class E (experimental) addresses, as previously presented. The unicast address classes A, B, and C defined specifically-sized networks and specific address blocks for these networks. A company or organization was assigned an entire network from class A, class B, or class C address block. This use of address space is referred to as classful addressing. </p>
+          <p></p>
+          <p>
+            <b>Class A Blocks</b>
+          </p>
+          <p>A class A address block was designed to support extremely large networks with more than 16 million host addresses. Class A IPv4 addresses used a fixed /8 prefix with the first octet to indicate the network address. The remaining three octets were used for host addresses. All class A addresses required that the most significant bit of the high-order octet be a zero. This meant that there were only 128 possible class A networks, 0.0.0.0/8 to 127.0.0.0/8. Even though the class A addresses reserved one-half of the address space, because of their limit of 128 networks, they could only be allocated to approximately 120 companies or organizations. </p>
+          <p></p>
+          <p>
+            <b>Class B Blocks</b>
+          </p>
+          <p>Class B address space was designed to support the needs of moderate to large size networks with up to approximately 65,000 hosts. A class B IP address used the two high-order octets to indicate the network address. The other two octets specified host addresses. As with class A, address space for the remaining address classes needed to be reserved. For class B addresses, the most significant two bits of the high-order octet were 10. This restricted the address block for class B to 128.0.0.0/16 to 191.255.0.0/16. Class B had slightly more efficient allocation of addresses than class A because it equally divided 25% of the total IPv4 address space among approximately 16,000 networks.</p>
+          <p></p>
+          <p>
+            <b>Class C Blocks</b>
+          </p>
+          <p>The class C address space was the most commonly available of the historic address classes. This address space was intended to provide addresses for small networks with a maximum of 254 hosts. Class C address blocks used a /24 prefix. This meant that a class C network used only the last octet as host addresses with the three high-order octets used to indicate the network address. Class C address blocks set aside address space by using a fixed value of 110 for the three most significant bits of the high-order octet. This restricted the address block for class C from 192.0.0.0/24 to 223.255.255.0/24. Although it occupied only 12.5% of the total IPv4 address space, it could provide addresses to 2 million networks.</p>
+          <p></p>
+          <p>Figure 1 illustrates how these address classes are divided.</p>
+          <p></p>
+          <p>
+            <b>Limits to the Class-based System</b>
+          </p>
+          <p>Not all organizations' requirements fit well into one of these three classes. Classful allocation of address space often wasted many addresses, which exhausted the availability of IPv4 addresses. For example, a company that had a network with 260 hosts would need to be given a class B address with more than 65,000 addresses. </p>
+          <p></p>
+          <p>Even though this classful system was all but abandoned in the late 1990s, you will see remnants of it in networks today. For example, when you assign an IPv4 address to a computer, the operating system examines the address being assigned to determine if this address is a class A, class B, or class C. The operating system then assumes the prefix used by that class and makes the default subnet mask assignment. </p>
+          <p></p>
+          <p>
+            <b>Classless Addressing</b>
+          </p>
+          <p>The system in use today is referred to as classless addressing. The formal name is Classless Inter-Domain Routing (CIDR, pronounced “cider”). The classful allocation of IPv4 addresses was very inefficient, allowing for only  /8, /16 or /24 prefix lengths, each from a separate address space. In 1993, the IETF created a new set of standards that allowed service providers to allocate IPv4 addresses on any address bit boundary (prefix length) instead of only by a class A, B, or C address. </p>
+          <p></p>
+          <p>The IETF knew that CIDR was only a temporary solution and that a new IP protocol would have to be developed to accommodate the rapid growth in the number of Internet users. In 1994, the IETF began its work to find a successor to IPv4, which eventually became IPv6.</p>
+          <p></p>
+          <p>Figure 2 shows the classful address ranges.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

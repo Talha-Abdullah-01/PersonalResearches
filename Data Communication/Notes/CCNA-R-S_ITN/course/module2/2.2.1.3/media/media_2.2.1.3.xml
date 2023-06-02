@@ -1,0 +1,20 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Configuring Device Names</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+  <text><![CDATA[Sw-Floor-3]]></text> 
+  </component>
+<component id="ID_txt02">
+  <text><![CDATA[Sw-Floor-2]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[Sw-Floor-1]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[With names, network devices are easy to identify for configuration purposes.]]></text> 
+  </component>
+
+</textcomponents>

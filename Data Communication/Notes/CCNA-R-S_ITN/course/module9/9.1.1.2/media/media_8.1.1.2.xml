@@ -1,0 +1,17 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Communicating between Networks</b>]]></text>
+</component>
+<component id="ID_txt01">
+<text><![CDATA[<b>Network 2</b>]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Network 1</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[Subnet 2]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[Subnet 1]]></text> 
+  </component>
+</textcomponents>

@@ -1,0 +1,64 @@
+﻿<textcomponents>
+<!-- SLIDE 1 -->
+<component id="ID_s1_title">
+<text><![CDATA[<b>Connectionless Communication</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+  <text><![CDATA[Letter]]></text> 
+  </component>
+<component id="ID_s1_txt02">
+  <text><![CDATA[Mail Box]]></text> 
+  </component>
+<component id="ID_s1_txt03">
+  <text><![CDATA[Letter]]></text> 
+  </component>
+<component id="ID_s1_txt04">
+  <text><![CDATA[A letter is sent.]]></text> 
+  </component>
+<component id="ID_s1_title_01">
+	<text><![CDATA[<b>The sender doesn't know:</b>]]></text>
+</component>
+<component id="ID_s1_body01">
+  <text><![CDATA[<textformat blockindent='-16'><LI id="s1body1li">If the receiver is present</LI><LI id="s1body1li1">If the letter arrived</LI><LI id="s1body1li2">If the receiver can read the letter</LI></textformat>]]></text> 
+</component>
+<component id="ID_s1_title_02">
+<text><![CDATA[<b>The receiver doesn't know:</b>]]></text>
+</component>
+<component id="ID_s1_body02">
+  <text><![CDATA[<textformat blockindent='-16'><LI>When it is coming</LI></textformat>]]></text> 
+  </component>
+  
+  
+<!-- SLIDE 2 -->  
+<component id="ID_s2_title">
+<text><![CDATA[<b>Connectionless Communication</b>]]></text>
+</component>
+<component id="ID_s2_txt01">
+  <text><![CDATA[IP Header]]></text> 
+  </component>
+<component id="ID_s2_txt02">
+  <text><![CDATA[Segment]]></text> 
+  </component>
+<component id="ID_s2_txt03">
+  <text><![CDATA[IP Header]]></text> 
+  </component>
+<component id="ID_s2_txt04">
+  <text><![CDATA[Segment]]></text> 
+  </component>
+<component id="ID_s2_txt05">
+  <text><![CDATA[A packet is sent.]]></text> 
+  </component>
+<component id="ID_s2_title_01">
+	<text><![CDATA[<b>The sender doesn't know:</b>]]></text>
+</component>
+<component id="ID_s2_body01">
+  <text><![CDATA[<textformat blockindent='-16'><LI>If the receiver is present</LI><LI>If the packet arrived</LI><LI>If the receiver can read the packet</LI></textformat>]]></text> 
+</component>
+<component id="ID_s2_title_02">
+<text><![CDATA[<b>The receiver doesn't know:</b>]]></text>
+</component>
+<component id="ID_s2_body02">
+  <text><![CDATA[<textformat blockindent='-16'><LI>When it is coming</LI></textformat>]]></text> 
+  </component>
+
+</textcomponents>

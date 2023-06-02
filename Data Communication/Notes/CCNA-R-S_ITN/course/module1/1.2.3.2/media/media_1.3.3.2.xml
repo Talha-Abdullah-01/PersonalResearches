@@ -1,0 +1,13 @@
+﻿<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>The Internet</b><br/>The World]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Extranet</b><br/>Suppliers, Customers, Collaborators]]></text> 
+  </component>
+  <component id="ID_txt03">
+  <text><![CDATA[<b>Intranet</b><br/>Company Only]]></text> 
+  </component>
+
+</textcomponents>

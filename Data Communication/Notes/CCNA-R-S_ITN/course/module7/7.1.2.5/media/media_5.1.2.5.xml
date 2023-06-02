@@ -1,0 +1,39 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Port Addressing</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[To: you@example.com<br>From: me@example.com<br>Subject: Vacation]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Electronic Mail]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[HTML Page]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Internet Chat]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Different Applications]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Port 110]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[Port 80]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[Port 531]]></text>
+</component>
+
+</textcomponents>

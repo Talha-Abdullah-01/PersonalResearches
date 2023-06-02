@@ -1,0 +1,158 @@
+<textcomponents>
+<!--Slide 1-->
+<component id="ID_s1_title">
+<text><![CDATA[<b>DoS Attack</b>]]></text>
+</component>
+
+<component id="ID_s2__title">
+<text><![CDATA[<b>Trust Exploitation</b>]]></text>
+</component>
+
+<component id='ID_s1_table'>
+<text><![CDATA[
+<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr class="liner_top">
+<td colspan='2' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+</tr>				
+<tr>
+<td bgcolor='#077A77' width='180' valign="top"><font size='11' color='#ffffff'><b>Resource overloads</b></font></td>
+<td bgcolor='#077A77'  valign="top"><font size='11' color='#ffffff'><b>Malformed data</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#EFF8F7' valign="top"><font size='11'color='#393536'>Disk space, bandwidth, buffers</font></td>
+<td bgcolor='#EFF8F7' valign="top"><font size='11' color='#393536'>Oversized packets such as ping of death</font></td>
+</tr>
+<tr>
+<td bgcolor='#FFFFFF' valign="top"><font size='11' color='#393536'>Ping floods such as smurf</font></td>
+<td bgcolor='#FFFFFF' valign="top"><font size='11' color='#393536'>Overlapping packet such as winuke</font></td>
+</tr>
+<tr>
+<td bgcolor='#EFF8F7' valign="top"><font size='11'color='#393536'>Packet storms such as UDP bombs and fraggle</font></td>
+<td bgcolor='#EFF8F7' valign="top"><font size='11' color='#393536'>Unhandled data such as teardrop</font></td>
+</tr>				
+</table>]]>
+</text>
+</component>
+
+
+<component id="ID_s1_txt01">
+<text><![CDATA[DoS attacks prevent authorized people from using a service by using up system resources.]]></text>
+</component>
+
+
+<!--Slide 2-->
+<component id="ID_s2_title">
+<text><![CDATA[<b>Ping of Death</b>]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[Internet]]></text>
+</component>
+
+<component id="ID_s2_txt02">
+<text><![CDATA[Attacking Computer]]></text>
+</component>
+
+<component id='ID_s2_txt03'>
+	<text><![CDATA[Attacker sends a malformed or very large ping packet.]]></text>
+</component>
+
+<!--Slide 3-->
+<component id="ID_s3_title">
+<text><![CDATA[<b>SYN Flood</b>]]></text>
+</component>
+<component id="ID_s3_txt01">
+<text><![CDATA[Attacker sends multiple SYN requests to a web server.]]></text>
+</component>
+<component id="ID_s3_txt02">
+<text><![CDATA[Web server sense SYN-ACK replies.]]></text> 
+</component>
+<component id="ID_s3_txt03">
+<text><![CDATA[Web server waits to complete three-way handshake.]]></text> 
+</component>
+<component id="ID_s3_txt04">
+<text><![CDATA[Valid user sends SYN request.]]></text> 
+</component>
+<component id="ID_s3_txt05">
+<text><![CDATA[Web server is unavailable.]]></text> 
+</component>
+<component id="ID_s3_txt06">
+<text><![CDATA[Web Server]]></text> 
+</component>
+<component id="ID_s3_txt07">
+<text><![CDATA[Web Server]]></text> 
+</component>
+<component id="ID_s3_txt08">
+<text><![CDATA[Web Server]]></text> 
+</component>
+
+
+<!--Slide 4-->
+<component id="ID_s4_title">
+<text><![CDATA[<b>DDoS</b>]]></text>
+</component>
+
+<component id="ID_s4_txt01">
+<text><![CDATA[Client/Attacker]]></text>
+</component>
+
+<component id="ID_s4_txt02">
+<text><![CDATA[Handlers]]></text>
+</component>
+
+<component id="ID_s4_txt03">
+<text><![CDATA[Agents/<br/>Zombies]]></text>
+</component>
+
+<component id="ID_s4_txt04">
+<text><![CDATA[Victim]]></text>
+</component>
+
+<component id='ID_s4_txt05'>
+	<text><![CDATA[Attacker uses many intermediate hosts, called zombies, to launch the attack.]]></text>
+</component>
+
+<!--Slide 5-->
+<component id="ID_s5_title">
+<text><![CDATA[<b>Smurf Attack</b>]]></text>
+</component>
+
+<component id="ID_s5_txt01">
+<text><![CDATA[Zombies]]></text>
+</component>
+<component id="ID_s5_txt02">
+<text><![CDATA[Victim]]></text>
+</component>
+<component id="ID_s5_txt03">
+<text><![CDATA[Smurf Amplifier]]></text>
+</component>
+<component id="ID_s5_txt04">
+<text><![CDATA[Attempt to overwhelm WAN link to destination]]></text>
+</component>
+
+<!--ANIMATION CONTROLLER-->
+	<component id="end">
+		<text><![CDATA[End]]></text>
+	</component>
+	
+	<component id="fforward">
+		<text><![CDATA[Fast Forward]]></text>
+	</component>
+	
+	<component id="pause">
+		<text><![CDATA[Pause]]></text>
+	</component>
+	
+	<component id="play">
+		<text><![CDATA[Play]]></text>
+	</component>
+	
+	<component id="rewind">
+		<text><![CDATA[Rewind]]></text>
+	</component>
+	
+	<component id="start">
+		<text><![CDATA[Start]]></text>
+	</component>
+
+</textcomponents>

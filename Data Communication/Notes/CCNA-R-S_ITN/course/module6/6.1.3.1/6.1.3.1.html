@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.1.3.1 IPv4 Packet Header</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_6.1.3.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Network Layer Protocols</h1>
+        <h2>IPv4 Packet</h2>
+      </div>
+      <div id="content">
+          <p>IPv4 has been in use since 1983 when it was deployed on the Advanced Research Projects Agency Network (ARPANET), which was the precursor to the Internet. The Internet is largely based on IPv4, which is still the most widely-used network layer protocol. </p>
+          <p></p>
+          <p>An IPv4 packet has two parts:</p>
+          <p>
+            <ul>
+              <li>
+                <b>IP Header - </b>Identifies the packet characteristics.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Payload - </b>Contains the Layer 4 segment information and the actual data.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>As shown in the figure, an IPv4 packet header consists of fields containing important information about the packet. These fields contain binary numbers which are examined by the Layer 3 process. The binary values of each field identify various settings of the IP packet.</p>
+          <p></p>
+          <p>Significant fields in the IPv4 header include:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Version - </b>Contains a 4-bit binary value identifying the IP packet version. For IPv4 packets, this field is always set to 0100.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Differentiated Services (DS) - </b>Formerly called the Type of Service (ToS) field, the DS field is an 8-bit field used to determine the priority of each packet. The first 6 bits identify the Differentiated Services Code Point (DSCP) value that is used by a quality of service (QoS) mechanism. The last 2 bits identify the explicit congestion notification (ECN) value that can be used to prevent dropped packets during times of network congestion. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Time-to-Live (TTL) - </b>Contains an 8-bit binary value that is used to limit the lifetime of a packet. It is specified in seconds but is commonly referred to as hop count. The packet sender sets the initial time-to-live (TTL) value and is decreased by one each time the packet is processed by a router, or hop. If the TTL field decrements to zero, the router discards the packet and sends an Internet Control Message Protocol (ICMP) Time Exceeded message to the source IP address. The<b> traceroute </b>command uses this field to identify the routers used between the source and destination. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Protocol - </b>This 8-bit binary value indicates the data payload type that the packet is carrying, which enables the network layer to pass the data to the appropriate upper-layer protocol. Common values include ICMP (1), TCP (6), and UDP (17).</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Source IP Address - </b>Contains a 32-bit binary value that represents the source IP address of the packet. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Destination IP Address - </b>Contains a 32-bit binary value that represents the destination IP address of the packet.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The two most commonly referenced fields are the source and destination IP addresses. These fields identify where the packet is from and where it is going. Typically these addresses do not change while travelling from the source to the destination.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

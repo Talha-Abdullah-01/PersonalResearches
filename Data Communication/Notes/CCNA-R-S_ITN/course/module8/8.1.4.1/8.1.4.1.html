@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.1.4.1 Public and Private IPv4 Addresses</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_8.1.4.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IPv4 Network Addresses</h1>
+        <h2>Types of IPv4 Addresses</h2>
+      </div>
+      <div id="content">
+          <p>Although most IPv4 host addresses are public addresses designated for use in networks that are accessible on the Internet, there are blocks of addresses that are used in networks that require limited or no Internet access. These addresses are called private addresses.</p>
+          <p></p>
+          <p>
+            <b>Private Addresses</b>
+          </p>
+          <p>The private address blocks are:</p>
+          <p></p>
+          <p>10.0.0.0 to 10.255.255.255 (10.0.0.0/8)</p>
+          <p></p>
+          <p>172.16.0.0 to 172.31.255.255 (172.16.0.0/12)</p>
+          <p></p>
+          <p>192.168.0.0 to 192.168.255.255 (192.168.0.0/16)</p>
+          <p></p>
+          <p>Private addresses are defined in RFC 1918, Address Allocation for Private Internets, and are sometimes referred to as RFC 1918 addresses. Private space address blocks, as shown in the figure, are used in private networks. Hosts that do not require access to the Internet can use private addresses. However within the private network, hosts still require unique IP addresses within the private space.</p>
+          <p></p>
+          <p>Hosts in different networks may use the same private space addresses. Packets using these addresses as the source or destination should not appear on the public Internet. The router or firewall device at the perimeter of these private networks must block or translate these addresses. Even if these packets were to make their way to the Internet, the routers would not have routes to forward them to the appropriate private network.</p>
+          <p></p>
+          <p>In RFC 6598, IANA reserved another group of addresses known as shared address space. Similar to RFC 1918 private address space, shared address space addresses are not globally routable. However, these addresses are intended only for use in service provider networks. The shared address block is 100.64.0.0/10.</p>
+          <p></p>
+          <p>
+            <b>Public Addresses</b>
+          </p>
+          <p>The vast majority of the addresses in the IPv4 unicast host range are public addresses. These addresses are designed to be used in the hosts that are publicly accessible from the Internet. Even within these IPv4 address blocks, there are many addresses that are designated for other special purposes.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

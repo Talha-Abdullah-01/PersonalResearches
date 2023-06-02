@@ -1,0 +1,37 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>The Ethernet MAC Address Structure</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+   <text><![CDATA[Organizationally Unique Identifier (OUI)]]></text>
+   </component>
+<component id="ID_txt02">
+   <text><![CDATA[Vendor Assigned <br/>(NIC, Interfaces)]]></text>
+   </component>
+<component id="ID_txt03">
+   <text><![CDATA[24 Bits]]></text>
+   </component>
+<component id="ID_txt04">
+   <text><![CDATA[24 Bits]]></text>
+   </component>
+<component id="ID_txt05">
+   <text><![CDATA[6 hex digits]]></text>
+   </component>
+<component id="ID_txt06">
+   <text><![CDATA[6 hex digits]]></text>
+   </component>
+<component id="ID_txt07">
+   <text><![CDATA[00-60-2F]]></text>
+   </component>
+<component id="ID_txt08">
+   <text><![CDATA[3A-07-BC]]></text>
+   </component>
+<component id="ID_txt09">
+   <text><![CDATA[Cisco]]></text>
+   </component>
+<component id="ID_txt10">
+   <text><![CDATA[particular device]]></text>
+   </component>
+</textcomponents>

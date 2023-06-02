@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.1.2.5 Bitwise AND Operation </title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_8.1.2.5_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IPv4 Network Addresses</h1>
+        <h2>IPv4 Subnet Mask</h2>
+      </div>
+      <div id="content">
+          <p>When an IPv4 address is assigned to a device, that device uses the subnet mask to determine what network address the device belongs to. The network address is the address that represents all the devices on the same network. </p>
+          <p></p>
+          <p>When sending network data, the device uses this information to determine whether it can send packets locally, or if it must send the packets to a default gateway for remote delivery. When a host sends a packet, it compares the network portion of its own IP address to the network portion of the destination IP address, based on subnet masks. If the network bits match, both the source and destination host are on the same network and the packet can be delivered locally. If they do not match, the sending host forwards the packet to the default gateway to be sent on to the other network. </p>
+          <p></p>
+          <p>
+            <b>The AND Operation</b>
+          </p>
+          <p>ANDing is one of three basic binary operations used in digital logic. The other two are OR and NOT. While all three are used in data networks, AND is used in determining the network address. Therefore, our discussion here will be limited to logical AND. Logical AND is the comparison of two bits that yields the following results:</p>
+          <p></p>
+          <p>1 AND 1 = 1 (Figure 1)</p>
+          <p></p>
+          <p>0 AND 1 = 0 (Figure 2)</p>
+          <p></p>
+          <p>0 AND 0 = 0 (Figure 3)</p>
+          <p></p>
+          <p>1 AND 0 = 0 (Figure 4)</p>
+          <p></p>
+          <p>The IPv4 host address is logically ANDed, bit by bit, with its subnet mask to determine the network address to which the host is associated. When this bitwise ANDing between the address and the subnet mask is performed, the result yields the network address. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

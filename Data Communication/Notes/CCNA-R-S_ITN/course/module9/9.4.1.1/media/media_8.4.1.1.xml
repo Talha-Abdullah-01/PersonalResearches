@@ -1,0 +1,31 @@
+<textcomponents>
+	
+	<component id="ID_footer">
+		<text><![CDATA[<i>Careful planning is required to make best use of an IP addressing scheme.<br/><br/><b>Plan for…</b></br><textformat blockindent="-14"><ul><li>Size</li><li>Location</li><li>Use</li><li>Access requirements</li></ul></textformat></i>]]></text> 
+	</component>
+	<component id="ID_s2_txt01">
+		<text><![CDATA[30 Hosts]]></text>
+	</component>
+	<component id="ID_s2_txt02">
+		<text><![CDATA[30 Hosts]]></text> 
+	</component>
+	<component id="ID_s2_txt03">
+		<text><![CDATA[30 Hosts]]></text> 
+	</component>
+	<component id="ID_s2_txt04">
+		<text><![CDATA[30 Hosts]]></text> 
+	</component>
+	<component id="ID_s2_txt05">
+		<text><![CDATA[30 Hosts]]></text> 
+	</component>
+	<component id="ID_s2_txt06">
+		<text><![CDATA[30 Hosts]]></text> 
+	</component>
+	<component id="ID_s2_txt07">
+		<text><![CDATA[30 Hosts]]></text> 
+	</component>
+	<component id="ID_s2_txt08">
+		<text><![CDATA[8 subnets<br>(4 hosts each subnet)]]></text> 
+	</component>
+
+</textcomponents>

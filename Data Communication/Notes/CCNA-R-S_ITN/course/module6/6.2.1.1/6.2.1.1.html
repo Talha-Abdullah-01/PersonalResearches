@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.2.1.1 Host Forwarding Decision</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_6.2.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Routing</h1>
+        <h2>How a Host Routes</h2>
+      </div>
+      <div id="content">
+          <p>Another role of the network layer is to direct packets between hosts. A host can send a packet to:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Itself</b> - A host can ping itself by sending a packet to a special IPv4 address of 127.0.0.1 which is referred to as the loopback interface. This loopback address is automatically assigned to a host when TCP/IP is running. The ability for a host to send a packet to itself using network functionality is useful for testing purposes. Any IP within the network 127.0.0.0/8 refers to the local host.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Local host</b> - This is a host on the same network as the sending host. The hosts share the same network address. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Remote host</b> - This is a host on a remote network. The hosts do not share the same network address. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Whether a packet is destined for a local host or a remote host is determined by the IP address and subnet mask combination of the source (or sending) device compared to the IP address and subnet mask of the destination device. </p>
+          <p></p>
+          <p>In a home or business network you may have several wired and wireless devices interconnected together using an intermediate device such as a LAN switch and/or a wireless access point (WAP). This intermediate device provides interconnections between local hosts on the local network. Local hosts can reach each other and share information without the need of any additional devices. If a host is sending a packet to a device that is configured with the same IP network as the host device, the packet is simply forwarded out of the host interface, through the intermediate device, to the destination device directly. </p>
+          <p></p>
+          <p>Of course in most situations we want our devices to be able to connect beyond the local network segment: out to other homes, businesses, and the Internet. Devices that are beyond the local network segment are known as remote hosts. When a source device sends a packet to a remote destination device, then the help of routers and routing is needed. Routing is the process of identifying the best path to a destination.  The router connected to the local network segment is referred to as the <b>default gateway</b>.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

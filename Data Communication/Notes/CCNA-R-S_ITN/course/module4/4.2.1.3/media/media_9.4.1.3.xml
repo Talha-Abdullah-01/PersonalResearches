@@ -1,0 +1,13 @@
+<textcomponents>	
+	
+	<component id="ID_txt05">
+		<text><![CDATA[<b>Outer Jacket</b><br/>Protects the copper wire from physical damage]]></text> 
+	</component>	
+	<component id="ID_txt06">
+		<text><![CDATA[<b>Twisted-Pair</b><br/>Protects the signal from interference]]></text> 
+	</component>	
+	<component id="ID_txt07">
+		<text><![CDATA[<b>Color-Coded Plastic Insulation</b><br/>Electrically isolates wires from each other and identifies each pair]]></text> 
+	</component>
+	
+</textcomponents>

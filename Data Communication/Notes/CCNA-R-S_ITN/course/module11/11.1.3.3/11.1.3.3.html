@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.1.3.3 Evolving Protocol Requirements</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.1.3.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Create and Grow</h1>
+        <h2>Growing to Larger Networks</h2>
+      </div>
+      <div id="content">
+          <p>In addition to understanding changing traffic trends, a network administrator must also be aware of how network use is changing. As shown in the figure, a network administrator in a small network has the ability to obtain in-person IT “snapshots” of employee application utilization for a significant portion of the employee workforce over time. These snapshots typically include information such as:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>OS + OS Version</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Non-Network Applications</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Network Applications</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>CPU Utilization</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Drive Utilization</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>RAM Utilization</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Documenting snapshots for employees in a small network over a period of time will go a long way toward informing the network administrator of evolving protocol requirements and associated traffic flows. For example, it may be that some employees are using off-site resources such as social media in order to better position a company with respect to marketing. When they began working for the company, these employees may have focused less on Internet-based advertising. This shift in resource utilization may require the network administrator to shift network resource allocations accordingly. </p>
+          <p></p>
+          <p>It is the responsibility of the network administrator to track network utilization and traffic flow requirements, and implement network modifications in order to optimize employee productivity as the network and business grow.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

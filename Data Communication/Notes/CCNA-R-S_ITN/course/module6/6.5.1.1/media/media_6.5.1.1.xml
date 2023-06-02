@@ -1,0 +1,15 @@
+﻿<textcomponents>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Destination Host</b><br>172.16.236.101]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>Source Host</b><br>172.16.1.101]]></text>
+</component>
+
+<component id="ID_footer">
+<text><![CDATA[<i>The routing table of a router stores information about directly-connected routes and remote routes.</i>]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.0.1.2 Activity – Managing the Medium</title>
+    <!-- Activity -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_4.0.1.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Network Access</h1>
+        <h2>Introduction</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Managing the Medium</b>
+          </p>
+          <p>You and your colleague are attending a networking conference. There are many lectures and presentations held during this event, and because they overlap, each of you can only choose a limited set of sessions to attend. </p>
+          <p></p>
+          <p>Therefore, you decide to split, each of you attending a separate set of presentations, and after the event ends, you share the slides and the knowledge each of you gained during the event. </p>
+          <p></p>
+          <p>Try to answer the following questions:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>How would you personally organize a conference where multiple sessions are held at the same time? Would you put all of them into a single conference room or would you use multiple rooms? What would be the reason?</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Assume that the conference room is properly fitted with audiovisual equipment to display large-size video and amplify voice. If a person wanted to attend a specific session, does the seating arrangement make a difference, or is it sufficient to visit the proper conference room?</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Would it be considered positive or harmful if the speech from one conference room somehow leaked into another?</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>If questions or inquiries arise during a presentation, should attendees simply shout out their question, or should there be some form of process for handling questions, such as documenting them and handing them over to a facilitator? What would happen without this process?</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>If an interesting topic elicits a larger discussion where many attendees have questions or comments, can this result in the session running out of its time without going through the entire intended content? Why is that so?</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Imagine that the session is a panel, i.e. a more free discussion of attendees with panelists and optionally with themselves. If a person wants to address another person within the same room, can he/she do it directly? What would be necessary to do if a panelist wanted to invite another person to join who is not presently in the room?</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>What was accomplished by the isolation of multiple sessions into separate conference rooms if, after the event, people can meet and share the information?</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <a href="../../files/4.0.1.2%20Let%20Me%20Tell%20You%20What%20I%20Heard%20at%20a%20Conference%20Instructions.pdf" target="_blank">Class Activity - Let Me Tell You What I Heard at a Conference Instructions</a>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.2.3.3 IEEE</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_3.2.3.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Network Protocols and Standards</h1>
+        <h2>Standards Organizations</h2>
+      </div>
+      <div id="content">
+          <p>The Institute of Electrical and Electronics Engineers (IEEE, pronounced “I-triple-E”) is a professional organization for those in the electrical engineering and electronics fields who are dedicated to advancing technological innovation and creating standards. As of 2012, IEEE consists of 38 societies, publishes 130 journals, and sponsors more than 1,300 conferences each year worldwide. The IEEE has over 1,300 standards and projects currently under development. </p>
+          <p></p>
+          <p>IEEE has more than 400,000 members in more than 160 countries. More than 107,000 of those members are student members. IEEE provides educational and career enhancement opportunities to promote the skills and knowledge with the electronics industry. </p>
+          <p></p>
+          <p>IEEE is one of the leading standard producing organizations in the world. It creates and maintains standards affecting a wide range of industries including power and energy, healthcare, telecommunications, and networking. The IEEE 802 family of standards deals with local area networks and metropolitan area networks, including both wired and wireless. As shown in the figure, each IEEE standard consists of a WG responsible for creating and improving the standards.</p>
+          <p></p>
+          <p>The IEEE 802.3 and IEEE 802.11 standards are significant IEEE standards in computer networking. The IEEE 802.3 standard defines Media Access Control (MAC) for wired Ethernet. This technology is usually for LANs, but also has wide-area network (WAN) applications. The 802.11 standard defines a set of standards for implementing wireless local-area networks (WLANs). This standard defines the Open Systems Interconnection (OSI) physical and data link MAC for wireless communications.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

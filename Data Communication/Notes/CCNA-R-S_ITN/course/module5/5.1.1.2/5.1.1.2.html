@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.1.1.2 MAC Sublayer</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_5.1.1.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Ethernet Protocol</h1>
+        <h2>Ethernet Operation</h2>
+      </div>
+      <div id="content">
+          <p>As shown in the figure, the Ethernet MAC sublayer has two primary responsibilities:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Data encapsulation</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Media access control</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Data encapsulation</b>
+          </p>
+          <p>The data encapsulation process includes frame assembly before transmission, and frame disassembly upon reception of a frame. In forming the frame, the MAC layer adds a header and trailer to the network layer PDU. </p>
+          <p></p>
+          <p>Data encapsulation provides three primary functions:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Frame delimiting</b>: The framing process provides important delimiters that are used to identify a group of bits that make up a frame. This process provides synchronization between the transmitting and receiving nodes.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Addressing</b>: The encapsulation process also provides for data link layer addressing. Each Ethernet header added in the frame contains the physical address (MAC address) that enables a frame to be delivered to a destination node.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Error detection</b>: Each Ethernet frame contains a trailer with a cyclic redundancy check (CRC) of the frame contents. After reception of a frame, the receiving node creates a CRC to compare to the one in the frame. If these two CRC calculations match, the frame can be trusted to have been received without error.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The use of frames aids in the transmission of bits as they are placed on the media and in the grouping of bits at the receiving node.</p>
+          <p></p>
+          <p>
+            <b>Media Access Control</b>
+          </p>
+          <p>The second responsibility of the MAC sublayer is media access control. Media access control is responsible for the placement of frames on the media and the removal of frames from the media. As its name implies, it controls access to the media. This sublayer communicates directly with the physical layer.</p>
+          <p></p>
+          <p>The underlying logical topology of Ethernet is a multi-access bus; therefore, all nodes (devices) on a single network segment share the medium. Ethernet is a contention-based method of networking. Recall that a contention-based method, or non-deterministic method, means that any device can try to transmit data across the shared medium whenever it has data to send. However, much like if two people try to talk simultaneously, if multiple devices on a single medium attempt to forward data simultaneously, the data will collide resulting in corrupted, unusable data. For this reason, Ethernet provides a method for controlling how the nodes share access through the use a Carrier Sense Multiple Access (CSMA) technology.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.3.1.1 Class Activity - We Need to Talk, Again - Game</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_7.3.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Summary</h1>
+        <h2>Summary</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>We Need to Talk, Again</b>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: It is important that the students have completed the Introductory Modeling Activity for this chapter. This activity works best in medium-sized groups of 6 to 8 students.</p>
+          <p></p>
+          <p>The instructor will whisper a complex message to the first student in a group. An example of the message might be “We are expecting a blizzard tomorrow. It should be arriving in the morning and school will be delayed  two hours so bring your homework.”</p>
+          <p></p>
+          <p>That student whispers the message to the next student in the group. Each group follows this process until all members of each group have heard the whispered message.</p>
+          <p></p>
+          <p>Here are the rules you are to follow:</p>
+          <p>
+            <ul>
+              <li>You can whisper the message in short parts to your neighbor AND you can repeat the message parts after verifying your neighbor heard the correct message.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Small parts of the message may be checked and repeated again (clockwise OR counter-clockwise to ensure accuracy of the message parts) by whispering. A student will be assigned to time the entire activity.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>When the message has reached the end of the group, the last student will say aloud what she or he heard.  Small parts of the message may be repeated (i.e., re-sent), and the process can be restarted to ensure that ALL parts of the message are fully delivered and correct.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The Instructor will restate the original message to check for quality delivery.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p></p>
+          <p>
+            <a href="../../files/7.3.1.1%20Class%20Activity%20-%20We%20Need%20to%20Talk,%20Again%20Instructions.pdf" target="_blank">Class Activity - We Need to Talk, Again Instructions</a>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

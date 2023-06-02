@@ -1,0 +1,12 @@
+Manage Financial status - c
+
+include -> Use case
+actor1 	    actor1
+
+DFD - 2 lines connecting the same direction between a process and entity
+DFD - If conditions inside DFD
+
+Assumption : 
+1st use case:
+if police feedback not okay, application is rejected
+If immigration officer did not approve, application is rejected

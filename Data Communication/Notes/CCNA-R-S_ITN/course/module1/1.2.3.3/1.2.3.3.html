@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.2.3.3 Lab - Researching Converged Network Services</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_1.2.3.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>LANs, WANs, and the Internet</h1>
+        <h2>The Internet</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>In this lab, you will complete the following objectives:</b>
+          </p>
+          <p>
+            <ul>
+              <li>Part 1: Survey Your Understanding of Convergence </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Part 2: Research ISPs Offering Converged Services </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Part 3: Research Local ISPs Offering Converged Services </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Part 4: Select Best Local ISP Converged Service </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Part 5: Research Local Company or Public Institution Using Convergence Technologies</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <a href="../../files/1.2.3.3%20Lab%20-%20Researching%20Converged%20Network%20Services.pdf" target="_blank">Lab - Researching Converged Network Services</a>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

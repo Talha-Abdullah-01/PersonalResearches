@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.3.3.2 Cisco Express Forwarding</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_5.3.3.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>LAN Switches</h1>
+        <h2>Layer 3 Switching</h2>
+      </div>
+      <div id="content">
+          <p>Cisco devices which support Layer 3 switching utilize Cisco Express Forwarding (CEF). This forwarding method is quite complex, but fortunately, like any good technology, is carried out in large part "behind the scenes". Normally very little CEF configuration is required on a Cisco device.</p>
+          <p></p>
+          <p>Basically, CEF decouples the usual strict interdependence between Layer 2 and Layer 3 decision making. What makes forwarding IP packets slow is the constant referencing back-and-forth between Layer 2 and Layer 3 constructs within a networking device. So, to the extent that Layer 2 and Layer 3 data structures can be decoupled, forwarding is accelerated. </p>
+          <p></p>
+          <p>The two main components of CEF operation are the:</p>
+          <p>
+            <ul>
+              <li>Forwarding Information Base (FIB) </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Adjacency tables</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The FIB is conceptually similar to a routing table. A router uses the routing table to determine best path to a destination network based on the network portion of the destination IP address. With CEF, information previously stored in the route cache is, instead, stored in several data structures for CEF switching. The data structures provide optimized lookup for efficient packet forwarding. A networking device uses the FIB lookup table to make destination-based switching decisions without having to access the route cache. </p>
+          <p></p>
+          <p>The FIB is updated when changes occur in the network and contains all routes known at the time. </p>
+          <p></p>
+          <p>Adjacency tables maintain Layer 2 next-hop addresses for all FIB entries. </p>
+          <p></p>
+          <p>The separation of the reachability information (in the FIB table) and the forwarding information (in the adjacency table), provides a number of benefits: </p>
+          <p>
+            <ul>
+              <li>The adjacency table can be built separately from the FIB table, allowing both to be built without any packets being process switched. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The MAC header rewrite used to forward a packet is not stored in cache entries, so changes in a MAC header rewrite string do not require invalidation of cache entries.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>CEF is enabled by default on most Cisco devices that perform Layer 3 switching.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

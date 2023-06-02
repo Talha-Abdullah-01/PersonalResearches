@@ -1,0 +1,7 @@
+<textcomponents>
+
+<component id="ID_footer">
+<text><![CDATA[<b>When planning any network consider…</b><textformat blockindent="-14"><li>Cost</li><li>Ports</li><li>Speed</li><li>Expandability</li><li>Manageability</li></textformat>]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,35 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[IOS <font face="Courier New"><b>show</b></font> commands can provide information about the configuration, operation, and status of parts of a Cisco switch or router.]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[Internetwork Operating System]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[Programs]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[Active<br/> Configuration<br/> File]]></text> 
+  </component>
+<component id="ID_txt05">
+  <text><![CDATA[Tables and Buffers]]></text> 
+  </component>
+<component id="ID_txt06">
+  <text><![CDATA[Backup Configuration<br/> File]]></text> 
+  </component>
+<component id="ID_txt07">
+  <text><![CDATA[Operating Systems]]></text> 
+  </component>
+<component id="ID_txt08">
+  <text><![CDATA[Interfaces]]></text> 
+  </component>
+<component id="ID_txt09">
+  <text><![CDATA[RAM]]></text> 
+  </component>
+<component id="ID_txt10">
+  <text><![CDATA[NVRAM]]></text> 
+  </component>
+<component id="ID_txt11">
+  <text><![CDATA[Flash]]></text> 
+  </component> 
+</textcomponents>

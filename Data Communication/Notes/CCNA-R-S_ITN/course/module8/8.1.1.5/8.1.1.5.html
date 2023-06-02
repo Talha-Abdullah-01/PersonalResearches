@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.1.1.5 Converting from Decimal to Binary</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_8.1.1.5_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IPv4 Network Addresses</h1>
+        <h2>IPv4 Address Structure</h2>
+      </div>
+      <div id="content">
+          <p>In addition to being able to convert binary to decimal, it is also necessary to understand how to convert decimal to binary. </p>
+          <p></p>
+          <p>Because we represent IPv4 addresses using dotted decimal format, it is only necessary that we examine the process of converting 8-bit binary to the decimal values of 0 to 255 for each octet in an IPv4 address.</p>
+          <p></p>
+          <p>To begin the conversion process, we start by determining if the decimal number is equal to or greater than our largest decimal value represented by the most-significant bit. In the highest position, we determine if the octet number is equal to or greater than 128. If the octet number is smaller than 128, we place a 0 in the bit position for decimal value 128 and move to the bit position for decimal value 64.</p>
+          <p></p>
+          <p>If the octet number in the bit position for decimal value 128 is larger than or equal to 128, we place a 1 in the bit position for decimal value 128 and subtract 128 from the octet number being converted. We then compare the remainder of this operation to the next smaller value, 64. We continue this process for all the remaining bit positions.</p>
+          <p></p>
+          <p>Click through Figures 1-6 to see the process of converting 168 to the binary equivalent of 10101000.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.2.1.2 Hypertext Transfer Protocol and Hypertext Markup Language</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_10.2.1.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Well-Known Application Layer Protocols and Services</h1>
+        <h2>Common Application Layer Protocols </h2>
+      </div>
+      <div id="content">
+          <p>When a web address or uniform resource locator (URL) is typed into a web browser, the web browser establishes a connection to the web service running on the server using the HTTP protocol. URLs and Uniform Resource Identifier (URIs) are the names most people associate with web addresses. </p>
+          <p></p>
+          <p>The <a href="http://www.cisco.com/index.html" target="_blank">http://www.cisco.com/index.html</a> URL is an example of a URL that refers to a specific resource; a web page named <b>index.html</b> on a server identified as <b>cisco.com</b>. Click each figure to see the steps used by HTTP.</p>
+          <p></p>
+          <p>Web browsers are the type of client application a computer uses to connect to the World Wide Web and access resources stored on a web server. As with most server processes, the web server runs as a background service and makes different types of files available. </p>
+          <p></p>
+          <p>To access the content, web clients make connections to the server and request the desired resources. The server replies with the resources and, upon receipt, the browser interprets the data and presents it to the user.</p>
+          <p></p>
+          <p>Browsers can interpret and present many data types (such as plain text or Hypertext Markup Language, the language in which web pages are constructed). Other types of data, however, may require another service or program, typically referred to as plug-ins or add-ons. To help the browser determine what type of file it is receiving, the server specifies what kind of data the file contains. </p>
+          <p></p>
+          <p>To better understand how the web browser and web client interact, we can examine how a web page is opened in a browser. For this example, use the <a href="http://www.cisco.com/index.html" target="_blank">http://www.cisco.com/index.html</a> URL.</p>
+          <p></p>
+          <p>First, as shown in Figure 1, the browser interprets the three parts of the URL: </p>
+          <p></p>
+          <p>1. <b>http</b> (the protocol or scheme)</p>
+          <p>2. <b>www.cisco.com</b> (the server name)</p>
+          <p>3. <b>index.html</b> (the specific filename requested)</p>
+          <p></p>
+          <p>As shown in Figure 2, the browser then checks with a name server to convert www.cisco.com into a numeric address, which it uses to connect to the server. Using HTTP requirements, the browser sends a GET request to the server and asks for the <b>index.html </b>file. The server, as shown in Figure 3, sends the HTML code for this web page to the browser. Finally, as shown in Figure 4, the browser deciphers the HTML code and formats the page for the browser window.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

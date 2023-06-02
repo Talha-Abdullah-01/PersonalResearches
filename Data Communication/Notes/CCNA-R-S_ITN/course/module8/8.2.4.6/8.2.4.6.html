@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.2.4.6 Dynamic Link-local Addresses</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_8.2.4.6_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IPv6 Network Addresses</h1>
+        <h2>IPv6 Unicast Addresses</h2>
+      </div>
+      <div id="content">
+          <p>When using SLAAC (SLAAC only or SLAAC with DHCPV6), a device receives its prefix and prefix length from the ICMPv6 RA. Because the prefix of the address has been designated by the RA message, the device must provide only the Interface ID portion of its address. As stated previously, the Interface ID can be automatically generated using the EUI-64 process, or depending on the OS, randomly generated. Using the information from the RA message and the Interface ID, the device can establish its global unicast address.</p>
+          <p></p>
+          <p>After a global unicast address is assigned to an interface, the IPv6-enabled device will automatically generate its link-local address. IPv6-enabled devices must have, at a minimum, the link-local address. Recall that an IPv6 link-local address enables a device to communicate with other IPv6-enabled devices on the same subnet. </p>
+          <p></p>
+          <p>IPv6 link-local addresses are used for a variety of purposes including:</p>
+          <p>
+            <ul>
+              <li>A host uses the link-local address of the local router for its default gateway IPv6 address.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Routers exchange dynamic routing protocol messages using link-local addresses.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Routers’ routing tables use the link-local address to identify the next-hop router when forwarding IPv6 packets.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>A link-local address can be established dynamically or configured manually as a static link-local address. </p>
+          <p></p>
+          <p>
+            <b>Dynamically Assigned Link-Local Address</b>
+          </p>
+          <p></p>
+          <p>The link-local address is dynamically created using the FE80::/10 prefix and the Interface ID.</p>
+          <p></p>
+          <p>By default, Cisco IOS routers use EUI-64 to generate the Interface ID for all link-local address on IPv6 interfaces. For serial interfaces, the router will use the MAC address of an Ethernet interface. Recall that a link-local address must be unique only on that link or network. However, a drawback to using the dynamically assigned link-local address is its length, which makes it challenging to identify and remember assigned addresses. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

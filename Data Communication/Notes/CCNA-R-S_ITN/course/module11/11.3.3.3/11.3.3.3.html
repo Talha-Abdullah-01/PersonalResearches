@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.3.3.3 Viewing Switch Settings with the show version Command</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.3.3.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Basic Network Performance</h1>
+        <h2>Show Commands</h2>
+      </div>
+      <div id="content">
+          <p>The<span class="cmd"><b> show version </b></span>command on a switch displays information about the currently loaded software version, along with hardware and device information. Some of the information displayed by this command is:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Software version</b> - IOS software version </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Bootstrap version</b> - Bootstrap version </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>System up-time</b> - Time since last reboot </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>System restart info</b> - Method of restart (e.g., power cycle, crash) </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Software image name</b> - IOS filename </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Switch platform and processor type </b>- Model number and processor type </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Memory type (shared/main)</b> - Main processor RAM and shared packet I/O buffering </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Hardware interfaces</b> - Interfaces available on the switch </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Configuration register</b> - Sets bootup specifications, console speed setting, and related parameters.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The figure shows a sample of typical<span class="cmd"><b> show version </b></span>output displayed by a switch.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

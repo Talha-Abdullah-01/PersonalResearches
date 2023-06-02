@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.3.2.1 Network Addresses and Data Link addresses</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_3.3.2.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Moving Data in the Network</h1>
+        <h2>Accessing Local Resources</h2>
+      </div>
+      <div id="content">
+          <p>OSI model describes the processes of encoding, formatting, segmenting, and encapsulating data for transmission over the network. The network layer and data link layer are responsible for delivering the data from the source device or sender, to the destination device or receiver. Protocols at both layers contain source and destination addresses, but their addresses have different purposes.</p>
+          <p></p>
+          <p>
+            <b>Network Address </b>
+          </p>
+          <p></p>
+          <p>The network layer, or Layer 3, logical address contains information required to deliver the IP packet from the source device to the destination device. A Layer 3 IP address has two parts, the network prefix and the host part. The network prefix is used by routers to forward the packet to the proper network. The host part is used by the last router in the path to deliver the packet to the destination device.</p>
+          <p></p>
+          <p>An IP packet contains two IP addresses:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Source IP address</b> - The IP address of the sending device.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Destination IP address</b> - The IP address of the receiving device. The destination IP address is used by routers to forward a packet to its destination.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Data Link Address</b>
+          </p>
+          <p></p>
+          <p>The data link, or Layer 2, physical address has a different role. The purpose of the data link address is to deliver the data link frame from one network interface to another network interface on the same network. Before an IP packet can be sent over a wired or wireless network it must be encapsulated in a data link frame so it can be transmitted over the physical medium, the actual network. Ethernet LANs and wireless LANs are two examples of networks that have different physical media each with its own type of data link protocol. </p>
+          <p></p>
+          <p>The IP packet is encapsulated into a data link frame to be delivered to the destination network. The source and destination data link addresses are added, as shown in the figure:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Source data link address</b> - The physical address of the device that is sending the packet. Initially this is the NIC that is the source of the IP packet.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Destination data link address</b> - The physical address of the network interface of either the next hop router or the network interface of the destination device.</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

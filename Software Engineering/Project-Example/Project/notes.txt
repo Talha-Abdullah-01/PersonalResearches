@@ -1,0 +1,33 @@
+Use cases:
+
+Generalization of visas - Tourist visa, work visa, family visa
+1) Manage Tourist visa
+2) check visa application history
+Police system actor is involved in Manage visas
+4) Check for criminal record
+5) Rules of visa duration
+Bank plays a role in payment
+6) Manage payment 
+extends- assigning a unique visa number (if payment is ok)
+Immigration officer has to approve
+notifies AccSys 
+1) Manage Work visa
+employer 
+Employer System 
+2)Check total work visa
+if limitation
+exclude -> Create bill
+accSys connected as it provides the financial report
+3) Immigration officer has to approve
+
+1) Manage Family Visa
+employee
+2) Extend visa
+contact police system
+4) Approve by immigration officer
+
+Any1 can extend for visa -
+extends -> pay extension fee
+Accsys is there
+
+Any1 can : Manage visa cancellation

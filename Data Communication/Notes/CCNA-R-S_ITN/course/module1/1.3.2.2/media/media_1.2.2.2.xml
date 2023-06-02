@@ -1,0 +1,47 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<font><b>Circuit Switching in a Telephone Network</b></font>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[Many paths are possible, but only one path is selected per call.]]></text> 
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Once a call is established, all communication takes place on this path, or circuit. A circuit is dedicated to this call for the duration of the call.]]></text> 
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[The circuit stays active, even if no one is speaking.]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[There are many, many circuits, but a finite number. During peak periods, some calls may be denied.]]></text> 
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>Telephone Network</b>]]></text> 
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Telephone<br/>Switch]]></text> 
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[Telephone<br/>Switch]]></text> 
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[Telephone<br/>Switch]]></text> 
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[Telephone<br/>Switch]]></text> 
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[Telephone<br/>Switch]]></text> 
+</component>
+
+</textcomponents>

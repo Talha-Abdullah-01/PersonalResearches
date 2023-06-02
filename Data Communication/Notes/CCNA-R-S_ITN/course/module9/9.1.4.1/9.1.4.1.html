@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.1.4.1 Subnetting Based on Host Requirements </title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_9.1.4.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Subnetting an IPv4 Network</h1>
+        <h2>Determining the Subnet Mask</h2>
+      </div>
+      <div id="content">
+          <p>The decision about how many host bits to borrow to create subnets is an important planning decision. There are two considerations when planning subnets: the number of host addresses required for each network and the number of individual subnets needed. The animation shows the subnet possibilities for the 192.168.1.0 network. The selection of a number of bits for the subnet ID affects both the number of possible subnets and the number of host addresses in each subnet.</p>
+          <p></p>
+          <p>Notice that there is an inverse relationship between the number of subnets and the number of hosts. The more bits borrowed to create subnets the fewer host bits are available; therefore, fewer hosts per subnet. If more host addresses are needed, more host bits are required, resulting in fewer subnets.</p>
+          <p></p>
+          <p>
+            <b>Number of Hosts</b>
+          </p>
+          <p></p>
+          <p>When borrowing bits to create multiple subnets, you leave enough host bits for the largest subnet. The number of host addresses required in the largest subnet will determine how many bits must be left in the host portion. The formula 2^n (where n is the number the number of host bits remaining) is used to calculate how many addresses will be available on each subnet. Recall that 2 of the addresses cannot be used, so that the usable number of addresses can be calculated as 2^n-2. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

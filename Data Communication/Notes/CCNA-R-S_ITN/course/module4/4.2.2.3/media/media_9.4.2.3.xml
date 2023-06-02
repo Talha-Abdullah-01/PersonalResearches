@@ -1,0 +1,31 @@
+<textcomponents>
+<!--Slide 1-->
+
+<!--Slide 2-->
+
+<component id="ID_s2_txt01">
+<text><![CDATA[RJ-45 UTP Plugs]]></text> 
+</component>
+
+<component id="ID_s2_txt02">
+<text><![CDATA[RJ-45 UTP Socket]]></text> 
+</component>
+
+<!--Slide 3-->
+
+<component id="ID_s3_txt01">
+<text><![CDATA[<b>Bad connector</b> - Wires are exposed, untwisted, and not entirely covered by the sheath.]]></text> 
+</component>
+
+<component id="ID_s3_txt02">
+<text><![CDATA[<b>Good connector</b> - Wires are untwisted to the extent necessary to attach the connector.]]></text> 
+</component>
+
+
+
+<component id="ID_s3_txt03">
+<text><![CDATA[Improper cable termination can impact transmission performance.]]></text> 
+</component>
+
+
+</textcomponents>

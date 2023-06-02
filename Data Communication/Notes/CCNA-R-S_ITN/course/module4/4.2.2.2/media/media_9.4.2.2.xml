@@ -1,0 +1,46 @@
+<textcomponents>
+
+<component id="ID_titleTxt01">
+<text><![CDATA[<b>Category 3 Cable (UTP)</b>]]></text>
+</component>
+
+<component id="ID">
+<text><![CDATA[]]></text>
+</component>
+
+<component id="ID_bodyTxt01">
+<text><![CDATA[<textformat blockindent='-18'><li>Used for voice communication</li><li>Most often used for phone lines</li></textformat>]]></text>
+</component>
+
+<component id="ID_titleTxt02">
+<text><![CDATA[<b>Category 5 and 5e Cable (UTP)</b>]]></text>
+</component>
+
+<component id="ID_bodyTxt02">
+<text><![CDATA[<textformat blockindent='-18'><li>Used for data transmission</li><li>Cat5 supports 100 Mb/s and can support 1000 Mb/s, but it is not recommended</li><li>Cat5e supports 1000 Mb/s</li></textformat>]]></text>
+</component>
+
+<component id="ID_titleTxt03">
+<text><![CDATA[<b>Category 6 Cable (UTP)</b>]]></text>
+</component>
+
+<component id="ID_bodyTxt03">
+<text><![CDATA[<textformat blockindent='-18'><li>Used for data transmission</li><li>An added separator is between each pair of wires allowing it to function at higher speeds</li><li>Supports 1000 Mb/s &#45; 10 Gb/s, though 10 Gb/s is not recommended</li></textformat>]]></text>	
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[Category 3 Cable (UTP)]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Category 5 and 5e Cable (UTP)]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Category 6 Cable (UTP)]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[Click on each cable for more information.]]></text>
+</component>
+</textcomponents>

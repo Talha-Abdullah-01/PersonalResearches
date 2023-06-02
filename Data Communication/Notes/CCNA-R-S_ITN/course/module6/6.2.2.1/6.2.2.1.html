@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.2.2.1 Router Packet Forwarding Decision</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_6.2.2.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Routing</h1>
+        <h2>Router Routing Tables</h2>
+      </div>
+      <div id="content">
+          <p>When a host sends a packet to another host, it will use its routing table to determine where to send the packet. If the destination host is on a remote network, the packet is forwarded to the address of a gateway device. </p>
+          <p></p>
+          <p>What happens when a packet arrives on a router interface? The router looks at its routing table to determine where to forward packets.</p>
+          <p></p>
+          <p>The routing table of a router stores information about:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Directly-connected routes - </b>These routes come from the active router interfaces. Routers add a directly connected route when an interface is configured with an IP address and is activated. Each of the router's interfaces is connected to a different network segment. Routers maintain information about the network segments that they are connected to within the routing table. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Remote routes - </b>These routes come from remote networks connected to other routers. Routes to these networks can either be manually configured on the local router by the network administrator or dynamically configured by enabling the local router to exchange routing information with other routers using dynamic routing protocols. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The figure identifies the directly connected networks and remote networks of router R1.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

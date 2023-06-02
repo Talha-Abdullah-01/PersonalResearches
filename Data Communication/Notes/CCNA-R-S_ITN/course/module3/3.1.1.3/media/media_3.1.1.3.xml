@@ -1,0 +1,139 @@
+﻿<textcomponents>
+
+<!-- Slide 1 -->
+
+<component id="ID_s1_txt01">
+	<text><![CDATA[<B>Message</B>]]></text>
+</component>
+<component id="ID_s1_txt02">
+	<text><![CDATA[<B>Signal</B>]]></text>
+</component>
+<component id="ID_s1_txt03">
+	<text><![CDATA[<B>Signal</B>]]></text>
+</component>
+<component id="ID_s1_txt04">
+	<text><![CDATA[<B>Message</B>]]></text>
+</component>
+<component id="ID_s1_txt05">
+	<text><![CDATA[Message Source]]></text>
+</component>
+<component id="ID_s1_txt06">
+	<text><![CDATA[Encoder]]></text>
+</component>
+<component id="ID_s1_txt07">
+	<text><![CDATA[Transmitter]]></text>
+</component>
+<component id="ID_s1_txt08">
+	<text><![CDATA[Transmission<br/>Medium<br/>"The Channel"]]></text>
+</component>
+<component id="ID_s1_txt09">
+	<text><![CDATA[Receiver]]></text>
+</component>
+<component id="ID_s1_txt10">
+	<text><![CDATA[Decoder]]></text>
+</component>
+<component id="ID_s1_txt11">
+	<text><![CDATA[Message Destination]]></text>
+</component>
+<component id="ID_s1_txt12">
+    <text><![CDATA[Source<br>Encoded]]></text> 
+</component>
+<component id="ID_s1_txt13">
+    <text><![CDATA[Destination<br>Decoded]]></text> 
+</component>
+
+<!-- Slide 2 -->
+
+<component id="ID_s2_txt01">
+	<text><![CDATA[<B>Message</B>]]></text>
+</component>
+<component id="ID_s2_txt02">
+	<text><![CDATA[<B>Signal</B>]]></text>
+</component>
+<component id="ID_s2_txt03">
+	<text><![CDATA[<B>Signal</B>]]></text>
+</component>
+<component id="ID_s2_txt04">
+	<text><![CDATA[<B>Message</B>]]></text>
+</component>
+<component id="ID_s2_txt05">
+	<text><![CDATA[Message Source]]></text>
+</component>
+<component id="ID_s2_txt06">
+	<text><![CDATA[Encoder]]></text>
+</component>
+<component id="ID_s2_txt07">
+	<text><![CDATA[Transmitter]]></text>
+</component>
+<component id="ID_s2_txt08">
+	<text><![CDATA[Transmission<br/>Medium<br/>"The Channel"]]></text>
+</component>
+<component id="ID_s2_txt09">
+	<text><![CDATA[Receiver]]></text>
+</component>
+<component id="ID_s2_txt10">
+	<text><![CDATA[Decoder]]></text>
+</component>
+<component id="ID_s2_txt11">
+	<text><![CDATA[Message Destination]]></text>
+</component>
+<component id="ID_s2_txt12">
+    <text><![CDATA[Source<br>Encoded]]></text> 
+</component>
+<component id="ID_s2_txt13">
+    <text><![CDATA[Destination<br>Decoded]]></text> 
+</component>
+
+
+<!-- controller -->
+
+<component id="ID_s1_end">
+<text><![CDATA[End]]></text>
+</component>
+
+<component id="ID_s1_fforward">
+<text><![CDATA[Fast Forward]]></text>
+</component>
+
+<component id="ID_s1_pause">
+<text><![CDATA[Pause]]></text>
+</component>
+
+<component id="ID_s1_play">
+<text><![CDATA[Play]]></text>
+</component>
+
+<component id="ID_s1_rewind">
+<text><![CDATA[Rewind]]></text>
+</component>
+
+<component id="ID_s1_start">
+<text><![CDATA[Start]]></text>
+</component>
+
+
+<component id="ID_s2_end">
+<text><![CDATA[End]]></text>
+</component>
+
+<component id="ID_s2_fforward">
+<text><![CDATA[Fast Forward]]></text>
+</component>
+
+<component id="ID_s2_pause">
+<text><![CDATA[Pause]]></text>
+</component>
+
+<component id="ID_s2_play">
+<text><![CDATA[Play]]></text>
+</component>
+
+<component id="ID_s2_rewind">
+<text><![CDATA[Rewind]]></text>
+</component>
+
+<component id="ID_s2_start">
+<text><![CDATA[Start]]></text>
+</component>
+
+</textcomponents>

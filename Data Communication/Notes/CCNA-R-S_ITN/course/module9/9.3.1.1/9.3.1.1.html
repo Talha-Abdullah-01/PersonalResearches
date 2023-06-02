@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.3.1.1 Subnetting Using the Subnet ID</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_9.3.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Design Considerations for IPv6</h1>
+        <h2>Subnetting an IPv6 Network</h2>
+      </div>
+      <div id="content">
+          <p>IPv6 subnetting requires a different approach than IPv4 subnetting. The primary reason is that with IPv6 there are so many addresses, that the reason for subnetting is completely different. An IPv6 address space is not subnetted to conserve addresses; rather, it is subnetted to support hierarchical, logical design of the network. While IPv4 subnetting is about managing address scarcity, IPv6 subnetting is about building an addressing hierarchy based on the number of routers and the networks they support. </p>
+          <p></p>
+          <p>Recall that an IPv6 address block with a /48 prefix has 16 bits for subnet ID, as shown in Figure 1. Subnetting using the 16 bit subnet ID yields a possible 65,536 /64 subnets and does not require borrowing any bits from the interface ID, or host portion of the address. Each IPv6 /64 subnet contains roughly eighteen quintillion addresses, obviously more than will ever be needed in one IP network segment.</p>
+          <p></p>
+          <p>Subnets created from the subnet ID are easy to represent because there is no conversion to binary required. To determine the next available subnet, just count up in hexadecimal. As shown in Figure 2, this means counting by hexadecimal in the subnet ID portion.</p>
+          <p></p>
+          <p>The global routing prefix is the same for all subnets. Only the subnet ID quartet is incremented for each subnet.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

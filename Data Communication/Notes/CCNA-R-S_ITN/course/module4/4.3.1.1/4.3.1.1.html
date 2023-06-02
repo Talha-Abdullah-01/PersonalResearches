@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.3.1.1 The Data Link Layer</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_4.3.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Data Link Layer Protocols</h1>
+        <h2>Purpose of the Data Link Layer</h2>
+      </div>
+      <div id="content">
+          <p>The TCP/IP network access layer is the equivalent of the OSI:</p>
+          <p>
+            <ul>
+              <li>Data link (Layer 2)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Physical (Layer 1)</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>As shown in the figure, the data link layer is responsible for the exchange of frames between nodes over a physical network media. It allows the upper layers to access the media and controls how data is placed and received on the media. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: The Layer 2 notation for network devices connected to a common medium is called a node.</p>
+          <p></p>
+          <p>Specifically the data link layer performs these two basic services: </p>
+          <p>
+            <ul>
+              <li>It accepts Layer 3 packets and packages them into data units called frames. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>It controls media access control and performs error detection.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The data link layer effectively separates the media transitions that occur as the packet is forwarded from the communication processes of the higher layers. The data link layer receives packets from and directs packets to an upper layer protocol, in this case IPv4 or IPv6. This upper layer protocol does not need to be aware of which media the communication will use. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: In this chapter, media and medium do not refer to digital content and multimedia such as audio, animation, television, and video. Media refers to the material that actually carries the data signals, such as copper cable and optical fiber.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

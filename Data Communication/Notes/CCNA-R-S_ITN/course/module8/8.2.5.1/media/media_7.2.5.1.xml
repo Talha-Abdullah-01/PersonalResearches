@@ -1,0 +1,14 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>IPv6 All-nodes Multicast Communications</b>]]></text>
+</component>
+<component id="ID_txt01">
+<text><![CDATA[<b>Source IPv6 Address</b><br/>2001:DB8:ACAD:1::1]]></text> 
+</component>  
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Destination IPv6 Address</b><br/>FF02::1]]></text> 
+</component>
+
+</textcomponents> 
+

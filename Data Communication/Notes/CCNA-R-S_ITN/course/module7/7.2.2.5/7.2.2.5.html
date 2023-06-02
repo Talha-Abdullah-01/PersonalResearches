@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.2.2.5 TCP Flow Control - Congestion Avoidance</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_7.2.2.5_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>TCP and UDP</h1>
+        <h2>Reliability and Flow Control</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Reducing Window Size</b>
+          </p>
+          <p>Another way to control the data flow is to use dynamic window sizes. When network resources are constrained, TCP can reduce the window size to require that received segments be acknowledged more frequently. This effectively slows down the rate of transmission because the source waits for data to be acknowledged more frequently.</p>
+          <p></p>
+          <p>The receiving host sends the window size value to the sending host to indicate the number of bytes that it is prepared to receive. If the destination needs to slow down the rate of communication because of limited buffer memory, for example, it can send a smaller window size value to the source as part of an acknowledgement.</p>
+          <p></p>
+          <p>As shown in the figure, if a receiving host has congestion, it may respond to the sending host with a segment that specifies a reduced window size. In this figure, there was a loss of one of the segments. The receiver changed the window field in the TCP header of the returning segments in this conversation from 3,000 down to 1,500, which caused the sender to reduce the window size to 1,500. </p>
+          <p></p>
+          <p>After a period of transmission with no data losses or constrained resources, the receiver begins to increase the window field, which reduces the overhead on the network, because fewer acknowledgments must be sent. The window size continues to increase until there is data loss, which causes the window size to decrease.</p>
+          <p></p>
+          <p>This dynamic increasing and decreasing of window size is a continuous process in TCP. In highly efficient networks, window sizes may become very large because data is not lost. In networks where the underlying infrastructure is under stress, the window size likely remains small.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

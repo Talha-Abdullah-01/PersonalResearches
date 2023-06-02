@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.1.2.3 IP – Best Effort Delivery</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_6.1.2.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Network Layer Protocols</h1>
+        <h2>Characteristics of the IP protocol</h2>
+      </div>
+      <div id="content">
+          <p>IP is often referred to as an unreliable or best-effort delivery protocol. This does not mean that IP works properly sometimes and does not function well at other times, nor does it mean that it is a poor data communications protocol. Unreliable simply means that IP does not have the capability to manage and recover from undelivered or corrupt packets.  This is because while IP packets are sent with information about the location of delivery, it contains no information that can be processed to inform the sender whether delivery was successful. There is no synchronization data included in the packet header for tracking the order of packet delivery. There are also no acknowledgments of packet delivery with IP, and there is no error control data to track whether packets were delivered without corruption. Packets may arrive at the destination corrupted, out of sequence, or not at all. Based on the information provided in the IP header, there is no capability for packet retransmissions if errors such as these occur.  </p>
+          <p></p>
+          <p>If out-of-order or missing packets create problems for the application using the data, then upper layer services, such as TCP, must resolve these issues. This allows IP to function very efficiently. If reliability overhead were included in IP, then communications that do not require connections or reliability would be burdened with the bandwidth consumption and delay produced by this overhead. In the TCP/IP suite, the transport layer can use either TCP or UDP based on the need for reliability in communication. Leaving the reliability decision to the transport layer makes IP more adaptable and accommodating for different types of communication.</p>
+          <p></p>
+          <p>The figure shows an example of IP communications. Connection-oriented protocols, such as TCP, require that control data be exchanged to establish the connection. To maintain information about the connection, TCP also requires additional fields in the PDU header.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

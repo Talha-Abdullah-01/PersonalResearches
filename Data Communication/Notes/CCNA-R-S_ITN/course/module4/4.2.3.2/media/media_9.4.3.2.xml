@@ -1,0 +1,114 @@
+<textcomponents>
+
+<!-- text on page -->
+<component id="ID_txt01">
+<text><![CDATA[<b>Tx</b>]]></text>
+</component>
+
+<component id="ID_txt01a">
+<text><![CDATA[<b>Tx</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Rx</b>]]></text>
+</component>
+
+<component id="ID_txt02a">
+<text><![CDATA[<b>Rx</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Jacket]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Strengthening material]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Buffer]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Cladding]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[Core]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[Click on each component for more information.]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>Click Play for a more detailed view of a fiber optic cable.</b>]]></text>
+</component>	
+
+<!-- textbox  -->
+<component id="ID_PopTitle01">
+<text><![CDATA[<b>Jacket</b>]]></text>
+</component>
+
+<component id="ID_PopBody01">
+<text><![CDATA[Added to protect the fiber against abrasion, solvents, and other contaminants. This outer jacket composition can vary depending on the cable usage.]]></text>
+</component>
+
+<component id="ID_PopTitle02">
+<text><![CDATA[<b>Strengthening Material</b>]]></text>
+</component>
+
+<component id="ID_PopBody02">
+<text><![CDATA[Surrounds the buffer, prevents the fiber cable from being stretched when it is being pulled. The material used is often the same material used to produce bulletproof vests.]]></text>
+</component>
+
+<component id="ID_PopTitle03">
+<text><![CDATA[<b>Buffer</b>]]></text>
+</component>
+
+<component id="ID_PopBody03">
+<text><![CDATA[Used to help shield the core and cladding from damage.]]></text>
+</component>
+
+<component id="ID_PopTitle04">
+<text><![CDATA[<b>Cladding</b>]]></text>
+</component>
+
+<component id="ID_PopBody04">
+<text><![CDATA[Made from slightly different chemicals than those used to create the core. It tends to act like a mirror by reflecting light back into the core of the fiber. This keeps light in the core as it travels down the fiber.]]></text>
+</component>
+
+<component id="ID_PopTitle05">
+<text><![CDATA[<b>Core</b>]]></text>
+</component>
+
+<component id="ID_PopBody05">
+<text><![CDATA[The core is actually the light transmission element at the center of the optical fiber. This core is typically silica, or glass. Light pulses travel through the fiber core.]]></text>
+</component>
+
+<!-- controller -->
+<component id="end">
+	<text><![CDATA[End]]></text>
+</component>
+
+<component id="fforward">
+	<text><![CDATA[Fast Forward]]></text>
+</component>
+
+<component id="pause">
+	<text><![CDATA[Pause]]></text>
+</component>
+
+<component id="play">
+	<text><![CDATA[Play]]></text>
+</component>
+
+<component id="rewind">
+	<text><![CDATA[Rewind]]></text>
+</component>
+
+<component id="start">
+	<text><![CDATA[Start]]></text>
+</component>
+
+</textcomponents>

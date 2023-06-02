@@ -1,0 +1,53 @@
+<textcomponents>
+
+   <component id="ID_txt01">
+      <text><![CDATA[ARP Issues:<br/><textformat blockindent='-18'><ul><li>Broadcasts, overhead on the media</li><li>Security</li></ul></textformat>]]></text>
+      </component>
+
+<component id="ID_txt03">
+   <text><![CDATA[Shared Media (multiple access)]]></text>
+   </component>
+<component id="ID_txt04">
+   <text><![CDATA[ARP broadcasts can flood the local media.]]></text>
+   </component>
+<component id="ID_txt05">
+   <text><![CDATA[A false ARP message can provide an incorrect MAC address that will then hijack frames using that address (called a spoof).]]></text>
+   </component>
+   <component id='ID_table'>
+		<text><![CDATA[
+				<table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+				<tr>
+						<td colspan='6' width="75" bgcolor='#98D3D1' valign="top"><font size="12" color='#000000'><b>Ethernet</b></font></td>
+						
+					  </tr>
+						<tr class="liner">
+							<td colspan='6' bgcolor='#0E6360' class="liner_top"><font size='1' color='#434321'><span style="color:#DAE17A">.</span></font></td>
+						</tr>
+					  
+					  <tr>
+						<td bgcolor='#EFF8F7' valign="top"><font color='#393536'>8</font></td>
+					 	<td bgcolor='#EFF8F7' valign="top"><font color='#393536'>6</font></td>
+						<td bgcolor='#EFF8F7' valign="top"><font color='#393536'>6</font></td>
+					 	<td bgcolor='#EFF8F7' valign="top"><font color='#393536'>2</font></td>
+						<td bgcolor='#EFF8F7' valign="top"><font color='#393536'>46 to 1500</font></td>
+					 	<td bgcolor='#EFF8F7' valign="top"><font color='#393536'>4</font></td>
+						
+					  </tr>
+					  <tr>
+						<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Preamble</font></td>
+							<td bgcolor='#FFFFFF' valign="top"><font color='#f26200'><b>Destination Address</b></font></td>
+							<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Source Address</font></td>
+							<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Type</font></td>
+							<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Data</font></td>
+							<td bgcolor='#FFFFFF' valign="top"><font color='#393536'>Frame Check Sequence</font></td>
+					  </tr>
+				</table>
+			]]>
+			
+		</text>
+		</component>
+
+
+
+
+</textcomponents>

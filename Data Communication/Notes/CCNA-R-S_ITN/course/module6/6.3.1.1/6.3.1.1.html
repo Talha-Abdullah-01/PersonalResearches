@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.3.1.1 A Router is a Computer</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_6.3.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Routers</h1>
+        <h2>Anatomy of a Router</h2>
+      </div>
+      <div id="content">
+          <p>There are many types of infrastructure routers available. In fact, Cisco routers are designed to address the needs of:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Branch -</b> Teleworkers, small business, and medium-size branch sites. Includes Cisco 800, 1900, 2900, and 3900 Integrated Series Routers (ISR) G2 (2nd generation).</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>WAN -</b> Large businesses, organizations, and enterprises. Includes the Cisco Catalyst 6500 Series Switches and the Cisco Aggregation Service Router (ASR) 1000.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Service Provider -</b> Large service providers. Includes Cisco ASR 1000, Cisco ASR 9000, Cisco XR 12000, Cisco CRS-3 Carrier Routing System, and 7600 Series routers.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The focus of CCNA certification is on the branch family of routers. The figure displays the Cisco 1900, 2900, and 3900 ISR G2 family of routers. </p>
+          <p></p>
+          <p>Regardless of their function, size or complexity, all router models are essentially computers. Just like computers, tablets, and smart devices, routers also require:</p>
+          <p>
+            <ul>
+              <li>Operating systems (OS)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Central processing units (CPU)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Random-access memory (RAM) </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Read-only memory (ROM) </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>A router also has special memory that includes Flash and nonvolatile random-access memory (NVRAM).</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

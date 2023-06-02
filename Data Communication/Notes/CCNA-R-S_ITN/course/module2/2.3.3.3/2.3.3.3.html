@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.3.3.3 Testing End-to-End Connectivity</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.3.3.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Address Schemes</h1>
+        <h2>Verifying Connectivity</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Testing PC-to-Switch Connectivity</b>
+          </p>
+          <p></p>
+          <p>The <span class="cmd"><b>ping</b></span> command can be used on a PC, just as on a Cisco IOS device. The figure shows that a ping from PC1 to the IP address of the S1 VLAN 1 interface, 192.168.10.2, should be successful.</p>
+          <p></p>
+          <p>
+            <b>Testing End-to-End Connectivity</b>
+          </p>
+          <p></p>
+          <p>The IP address of PC1 is 192.168.10.10, with subnet mask 255.255.255.0, and default gateway 192.168.10.1.</p>
+          <p></p>
+          <p>The IP address of PC2 is 192.168.10.11, with subnet mask 255.255.255.0, and default gateway 192.168.10.1.</p>
+          <p></p>
+          <p>A ping from PC1 to PC2 should also be successful. A successful ping from PC1 to PC2 verifies end-to-end connectivity in the network!</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

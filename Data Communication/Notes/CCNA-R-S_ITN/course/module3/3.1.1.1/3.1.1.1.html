@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.1.1.1 What is Communication?</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_3.1.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Rules of Communication</h1>
+        <h2>The Rules</h2>
+      </div>
+      <div id="content">
+          <p>A network can be as complex as devices connected across the Internet, or as simple as two computers directly connected to one another with a single cable, and anything in-between. Networks can vary in size, shape, and function. However, simply having the physical connection between end devices is not enough to enable communication. For communication to occur, devices must know “how” to communicate. </p>
+          <p></p>
+          <p>People exchange ideas using many different communication methods. However, regardless of the method chosen, all communication methods have three elements in common. The first of these elements is the message source, or sender. Message sources are people, or electronic devices, that need to send a message to other individuals or devices. The second element of communication is the destination, or receiver, of the message. The destination receives the message and interprets it. A third element, called a channel, consists of the media that provides the pathway over which the message travels from source to destination.</p>
+          <p></p>
+          <p>Communication begins with a message, or information, that must be sent from a source to a destination. The sending of this message, whether by face-to-face communication or over a network, is governed by rules called protocols. These protocols are specific to the type of communication method occurring. In our day-to-day personal communication, the rules we use to communicate over one medium, like a telephone call, are not necessarily the same as the protocols for using another medium, such as sending a letter.</p>
+          <p></p>
+          <p>For example, consider two people communicating face-to-face, as shown in Figure 1. Prior to communicating, they must agree on how to communicate. If the communication is using voice, they must first agree on the language. Next, when they have a message to share, they must be able to format that message in a way that is understandable.  For example, if someone uses the English language, but poor sentence structure, the message can easily be misunderstood. Each of these tasks describes protocols put in place to accomplish communication. This is true of computer communication, as shown in Figure 2.</p>
+          <p></p>
+          <p>Think of how many different rules or protocols govern all the different methods of communication that exist in the world today. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

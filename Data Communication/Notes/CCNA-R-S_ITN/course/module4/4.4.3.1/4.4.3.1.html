@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.4.3.1 Physical LAN Topologies</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_4.4.3.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Media Access Control</h1>
+        <h2>LAN Topologies</h2>
+      </div>
+      <div id="content">
+          <p>Physical topology defines how the end systems are physically interconnected. In shared media LANs, end devices can be interconnected using the following physical topologies:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Star</b>: End devices are connected to a central intermediate device. Early star topologies interconnected end devices using hubs. However, star topologies now use switches. The star topology is the most common physical LAN topology primarily because it is easy to install, very scalable (easy to add and remove end devices), and easy to troubleshoot.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Extended star or hybrid</b>: In an extended star topology, central intermediate devices interconnect other star topologies. In a hybrid topology, the star networks may interconnect using a bus topology.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Bus</b>: All end systems are chained to each other and terminated in some form on each end. Infrastructure devices such as switches are not required to interconnect the end devices. Bus topologies were used in legacy Ethernet networks because it was inexpensive to use and easy to set up.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Ring</b>: End systems are connected to their respective neighbor forming a ring. Unlike the bus topology, the ring does not need to be terminated. Ring topologies were used in legacy Fiber Distributed Data Interface (FDDI) networks. Specifically, FDDI networks employ a second ring for fault tolerance or performance enhancements.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The figure illustrates how end devices are interconnected on LANs.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

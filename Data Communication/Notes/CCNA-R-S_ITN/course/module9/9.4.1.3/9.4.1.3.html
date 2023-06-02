@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>9.4.1.3 Summary</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_9.4.1.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Summary</h1>
+        <h2>Summary</h2>
+      </div>
+      <div id="content">
+          <p>As shown in the figure, the process of segmenting a network, by dividing it into to multiple smaller network spaces, is called subnetting. </p>
+          <p></p>
+          <p>Every network address has a valid range of host addresses. All devices attached to the same network will have an IPv4 host address for that network and a common subnet mask or network prefix. Traffic can be forwarded between hosts directly if they are on the same subnet. Traffic cannot be forwarded between subnets without the use of a router. To determine if traffic is local or remote, the router uses the subnet mask. The prefix and the subnet mask are different ways of representing the same thing - the network portion of an address.</p>
+          <p></p>
+          <p>IPv4 subnets are created by using one or more of the host bits as network bits. Two very important factors that will lead to the determination of the IP address block with the subnet mask, are the number of subnets required and the maximum number of hosts needed per subnet. There is an inverse relationship between the number of subnets and the number of hosts. The more bits borrowed to create subnets the fewer host bits are available; therefore fewer hosts per subnet.</p>
+          <p></p>
+          <p>The formula 2^n (where n is the number of host bits remaining) is used to calculate how many addresses will be available on each subnet. However, the network address and broadcast address within a range are not useable; therefore, to calculate the useable number of addresses the calculation 2^n-2 is required. </p>
+          <p></p>
+          <p>Subnetting a subnet, or using Variable Length Subnet Mask (VLSM) was designed to avoid wasting addresses.</p>
+          <p></p>
+          <p>IPv6 subnetting requires a different approach than IPv4 subnetting. An IPv6 address space is not subnetted to conserve addresses; rather it is subnetted to support hierarchical, logical design of the network. So, while IPv4 subnetting is about managing address scarcity, IPv6 subnetting is about building an addressing hierarchy based on the number of routers and the networks they support. </p>
+          <p></p>
+          <p>Careful planning is required to make best use of the available address space. Size, location, use, and access requirements are all considerations in the address planning process.</p>
+          <p></p>
+          <p>After it is implemented, an IP network needs to be tested to verify its connectivity and operational performance.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

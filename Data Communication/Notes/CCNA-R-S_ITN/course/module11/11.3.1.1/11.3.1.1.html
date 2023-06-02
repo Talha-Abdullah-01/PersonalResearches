@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.3.1.1 Interpreting Ping Results</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.3.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Basic Network Performance</h1>
+        <h2>Ping</h2>
+      </div>
+      <div id="content">
+          <p>After the network has been implemented, a network administrator must be able to test the network connectivity to ensure that it is operating appropriately. Additionally, it is a good idea for the network administrator to document the network </p>
+          <p></p>
+          <p>
+            <b>The </b>
+            <span class="cmd">
+              <b>Ping</b>
+            </span>
+            <b> Command</b>
+          </p>
+          <p></p>
+          <p>Using the <span class="cmd"><b>ping</b></span> command is an effective way to test connectivity. The test is often referred to as testing the protocol stack, because the <span class="cmd"><b>ping</b></span> command moves from Layer 3 of the OSI model to Layer 2 and then Layer 1. Ping uses the ICMP protocol to check for connectivity. </p>
+          <p></p>
+          <p>The <span class="cmd"><b>ping</b></span> command will not always pinpoint the nature of a problem, but it can help to identify the source of the problem, an important first step in troubleshooting a network failure.</p>
+          <p></p>
+          <p>The <span class="cmd"><b>ping</b></span> command provides a method for checking the protocol stack and IPv4 address configuration on a host as well as testing connectivity to local or remote destination hosts, as shown in the figure. There are additional tools that can provide more information than <span class="cmd"><b>ping</b></span>, such as Telnet or Trace, which will be discussed in more detail later. </p>
+          <p></p>
+          <p>
+            <b>IOS Ping Indicators</b>
+          </p>
+          <p></p>
+          <p>A ping issued from the IOS will yield one of several indications for each ICMP echo that was sent. The most common indicators are:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>!</b> - indicates receipt of an ICMP echo reply message</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>.</b> - indicates a time expired while waiting for an ICMP echo reply message</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>U</b> - an ICMP unreachable message was received </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The "<b>!</b>" (exclamation mark) indicates that the ping completed successfully and verifies Layer 3 connectivity.</p>
+          <p></p>
+          <p>The "<b>.</b>" (period) can indicate problems in the communication. It may indicate that a connectivity problem occurred somewhere along the path. It may also indicate that a router along the path did not have a route to the destination and did not send an ICMP destination unreachable message. It also may indicate that ping was blocked by device security. </p>
+          <p></p>
+          <p>The "<b>U</b>" indicates that a router along the path did not have a route to the destination address or that the ping request was blocked and responded with an ICMP unreachable message.</p>
+          <p></p>
+          <p>
+            <b>Testing the Loopback</b>
+          </p>
+          <p></p>
+          <p>The <span class="cmd"><b>ping</b></span> command is used to verify the internal IP configuration on the local host. Recall that this test is accomplished by using the <span class="cmd"><b>ping</b></span> command on a reserved address called the loopback (127.0.0.1). This verifies the proper operation of the protocol stack from the network layer to the physical layer - and back - without actually putting a signal on the media. </p>
+          <p></p>
+          <p>
+            <span class="cmd">
+              <b>Ping</b>
+            </span> commands are entered at a command line.</p>
+          <p></p>
+          <p>Use the following syntax to ping the loopback:</p>
+          <p></p>
+          <p>
+            <span class="cmd">C:\> </span>
+            <span class="cmd">
+              <b>ping 127.0.0.1</b>
+            </span>
+          </p>
+          <p></p>
+          <p>The reply from this command would look something like this: </p>
+          <p></p>
+          <p>
+            <span class="cmd">Reply from 127.0.0.1: bytes=32 time<1ms TTL=128 </span>
+          </p>
+          <p>
+            <span class="cmd">Reply from 127.0.0.1: bytes=32 time<1ms TTL=128 </span>
+          </p>
+          <p>
+            <span class="cmd">Reply from 127.0.0.1: bytes=32 time<1ms TTL=128 </span>
+          </p>
+          <p>
+            <span class="cmd">Reply from 127.0.0.1: bytes=32 time<1ms TTL=128 </span>
+          </p>
+          <p>
+            <span class="cmd">Ping statistics for 127.0.0.1: </span>
+          </p>
+          <p>
+            <span class="cmd">Packets: Sent = 4, Received = 4, Lost = 0 (0% loss), </span>
+          </p>
+          <p>
+            <span class="cmd">Approximate round trip times in milli-seconds: </span>
+          </p>
+          <p>
+            <span class="cmd">Minimum = 0ms, Maximum = 0ms, Average = 0ms</span>
+          </p>
+          <p></p>
+          <p>The result indicates that four 32 byte test packets were sent and were returned from host 127.0.0.1 in a time of less than 1 ms. TTL stands for Time-to-Live and defines the number of hops that the ping packet has remaining before it will be dropped.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

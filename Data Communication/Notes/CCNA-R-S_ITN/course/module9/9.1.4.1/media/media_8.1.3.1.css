@@ -1,0 +1,16 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+html, body {
+	margin:0;
+	height:98%;
+
+}
+#flashContent {
+	width:98%;
+	height:98%;
+} 
+#ID_header03,#ID_header05{letter-spacing:-0.4px;}
+#ID_header04{line-height:13px !important;}

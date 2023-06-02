@@ -1,0 +1,38 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>DNS Message Format</b>]]></text>
+</component>
+	<component id="ID_title_txt">
+		<text><![CDATA[<b>DNS uses the same message format for:</b>]]></text>
+	</component>
+<component id="ID_body01">
+  <text><![CDATA[<textformat blockindent='-14'><LI>all types of client queries and server responses</LI><LI>error messages</LI><LI>the transfer of resource record information between servers</LI></textformat>]]></text> 
+  </component>
+  <component id="ID_txt02">
+<text><![CDATA[<b>Header</b>]]></text>
+</component>
+<component id="ID_txt03">
+<text><![CDATA[<b>Question</b>]]></text>
+</component>
+<component id="ID_txt04">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_txt05">
+<text><![CDATA[<b>Authority</b>]]></text>
+</component>
+<component id="ID_txt06">
+<text><![CDATA[<b>Additional</b>]]></text>
+</component>
+  <component id="ID_txt07">
+<text><![CDATA[The question for the name server]]></text>
+</component>
+<component id="ID_txt08">
+<text><![CDATA[Resource Records answering the question]]></text>
+</component>
+<component id="ID_txt09">
+<text><![CDATA[Resource Records pointing toward an authority]]></text>
+</component>
+<component id="ID_txt10">
+<text><![CDATA[Resource Records holding additional information]]></text>
+</component>
+</textcomponents>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.2.1.4 TCP Three-way Handshake Analysis - Step 1</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_7.2.1.4_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>TCP and UDP</h1>
+        <h2>TCP Communication</h2>
+      </div>
+      <div id="content">
+          <p>Using the output of protocol analysis software, such as Wireshark outputs, you can examine the operation of the TCP 3-way handshake:</p>
+          <p></p>
+          <p>
+            <b>Step 1: The initiating client requests a client-to-server communication session with the server.</b>
+          </p>
+          <p></p>
+          <p>A TCP client begins the three-way handshake by sending a segment with the synchronize sequence number (SYN) control flag set, indicating an initial value in the sequence number field in the header. This initial value for the sequence number, known as the initial sequence number (ISN), is randomly chosen and is used to begin tracking the flow of data from the client to the server for this session. The ISN in the header of each segment is increased by one for each byte of data sent from the client to the server as the data conversation continues.</p>
+          <p></p>
+          <p>As shown in the figure, output from a protocol analyzer shows the SYN control flag and the relative sequence number. </p>
+          <p></p>
+          <p>The SYN control flag is set and the relative sequence number is at 0. Although the protocol analyzer in the graphic indicates the relative values for the sequence and acknowledgement numbers, the true values are 32-bit binary numbers. The figure shows the four bytes represented in hexadecimal.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

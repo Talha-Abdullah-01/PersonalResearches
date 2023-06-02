@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.2.1.3 HTTP and HTTPS</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_10.2.1.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Well-Known Application Layer Protocols and Services</h1>
+        <h2>Common Application Layer Protocols </h2>
+      </div>
+      <div id="content">
+          <p>HTTP is used across the World Wide Web for data transfer and is one of the most used application protocols today. It was originally developed to simply publish and retrieve HTML pages; however the flexibility of HTTP has made it a vital application within distributed, collaborative information systems. </p>
+          <p></p>
+          <p>HTTP is a request/response protocol. When a client, typically a web browser, sends a request to a web server, HTTP specified the message types used for that communication. The three common message types are GET, POST, and PUT (see the figure).</p>
+          <p></p>
+          <p>GET is a client request for data. A client (web browser) sends the GET message to the web server to request HTML pages. When the server receives the GET request, it responds with a status line, such as HTTP/1.1 200 OK, and a message of its own. The message from the server may include the requested HTML file, if available, or it may contain an error or information message, such as “The location of the requested file has changed.”</p>
+          <p></p>
+          <p>POST and PUT are used to upload data files to the web server. For example, when the user enters data into a form that is embedded within a web page (such as when completing an order request), the POST message is sent to the web server. Included within the POST message is the data that the user submitted in the form.</p>
+          <p></p>
+          <p>PUT uploads resources or content to the web server. For example, if a user attempts to upload a file or image to a website, a PUT message is sent from the client to the server with the attached file or image.</p>
+          <p></p>
+          <p>Although HTTP is remarkably flexible, it is not a secure protocol. The request messages send information to the server in plain text that can be intercepted and read. Similarly, the server responses, typically HTML pages, are also unencrypted. </p>
+          <p></p>
+          <p>For secure communication across the Internet, the HTTP Secure (HTTPS) protocol is used for accessing or posting web server information. HTTPS can use authentication and encryption to secure data as it travels between the client and server. HTTPS specifies additional rules for passing data between the application layer and the transport layer. HTTPS uses the same client request-server response process as HTTP, but the data stream is encrypted with Secure Socket Layer (SSL) before being transported across the network. HTTPS creates additional load and processing time on the server due to the encryption and decryption of traffic.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

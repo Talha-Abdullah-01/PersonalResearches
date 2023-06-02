@@ -1,0 +1,168 @@
+﻿<textcomponents>
+
+<component id='ID_s1_inst'>
+	<text><![CDATA[<b>Activity - Part 1: Physical Layer Terminology</b><br><br>Descriptions of the physical layer are provided in the table. Drag each physical layer term to its description. 
+
+]]></text>
+</component>
+
+<component id='ID_s1_txt01'>
+	<text><![CDATA[Hardware devices, media, and connectors which transmit and carry bit signals]]></text>
+</component>
+
+<component id='ID_s1_txt02'>
+	<text><![CDATA[How 1s and 0s are represented on the media – varies, depending on encoding scheme]]></text>
+</component>
+
+<component id='ID_s1_txt03'>
+	<text><![CDATA[Evenly spaced time duration for signals]]></text>
+</component>
+
+<component id='ID_s1_txt04'>
+	<text><![CDATA[A method for converting streams of data bits into groupings of bits – predefined
+]]></text>
+</component>
+
+<component id='ID_s1_txt05'>
+	<text><![CDATA[Arbitrarily spaced time duration for signals]]></text>
+</component>
+
+<component id='ID_s1_txt06'>
+	<text><![CDATA[<b>Term</b>]]></text>
+</component>
+
+<component id='ID_s1_txt07'>
+	<text><![CDATA[<b>Physical Layer Description</b>]]></text>
+</component>
+
+<!--Drag and Drop-->
+<component id='ID_s1_traget01'>
+	<text><![CDATA[<font color="#393536">Synchronous</font>]]></text>
+</component>
+
+<component id='ID_s1_traget02'>
+	<text><![CDATA[<font color="#393536">Signaling method</font>]]></text>
+</component>
+
+<component id='ID_s1_traget03'>
+	<text><![CDATA[<font color="#393536">Frame encoding</font>]]></text>
+</component>
+
+<component id='ID_s1_traget04'>
+	<text><![CDATA[<font color="#393536">Asynchronous</font>]]></text>
+</component>
+
+<component id='ID_s1_traget05'>
+	<text><![CDATA[<font color="#393536">Physical components</font>]]></text>
+</component>
+
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched each physical layer term to its description.]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched each physical layer term to its description. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s1_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+
+<!--slide02-->
+<component id='ID_s2_inst'>
+	<text><![CDATA[<b>Activity - Part 2: Physical Layer Terminology</b><br><br>More descriptions of the physical layer are provided in the table. Drag each physical layer term to its description. 
+]]></text>
+</component>
+
+<component id='ID_s2_txt01'>
+	<text><![CDATA[How much useable data is transferred over a given amount of time]]></text>
+</component>
+
+<component id='ID_s2_txt02'>
+	<text><![CDATA[Amount of data that is allowed by the medium to flow during a given set of time]]></text>
+</component>
+
+<component id='ID_s2_txt03'>
+	<text><![CDATA[The actual measure of data bits over a given period of time]]></text>
+</component>
+
+<component id='ID_s2_txt04'>
+	<text><![CDATA[A technique to convert voice analog to digital signals
+]]></text>
+</component>
+
+<component id='ID_s2_txt05'>
+	<text><![CDATA[Transmission method where the carrier frequency varies according to the signals sent]]></text>
+</component>
+
+<component id='ID_s2_txt06'>
+	<text><![CDATA[<b>Term</b>]]></text>
+</component>
+
+<component id='ID_s2_txt07'>
+	<text><![CDATA[<b>Physical Layer Description</b>]]></text>
+</component>
+
+<!--Drag and Drop-->
+<component id='ID_s2_traget01'>
+	<text><![CDATA[<font color="#393536">Bandwidth</font>]]></text>
+</component>
+
+<component id='ID_s2_traget02'>
+	<text><![CDATA[<font color="#393536">Pulse-coded modulation</font>]]></text>
+</component>
+
+<component id='ID_s2_traget03'>
+	<text><![CDATA[<font color="#393536">Goodput</font>]]></text>
+</component>
+
+<component id='ID_s2_traget04'>
+	<text><![CDATA[<font color="#393536">Throughput</font>]]></text>
+</component>
+
+<component id='ID_s2_traget05'>
+	<text><![CDATA[<font color="#393536">Frequency modulation</font>]]></text>
+</component>
+
+
+<component id='ID_s2_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched each physical layer term to its description.]]></text>
+</component>
+
+
+<component id='ID_s2_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched each physical layer term to its description. Please click Reset to try again.]]></text>
+</component>
+
+<component id='ID_s2_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id='ID_s2_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+</textcomponents>

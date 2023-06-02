@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.0.1.2 Class Activity - Designing a Communications System</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_3.0.1.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Network Protocols and Communications</h1>
+        <h2>Introduction</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Let’s just talk about this…</b>
+          </p>
+          <p></p>
+          <p>You have just purchased a new automobile for your personal use.  After driving the car for a week or so, you find that it is not working correctly.</p>
+          <p></p>
+          <p>After discussing the problem with several of your peers, you decide to take it to an automotive repair facility that they highly recommend. It is the only repair facility located in close proximity to you. </p>
+          <p></p>
+          <p>When you arrive at the repair facility, you find that all of the mechanics speak another language.  You are having difficulty explaining the automobile’s performance problems, but the repairs really need to be done. You are not sure you can drive it back home to research other options.</p>
+          <p></p>
+          <p>You must find a way to work with the repair facility to ensure that your automobile is fixed correctly.</p>
+          <p></p>
+          <p>How will you communicate with the mechanics in this firm?  Design a communications model to ensure that the car is properly repaired.</p>
+          <p></p>
+          <p>
+            <a href="../../files/3.0.1.2%20Class%20Activity%20-%20Let's%20just%20talk%20about%20this...%20Instructions.pdf" target="_blank">Class Activity - Let's just talk about this... Instructions</a>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

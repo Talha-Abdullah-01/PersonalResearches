@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.2.2.6 Dynamic Host Configuration Protocol</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_10.2.2.6_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Well-Known Application Layer Protocols and Services</h1>
+        <h2>Providing IP Addressing Services</h2>
+      </div>
+      <div id="content">
+          <p>The Dynamic Host Configuration Protocol (DHCP) service enables devices on a network to obtain IP addresses and other information from a DHCP server. This service automates the assignment of IP addresses, subnet masks, gateway, and other IP networking parameters. This is referred to as dynamic addressing. The alternative to dynamic addressing is static addressing. When using static addressing, the network administrator manually enters IP address information on network hosts.</p>
+          <p></p>
+          <p>DHCP allows a host to obtain an IP address dynamically when it connects to the network. The DHCP server is contacted and an address requested. The DHCP server chooses an address from a configured range of addresses called a pool and assigns (leases) it to the host for a set period.</p>
+          <p></p>
+          <p>On larger local networks, or where the user population changes frequently, DHCP is preferred for address assignment. New users may arrive with laptops and need a connection; others may have new workstations that must be connected. Rather than have the network administrator assign IP addresses for each workstation, it is more efficient to have IP addresses assigned automatically using DHCP.</p>
+          <p></p>
+          <p>DHCP-distributed addresses are not permanently assigned to hosts, but are only leased for a period of time. If the host is powered down or taken off the network, the address is returned to the pool for reuse. This is especially helpful with mobile users that come and go on a network. Users can freely move from location to location and re-establish network connections. The host can obtain an IP address after the hardware connection is made, either via a wired or wireless LAN.</p>
+          <p></p>
+          <p>DHCP makes it possible to access the Internet using wireless hotspots at airports or coffee shops. When a wireless device enters a hotspot, the device DHCP client contacts the local DHCP server via a wireless connection, and the DHCP server assigns an IP address to the device.</p>
+          <p></p>
+          <p>As the figure shows, various types of devices can be DHCP servers when running DHCP service software. The DHCP server in most medium-to-large networks is usually a local dedicated PC-based server. With home networks, the DHCP server is usually located on the local router that connects the home network to the ISP. Local hosts receive IP address information directly from the local router. The local router receives an IP address from the DHCP server at the ISP.</p>
+          <p></p>
+          <p>DHCP can pose a security risk because any device connected to the network can receive an address. This risk makes physical security a determining factor of whether to use dynamic or manual addressing. Both dynamic and static addressing have a place in network design. Many networks use both DHCP and static addressing. DHCP is used for general purpose hosts, such as end user devices; static addressing is used for network devices, such as gateways, switches, servers, and printers.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[]]></text> 
+	</component>
+	
+	<component id="ID_txt01">
+		<text><![CDATA[The separation of data and electrical power <br />cabling must comply with safety codes.]]></text> 
+	</component>
+	
+	<component id="ID_txt02">
+		<text><![CDATA[Cables must be connected correctly. ]]></text> 
+	</component>
+
+	<component id="ID_txt03">
+		<text><![CDATA[Installations must be inspected for damage.]]></text> 
+	</component>
+
+	<component id="ID_txt04">
+		<text><![CDATA[Equipment must be grounded correctly.]]></text> 
+	</component>
+</textcomponents>

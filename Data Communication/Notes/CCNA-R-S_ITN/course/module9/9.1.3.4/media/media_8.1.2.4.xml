@@ -1,0 +1,154 @@
+<textcomponents>
+<!--Slide-1-->
+
+	<component id="ID_s1_txt01">
+		<text><![CDATA[Original]]></text>
+	</component>
+
+	<component id="ID_s1_txt02">
+		<text><![CDATA[ Mask]]></text>
+	</component>
+
+	<component id="ID_s1_txt03">
+		<text><![CDATA[Borrowing 2 bits creates 4 subnets:]]></text>
+	</component>
+
+	<component id="ID_s1_txt04">
+		<text><![CDATA[All 4 subnets use the same mask:]]></text>
+	</component>
+
+
+	<component id="ID_s1_txt05">
+		<text><![CDATA[Net 0]]></text>
+	</component>
+
+	<component id="ID_s1_txt06">
+		<text><![CDATA[Net 1]]></text>
+	</component>
+
+	<component id="ID_s1_txt07">
+		<text><![CDATA[ Net 2]]></text>
+	</component>
+
+	<component id="ID_s1_txt08">
+		<text><![CDATA[ Net 3]]></text>
+	</component>
+
+	<component id="ID_s1_txt09">
+		<text><![CDATA[Mask]]></text>
+	</component>
+
+	<component id="ID_s1_txt10">
+		<text><![CDATA[Mask:255.255.255.<font color="#f26200"><b>192</b></font>]]></text>
+	</component>
+
+	<component id="ID_s1_txt11">
+		<text><![CDATA[Borrowing 2 Bits]]></text>
+	</component>
+
+
+<!--Slide-2-->
+	<component id="ID_s2_title">
+		<text><![CDATA[<b>Calculate Number of Hosts</b>]]></text>
+	</component>
+
+	<component id="ID_s2_txt01">
+		<text><![CDATA[Hosts = 2^n<br/>(where n = host bits remaining)]]></text>
+	</component>
+
+	<component id="ID_s2_txt02">
+		<text><![CDATA[6 bits remain in host field]]></text>
+	</component>
+
+	<component id="ID_s2_txt03">
+		<text><![CDATA[<textformat tabstops='[16]'>&#9;2^<font color="#f26200"><b>6</b></font> = 64 hosts per subnet<br>2^<font color="#f26200"><b>6</b></font> - 2 = 62 valid hosts per subnet</textformat>]]></text>
+	</component>
+
+<!--Slide-3-->
+	<component id="ID_s3_title">
+		<text><![CDATA[<b>Address Range for 192.168.1.0/26 Subnet</b>]]></text>
+	</component>
+
+	<component id="ID_s3_txt01">
+		<text><![CDATA[ Network Address]]></text>
+	</component>
+
+	<component id="ID_s3_txt02">
+		<text><![CDATA[First Host Address]]></text>
+	</component>
+
+	<component id="ID_s3_txt03">
+		<text><![CDATA[Last Host Address]]></text>
+	</component>
+
+	<component id="ID_s3_txt04">
+		<text><![CDATA[Broadcast Address]]></text>
+	</component>
+
+
+<!--Slide-4-->
+	<component id="ID_s4_title">
+		<text><![CDATA[<b>Address Ranges Nets 0 - 2</b>]]></text>
+	</component>
+
+	<component id="ID_s4_txt01">
+		<text><![CDATA[Network]]></text>
+	</component>
+
+	<component id="ID_s4_txt02">
+		<text><![CDATA[First]]></text>
+	</component>
+
+	<component id="ID_s4_txt03">
+		<text><![CDATA[Last]]></text>
+	</component>
+
+	<component id="ID_s4_txt04">
+		<text><![CDATA[Broadcast]]></text>
+	</component>
+
+	<component id="ID_s4_txt05">
+		<text><![CDATA[Network]]></text>
+	</component>
+
+	<component id="ID_s4_txt06">
+		<text><![CDATA[First]]></text>
+	</component>
+
+	<component id="ID_s4_txt07">
+		<text><![CDATA[Last]]></text>
+	</component>
+
+	<component id="ID_s4_txt08">
+		<text><![CDATA[Broadcast]]></text>
+	</component>
+
+	<component id="ID_s4_txt09">
+		<text><![CDATA[Network]]></text>
+	</component>
+
+	<component id="ID_s4_txt10">
+		<text><![CDATA[First]]></text>
+	</component>
+
+	<component id="ID_s4_txt11">
+		<text><![CDATA[Last]]></text>
+	</component>
+
+	<component id="ID_s4_txt12">
+		<text><![CDATA[Broadcast]]></text>
+	</component>
+
+	<component id="ID_s4_txt13">
+		<text><![CDATA[Net 0]]></text>
+	</component>
+	
+	<component id="ID_s4_txt14">
+		<text><![CDATA[Net 1]]></text>
+	</component>
+	
+	<component id="ID_s4_txt15">
+		<text><![CDATA[Net 2]]></text>
+	</component>
+
+</textcomponents>

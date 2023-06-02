@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.3.2.3 Router Bootup Process</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_6.3.2.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Routers</h1>
+        <h2>Router Boot-up</h2>
+      </div>
+      <div id="content">
+          <p>There are three major phases to the bootup process that is shown in Figure 1:</p>
+          <p>1. Perform the POST and load the bootstrap program.</p>
+          <p>2. Locate and load the Cisco IOS software.</p>
+          <p>3. Locate and load the startup configuration file or enter setup mode.</p>
+          <p></p>
+          <p></p>
+          <p>
+            <b>1. Performing POST and Load Bootstrap Program (Figure 2)</b>
+          </p>
+          <p></p>
+          <p>The Power-On Self Test (POST) is a common process that occurs on almost every computer during bootup. The POST process is used to test the router hardware. When the router is powered on, software on the ROM chip conducts the POST. During this self-test, the router executes diagnostics from ROM on several hardware components, including the CPU, RAM, and NVRAM. After the POST has been completed, the router executes the bootstrap program.</p>
+          <p></p>
+          <p>After the POST, the bootstrap program is copied from ROM into RAM. Once in RAM, the CPU executes the instructions in the bootstrap program. The main task of the bootstrap program is to locate the Cisco IOS and load it into RAM.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: At this point, if you have a console connection to the router, you begin to see output on the screen.</p>
+          <p></p>
+          <p></p>
+          <p>
+            <b>2. Locating and Loading Cisco IOS (Figure 3)</b>
+          </p>
+          <p></p>
+          <p>The IOS is typically stored in flash memory and is copied into RAM for execution by the CPU. During self-decompression of the IOS image file, a string of pounds signs (#) will be displayed.</p>
+          <p></p>
+          <p>If the IOS image is not located in flash, then the router may look for it using a TFTP server. If a full IOS image cannot be located, a scaled-down version of the IOS is copied from ROM into RAM. This version of IOS is used to help diagnose any problems and can be used to load a complete version of the IOS into RAM.</p>
+          <p></p>
+          <p>
+            <b>3. Locating and Loading the Configuration File (Figure 4)</b>
+          </p>
+          <p></p>
+          <p>The bootstrap program then searches for the startup configuration file (also known as startup-config), in NVRAM. This file has the previously saved configuration commands and parameters. If it exists, then it is copied into RAM as the running configuration file, running-config. The running-config file contains interface addresses, starts routing processes, configures router passwords, and defines other characteristics of the router.</p>
+          <p></p>
+          <p>If the startup-config file does not exist in NVRAM, the router may search for a Trivial File Transfer Protocol (TFTP) server. If the router detects that it has an active link to another configured router, it sends a broadcast searching for a configuration file across the active link. </p>
+          <p></p>
+          <p>If a TFTP server is not found, then the router displays the setup mode prompt. Setup mode is a series of questions prompting the user for basic configuration information. Setup mode is not intended to be used to enter complex router configurations, and it is not commonly used by network administrators. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Setup mode is not used in this course to configure the router. When prompted to enter setup mode, always answer <b>no</b>. If you answer yes and enter setup mode, press <b>Ctrl</b>+<b>C</b> at any time to terminate the setup process.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

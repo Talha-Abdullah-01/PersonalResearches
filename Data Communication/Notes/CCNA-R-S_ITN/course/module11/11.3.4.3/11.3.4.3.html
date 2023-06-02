@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.3.4.3 show cdp neighbors Command Options</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.3.4.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Basic Network Performance</h1>
+        <h2>Host and IOS Commands</h2>
+      </div>
+      <div id="content">
+          <p>Examine the output from the<span class="cmd"><b> show cdp neighbors </b></span>commands in Figure 1, with the topology in Figure 2. Notice that R3 has gathered some detailed information about R2 and the switch connected to the Fast Ethernet interface on R3.</p>
+          <p></p>
+          <p>CDP is a Cisco-proprietary protocol that runs at the data link layer. Because CDP operates at the data link layer, two or more Cisco network devices, such as routers that support different network layer protocols, can learn about each other even if Layer 3 connectivity does not exist.</p>
+          <p></p>
+          <p>When a Cisco device boots up, CDP starts up by default. CDP automatically discovers neighboring Cisco devices running CDP, regardless of which Layer 3 protocol or suites are running. CDP exchanges hardware and software device information with its directly connected CDP neighbors.</p>
+          <p></p>
+          <p>CDP provides the following information about each CDP neighbor device:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Device identifiers</b> - For example, the configured host name of a switch</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Address list</b> - Up to one network layer address for each protocol supported</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Port identifier</b> - The name of the local and remote port-in the form of an ASCII character string such as ethernet0</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Capabilities list</b> - For example, whether this device is a router or a switch</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Platform</b> - The hardware platform of the device; for example, a Cisco 1841 series router</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The<span class="cmd"><b> show cdp neighbors detail</b></span> command reveals the IP address of a neighboring device. CDP will reveal the neighbor's IP address regardless of whether or not you can ping the neighbor. This command is very helpful when two Cisco routers cannot route across their shared data link. The<span class="cmd"><b> show cdp neighbors detail</b></span> command will help determine if one of the CDP neighbors has an IP configuration error.</p>
+          <p></p>
+          <p>For network discovery situations, knowing the IP address of the CDP neighbor is often all the information needed to Telnet into that device.</p>
+          <p></p>
+          <p>For obvious reasons, CDP can be a security risk. Because some IOS versions send out CDP advertisements by default, it is important to know how to disable CDP.</p>
+          <p></p>
+          <p>To disable CDP globally, use the global configuration command<span class="cmd"><b> no cdp run</b></span>. To disable CDP on an interface, use the interface command<span class="cmd"><b> no cdp enable</b></span>.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

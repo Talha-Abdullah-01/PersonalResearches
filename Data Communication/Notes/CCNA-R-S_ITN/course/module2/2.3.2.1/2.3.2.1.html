@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.3.2.1 Configuring a Switch Virtual Interface</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.3.2.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Address Schemes</h1>
+        <h2>Addressing Devices</h2>
+      </div>
+      <div id="content">
+          <p>To access the switch remotely, an IP address and a subnet mask must be configured on the SVI:</p>
+          <p>
+            <ul>
+              <li>
+                <b>IP address</b> - Together with subnet mask, uniquely identifies end device on the internetwork</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Subnet mask</b> - Determines which part of a larger network is used by an IP address</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>For now the focus is IPv4; later you will explore IPv6. </p>
+          <p></p>
+          <p>You will learn the meaning behind all of these IP addresses soon, but for now the point is to quickly configure the switch to support remote access. The figure displays the command to enable IP connectivity to S1, using IP address 192.168.10.2:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">
+                  <b>interface vlan 1</b>
+                </span> - Used to navigate to the interface configuration mode from the global configuration mode</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">
+                  <b>ip address 192.168.10.2 255.255.255.0</b>
+                </span> - Configures the IP address and subnet mask for the switch (this is just one of many possible combinations for an IP address and subnet mask)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <span class="cmd">
+                  <b>no shutdown</b>
+                </span> - Administratively enables the interface to an active state</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>After these commands are configured, the switch has all the IP elements ready for communication over the network. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: The switch will still need to have one or more physical ports configured, as well as the VTY lines, to complete the configuration which enables remote management of the switch.</p>
+          <p></p>
+          <p>Practice configuring a switch virtual interface by entering commands in the figure.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

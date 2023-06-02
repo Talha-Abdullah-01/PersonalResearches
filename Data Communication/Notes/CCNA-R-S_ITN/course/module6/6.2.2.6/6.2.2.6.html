@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.2.2.6 Sample Router IPv4 Routing Table</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_6.2.2.6_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Routing</h1>
+        <h2>Router Routing Tables</h2>
+      </div>
+      <div id="content">
+          <p>Assume PC1 with IP address 192.168.10.10 wants to send a packet to another host on the same network. PC1 would check the IPv4 route table based on the destination IP address. Then, PC1 would discover that the host is on the same network and simply send it out of its interface (On-link).</p>
+          <p></p>
+          <p>
+            <b>Note</b>: R1 is not involved in the transfer of the packet. If PC1 forwards a packet to any network other than its local network, then it must use the services of router R1, and forward the packet to its local default route (192.168.10.1).</p>
+          <p></p>
+          <p>The following examples illustrate how a host and a router make packet routing decisions by consulting their respective routing tables:</p>
+          <p></p>
+          <p>Example 1: PC1 wants to verify connectivity to its local default gateway at 192.168.10.1 (the router interface): </p>
+          <p>1. PC1 consults the IPv4 route table based on the destination IP address.</p>
+          <p>2. PC1 discovers that the host is on the same network and simply sends a ping packet out of its interface (On-link).</p>
+          <p>3. R1 receives the packet on its Gigabit Ethernet 0/0 (G0/0) interface and looks at the destination IP address.</p>
+          <p>4. R1 consults its routing table.</p>
+          <p>5. R1 matches the destination IP address to the <b>L 192.168.10.1/32</b> routing table entry and discovers that this route points to its own local interface, as shown in Figure 1.</p>
+          <p>6. R1 opens the remainder of the IP packet and responds accordingly.</p>
+          <p></p>
+          <p>Example 2: PC1 wants to send a packet to PC2 (192.168.11.10): </p>
+          <p>1. PC1 consults the IPv4 route table and discovers that there is no exact match.</p>
+          <p>2. PC1 therefore uses the all route network (0.0.0.0) and sends the packet using the local default route (192.168.10.1).</p>
+          <p>3. R1 receives the packet on its Gigabit Ethernet 0/0 (G0/0) interface and looks at the destination IP address (192.168.11.10).</p>
+          <p>4. R1 consults its routing table and matches the destination IP address to the <b>C 192.168.11.0/24</b> routing table entry, as shown in Figure 2.</p>
+          <p>5. R1 forwards the packet out of its directly connected Gigabit Ethernet 0/1 interface (G0/1).</p>
+          <p>6. PC2 receives the packet and consults its host IPv4 routing table.</p>
+          <p>7. PC2 discovers that the packet is addressed to it, opens the remainder of the packet, and responds accordingly.</p>
+          <p></p>
+          <p>Example 3: PC1 wants to send a packet to 209.165.200.226: </p>
+          <p>1. PC1 consults the IPv4 route table and discover that there is no exact match.</p>
+          <p>2. PC1 therefore uses the default route (0.0.0.0/0) and sends the packet using the default gateway (192.168.10.1).</p>
+          <p>3. R1 receives the packet on its Gigabit Ethernet 0/0 (G0/0) interface and looks at the destination IP address (209.165.200.226).</p>
+          <p>4. R1 consults its routing table and matches the destination IP address to the <b>C 209.165.200.224/30</b> routing table entry, as shown in Figure 3.</p>
+          <p>5. R1 forwards the packet out of its directly connected Serial 0/0/0 interface (S0/0/0).</p>
+          <p></p>
+          <p>Example 4: PC1 wants to send a packet to the host with IP address 10.1.1.10: </p>
+          <p>1. PC1 consults the IPv4 route table and discovers that there is no exact match.</p>
+          <p>2. PC1 therefore uses the all route network (0.0.0.0) and sends it to its local default route (192.168.10.1).</p>
+          <p>3. R1 receives the packet on its Gigabit Ethernet 0/0 (G0/0) interface and looks at the destination IP address (10.1.1.10).</p>
+          <p>4. R1 consults its routing table and matches the destination IP address to the <b>D 10.1.1.0/24</b> routing table entry, as shown in Figure 4.</p>
+          <p>5. R1 discovers it has to send the packet to the next-hop address 209.165.200.226.</p>
+          <p>6. R1 again consults its routing table and matches the destination IP address to the <b>C 209.165.200.224/30</b> routing table entry, as shown in Figure 4.</p>
+          <p>7. R1 forwards the packet out of its directly connected Serial 0/0/0 interface (S0/0/0).</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

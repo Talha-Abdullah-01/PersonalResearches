@@ -1,0 +1,44 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Transport Layer Services</b>]]></text>
+</component>
+
+
+<component id="ID_txt01">
+<text><![CDATA[To: you@example.com<br>From: me@example.com<br>Subject: Vacation]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Email]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Instant<br/>Messaging]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Multiple Web Pages</b>]]></text>
+</component>
+
+
+
+<component id="ID_txt06">
+<text><![CDATA[IP Telephony (VoIP)]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[Streaming Video]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[Segmentation allows conversation <font color="#F26200"><b>multiplexing</b></font> - multiple applications can use the network at the same time.]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[<font color="#F26200"><b>Segmentation</b></font> facilitates data transport by the lower network layers.]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[<font color="#F26200"><b>Error checking</b></font> can be performed on the data in the segment to check if the segment was changed during transmission.]]></text>
+</component>
+</textcomponents>

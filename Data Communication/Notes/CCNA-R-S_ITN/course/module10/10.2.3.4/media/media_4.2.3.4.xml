@@ -1,0 +1,55 @@
+﻿<textcomponents>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[SMB Requests]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[SMB Responses]]></text>
+</component> 
+
+<component id="ID_s1_txt03">
+<text><![CDATA[Client]]></text>
+</component>
+
+<component id="ID_s1_txt04">
+<text><![CDATA[Server]]></text>
+</component>
+
+<component id="ID_s1_txt05">
+<text><![CDATA[SMB is a client-server, request-response protocol. Servers can make their resources available to clients on the network.]]></text>
+</component>
+
+<component id="ID_s1_txt06">
+<text><![CDATA[<b>Shared Resources</b>]]></text>
+</component>
+
+<component id="ID_s1_txt07">
+<text><![CDATA[<textformat blockindent='-10'><ul><li>File systems</li><li>Printers</li><li>Mail slots</li><li>APIs</li></ul></textformat>]]></text>
+</component>
+
+<component id="ID_s1_txt08">
+<text><![CDATA[Printer]]></text>
+</component>
+ 
+<component id="ID_s2_txt1">
+<text><![CDATA[Network]]></text>
+</component>
+ 
+<component id="ID_s2_txt2">
+<text><![CDATA[A file may be copied from PC to PC with Windows Explorer using the SMB protocol.]]></text>
+</component>
+
+<component id="ID_s2_txt3">
+<text><![CDATA[Copy File]]></text>
+</component>
+
+<component id="ID_s1_title">
+<text><![CDATA[<b>SMB Protocol</b>]]></text>
+</component>
+
+<component id="ID_s2_title">
+<text><![CDATA[<b>SMB File Sharing</b>]]></text>
+</component>
+
+</textcomponents>

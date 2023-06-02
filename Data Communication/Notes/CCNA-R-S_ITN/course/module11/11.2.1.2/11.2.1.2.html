@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.2.1.2 Physical Security</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.2.1.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Keeping the Network Safe</h1>
+        <h2>Network Device Security Measures</h2>
+      </div>
+      <div id="content">
+          <p>When you think of network security, or even computer security, you may imagine attackers exploiting software vulnerabilities. An equally important vulnerability is the physical security of devices, as shown in the figure. An attacker can deny the use of network resources if those resources can be physically compromised.</p>
+          <p></p>
+          <p>The four classes of physical threats are:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Hardware threats </b>- physical damage to servers, routers, switches, cabling plant, and workstations</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Environmental threats </b>- temperature extremes (too hot or too cold) or humidity extremes (too wet or too dry)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Electrical threats </b>- voltage spikes, insufficient supply voltage (brownouts), unconditioned power (noise), and total power loss</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Maintenance threats </b>- poor handling of key electrical components (electrostatic discharge), lack of critical spare parts, poor cabling, and poor labeling</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Some of these issues must be dealt with in an organizational policy. Some of them are subject to good leadership and management in the organization. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

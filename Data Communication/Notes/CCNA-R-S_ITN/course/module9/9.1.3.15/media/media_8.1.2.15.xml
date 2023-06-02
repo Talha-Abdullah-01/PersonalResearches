@@ -1,0 +1,68 @@
+  <textcomponents>	
+	  <component id="ID_title">
+		  <text><![CDATA[Activity]]></text>
+	  </component>
+	  <component id="txt_instructions">
+		  <text><![CDATA[<b>Activity – Determining the Valid Addresses for Hosts (Advanced)</b><br/><br/>In this activity, you are given the network address and subnet mask.<br/><br/>Define the range of hosts, the broadcast address and the next network address.<br/><br/>Enter your answers in decimal format in the octet fields provided.]]></text>
+	  </component>
+	  
+	  <component id="txt_incorrect">
+		  <text><![CDATA[<b>Incorrect]]></text>
+	  </component>
+	  <component id="txt_correct">
+		  <text><![CDATA[<b>Correct]]></text>
+	  </component>
+	  
+	  <component id="txt_correct_body">
+		  <text><![CDATA[You have correctly defined the range of hosts and calculated the broadcast address and the next network address. Please click New Number to continue.]]></text>
+	  </component>
+
+	  <component id="txt_incorrect_all">
+		  <text><![CDATA[You have not correctly defined the range of hosts and calculated the broadcast address and the next network address. Please click Reset to try again.]]></text>
+	  </component>
+	  
+	  
+	  <component id="txt_hostaddress">
+  <text><![CDATA[Network Address in decimal]]></text>
+  </component>
+  
+  <component id="txt_subnetmask">
+  <text><![CDATA[Subnet Mask in decimal]]></text>
+  </component>
+  
+  <component id="txt_hostaddrbin">
+  <text><![CDATA[Network address in binary]]></text>
+  </component>
+  
+  <component id="txt_subnetbin">
+  <text><![CDATA[Subnet Mask in binary]]></text>
+  </component>
+  
+  <component id="txt_netbin">
+  <text><![CDATA[First Usable Host IP Address in decimal]]></text>
+  </component>
+  
+  <component id="txt_netdec">
+  <text><![CDATA[Last Usable Host IP Address in decimal]]></text>
+  </component>
+  
+  <component id="txt_badec">
+  <text><![CDATA[Broadcast Address in decimal]]></text>
+  </component>
+  
+  <component id="txt_nnetdec">
+  <text><![CDATA[Next Network Address in decimal]]></text>
+  </component>
+	  
+  
+	  <component id="txt_check">
+		  <text><![CDATA[Check]]></text>
+	  </component>
+	  <component id="txt_reset">
+		  <text><![CDATA[Reset]]></text>
+	  </component>
+	  <component id="txt_newnumber">
+		  <text><![CDATA[New Number]]></text>
+	  </component>
+  
+  </textcomponents>

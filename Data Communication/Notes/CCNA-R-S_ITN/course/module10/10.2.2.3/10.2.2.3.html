@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.2.2.3 DNS Hierarchy</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_10.2.2.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Well-Known Application Layer Protocols and Services</h1>
+        <h2>Providing IP Addressing Services</h2>
+      </div>
+      <div id="content">
+          <p>The DNS protocol uses a hierarchical system to create a database to provide name resolution. The hierarchy looks like an inverted tree with the root at the top and branches below (see the figure). DNS uses domain names to form the hierarchy.</p>
+          <p></p>
+          <p>The naming structure is broken down into small, manageable zones. Each DNS server maintains a specific database file and is only responsible for managing name-to-IP mappings for that small portion of the entire DNS structure. When a DNS server receives a request for a name translation that is not within its DNS zone, the DNS server forwards the request to another DNS server within the proper zone for translation. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: DNS is scalable because hostname resolution is spread across multiple servers.</p>
+          <p></p>
+          <p>The different top-level domains represent either the type of organization or the country of origin. Examples of top-level domains are:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>.au - </b>Australia<b></b></li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>.co - </b>Colombia<b></b></li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>.com - </b>a business or industry</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>.jp - </b>Japan</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>.org - </b>a non-profit organization</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>After top-level domains are second-level domain names, and below them are other lower level domains. Each domain name is a path down this inverted tree starting from the root. For example, as shown in the figure, the root DNS server may not know exactly where the record for the email server, mail.cisco.com, is located, but it maintains a record for the .com domain within the top-level domain. Likewise, the servers within the .com domain may not have a record for mail.cisco.com, but they do have a record for the domain. The servers within the cisco.com domain have a record (a MX record to be precise) for mail.cisco.com.</p>
+          <p></p>
+          <p>DNS relies on this hierarchy of decentralized servers to store and maintain these resource records. The resource records list domain names that the server can resolve and alternative servers that can also process requests. If a given server has resource records that correspond to its level in the domain hierarchy, it is said to be authoritative for those records. For example, a name server in the cisco.netacad.net domain would not be authoritative for the mail.cisco.com record, because that record is held at a higher domain level server; specifically the name server in the cisco.com domain.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

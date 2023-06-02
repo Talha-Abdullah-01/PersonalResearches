@@ -1,0 +1,82 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Activity – Calculate the Network, Broadcast, and Host Addresses</b><br/><br/>Calculate the Network, Broadcast, First Usable Host, and Last Usable Host Addresses for the address/prefix numbers as shown. Practice as much as necessary until you can complete the conversions without error.]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Given address/prefix of </b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Network]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Broadcast]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[First Usable Host Address]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Last Usable Host Address]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[Enter binary values in the eight blue boxes above.]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[For each row, enter the values for that type of address.]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>Type of Address</b>]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[<b>Enter Last octet of network prefix in binary</b>]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[<b>Enter LAST octet in decimal</b>]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[<b>Enter full address in decimal</b>]]></text>
+</component>
+
+<component id="ID_btn01">
+<text><![CDATA[Check]]></text>
+</component>
+
+<component id="ID_btn02">
+<text><![CDATA[Reset]]></text>
+</component>
+
+<component id="ID_btn03">
+<text><![CDATA[New Values]]></text>
+</component>
+
+<component id="ID_btn04">
+<text><![CDATA[Show Me]]></text>
+</component>
+
+<component id='ID_CORRECT_BODY'>
+	<text><![CDATA[The network, broadcast, first and last usable host addresses are correct! Please click New Values to continue.]]></text>
+</component>
+
+<component id='ID_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_INCORRECT_BODY'>
+	<text><![CDATA[The network, broadcast, first and/or last usable host addresses are incorrect. Please click Reset to try your calculations again, or click Show Me to see the correct answers.]]></text>
+</component>
+
+<component id='ID_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+</textcomponents>

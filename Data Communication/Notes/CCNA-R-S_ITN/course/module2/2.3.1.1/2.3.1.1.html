@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.3.1.1 IP Addressing of Devices</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.3.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Address Schemes</h1>
+        <h2>Ports and Addresses</h2>
+      </div>
+      <div id="content">
+          <p>The use of IP addresses, whether IPv4 or IPv6, is the primary means of enabling devices to locate one another and establish end-to-end communication on the Internet. In fact, in any internetwork, IP addresses are essential for devices to communicate from source to destination and back.</p>
+          <p></p>
+          <p>Each end device on a network must be configured with IP addresses. Some examples of end devices are:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Computers (work stations, laptops, file servers, web servers)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Network printers</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>VoIP phones</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Security cameras</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Smart phones</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Mobile handheld devices (such as wireless barcode scanners)</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The structure of an IPv4 address is called dotted decimal notation and is represented with four decimal numbers between 0 and 255. IPv4 addresses are numbers assigned to individual devices connected to a network. They are logical in nature, in that they provide information about the location of the device. </p>
+          <p></p>
+          <p>With the IP address, a subnet mask is also necessary. A subnet mask is a special type of IPv4 address that, coupled with the IP address, determines which particular subnet of a larger network the device is a member. </p>
+          <p></p>
+          <p>IP addresses can be assigned to both physical ports and virtual interfaces on devices. A virtual interface means that there is no physical hardware on the device associated with it. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

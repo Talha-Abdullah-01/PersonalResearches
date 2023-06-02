@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.1.3.5 Navigating between IOS Modes (Cont.)</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.1.3.5_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IOS Bootcamp</h1>
+        <h2>Navigating the IOS</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Moving from and to Global Configuration Mode and Submodes</b>
+          </p>
+          <p></p>
+          <p>To quit from the global configuration mode and return to the privileged EXEC mode, enter the <span class="cmd"><b>exit</b></span> command. </p>
+          <p></p>
+          <p>Note that entering the <span class="cmd"><b>exit</b></span> command in privileged EXEC mode causes the console session to be ended. That is, upon entering <span class="cmd"><b>exit</b></span> in privileged EXEC mode, you will be presented with the screen that you see when you first initiate a console session. At this screen you have to press the Enter key to enter user EXEC mode.</p>
+          <p></p>
+          <p>To move from any submode of the global configuration mode to the mode one step above it in the hierarchy of modes, enter the <span class="cmd"><b>exit</b></span> command. Figure 1 illustrates moving from user EXEC mode to privileged EXEC mode, then entering global configuration mode, interface configuration mode, back to global configuration mode and back again to privileged EXEC mode using the <span class="cmd"><b>exit</b></span> command. </p>
+          <p></p>
+          <p>To move from any submode of the privileged EXEC mode to the privileged EXEC mode, enter the<span class="cmd"><b> end </b></span>command or enter the key combination <b>Ctrl+Z</b>. Figure 2 illustrates moving from VLAN configuration mode all the way back to privileged EXEC mode using the <span class="cmd"><b>end</b></span> command.</p>
+          <p></p>
+          <p>To move from any submode of the global configuration mode to another “immediate” submode of the global configuration mode, simply enter the corresponding command that is normally entered from global configuration mode. Figure 3 illustrates moving from the line configuration mode, <span class="cmd">Switch(config-line)#</span>,  to the interface configuration mode, <span class="cmd">Switch(config-if)#</span>, without having to exit line configuration mode.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.1.4.3 Encapsulating IPv6</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_6.1.4.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Network Layer Protocols</h1>
+        <h2>IPv6 Packet</h2>
+      </div>
+      <div id="content">
+          <p>One of the major design improvements of IPv6 over IPv4 is the simplified IPv6 header. </p>
+          <p></p>
+          <p>The IPv4 header consists of 20 octets (up to 60 bytes if the Options field is used) and 12 basic header fields, not including the Options field and Padding field.</p>
+          <p></p>
+          <p>The IPv6 header consists of 40 octets (largely due to the length of the source and destination IPv6 addresses) and 8 header fields (3 IPv4 basic header fields and 5 additional header fields).</p>
+          <p></p>
+          <p>Figure 1 shows the IPv4 header structure. As shown in the figure, for IPv6, some fields have remained the same, some fields from the IPv4 header are not used, and some fields have changed names and positions. </p>
+          <p></p>
+          <p>In addition, a new field has been added to IPv6 that is not used in IPv4. The IPv6 simplified header is shown in Figure 2.</p>
+          <p></p>
+          <p>The IPv6 simplified header offers several advantages over IPv4: </p>
+          <p>
+            <ul>
+              <li>Better routing efficiency for performance and forwarding-rate scalability</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>No requirement for processing checksums</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Simplified and more efficient extension header mechanisms (as opposed to the IPv4 Options field)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>A Flow Label field for per-flow processing with no need to open the transport inner packet to identify the various traffic flows</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

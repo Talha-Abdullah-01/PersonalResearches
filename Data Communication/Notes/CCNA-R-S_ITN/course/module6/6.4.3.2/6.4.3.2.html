@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.4.3.2 Default Gateway on a Switch</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_6.4.3.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Configuring a Cisco Router</h1>
+        <h2>Configuring the Default Gateway</h2>
+      </div>
+      <div id="content">
+          <p>A default gateway is used by all devices that require the use of a router to determine the best path to a remote destination. End devices require default gateway addresses, but so do intermediate devices, such as the Cisco IOS switch. </p>
+          <p></p>
+          <p>The IP address information on a switch is only necessary to manage the switch remotely. In other words, to be able to telnet to the switch, the switch must have an IP address to Telnet to. If the switch is only accessed from devices within the local network, only an IP address is required.</p>
+          <p></p>
+          <p>Configuring the IP address on a switch is done on the switch virtual interface (SVI): </p>
+          <p></p>
+          <p>
+            <span class="cmd">S1(config)#</span>
+            <span class="cmd">
+              <b>interface vlan1</b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">S1(config-if)#</span>
+            <span class="cmd">
+              <b>ip address 192.168.10.50 255.255.255.0</b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">S1(config-if)#</span>
+            <span class="cmd">
+              <b>no shut</b>
+            </span>
+          </p>
+          <p></p>
+          <p>However, if the switch must be accessible by devices in a different network, the switch must be configured with a default gateway address, because packets that originate from the switch are handled just like packets that originate from a host device. Therefore, packets that originate from the switch and are destined for a device on the same network are forwarded directly to the appropriate device. Packets that originate from the switch and are destined for a device on a remote network must be forwarded to the default gateway for path determination. </p>
+          <p></p>
+          <p>To configure a default gateway on a switch use the following global configuration command:</p>
+          <p></p>
+          <p>
+            <span class="cmd">S1(config)#</span>
+            <span class="cmd">
+              <b>ip default-gateway 192.168.10.1</b>
+            </span>
+          </p>
+          <p></p>
+          <p>Figure 1 shows an administrator connecting to a switch on a remote network. For the switch to forward response packets to the administrator, the default gateway must be configured. </p>
+          <p></p>
+          <p>A common misconception is that the switch uses its configured default gateway address to determine where to forward packets originating from hosts connected to the switch and destined for hosts on a remote network. Actually, the IP address and default gateway information is only used for packets that originate from the switch. Packets originating from hosts connected to the switch must already have default gateway information configured to communicate on remote networks.  In Figure 2, practice configuring a default gateway on a switch.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

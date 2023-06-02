@@ -1,0 +1,11 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<textformat blockindent='-14'><li>IEEE 802.11 standards</li><li>Commonly referred to as Wi-Fi</li><li>Uses CSMA/CA</li><li>Variations include:</li></textformat><li class="shift">802.11a: 54 Mb/s, 5 GHz</li><li class="shift">802.11b: 11 Mb/s, 2.4 GHz</li><li class="shift">802.11g: 54 Mb/s, 2.4 GHz</li><li class="shift">802.11n: 600 Mb/s, 2.4, and 5 GHz</li><li class="shift">802.11ac: 1 Gb/s, 5 GHz</li><li class="shift">802.11ad: 7 Gb/s, 2.4 GHz, 5 GHz, and 60 GHz</li>]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[<textformat blockindent='-14'><li>IEEE 802.15 standard</li><li>Supports speeds up to 3 Mb/s</li><li>Provides device pairing over distances from 1 to 100 meters</li></textformat>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<textformat blockindent='-14'><li>IEEE 802.16 standard</li><li>Provides speeds up to 1 Gb/s</li><li>Uses a point-to-multipoint topology to provide wireless broadband access</li></textformat>]]></text> 
+  </component>
+</textcomponents>

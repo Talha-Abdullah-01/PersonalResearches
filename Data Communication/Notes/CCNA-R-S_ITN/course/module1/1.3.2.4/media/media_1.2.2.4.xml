@@ -1,0 +1,152 @@
+﻿<textcomponents>
+
+<!-- slide 1 -->
+<component id="ID_s1_title">
+<text><![CDATA[<b>Tier 1</b>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[At the center of the Internet, Tier-1 ISPs provide national and international connections. These ISPs treat each other as equals.]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[Examples are Verizon, Sprint, AT&T, NTT, cable systems, and wide area wireless networks.]]></text>
+</component>
+
+<component id="ID_s1_txt03">
+<text><![CDATA[Tier-1 ISP]]></text>
+</component>
+
+<component id="ID_s1_txt04">
+<text><![CDATA[Tier-1 ISP]]></text>
+</component>
+
+<component id="ID_s1_txt05">
+<text><![CDATA[Tier-1 ISP]]></text>
+</component>
+
+<component id="ID_s1_txt06">
+<text><![CDATA[This is the backbone of the Internet.]]></text>
+</component>
+
+
+<!-- slide 2 -->
+<component id="ID_s2_title">
+<text><![CDATA[<b>Tier 2</b>]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[Tier-2 ISPs are smaller and often provide regional service. Tier-2 ISPs usually pay Tier-1 ISPs for connectivity to rest of the Internet.<br/><br/>Peer connections between networks at the same level provide direct connections, bypassing longer routes and preventing congestion on the backbone.]]></text>
+</component>
+
+<component id="ID_s2_txt02">
+<text><![CDATA[The point where ISPs interconnect is often called a border.]]></text>
+</component>
+
+<component id="ID_s2_txt10">
+<text><![CDATA[<b>Tier-2 ISP</b>]]></text>
+</component>
+
+<component id="ID_s2_txt11">
+<text><![CDATA[Tier-1 ISP]]></text>
+</component>
+
+<component id="ID_s2_txt12">
+<text><![CDATA[<b>Tier-2 ISP</b>]]></text>
+</component>
+
+<component id="ID_s2_txt13">
+<text><![CDATA[Tier-1 ISP]]></text>
+</component>
+
+<component id="ID_s2_txt14">
+<text><![CDATA[Tier-1 ISP]]></text>
+</component>
+
+<component id="ID_s2_txt15">
+<text><![CDATA[<b>Tier-2 ISP</b>]]></text>
+</component>
+
+<component id="ID_s2_txt16">
+<text><![CDATA[<b>Tier-2 ISP</b>]]></text>
+</component>
+
+<component id="ID_s2_txt17">
+<text><![CDATA[<b>Tier-2 ISP</b>]]></text>
+</component>
+
+
+<!-- slide 3 -->
+<component id="ID_s3_title">
+<text><![CDATA[<b>Tier 3</b>]]></text>
+</component>
+
+<component id="ID_s3_txt01">
+<text><![CDATA[Tier-3 ISPs are the local providers of service directly to end users. Tier-3 ISPs are usually connected to Tier 2 ISPs and pay Tier 2 providers for Internet access.]]></text>
+</component>
+
+<component id="ID_s3_txt02">
+<text><![CDATA[<b>local<br>ISP</b>]]></text>
+</component>
+
+<component id="ID_s3_txt03">
+<text><![CDATA[<b>local<br>ISP</b>]]></text>
+</component>
+
+<component id="ID_s3_txt04">
+<text><![CDATA[<b>local<br>ISP</b>]]></text>
+</component>
+
+<component id="ID_s3_txt05">
+<text><![CDATA[<b>local<br>ISP</b>]]></text>
+</component>
+
+<component id="ID_s3_txt06">
+<text><![CDATA[<b>local<br>ISP</b>]]></text>
+</component>
+
+<component id="ID_s3_txt07">
+<text><![CDATA[<b>local<br>ISP</b>]]></text>
+</component>
+
+<component id="ID_s3_txt08">
+<text><![CDATA[<b>local<br>ISP</b>]]></text>
+</component>
+
+<component id="ID_s3_txt09">
+<text><![CDATA[<b>local<br>ISP</b>]]></text>
+</component>
+
+<component id="ID_s3_txt10">
+<text><![CDATA[Tier-2 ISP]]></text>
+</component>
+
+<component id="ID_s3_txt11">
+<text><![CDATA[Tier-1 ISP]]></text>
+</component>
+
+<component id="ID_s3_txt12">
+<text><![CDATA[Tier-2 ISP]]></text>
+</component>
+
+<component id="ID_s3_txt13">
+<text><![CDATA[Tier-1 ISP]]></text>
+</component>
+
+<component id="ID_s3_txt14">
+<text><![CDATA[Tier-1 ISP]]></text>
+</component>
+
+<component id="ID_s3_txt15">
+<text><![CDATA[Tier-2 ISP]]></text>
+</component>
+
+<component id="ID_s3_txt16">
+<text><![CDATA[Tier-2 ISP]]></text>
+</component>
+
+<component id="ID_s3_txt17">
+<text><![CDATA[Tier-2 ISP]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.3.1.3 Summary</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_7.3.1.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Summary</h1>
+        <h2>Summary</h2>
+      </div>
+      <div id="content">
+          <p>The transport layer provides transport-related services by:</p>
+          <p>
+            <ul>
+              <li>Dividing data received from an application into segments</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Adding a header to identify and manage each segment</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Using the header information to reassemble the segments back into application data</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Passing the assembled data to the correct application</li>
+            </ul>
+          </p>
+          <p>UDP and TCP are common transport layer protocols.</p>
+          <p></p>
+          <p>UDP datagrams and TCP segments have headers added in front of the data that include a source port number and destination port number. These port numbers enable data to be directed to the correct application running on the destination computer.</p>
+          <p></p>
+          <p>TCP does not pass any data to the network until it knows that the destination is ready to receive it. TCP then manages the flow of the data and resends any data segments that are not acknowledged as being received at the destination. TCP uses mechanisms of handshaking, timers, acknowledgement messages, and dynamic windowing to achieve reliability. The reliability process, however, imposes overhead on the network in terms of much larger segment headers and more network traffic between the source and destination.</p>
+          <p></p>
+          <p>If the application data needs to be delivered across the network quickly, or if network bandwidth cannot support the overhead of control messages being exchanged between the source and the destination systems, UDP would be the developer’s preferred transport layer protocol. Because UDP does not track or acknowledge the receipt of datagrams at the destination - it just passes received datagrams to the application layer as they arrive - and does not resend lost datagrams. However, this does not necessarily mean that the communication itself is unreliable; there may be mechanisms in the application layer protocols and services that process lost or delayed datagrams if the application has these requirements.</p>
+          <p></p>
+          <p>The application developer decides the transport layer protocol that best meets the requirements for the application. It is important to remember that the other layers all play a part in data network communications and influences its performance.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

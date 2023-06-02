@@ -1,0 +1,9 @@
+A project can be built using multiple programming languages, 
+where each source file contains code in only one programming language. 
+For example, with the Intel Fortran compiler installed in the Visual 
+Studio IDE, we could write some source files in C and some in Fortran. 
+Once all the source files are compiled into object files, the linker glues 
+them together, along with any required libraries. 
+As another example, we might write the user interface portion of your 
+program in C#, and a library of high-performance 
+functions in C, and have the C# code call into your C library.

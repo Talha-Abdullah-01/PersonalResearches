@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.3.3.1 Test the Loopback Address on an End Device</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.3.3.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Address Schemes</h1>
+        <h2>Verifying Connectivity</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Testing the Loopback</b>
+          </p>
+          <p></p>
+          <p>The figure shows the first step in the testing sequence. The <span class="cmd"><b>ping</b></span> command is used to verify the internal IP configuration on a local host. This test is accomplished by using the <span class="cmd"><b>ping</b></span> command on a reserved address called the loopback (127.0.0.1). The loopback address, 127.0.0.1, is defined by the TCP/IP protocol as a reserved address that routes packets back to the host.</p>
+          <p></p>
+          <p>Ping commands are entered into a command line on the local host using the syntax:</p>
+          <p></p>
+          <p>
+            <span class="cmd">C:\></span>
+            <span class="cmd">
+              <b>ping 127.0.0.1</b>
+            </span>
+          </p>
+          <p></p>
+          <p>The reply from this command would look something like this: </p>
+          <p></p>
+          <p>
+            <span class="cmd">Reply from 127.0.0.1: bytes=32 time<1ms TTL=128 </span>
+          </p>
+          <p>
+            <span class="cmd">Reply from 127.0.0.1: bytes=32 time<1ms TTL=128 </span>
+          </p>
+          <p>
+            <span class="cmd">Reply from 127.0.0.1: bytes=32 time<1ms TTL=128 </span>
+          </p>
+          <p>
+            <span class="cmd">Reply from 127.0.0.1: bytes=32 time<1ms TTL=128 </span>
+          </p>
+          <p>
+            <span class="cmd">Ping statistics for 127.0.0.1: </span>
+          </p>
+          <p>
+            <span class="cmd">Packets: Sent = 4, Received = 4, Lost = 0 (0% loss), </span>
+          </p>
+          <p>
+            <span class="cmd">Approximate round trip times in milli-seconds: </span>
+          </p>
+          <p>
+            <span class="cmd">Minimum = 0ms, Maximum = 0ms, Average = 0ms</span>
+          </p>
+          <p></p>
+          <p>The result indicates that four test packets of 32 bytes each were sent and returned from host 127.0.0.1 in a time of less than 1 ms. This successful ping request verifies that the network interface card, drivers, and the TCP/IP implementation are all functioning correctly. </p>
+          <p></p>
+          <p>Practice testing a loopback address by entering commands in Figure 2.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

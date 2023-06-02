@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.2.2.2 UTP Cabling Standards</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_4.2.2.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Network Media</h1>
+        <h2>UTP Cabling</h2>
+      </div>
+      <div id="content">
+          <p>UTP cabling conforms to the standards established jointly by the TIA/EIA. Specifically, TIA/EIA-568A stipulates the commercial cabling standards for LAN installations and is the standard most commonly used in LAN cabling environments. Some of the elements defined are: </p>
+          <p>
+            <ul>
+              <li>Cable types</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Cable lengths </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Connectors</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Cable termination </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Methods of testing cable </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The electrical characteristics of copper cabling are defined by the Institute of Electrical and Electronics Engineers (IEEE). IEEE rates UTP cabling according to its performance. Cables are placed into categories according to their ability to carry higher bandwidth rates. For example, Category 5 (Cat5) cable is used commonly in 100BASE-TX FastEthernet installations. Other categories include Enhanced Category 5 (Cat5e) cable, Category 6 (Cat6), and Category 6a.</p>
+          <p></p>
+          <p>Cables in higher categories are designed and constructed to support higher data rates. As new gigabit speed Ethernet technologies are being developed and adopted, Cat5e is now the minimally acceptable cable type, with Cat6 being the recommended type for new building installations. </p>
+          <p></p>
+          <p>The figure highlights the various categories of UTP cabling.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Some manufacturers are making cables exceeding the TIA/EIA Category 6a specifications and refer to these as Category 7. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

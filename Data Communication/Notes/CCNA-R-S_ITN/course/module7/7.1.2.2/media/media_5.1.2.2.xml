@@ -1,0 +1,58 @@
+﻿<textcomponents>
+
+	<component id="ID_title">
+		<text><![CDATA[<b>TCP Segment</b>]]></text>
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[<b>20 Bytes</b>]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[<b><font color='#ffffff'>Bit (0)</font></b>]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[<b><font color='#ffffff'>Bit (15)</font></b>]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[<b><font color='#ffffff'>Bit (16)</font></b>]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[<b><font color='#ffffff'>Bit (31)</font></b>]]></text>
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[Source Port (16)]]></text>
+	</component>
+	<component id="ID_txt08">
+		<text><![CDATA[Destination Port (16)]]></text>
+	</component>
+	<component id="ID_txt09">
+		<text><![CDATA[Sequence Number (32)]]></text>
+	</component>
+	<component id="ID_txt10">
+		<text><![CDATA[Acknowledgement Number (32)]]></text>
+	</component>
+	<component id="ID_txt11">
+		<text><![CDATA[Header Length (4)]]></text>
+	</component>
+	<component id="ID_txt12">
+		<text><![CDATA[Window (16)]]></text>
+	</component>
+	<component id="ID_txt13">
+		<text><![CDATA[Checksum (16)]]></text>
+	</component>
+	<component id="ID_txt14">
+		<text><![CDATA[Urgent (16)]]></text>
+	</component>
+	<component id="ID_txt15">
+		<text><![CDATA[Options (0 or 32 if any)]]></text>
+	</component>
+	<component id="ID_txt16">
+		<text><![CDATA[Application Layer Data (Size varies)]]></text>
+	</component>
+	<component id="ID_txt17">
+		<text><![CDATA[Reserved (6)]]></text>
+	</component>
+	<component id="ID_txt18">
+		<text><![CDATA[Control Bits (6)]]></text>
+	</component>
+
+</textcomponents>

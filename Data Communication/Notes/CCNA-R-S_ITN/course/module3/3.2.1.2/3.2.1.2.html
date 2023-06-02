@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.2.1.2 Network Protocols</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_3.2.1.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Network Protocols and Standards</h1>
+        <h2>Protocols</h2>
+      </div>
+      <div id="content">
+          <p>At the human level, some communication rules are formal and others are simply understood based on custom and practice. For devices to successfully communicate, a network protocol suite must describe precise requirements and interactions. Networking protocols define a common format and set of rules for exchanging messages between devices. Some common networking protocols are IP, HTTP, and DHCP. </p>
+          <p></p>
+          <p>The figures illustrate networking protocols that describe the following processes:</p>
+          <p>
+            <ul>
+              <li>How the message is formatted or structured, as shown in Figure 1</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The process by which networking devices share information about pathways with other networks, as shown in Figure 2</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>How and when error and system messages are passed between devices, as shown in Figure 3</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The setup and termination of data transfer sessions, as shown in Figure 4</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>For example, IP defines how a packet of data is delivered within a network or to a remote network. The information in the IPv4 protocol is transmitted in a specific format so that the receiver can interpret it correctly. This is not much different than the protocol used to address an envelope when mailing a letter. The information must adhere to a certain format or the letter cannot be delivered to the destination by the post office.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

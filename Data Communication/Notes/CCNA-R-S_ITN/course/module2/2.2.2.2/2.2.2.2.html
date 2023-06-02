@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.2.2.2 Securing Privileged EXEC Access</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.2.2.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Getting Basic</h1>
+        <h2>Limiting Access to Device Configurations</h2>
+      </div>
+      <div id="content">
+          <p>To secure privileged EXEC access, use the <span class="cmd"><b>enable secret </b></span><span class="cmd"><i>password</i></span> command. An older, less secure variation of this command is the <span class="cmd"><b>enable password </b></span><span class="cmd"><i>password</i></span> command. Although either of these commands can be used to establish authentication before access to privileged EXEC (enable) mode is permitted, it is recommended to use the <span class="cmd"><b>enable secret </b></span>command. The <span class="cmd"><b>enable secret </b></span>command provides greater security because the password is encrypted. </p>
+          <p></p>
+          <p>Example command to set passwords: </p>
+          <p></p>
+          <p>
+            <span class="cmd">Switch(config)#</span>
+            <span class="cmd">
+              <b>enable secret class</b>
+            </span>
+          </p>
+          <p></p>
+          <p></p>
+          <p>The example in the figure illustrates how a password is not requested when first using the <span class="cmd"><b>enable </b></span>command. Next the <span class="cmd"><b>enable secret class </b></span>command is configured and now privileged EXEC access is secured. Notice that for security reasons, the password is not displayed when it is being entered.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

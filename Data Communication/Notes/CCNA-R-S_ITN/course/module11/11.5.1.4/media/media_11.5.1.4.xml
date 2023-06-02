@@ -1,0 +1,45 @@
+<textcomponents>
+<component id="ID_InfoTitle"><text>Wardriving/walking/chalking</text></component>
+<component id="ID_InfoBody"><text><![CDATA[Wardriving is the process of driving around an area searching for wireless LANs. Once discovered, the location of the WLAN is logged and shared. The goal of wardriving is to bring attention to the fact that most wireless networks are insecure and also to show the widespread acceptance and use of wireless LAN technology. <br><br>A similar process to wardriving is known as warwalking where the person walks around an area to discover wireless access. Once access is discovered a chalk mark is placed in front of the location to indicate the status of the wireless connection.]]></text>	</component>
+<component id="ID_TipText"><text><![CDATA[More Information]]></text></component>
+<component id="box_text"><text><![CDATA[Basic Security<br/><textformat blockindent="-14"><ul style="margin-top:0px"><li>Change default values</li><li>Disable SSID broadcasting</li><li>Enable encryption</li></ul></textformat>]]></text></component>
+
+<component id="ID_s2_inst">
+<text><![CDATA[<b>Wireless Encryption</b>]]></text>
+</component>
+
+<component id="ID_s2_txt02">
+<text><![CDATA[Hosts need the right key.]]></text>
+</component>
+
+<component id="ID_s2_txt03">
+<text><![CDATA[56cde.dca211a001ab0ab]]></text>
+</component>
+
+<!-- controller -->
+
+<component id="end">
+<text><![CDATA[End]]></text>
+</component>
+
+<component id="fforward">
+<text><![CDATA[Fast Forward]]></text>
+</component>
+
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+
+<component id="play">
+<text><![CDATA[Play]]></text>
+</component>
+
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component>
+
+<component id="start">
+<text><![CDATA[Start]]></text>
+</component>
+
+</textcomponents>

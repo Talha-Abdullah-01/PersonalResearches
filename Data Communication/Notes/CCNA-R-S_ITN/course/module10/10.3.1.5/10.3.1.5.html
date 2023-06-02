@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.3.1.5 Getting the Data to the Right Application </title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_10.3.1.5_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>The Message Heard Around the World</h1>
+        <h2>Move It!</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Delivering the Data to the Correct Destination Application</b>
+          </p>
+          <p>Finally, at the destination end device, the frame is received. De-encapsulate and reassembly of the data occurs, as the data is passed up the stack in the destination device. The data is continually passed up the layers, from the network access layer to the network layer, to the transport layer, until it finally reaches the application layer and can then be processed. But how can the device be sure the correct application process is identified?</p>
+          <p></p>
+          <p>As shown in the figure, recall that at the transport layer, information contained in the PDU header identifies the specific process or service running on the destination host device that will act on the data. Hosts, whether they are clients or servers on the Internet, can run multiple network applications simultaneously. People using PCs often have an email client running at the same time as a web browser, an instant messaging program, some streaming media, and perhaps even a game. All these separately running programs are examples of individual processes. </p>
+          <p></p>
+          <p>Viewing a web page invokes at least one network process. Clicking a hyperlink causes a web browser to communicate with a web server. At the same time, in the background, an email client may be sending and receiving email, and a colleague or friend may be sending an instant message. </p>
+          <p></p>
+          <p>Think about a computer that has only one network interface on it. All the data streams created by the applications that are running on the PC enter and leave through that one interface, yet instant messages do not suddenly appear in the middle of word processor documents, nor do emails show up in the interface of a game.</p>
+          <p></p>
+          <p>This is because the individual processes running on the source and destination hosts communicate with each other. Each application or service is represented at Layer 4 by a port number. A unique dialogue between devices is identified with a pair of Layer 4 source and destination port numbers that are representative of the two communicating applications. When the data is received at the host, the port number is examined to determine which application or process is the correct destination for the data.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

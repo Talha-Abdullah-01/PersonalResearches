@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.2.4.3 Connecting Businesses to the Internet</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_1.2.4.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>LANs, WANs, and the Internet</h1>
+        <h2>Connecting to the Internet</h2>
+      </div>
+      <div id="content">
+          <p>Corporate connection options differ from home user options. Businesses may require higher bandwidth, dedicated bandwidth, and managed services. Connection options available differ depending on the number of service providers located nearby. </p>
+          <p></p>
+          <p>The figure illustrates common connection options for organizations, which include:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Dedicated Leased Line </b>- This is a dedicated connection from the service provider to the customer premise. Leased lines are actually reserved circuits that connect geographically separated offices for private voice and/or data networking. The circuits are typically rented at a monthly or yearly rate which tends to make it expensive. In North America, common leased line circuits include T1 (1.54 Mb/s) and T3 (44.7 Mb/s) while in other parts of the world they are available in E1 (2 Mb/s) and E3 (34 Mb/s). </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Metro Ethernet </b>- Metro Ethernet is typically available from a provider to the customer premise over a dedicated copper or fiber connection providing bandwidth speeds of 10 Mb/s to 10 Gb/s. Ethernet over Copper (EoC) is more economical than fiber optic Ethernet service in many cases, quite widely available, and reaches speeds of up to 40 Mbps. However, Ethernet over Copper is limited by distance. Fiber optic Ethernet service delivers the fastest connections available at an economical price per megabit. Unfortunately, there are still many areas where this service is unavailable. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>DSL </b>- Business DSL is available in various formats. A popular choice is Symmetric Digital Subscriber Lines (SDSL) which is similar to Asymmetric Digital Subscriber Line (ADSL), but provides the same upload and download speeds. ADSL is designed to deliver bandwidth at different rates downstream than upstream. For example, a customer getting Internet access may have downstream rates that range from 1.5 to 9 Mbps, whereas upstream bandwidth ranges are from 16 to 640 kbps. ADSL transmissions work at distances up to 18,000 feet (5,488 meters) over a single copper twisted pair.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Satellite </b>- Satellite service can provide a connection when a wired solution is not available. Satellite dishes require a clear line of sight to the satellite. Equipment and installation costs can be high, with a moderate monthly fee thereafter. Connections tend to be slower and less reliable than its terrestrial competition, which makes it less attractive than other alternatives. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The choice of connection varies depending on geographical location and service provider availability.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

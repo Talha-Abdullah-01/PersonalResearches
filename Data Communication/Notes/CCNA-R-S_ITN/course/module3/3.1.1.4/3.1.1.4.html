@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>3.1.1.4 Message Formatting and Encapsulation</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_3.1.1.4_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Rules of Communication</h1>
+        <h2>The Rules</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Message Formatting and Encapsulation</b>
+          </p>
+          <p>When a message is sent from source to destination, it must use a specific format or structure. Message formats depend on the type of message and the channel that is used to deliver the message.</p>
+          <p></p>
+          <p>Letter writing is one of the most common forms of written human communication. For centuries, the agreed format for personal letters has not changed. In many cultures, a personal letter contains the following elements:</p>
+          <p>
+            <ul>
+              <li>An identifier of the recipient</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>A salutation or greeting</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>The message content</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>A closing phrase</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>An identifier of the sender</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>In addition to having the correct format, most personal letters must also be enclosed, or encapsulated, in an envelope for delivery, as shown in Figure 1. The envelope has the address of the sender and receiver on it, each located at the proper place on the envelope. If the destination address and formatting are not correct, the letter is not delivered. The process of placing one message format (the letter) inside another message format (the envelope) is called encapsulation. De-encapsulation occurs when the process is reversed by the recipient and the letter is removed from the envelope.</p>
+          <p></p>
+          <p>A letter writer uses an accepted format to ensure that the letter is delivered and understood by the recipient. In the same way, a message that is sent over a computer network follows specific format rules for it to be delivered and processed. Just as a letter is encapsulated in an envelope for delivery, so too are computer messages encapsulated. Each computer message is encapsulated in a specific format, called a frame, before it is sent over the network. A frame acts like an envelope; it provides the address of the intended destination and the address of the source host, as shown in Figure 2.</p>
+          <p></p>
+          <p>The format and contents of a frame are determined by the type of message being sent and the channel over which it is communicated. Messages that are not correctly formatted are not successfully delivered to or processed by the destination host.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

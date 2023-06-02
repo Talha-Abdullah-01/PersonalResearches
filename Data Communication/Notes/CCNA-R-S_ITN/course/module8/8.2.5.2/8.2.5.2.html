@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>8.2.5.2 Solicited-Node IPv6 Multicast Addresses</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_8.2.5.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IPv6 Network Addresses</h1>
+        <h2>IPv6 Multicast Addresses</h2>
+      </div>
+      <div id="content">
+          <p>A solicited-node multicast is similar to the all-nodes multicast address. Recall that the all-nodes multicast address is essentially the same thing as an IPv4 broadcast. All devices on the network must process traffic sent to the all-nodes address. To reduce the number of devices that must process traffic, use a solicited-node multicast address.</p>
+          <p></p>
+          <p>A solicited-node multicast address is an address that matches only the last 24 bits of the IPv6 global unicast address of a device. The only devices that need to process these packets are those devices that have these same 24 bits in the least significant, far right portion of their Interface ID. </p>
+          <p></p>
+          <p>An IPv6 solicited-node multicast address is automatically created when the global unicast or link-local unicast addresses are assigned. The IPv6 solicited-node multicast address is created by combining a special FF02:0:0:0:0:1:FF00::/104 prefix with the far right 24 bits of its unicast address.</p>
+          <p></p>
+          <p>The solicited-node multicast address consists of two parts:</p>
+          <p>
+            <ul>
+              <li>
+                <b>FF02:0:0:0:0:1:FF00::/104 multicast prefix</b> – This is the first 104 bits of the all solicited-node multicast address.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Least significant 24-bits</b> – These are the last or far right 24 bits of the solicited-node multicast address. These bits are copied from the far right 24 bits of the global unicast or link-local unicast address of the device.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Only 104 bits are taken from the special solicited node prefix. The last byte (00) is not used when creating the solicited node address. It is necessary to include the 00 when referring to the solicited node prefix because the compressed address of ff02:0:0:0:0:1:ff/104 is expanded to ff02:0000:0000:0000:0000:0001:00ff/104, which is not the correct prefix.</p>
+          <p></p>
+          <p>It is possible that multiple devices will have the same solicited-node multicast address. Although rare, this can occur when devices have the same far right 24 bits in their Interface IDs. This does not create any problems because the device will still process the encapsulated message, which will include the complete IPv6 address of the device in question. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.5.1.4 Basic Security of Wireless</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.5.1.4_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Integrated Routing Services</h1>
+        <h2>Integrated Router</h2>
+      </div>
+      <div id="content">
+          <p>Security measures should also be planned and configured before connecting the AP to the network or ISP. </p>
+          <p></p>
+          <p>As shown in Figure 1, some of the more basic security measures include:</p>
+          <p>
+            <ul>
+              <li>Change default values for the SSID, usernames, and passwords</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Disable broadcast SSID</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Configure encryption using WEP or WPA</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Encryption is the process of transforming data so that even if it is intercepted it is unusable.</p>
+          <p></p>
+          <p>
+            <b>Wired Equivalency Protocol (WEP) </b>
+          </p>
+          <p>WEP is an advanced security feature that encrypts network traffic as it travels through the air. WEP uses pre-configured keys to encrypt and decrypt data, as shown in Figure 2. </p>
+          <p></p>
+          <p>A WEP key is entered as a string of numbers and letters and is generally 64 bits or 128 bits long. In some cases, WEP supports 256 bit keys as well. To simplify creating and entering these keys, many devices include a Passphrase option. The passphrase is an easy way to remember the word or phrase used to automatically generate a key.</p>
+          <p></p>
+          <p>In order for WEP to function, the AP, as well as every wireless device allowed to access the network must have the same WEP key entered. Without this key, devices will not be able to understand the wireless transmissions.</p>
+          <p></p>
+          <p>There are weaknesses within WEP, including the use of a static key on all WEP enabled devices. There are applications available to attackers that can be used to discover the WEP key. These applications are readily available on the Internet. Once the attacker has extracted the key, they have complete access to all transmitted information.</p>
+          <p></p>
+          <p>One way to overcome this vulnerability is to change the key frequently. Another way is to use a more advanced and secure form of encryption known as Wi-Fi Protected Access (WPA). </p>
+          <p></p>
+          <p>
+            <b>Wi-Fi Protected Access (WPA) </b>
+          </p>
+          <p></p>
+          <p>WPA also uses encryption keys from 64 bits up to 256 bits. However, WPA, unlike WEP, generates new, dynamic keys each time a client establishes a connection with the AP. For this reason, WPA is considered more secure than WEP because it is significantly more difficult to crack.</p>
+          <p></p>
+          <p>There are several other security implementations that can be configured on a wireless AP, including MAC address filtering, authentication, and traffic filtering. However, those security implementations are beyond the scope of this course. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

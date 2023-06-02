@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.1.4.2 Cisco IOS Command Reference</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.1.4.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>IOS Bootcamp</h1>
+        <h2>The Command Structure</h2>
+      </div>
+      <div id="content">
+          <p>The Cisco IOS Command Reference is a collection of online documentation which describes in detail the IOS commands used on Cisco devices. The Command Reference is the ultimate source of information for a particular IOS command, similar to how a dictionary is the ultimate source for information about a particular word. </p>
+          <p></p>
+          <p>The Command Reference is a fundamental resource that network engineers use to check various characteristics of a given IOS command. Some of the more common characteristics are:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>
+                <b>Syntax </b>- the most detailed version of the syntax for a command that can be found</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Default </b>- the manner in which the command is implemented on a device with a default configuration</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Mode </b>- the configuration mode on the device where the command is entered</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>History </b>- descriptions of how the command is implemented relative to the IOS version</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Usage Guidelines</b> - guidelines describing specifically how to implement the command</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Examples </b>- useful examples that illustrate common scenarios that use the command</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>To navigate to the Command Reference and find a particular command follow the steps below:</p>
+          <p></p>
+          <p>
+            <b>Step 1</b>. Go to <a href="http://www.cisco.com/" target="_blank">www.cisco.com</a>.</p>
+          <p>
+            <b>Step 2</b>. Click <b>Support</b>.</p>
+          <p>
+            <b>Step 3</b>. Click <b>Networking Software</b> (IOS & NX-OS).</p>
+          <p>
+            <b>Step 4</b>. Click <b>15.2M&T</b> (for example).</p>
+          <p>
+            <b>Step 5</b>. Click <b>Reference Guides</b>.</p>
+          <p>
+            <b>Step 6</b>. Click <b>Command</b><b>References</b>.</p>
+          <p>
+            <b>Step 7</b>. Click the particular technology that encompasses the command you are referencing.</p>
+          <p>
+            <b>Step 8</b>. Click the link on the left that alphabetically matches the command you are referencing.</p>
+          <p>
+            <b>Step 9</b>. Click the link for the command.</p>
+          <p></p>
+          <p>For example, the <span class="cmd"><b>description </b></span>command is found under the <i>Cisco IOS Interface and Hardware Component Command Reference</i>, under the link for the alphabetic range <i>D through E</i>.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Complete PDF versions of the command references for a particular technology can be downloaded from links on the page that you reach after completing Step 7 above.</p>
+          <p></p>
+          <p>
+            <i></i>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

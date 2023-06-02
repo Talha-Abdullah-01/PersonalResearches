@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.4.2.1 Configure LAN Interfaces</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_6.4.2.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Configuring a Cisco Router</h1>
+        <h2>Configure Interfaces</h2>
+      </div>
+      <div id="content">
+          <p>For routers to be reachable, router interfaces must be configured. Therefore, to enable a specific interface, enter interface configuration mode using the<span class="cmd"><b> interface </b></span><span class="cmd"><i>type-and-number </i></span>global configuration mode command. </p>
+          <p></p>
+          <p>There are many different types of interfaces available on Cisco routers. In this example, the Cisco 1941 router is equipped with two Gigabit Ethernet interfaces and a serial WAN interface card (WIC) consisting of two interfaces; the interfaces are named as follows:</p>
+          <p>
+            <ul>
+              <li>Gigabit Ethernet 0/0 (G0/0)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Gigabit Ethernet 0/1 (G0/1)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Serial 0/0/0 (S0/0/0)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Serial 0/0/1 (S0/0/1)</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>To enable a router interface, configure the following:</p>
+          <p>
+            <ul>
+              <li>
+                <b>IPv4 address and subnet mask - </b>Configures the IP address and subnet mask using the <span class="cmd"><b>ip address </b></span><span class="cmd"><i>ip-address subnet-mask</i></span> interface configuration command.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Activate the interface - </b>By default, LAN and WAN interfaces are not activated. The interface must be activated using the <span class="cmd"><b>no shutdown</b></span> command. This is similar to powering on the interface. The interface must also be connected to another device (a hub, a switch, or another router) for the physical layer to be active.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Although not required, it is good practice to configure a description on each interface to help document the network information. The description text is limited to 240 characters. On production networks, a description can be helpful in troubleshooting by providing information about the type of network that the interface is connected to and if there are any other routers on that network. If the interface connects to an ISP or service carrier, it is helpful to enter the third party connection and contact information.</p>
+          <p></p>
+          <p>Figure 1 shows the configuration of the LAN interfaces connected to R1. In Figure 2, practice configuring a LAN interface.</p>
+          <p></p>
+          <p>
+            <b>Note</b>: Command abbreviations are used for the configuration of Gigabit Ethernet 0/1.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.2.1.3 IPv4 Host Routing Table</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_6.2.1.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Routing</h1>
+        <h2>How a Host Routes</h2>
+      </div>
+      <div id="content">
+          <p>On a Windows host, the<span class="cmd"><b> route print </b></span>or<span class="cmd"><b> netstat -r </b></span>command can be used to display the host routing table. Both commands generate the same output. The output may seem overwhelming at first, but is fairly simple to understand.</p>
+          <p></p>
+          <p>Entering the<span class="cmd"><b> netstat -r </b></span>command or the equivalent<span class="cmd"><b> route print </b></span>command, displays three sections related to the current TCP/IP network connections:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Interface List - </b>Lists the Media Access Control (MAC) address and assigned interface number of every network-capable interface on the host including Ethernet, Wi-Fi, and Bluetooth adapters.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>IPv4 Route Table - </b>Lists all known IPv4 routes, including direct connections, local network, and local default routes.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>IPv6 Route Table - </b>Lists all known IPv6 routes, including direct connections, local network, and local default routes.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Command output varies, depending on how the host is configured and the interface types it has.</p>
+          <p></p>
+          <p>The figure displays the IPv4 Route Table section of the output. Notice the output is divided into five columns which identify:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Network Destination - </b>Lists the reachable networks.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Netmask - </b>Lists a subnet mask that informs the host how to determine the network and the host portions of the IP address.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Gateway - </b>Lists the address used by the local computer to get to a remote network destination. If a destination is directly reachable, it will show as “on-link” in this column.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Interface - </b>Lists the address of the physical interface used to send the packet to the gateway that is used to reach the network destination.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Metric - </b>Lists the cost of each route and is used to determine the best route to a destination.</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

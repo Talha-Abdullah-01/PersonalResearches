@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.2.1.6 Copper Media Safety</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_4.2.1.6_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Network Media</h1>
+        <h2>Copper Cabling</h2>
+      </div>
+      <div id="content">
+          <p>All three types of copper media are susceptible to fire and electrical hazards.</p>
+          <p></p>
+          <p>Fire hazards exist since cable insulation and sheaths may be flammable or produce toxic fumes when heated or burned. Building authorities or organizations may stipulate related safety standards for cabling and hardware installations.</p>
+          <p></p>
+          <p>Electrical hazards are a potential problem since the copper wires could conduct electricity in undesirable ways. This could subject personnel and equipment to a range of electrical hazards. For example, a defective network device could conduct currents to the chassis of other network devices. Additionally, network cabling could present undesirable voltage levels when used to connect devices that have power sources with different ground potentials. Such situations are possible when copper cabling is used to connect networks in different buildings or on different floors of buildings that use different power facilities. Finally, copper cabling may conduct voltages caused by lightning strikes to network devices.</p>
+          <p></p>
+          <p>The result of undesirable voltages and currents can include damage to network devices and connected computers, or injury to personnel. It is important that copper cabling be installed appropriately, and according to the relevant specifications and building codes, in order to avoid potentially dangerous and damaging situations.</p>
+          <p></p>
+          <p>The figure displays proper cabling practices to avoid potential fire and electrical hazards.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

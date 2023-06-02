@@ -1,0 +1,29 @@
+﻿<textcomponents>
+
+	 <component id="ID_txt01">
+		<text><![CDATA[FastEthernet Switch Ports]]></text> 
+	  </component>
+  
+	<component id="ID_txt02">
+		<text><![CDATA[SHDSL <br />Interface]]></text>
+	</component>
+	
+	<component id="ID_txt03">
+	  <text><![CDATA[Management <br /> Ports]]></text> 
+	</component>
+	
+	<component id="ID_txt04">
+	  <text><![CDATA[Gigabit Ethernet Interfaces]]></text> 
+	</component>
+	
+  <component id="ID_txt06">
+	<text><![CDATA[USB Type A Connector]]></text> 
+  </component>
+  
+  
+ 
+  
+<component id="transcript">
+  <text><![CDATA[<b>transcript goes here</b>]]></text> 
+  </component>
+</textcomponents>

@@ -1,0 +1,16 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media.css');
+
+html, body {
+	margin:0;
+	height:100%;
+}
+#flashContent {
+	width:98%;
+	height:98%;
+	overflow:hidden !important;
+}
+#ID_txt02 font,#ID_txt06 font,#ID_txt07 font,#ID_txt08 font{font-size:10px !important;}
+#ID_txt05,#ID_txt05 font{font-size:10px !important;letter-spacing:-.4px !important;line-height:11px !important;}

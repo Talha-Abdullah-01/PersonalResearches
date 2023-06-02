@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.1.2.2 Common Protocols in a Small Network</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.1.2.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Create and Grow</h1>
+        <h2>Protocols in a Small Network</h2>
+      </div>
+      <div id="content">
+          <p>Most of a technician’s work, in either a small or a large network, will in some way be involved with network protocols. Network protocols support the applications and services used by employees in a small network. Common network protocols include:</p>
+          <p>
+            <ul>
+              <li>DNS</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Telnet</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>IMAP, SMTP, POP (email)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>DHCP</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>HTTP</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>FTP</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Click the servers in the figure for a brief description of the network services each provides.</p>
+          <p></p>
+          <p>These network protocols comprise the fundamental tool set of a network professional.  Each of these network protocols defines: </p>
+          <p>
+            <ul>
+              <li>Processes on either end of a communication session</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Types of messages</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Syntax of the messages</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Meaning of informational fields</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>How messages are sent and the expected response</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Interaction with the next lower layer</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Many companies have established a policy of using secure versions of these protocols whenever possible. These protocols are HTTPS, SFTP, and SSH. </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

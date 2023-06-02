@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.2.4.2 Passwords</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.2.4.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Keeping the Network Safe</h1>
+        <h2>Securing Devices</h2>
+      </div>
+      <div id="content">
+          <p>To protect network devices, it is important to use strong passwords. Here are standard guidelines to follow:</p>
+          <p></p>
+          <p>
+            <ul>
+              <li>Use a password length of at least 8 characters, preferably 10 or more characters. A longer password is a better password.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Make passwords complex. Include a mix of uppercase and lowercase letters, numbers, symbols, and spaces, if allowed. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Avoid passwords based on repetition, common dictionary words, letter or number sequences, usernames, relative or pet names, biographical information, such as birthdates, ID numbers, ancestor names, or other easily identifiable pieces of information.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Deliberately misspell a password. For example, Smith = Smyth = 5mYth or Security = 5ecur1ty.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Change passwords often. If a password is unknowingly compromised, the window of opportunity for the attacker to use the password is limited.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Do not write passwords down and leave them in obvious places such as on the desk or monitor.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The figure shows examples of strong and weak passwords.</p>
+          <p></p>
+          <p>On Cisco routers, leading spaces are ignored for passwords, but spaces after the first character are not ignored. Therefore, one method to create a strong password is to use the space bar in the password and create a phrase made of many words. This is called a pass phrase. A pass phrase is often easier to remember than a simple password. It is also longer and harder to guess.</p>
+          <p></p>
+          <p>Administrators should ensure that strong passwords are used across the network. One way to accomplish this is to use the same “brute force” attack tools that attackers use as a way to verify password strength.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

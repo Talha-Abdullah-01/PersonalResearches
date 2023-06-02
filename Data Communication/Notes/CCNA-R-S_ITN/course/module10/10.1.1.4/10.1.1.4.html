@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>10.1.1.4 TCP/IP Application Layer Protocols</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_10.1.1.4_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Application Layer Protocols</h1>
+        <h2>Application, Session and Presentation</h2>
+      </div>
+      <div id="content">
+          <p>While the OSI model separates the individual application, presentation, and session function, most widely known and implemented TCP/IP applications incorporate the functionality of all three layers. </p>
+          <p></p>
+          <p>The TCP/IP application protocols specify the format and control information necessary for many common Internet communication functions. Among these TCP/IP protocols are:</p>
+          <p>
+            <ul>
+              <li>
+                <b>Domain Name System (DNS)</b> - This protocol resolves Internet names to IP addresses.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Telnet</b> - This is used to provide remote access to servers and networking devices.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Simple Mail Transfer Protocol (SMTP)</b> - This protocol transfers mail messages and attachments.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Dynamic Host Configuration Protocol (DHCP)</b> - A protocol used to assign an IP address, subnet mask, default gateway, and DNS server addresses to a host.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Hypertext Transfer Protocol (HTTP)</b> - This protocol transfers files that make up the web pages of the World Wide Web.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>File Transfer Protocol (FTP)</b> - A protocol used for interactive file transfer between systems.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Trivial File Transfer Protocol (TFTP)</b> - This protocol is used for connectionless active file transfer.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Bootstrap Protocol (BOOTP)</b> - This protocol is a precursor to the DHCP protocol. BOOTP is a network protocol used to obtain IP address information during bootup.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Post Office Protocol (POP)</b> - A protocol used by email clients to retrieve email from a remote server.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Internet Message Access Protocol (IMAP)</b> - This is another protocol for email retrieval.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Application layer protocols are used by both the source and destination devices during a communication session. For the communications to be successful the application layer protocols implemented on the source and destination host must be compatible.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

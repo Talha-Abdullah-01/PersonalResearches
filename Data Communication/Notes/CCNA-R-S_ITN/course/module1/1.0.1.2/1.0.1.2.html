@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.0.1.2 Class Activity - Draw Your Concept of the Internet</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_1.0.1.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Exploring the Network</h1>
+        <h2>Introduction</h2>
+      </div>
+      <div id="content">
+          <p>Welcome to a new component of our Networking Academy curriculum: Modeling Activities!   You will find them at the beginning and end of each chapter.</p>
+          <p></p>
+          <p>Some activities can be completed individually (at home or in class), and some will require group or learning-community interaction.  Your instructor will be facilitating so that you can obtain the most from these introductory activities.</p>
+          <p></p>
+          <p>These activities will help you enhance your understanding by providing an opportunity to visualize some of the abstract concepts that you will be learning in this course.  Be creative and enjoy these activities!</p>
+          <p></p>
+          <p>
+            <b>Here is your first modeling activity:</b>
+          </p>
+          <p></p>
+          <p>
+            <b>Draw Your Concept of the Internet</b>
+          </p>
+          <p></p>
+          <p>Draw and label a map of the Internet as you interpret it now.  Include your home or school/university location and its respective cabling, equipment, devices, etc.  Some items you may wish to include:  </p>
+          <p>
+            <ul>
+              <li>Devices/Equipment     </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Media (cabling)    </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Link Addresses or Names    </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Sources & Destinations     </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Internet Service Providers</li>
+            </ul>
+          </p>
+          <p> </p>
+          <p>Upon completion, be sure to save your work in a hard-copy format, as it will be used for future reference at the end of this chapter.  If it is an electronic document, save it to a server location provided by your instructor. Be prepared to share and explain your work in class.</p>
+          <p></p>
+          <p>For an example to get you started, please visit <a href="http://www.kk.org/internet-mapping/" target="_blank">http://www.kk.org/internet-mapping/</a>.</p>
+          <p></p>
+          <p></p>
+          <p>
+            <a href="../../files/1.0.1.2%20Class%20Activity%20-%20Draw%20Your%20Concept%20of%20the%20Internet%20Instructions.pdf" target="_blank">Class Activity - Draw Your Concept of the Internet Instructions</a>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

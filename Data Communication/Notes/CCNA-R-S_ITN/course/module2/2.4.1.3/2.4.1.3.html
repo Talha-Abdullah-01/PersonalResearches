@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.4.1.3 Summary</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.4.1.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Summary</h1>
+        <h2>Summary</h2>
+      </div>
+      <div id="content">
+          <p>Cisco IOS is a term that encompasses a number of different operating systems, which runs on various networking devices. The technician can enter commands to configure, or program, the device to perform various networking functions.  Cisco IOS routers and switches perform functions that network professionals depend upon to make their networks operate as expected.</p>
+          <p></p>
+          <p>The services provided by the Cisco IOS are generally accessed using a command-line interface (CLI), which is accessed by either the console port, the AUX port, or through telnet or SSH. Once connected to the CLI, network technicians can make configuration changes to Cisco IOS devices. The Cisco IOS is designed as a modal operating system, which means a network technician must navigate through various hierarchical modes of the IOS. Each mode supports different IOS commands. </p>
+          <p></p>
+          <p>The Cisco IOS Command Reference is a collection of online documents that describe in detail the IOS commands used on Cisco devices, such as Cisco IOS routers and switches. </p>
+          <p></p>
+          <p>Cisco IOS routers and switches support a similar modal operating system, support similar command structures, and support many of the same commands. In addition, both devices have identical initial configuration steps when implementing them in a network. </p>
+          <p></p>
+          <p>This chapter introduced the Cisco IOS. It detailed the various modes of the Cisco IOS and examined the basic command structure that is used to configure it. It also walked through the initial settings of a Cisco IOS switch device, include setting a name, limiting access to the device configuration, configuring banner messages, and saving the configuration.</p>
+          <p></p>
+          <p>The next chapter explores how packets are moved across the network infrastructure and introduce you to the rules of packet communication.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

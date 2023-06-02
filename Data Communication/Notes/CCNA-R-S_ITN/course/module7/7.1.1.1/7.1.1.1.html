@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.1.1.1 Role of the Transport Layer</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_7.1.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Transport Layer Protocols</h1>
+        <h2>Transportation of Data</h2>
+      </div>
+      <div id="content">
+          <p>The transport layer is responsible for establishing a temporary communication session between two applications and delivering data between them. An application generates data that is sent from an application on a source host to an application on a destination host, without regard to the destination host type, the type of media over which the data must travel, the path taken by the data, the congestion on a link, or the size of the network. As shown in the figure, the transport layer is the link between the application layer and the lower layers that are responsible for network transmission.</p>
+          <p></p>
+          <p>The transport layer provides a method of delivering data across the network in a way that ensures the data can be properly put back together on the receiving end. The transport layer provides for the segmentation of data, and the controls necessary to reassemble these segments into the various communication streams. In TCP/IP, these segmentation and reassembly processes can be achieved using two very different transport layer protocols: Transmission Control Protocol (TCP) and User Datagram Protocol (UDP). </p>
+          <p></p>
+          <p>The primary responsibilities of transport layer protocols are:</p>
+          <p>
+            <ul>
+              <li>Tracking the individual communication between applications on the source and destination hosts</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Segmenting data for manageability and reassembling segmented data into streams of application data at the destination</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Identifying the proper application for each communication stream </li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

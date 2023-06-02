@@ -1,0 +1,47 @@
+﻿<textcomponents>
+
+<component id="ID_inst">
+<text><![CDATA[Click on the Hardware, Kernel, and Shell for more information.]]></text>
+</component>
+
+<component id="ID_title">
+<text><![CDATA[<b>Operating System</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[Shell]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Kernel]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Hardware]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[User Interface]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[Shell: The user interface that allows users to request specific tasks from the computer.<br>These requests can be made either through the CLI or GUI interfaces.]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[CLI]]></text>
+</component>
+
+<component id="ID_s1_txt03">
+<text><![CDATA[GUI]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[Kernel: Communicates between the hardware and software of a computer and manages how hardware resources are used to meet software requirements.]]></text>
+</component>
+
+<component id="ID_s3_txt01">
+<text><![CDATA[Hardware: The physical part of a computer including underlying electronics.]]></text>
+</component>
+
+</textcomponents>

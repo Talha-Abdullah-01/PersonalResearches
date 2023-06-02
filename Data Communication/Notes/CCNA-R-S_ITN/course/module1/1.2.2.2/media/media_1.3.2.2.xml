@@ -1,0 +1,8 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>LAN</b>]]></text>
+</component>
+<component id="ID_txt01">
+<text><![CDATA[A network serving a home, building, or campus is considered a LAN.]]></text>
+</component>
+</textcomponents>

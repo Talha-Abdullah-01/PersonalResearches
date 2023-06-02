@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.6.1.1 Capstone Project - Design and Build a Small Business Network</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.6.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Summary</h1>
+        <h2>Summary</h2>
+      </div>
+      <div id="content">
+          <p>
+            <b>Capstone Project</b>
+          </p>
+          <p>
+            <b>Design and Build a Small Business Network</b>
+          </p>
+          <p></p>
+          <p>Use Packet Tracer and a word processing application to complete this activity – 2-3 students per group.</p>
+          <p></p>
+          <p>Design and build a network from scratch.  </p>
+          <p>
+            <ul>
+              <li>Your design must include a minimum of one router, one switch, and one PC. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Fully configure the network - use IPv4 or IPv6 (subnetting must be included as a part of your addressing scheme).</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Verify the network using at least five<span class="cmd"><b> show </b></span>commands.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Secure the network using SSH, secure passwords, and console passwords (minimum).</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Create a rubric to use for peer grading – or your Instructor may choose to use the rubric provided with this activity.  </p>
+          <p></p>
+          <p>Present your Capstone Project to the class – be able to answer questions from your peers and Instructor!</p>
+          <p></p>
+          <p></p>
+          <p>
+            <a href="../../files/11.6.1.1%20Class%20Activity%20-%20%20Design%20and%20Build%20a%20Small%20Network%20Instructions.pdf" target="_blank">Class Activity -  Design and Build a Small Network Instructions</a>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

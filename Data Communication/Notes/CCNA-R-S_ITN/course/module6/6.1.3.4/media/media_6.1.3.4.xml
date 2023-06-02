@@ -1,0 +1,147 @@
+﻿<textcomponents>
+<!--slide 1-->
+<component id='ID_s1_inst'>
+	<text><![CDATA[<b>Activity – Part 1: IPv4 Header Fields</b><br><br>Read each IPv4 header function and then click the IPv4 header field to which it belongs.]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[<b>IPv4 Header Functions</b>]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[<b>IPv4 Header Fields</b>]]></text>
+</component>
+
+<component id="ID_s1_field01">
+<text><![CDATA[<b>Version</b>]]></text>
+</component>
+
+<component id="ID_s1_field02">
+<text><![CDATA[<b>Differentiated Services</b>]]></text>
+</component>
+
+<component id="ID_s1_field03">
+<text><![CDATA[<b>Time-to-Live</b>]]></text>
+</component>
+
+<component id="ID_s1_field04">
+<text><![CDATA[<b>Protocol</b>]]></text>
+</component>
+
+<component id="ID_s1_field05">
+<text><![CDATA[<b>Source IP Address</b>]]></text>
+</component>
+
+<component id="ID_s1_field06">
+<text><![CDATA[<b>Destination IP Address</b>]]></text>
+</component>
+
+<!--answers-->
+<component id="ID_s1_ans01">
+<text><![CDATA[Always set to 0100 for IPv4]]></text>
+</component>
+
+<component id="ID_s1_ans02">
+<text><![CDATA[Identifies the priority of each packet]]></text>
+</component>
+
+<component id="ID_s1_ans03">
+<text><![CDATA[Commonly referred to as hop count]]></text>
+</component>
+
+<component id="ID_s1_ans04">
+<text><![CDATA[Identifies the upper-layer protocol to be used next]]></text>
+</component>
+
+<component id="ID_s1_ans05">
+<text><![CDATA[Identifies the IP address of the sending host]]></text>
+</component>
+
+<component id="ID_s1_ans06">
+<text><![CDATA[Identifies the IP address of the recipient host]]></text>
+</component>
+
+<!--buttons-->
+<component id="ID_s1_btn01">
+<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+<!--feedback-->
+<component id='ID_s1_titleCorrect'>
+	<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id='ID_s1_correctText'>
+	<text><![CDATA[Congratulations! You have matched the IPv4 header functions to their fields.]]></text>
+</component>
+
+<component id='ID_s1_titleIncorrect'>
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id='ID_s1_incorrectText'>
+	<text><![CDATA[Please try again.]]></text>
+</component>
+
+<!--slide 2-->
+<component id='ID_s2_inst'>
+	<text><![CDATA[<b>Activity – Part 2: IPv4 Header Fields</b><br><br>Read each IPv4 identification and validation header description and then click the IPv4 header field to which it belongs.]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[<b>IPv4 Identification and Validation Header Descriptions</b>]]></text>
+</component>
+
+<component id="ID_s2_txt02">
+<text><![CDATA[<b>IPv4 Header Fields</b>]]></text>
+</component>
+
+
+<component id="ID_s2_field01">
+<text><![CDATA[<b>Internet Header Length</b>]]></text>
+</component>
+
+<component id="ID_s2_field02">
+<text><![CDATA[<b>Total Length</b>]]></text>
+</component>
+
+<component id="ID_s2_field03">
+<text><![CDATA[<b>Header Checksum</b>]]></text>
+</component>
+
+<!--answers-->
+<component id="ID_s2_ans01">
+<text><![CDATA[Identifies the number of 32-bit words in the header]]></text>
+</component>
+
+<component id="ID_s2_ans02">
+<text><![CDATA[Maximum value is 65,535 bytes]]></text>
+</component>
+
+<component id="ID_s2_ans03">
+<text><![CDATA[Error-checks the IP header – if incorrect, the packet is discarded]]></text>
+</component>
+
+<!--buttons-->
+<component id="ID_s2_btn01">
+<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+<!--feedback-->
+<component id='ID_s2_titleCorrect'>
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id='ID_s2_correctText'>
+	<text><![CDATA[Congratulations! You have matched the IPv4 identification and validation header descriptions to their fields.]]></text>
+</component>
+
+<component id='ID_s2_titleIncorrect'>
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id='ID_s2_incorrectText'>
+	<text><![CDATA[Please try again.]]></text>
+</component>
+
+</textcomponents>

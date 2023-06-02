@@ -1,0 +1,7 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Using Wireshark to Examine Ethernet Frames</b>]]></text>
+</component>
+
+</textcomponents>

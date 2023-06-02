@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.1.2.1 Introducing TCP</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_7.1.2.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Transport Layer Protocols</h1>
+        <h2>Introducing TCP and UDP</h2>
+      </div>
+      <div id="content">
+          <p>To really understand the differences between TCP and UDP, it is important to understand how each protocol implements specific reliability functions and how they track communications.</p>
+          <p></p>
+          <p>
+            <b>Transmission Control Protocol (TCP)</b>
+          </p>
+          <p></p>
+          <p>TCP was initially described in RFC 793. In addition to supporting the basic functions of data segmentation and reassembly, TCP, as shown in the figure, also provides:</p>
+          <p>
+            <ul>
+              <li>Connection-oriented conversations by establishing sessions</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Reliable delivery</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Ordered data reconstruction</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Flow control</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Establishing a Session</b>
+          </p>
+          <p>TCP is a connection-oriented protocol. A connection-oriented protocol is one that negotiates and establishes a permanent connection (or session) between source and destination devices prior to forwarding any traffic.  Session establishment prepares the devices to communicate with one another. Through session establishment, the devices negotiate the amount of traffic that can be forwarded at a given time, and the communication data between the two can be closely managed. The session is terminated only after all communication is completed.</p>
+          <p></p>
+          <p>
+            <b>Reliable Delivery</b>
+          </p>
+          <p>TCP can implement a method to ensure reliable delivery of the data. In networking terms, reliability means ensuring that each piece of data that the source sends arrives at the destination. For many reasons, it is possible for a piece of data to become corrupted, or lost completely, as it is transmitted over the network. TCP can ensure that all pieces reach their destination by having the source device retransmit lost or corrupted data. </p>
+          <p></p>
+          <p>
+            <b>Same-Order Delivery</b>
+          </p>
+          <p>Because networks may provide multiple routes that can have different transmission rates, data can arrive in the wrong order. By numbering and sequencing the segments, TCP can ensure that these segments are reassembled into the proper order. </p>
+          <p></p>
+          <p>
+            <b>Flow Control</b>
+          </p>
+          <p>Network hosts have limited resources, such as memory or bandwidth. When TCP is aware that these resources are overtaxed, it can request that the sending application reduce the rate of data flow. This is done by TCP regulating the amount of data the source transmits. Flow control can prevent the loss of segments on the network and avoid the need for retransmission.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

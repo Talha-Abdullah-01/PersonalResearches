@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.2.4.3 Basic Security Practices</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.2.4.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Keeping the Network Safe</h1>
+        <h2>Securing Devices</h2>
+      </div>
+      <div id="content">
+          <p>When implementing devices, it is important to follow all security guidelines set by the organization. This includes naming devices in a fashion that allows for easy documentation and tracking, but also maintains some form of security. It is not wise to provide too much information about the use of the device in the hostname. There are many other basic security measures that should be taken.</p>
+          <p></p>
+          <p>
+            <b>Additional Password Security</b>
+          </p>
+          <p>Strong passwords are only as useful as they are secret. There are several steps that can be taken to help ensure that passwords remain secret. Using the global configuration command <span class="cmd"><b>service password-encryption</b></span> prevents unauthorized individuals from viewing passwords in plaintext in the configuration file, as shown in the figure. This command causes the encryption of all passwords that are unencrypted.  </p>
+          <p></p>
+          <p>Additionally, to ensure that all configured passwords are a minimum of a specified length, use the <span class="cmd"><b>security passwords min-length</b></span> command in global configuration mode.</p>
+          <p></p>
+          <p>Another way hackers learn passwords is simply by brute-force attacks, trying multiple passwords until one works. It is possible to prevent this type of attack by blocking login attempts to the device if a set number of failures occur within a specific amount of time. </p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config)#</span>
+            <span class="cmd">
+              <b>login block-for 120 attempts 3 within 60</b>
+            </span>
+          </p>
+          <p></p>
+          <p>This command will block login attempts for 120 seconds, if there are three failed login attempts within 60 seconds. </p>
+          <p></p>
+          <p>
+            <b>Banners</b>
+          </p>
+          <p>A banner message is similar to a no trespassing sign. They are important in order to be able to prosecute, in a court of law, anyone that accesses the system inappropriately. Be sure banner messages comply with security policies for the organization. </p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config)#</span>
+            <span class="cmd">
+              <b>banner motd #message#</b>
+            </span>
+          </p>
+          <p></p>
+          <p>
+            <b>Exec Timeout</b>
+          </p>
+          <p>Another recommendation is setting executive timeouts.  By setting the exec timeout, you are telling the Cisco device to automatically disconnect users on a line after they have been idle for the duration of the exec timeout value. Exec timeouts can be configured on console, vty, and aux ports. </p>
+          <p></p>
+          <p>
+            <span class="cmd">Router(config)#</span>
+            <span class="cmd">
+              <b>line vty 0 4</b>
+            </span>
+            <span class="cmd"></span>
+          </p>
+          <p>
+            <span class="cmd">Router(config-line</span>
+            <span class="cmd">)#</span>
+            <span class="cmd">
+              <b>exec-timeout 10 </b>
+            </span>
+          </p>
+          <p></p>
+          <p>This command will disconnect users after 10 minutes.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

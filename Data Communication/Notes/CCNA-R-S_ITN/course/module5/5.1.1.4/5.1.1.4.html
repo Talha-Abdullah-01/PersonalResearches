@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.1.1.4 MAC Address: Ethernet Identity</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_5.1.1.4_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Ethernet Protocol</h1>
+        <h2>Ethernet Operation</h2>
+      </div>
+      <div id="content">
+          <p>As previously stated, the underlying logical topology of Ethernet is a multi-access bus. Every network device is connected to the same, shared media, and all the nodes receive all frames transmitted. The issue is if all devices are receiving every frame, how can each individual device identify if it is the intended receiver without the overhead of having to process and de-encapsulate the frame to get to the IP address? The issue becomes even more problematic in large, high traffic volume networks where lots of frames are forwarded. </p>
+          <p></p>
+          <p>To prevent the excessive overhead involved in the processing of every frame, a unique identifier called a MAC address was created to identify the actual source and destination nodes within an Ethernet network. Regardless of which variety of Ethernet is used, MAC addressing provided a method for device identification at the lower level of the OSI model. As you may recall, MAC addressing is added as part of a Layer 2 PDU. An Ethernet MAC address is a 48-bit binary value expressed as 12 hexadecimal digits (4 bits per hexadecimal digit).</p>
+          <p></p>
+          <p>
+            <b>MAC Address Structure</b>
+          </p>
+          <p>MAC addresses must be globally unique. The MAC address value is a direct result of IEEE-enforced rules for vendors to ensure globally unique addresses for each Ethernet device. The rules established by IEEE require any vendor that sells Ethernet devices to register with IEEE. The IEEE assigns the vendor a 3-byte (24-bit) code, called the Organizationally Unique Identifier (OUI). </p>
+          <p></p>
+          <p>IEEE requires a vendor to follow two simple rules, as shown in the figure: </p>
+          <p></p>
+          <p>
+            <ul>
+              <li>All MAC addresses assigned to a NIC or other Ethernet device must use that vendor's assigned OUI as the first 3 bytes.</li>
+            </ul>
+          </p>
+          <p>All MAC addresses with the same OUI must be assigned a unique value (vendor code or serial number) in the last 3 bytes.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

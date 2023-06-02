@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.2.3.2 Authentication, Authorization, and Accounting</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.2.3.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Keeping the Network Safe</h1>
+        <h2>Mitigating Network Attacks</h2>
+      </div>
+      <div id="content">
+          <p>Authentication, authorization, and accounting (AAA, or “triple A”) network security services provide the primary framework to set up access control on a network device. AAA is a way to control who is permitted to access a network (authenticate), what they can do while they are there (authorize), and to watch the actions they perform while accessing the network (accounting). AAA provides a higher degree of scalability than the console, AUX, VTY, and privileged EXEC authentication commands alone. </p>
+          <p></p>
+          <p>
+            <b>Authentication</b>
+          </p>
+          <p>Users and administrators must prove that they are who they say they are. Authentication can be established using username and password combinations, challenge and response questions, token cards, and other methods. For example: "I am user 'student'. I know the password to prove that I am user 'student'."</p>
+          <p></p>
+          <p>In a small network, local authentication is often used. With local authentication, each device maintains its own database of username/password combinations. However, when there are more than a few user accounts in a local device database, managing those user accounts becomes complex. Additionally, as the network grows and more devices are added to the network, local authentication becomes difficult to maintain and does not scale. For example, if there are 100 network devices, all user accounts must be added to all 100 devices. </p>
+          <p></p>
+          <p>For larger networks, a more scalable solution is external authentication. External authentication allows all users to be authenticated through an external network server. The two most popular options for external authentication of users are RADIUS and TACACS+:</p>
+          <p>
+            <ul>
+              <li>RADIUS is an open standard with low use of CPU resources and memory. It is used by a range of network devices, such as switches, routers, and wireless devices.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>TACACS+ is a security mechanism that enables modular authentication, authorization, and accounting services. It uses a TACACS+ daemon running on a security server.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Authorization</b>
+          </p>
+          <p>After the user is authenticated, authorization services determine which resources the user can access and which operations the user is allowed to perform. An example is, "User 'student' can access host serverXYZ using Telnet only."</p>
+          <p></p>
+          <p>
+            <b>Accounting</b>
+          </p>
+          <p>Accounting records what the user does, including what is accessed, the amount of time the resource is accessed, and any changes that were made. Accounting keeps track of how network resources are used. An example is, "User 'student' accessed host serverXYZ using Telnet for 15 minutes."</p>
+          <p></p>
+          <p>The concept of AAA is similar to the use of a credit card. The credit card identifies who can use it, how much that user can spend, and keeps account of what items the user spent money on, as shown in the figure.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

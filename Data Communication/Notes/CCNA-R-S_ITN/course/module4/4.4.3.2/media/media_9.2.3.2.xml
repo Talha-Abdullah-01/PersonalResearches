@@ -1,0 +1,58 @@
+<textcomponents>
+	<component id="ID_txt01">
+		<text><![CDATA[<b>Contention-Based Access</b>]]></text>
+	</component>
+	
+	<component id="ID_txt02">
+		<text><![CDATA[Shared Media]]></text>
+	</component>
+	
+	<component id="ID_txt03">
+		<text><![CDATA[Frame]]></text>
+	</component>
+	
+	<component id="ID_txt04">
+		<text><![CDATA[Frame]]></text>
+	</component>
+	
+	<component id="ID_bubble01">
+		<text><![CDATA[<p id="ID_s1_bubble01" class="ID_s1_bubble01">I try to send when I am ready.</p>]]></text>
+	</component>
+	
+	<component id="ID_bubble02">
+		<text><![CDATA[<p id="ID_s1_bubble02" class="ID_s1_bubble02">I try to send when I am ready.</p>]]></text>
+	</component>
+	
+	<component id="ID_bubble03">
+		<text><![CDATA[<p id="ID_s1_bubble03" class="ID_s1_bubble03">I try to send when I am ready.</p>]]></text>
+	</component>
+	
+	<component id="ID_txt05">
+		<text><![CDATA[<b>Controlled Access</b>]]></text>
+	</component>
+	
+	<component id="ID_txt06">
+		<text><![CDATA[Shared Media]]></text>
+	</component>
+	
+	<component id="ID_txt08">
+		<text><![CDATA[Frame]]></text>
+	</component>
+	
+	<component id="ID_bubble04">
+		<text><![CDATA[<p id="ID_s1_bubble04" class="ID_s1_bubble04">I have a packet to send, but it is not my turn. I will wait.</p>]]></text>
+	</component>
+	
+	<component id="ID_bubble05">
+		<text><![CDATA[<p id="ID_s1_bubble05" class="ID_s1_bubble05">I have nothing to send.</p>]]></text>
+	</component>
+	
+	<component id="ID_bubble06">
+		<text><![CDATA[<p id="ID_s1_bubble06" class="ID_s1_bubble06">It is my turn to send. I will send now.</p>]]></text>
+	</component>
+	
+	<component id="cross">
+		<text><![CDATA[<p class="ID_s1_bubble07"></p>]]></text>
+	</component>
+	
+</textcomponents>

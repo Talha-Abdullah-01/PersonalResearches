@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>6.3.2.4 Show Version Output</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_6.3.2.4_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Routers</h1>
+        <h2>Router Boot-up</h2>
+      </div>
+      <div id="content">
+          <p>You can use the<span class="cmd"><b> show version </b></span>command to verify and troubleshoot some of the basic hardware and software components of the router. The command displays information about the version of the Cisco IOS software currently running on the router, the version of the bootstrap program, and information about the hardware configuration, including the amount of system memory.</p>
+          <p></p>
+          <p>The output from the<span class="cmd"><b> show version </b></span>command includes:</p>
+          <p>
+            <ul>
+              <li>
+                <b>IOS version - </b>Version of the Cisco IOS software in RAM and that is being used by the router.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>ROM Bootstrap Program - </b>Displays the version of the system bootstrap software, stored in ROM that was initially used to boot up the router.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Location of IOS - </b>Displays where the bootstrap program is located and loaded the Cisco IOS, and the complete filename of the IOS image.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>CPU and Amount of RAM - </b>The first part of this line displays the type of CPU on this router. The last part of this line displays the amount of DRAM. Some series of routers, like the Cisco 1941 ISR, use a fraction of DRAM as packet memory. Packet memory is used for buffering packets. To determine the total amount of DRAM on the router, add both numbers. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Interfaces - </b>Displays the physical interfaces on the router. In this example, the Cisco 1941 ISR has two Gigabit Ethernet interfaces and two low-speed serial interfaces.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <b>Amount of NVRAM and Flash - </b>This is the amount of NVRAM and the amount of flash memory on the router. NVRAM is used to store the startup-config file and flash is used to permanently store the Cisco IOS. </li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The last line of the<span class="cmd"><b> show version </b></span>command displays the current, configured value of the software configuration register in hexadecimal. If there is a second value displayed in parentheses, it denotes the configuration register value that is used during the next reload.</p>
+          <p></p>
+          <p>The configuration register has several uses, including password recovery. The factory default setting for the configuration register is 0x2102. This value indicates that the router attempts to load a Cisco IOS software image from flash memory and load the startup configuration file from NVRAM.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

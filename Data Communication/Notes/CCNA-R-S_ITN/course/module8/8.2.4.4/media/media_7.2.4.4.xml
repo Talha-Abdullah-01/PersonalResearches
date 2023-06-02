@@ -1,0 +1,26 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Router Solicitation and Router Advertisement Messages</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[DHCPv6 Server]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Router Solicitation – To all IPv6 routers</b><br/>"I need addressing information from the router."]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Router Advertisement – To all IPv6 nodes</b><br/>Option 2 (SLAAC and DHCPv6) – "Here is your Prefix, Prefix-length, Default Gateway information, but you will need to get DNS information from a DHCPv6 server."]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>DHCPv6 Solicit – To all DHCPv6 servers</b><br/>Option 2 (SLAAC and DHCPv6) – "I need addressing information from the DHCPv6 server."]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>Note:</b> An RA with option 3 (DHCPv6 Only) enabled will require the client to obtain all information from the DHCPv6 Server.]]></text>
+</component>
+
+</textcomponents>

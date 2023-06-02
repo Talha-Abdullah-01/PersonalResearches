@@ -1,0 +1,15 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Saving to a Text File in Tera Term</b>]]></text>
+</component>
+
+<component id="ID_titleTxT">
+<text><![CDATA[<font size="11"><b>In the terminal session:</b></font>]]></text>
+</component>
+
+<component id="ID_bodyTxt">
+<text><![CDATA[<font size="11">1. <textformat blockindent='18'>Start the log process.</textformat><br/>2. <textformat blockindent='18'>Issue a <b><font face="_typewriter" class="new">show running-config</font></b> command.</textformat><br/>3. <textformat blockindent='18'>Close the log.</textformat></font>]]></text> 
+</component>
+
+</textcomponents>

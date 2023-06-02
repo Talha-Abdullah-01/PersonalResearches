@@ -1,0 +1,11 @@
+﻿<textcomponents>
+
+<component id='ID_s1_titletxt'>
+	<text><![CDATA[<b>Consider some of the following predictions:</b>]]></text>
+</component>
+
+<component id='ID_s1_bodytext'>
+	<text><![CDATA[<textformat blockindent='-16'><ul><li>By 2014, traffic from wireless devices will exceed traffic from wired devices.</li><li>By 2015, the amount of content traversing the Internet annually will be 540,000 times the amount that traveled in 2003.</li><li>By 2015, 90% of all content on the Internet will be video-based.</li><li>By 2015, a million video minutes will traverse the Internet every second.</li><li>By 2016, the annual global IP traffic will surpass the zettabyte threshold (1,180,591,620,717,411,303,424 bytes).</li><li>By 2016, the number of devices connected to IP networks will be nearly three times as high as the global population.</li><li>By 2016, 1.2 million minutes of video content will cross the network every second.</li><li>By 2020, 50 billion devices will be connected to the Internet.</li></ul></textformat>]]></text>
+</component>
+
+</textcomponents>

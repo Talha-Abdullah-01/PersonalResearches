@@ -1,0 +1,29 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>Data Link Sublayers</b>]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Network</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b>Data Link</b>]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[<b>Physical</b>]]></text> 
+  </component>
+  <component id="ID_txt05">
+  <text><![CDATA[LLC Sublayer]]></text> 
+  </component>
+  <component id="ID_txt06">
+  <text><![CDATA[MAC Sublayer]]></text> 
+  </component>
+  <component id="ID_txt07">
+  <text><![CDATA[<b>802.3 Ethernet</b>]]></text> 
+  </component>
+  <component id="ID_txt08">
+  <text><![CDATA[<b>802.11 Wi-Fi</b>]]></text> 
+  </component>
+  <component id="ID_txt09">
+  <text><![CDATA[<b>802.15 Bluetooth</b>]]></text> 
+  </component>
+</textcomponents>

@@ -1,0 +1,153 @@
+﻿<textcomponents>
+
+<component id="ID_table01">
+  <text><![CDATA[<b>Device Category</b>]]></text> 
+  </component>  
+<component id="ID_table02">
+  <text><![CDATA[<b>Function</b>]]></text> 
+  </component>  
+<component id="ID_table03">
+  <text><![CDATA[<b>Representation</b>]]></text> 
+  </component>  
+<component id="ID_table04">
+  <text><![CDATA[<b>End Devices</b>]]></text> 
+  </component>  
+<component id="ID_table05">
+  <text><![CDATA[<b>Intermediary Devices</b>]]></text> 
+  </component>  
+<component id="ID_table06">
+  <text><![CDATA[<b>Network Media</b>]]></text> 
+  </component>    
+  
+ <component id='ID_s1_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+<component id='ID_s1_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>  
+<component id='ID_s2_CHECK'>
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+<component id='ID_s2_RESET'>
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+<component id="ID_s3_CHECK">
+  <text><![CDATA[<b>Check</b>]]></text> 
+  </component>  
+<component id="ID_s3_RESET">
+  <text><![CDATA[<b>Reset</b>]]></text> 
+  </component>  
+  
+<component id="ID_s1_INCORRECT_TITLE">
+  <text><![CDATA[<FONT FACE="_sans"><b>Incorrect</b></FONT>]]></text> 
+  </component>  
+<component id="ID_s1_INCORRECT_BODY">
+  <text><![CDATA[<FONT FACE="_sans">You have not successfully matched the network component functions to the device category. Please click Reset and try again.</FONT>]]></text> 
+  </component> 
+<component id="ID_s2_INCORRECT_TITLE">
+  <text><![CDATA[<FONT FACE="_sans"><b>Incorrect</b></FONT>]]></text> 
+  </component>  
+<component id="ID_s2_INCORRECT_BODY">
+  <text><![CDATA[<FONT FACE="_sans">You have not successfully matched the network component icons to the device category. Please click Reset and try again.</FONT>]]></text> 
+  </component>  
+<component id="ID_s3_INCORRECT_TITLE">
+  <text><![CDATA[<FONT FACE="_sans"><b>Incorrect</b></FONT>]]></text> 
+  </component>  
+<component id="ID_s3_INCORRECT_BODY">
+  <text><![CDATA[<FONT FACE="_sans">You have not successfully matched the network component names to the icons. Please click Reset and try again.</FONT>]]></text> 
+  </component> 
+<component id="ID_s3_CORRECT_TITLE">
+  <text><![CDATA[<FONT FACE="_sans"><b>Correct</b></FONT>]]></text> 
+  </component>  
+<component id="ID_s3_CORRECT_BODY">
+  <text><![CDATA[<FONT FACE="_sans">You have successfully matched the network component names to the icons.</FONT>]]></text> 
+  </component>   
+  
+<component id="ID_s1_inst">
+  <text><![CDATA[<font size='10' class="font10px"><b>Activity - Part 1: Network Component Functions</b><br/>Drag the network component function to its device category.</font>]]></text> 
+  </component>  
+<component id="ID_s1_drag01">
+  <text><![CDATA[Provides an interface between the human network and the communication network.]]></text> 
+  </component>   
+<component id="ID_s1_drag02">
+  <text><![CDATA[Provides a connection for a host to the network and can connect multiple networks to form an internetwork.]]></text> 
+  </component> 
+<component id="ID_s1_drag03">
+  <text><![CDATA[Provides a channel for messages to travel from source to destination.]]></text> 
+  </component> 
+  
+<component id="ID_s2_inst">
+  <text><![CDATA[<font size='10' class="font10px"><b>Activity - Part 2: Network Component Icons</b><br/>Drag the network component icon to its device category.</font>]]></text> 
+  </component>  
+<component id="ID_s2_existing01">
+  <text><![CDATA[<font size='10' class="font10px">Provides an interface between the human network and the communication network.</font>]]></text> 
+  </component> 
+<component id="ID_s2_existing02">
+  <text><![CDATA[<font size='10' class="font10px">Provides a connection for a host to the network and can connect multiple networks to form an internetwork.</font>]]></text> 
+  </component> 
+<component id="ID_s2_existing03">
+  <text><![CDATA[<font size='10' class="font10px">Provides a channel for messages to travel from source to destination.</font>]]></text> 
+  </component> 
+  
+<component id="ID_s3_inst">
+  <text><![CDATA[<font size='10' class="font10px"><b>Activity - Part 3: Network Component Names</b><br/>Drag the network component name to its matching icon.</font>]]></text> 
+  </component>
+  
+<component id="ID_s3_existing01">
+  <text><![CDATA[Provides an interface between the human network and the communication network.]]></text> 
+  </component> 
+<component id="ID_s3_existing02">
+  <text><![CDATA[Provides a connection for a host to the network and can connect multiple networks to form an internetwork.]]></text> 
+  </component> 
+<component id="ID_s3_existing03">
+  <text><![CDATA[Provides a channel for messages to travel from source to destination.]]></text> 
+  </component>   
+  
+<component id="ID_s3_drag01">
+  <text><![CDATA[Laptop]]></text> 
+  </component>  
+<component id="ID_s3_drag02">
+  <text><![CDATA[Printer]]></text> 
+  </component> 
+<component id="ID_s3_drag03">
+  <text><![CDATA[Wireless Tablet]]></text> 
+  </component> 
+<component id="ID_s3_drag04">
+  <text><![CDATA[Desktop Computer]]></text> 
+  </component> 
+<component id="ID_s3_drag05">
+  <text><![CDATA[IP Phone]]></text> 
+  </component> 
+<component id="ID_s3_drag06">
+  <text><![CDATA[TelePresence Endpoint]]></text> 
+  </component> 
+<component id="ID_s3_drag07">
+  <text><![CDATA[Wireless Router]]></text> 
+  </component> 
+<component id="ID_s3_drag08">
+  <text><![CDATA[Router]]></text> 
+  </component> 
+<component id="ID_s3_drag09">
+  <text><![CDATA[Firewall Appliance]]></text> 
+  </component> 
+<component id="ID_s3_drag10">
+  <text><![CDATA[LAN Switch]]></text> 
+  </component> 
+<component id="ID_s3_drag11">
+  <text><![CDATA[Multilayer Switch]]></text> 
+  </component> 
+<component id="ID_s3_drag12">
+  <text><![CDATA[WAN Media]]></text> 
+  </component> 
+<component id="ID_s3_drag13">
+  <text><![CDATA[Wireless Media]]></text> 
+  </component> 
+<component id="ID_s3_drag14">
+  <text><![CDATA[LAN Media]]></text> 
+  </component>   
+  
+<component id="transcript">
+  <text><![CDATA[<b>transcript goes here</b>]]></text> 
+  </component>
+  
+</textcomponents>

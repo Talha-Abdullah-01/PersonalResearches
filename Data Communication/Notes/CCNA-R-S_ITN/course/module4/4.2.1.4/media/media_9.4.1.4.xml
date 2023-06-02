@@ -1,0 +1,23 @@
+﻿<textcomponents>
+<!-- slide-1  -->
+	<component id="ID_title">
+		<text><![CDATA[]]></text>
+	</component>
+
+	<component id="ID_txt01">
+		<text><![CDATA[Jacket]]></text> 
+	</component>
+
+	<component id="ID_txt02">
+		<text><![CDATA[Braided or Foil Shield]]></text> 
+	</component>
+	
+	<component id="ID_txt03">
+		<text><![CDATA[Foil Shields]]></text> 
+	</component>
+
+	<component id="ID_txt04">
+		<text><![CDATA[Twisted-Pairs]]></text> 
+	</component>
+	
+</textcomponents>

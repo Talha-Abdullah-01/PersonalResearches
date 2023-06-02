@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>7.0.1.1 Introduction</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_7.0.1.1_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Transportation Layer</h1>
+        <h2>Introduction</h2>
+      </div>
+      <div id="content">
+          <p>Data networks and the Internet support the human network by supplying reliable communication between people. On a single device, people can use multiple applications and services such as email, the web, and instant messaging to send messages or retrieve information. Applications such as email clients, web browsers, and instant messaging clients allow people to use computers and networks to send messages and find information.</p>
+          <p></p>
+          <p>Data from each of these applications is packaged, transported, and delivered to the appropriate application on the destination device. The processes described in the OSI transport layer accept data from the application layer and prepare it for addressing at the network layer. The transport layer <b>prepares</b> data for transmission across the network. A source computer communicates with a receiving computer to decide how to break up data into <b>segments</b>, how to make sure none of the segments get lost, and how to verify all the segments arrived. When thinking about the transport layer, think of a shipping department preparing a single order of multiple packages for delivery. </p>
+          <p></p>
+          <p>In this chapter, we examine the role of the transport layer in encapsulating application data for use by the network layer. The transport layer also encompasses these functions: </p>
+          <p>
+            <ul>
+              <li>Enables multiple applications such as emailing and social networking to communicate over the network at the same time on a single device </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Ensures that, if required, all the data is received reliably and in order by the correct application</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Employs error handling mechanisms</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Learning Objectives</b>
+          </p>
+          <p></p>
+          <p>Upon completion of this chapter, you will be able to:</p>
+          <p>
+            <ul>
+              <li>Explain the need for the transport layer.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Identify the role of the transport layer as it provides the end-to-end transfer of data between applications.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Describe the role of two TCP/IP transport layer protocols: TCP and UDP.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Explain the key functions of the transport layer, including reliability, port addressing, and segmentation.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Explain how TCP and UDP each handle key functions.</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Identify when it is appropriate to use TCP or UDP and provide examples of applications that use each protocol.</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

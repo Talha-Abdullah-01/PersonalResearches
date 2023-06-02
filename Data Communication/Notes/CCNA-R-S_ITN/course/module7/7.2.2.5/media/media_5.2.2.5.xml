@@ -1,0 +1,87 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>TCP Congestion and Flow Control</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[Sender]]></text>
+</component>
+
+<component id="ID_txt02">
+  <text><![CDATA[Sequence number 1]]></text> 
+  </component>
+  
+<component id="ID_txt03">
+  <text><![CDATA[Sequence number 1501]]></text> 
+  </component>
+  
+<component id="ID_txt04">
+  <text><![CDATA[Receive Acknowledge]]></text> 
+  </component>
+  
+<component id="ID_txt05">
+  <text><![CDATA[Sequence number 3001]]></text> 
+  </component>
+  
+<component id="ID_txt06">
+    <text><![CDATA[Sequence number 4501]]></text> 
+  </component>
+  
+<component id="ID_txt07">
+<text><![CDATA[Receive Acknowledge]]></text>
+</component>
+
+<component id="ID_txt08">
+  <text><![CDATA[<b>Window size = 3000</b>]]></text> 
+  </component>
+  
+<component id="ID_txt09">
+  <text><![CDATA[1500 bytes]]></text> 
+  </component>
+  
+<component id="ID_txt10">
+  <text><![CDATA[1500 bytes]]></text> 
+  </component>
+  
+<component id="ID_txt11">
+  <text><![CDATA[1500 bytes]]></text> 
+  </component>
+  
+<component id="ID_txt12">
+    <text><![CDATA[1500 bytes]]></text> 
+  </component>
+  
+<component id="ID_txt13">
+<text><![CDATA[Receiver]]></text>
+</component>
+
+<component id="ID_txt14">
+  <text><![CDATA[Receive 1 - 1500]]></text> 
+  </component>
+  
+<component id="ID_txt15">
+  <text><![CDATA[Receive 1501 - 3000]]></text> 
+  </component>
+  
+<component id="ID_txt16">
+  <text><![CDATA[Acknowledgement number 3001]]></text> 
+  </component>
+  
+<component id="ID_txt17">
+  <text><![CDATA[Segment 3 is lost because of congestion at the receiver.]]></text> 
+  </component>
+  
+<component id="ID_txt18">
+    <text><![CDATA[Receive 4501 - 6000]]></text> 
+  </component>
+  
+<component id="ID_txt19">
+  <text><![CDATA[Acknowledgement number 3001<br>Window size = 1500]]></text> 
+  </component>
+  
+<component id="ID_txt20">
+    <text><![CDATA[If segments are lost because of congestion, the receiver will acknowledge the last received sequential segment and reply with a reduced window size.]]></text> 
+  </component>
+  
+</textcomponents> 

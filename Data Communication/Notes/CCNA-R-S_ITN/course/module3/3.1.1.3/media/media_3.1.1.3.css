@@ -1,0 +1,124 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media.css');
+
+html, body {
+	margin:0;
+	height:100%;
+}
+#flashContent {
+	width:98%;
+	height:98%;
+	overflow:hidden !important;
+}
+#mainDiv
+{
+width:413px;
+height:400px;
+position:absolute;
+top:0px;
+}
+
+#main_wrapper{width:408px;height:340px;position: absolute;}
+
+#boyandgirlcontaioner{width:320px;height:auto;position:absolute;top:81px;left:0px;}
+
+#boyandgirl{width:220px;height:194px;background:url(3_1_1_3.png)center center no-repeat;top:49px;left:77px;position:absolute;}
+
+#girlText{height: 20px;left:86px;position: absolute;top: 235px;width: 75px;font-size:10px;text-align:center;line-height:10px;opacity:0;}
+#boyText{height: 20px;left:208px;position: absolute;top: 235px;width:75px;font-size:10px;text-align:center;line-height:10px;opacity:0;}
+
+#girlsun{ height: 81px;
+    left: 2px;
+    position: absolute;
+    top: -65px;
+    width: 80px;}
+
+#boysun{ height: 90px;
+    left: 143px;
+    position: absolute;
+    top: -65px;
+    width: 89px;
+    z-index: -1;}
+	
+#boysun1{height: 90px;
+    left: 144px;
+    position: absolute;
+    top: -65px;
+    width: 89px;
+    z-index: -1;}
+	
+	#pulse{height: 50px;
+    left: 57px;
+    position: absolute;
+    top: 10px;
+    width: 127px;}
+
+
+#computercontiner{width:320px;height:auto;position:absolute;top:103px;left:37px;}
+
+#computercomp{width:285px;height:163px;position:relative;top:0px;left:0px;background:url("3_1_1_3_sys.png") top center no-repeat;}
+
+#secondcomp{width:90px;height:74px;position:relative;top:-35px;left:235px;background:url("computer.png") top center no-repeat;}
+
+#envlope{width:30px;height:19px;position:relative;top:-19px;left:23px;background:url("envelope.png") top center no-repeat;}
+#light{width:5px;height:5px;position:relative;top:-8px;left:38px;}
+#envelop{width:30px;height:19px;position:relative;top:-22px;left:23px;}
+
+#sysimage{width:50px;height:36px;position:relative;top:8px;left:15px;border:0;}
+#sysimagelast{width:50px;height:36px;position:relative;top:7px;left:15px;border:0;}
+#sourtext{
+    font-size: 10px;
+    height: 20px;
+    left: 0;
+    line-height: 9px;
+    position: absolute;
+    text-align: center;
+    top: 83px;
+    width: 62px;
+	opacity:0;
+	}
+	
+	#desttext
+{
+    font-size: 10px;
+    height: 20px;
+    left: 0;
+    line-height: 9px;
+    position: absolute;
+    text-align: center;
+    top: 77px;
+    width: 66px;
+	opacity:0;
+	}
+#toparrow{width:360px;height:auto;position:absolute;top:40px;left:5px;}
+
+#arrowtextbox{width:340px;height:8px;position:absolute;top:40px;left:15px;background:url("arrow2.png") top center no-repeat;}
+
+#text1{height:17px;left:1px;position:relative;text-align: center;top:-20px;width: 51px;font-size:10px;}
+
+#text2{height: 17px;left:47px;position:relative;text-align: center;top:-37px;width: 51px;font-size:10px;}
+
+#text3{height: 17px;left:244px;position: absolute;text-align: center;top:-18px;width: 50px;font-size:10px;}
+
+#text4{height: 17px;left:297px;position: absolute;text-align: center;top:-18px;width: 51px;font-size:10px;}
+
+#text5{background: none repeat scroll 0 0 #C1ABD1;border-radius:5px 5px 5px 5px;font-size:10px;
+    height:20px;left:-37px;line-height:9px;padding: 5px;position:absolute;top:-4px;width:46.5px;text-align:center;}
+	
+#text11{background: none repeat scroll 0 0 #C1ABD1;border-radius: 5px 5px 5px 5px;font-size: 10px;height: 19px;left:321px;
+    line-height: 9px;padding: 5px;position:absolute;text-align: center;top: -4px;width: 52.5px;}
+	
+#text6{background: none repeat scroll 0 0 #C1ABD1;border-radius:5px 5px 5px 5px;font-size:10px;
+    height:12px;left:26px;line-height: 9px;padding:5px;position: absolute;top:-4px;width:39.5px;text-align:center}
+
+#text7{background: none repeat scroll 0 0 #C1ABD1;border-radius:5px 5px 5px 5px;font-size:9px;
+    height:11px;left:83px;line-height: 9px;padding:5px 5px 5px 2px;position: absolute;top:-4px;width:45.5px;text-align:center}
+	
+#text8{ background: none repeat scroll 0 0 #C1ABD1;border-radius: 5px 5px 5px 5px;font-size: 9px;height:30px;left:142px;line-height:9px;padding: 5px 5px 5px 2px;position: absolute;text-align: center;top: -4px;width:58.5px;}
+
+#text9{background: none repeat scroll 0 0 #C1ABD1;border-radius: 5px 5px 5px 5px;font-size: 10px;height: 12px;left:215px;line-height: 9px;padding:5px 5px 5px 2px;position:absolute;top: -4px;width:37.5px;text-align:center;}
+
+#text10{background: none repeat scroll 0 0 #C1ABD1;border-radius: 5px 5px 5px 5px;font-size: 10px;height: 12px;left: 268px;line-height: 9px;padding:5px 5px 5px 2px;position: absolute;top: -4px;width:39px;text-align:center}
+	

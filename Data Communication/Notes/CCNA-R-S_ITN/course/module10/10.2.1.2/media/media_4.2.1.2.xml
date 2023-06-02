@@ -1,0 +1,62 @@
+﻿<textcomponents>
+<component id="ID_s1_title">
+<text><![CDATA[<b>HTTP Protocol</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[HTTP Server]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Network]]></text>
+</component>
+<component id="ID_txt03">
+<text><![CDATA[Client]]></text> 
+</component>
+  
+  
+<component id="ID_s2_title">
+<text><![CDATA[<b>HTTP Protocol Step 1</b>]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[Request a page]]></text> 
+</component>
+
+<component id="ID_s2_txt02">
+<text><![CDATA[The client initiates an HTTP request to a server.]]></text> 
+</component> 
+
+<component id="ID_s3_title">
+<text><![CDATA[<b>HTTP Protocol Step 2</b>]]></text>
+</component>
+
+<component id="ID_s3_txt01">
+<text><![CDATA[HTTP Response]]></text> 
+</component>
+
+<component id="ID_s3_txt02">
+<text><![CDATA[<b>HTTP Response</b>]]></text> 
+</component>
+
+<component id="ID_s3_txt03">
+<text><![CDATA[HTML code for web page</br>]]></text> 
+</component>
+
+<component id="ID_s3_txt04">
+<text><![CDATA[In response to the request, the HTTP server returns code for a web page.]]></text> 
+</component>
+
+<component id="ID_s4_title">
+<text><![CDATA[<b>HTTP Protocol Step 3</b>]]></text>
+</component>
+<component id="ID_s4_txt01">
+<text><![CDATA[<b>Web Page</b>]]></text> 
+</component>
+<component id="ID_s4_txt02">
+<text><![CDATA[The browser interprets the HTML code and displays a web page.]]></text> 
+</component>
+
+
+
+</textcomponents>

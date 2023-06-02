@@ -1,0 +1,59 @@
+﻿<textcomponents>
+  <component id='ID_table'>
+  
+     <text>
+      <![CDATA[ <table header='none' bordercolor='#98D3D1' borderwidth='3' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+        
+		 		
+		<tr class="liner">
+        
+		<td colspan='3' bgcolor='#0E6360' class="mtable_top"><font size='1' color='#0E6360'><span style="color:#98D3D1">.</span></font></td>
+	    </tr> 
+      
+        <tr>
+          <td width='90px' bgcolor='#077A77' ><font  color='#ffffff'><b>Memory </b></font></td>
+          <td width='130px' bgcolor='#077A77'><font  color='#ffffff'><b>Volatile / Non-Volatile</b></font></td>
+          <td width='220px' bgcolor='#077A77' ><font  color='#ffffff'><b>Stores</b></font>
+          </td>
+        </tr>
+        <tr>
+          <td  bgcolor='#EFF8F7' valign="top"><font color='#393536'>RAM</font></td>
+          <td  bgcolor='#EFF8F7' valign="top"><font  color='#393536'>Volatile</font></td>
+          <td bgcolor='#EFF8F7' valign="top"><font color='#393536'><li><textformat blockindent='-14'>Running IOS</textformat></li>
+          <li><textformat blockindent='-14'>Running configuration file</textformat></li>
+          <li><textformat blockindent='-14'>IP routing and ARP tables</textformat></li>
+          <li><textformat blockindent='-14'>Packet buffer</textformat></li>
+          </font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'>ROM</font></td>
+          <td bgcolor='#FFFFFF' valign="top"><font  color='#393536'>Non-Volatile</font></td> 
+          <td bgcolor='#FFFFFF' valign="top"><font color='#393536'><li><textformat blockindent='-14'>Bootup instructions</textformat></li>
+          <li><textformat blockindent='-14'>Basic diagnostic software</textformat></li>
+          <li><textformat blockindent='-14'>Limited IOS</textformat></li>
+          </font></td>
+        </tr>
+        <tr>
+          <td bgcolor='#EFF8F7' valign="top"><font color='#393536'>NVRAM</font>
+          </td>
+          <td bgcolor='#EFF8F7' valign="top">
+            <font  color='#393536' >Non-Volatile</font>
+          </td>
+          <td bgcolor='#EFF8F7' valign="top"><font  color='#393536'>
+            <li><textformat blockindent='-14'>Startup configuration file</textformat></li>
+          </font></td>
+        </tr>
+         <tr>
+          <td bgcolor='#FFFFFF' valign="top"><font  color='#393536'>Flash</font></td>
+          <td bgcolor='#FFFFFF' valign="top">
+            <font  color='#393536'>Non-Volatile</font>
+          </td>
+          <td width='170' bgcolor='#FFFFFF' valign="top"><font  color='#393536'>
+             <li><textformat blockindent='-14'>IOS</textformat></li>
+             <li><textformat blockindent='-14'>Other system files</textformat></li>
+          </font></td>
+        </tr>         
+      </table>]]>
+    </text>
+  </component>
+</textcomponents>

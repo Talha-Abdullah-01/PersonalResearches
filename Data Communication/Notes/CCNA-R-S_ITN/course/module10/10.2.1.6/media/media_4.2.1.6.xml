@@ -1,0 +1,48 @@
+﻿<textcomponents>
+<component id="ID_caption01">
+<text><![CDATA[The Mail Delivery Agent process governs delivery of email between servers and clients.]]></text>
+</component>
+<component id="ID_title">
+<text><![CDATA[<b>Email Server - MDA</b>]]></text> 
+</component>
+<component id="ID_txt01">
+<text><![CDATA[<b>Mail User Agent<br>(MUA)</b>]]></text>
+</component> 
+
+<component id="ID_txt03">
+  <text><![CDATA[Recipient]]></text> 
+  </component>
+
+<component id="ID_txt04">
+  <text><![CDATA[SMTP/POP3<br>Server]]></text> 
+  </component>
+  <component id="ID_txt05">
+  <text><![CDATA[<b>Mail Delivery Agent&nbsp;(MDA)</b>]]></text> 
+  </component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>Mail Transfer Agent<br>(MTA)</b>]]></text> 
+</component>
+<component id="ID_txt07">
+<text><![CDATA[SMTP/POP3<br>Server]]></text> 
+</component> 
+
+
+<component id="ID_txt09">
+<text><![CDATA[<b>Mail User Agent<br>(MUA)</b>]]></text>
+</component> 
+
+<component id="ID_txt11">
+  <text><![CDATA[Sender]]></text> 
+  </component> 
+<component id="ID_txt12">
+  <text><![CDATA[<b>Send email</b>]]></text> 
+  </component>
+
+<component id="ID_bubble01">
+  <text><![CDATA[<p class="ID_bubble01">I do not have the recipient listed.<br/>I have forwarded the email to another server.</p>]]></text> 
+</component>
+<component id="ID_bubble02">
+  <text><![CDATA[<p class="ID_bubble02 left">I have recipient@domain.com listed.<br/>I will place this email in the recipient's mailbox.</p>]]></text> 
+  </component>
+</textcomponents>

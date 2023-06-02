@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>2.2.2.3 Securing User EXEC Access</title>
+    <!--  -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_2.2.2.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Getting Basic</h1>
+        <h2>Limiting Access to Device Configurations</h2>
+      </div>
+      <div id="content">
+          <p>The console port of network devices must be secured, at a bare minimum, by requiring the user to supply a strong password. This reduces the chance of unauthorized personnel physically plugging a cable into the device and gaining device access.</p>
+          <p></p>
+          <p>The following commands are used in global configuration mode to set a password for the console line:</p>
+          <p></p>
+          <p>
+            <span class="cmd">Switch(config)#</span>
+            <span class="cmd">
+              <b>line console 0</b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">Switch(config-line)#</span>
+            <span class="cmd">
+              <b>password cisco</b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">Switch(config-line)#</span>
+            <span class="cmd">
+              <b>login</b>
+            </span>
+          </p>
+          <p></p>
+          <p>From global configuration mode, the command<span class="cmd"><b> line console 0 </b></span>is used to enter line configuration mode for the console. The zero is used to represent the first (and in most cases only) console interface.</p>
+          <p></p>
+          <p>The second command,<span class="cmd"><b> password cisco </b></span>specifies a password for the console line. </p>
+          <p></p>
+          <p>The<span class="cmd"><b> login </b></span>command configures the switch to require authentication upon login. When login is enabled and a password set, the console user will be prompted to enter a password before gaining access to the CLI. </p>
+          <p></p>
+          <p>
+            <b>VTY Password</b>
+          </p>
+          <p></p>
+          <p>The vty lines allow access to a Cisco device via Telnet. By default, many Cisco switches support up to 16 vty lines that are numbered 0 to 15. The number of vty lines supported on a Cisco router varies with the type of router and the IOS version. However, five is the most common number of vty lines configured. These lines are numbered 0 to 4 by default, though additional lines can be configured. A password needs to be set for all available vty lines. The same password can be set for all connections. However, it is often desirable that a unique password be set for one line to provide a fall-back for administrative entry to the device if the other connections are in use.</p>
+          <p></p>
+          <p>Example commands used to set a password on vty lines: </p>
+          <p></p>
+          <p>
+            <span class="cmd">Switch(config)#</span>
+            <span class="cmd">
+              <b>line vty 0 15</b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">Switch(config-line)#</span>
+            <span class="cmd">
+              <b>password cisco</b>
+            </span>
+          </p>
+          <p>
+            <span class="cmd">Switch(config-line)#</span>
+            <span class="cmd">
+              <b>login</b>
+            </span>
+          </p>
+          <p></p>
+          <p>By default, the IOS includes the<span class="cmd"><b> login </b></span>command on the VTY lines. This prevents Telnet access to the device without authentication. If, by mistake, the<span class="cmd"><b> no login </b></span>command is set, which removes the requirement for authentication, unauthorized persons could connect across the network to the line using Telnet. This would be a major security risk.</p>
+          <p></p>
+          <p>The figure illustrates the securing of the user EXEC access on the console and Telnet lines.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

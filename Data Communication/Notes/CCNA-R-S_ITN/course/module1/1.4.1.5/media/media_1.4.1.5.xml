@@ -1,0 +1,86 @@
+﻿<textcomponents>
+<!-- slide 2 -->
+<component id="ID_txt01">
+	<text><![CDATA[Custom:<br>Healthcare]]></text>
+	</component>
+	<component id="ID_txt02">
+	  <text><![CDATA[Custom:<br>Government]]></text> 
+	  </component>
+	<component id="ID_txt03">
+	  <text><![CDATA[Public]]></text> 
+	  </component>
+	<component id="ID_txt04">
+	  <text><![CDATA[Custom:<br>And More]]></text> 
+	  </component>
+	<component id="ID_txt05">
+	  <text><![CDATA[Private:<br>Hometown News]]></text> 
+	  </component>
+	<component id="ID_txt06">
+	  <text><![CDATA[Custom:<br>Media]]></text> 
+	  </component>
+	<component id="ID_txt07">
+	  <text><![CDATA[Hybrid]]></text> 
+	  </component>
+
+	  <component id="ID_btn01_header">
+	  <text><![CDATA[Custom clouds]]></text> 
+	  </component>
+
+	    <component id="ID_btn01_body">
+	  <text><![CDATA[These are clouds built to meet the needs of a specific industry, such as healthcare or media. Custom clouds can be private or public.]]></text> 
+	  </component>
+
+	    <component id="ID_btn02_header">
+	  <text><![CDATA[Custom clouds]]></text> 
+	  </component>
+
+	    <component id="ID_btn02_body">
+	  <text><![CDATA[These are clouds built to meet the needs of a specific industry, such as healthcare or media. Custom clouds can be private or public.]]></text> 
+	  </component>
+
+	    <component id="ID_btn03_header">
+	  <text><![CDATA[Custom clouds]]></text> 
+	  </component>
+
+	    <component id="ID_btn03_body">
+	  <text><![CDATA[These are clouds built to meet the needs of a specific industry, such as healthcare or media. Custom clouds can be private or public.]]></text> 
+	  </component>
+
+	     <component id="ID_btn07_header">
+	  <text><![CDATA[Custom clouds]]></text> 
+	  </component>
+
+	    <component id="ID_btn07_body">
+	  <text><![CDATA[These are clouds built to meet the needs of a specific industry, such as healthcare or media. Custom clouds can be private or public.]]></text> 
+	  </component>
+
+	     <component id="ID_btn04_header">
+	  <text><![CDATA[Hybrid clouds]]></text> 
+	  </component>
+
+	    <component id="ID_btn04_body">
+	  <text><![CDATA[A hybrid cloud is made up of two or more clouds (example: part custom, part public), where each part remains a distinctive object, but both are connected using a single architecture. Individuals on a hybrid cloud would be able to have degrees of access to various services based on user access rights.]]></text> 
+	  </component>
+
+
+	      <component id="ID_btn05_header">
+	  <text><![CDATA[Public clouds]]></text> 
+	  </component>
+
+	    <component id="ID_btn05_body">
+	  <text><![CDATA[Cloud-based applications and services offered in a public cloud are made available to the general population. Services may be free or are offered on a pay-per-use model, such as paying for online storage. The public cloud uses the Internet to provide services.]]></text> 
+	  </component>
+
+	      <component id="ID_btn06_header">
+	  <text><![CDATA[Private clouds]]></text> 
+	  </component>
+
+	    <component id="ID_btn06_body">
+	  <text><![CDATA[Cloud-based applications and services offered in a private cloud are intended for a specific organization or entity, such as the government. A private cloud can be set up using the organization’s private network, though this can be expensive to build and maintain. A private cloud can also be managed by an outside organization with strict access security.]]></text> 
+	  </component>
+
+	  
+	
+
+	  
+</textcomponents>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.3.2.2 Packet Tracer - Test Connectivity with Traceroute </title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.3.2.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Basic Network Performance</h1>
+        <h2>Tracert</h2>
+      </div>
+      <div id="content">
+          <p>This activity is designed to help you troubleshoot network connectivity issues using commands to trace the route from source to destination. You are required to examine the output of<span class="cmd"><b> tracert </b></span>(the Windows command) and<span class="cmd"><b> traceroute </b></span>(the IOS command) as packets traverse the network and determine the cause of a network issue. After the issue is corrected, use the<span class="cmd"><b> tracert </b></span>and<span class="cmd"><b> traceroute </b></span>commands to verify the completion.</p>
+          <p></p>
+          <p>
+            <a href="../../files/11.3.2.2%20Packet%20Tracer%20-%20Test%20Connectivity%20with%20Traceroute%20Instructions.pdf" target="_blank"> Packet Tracer - Test Connectivity with Traceroute Instructions</a>
+          </p>
+          <p></p>
+          <p>
+            <a href="../../files/11.3.2.2%20Packet%20Tracer%20-%20Test%20Connectivity%20with%20Traceroute.pka" target="_blank"> Packet Tracer - Test Connectivity with Traceroute - PKA</a>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

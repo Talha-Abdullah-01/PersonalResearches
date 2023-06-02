@@ -1,0 +1,44 @@
+<textcomponents>
+	<component id="ID_title">
+		<text><![CDATA[<b>Extra 4 Bytes Allows for QoS and VLAN Technologies</b>]]></text> 
+	</component>
+	<component id="ID_txt01">
+		<text><![CDATA[4 Bytes]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[Destination Address]]></text> 
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[Source Address]]></text> 
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[802.1Q<br/> VLAN Tag]]></text> 
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[Type/len]]></text> 
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[Data]]></text>
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[Frame Check]]></text> 
+	</component>
+	<component id="ID_txt08">
+		<text><![CDATA[2 Bytes]]></text> 
+	</component>
+	<component id="ID_txt09">
+		<text><![CDATA[2 Bytes (Tag Control Information)]]></text> 
+	</component>
+	<component id="ID_txt10">
+		<text><![CDATA[Tag Protocol ID 0x8100]]></text> 
+	</component>
+	<component id="ID_txt11">
+		<text><![CDATA[User Priority<br>(3 Bits)]]></text> 
+	</component>
+	<component id="ID_txt12">
+		<text><![CDATA[Canonical Format Indicator (1 Bit)]]></text> 
+	</component>
+	<component id="ID_txt13">
+		<text><![CDATA[VLAN ID (12 Bits)]]></text> 
+	</component>
+</textcomponents>

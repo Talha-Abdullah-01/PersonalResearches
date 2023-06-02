@@ -1,0 +1,36 @@
+<textcomponents>
+   <component id="ID_title">
+      <text><![CDATA[<b>Redundancy to a Server Farm</b>]]></text>
+      </component>
+
+<component id="ID_btn01_header">
+   <text><![CDATA[<b>Server Farm</b>]]></text>
+   </component>
+<component id="ID_btn01_body">
+   <text><![CDATA[If one server fails, another is there to handle customer requests.]]></text>
+   </component>
+<component id="ID_btn02_header">
+   <text><![CDATA[<b>Links</b>]]></text>
+   </component>
+<component id="ID_btn02_body">
+   <text><![CDATA[If the link to one switch fails, the link to the second switch is still available.]]></text>
+   </component>
+<component id="ID_btn03_header">
+   <text><![CDATA[<b>Switches</b>]]></text>
+   </component>
+<component id="ID_btn03_body">
+   <text><![CDATA[Redundant switches are present to avoid a switching failure.]]></text>
+   </component>
+<component id="ID_btn04_header">
+   <text><![CDATA[<b>Routers</b>]]></text>
+   </component>
+<component id="ID_btn04_body">
+   <text><![CDATA[Router redundancy can help to ensure that application transactions received from external traffic can be handled in the event of a router or route failure.]]></text>
+   </component>
+
+<component id="ID_inst">
+   <text><![CDATA[Click the blue highlighted devices and connections for more information.]]></text>
+   </component>  
+  
+   
+</textcomponents>

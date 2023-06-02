@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>5.3.3.4 Configuring a Routed Port on a Layer 3 Switch</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_5.3.3.4_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>LAN Switches</h1>
+        <h2>Layer 3 Switching</h2>
+      </div>
+      <div id="content">
+          <p>A switch port can be configured to be a Layer 3 routed port and behave like a regular router interface. Specifically, a routed port:</p>
+          <p>
+            <ul>
+              <li>Is not associated with a particular VLAN. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Can be configured with a Layer 3 routing protocol. </li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Is a Layer 3 interface only and does not support Layer 2 protocol.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>Configure routed ports by putting the interface into Layer 3 mode with the<span class="cmd"><b> no switchport </b></span>interface configuration command. Then assign an IP address to the port. That's it! </p>
+          <p></p>
+          <p>You will learn more about the functions of routing in the next chapter.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

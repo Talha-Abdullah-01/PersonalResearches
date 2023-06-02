@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>4.4.3.5 Controlled Access</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_4.4.3.5_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Media Access Control</h1>
+        <h2>LAN Topologies</h2>
+      </div>
+      <div id="content">
+          <p>When using the controlled access method, network devices take turns, in sequence, to access the medium. If an end device does not need to access the medium, then the opportunity passes to the next end device. This process is facilitated by use of a token. An end device acquires the token and places a frame on the media, no other device can do so until the frame has arrived and been processed at the destination, releasing the token. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: This method is also known as scheduled access or deterministic.</p>
+          <p></p>
+          <p>Although controlled access is well-ordered and provides predictable throughput, deterministic methods can be inefficient because a device has to wait for its turn before it can use the medium.</p>
+          <p></p>
+          <p>Controlled access examples include:</p>
+          <p>
+            <ul>
+              <li>Token Ring (IEEE 802.5)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Fiber Distributed Data Interface (FDDI) which is based on the IEEE 802.4 token bus protocol.</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>
+            <b>Note</b>: Both of these media access control methods are considered obsolete. </p>
+          <p></p>
+          <p>The figure illustrates the following:</p>
+          <p>
+            <ul>
+              <li>How controlled access methods operate</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Characteristics of controlled access methods</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Examples of controlled access methods</li>
+            </ul>
+          </p>
+          <p></p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

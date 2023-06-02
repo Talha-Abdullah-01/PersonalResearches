@@ -1,0 +1,15 @@
+<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[Shows the USB port and name: “usbflash0:”]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Copying to USB flash drive, and no file pre-exists.]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Copying to USB flash drive, and the same configuration file already exists on the drive.]]></text>
+</component>
+
+</textcomponents>

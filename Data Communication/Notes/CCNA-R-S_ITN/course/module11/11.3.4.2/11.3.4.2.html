@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>11.3.4.2 arp Command Options</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout;
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_11.3.4.2_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>Basic Network Performance</h1>
+        <h2>Host and IOS Commands</h2>
+      </div>
+      <div id="content">
+          <p>The<span class="cmd"><b> arp </b></span>command enables the creation, editing, and display of mappings of physical addresses to known IPv4 addresses. The<span class="cmd"><b> arp </b></span>command is executed from the Windows command prompt. </p>
+          <p></p>
+          <p>To execute an<span class="cmd"><b> arp </b></span>command, at the command prompt of a host, enter:</p>
+          <p></p>
+          <p>
+            <span class="cmd">C:\host1></span>
+            <span class="cmd">
+              <b>arp -a</b>
+            </span>
+          </p>
+          <p></p>
+          <p>As shown in the figure the<span class="cmd"><b> arp –a </b></span>command lists all devices currently in the ARP cache of the host, which includes the IPv4 address, physical address, and the type of addressing (static/dynamic), for each device. </p>
+          <p></p>
+          <p>The cache can be cleared by using the<span class="cmd"><b> arp -d </b></span>command in the event the network administrator wants to repopulate the cache with updated information. </p>
+          <p></p>
+          <p>
+            <b>Note</b>: The ARP cache only contains information from devices that have been recently accessed. To ensure that the ARP cache is populated, ping a device so that it will have an entry in the ARP table.</p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>Instant Messaging</b>]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Weblog</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b>Podcasting</b>]]></text> 
+  </component>
+  <component id="ID_txt04">
+<text><![CDATA[Instant messaging is everywhere and can include audio and video conversations. IM can send text messages to mobile phones.]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[You can listen to your favorite radio show on your portable audio player whenever you have the time  and wherever you are. Every time a new show becomes available, it can be automatically downloaded.]]></text>
+</component>
+<component id="ID_txt05">
+<text><![CDATA[You can express your thoughts online, share your photos, and join a community of fellow thinkers.]]></text>
+</component>
+
+</textcomponents>

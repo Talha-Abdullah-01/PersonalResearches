@@ -1,0 +1,193 @@
+﻿<textcomponents>
+
+<component id='ID_s1_inst'>
+	<text><![CDATA[<b>Activity</b><br><br>Drag the Ethernet frame field name to its description.
+
+]]></text>
+</component>
+
+<component id='ID_s1_txt01'>
+	<text><![CDATA[Uses Pad to increase this frame field to at least 64 bytes]]></text>
+</component>
+
+<component id='ID_s1_txt02'>
+	<text><![CDATA[Describes which higher-level protocol has been used]]></text>
+</component>
+
+<component id='ID_s1_txt03'>
+	<text><![CDATA[The frame’s originating NIC or interface MAC address]]></text>
+</component>
+
+<component id='ID_s1_txt04'>
+	<text><![CDATA[Assists a host in determining if the frame received is addressed to it]]></text>
+</component>
+
+<component id='ID_s1_txt05'>
+	<text><![CDATA[Notifies destinations to get ready for a new frame]]></text>
+</component>
+<component id='ID_s1_txt06'>
+	<text><![CDATA[Synchronizes sending and receiving devices for frame delivery]]></text>
+</component>
+
+<component id='ID_s1_txt07'>
+	<text><![CDATA[Detects errors in an Ethernet frame]]></text>
+</component>
+
+<component id='ID_s1_txt08'>
+	<text><![CDATA[<b>Field Name</b>]]></text>
+</component>
+
+<component id='ID_s1_txt09'>
+	<text><![CDATA[<b>802.3 Ethernet Frame Field Descriptions</b>]]></text>
+</component>
+
+<!--Drag and Drop-->
+<component id='ID_s1_traget01'>
+	<text><![CDATA[<font color="#393536">802.2 Header and Data</font>]]></text>
+</component>
+
+<component id='ID_s1_traget02'>
+	<text><![CDATA[<font color="#393536">Frame Check Sequence</font>]]></text>
+</component>
+
+<component id='ID_s1_traget03'>
+	<text><![CDATA[<font color="#393536">Type</font>]]></text>
+</component>
+
+<component id='ID_s1_traget04'>
+	<text><![CDATA[<font color="#393536">Start of Frame Delimiter </font>]]></text>
+</component>
+
+<component id='ID_s1_traget05'>
+	<text><![CDATA[<font color="#393536">Destination Address</font>]]></text>
+</component>
+
+<component id='ID_s1_traget06'>
+	<text><![CDATA[<font color="#393536">Preamble</font>]]></text>
+</component>
+
+<component id='ID_s1_traget07'>
+	<text><![CDATA[<font color="#393536">Source Address</font>]]></text>
+</component>
+
+ 
+
+<component id='ID_s1_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct]]></text>
+</component>
+
+<component id='ID_s1_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched the Ethernet frame field names to their descriptions.]]></text>
+</component>
+
+
+<component id='ID_s1_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect]]></text>
+</component>
+
+<component id='ID_s1_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched the Ethernet frame field names to their descriptions. Please click Reset and try again.]]></text>
+</component>
+
+<component id='ID_s1_CHECK'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_s1_RESET'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+
+<!--slide02-->
+<component id='ID_s2_inst'>
+	<text><![CDATA[<b>Activity</b><br><br>Drag the Ethernet frame field name to its correct location on the diagram.]]></text>
+</component>
+
+<component id='ID_s2_txt01'>
+	<text><![CDATA[<b>IEEE 802.3 Ethernet Frame Fields</b>]]></text>
+</component>
+
+<component id='ID_s2_txt02'>
+	<text><![CDATA[<b>7 bytes</b>]]></text>
+</component>
+
+<component id='ID_s2_txt03'>
+	<text><![CDATA[<b>1 byte</b>]]></text>
+</component>
+
+<component id='ID_s2_txt04'>
+	<text><![CDATA[<b>6 bytes</b>]]></text>
+</component>
+
+<component id='ID_s2_txt05'>
+	<text><![CDATA[<b>6 bytes</b>]]></text>
+</component>
+
+<component id='ID_s2_txt06'>
+	<text><![CDATA[<b>2 bytes</b>]]></text>
+</component>
+
+<component id='ID_s2_txt07'>
+	<text><![CDATA[<b>46-1500 bytes</b>]]></text>
+</component>
+
+<component id='ID_s2_txt08'>
+	<text><![CDATA[<b>4 bytes</b>]]></text>
+</component>
+
+<!--Drag and Drop-->
+<component id='ID_s2_traget01'>
+	<text><![CDATA[<font color="#393536">Source Address</font>]]></text>
+</component>
+
+<component id='ID_s2_traget02'>
+	<text><![CDATA[<font color="#393536">Frame Check Sequence</font>]]></text>
+</component>
+
+<component id='ID_s2_traget03'>
+	<text><![CDATA[<font color="#393536">Start of Frame Delimiter</font>]]></text>
+</component>
+
+<component id='ID_s2_traget04'>
+	<text><![CDATA[<font color="#393536">Preamble</font>]]></text>
+</component>
+
+<component id='ID_s2_traget05'>
+	<text><![CDATA[<font color="#393536">802.2 Header and Data</font>]]></text>
+</component>
+
+<component id='ID_s2_traget06'>
+	<text><![CDATA[<font color="#393536">Length</font>]]></text>
+</component>
+
+<component id='ID_s2_traget07'>
+	<text><![CDATA[<font color="#393536">Destination Address</font>]]></text>
+</component>
+
+
+<component id='ID_s2_CORRECT_TITLE'>
+	<text><![CDATA[<b>Correct]]></text>
+</component>
+
+<component id='ID_s2_CORRECT_BODY'>
+	<text><![CDATA[You have successfully matched the Ethernet frame fields to their correct locations.]]></text>
+</component>
+
+
+<component id='ID_s2_INCORRECT_TITLE'>
+	<text><![CDATA[<b>Incorrect]]></text>
+</component>
+
+<component id='ID_s2_INCORRECT_BODY'>
+	<text><![CDATA[You have not successfully matched the Ethernet frame fields to their correct locations. Please click Reset and try again.]]></text>
+</component>
+
+<component id='ID_s2_CHECK'>
+	<text><![CDATA[Check]]></text>
+</component>
+
+<component id='ID_s2_RESET'>
+	<text><![CDATA[Reset]]></text>
+</component>
+
+</textcomponents>

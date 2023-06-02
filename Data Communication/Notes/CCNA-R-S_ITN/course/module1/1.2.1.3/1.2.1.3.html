@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>1.2.1.3 Intermediary Network Devices</title>
+    <!-- Content -->
+    <link type="text/css" rel="stylesheet" href="../../common/styles/course.css"/>
+	<script type="text/javascript" src="../../common/scripts/jquery_bundle.min.js"></script>
+	<script type="text/javascript" src="../../common-ext/scripts/page.js"></script>
+    <script>
+      var myLayout; 
+      $(document).ready(function () {
+        var frame = document.getElementById('mainFrame');
+        if (isTextOnly(window)) {
+          frame.setAttribute('src', 'media_1.2.1.3_longdesc.txt');
+        } else {
+          frame.setAttribute('src', 'media/index.html');
+        }
+    	myLayout = $('body').layout({
+          west__size: 300,
+          west__minSize: 300,
+          center__minWidth: 100,
+          resizerTip: 'Resize',
+          sliderTip: 'Slide Open',
+          togglerTip_open: 'Close',
+          togglerTip_closed: 'Open',
+          stateManagement__enabled: true,
+          maskIframesOnResize: true,
+          livePaneResizing: true,
+          onresize_end: resizeTextDiv,
+          stateManagement__cookie__name: "ui_pane",
+          stateManagement__cookie__expires: 1,
+          stateManagement__cookie__path: "/"
+        });
+      });
+      function resizeTextDiv() {
+        var DivHeight = document.getElementById("header").offsetHeight;
+        document.getElementById("content").style.top = String(DivHeight) + 'px';
+      }
+    </script>
+  </head>
+  <body class="onecolumn" onLoad="resizeTextDiv()">
+    <div class="ui-layout-west">
+      <div id="header">
+        <h1>LANs, WANs, and the Internet</h1>
+        <h2>Components of a Network</h2>
+      </div>
+      <div id="content">
+          <p>Intermediary devices interconnect end devices. These devices provide connectivity and work behind the scenes to ensure that data flows across the network, as shown in the animation. Intermediary devices connect the individual hosts to the network and can connect multiple individual networks to form an internetwork. </p>
+          <p></p>
+          <p>Examples of intermediary network devices are:</p>
+          <p>
+            <ul>
+              <li>Network Access (switches and wireless access points)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Internetworking (routers)</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Security (firewalls)</li>
+            </ul>
+          </p>
+          <p></p>
+          <p>The management of data as it flows through the network is also a role of the intermediary devices. These devices use the destination host address, in conjunction with information about the network interconnections, to determine the path that messages should take through the network. </p>
+          <p></p>
+          <p>Processes running on the intermediary network devices perform these functions:</p>
+          <p>
+            <ul>
+              <li>Regenerate and retransmit data signals</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Maintain information about what pathways exist through the network and internetwork</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Notify other devices of errors and communication failures</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Direct data along alternate pathways when there is a link failure</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Classify and direct messages according to Quality of Service (QoS) priorities</li>
+            </ul>
+          </p>
+          <p>
+            <ul>
+              <li>Permit or deny the flow of data, based on security settings</li>
+            </ul>
+          </p>
+        </div>
+    </div>
+    <iframe id="mainFrame" name="mainFrame" frameborder="0" class="ui-layout-center" alt="interactive graphic"></iframe>
+  </body>
+</html>
